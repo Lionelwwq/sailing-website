@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Site tests | Sailing International Trade</title>
+<style>
+  body { margin: 0; padding: 32px; font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; color: #1d1d1f; background: #f6f6f6; }
+  h1 { margin: 0 0 6px; font-size: 24px; }
+  p { margin: 0 0 18px; color: #5f6368; }
+  button { padding: 10px 20px; border: 0; border-radius: 999px; background: #006bff; color: #fff; font: inherit; font-weight: 600; cursor: pointer; }
+  button:disabled { background: #9db9e8; cursor: default; }
+  #summary { margin: 18px 0; font-weight: 600; }
+  table { width: 100%; border-collapse: collapse; background: #fff; }
+  th, td { padding: 8px 12px; text-align: left; vertical-align: top; border-bottom: 1px solid #e3e3e3; font-size: 14px; }
+  th { background: #111; color: #fff; font-weight: 600; }
+  td.pass { color: #137333; font-weight: 600; }
+  td.fail { color: #a50e0e; font-weight: 600; }
+  tr.fail { background: #fff4f3; }
+  code { font-size: 13px; }
+  #stage { position: fixed; left: -5000px; top: 0; }
+</style>
+</head>
+<body>
+<h1>Sailing website — browser tests</h1>
+<p>Open this page through the local server (<code>python -m http.server 5173</code>, then <code>http://localhost:5173/tests/smoke.html</code>) and press Run. The form tests use a fake connection, so no email is sent. Your quote list and language choice are restored afterwards.</p>
+<button id="run" type="button">Run all tests</button>
+<div id="summary"></div>
+<table><thead><tr><th style="width:45%">Test</th><th style="width:10%">Result</th><th>Details</th></tr></thead><tbody id="out"></tbody></table>
+<div id="stage"></div>
+
+<script>
+(function () {
+  'use strict';
+  const PAGES = ['index.html', 'glass.html', 'mirrors.html', 'accessories.html', 'about.html', 'contact.html'];
+  const LANGS = { en: 'en', zh: 'zh-Hans', fr: 'fr-CA' };
+  const WIDTHS = [1280, 768, 375];
+  const out = document.getElementById('out');
+  const stage = document.getElementById('stage');
+  let passed = 0, failed = 0;
+  const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+
+  function report(name, ok, detail) {
+    ok ? passed++ : failed++;
+    const tr = document.createElement('tr');
+    if (!ok) tr.className = 'fail';
+    tr.innerHTML = `<td>${name}</td><td class="${ok ? 'pass' : 'fail'}">${ok ? 'pass' : 'FAIL'}</td><td>${detail || ''}</td>`;
+    out.appendChild(tr);
+    document.getElementById('summary').textContent = `${passed} passed, ${failed} failed`;
+  }
+  async function test(name, fn) {
+    try { const detail = await fn(); report(name, true, detail); }
+    catch (e) { report(name, false, String(e && e.message || e)); }
+  }
+  const assert = (cond, msg) => { if (!cond) throw new Error(msg); };
+
+  // load a page in a hidden frame of the given width and wait until the site has rendered
+  async function open(url, width = 1280, height = 900) {
+    stage.innerHTML = '';
+    const f = document.createElement('iframe');
+    f.style.cssText = `width:${width}px;height:${height}px;border:0`;
+    f.src = '../' + url;
+    stage.appendChild(f);
+    await new Promise((r) => { f.onload = r; });
+    const w = f.contentWindow;
+    for (let i = 0; i < 50; i++) {
+      const h1 = w.document.querySelector('h1');
+      if ((h1 && h1.textContent.trim()) || (w.__siteErrors && w.__siteErrors.length)) break;
+      await wait(100);
+    }
+    await wait(150);
+    w.document.querySelectorAll('.reveal').forEach((el) => el.classList.add('in'));
+    return { f, w, d: w.document };
+  }
+  const $ = (d, s) => d.querySelector(s);
+  const $$ = (d, s) => Array.from(d.querySelectorAll(s));
+
+  async function run() {
+    const btn = document.getElementById('run');
+    btn.disabled = true; out.innerHTML = ''; passed = failed = 0;
+    const saved = { quote: localStorage.getItem('sit-quote-v2'), lang: localStorage.getItem('sit-lang') };
+    localStorage.removeItem('sit-quote-v2');
+    const englishH1 = {};
+
+    /* ---------- every page, language and screen width ---------- */
+    for (const lang of Object.keys(LANGS)) {
+      for (const width of WIDTHS) {
+        for (const page of PAGES) {
+          await test(`${page} · ${lang} · ${width}px renders`, async () => {
+            const { w, d } = await open(`${page}?lang=${lang}`, width);
+            assert(!w.__siteErrors.length, 'script errors: ' + w.__siteErrors.join(' | '));
+            assert(d.documentElement.lang === LANGS[lang], `html lang is ${d.documentElement.lang}`);
+            const h1 = $(d, 'h1').textContent.trim();
+            assert(h1, 'empty heading');
+            if (lang === 'en' && width === 1280) englishH1[page] = h1;
+            if (lang === 'zh') assert(/[一-鿿]/.test(d.body.innerText), 'no Chinese text on the page');
+            if (lang === 'fr' && englishH1[page]) assert(h1 !== englishH1[page], `heading still in English: ${h1}`);
+            const over = d.documentElement.scrollWidth - width;
+            assert(over <= 1, `page is ${over}px wider than the screen`);
+            const empty = $$(d, '[data-ui],[data-c],[data-pp],[data-home]').filter((el) => el.offsetParent && !el.textContent.trim()).map((el) => Object.values(el.dataset)[0]);
+            assert(!empty.length, 'empty text: ' + empty.slice(0, 4).join(', '));
+            const broken = $$(d, 'img').filter((i) => i.complete && i.getAttribute('src') && i.naturalWidth === 0).map((i) => i.getAttribute('src'));
+            assert(!broken.length, 'broken images: ' + broken.join(', '));
+            const longest = $$(d, 'h1,h2,h3,button,a').filter((el) => el.offsetParent && !el.closest('.sr-only') && el.scrollWidth > el.clientWidth + 2 && getComputedStyle(el).overflow !== 'visible');
+            assert(!longest.length, 'text cut off in: ' + longest.slice(0, 3).map((el) => el.textContent.trim().slice(0, 30)).join(' | '));
+            return h1.slice(0, 50);
+          });
+        }
+      }
+    }
+
+    /* ---------- product tabs ---------- */
+    for (const kind of ['glass', 'mirrors', 'accessories']) {
+      await test(`${kind}: every tab shows its own photo, name and specifications`, async () => {
+        const { d, w } = await open(`${kind}.html?lang=en`);
+        const tabs = $$(d, '.ex-tab');
+        assert(tabs.length >= 3, `only ${tabs.length} tabs`);
+        for (const tab of tabs) {
+          tab.click();
+          const name = tab.textContent.trim();
+          assert($(d, '.ex-info h2').textContent.trim() === name, `panel shows "${$(d, '.ex-info h2').textContent}" for tab "${name}"`);
+          assert(tab.getAttribute('aria-selected') === 'true', `${name} not marked selected`);
+          assert(w.location.hash === '#' + tab.dataset.ex, `address not updated for ${name}`);
+          assert($$(d, '.spec-table tr').length > 0, `${name} has no specifications`);
+          assert($(d, '.ex-stage img, .ex-stage svg'), `${name} has no image`);
+          assert($(d, '.ex-panel [data-add]'), `${name} has no quote button`);
+        }
+        return `${tabs.length} products`;
+      });
+    }
+    await test('Deep link opens the right product (glass.html#tempered)', async () => {
+      const { d } = await open('glass.html?lang=en#tempered');
+      assert($(d, '.ex-tab[aria-selected="true"]').dataset.ex === 'tempered', 'wrong tab selected');
+      return $(d, '.ex-info h2').textContent;
+    });
+    await test('Arrow keys move between product tabs', async () => {
+      const { d, w } = await open('glass.html?lang=en');
+      const first = $(d, '.ex-tab');
+      first.focus();
+      first.dispatchEvent(new w.KeyboardEvent('keydown', { key: 'ArrowDown', bubbles: true }));
+      const sel = $(d, '.ex-tab[aria-selected="true"]');
+      assert(sel !== first && d.activeElement === sel, 'focus/selection did not move');
+      sel.dispatchEvent(new w.KeyboardEvent('keydown', { key: 'End', bubbles: true }));
+      assert($(d, '.ex-tab[aria-selected="true"]') === $$(d, '.ex-tab').pop(), 'End key did not select the last product');
+    });
+    await test('Gallery thumbnails switch the main image (accessories diagram)', async () => {
+      const { d } = await open('accessories.html?lang=en#silicone-adhesive');
+      const thumbs = $$(d, '.ex-thumb');
+      assert(thumbs.length >= 2, 'no thumbnails');
+      thumbs[1].click();
+      assert($(d, '.ex-stage').classList.contains('diagram'), 'diagram not shown');
+      thumbs[2] && thumbs[2].click();
+      if (thumbs[2]) assert($(d, '.ex-caption').textContent.trim(), 'extra photo has no caption');
+      return `${thumbs.length} images`;
+    });
+    await test('"Goes well with" links point to real accessories', async () => {
+      const bad = [];
+      for (const kind of ['glass', 'mirrors', 'accessories']) {
+        const { d } = await open(`${kind}.html?lang=en`);
+        const ids = new Set();
+        for (const tab of $$(d, '.ex-tab')) { tab.click(); $$(d, '.ex-info .chips a').forEach((a) => ids.add(a.getAttribute('href').split('#')[1])); }
+        const acc = await fetch('../content/accessories.json').then((r) => r.json());
+        ids.forEach((id) => { if (!acc.items.some((i) => i.id === id)) bad.push(`${kind}→${id}`); });
+      }
+      assert(!bad.length, bad.join(', '));
+    });
+
+    /* ---------- quote list across pages ---------- */
+    await test('Quote list: add on a product page, see it on the contact form, remove it', async () => {
+      localStorage.removeItem('sit-quote-v2');
+      let { d } = await open('mirrors.html?lang=en#antique-mirror');
+      $(d, '.ex-panel [data-add]').click();
+      assert($(d, '#quote-count').textContent === '1', 'count did not go to 1');
+      assert($(d, '.ex-panel [data-add]').getAttribute('aria-pressed') === 'true', 'button not marked added');
+      assert($(d, '#toast').classList.contains('show'), 'no confirmation message');
+      ({ d } = await open('contact.html?lang=zh'));
+      const pick = $(d, '#picked .pick');
+      assert(pick && /仿古镜/.test(pick.textContent), 'item missing (or not translated) on the contact form');
+      $(d, '#picked [data-remove]').click();
+      assert($(d, '#quote-count').textContent === '0' && !$(d, '#picked .pick'), 'remove did not work');
+    });
+    await test('Quote drawer opens, lists items and closes with Escape', async () => {
+      localStorage.removeItem('sit-quote-v2');
+      const { d, w } = await open('glass.html?lang=en');
+      $(d, '.ex-panel [data-add]').click();
+      $(d, '.quote-btn').click();
+      assert($(d, '#drawer').classList.contains('open'), 'drawer did not open');
+      assert($$(d, '#drawer-list .d-item').length === 1, 'drawer does not list the item');
+      d.dispatchEvent(new w.KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
+      assert(!$(d, '#drawer').classList.contains('open'), 'Escape did not close the drawer');
+      localStorage.removeItem('sit-quote-v2');
+    });
+
+    /* ---------- language switching ---------- */
+    await test('Language switcher translates the page and is remembered on the next page', async () => {
+      localStorage.removeItem('sit-lang');
+      let { d } = await open('about.html?lang=en');
+      const en = $(d, 'h1').textContent;
+      $(d, '[data-lang="fr"]').click();
+      assert($(d, 'h1').textContent !== en && d.documentElement.lang === 'fr-CA', 'page not translated');
+      assert($(d, '[data-lang="fr"]').getAttribute('aria-pressed') === 'true', 'FR button not marked');
+      ({ d } = await open('glass.html'));
+      assert(d.documentElement.lang === 'fr-CA', 'choice not remembered');
+      return $(d, 'h1').textContent;
+    });
+
+    /* ---------- navigation ---------- */
+    await test('Mobile menu opens and closes (375px)', async () => {
+      const { d, w } = await open('index.html?lang=en', 375);
+      const btn = $(d, '.menu-btn');
+      assert(w.getComputedStyle(btn).display !== 'none', 'menu button hidden');
+      btn.click();
+      assert($(d, '#mobile-nav').classList.contains('open') && btn.getAttribute('aria-expanded') === 'true', 'menu did not open');
+      d.dispatchEvent(new w.KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
+      assert(!$(d, '#mobile-nav').classList.contains('open'), 'Escape did not close it');
+    });
+    await test('Current page is highlighted in the menu', async () => {
+      const { d } = await open('accessories.html?lang=en');
+      assert($(d, '.nav-menu [data-nav="accessories"][aria-current]'), 'Accessories not marked');
+      assert($(d, '[data-nav-parent]').classList.contains('current'), 'Products not marked');
+    });
+    for (const [from, to] of [['products.html', 'glass.html'], ['applications.html', 'accessories.html'], ['product.html?id=eva-film', 'accessories.html#eva-film']]) {
+      await test(`Old address ${from} redirects to ${to}`, async () => {
+        const { w } = await open(from);
+        await wait(300);
+        const at = w.location.pathname.split('/').pop() + w.location.hash;
+        assert(at === to, `ended on ${at}`);
+      });
+    }
+
+    /* ---------- enquiry form (fake connection, no email is sent) ---------- */
+    async function formFrame(fakeResponse) {
+      const ctx = await open('contact.html?lang=en&type=Consultation');
+      const calls = [];
+      ctx.w.fetch = async (url, opts) => { calls.push({ url, body: JSON.parse(opts.body) }); if (fakeResponse === 'network') throw new Error('offline'); return new ctx.w.Response(JSON.stringify(fakeResponse), { status: 200 }); };
+      return { ...ctx, calls };
+    }
+    const fill = (d) => { $(d, '#f-name').value = 'Test Person'; $(d, '#f-email').value = 'test@example.com'; $(d, '#f-msg').value = '10 panels 900 x 2000 mm'; };
+    await test('Form: request type comes from the link (?type=Consultation)', async () => {
+      const { d } = await formFrame({ success: 'true' });
+      assert($(d, 'input[name="type"]:checked').value === 'Consultation', 'wrong type selected');
+    });
+    await test('Form: empty name/email are rejected and nothing is sent', async () => {
+      const { d, calls } = await formFrame({ success: 'true' });
+      $(d, '#quote-form').requestSubmit();
+      await wait(100);
+      assert(!calls.length, 'request was sent');
+      assert($$(d, '.field.invalid').length === 2, 'fields not marked');
+      assert($(d, '#form-status').classList.contains('err'), 'no error message');
+    });
+    await test('Form: a valid request is sent to the quote email and the form resets', async () => {
+      const { d, calls } = await formFrame({ success: 'true' });
+      fill(d);
+      $(d, '#quote-form').requestSubmit();
+      await wait(300);
+      assert(calls.length === 1, `${calls.length} requests`);
+      const settings = await fetch('../content/settings.json').then((r) => r.json());
+      assert(calls[0].url.includes(encodeURIComponent(settings.quoteEmail)), 'sent to the wrong address');
+      assert(calls[0].body.Name === 'Test Person' && calls[0].body._replyto === 'test@example.com', 'fields missing');
+      assert($(d, '#form-status').classList.contains('ok'), 'no success message');
+      assert(!$(d, '#f-name').value, 'form not cleared');
+      return calls[0].url;
+    });
+    await test('Form: a failed send shows the error with an email link', async () => {
+      for (const resp of [{ success: 'false', message: 'This form needs Activation.' }, 'network']) {
+        const { d } = await formFrame(resp);
+        fill(d);
+        $(d, '#quote-form').requestSubmit();
+        await wait(300);
+        assert($(d, '#form-status').classList.contains('err'), 'no error shown');
+        assert($(d, '#form-status a[href^="mailto:"]'), 'no email fallback');
+        assert(!$(d, 'button[type="submit"]').disabled, 'button stays disabled');
+      }
+    });
+    await test('Form: spam bots (hidden field filled) are ignored', async () => {
+      const { d, calls } = await formFrame({ success: 'true' });
+      fill(d);
+      $(d, 'input[name="_honey"]').value = 'spam';
+      $(d, '#quote-form').requestSubmit();
+      await wait(200);
+      assert(!calls.length, 'bot request was sent');
+    });
+
+    /* ---------- titles, prefill, 404, focus ---------- */
+    await test('Browser-tab titles follow the language', async () => {
+      const checks = [['about.html?lang=zh', /关于/], ['contact.html?lang=fr', /Joindre|Contact|Nous/i], ['glass.html?lang=zh', /玻璃/], ['index.html?lang=fr', /Verre/]];
+      for (const [url, re] of checks) {
+        const { d } = await open(url);
+        assert(re.test(d.title), `${url}: "${d.title}"`);
+      }
+    });
+    await test('"Ask about this product" fills the product name into the form', async () => {
+      let { d, w } = await open('glass.html?lang=en#laminated');
+      const link = $$(d, '.ex-actions a').find((a) => a.href.includes('type=Question'));
+      assert(link && link.href.includes('about='), 'link has no product name');
+      ({ d } = await open(link.getAttribute('href').replace(/^/, '') ));
+      assert(/Laminated Glass/.test($(d, '#f-msg').value), `message is "${$(d, '#f-msg').value}"`);
+      assert($(d, 'input[name="type"]:checked').value === 'Question', 'not set to Question');
+    });
+    await test('404 page shows a translated message and a way home', async () => {
+      const { d } = await open('404.html?lang=zh');
+      assert(/找不到/.test($(d, 'h1').textContent), 'not translated');
+      assert($(d, '.hero-actions a[href="index.html"]'), 'no home link');
+    });
+    await test('Page content becomes visible after loading', async () => {
+      const { d, w } = await open('about.html?lang=en');
+      assert(d.documentElement.classList.contains('ready'), 'page never marked ready');
+      assert(w.getComputedStyle($(d, 'main')).opacity === '1', 'main content still hidden');
+    });
+    await test('Tab key stays inside the open quote list', async () => {
+      const { d, w } = await open('glass.html?lang=en');
+      $(d, '.quote-btn').click();
+      const focusables = $$(d, '#drawer a[href], #drawer button').filter((el) => el.offsetParent);
+      const last = focusables[focusables.length - 1];
+      last.focus();
+      d.dispatchEvent(new w.KeyboardEvent('keydown', { key: 'Tab', bubbles: true }));
+      assert(d.activeElement === focusables[0], 'focus left the drawer');
+    });
+
+    /* ---------- accessibility basics on every page ---------- */
+    const lum = (c) => { const m = c.match(/[\d.]+/g).map(Number); const [r, g, b] = m.slice(0, 3).map((v) => { v /= 255; return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); }); return { L: 0.2126 * r + 0.7152 * g + 0.0722 * b, a: m[3] === undefined ? 1 : m[3] }; };
+    for (const page of [...PAGES, '404.html']) {
+      await test(`${page}: images, names, labels, headings and contrast`, async () => {
+        const { d, w } = await open(`${page}?lang=en`);
+        await wait(500);
+        const issues = [];
+        $$(d, 'img').forEach((i) => { if (!i.hasAttribute('alt')) issues.push('image without alt'); });
+        $$(d, 'a[href], button').forEach((el) => { if (el.closest('[aria-hidden="true"]')) return; const n = (el.getAttribute('aria-label') || el.textContent || '').trim(); if (!n) issues.push('unnamed ' + el.tagName.toLowerCase()); });
+        $$(d, 'input:not([type=radio]):not(.hp), textarea').forEach((el) => { if (!(el.id && d.querySelector(`label[for="${el.id}"]`))) issues.push('field without label: ' + el.name); });
+        const ids = $$(d, '[id]').map((e) => e.id); const dup = ids.filter((x, i) => ids.indexOf(x) !== i); if (dup.length) issues.push('duplicate id ' + dup[0]);
+        const hs = $$(d, 'h1,h2,h3,h4,h5').filter((h) => !h.closest('.drawer')).map((h) => +h.tagName[1]);
+        if (hs.filter((h) => h === 1).length !== 1) issues.push('page should have exactly one h1');
+        hs.forEach((h, i) => { if (i && h > hs[i - 1] + 1) issues.push(`heading jumps from h${hs[i - 1]} to h${h}`); });
+        const bgOf = (el) => { for (let e = el; e; e = e.parentElement) { const cs = w.getComputedStyle(e); if (cs.backgroundImage !== 'none') return null; const c = cs.backgroundColor; if (c && !/^rgba\(.*,\s*0\)$/.test(c) && c !== 'transparent') return c; } return 'rgb(255, 255, 255)'; };
+        $$(d, 'main *, footer *').forEach((el) => {
+          if (![...el.childNodes].some((n) => n.nodeType === 3 && n.textContent.trim()) || !el.offsetParent || el.closest('.hero, .page-hero, .photo-card, .split-row .split-media')) return;
+          const cs = w.getComputedStyle(el); const bg = bgOf(el); if (!bg) return;
+          const fg = lum(cs.color); if (fg.a < 0.99) return;
+          const b = lum(bg).L; const ratio = (Math.max(fg.L, b) + 0.05) / (Math.min(fg.L, b) + 0.05);
+          const big = parseFloat(cs.fontSize) >= 24 || (parseFloat(cs.fontSize) >= 18.66 && +cs.fontWeight >= 700);
+          if (ratio < (big ? 3 : 4.5)) issues.push(`low contrast ${ratio.toFixed(2)} on "${el.textContent.trim().slice(0, 24)}"`);
+        });
+        const uniq = [...new Set(issues)];
+        assert(!uniq.length, uniq.slice(0, 5).join(' · '));
+      });
+    }
+
+    /* ---------- links ---------- */
+    await test('Every link between pages works', async () => {
+      const urls = new Set();
+      for (const page of PAGES) {
+        const { d } = await open(`${page}?lang=en`);
+        $$(d, 'a[href]').forEach((a) => {
+          const href = a.getAttribute('href');
+          if (/^(https?:|mailto:|tel:|#)/.test(href)) return;
+          urls.add(href.split('#')[0].split('?')[0]);
+        });
+      }
+      const bad = [];
+      for (const u of urls) { const r = await fetch('../' + u, { method: 'HEAD' }); if (!r.ok) bad.push(`${u} (${r.status})`); }
+      assert(!bad.length, bad.join(', '));
+      return `${urls.size} pages/files`;
+    });
+    await test('Every image used in content exists', async () => {
+      const files = ['settings', 'ui', 'credits', 'glass', 'mirrors', 'accessories', 'product-pages', 'pages/home', 'pages/about', 'pages/contact'];
+      const imgs = new Set();
+      for (const f of files) {
+        const txt = await fetch(`../content/${f}.json`).then((r) => r.text());
+        (txt.match(/"assets\/img\/[^"]+"/g) || []).forEach((m) => imgs.add(m.slice(1, -1)));
+      }
+      const bad = [];
+      for (const u of imgs) { const r = await fetch('../' + u, { method: 'HEAD' }); if (!r.ok) bad.push(u); }
+      assert(!bad.length, bad.join(', '));
+      return `${imgs.size} images`;
+    });
+
+    stage.innerHTML = '';
+    saved.quote === null ? localStorage.removeItem('sit-quote-v2') : localStorage.setItem('sit-quote-v2', saved.quote);
+    saved.lang === null ? localStorage.removeItem('sit-lang') : localStorage.setItem('sit-lang', saved.lang);
+    document.getElementById('summary').textContent = `Done: ${passed} passed, ${failed} failed`;
+    btn.disabled = false;
+    window.__testResult = { passed, failed };
+  }
+  document.getElementById('run').addEventListener('click', run);
+  window.__runTests = run;
+})();
+</script>
+</body>
+</html>

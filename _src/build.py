@@ -20,6 +20,11 @@ Each page starts with a small settings block:
 import pathlib
 import re
 
+# Public address of the site. Change this when the site moves to its own domain;
+# it is used for sharing previews (og:image), sitemap.xml and robots.txt.
+SITE_URL = 'https://lionelwwq.github.io/sailing-website/'
+DEFAULT_IMAGE = 'assets/img/online/facade-up.jpg'
+
 SRC = pathlib.Path(__file__).resolve().parent
 OUT = SRC.parent
 LAYOUT = (SRC / 'layout.html').read_text(encoding='utf-8')
@@ -45,9 +50,10 @@ def build(page: pathlib.Path) -> str:
     html = LAYOUT
     for key in ('title', 'description'):
         html = html.replace('{{' + key + '}}', meta.get(key, '').replace('"', '&quot;'))
+    html = html.replace('{{ogimage}}', SITE_URL + meta.get('image', DEFAULT_IMAGE))
     html = html.replace('{{page}}', page.stem)
     html = html.replace(f'data-nav="{nav}"', f'data-nav="{nav}" aria-current="page"')
-    html = html.replace('{{content}}', body)
+    html = html.replace('{{content}}', body.replace('{{image}}', meta.get('image', DEFAULT_IMAGE)))
     return html
 
 
@@ -56,6 +62,13 @@ def main() -> None:
     for page in pages:
         (OUT / page.name).write_text(build(page), encoding='utf-8', newline='\n')
         print('built', page.name)
+    # search-engine files
+    urls = [SITE_URL + ('' if p.stem == 'index' else p.name) for p in pages if p.stem != '404']
+    sitemap = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    sitemap += [f'  <url><loc>{u}</loc></url>' for u in urls] + ['</urlset>', '']
+    (OUT / 'sitemap.xml').write_text('\n'.join(sitemap), encoding='utf-8', newline='\n')
+    (OUT / 'robots.txt').write_text(f'User-agent: *\nDisallow: /tests/\nSitemap: {SITE_URL}sitemap.xml\n', encoding='utf-8', newline='\n')
+    print('built sitemap.xml, robots.txt')
 
 
 if __name__ == '__main__':

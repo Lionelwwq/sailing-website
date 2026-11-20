@@ -348,5 +348,30 @@
   "en": "Since",
   "zh": "始于",
   "fr": "Depuis"
+ },
+ "nf_title": {
+  "en": "Page not found",
+  "zh": "找不到该页面",
+  "fr": "Page introuvable"
+ },
+ "nf_text": {
+  "en": "The page you are looking for does not exist or has moved.",
+  "zh": "您要找的页面不存在或已移动。",
+  "fr": "La page que vous cherchez n’existe pas ou a été déplacée."
+ },
+ "nf_home": {
+  "en": "Back to home",
+  "zh": "返回首页",
+  "fr": "Retour à l’accueil"
+ },
+ "about_prefix": {
+  "en": "Question about",
+  "zh": "咨询产品",
+  "fr": "Question au sujet de"
+ },
+ "page_title_suffix": {
+  "en": "Glass, Mirrors & Accessories, Toronto",
+  "zh": "玻璃、镜子与配件 · 多伦多",
+  "fr": "Verre, miroirs et accessoires, Toronto"
  }
 }

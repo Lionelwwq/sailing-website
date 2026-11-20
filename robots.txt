@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /tests/
+Sitemap: https://lionelwwq.github.io/sailing-website/sitemap.xml

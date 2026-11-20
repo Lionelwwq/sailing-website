@@ -94,10 +94,12 @@
     };
     bind('c', C.page);
     bind('home', C.home);
-    if (C.productPages && C.productPages[PAGE]) {
-      bind('pp', C.productPages[PAGE]);
-      document.title = `${t(C.productPages[PAGE].title)} | ${C.settings.companyName}`;
-    }
+    if (C.productPages && C.productPages[PAGE]) bind('pp', C.productPages[PAGE]);
+    const company = C.settings.companyName;
+    document.title = PAGE === 'index' ? `${company} | ${ui('page_title_suffix')}`
+      : C.productPages && C.productPages[PAGE] ? `${t(C.productPages[PAGE].title)} | ${company}`
+      : C.page && C.page.hero_title ? `${t(C.page.hero_title)} | ${company}`
+      : PAGE === '404' ? `${ui('nf_title')} | ${company}` : document.title;
     $('#year').textContent = new Date().getFullYear();
     $('#credits-list').innerHTML = (C.credits.items || []).map((c) =>
       `<li>“${esc(c.title)}” — ${esc(c.author)}, <a href="${esc(c.source)}" target="_blank" rel="noopener">Wikimedia Commons</a>, ${c.licenseUrl ? `<a href="${esc(c.licenseUrl)}" target="_blank" rel="noopener">${esc(c.license)}</a>` : esc(c.license)}</li>`).join('');
@@ -180,6 +182,8 @@
   /* ======================================================================
      Product explorer: tabs that switch photo, description and specs
      ====================================================================== */
+  const narrow = window.matchMedia('(max-width: 1100px)');
+  narrow.addEventListener('change', () => { const list = $('.ex-tabs'); if (list) list.setAttribute('aria-orientation', narrow.matches ? 'horizontal' : 'vertical'); });
   function explorer(el, kind) {
     const data = C[kind];
     const items = data.items || [];
@@ -245,12 +249,12 @@
           ${related.length ? `<h3>${esc(ui('goes_well_with'))}</h3><div class="chips">${related.map((r) => `<a href="accessories.html#${esc(r.id)}">${esc(t(r.name))}</a>`).join('')}</div>` : ''}
           <div class="ex-actions">
             <button class="btn btn-brand" type="button" data-add="${esc(key)}"></button>
-            <a class="btn btn-outline" href="contact.html?type=Question#quote">${esc(ui('ask_about'))}</a>
+            <a class="btn btn-outline" href="contact.html?type=Question&amp;about=${encodeURIComponent(t(it.name))}#quote">${esc(ui('ask_about'))}</a>
           </div>
         </div>`;
     }
     function render() {
-      el.innerHTML = `<div class="ex-tabs" role="tablist" aria-orientation="vertical" aria-label="${esc(t(C.productPages[kind].title))}">${tabsHtml()}</div>
+      el.innerHTML = `<div class="ex-tabs" role="tablist" aria-orientation="${narrow.matches ? 'horizontal' : 'vertical'}" aria-label="${esc(t(C.productPages[kind].title))}">${tabsHtml()}</div>
         <article class="ex-panel" id="ex-panel" role="tabpanel" aria-labelledby="tab-${esc(current)}">${panelHtml()}</article>`;
       renderQuote();
       revealTab();
@@ -359,8 +363,15 @@
       if (!map.firstChild) map.innerHTML = mapEmbed();
       $('#steps').innerHTML = P.steps.map((s, i) => `<li class="reveal" style="--d:${i * 80}ms"><h3>${esc(t(s.title))}</h3><p>${esc(t(s.text))}</p></li>`).join('');
       $('#faq').innerHTML = P.faq.map((f, i) => `<details${i === 0 ? ' open' : ''}><summary>${esc(t(f.q))}</summary><p>${esc(t(f.a))}</p></details>`).join('');
-      const type = new URLSearchParams(location.search).get('type');
+      const params = new URLSearchParams(location.search);
+      const type = params.get('type');
       if (type) { const r = $(`input[name="type"][value="${CSS.escape(type)}"]`); if (r) r.checked = true; }
+      const about = params.get('about');
+      const msg = $('#f-msg');
+      if (about && msg && (!msg.value || msg.dataset.prefilled === msg.value)) {
+        msg.value = `${ui('about_prefix')}: ${about.slice(0, 120)}\n`;
+        msg.dataset.prefilled = msg.value;
+      }
     },
   };
 
@@ -462,6 +473,16 @@
     if (t2.hasAttribute('data-close-drawer')) closeDrawer();
   });
   document.addEventListener('keydown', (e) => {
+    if (e.key === 'Tab' && drawer.classList.contains('open')) {
+      const f = $$('a[href], button:not([disabled])', drawer).filter((el) => el.offsetParent !== null);
+      if (f.length) {
+        const first = f[0], last = f[f.length - 1];
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+        else if (!drawer.contains(document.activeElement)) { e.preventDefault(); first.focus(); }
+      }
+      return;
+    }
     if (e.key !== 'Escape') return;
     if (drawer.classList.contains('open')) closeDrawer();
     else if (mnav.classList.contains('open')) { setMenu(false); menuBtn.focus(); }
@@ -488,11 +509,14 @@
   load().then(() => {
     renderAll();
     setupForm();
+    document.documentElement.classList.add('ready');
     // jump straight to a linked product or section ('instant' overrides the page's smooth scrolling)
     const target = location.hash && (PRODUCT_KINDS.includes(PAGE) ? $('#explorer') : document.getElementById(location.hash.slice(1)));
     if (target) window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - header.offsetHeight - 16, behavior: 'instant' });
   }).catch((err) => {
     console.error('Could not load site content', err);
+    if (window.__siteErrors) window.__siteErrors.push(`content: ${err.message}`);
+    document.documentElement.classList.add('ready');
     const m = $('#main');
     if (m) m.insertAdjacentHTML('afterbegin', '<p style="padding:120px 20px 40px;text-align:center">Content could not be loaded. Please open the site through a web server (see README).</p>');
   });
