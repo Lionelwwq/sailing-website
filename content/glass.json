@@ -1,0 +1,832 @@
+{
+ "items": [
+  {
+   "id": "clear-float",
+   "name": {
+    "en": "Clear Float Glass",
+    "zh": "透明浮法玻璃",
+    "fr": "Verre flotté clair"
+   },
+   "photo": "assets/img/glass/clear-float.jpg",
+   "gallery": [],
+   "short": {
+    "en": "Standard flat glass, and the starting point for cutting, tempering, laminating and IG units.",
+    "zh": "标准平板玻璃，是切割、钢化、夹胶和中空玻璃加工的基础原片。",
+    "fr": "Verre plat standard, point de départ pour la coupe, la trempe, le feuilletage et les unités scellées."
+   },
+   "description": {
+    "en": "Clear float glass is the base material for most glazing. It is cut to size and can be further processed into tempered, laminated or insulated glass, or used as-is for windows, picture frames, shelving and furniture.",
+    "zh": "透明浮法玻璃是大多数玻璃应用的基础材料。可按尺寸切割，并进一步加工成钢化、夹胶或中空玻璃，也可直接用于窗户、相框、层板和家具。",
+    "fr": "Le verre flotté clair est le matériau de base de la plupart des vitrages. Il est coupé à dimension et peut être transformé en verre trempé, feuilleté ou isolant, ou utilisé tel quel pour les fenêtres, les cadres, les tablettes et les meubles."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Type",
+      "zh": "类型",
+      "fr": "Type"
+     },
+     "value": {
+      "en": "Annealed float glass",
+      "zh": "退火浮法玻璃",
+      "fr": "Verre flotté recuit"
+     }
+    },
+    {
+     "label": {
+      "en": "Thickness",
+      "zh": "厚度",
+      "fr": "Épaisseur"
+     },
+     "value": {
+      "en": "Range of standard thicknesses",
+      "zh": "多种标准厚度",
+      "fr": "Gamme d'épaisseurs standards"
+     }
+    },
+    {
+     "label": {
+      "en": "Processing",
+      "zh": "加工方式",
+      "fr": "Mise en œuvre"
+     },
+     "value": {
+      "en": "Cutting, edging, drilling, tempering, laminating",
+      "zh": "切割、磨边、钻孔、钢化、夹胶",
+      "fr": "Coupe, façonnage des bords, perçage, trempe, feuilletage"
+     }
+    },
+    {
+     "label": {
+      "en": "Sizes",
+      "zh": "尺寸",
+      "fr": "Dimensions"
+     },
+     "value": {
+      "en": "Cut to your dimensions",
+      "zh": "按您的尺寸切割",
+      "fr": "Coupe selon vos dimensions"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Windows and picture frames",
+     "zh": "窗户和相框",
+     "fr": "Fenêtres et cadres"
+    },
+    {
+     "en": "Shelving and furniture",
+     "zh": "层板和家具",
+     "fr": "Tablettes et meubles"
+    },
+    {
+     "en": "Base glass for tempering and laminating",
+     "zh": "钢化和夹胶用原片",
+     "fr": "Verre de base pour la trempe et le feuilletage"
+    }
+   ],
+   "related": [
+    "al-stock-shelf",
+    "custom-rack",
+    "glass-sling"
+   ]
+  },
+  {
+   "id": "low-iron",
+   "name": {
+    "en": "Low Iron Glass",
+    "zh": "超白玻璃",
+    "fr": "Verre extra-clair (à faible teneur en fer)"
+   },
+   "photo": "assets/img/glass/low-iron.jpg",
+   "gallery": [],
+   "short": {
+    "en": "Ultra-clear glass with high light transmittance and no green edge tint.",
+    "zh": "超白玻璃，透光率高，边缘不发绿。",
+    "fr": "Verre extra-clair à haute transmission lumineuse, sans teinte verte sur les bords."
+   },
+   "description": {
+    "en": "Low iron glass is made with less iron oxide than standard float glass, so it is noticeably clearer and shows true colours. It is the preferred choice wherever clarity matters, from frameless showers to display cases.",
+    "zh": "超白玻璃的氧化铁含量低于普通浮法玻璃，因此明显更加通透，色彩还原真实。从无框淋浴房到展示柜，凡是注重通透度的场合，超白玻璃都是首选。",
+    "fr": "Le verre extra-clair contient moins d'oxyde de fer que le verre flotté standard; il est donc nettement plus clair et rend fidèlement les couleurs. C'est le choix privilégié partout où la clarté compte, des douches sans cadre aux vitrines d'exposition."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Type",
+      "zh": "类型",
+      "fr": "Type"
+     },
+     "value": {
+      "en": "Low iron (ultra-clear) float glass",
+      "zh": "低铁（超白）浮法玻璃",
+      "fr": "Verre flotté à faible teneur en fer (extra-clair)"
+     }
+    },
+    {
+     "label": {
+      "en": "Clarity",
+      "zh": "通透度",
+      "fr": "Clarté"
+     },
+     "value": {
+      "en": "High light transmittance, no green tint",
+      "zh": "透光率高，不发绿",
+      "fr": "Haute transmission lumineuse, sans teinte verte"
+     }
+    },
+    {
+     "label": {
+      "en": "Processing",
+      "zh": "加工方式",
+      "fr": "Mise en œuvre"
+     },
+     "value": {
+      "en": "Can be tempered, laminated or coated",
+      "zh": "可钢化、夹胶或镀膜",
+      "fr": "Peut être trempé, feuilleté ou revêtu d'une couche"
+     }
+    },
+    {
+     "label": {
+      "en": "Sizes",
+      "zh": "尺寸",
+      "fr": "Dimensions"
+     },
+     "value": {
+      "en": "Cut to your dimensions",
+      "zh": "按您的尺寸切割",
+      "fr": "Coupe selon vos dimensions"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Frameless showers",
+     "zh": "无框淋浴房",
+     "fr": "Douches sans cadre"
+    },
+    {
+     "en": "Display cases and shelving",
+     "zh": "展示柜和层板",
+     "fr": "Vitrines d'exposition et tablettes"
+    },
+    {
+     "en": "Feature glass and balustrades",
+     "zh": "特色玻璃和栏板",
+     "fr": "Verre décoratif et balustrades"
+    }
+   ],
+   "related": [
+    "cerium-dioxide",
+    "grinding-wheels",
+    "eva-film"
+   ]
+  },
+  {
+   "id": "tinted",
+   "name": {
+    "en": "Tinted Float Glass",
+    "zh": "着色浮法玻璃",
+    "fr": "Verre flotté teinté"
+   },
+   "photo": "assets/img/glass/tinted-float.jpg",
+   "gallery": [],
+   "short": {
+    "en": "Body-tinted glass in a choice of colours to cut glare and solar heat.",
+    "zh": "本体着色玻璃，多种颜色可选，可减少眩光和太阳热量。",
+    "fr": "Verre teinté dans la masse, offert en plusieurs couleurs, pour réduire l'éblouissement et la chaleur solaire."
+   },
+   "description": {
+    "en": "Tinted float glass has colour added during manufacture, so the tint runs through the whole thickness. It reduces glare and solar heat gain and gives facades, storefronts and interiors a distinctive look.",
+    "zh": "着色浮法玻璃在生产过程中加入着色剂，颜色贯穿整个厚度。它能减少眩光和太阳得热，为建筑外立面、店面和室内空间带来独特的外观。",
+    "fr": "Le verre flotté teinté est coloré lors de sa fabrication, de sorte que la teinte traverse toute son épaisseur. Il réduit l'éblouissement et le gain de chaleur solaire, et confère un aspect distinctif aux façades, aux devantures et aux intérieurs."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Colours",
+      "zh": "颜色",
+      "fr": "Couleurs"
+     },
+     "value": {
+      "en": "Grey, bronze, green, blue and more",
+      "zh": "灰色、茶色、绿色、蓝色等",
+      "fr": "Gris, bronze, vert, bleu et plus"
+     }
+    },
+    {
+     "label": {
+      "en": "Benefits",
+      "zh": "优点",
+      "fr": "Avantages"
+     },
+     "value": {
+      "en": "Reduces glare and solar heat gain",
+      "zh": "减少眩光和太阳得热",
+      "fr": "Réduit l'éblouissement et le gain de chaleur solaire"
+     }
+    },
+    {
+     "label": {
+      "en": "Processing",
+      "zh": "加工方式",
+      "fr": "Mise en œuvre"
+     },
+     "value": {
+      "en": "Can be tempered, laminated or used in IG units",
+      "zh": "可钢化、夹胶或用于中空玻璃",
+      "fr": "Peut être trempé, feuilleté ou intégré à des unités scellées"
+     }
+    },
+    {
+     "label": {
+      "en": "Sizes",
+      "zh": "尺寸",
+      "fr": "Dimensions"
+     },
+     "value": {
+      "en": "Cut to your dimensions",
+      "zh": "按您的尺寸切割",
+      "fr": "Coupe selon vos dimensions"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Facades and storefronts",
+     "zh": "建筑外立面和店面",
+     "fr": "Façades et devantures"
+    },
+    {
+     "en": "Automotive glass",
+     "zh": "汽车玻璃",
+     "fr": "Verre automobile"
+    },
+    {
+     "en": "Decorative interior glazing",
+     "zh": "室内装饰玻璃",
+     "fr": "Vitrage intérieur décoratif"
+    }
+   ],
+   "related": [
+    "custom-rack",
+    "grinding-wheels",
+    "cork-pads"
+   ]
+  },
+  {
+   "id": "tempered",
+   "name": {
+    "en": "Tempered Glass",
+    "zh": "钢化玻璃",
+    "fr": "Verre trempé"
+   },
+   "photo": "assets/img/glass/tempered.jpg",
+   "gallery": [],
+   "short": {
+    "en": "Heat-treated safety glass, much stronger than ordinary glass. Available 3–19 mm thick.",
+    "zh": "经热处理的安全玻璃，强度远高于普通玻璃。可选厚度 3–19 mm。",
+    "fr": "Verre de sécurité traité thermiquement, beaucoup plus résistant que le verre ordinaire. Offert en épaisseurs de 3–19 mm."
+   },
+   "description": {
+    "en": "Tempered glass is heated and rapidly cooled to make it several times stronger than annealed glass. If it breaks, it shatters into small, blunt pieces, which makes it the standard safety glass for doors, showers and railings. All cutting and drilling is done before tempering.",
+    "zh": "钢化玻璃经加热后急速冷却，强度可达退火玻璃的数倍。一旦破碎，会碎成细小的钝角颗粒，因此是门、淋浴房和栏杆的标准安全玻璃。所有切割和钻孔均在钢化前完成。",
+    "fr": "Le verre trempé est chauffé puis refroidi rapidement, ce qui le rend plusieurs fois plus résistant que le verre recuit. S'il se brise, il éclate en petits morceaux émoussés, ce qui en fait le verre de sécurité de référence pour les portes, les douches et les garde-corps. Toute la coupe et tout le perçage sont effectués avant la trempe."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Thickness",
+      "zh": "厚度",
+      "fr": "Épaisseur"
+     },
+     "value": {
+      "en": "3–19 mm",
+      "zh": "3–19 mm",
+      "fr": "3–19 mm"
+     }
+    },
+    {
+     "label": {
+      "en": "Strength",
+      "zh": "强度",
+      "fr": "Résistance"
+     },
+     "value": {
+      "en": "Several times stronger than annealed glass",
+      "zh": "强度为退火玻璃的数倍",
+      "fr": "Plusieurs fois plus résistant que le verre recuit"
+     }
+    },
+    {
+     "label": {
+      "en": "Breakage",
+      "zh": "破碎特性",
+      "fr": "Bris"
+     },
+     "value": {
+      "en": "Breaks into small, blunt pieces",
+      "zh": "碎成细小的钝角颗粒",
+      "fr": "Se brise en petits morceaux émoussés"
+     }
+    },
+    {
+     "label": {
+      "en": "Processing",
+      "zh": "加工方式",
+      "fr": "Mise en œuvre"
+     },
+     "value": {
+      "en": "Cut, edged and drilled before tempering",
+      "zh": "钢化前完成切割、磨边和钻孔",
+      "fr": "Coupé, façonné et percé avant la trempe"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Shower doors and enclosures",
+     "zh": "淋浴门和淋浴房",
+     "fr": "Portes et cabines de douche"
+    },
+    {
+     "en": "Doors, sidelites and railings",
+     "zh": "门、门侧窗和栏杆",
+     "fr": "Portes, panneaux latéraux et garde-corps"
+    },
+    {
+     "en": "Table tops and shelves",
+     "zh": "桌面和层板",
+     "fr": "Dessus de table et tablettes"
+    }
+   ],
+   "related": [
+    "water-jet",
+    "grinding-wheels",
+    "cerium-dioxide"
+   ]
+  },
+  {
+   "id": "laminated",
+   "name": {
+    "en": "Laminated Glass",
+    "zh": "夹胶玻璃",
+    "fr": "Verre feuilleté"
+   },
+   "photo": "assets/img/glass/laminated.jpg",
+   "gallery": [],
+   "short": {
+    "en": "Glass layers bonded with an interlayer that holds the pieces together if the glass breaks.",
+    "zh": "多层玻璃通过中间膜粘合，玻璃破碎时碎片仍粘连在一起。",
+    "fr": "Couches de verre liées par un intercalaire qui retient les morceaux si le verre se brise."
+   },
+   "description": {
+    "en": "Laminated glass bonds two or more lites with a PVB or EVA interlayer. If the glass breaks, the pieces stay attached to the interlayer, keeping the opening closed. It also cuts noise and blocks most UV light.",
+    "zh": "夹胶玻璃以 PVB 或 EVA 中间膜将两片或多片玻璃粘合在一起。玻璃破碎时，碎片仍附着在中间膜上，洞口保持封闭。它还能降低噪音，并阻隔大部分紫外线。",
+    "fr": "Le verre feuilleté assemble deux vitres ou plus au moyen d'un intercalaire PVB ou EVA. Si le verre se brise, les morceaux restent fixés à l'intercalaire, ce qui garde l'ouverture fermée. Il atténue également le bruit et bloque la plupart des rayons UV."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Interlayer",
+      "zh": "中间膜",
+      "fr": "Intercalaire"
+     },
+     "value": {
+      "en": "PVB or EVA",
+      "zh": "PVB 或 EVA",
+      "fr": "PVB ou EVA"
+     }
+    },
+    {
+     "label": {
+      "en": "Safety",
+      "zh": "安全性",
+      "fr": "Sécurité"
+     },
+     "value": {
+      "en": "Stays in place when broken",
+      "zh": "破碎后不脱落",
+      "fr": "Reste en place en cas de bris"
+     }
+    },
+    {
+     "label": {
+      "en": "Comfort",
+      "zh": "舒适性",
+      "fr": "Confort"
+     },
+     "value": {
+      "en": "Reduces noise and UV light",
+      "zh": "降低噪音，减少紫外线",
+      "fr": "Réduit le bruit et les rayons UV"
+     }
+    },
+    {
+     "label": {
+      "en": "Options",
+      "zh": "可选",
+      "fr": "Options"
+     },
+     "value": {
+      "en": "Clear, low iron, tinted or decorative",
+      "zh": "透明、超白、着色或装饰",
+      "fr": "Clair, extra-clair, teinté ou décoratif"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Railings and balustrades",
+     "zh": "栏杆和栏板",
+     "fr": "Garde-corps et balustrades"
+    },
+    {
+     "en": "Skylights and canopies",
+     "zh": "天窗和雨棚",
+     "fr": "Puits de lumière et marquises"
+    },
+    {
+     "en": "Storefronts and security glazing",
+     "zh": "店面和安防玻璃",
+     "fr": "Devantures et vitrage de sécurité"
+    }
+   ],
+   "related": [
+    "eva-film",
+    "water-jet",
+    "grinding-wheels"
+   ]
+  },
+  {
+   "id": "insulated",
+   "name": {
+    "en": "Insulated Glass",
+    "zh": "中空玻璃",
+    "fr": "Verre isolant (unité scellée)"
+   },
+   "photo": "assets/img/glass/insulated.jpg",
+   "gallery": [],
+   "short": {
+    "en": "Two or more lites sealed around an air- or gas-filled space for thermal and sound insulation.",
+    "zh": "两片或多片玻璃围绕充空气或充气的空腔密封而成，隔热隔音。",
+    "fr": "Deux vitres ou plus scellées autour d'un espace rempli d'air ou de gaz, pour l'isolation thermique et acoustique."
+   },
+   "description": {
+    "en": "An insulated glass unit (IGU) seals two or three lites around a spacer, with a dry air or argon-filled cavity between them. It keeps heat in during winter and out in summer, and reduces outside noise.",
+    "zh": "中空玻璃（IGU）由两片或三片玻璃通过间隔条密封而成，中间为干燥空气或充氩气的空腔。冬季保温，夏季隔热，并能降低室外噪音。",
+    "fr": "Une unité de verre isolant (IGU) réunit deux ou trois vitres scellées autour d'un intercalaire, avec entre elles une lame d'air sec ou d'argon. Elle garde la chaleur à l'intérieur en hiver et à l'extérieur en été, et réduit les bruits extérieurs."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Construction",
+      "zh": "结构",
+      "fr": "Composition"
+     },
+     "value": {
+      "en": "Double or triple glazed",
+      "zh": "双玻或三玻",
+      "fr": "Double ou triple vitrage"
+     }
+    },
+    {
+     "label": {
+      "en": "Cavity fill",
+      "zh": "空腔填充",
+      "fr": "Remplissage de la lame"
+     },
+     "value": {
+      "en": "Air or argon",
+      "zh": "空气或氩气",
+      "fr": "Air ou argon"
+     }
+    },
+    {
+     "label": {
+      "en": "Glass options",
+      "zh": "玻璃选项",
+      "fr": "Options de verre"
+     },
+     "value": {
+      "en": "Low-E, tempered, laminated or tinted",
+      "zh": "Low-E、钢化、夹胶或着色",
+      "fr": "Low-E, trempé, feuilleté ou teinté"
+     }
+    },
+    {
+     "label": {
+      "en": "Edge seal",
+      "zh": "边部密封",
+      "fr": "Scellement périphérique"
+     },
+     "value": {
+      "en": "Spacer, desiccant and silicone",
+      "zh": "间隔条、干燥剂和硅酮胶",
+      "fr": "Intercalaire, déshydratant et silicone"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Windows and doors",
+     "zh": "门窗",
+     "fr": "Fenêtres et portes"
+    },
+    {
+     "en": "Curtain walls and storefronts",
+     "zh": "幕墙和店面",
+     "fr": "Murs-rideaux et devantures"
+    },
+    {
+     "en": "Skylights",
+     "zh": "天窗",
+     "fr": "Puits de lumière"
+    }
+   ],
+   "related": [
+    "aluminum-spacer",
+    "molecular-sieve",
+    "silicone-adhesive"
+   ]
+  },
+  {
+   "id": "coated",
+   "name": {
+    "en": "Coated Glass",
+    "zh": "镀膜玻璃",
+    "fr": "Verre à couche"
+   },
+   "photo": "assets/img/glass/coated.jpg",
+   "gallery": [],
+   "short": {
+    "en": "Glass with Low-E or reflective coatings that control heat, glare and appearance.",
+    "zh": "带 Low-E 或反射镀膜的玻璃，可控制热量、眩光和外观。",
+    "fr": "Verre avec couche à faible émissivité (Low-E) ou réfléchissante qui contrôle la chaleur, l'éblouissement et l'apparence."
+   },
+   "description": {
+    "en": "Coated glass carries a thin metal-oxide layer that changes how it handles heat and light. Low-E coatings keep buildings warmer in winter and cooler in summer; reflective coatings reduce glare and add privacy.",
+    "zh": "镀膜玻璃表面覆有一层薄薄的金属氧化物膜，可改变玻璃对热量和光线的作用。Low-E 镀膜使建筑冬暖夏凉；反射镀膜可减少眩光并增强私密性。",
+    "fr": "Le verre à couche comporte une mince couche d'oxyde métallique qui modifie son comportement face à la chaleur et à la lumière. Les couches à faible émissivité (Low-E) gardent les bâtiments plus chauds en hiver et plus frais en été; les couches réfléchissantes réduisent l'éblouissement et ajoutent de l'intimité."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Coatings",
+      "zh": "镀膜",
+      "fr": "Couches"
+     },
+     "value": {
+      "en": "Low-E and reflective",
+      "zh": "Low-E 和反射",
+      "fr": "Low-E et réfléchissantes"
+     }
+    },
+    {
+     "label": {
+      "en": "Benefits",
+      "zh": "优点",
+      "fr": "Avantages"
+     },
+     "value": {
+      "en": "Controls heat, glare and appearance",
+      "zh": "控制热量、眩光和外观",
+      "fr": "Contrôle la chaleur, l'éblouissement et l'apparence"
+     }
+    },
+    {
+     "label": {
+      "en": "Use",
+      "zh": "用途",
+      "fr": "Utilisation"
+     },
+     "value": {
+      "en": "Usually built into IG units",
+      "zh": "通常合片为中空玻璃使用",
+      "fr": "Généralement intégré aux unités scellées"
+     }
+    },
+    {
+     "label": {
+      "en": "Sizes",
+      "zh": "尺寸",
+      "fr": "Dimensions"
+     },
+     "value": {
+      "en": "Cut to your dimensions",
+      "zh": "按您的尺寸切割",
+      "fr": "Coupe selon vos dimensions"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Energy-efficient windows",
+     "zh": "节能窗",
+     "fr": "Fenêtres écoénergétiques"
+    },
+    {
+     "en": "Facades and curtain walls",
+     "zh": "建筑外立面和幕墙",
+     "fr": "Façades et murs-rideaux"
+    },
+    {
+     "en": "Solar control glazing",
+     "zh": "阳光控制玻璃",
+     "fr": "Vitrage de contrôle solaire"
+    }
+   ],
+   "related": [
+    "aluminum-spacer",
+    "molecular-sieve",
+    "cork-pads"
+   ]
+  },
+  {
+   "id": "patterned",
+   "name": {
+    "en": "Patterned Glass",
+    "zh": "压花玻璃",
+    "fr": "Verre imprimé"
+   },
+   "photo": "assets/img/glass/patterned.jpg",
+   "gallery": [],
+   "short": {
+    "en": "Textured glass that lets light through while adding privacy and decoration.",
+    "zh": "带纹理的玻璃，透光的同时兼具私密性和装饰性。",
+    "fr": "Verre texturé qui laisse passer la lumière tout en préservant l'intimité et en ajoutant une touche décorative."
+   },
+   "description": {
+    "en": "Patterned glass has a texture rolled into one surface during manufacture. It diffuses light and blurs the view through it, making it ideal for bathrooms, doors and partitions where privacy matters.",
+    "zh": "压花玻璃在生产过程中于一面压制出花纹。它能漫射光线、模糊视线，非常适合浴室、门和隔断等注重私密性的场所。",
+    "fr": "Le verre imprimé présente une texture laminée sur l'une de ses faces lors de sa fabrication. Il diffuse la lumière et brouille la vue au travers, ce qui le rend idéal pour les salles de bains, les portes et les cloisons où l'intimité compte."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Textures",
+      "zh": "花纹",
+      "fr": "Textures"
+     },
+     "value": {
+      "en": "Wide range of patterns",
+      "zh": "花型丰富",
+      "fr": "Vaste choix de motifs"
+     }
+    },
+    {
+     "label": {
+      "en": "Privacy",
+      "zh": "私密性",
+      "fr": "Intimité"
+     },
+     "value": {
+      "en": "Lets light through, blurs the view",
+      "zh": "透光不透影",
+      "fr": "Laisse passer la lumière, brouille la vue"
+     }
+    },
+    {
+     "label": {
+      "en": "Processing",
+      "zh": "加工方式",
+      "fr": "Mise en œuvre"
+     },
+     "value": {
+      "en": "Can be tempered",
+      "zh": "可钢化",
+      "fr": "Peut être trempé"
+     }
+    },
+    {
+     "label": {
+      "en": "Sizes",
+      "zh": "尺寸",
+      "fr": "Dimensions"
+     },
+     "value": {
+      "en": "Cut to your dimensions",
+      "zh": "按您的尺寸切割",
+      "fr": "Coupe selon vos dimensions"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Bathrooms and showers",
+     "zh": "浴室和淋浴房",
+     "fr": "Salles de bains et douches"
+    },
+    {
+     "en": "Doors and partitions",
+     "zh": "门和隔断",
+     "fr": "Portes et cloisons"
+    },
+    {
+     "en": "Cabinets and furniture",
+     "zh": "橱柜和家具",
+     "fr": "Armoires et meubles"
+    }
+   ],
+   "related": [
+    "water-jet",
+    "grinding-wheels",
+    "cork-pads"
+   ]
+  },
+  {
+   "id": "solar",
+   "name": {
+    "en": "Solar (PV) Glass",
+    "zh": "太阳能光伏玻璃",
+    "fr": "Verre solaire (photovoltaïque)"
+   },
+   "photo": "assets/img/glass/low-iron.jpg",
+   "gallery": [],
+   "short": {
+    "en": "High-transmittance low iron glass for solar modules and building-integrated solar.",
+    "zh": "高透光超白玻璃，用于光伏组件和光伏建筑一体化。",
+    "fr": "Verre extra-clair à haute transmission pour modules solaires et solaire intégré au bâtiment."
+   },
+   "description": {
+    "en": "Photovoltaic glass is a low iron glass, usually tempered, that sits at the front of a solar module. It lets as much light as possible reach the cells while protecting them outdoors. Anti-reflective coating is available.",
+    "zh": "光伏玻璃是一种超白玻璃，通常经过钢化，位于光伏组件的正面。它让尽可能多的光线到达电池片，同时在户外环境中保护电池片。可提供减反射镀膜。",
+    "fr": "Le verre photovoltaïque est un verre à faible teneur en fer, généralement trempé, placé à l'avant d'un module solaire. Il laisse parvenir un maximum de lumière aux cellules tout en les protégeant à l'extérieur. Une couche antireflet est offerte."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Type",
+      "zh": "类型",
+      "fr": "Type"
+     },
+     "value": {
+      "en": "Low iron, usually tempered",
+      "zh": "超白，通常为钢化",
+      "fr": "Faible teneur en fer, généralement trempé"
+     }
+    },
+    {
+     "label": {
+      "en": "Clarity",
+      "zh": "通透度",
+      "fr": "Clarté"
+     },
+     "value": {
+      "en": "High light transmittance",
+      "zh": "高透光率",
+      "fr": "Haute transmission lumineuse"
+     }
+    },
+    {
+     "label": {
+      "en": "Coating",
+      "zh": "镀膜",
+      "fr": "Couche"
+     },
+     "value": {
+      "en": "Anti-reflective coating available",
+      "zh": "可提供减反射镀膜",
+      "fr": "Couche antireflet offerte"
+     }
+    },
+    {
+     "label": {
+      "en": "Sizes",
+      "zh": "尺寸",
+      "fr": "Dimensions"
+     },
+     "value": {
+      "en": "To your module design",
+      "zh": "按您的组件设计",
+      "fr": "Selon la conception de votre module"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Solar modules",
+     "zh": "光伏组件",
+     "fr": "Modules solaires"
+    },
+    {
+     "en": "Building-integrated solar",
+     "zh": "光伏建筑一体化",
+     "fr": "Solaire intégré au bâtiment"
+    },
+    {
+     "en": "Greenhouses",
+     "zh": "温室",
+     "fr": "Serres"
+    }
+   ],
+   "related": [
+    "eva-film",
+    "glass-sling",
+    "cork-pads"
+   ]
+  }
+ ]
+}

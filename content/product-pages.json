@@ -1,0 +1,41 @@
+{
+ "glass": {
+  "hero_image": "assets/img/glass/clear-float.jpg",
+  "title": {
+   "en": "Glass",
+   "zh": "玻璃",
+   "fr": "Verre"
+  },
+  "text": {
+   "en": "All types of glass, cut and processed to your requirements. Select a product to see photos, details and specifications.",
+   "zh": "各类玻璃，按您的要求切割和加工。选择产品即可查看图片、详情和规格参数。",
+   "fr": "Tous les types de verre, coupés et transformés selon vos exigences. Sélectionnez un produit pour voir les photos, les détails et les spécifications."
+  }
+ },
+ "mirrors": {
+  "hero_image": "assets/img/site/bg3-min.jpg",
+  "title": {
+   "en": "Mirrors",
+   "zh": "镜子",
+   "fr": "Miroirs"
+  },
+  "text": {
+   "en": "Silver, tinted, antique and back-painted mirror and glass, cut to size with safety backing available.",
+   "zh": "银镜、彩色镜、仿古镜和烤漆玻璃，按尺寸切割，可加贴安全背膜。",
+   "fr": "Miroirs argentés, teintés et antiques, et verre laqué, coupés à dimension, avec endos de sécurité offert."
+  }
+ },
+ "accessories": {
+  "hero_image": "assets/img/online/window-units.jpg",
+  "title": {
+   "en": "Accessories",
+   "zh": "配件",
+   "fr": "Accessoires"
+  },
+  "text": {
+   "en": "Materials and equipment for the glass industry, supplied according to customer requirements.",
+   "zh": "玻璃行业所需的材料和设备，按客户要求供应。",
+   "fr": "Matériaux et équipement pour l'industrie du verre, fournis selon les exigences des clients."
+  }
+ }
+}

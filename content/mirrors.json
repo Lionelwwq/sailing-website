@@ -1,0 +1,482 @@
+{
+ "items": [
+  {
+   "id": "silver-mirror",
+   "name": {
+    "en": "Silver Mirror",
+    "zh": "银镜",
+    "fr": "Miroir argenté"
+   },
+   "photo": "assets/img/glass/mirror.jpg",
+   "gallery": [
+    {
+     "image": "assets/img/site/bg3-min.jpg",
+     "caption": {
+      "en": "Mirrors in a commercial washroom",
+      "zh": "商业洗手间中的镜子",
+      "fr": "Miroirs dans une salle de toilettes commerciale"
+     }
+    }
+   ],
+   "short": {
+    "en": "Clear silvered mirror for bathrooms, closets, gyms, furniture and décor.",
+    "zh": "透明银镜，适用于浴室、衣柜、健身房、家具和装饰。",
+    "fr": "Miroir argenté clair pour salles de bains, placards, salles d'entraînement, meubles et décoration."
+   },
+   "description": {
+    "en": "Our standard silver mirror gives a bright, true reflection. It is cut to size with polished or bevelled edges, drilled for fixings where needed, and can be backed with safety film.",
+    "zh": "我们的标准银镜成像明亮、真实。可按尺寸切割，磨抛光边或斜边，需要时可钻安装孔，并可加贴安全背膜。",
+    "fr": "Notre miroir argenté standard offre un reflet lumineux et fidèle. Il est coupé à dimension avec bords polis ou biseautés, percé pour les fixations au besoin, et peut être doublé d'une pellicule de sécurité."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Type",
+      "zh": "类型",
+      "fr": "Type"
+     },
+     "value": {
+      "en": "Silvered float glass",
+      "zh": "镀银浮法玻璃",
+      "fr": "Verre flotté argenté"
+     }
+    },
+    {
+     "label": {
+      "en": "Edges",
+      "zh": "边缘",
+      "fr": "Bords"
+     },
+     "value": {
+      "en": "Polished or bevelled",
+      "zh": "抛光边或斜边",
+      "fr": "Polis ou biseautés"
+     }
+    },
+    {
+     "label": {
+      "en": "Safety backing",
+      "zh": "安全背膜",
+      "fr": "Endos de sécurité"
+     },
+     "value": {
+      "en": "CAT I or CAT II film available",
+      "zh": "可提供 CAT I 或 CAT II 背膜",
+      "fr": "Pellicule CAT I ou CAT II offerte"
+     }
+    },
+    {
+     "label": {
+      "en": "Sizes",
+      "zh": "尺寸",
+      "fr": "Dimensions"
+     },
+     "value": {
+      "en": "Cut to your dimensions",
+      "zh": "按您的尺寸切割",
+      "fr": "Coupe selon vos dimensions"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Bathrooms and vanities",
+     "zh": "浴室和梳妆台",
+     "fr": "Salles de bains et meubles-lavabos"
+    },
+    {
+     "en": "Closet and wardrobe doors",
+     "zh": "壁橱门和衣柜门",
+     "fr": "Portes de placard et de garde-robe"
+    },
+    {
+     "en": "Furniture and décor",
+     "zh": "家具和装饰",
+     "fr": "Meubles et décoration"
+    }
+   ],
+   "related": [
+    "vinyl-cat1",
+    "grinding-wheels",
+    "cerium-dioxide"
+   ]
+  },
+  {
+   "id": "tinted-mirror",
+   "name": {
+    "en": "Tinted Mirror",
+    "zh": "彩色镜",
+    "fr": "Miroir teinté"
+   },
+   "photo": "assets/img/mirrors/tinted.svg",
+   "gallery": [],
+   "short": {
+    "en": "Grey, bronze and other tinted mirrors for a softer, warmer reflection.",
+    "zh": "灰镜、茶镜及其他彩色镜，反射效果更柔和、温暖。",
+    "fr": "Miroirs teintés gris, bronze et autres pour un reflet plus doux et plus chaleureux."
+   },
+   "description": {
+    "en": "Tinted mirror is made on coloured glass, giving a muted, design-led reflection. It is popular for feature walls, furniture and hospitality interiors.",
+    "zh": "彩色镜以着色玻璃为基片制成，反射效果低调而富有设计感，广泛用于特色墙面、家具以及酒店餐饮空间的室内装饰。",
+    "fr": "Le miroir teinté est fabriqué sur du verre coloré, ce qui lui donne un reflet adouci et résolument design. Il est populaire pour les murs d'accent, le mobilier et les intérieurs d'hôtels et de restaurants."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Colours",
+      "zh": "颜色",
+      "fr": "Couleurs"
+     },
+     "value": {
+      "en": "Grey, bronze and more",
+      "zh": "灰色、茶色等",
+      "fr": "Gris, bronze et plus"
+     }
+    },
+    {
+     "label": {
+      "en": "Edges",
+      "zh": "边缘",
+      "fr": "Bords"
+     },
+     "value": {
+      "en": "Polished or bevelled",
+      "zh": "抛光边或斜边",
+      "fr": "Polis ou biseautés"
+     }
+    },
+    {
+     "label": {
+      "en": "Safety backing",
+      "zh": "安全背膜",
+      "fr": "Endos de sécurité"
+     },
+     "value": {
+      "en": "Available",
+      "zh": "可提供",
+      "fr": "Offert"
+     }
+    },
+    {
+     "label": {
+      "en": "Sizes",
+      "zh": "尺寸",
+      "fr": "Dimensions"
+     },
+     "value": {
+      "en": "Cut to your dimensions",
+      "zh": "按您的尺寸切割",
+      "fr": "Coupe selon vos dimensions"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Feature walls",
+     "zh": "特色墙面",
+     "fr": "Murs d'accent"
+    },
+    {
+     "en": "Furniture and cabinetry",
+     "zh": "家具和橱柜",
+     "fr": "Meubles et ébénisterie"
+    },
+    {
+     "en": "Hotels and restaurants",
+     "zh": "酒店和餐厅",
+     "fr": "Hôtels et restaurants"
+    }
+   ],
+   "related": [
+    "vinyl-cat1",
+    "grinding-wheels",
+    "cork-pads"
+   ]
+  },
+  {
+   "id": "antique-mirror",
+   "name": {
+    "en": "Antique Mirror",
+    "zh": "仿古镜",
+    "fr": "Miroir antique"
+   },
+   "photo": "assets/img/mirrors/antique.svg",
+   "gallery": [],
+   "short": {
+    "en": "Aged, patinated mirror finishes for feature walls and decorative work.",
+    "zh": "做旧、斑驳的仿古镜面效果，适用于特色墙面和装饰工程。",
+    "fr": "Finis de miroir vieillis et patinés pour murs d'accent et réalisations décoratives."
+   },
+   "description": {
+    "en": "Antique mirror is treated to create an aged, mottled finish. Colours, patina and patterns can be customised to your project; approve the final finish from physical samples.",
+    "zh": "仿古镜经过特殊处理，呈现做旧、斑驳的效果。颜色、古旧质感和花纹均可根据您的项目定制；最终效果以实物样品确认。",
+    "fr": "Le miroir antique est traité pour obtenir un fini vieilli et moucheté. Les couleurs, la patine et les motifs peuvent être personnalisés selon votre projet; approuvez le fini final à partir d'échantillons physiques."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Finish",
+      "zh": "效果",
+      "fr": "Fini"
+     },
+     "value": {
+      "en": "Aged, mottled patina",
+      "zh": "做旧斑驳的古旧质感",
+      "fr": "Patine vieillie et mouchetée"
+     }
+    },
+    {
+     "label": {
+      "en": "Customisation",
+      "zh": "定制",
+      "fr": "Personnalisation"
+     },
+     "value": {
+      "en": "Colour, patina and pattern",
+      "zh": "颜色、古旧质感和花纹",
+      "fr": "Couleur, patine et motif"
+     }
+    },
+    {
+     "label": {
+      "en": "Approval",
+      "zh": "确认方式",
+      "fr": "Approbation"
+     },
+     "value": {
+      "en": "From physical samples",
+      "zh": "以实物样品确认",
+      "fr": "À partir d'échantillons physiques"
+     }
+    },
+    {
+     "label": {
+      "en": "Sizes",
+      "zh": "尺寸",
+      "fr": "Dimensions"
+     },
+     "value": {
+      "en": "Cut to your dimensions",
+      "zh": "按您的尺寸切割",
+      "fr": "Coupe selon vos dimensions"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Feature walls and ceilings",
+     "zh": "特色墙面和天花",
+     "fr": "Murs d'accent et plafonds"
+    },
+    {
+     "en": "Bars and restaurants",
+     "zh": "酒吧和餐厅",
+     "fr": "Bars et restaurants"
+    },
+    {
+     "en": "Furniture panels",
+     "zh": "家具面板",
+     "fr": "Panneaux de meubles"
+    }
+   ],
+   "related": [
+    "vinyl-cat1",
+    "cork-pads",
+    "silicone-adhesive"
+   ]
+  },
+  {
+   "id": "back-painted",
+   "name": {
+    "en": "Back-Painted Glass",
+    "zh": "烤漆玻璃",
+    "fr": "Verre laqué (peint au dos)"
+   },
+   "photo": "assets/img/mirrors/back-painted.svg",
+   "gallery": [],
+   "short": {
+    "en": "Glass painted on the back in any colour, for splashbacks, cladding and signage.",
+    "zh": "背面可喷涂任意颜色的玻璃，用于防溅背板、墙面饰板和标识。",
+    "fr": "Verre peint au dos dans la couleur de votre choix, pour dosserets, revêtements muraux et affichage."
+   },
+   "description": {
+    "en": "Back-painted (lacquered) glass has a durable paint layer applied to the back surface, so the front stays smooth and easy to clean. It is used for kitchen splashbacks, wall cladding, writable glass boards and signage.",
+    "zh": "烤漆玻璃（背漆玻璃）在背面涂覆耐久的漆层，正面保持光滑、易于清洁。用于厨房防溅背板、墙面饰板、可书写玻璃白板和标识。",
+    "fr": "Le verre laqué (peint au dos) comporte une couche de peinture durable appliquée sur sa face arrière, de sorte que la face avant demeure lisse et facile à nettoyer. Il est utilisé pour les dosserets de cuisine, les revêtements muraux, les tableaux en verre inscriptibles et l'affichage."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Colours",
+      "zh": "颜色",
+      "fr": "Couleurs"
+     },
+     "value": {
+      "en": "Standard colours or matched to sample",
+      "zh": "标准色或按样配色",
+      "fr": "Couleurs standards ou agencées selon un échantillon"
+     }
+    },
+    {
+     "label": {
+      "en": "Surface",
+      "zh": "表面",
+      "fr": "Surface"
+     },
+     "value": {
+      "en": "Smooth, easy-to-clean front",
+      "zh": "正面光滑、易清洁",
+      "fr": "Face avant lisse et facile à nettoyer"
+     }
+    },
+    {
+     "label": {
+      "en": "Glass",
+      "zh": "玻璃",
+      "fr": "Verre"
+     },
+     "value": {
+      "en": "Clear or low iron",
+      "zh": "透明或超白",
+      "fr": "Clair ou extra-clair"
+     }
+    },
+    {
+     "label": {
+      "en": "Sizes",
+      "zh": "尺寸",
+      "fr": "Dimensions"
+     },
+     "value": {
+      "en": "Cut to your dimensions",
+      "zh": "按您的尺寸切割",
+      "fr": "Coupe selon vos dimensions"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Kitchen splashbacks",
+     "zh": "厨房防溅背板",
+     "fr": "Dosserets de cuisine"
+    },
+    {
+     "en": "Wall cladding",
+     "zh": "墙面饰板",
+     "fr": "Revêtements muraux"
+    },
+    {
+     "en": "Glass boards and signage",
+     "zh": "玻璃白板和标识",
+     "fr": "Tableaux en verre et affichage"
+    }
+   ],
+   "related": [
+    "silicone-adhesive",
+    "water-jet",
+    "cork-pads"
+   ]
+  },
+  {
+   "id": "safety-mirror",
+   "name": {
+    "en": "Safety-Backed Mirror",
+    "zh": "安全背膜镜",
+    "fr": "Miroir avec endos de sécurité"
+   },
+   "photo": "assets/img/products/vinyl-cat2.jpg",
+   "gallery": [
+    {
+     "image": "assets/img/products/vinyl-cat1.jpg",
+     "caption": {
+      "en": "Vinyl safety backing film",
+      "zh": "乙烯基安全背膜",
+      "fr": "Pellicule de sécurité à endos vinyle"
+     }
+    }
+   ],
+   "short": {
+    "en": "Mirror with vinyl safety backing rated Category I or Category II.",
+    "zh": "背面贴有 I 类或 II 类乙烯基安全背膜的镜子。",
+    "fr": "Miroir avec endos de sécurité en vinyle de catégorie I ou de catégorie II."
+   },
+   "description": {
+    "en": "Safety-backed mirror has a vinyl film applied to the back so that, if the glass breaks, the pieces stay bonded to the film. Category I is used for smaller mirrors; Category II for larger mirrors, doors, gyms and studios.",
+    "zh": "安全背膜镜背面贴有乙烯基膜，一旦玻璃破碎，碎片会粘附在膜上。I 类用于较小的镜子；II 类用于较大的镜子、门、健身房和工作室。",
+    "fr": "Le miroir avec endos de sécurité comporte une pellicule de vinyle appliquée au dos afin que, si le verre se brise, les morceaux restent collés à la pellicule. La catégorie I est utilisée pour les miroirs de plus petite taille; la catégorie II, pour les grands miroirs, les portes, les salles d'entraînement et les studios."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Backing",
+      "zh": "基材",
+      "fr": "Support"
+     },
+     "value": {
+      "en": "Vinyl safety film",
+      "zh": "乙烯基安全膜",
+      "fr": "Pellicule de sécurité en vinyle"
+     }
+    },
+    {
+     "label": {
+      "en": "Ratings",
+      "zh": "等级",
+      "fr": "Cotes"
+     },
+     "value": {
+      "en": "Category I or Category II",
+      "zh": "I 类或 II 类",
+      "fr": "Catégorie I ou catégorie II"
+     }
+    },
+    {
+     "label": {
+      "en": "Typical use",
+      "zh": "典型用途",
+      "fr": "Utilisation courante"
+     },
+     "value": {
+      "en": "Doors, gyms, studios, large walls",
+      "zh": "门、健身房、工作室、大面积墙面",
+      "fr": "Portes, salles d'entraînement, studios, grands murs"
+     }
+    },
+    {
+     "label": {
+      "en": "Sizes",
+      "zh": "尺寸",
+      "fr": "Dimensions"
+     },
+     "value": {
+      "en": "Cut to your dimensions",
+      "zh": "按您的尺寸切割",
+      "fr": "Coupe selon vos dimensions"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Mirrored closet and sliding doors",
+     "zh": "镜面衣柜门和推拉门",
+     "fr": "Portes de placard et portes coulissantes à miroir"
+    },
+    {
+     "en": "Gyms, dance and yoga studios",
+     "zh": "健身房、舞蹈室和瑜伽馆",
+     "fr": "Salles d'entraînement, studios de danse et de yoga"
+    },
+    {
+     "en": "Large wall mirrors",
+     "zh": "大型墙面镜",
+     "fr": "Grands miroirs muraux"
+    }
+   ],
+   "related": [
+    "vinyl-cat1",
+    "vinyl-cat2",
+    "grinding-wheels"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "items": [
+  {
+   "file": "assets/img/online/curtain-wall.jpg",
+   "author": "Alvesgaspar",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Chicago_September_2016-21.jpg",
+   "title": "Chicago September 2016-21"
+  },
+  {
+   "file": "assets/img/online/facade-up.jpg",
+   "author": "Dietmar Rabich",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:M%C3%BCnster,_LVM_--_2017_--_6351-7.jpg",
+   "title": "Münster, LVM, 2017"
+  },
+  {
+   "file": "assets/img/online/window-units.jpg",
+   "author": "W.carter",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:New_glass_doors_and_windows_in_storage.jpg",
+   "title": "New glass doors and windows in storage"
+  },
+  {
+   "file": "assets/img/online/waterjet-head.jpg",
+   "author": "unknown author",
+   "license": "Public domain",
+   "licenseUrl": "",
+   "source": "https://commons.wikimedia.org/wiki/File:Water_jet_cutter_tool.jpg",
+   "title": "Water jet cutter tool"
+  },
+  {
+   "file": "assets/img/online/sealant-bead.jpg",
+   "author": "Achim Hering",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Caulking.jpg",
+   "title": "Caulking"
+  }
+ ]
+}

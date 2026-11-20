@@ -38,7 +38,8 @@ def build(page: pathlib.Path) -> str:
     meta = {k.strip(): v.strip() for k, v in meta.items()}
     body = text[m.end():].rstrip() + '\n'
     # reusable blocks: <!-- include: cta --> pulls in _src/partials/cta.html
-    body = INCLUDE.sub(lambda i: (SRC / 'partials' / f'{i.group(1)}.html').read_text(encoding='utf-8'), body)
+    for _ in range(5):  # partials may include other partials
+        body = INCLUDE.sub(lambda i: (SRC / 'partials' / f'{i.group(1)}.html').read_text(encoding='utf-8'), body)
     nav = meta.get('nav', page.stem)
 
     html = LAYOUT

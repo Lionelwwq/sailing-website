@@ -1,0 +1,145 @@
+{
+ "hero_image": "assets/img/online/curtain-wall.jpg",
+ "hero_title": {
+  "en": "Contact us",
+  "zh": "联系我们",
+  "fr": "Nous joindre"
+ },
+ "hero_text": {
+  "en": "Request a free quote or ask us anything. We will reply with options, pricing and lead times.",
+  "zh": "索取免费报价或咨询任何问题。我们将为您提供可选方案、价格和交货周期。",
+  "fr": "Demandez une soumission gratuite ou posez-nous vos questions. Nous vous répondrons avec des options, des prix et des délais."
+ },
+ "form_title": {
+  "en": "Request a quote",
+  "zh": "获取报价",
+  "fr": "Demander une soumission"
+ },
+ "form_intro": {
+  "en": "Products you added to your quote list appear in the form automatically. Add sizes and quantities and send.",
+  "zh": "您加入询价清单的产品会自动显示在表单中。填写尺寸和数量后即可发送。",
+  "fr": "Les produits ajoutés à votre liste de soumission apparaissent automatiquement dans le formulaire. Précisez les dimensions et les quantités, puis envoyez."
+ },
+ "steps_title": {
+  "en": "How it works",
+  "zh": "询价流程",
+  "fr": "Comment ça fonctionne"
+ },
+ "steps": [
+  {
+   "title": {
+    "en": "Share your requirements",
+    "zh": "提交需求",
+    "fr": "Faites-nous part de vos besoins"
+   },
+   "text": {
+    "en": "Product or application, approximate sizes and quantities, location and timing.",
+    "zh": "产品或用途、大致尺寸和数量、地点及时间。",
+    "fr": "Produit ou application, dimensions et quantités approximatives, emplacement et échéancier."
+   }
+  },
+  {
+   "title": {
+    "en": "Review options",
+    "zh": "评估方案",
+    "fr": "Examinez les options"
+   },
+   "text": {
+    "en": "We review glass type, finishes, and whether you need supply, installation or both.",
+    "zh": "我们会评估玻璃类型、表面处理，以及您需要供货、安装还是两者兼有。",
+    "fr": "Nous examinons le type de verre, les finis et déterminons si vous avez besoin de la fourniture, de l'installation ou des deux."
+   }
+  },
+  {
+   "title": {
+    "en": "Receive a quote",
+    "zh": "收到报价",
+    "fr": "Recevez une soumission"
+   },
+   "text": {
+    "en": "One combined quote with pricing and lead times.",
+    "zh": "一份包含价格和交货周期的综合报价。",
+    "fr": "Une seule soumission combinée, avec prix et délais."
+   }
+  },
+  {
+   "title": {
+    "en": "Confirm & schedule",
+    "zh": "确认与排期",
+    "fr": "Confirmez et planifiez"
+   },
+   "text": {
+    "en": "We agree the details and schedule delivery or installation.",
+    "zh": "双方确认细节，安排交货或安装。",
+    "fr": "Nous convenons des détails et planifions la livraison ou l'installation."
+   }
+  }
+ ],
+ "faq_title": {
+  "en": "Frequently asked questions",
+  "zh": "常见问题",
+  "fr": "Foire aux questions"
+ },
+ "faq": [
+  {
+   "q": {
+    "en": "Can you supply products to my exact specifications?",
+    "zh": "能否按我的具体规格供货？",
+    "fr": "Pouvez-vous fournir des produits selon mes spécifications exactes?"
+   },
+   "a": {
+    "en": "Yes. Glass and mirrors are cut and processed to your requirements, and accessories are supplied according to your specifications. Send us sizes, quantities, finishes or a drawing.",
+    "zh": "可以。玻璃和镜子按您的要求切割和加工，配件按您的规格供应。请将尺寸、数量、表面处理要求或图纸发给我们。",
+    "fr": "Oui. Le verre et les miroirs sont coupés et transformés selon vos exigences, et les accessoires sont fournis selon vos spécifications. Envoyez-nous les dimensions, les quantités, les finis ou un dessin."
+   }
+  },
+  {
+   "q": {
+    "en": "How do I get a price?",
+    "zh": "如何获取价格？",
+    "fr": "Comment obtenir un prix?"
+   },
+   "a": {
+    "en": "Add products to your quote list as you browse and send the form, or call us. Quotes are free.",
+    "zh": "浏览时将产品加入询价清单并提交表单，或直接致电我们。报价免费。",
+    "fr": "Ajoutez des produits à votre liste de soumission au fil de votre navigation et envoyez le formulaire, ou appelez-nous. Les soumissions sont gratuites."
+   }
+  },
+  {
+   "q": {
+    "en": "Are the specifications on the website exact?",
+    "zh": "网站上的规格参数是否准确？",
+    "fr": "Les spécifications présentées sur le site Web sont-elles exactes?"
+   },
+   "a": {
+    "en": "They are typical values to help you compare products. Final specifications, options and lead times are confirmed in your quote.",
+    "zh": "这些是典型值，便于您比较产品。最终规格、选项和交货周期以报价为准。",
+    "fr": "Il s'agit de valeurs typiques pour vous aider à comparer les produits. Les spécifications finales, les options et les délais sont confirmés dans votre soumission."
+   }
+  },
+  {
+   "q": {
+    "en": "Do you install as well as supply?",
+    "zh": "你们既供货也安装吗？",
+    "fr": "Faites-vous l'installation en plus de la fourniture?"
+   },
+   "a": {
+    "en": "Yes. We install windshields, storefronts, windows and doors, and take on custom bath and shower projects, with a warranty on products and installation.",
+    "zh": "是的。我们安装挡风玻璃、店面和门窗，并承接定制浴室和淋浴房项目，产品和安装均提供质保。",
+    "fr": "Oui. Nous installons des pare-brise, des devantures, des fenêtres et des portes, et nous réalisons des projets de salle de bains et de douche sur mesure, avec une garantie sur les produits et l'installation."
+   }
+  },
+  {
+   "q": {
+    "en": "Who do you work with?",
+    "zh": "你们的客户有哪些？",
+    "fr": "Avec qui travaillez-vous?"
+   },
+   "a": {
+    "en": "Homeowners, builders, architects, fabricators, installers and businesses across residential, commercial and automotive work.",
+    "zh": "涵盖住宅、商业和汽车领域的房主、建筑商、建筑师、玻璃加工商、安装商和企业。",
+    "fr": "Propriétaires, constructeurs, architectes, transformateurs, installateurs et entreprises, dans les secteurs résidentiel, commercial et automobile."
+   }
+  }
+ ]
+}

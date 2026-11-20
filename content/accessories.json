@@ -1,0 +1,2363 @@
+{
+ "categories": [
+  {
+   "id": "handling",
+   "name": {
+    "en": "Handling & Storage",
+    "zh": "搬运与存储",
+    "fr": "Manutention et entreposage"
+   },
+   "blurb": {
+    "en": "Racks, shelves, pads and slings that protect glass from the truck to the cutting table.",
+    "zh": "玻璃架、存储架、垫片和吊带，从卸车到切割台全程保护玻璃。",
+    "fr": "Chevalets, étagères, tampons et élingues qui protègent le verre, du camion jusqu'à la table de coupe."
+   },
+   "cover": "assets/img/products/removable-shelf.jpg"
+  },
+  {
+   "id": "ig",
+   "name": {
+    "en": "Insulating & Sealing",
+    "zh": "中空与密封",
+    "fr": "Isolation et scellement"
+   },
+   "blurb": {
+    "en": "Spacers, desiccant, adhesives and tapes for insulating glass units built to last.",
+    "zh": "间隔条、干燥剂、胶粘剂和胶带，打造经久耐用的中空玻璃。",
+    "fr": "Intercalaires, déshydratant, adhésifs et rubans pour des unités de verre isolant conçues pour durer."
+   },
+   "cover": "assets/img/products/aluminum-spacer.jpg"
+  },
+  {
+   "id": "films",
+   "name": {
+    "en": "Films & Interlayers",
+    "zh": "胶片与中间膜",
+    "fr": "Pellicules et intercalaires"
+   },
+   "blurb": {
+    "en": "Laminating interlayers and mirror safety backing films for every application.",
+    "zh": "适用于各类应用的夹胶中间膜和镜子安全背膜。",
+    "fr": "Intercalaires de feuilletage et pellicules de sécurité pour endos de miroir, pour toutes les applications."
+   },
+   "cover": "assets/img/products/eva-film.jpg"
+  },
+  {
+   "id": "cutting",
+   "name": {
+    "en": "Cutting & Finishing",
+    "zh": "切割与精加工",
+    "fr": "Coupe et finition"
+   },
+   "blurb": {
+    "en": "Waterjet systems, abrasives, grinding wheels and polishing compounds.",
+    "zh": "水刀系统、磨料、磨轮和抛光材料。",
+    "fr": "Systèmes de découpe au jet d'eau, abrasifs, meules et composés de polissage."
+   },
+   "cover": "assets/img/products/water-jet.jpg"
+  }
+ ],
+ "items": [
+  {
+   "id": "cork-pads",
+   "category": "handling",
+   "name": {
+    "en": "Cork Pads",
+    "zh": "软木垫",
+    "fr": "Tampons de liège"
+   },
+   "photo": "assets/img/products/cork-pads.jpg",
+   "gallery": [],
+   "short": {
+    "en": "Separator pads that keep stacked glass from scratching in storage and transit.",
+    "zh": "隔离垫片，防止叠放的玻璃在存储和运输中划伤。",
+    "fr": "Tampons séparateurs qui empêchent le verre empilé de se rayer pendant l'entreposage et le transport."
+   },
+   "description": {
+    "en": "Cork separator pads go between glass sheets so stacked lites never touch. The cork cushions each sheet, absorbs road vibration and keeps faces free of scratches and chips. Pads come on rolls or sheets of release film for fast, one-handed application.",
+    "zh": "软木隔离垫放置在玻璃片之间，使叠放的玻璃互不接触。软木为每片玻璃提供缓冲，吸收运输途中的震动，保护玻璃表面免受划伤和崩边。垫片附着在成卷或成张的离型膜上，单手即可快速贴放。",
+    "fr": "Les tampons séparateurs en liège se placent entre les feuilles de verre pour que les vitres empilées ne se touchent jamais. Le liège amortit chaque feuille, absorbe les vibrations de la route et protège les faces contre les rayures et les éclats. Les tampons sont offerts en rouleaux ou en feuilles sur pellicule détachable pour une application rapide, d'une seule main."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Material",
+      "zh": "材质",
+      "fr": "Matériau"
+     },
+     "value": {
+      "en": "Natural cork; cork + foam available",
+      "zh": "天然软木；亦可提供软木 + 泡棉",
+      "fr": "Liège naturel; liège + mousse également offert"
+     }
+    },
+    {
+     "label": {
+      "en": "Pad size",
+      "zh": "垫片尺寸",
+      "fr": "Taille des tampons"
+     },
+     "value": {
+      "en": "15–25 mm, square or round",
+      "zh": "15–25 mm，方形或圆形",
+      "fr": "15–25 mm, carrés ou ronds"
+     }
+    },
+    {
+     "label": {
+      "en": "Thickness",
+      "zh": "厚度",
+      "fr": "Épaisseur"
+     },
+     "value": {
+      "en": "3–5 mm",
+      "zh": "3–5 mm",
+      "fr": "3–5 mm"
+     }
+    },
+    {
+     "label": {
+      "en": "Format",
+      "zh": "供货形式",
+      "fr": "Format"
+     },
+     "value": {
+      "en": "Rolls or sheets on release film",
+      "zh": "离型膜成卷或成张",
+      "fr": "Rouleaux ou feuilles sur pellicule détachable"
+     }
+    },
+    {
+     "label": {
+      "en": "Fixing",
+      "zh": "固定方式",
+      "fr": "Fixation"
+     },
+     "value": {
+      "en": "Static-cling foam or adhesive backing",
+      "zh": "静电吸附泡棉或背胶",
+      "fr": "Mousse électrostatique ou endos adhésif"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Stacking cut sizes and IG units",
+     "zh": "叠放切割成品和中空玻璃",
+     "fr": "Empilage de verre coupé à dimension et d'unités scellées"
+    },
+    {
+     "en": "Crating and shipping finished glass",
+     "zh": "成品玻璃装箱与运输",
+     "fr": "Mise en caisse et expédition du verre fini"
+    },
+    {
+     "en": "Protecting coated and mirror surfaces",
+     "zh": "保护镀膜和镜面表面",
+     "fr": "Protection des surfaces à couche et des miroirs"
+    }
+   ],
+   "options": [
+    {
+     "en": "Pad diameter and thickness",
+     "zh": "垫片直径和厚度",
+     "fr": "Diamètre et épaisseur des tampons"
+    },
+    {
+     "en": "Cork only or cork + foam",
+     "zh": "纯软木或软木 + 泡棉",
+     "fr": "Liège seul ou liège + mousse"
+    },
+    {
+     "en": "With or without adhesive",
+     "zh": "带胶或不带胶",
+     "fr": "Avec ou sans adhésif"
+    },
+    {
+     "en": "Roll or sheet format",
+     "zh": "成卷或成张",
+     "fr": "Format rouleau ou feuille"
+    }
+   ],
+   "tags": [
+    {
+     "en": "Anti-scratch",
+     "zh": "防划伤",
+     "fr": "Anti-rayures"
+    },
+    {
+     "en": "Custom sizes",
+     "zh": "定制尺寸",
+     "fr": "Tailles sur mesure"
+    }
+   ],
+   "related": [
+    "custom-rack",
+    "al-stock-shelf",
+    "removable-shelf"
+   ]
+  },
+  {
+   "id": "removable-shelf",
+   "category": "handling",
+   "name": {
+    "en": "Removable Storage Glass Shelf",
+    "zh": "可拆卸玻璃存储架",
+    "fr": "Étagère de rangement amovible pour verre"
+   },
+   "photo": "assets/img/products/removable-shelf.jpg",
+   "gallery": [],
+   "short": {
+    "en": "Mobile, demountable shelving that reconfigures as your inventory changes.",
+    "zh": "可移动、可拆装的货架，可随库存变化灵活调整。",
+    "fr": "Étagères mobiles et démontables qui se reconfigurent au gré de l'évolution de votre inventaire."
+   },
+   "description": {
+    "en": "A mobile storage shelf for cut sizes, remakes and offcuts. Dividers can be removed or repositioned, so the rack adapts to whatever is on your floor this week, and casters let you roll glass straight to the next station. Padded contact points protect edges and coated surfaces.",
+    "zh": "用于存放切割成品、返工件和边角料的移动存储架。隔板可拆卸或调整位置，货架可随车间当周的实际需求灵活调整；脚轮可将玻璃直接推送至下一工位。接触点配有衬垫，保护玻璃边缘和镀膜表面。",
+    "fr": "Une étagère de rangement mobile pour le verre coupé à dimension, les pièces à refaire et les retailles. Les séparateurs peuvent être retirés ou repositionnés, de sorte que l'étagère s'adapte à ce qui se trouve dans votre atelier cette semaine, et les roulettes permettent d'acheminer le verre directement au poste suivant. Les points de contact rembourrés protègent les bords et les surfaces à couche."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Frame",
+      "zh": "框架",
+      "fr": "Structure"
+     },
+     "value": {
+      "en": "Welded steel, painted or powder-coated",
+      "zh": "焊接钢结构，喷漆或粉末喷涂",
+      "fr": "Acier soudé, peint ou à revêtement en poudre"
+     }
+    },
+    {
+     "label": {
+      "en": "Dividers",
+      "zh": "隔板",
+      "fr": "Séparateurs"
+     },
+     "value": {
+      "en": "Removable and repositionable",
+      "zh": "可拆卸、可调整位置",
+      "fr": "Amovibles et repositionnables"
+     }
+    },
+    {
+     "label": {
+      "en": "Mobility",
+      "zh": "移动方式",
+      "fr": "Mobilité"
+     },
+     "value": {
+      "en": "Swivel casters (lockable) or fixed feet",
+      "zh": "万向脚轮（可锁定）或固定支脚",
+      "fr": "Roulettes pivotantes (verrouillables) ou pieds fixes"
+     }
+    },
+    {
+     "label": {
+      "en": "Padding",
+      "zh": "衬垫",
+      "fr": "Rembourrage"
+     },
+     "value": {
+      "en": "Rubber or felt on contact surfaces",
+      "zh": "接触面采用橡胶或毛毡",
+      "fr": "Caoutchouc ou feutre sur les surfaces de contact"
+     }
+    },
+    {
+     "label": {
+      "en": "Size",
+      "zh": "尺寸",
+      "fr": "Dimensions"
+     },
+     "value": {
+      "en": "Built to your floor space and glass sizes",
+      "zh": "根据您的场地空间和玻璃尺寸定制",
+      "fr": "Selon votre espace au sol et vos formats de verre"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Cut-size and remake storage",
+     "zh": "切割成品和返工件存储",
+     "fr": "Rangement du verre coupé à dimension et des pièces à refaire"
+    },
+    {
+     "en": "Moving glass between stations",
+     "zh": "工位之间转运玻璃",
+     "fr": "Déplacement du verre entre les postes"
+    },
+    {
+     "en": "Staging glass between processes",
+     "zh": "工序之间暂存玻璃",
+     "fr": "Mise en attente du verre entre les étapes de transformation"
+    }
+   ],
+   "options": [
+    {
+     "en": "Overall dimensions",
+     "zh": "外形尺寸",
+     "fr": "Dimensions hors tout"
+    },
+    {
+     "en": "Number of bays and dividers",
+     "zh": "格位和隔板数量",
+     "fr": "Nombre de compartiments et de séparateurs"
+    },
+    {
+     "en": "Mobile (casters) or fixed",
+     "zh": "移动式（脚轮）或固定式",
+     "fr": "Mobile (roulettes) ou fixe"
+    },
+    {
+     "en": "Rubber or felt padding",
+     "zh": "橡胶或毛毡衬垫",
+     "fr": "Rembourrage en caoutchouc ou en feutre"
+    }
+   ],
+   "tags": [
+    {
+     "en": "On casters",
+     "zh": "带脚轮",
+     "fr": "Sur roulettes"
+    },
+    {
+     "en": "Modular",
+     "zh": "模块化",
+     "fr": "Modulaire"
+    }
+   ],
+   "related": [
+    "custom-rack",
+    "al-stock-shelf",
+    "cork-pads"
+   ]
+  },
+  {
+   "id": "custom-rack",
+   "category": "handling",
+   "name": {
+    "en": "Customized Glass Rack",
+    "zh": "定制玻璃架",
+    "fr": "Chevalet à verre sur mesure"
+   },
+   "photo": "assets/img/products/custom-rack.jpg",
+   "gallery": [
+    {
+     "image": "assets/img/online/window-units.jpg",
+     "caption": {
+      "en": "In use: finished doors and windows stored on racks",
+      "zh": "使用实景：成品门窗存放在玻璃架上",
+      "fr": "En situation : portes et fenêtres finies entreposées sur chevalets"
+     }
+    }
+   ],
+   "short": {
+    "en": "Steel racks built to your glass sizes, loads and floor plan.",
+    "zh": "根据您的玻璃尺寸、载重和场地布局定制的钢制玻璃架。",
+    "fr": "Chevalets en acier fabriqués selon vos formats de verre, vos charges et l'aménagement de votre atelier."
+   },
+   "description": {
+    "en": "When standard racks do not fit, we build to your drawing. Customized glass racks are fabricated in steel to your dimensions and load requirements (A-frame, L-frame, harp or transport styles), with protective padding wherever glass makes contact and tie-down straps to secure the load.",
+    "zh": "标准架子不适用时，我们可按您的图纸制作。定制玻璃架采用钢材，按您的尺寸和载重要求制造（A 字架、L 型架、竖琴架或运输架等款式），所有与玻璃接触的部位均配有保护衬垫，并配备捆绑带固定货物。",
+    "fr": "Lorsque les chevalets standards ne conviennent pas, nous fabriquons selon votre dessin. Les chevalets à verre sur mesure sont fabriqués en acier selon vos dimensions et vos exigences de charge (modèles en A, en L, en harpe ou de transport), avec un rembourrage protecteur à chaque point de contact avec le verre et des sangles d'arrimage pour retenir la charge."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Styles",
+      "zh": "款式",
+      "fr": "Modèles"
+     },
+     "value": {
+      "en": "A-frame, L-frame, harp, transport",
+      "zh": "A 字架、L 型架、竖琴架、运输架",
+      "fr": "En A, en L, en harpe, de transport"
+     }
+    },
+    {
+     "label": {
+      "en": "Frame",
+      "zh": "框架",
+      "fr": "Structure"
+     },
+     "value": {
+      "en": "Welded steel, painted or powder-coated",
+      "zh": "焊接钢结构，喷漆或粉末喷涂",
+      "fr": "Acier soudé, peint ou à revêtement en poudre"
+     }
+    },
+    {
+     "label": {
+      "en": "Load capacity",
+      "zh": "承载能力",
+      "fr": "Capacité de charge"
+     },
+     "value": {
+      "en": "Engineered to your requirement",
+      "zh": "按您的要求设计",
+      "fr": "Conçue selon vos exigences"
+     }
+    },
+    {
+     "label": {
+      "en": "Handling",
+      "zh": "搬运方式",
+      "fr": "Manutention"
+     },
+     "value": {
+      "en": "Forklift pockets, lifting lugs or casters",
+      "zh": "叉车孔、吊耳或脚轮",
+      "fr": "Fourreaux pour chariot élévateur, anneaux de levage ou roulettes"
+     }
+    },
+    {
+     "label": {
+      "en": "Securing",
+      "zh": "货物固定",
+      "fr": "Arrimage"
+     },
+     "value": {
+      "en": "Rubber padding and tie-down straps",
+      "zh": "橡胶衬垫和捆绑带",
+      "fr": "Rembourrage en caoutchouc et sangles d'arrimage"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Shop-floor storage",
+     "zh": "车间存储",
+     "fr": "Entreposage en atelier"
+    },
+    {
+     "en": "Truck and trailer transport",
+     "zh": "卡车和挂车运输",
+     "fr": "Transport par camion et remorque"
+    },
+    {
+     "en": "Jobsite delivery and staging",
+     "zh": "工地交付和暂存",
+     "fr": "Livraison et mise en attente au chantier"
+    }
+   ],
+   "options": [
+    {
+     "en": "A-frame, L-frame, harp or transport style",
+     "zh": "A 字架、L 型架、竖琴架或运输架款式",
+     "fr": "Modèle en A, en L, en harpe ou de transport"
+    },
+    {
+     "en": "Dimensions and load capacity",
+     "zh": "尺寸和承载能力",
+     "fr": "Dimensions et capacité de charge"
+    },
+    {
+     "en": "Forklift pockets, lifting points or casters",
+     "zh": "叉车孔、吊点或脚轮",
+     "fr": "Fourreaux pour chariot élévateur, points de levage ou roulettes"
+    },
+    {
+     "en": "Padding, straps and finish",
+     "zh": "衬垫、绑带和表面处理",
+     "fr": "Rembourrage, sangles et fini"
+    }
+   ],
+   "tags": [
+    {
+     "en": "Built to drawing",
+     "zh": "按图定制",
+     "fr": "Fabriqué selon dessin"
+    },
+    {
+     "en": "Transport ready",
+     "zh": "可直接运输",
+     "fr": "Prêt pour le transport"
+    }
+   ],
+   "related": [
+    "al-stock-shelf",
+    "glass-sling",
+    "cork-pads"
+   ]
+  },
+  {
+   "id": "al-stock-shelf",
+   "category": "handling",
+   "name": {
+    "en": "AL-Type Sheet Glass Stock Shelf",
+    "zh": "AL 型原片玻璃存储架",
+    "fr": "Chevalet de stockage type AL pour verre en feuilles"
+   },
+   "photo": "assets/img/products/al-stock-shelf.jpg",
+   "gallery": [],
+   "short": {
+    "en": "Heavy-duty A- and L-frame racks for storing jumbo and full-size stock sheets.",
+    "zh": "重型 A 字架和 L 型架，用于存放超大板和整板原片玻璃。",
+    "fr": "Chevalets robustes en A et en L pour l'entreposage de feuilles de stock jumbo et pleine grandeur."
+   },
+   "description": {
+    "en": "AL-type stock shelves hold full-size and jumbo sheet glass at a safe lean angle. The A-type is double-sided for maximum capacity, and the L-type stands against a wall and loads from one side. Both are padded with rubber to protect glass edges and faces.",
+    "zh": "AL 型原片架以安全的倾斜角度存放整板和超大板玻璃。A 型为双面架，存放量最大；L 型靠墙放置，单面装载。两者均配有橡胶衬垫，保护玻璃边缘和表面。",
+    "fr": "Les chevalets de stockage type AL retiennent le verre en feuilles pleine grandeur et jumbo selon un angle d'inclinaison sécuritaire. Le type A est à double face pour une capacité maximale, tandis que le type L s'appuie contre un mur et se charge d'un seul côté. Les deux sont rembourrés de caoutchouc pour protéger les bords et les faces du verre."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Types",
+      "zh": "类型",
+      "fr": "Types"
+     },
+     "value": {
+      "en": "A-type (two-sided) or L-type (one-sided)",
+      "zh": "A 型（双面）或 L 型（单面）",
+      "fr": "Type A (deux faces) ou type L (une face)"
+     }
+    },
+    {
+     "label": {
+      "en": "Frame",
+      "zh": "框架",
+      "fr": "Structure"
+     },
+     "value": {
+      "en": "Welded steel, painted",
+      "zh": "焊接钢结构，喷漆",
+      "fr": "Acier soudé, peint"
+     }
+    },
+    {
+     "label": {
+      "en": "Lean",
+      "zh": "倾角",
+      "fr": "Inclinaison"
+     },
+     "value": {
+      "en": "Slight back-lean for safe storage",
+      "zh": "略微后倾，存放安全",
+      "fr": "Légère inclinaison vers l'arrière pour un entreposage sécuritaire"
+     }
+    },
+    {
+     "label": {
+      "en": "Padding",
+      "zh": "衬垫",
+      "fr": "Rembourrage"
+     },
+     "value": {
+      "en": "Rubber on base and uprights",
+      "zh": "底座和立柱配有橡胶",
+      "fr": "Caoutchouc sur la base et les montants"
+     }
+    },
+    {
+     "label": {
+      "en": "Size",
+      "zh": "尺寸",
+      "fr": "Dimensions"
+     },
+     "value": {
+      "en": "Built for jumbo or full-size sheets",
+      "zh": "适用于超大板或整板原片",
+      "fr": "Pour feuilles jumbo ou pleine grandeur"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Jumbo and full-size stock storage",
+     "zh": "超大板和整板原片存储",
+     "fr": "Entreposage de feuilles jumbo et pleine grandeur"
+    },
+    {
+     "en": "Feeding cutting tables",
+     "zh": "为切割台供片",
+     "fr": "Alimentation des tables de coupe"
+    },
+    {
+     "en": "Warehouse inventory",
+     "zh": "仓库库存",
+     "fr": "Inventaire d'entrepôt"
+    }
+   ],
+   "options": [
+    {
+     "en": "A-type (double-sided) or L-type (single-sided)",
+     "zh": "A 型（双面）或 L 型（单面）",
+     "fr": "Type A (double face) ou type L (simple face)"
+    },
+    {
+     "en": "Length, height and number of bays",
+     "zh": "长度、高度和格位数量",
+     "fr": "Longueur, hauteur et nombre de compartiments"
+    },
+    {
+     "en": "Load capacity",
+     "zh": "承载能力",
+     "fr": "Capacité de charge"
+    },
+    {
+     "en": "Rubber padding",
+     "zh": "橡胶衬垫",
+     "fr": "Rembourrage en caoutchouc"
+    }
+   ],
+   "tags": [
+    {
+     "en": "A & L types",
+     "zh": "A 型和 L 型",
+     "fr": "Types A et L"
+    },
+    {
+     "en": "Heavy duty",
+     "zh": "重型",
+     "fr": "Robuste"
+    }
+   ],
+   "related": [
+    "custom-rack",
+    "glass-sling",
+    "removable-shelf"
+   ]
+  },
+  {
+   "id": "glass-sling",
+   "category": "handling",
+   "name": {
+    "en": "Glass Sling",
+    "zh": "玻璃吊带",
+    "fr": "Élingue à verre"
+   },
+   "photo": "assets/img/products/glass-sling.jpg",
+   "gallery": [],
+   "short": {
+    "en": "Lifting slings for safely moving glass crates and bundles by crane.",
+    "zh": "吊装带，用于通过起重机安全吊运玻璃箱和玻璃捆。",
+    "fr": "Élingues de levage pour déplacer de façon sécuritaire les caisses et les lots de verre à la grue."
+   },
+   "description": {
+    "en": "Glass slings let you lift crates, packs and bundles with an overhead crane or forklift attachment. Made from high-strength webbing with reinforced eyes, they cradle the load evenly and reduce point pressure on glass edges. Slings are colour-coded so the working load limit is clear at a glance.",
+    "zh": "玻璃吊带可配合行车或叉车属具吊运玻璃箱、玻璃包和玻璃捆。吊带采用高强度织带，配有加强吊眼，可均匀承托货物，减少玻璃边缘的局部受压。吊带按颜色区分，额定工作载荷一目了然。",
+    "fr": "Les élingues à verre permettent de soulever des caisses, des paquets et des lots à l'aide d'un pont roulant ou d'un accessoire de chariot élévateur. Fabriquées en sangle à haute résistance avec boucles renforcées, elles soutiennent la charge uniformément et réduisent la pression ponctuelle sur les bords du verre. Les élingues sont codées par couleur pour que la charge maximale d'utilisation soit visible d'un coup d'œil."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Material",
+      "zh": "材质",
+      "fr": "Matériau"
+     },
+     "value": {
+      "en": "High-strength polyester webbing",
+      "zh": "高强度涤纶织带",
+      "fr": "Sangle en polyester à haute résistance"
+     }
+    },
+    {
+     "label": {
+      "en": "Capacity",
+      "zh": "载重",
+      "fr": "Capacité"
+     },
+     "value": {
+      "en": "Colour-coded by working load limit",
+      "zh": "按额定工作载荷以颜色区分",
+      "fr": "Code de couleur selon la charge maximale d'utilisation"
+     }
+    },
+    {
+     "label": {
+      "en": "Length",
+      "zh": "长度",
+      "fr": "Longueur"
+     },
+     "value": {
+      "en": "To your requirement",
+      "zh": "按您的要求",
+      "fr": "Selon vos besoins"
+     }
+    },
+    {
+     "label": {
+      "en": "Ends",
+      "zh": "端部",
+      "fr": "Extrémités"
+     },
+     "value": {
+      "en": "Flat or reinforced eyes",
+      "zh": "扁平或加强吊眼",
+      "fr": "Boucles plates ou renforcées"
+     }
+    },
+    {
+     "label": {
+      "en": "Use with",
+      "zh": "配套设备",
+      "fr": "À utiliser avec"
+     },
+     "value": {
+      "en": "Overhead cranes and forklift attachments",
+      "zh": "行车和叉车属具",
+      "fr": "Ponts roulants et accessoires de chariot élévateur"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Unloading containers and trucks",
+     "zh": "集装箱和卡车卸货",
+     "fr": "Déchargement de conteneurs et de camions"
+    },
+    {
+     "en": "Moving packs to cutting lines",
+     "zh": "将玻璃包转运至切割线",
+     "fr": "Acheminement des paquets vers les lignes de coupe"
+    },
+    {
+     "en": "Jobsite hoisting",
+     "zh": "工地吊装",
+     "fr": "Levage sur chantier"
+    }
+   ],
+   "options": [
+    {
+     "en": "Working load limit",
+     "zh": "额定工作载荷",
+     "fr": "Charge maximale d'utilisation"
+    },
+    {
+     "en": "Length and width",
+     "zh": "长度和宽度",
+     "fr": "Longueur et largeur"
+    },
+    {
+     "en": "Eye type",
+     "zh": "吊眼类型",
+     "fr": "Type de boucle"
+    },
+    {
+     "en": "Single or paired slings",
+     "zh": "单根或成对吊带",
+     "fr": "Élingues simples ou en paire"
+    }
+   ],
+   "tags": [
+    {
+     "en": "Crane lifting",
+     "zh": "起重吊装",
+     "fr": "Levage à la grue"
+    },
+    {
+     "en": "Colour-coded",
+     "zh": "颜色标识",
+     "fr": "Code de couleur"
+    }
+   ],
+   "related": [
+    "custom-rack",
+    "al-stock-shelf",
+    "cork-pads"
+   ]
+  },
+  {
+   "id": "eva-film",
+   "category": "films",
+   "name": {
+    "en": "EVA Film",
+    "zh": "EVA 胶片",
+    "fr": "Intercalaire EVA"
+   },
+   "photo": "assets/img/products/eva-film.jpg",
+   "gallery": [
+    {
+     "image": "assets/img/glass/laminated.jpg",
+     "caption": {
+      "en": "Result: laminated safety glass",
+      "zh": "成品：夹胶安全玻璃",
+      "fr": "Résultat : verre feuilleté de sécurité"
+     }
+    }
+   ],
+   "short": {
+    "en": "Ethylene-vinyl acetate interlayer for clear and decorative laminated glass.",
+    "zh": "乙烯-醋酸乙烯酯中间膜，用于透明夹胶玻璃和装饰夹胶玻璃。",
+    "fr": "Intercalaire en éthylène-acétate de vinyle pour verre feuilleté clair et décoratif."
+   },
+   "description": {
+    "en": "EVA film bonds two or more glass layers into laminated safety glass. It offers strong adhesion, good moisture resistance and high clarity, and it lets you laminate fabrics, meshes and prints between glass for decorative work. EVA is typically processed in a vacuum laminating oven.",
+    "zh": "EVA 胶片可将两层或多层玻璃粘合成夹胶安全玻璃。它粘结力强、防潮性好、透明度高，还可将织物、金属网和印刷图案夹在玻璃之间，用于装饰用途。EVA 通常在真空夹胶炉中加工。",
+    "fr": "L'intercalaire EVA lie deux couches de verre ou plus pour former un verre feuilleté de sécurité. Il offre une forte adhérence, une bonne résistance à l'humidité et une grande clarté, et il permet d'intégrer des tissus, des treillis et des impressions entre les verres pour des réalisations décoratives. L'EVA est généralement mis en œuvre dans un four de feuilletage sous vide."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Material",
+      "zh": "材质",
+      "fr": "Matériau"
+     },
+     "value": {
+      "en": "Ethylene-vinyl acetate (EVA)",
+      "zh": "乙烯-醋酸乙烯酯（EVA）",
+      "fr": "Éthylène-acétate de vinyle (EVA)"
+     }
+    },
+    {
+     "label": {
+      "en": "Thickness",
+      "zh": "厚度",
+      "fr": "Épaisseur"
+     },
+     "value": {
+      "en": "0.38, 0.50 or 0.76 mm",
+      "zh": "0.38、0.50 或 0.76 mm",
+      "fr": "0,38 mm, 0,50 mm ou 0,76 mm"
+     }
+    },
+    {
+     "label": {
+      "en": "Width",
+      "zh": "宽度",
+      "fr": "Largeur"
+     },
+     "value": {
+      "en": "Up to about 2,500 mm",
+      "zh": "最宽约 2,500 mm",
+      "fr": "Jusqu'à environ 2 500 mm"
+     }
+    },
+    {
+     "label": {
+      "en": "Finishes",
+      "zh": "外观效果",
+      "fr": "Finis"
+     },
+     "value": {
+      "en": "Clear, ultra-clear, white, frosted, colored",
+      "zh": "透明、超白、白色、磨砂、彩色",
+      "fr": "Clair, extra-clair, blanc, givré, coloré"
+     }
+    },
+    {
+     "label": {
+      "en": "Processing",
+      "zh": "加工方式",
+      "fr": "Mise en œuvre"
+     },
+     "value": {
+      "en": "Vacuum laminating oven",
+      "zh": "真空夹胶炉",
+      "fr": "Four de feuilletage sous vide"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Laminated safety glass",
+     "zh": "夹胶安全玻璃",
+     "fr": "Verre feuilleté de sécurité"
+    },
+    {
+     "en": "Decorative glass with fabrics or prints",
+     "zh": "夹织物或印刷图案的装饰玻璃",
+     "fr": "Verre décoratif avec tissus ou impressions"
+    },
+    {
+     "en": "Partitions, railings and canopies",
+     "zh": "隔断、栏杆和雨棚",
+     "fr": "Cloisons, garde-corps et marquises"
+    }
+   ],
+   "options": [
+    {
+     "en": "Thickness",
+     "zh": "厚度",
+     "fr": "Épaisseur"
+    },
+    {
+     "en": "Roll width and length",
+     "zh": "卷宽和卷长",
+     "fr": "Largeur et longueur du rouleau"
+    },
+    {
+     "en": "Clear, ultra-clear, white or colored",
+     "zh": "透明、超白、白色或彩色",
+     "fr": "Clair, extra-clair, blanc ou coloré"
+    },
+    {
+     "en": "Frosted and opaque finishes",
+     "zh": "磨砂和不透明效果",
+     "fr": "Finis givrés et opaques"
+    }
+   ],
+   "tags": [
+    {
+     "en": "Laminating",
+     "zh": "夹胶",
+     "fr": "Feuilletage"
+    },
+    {
+     "en": "Decorative",
+     "zh": "装饰",
+     "fr": "Décoratif"
+    }
+   ],
+   "related": [
+    "grinding-wheels",
+    "water-jet",
+    "cerium-dioxide"
+   ]
+  },
+  {
+   "id": "aluminum-spacer",
+   "category": "ig",
+   "name": {
+    "en": "Aluminum Spacer",
+    "zh": "铝间隔条",
+    "fr": "Intercalaire (espaceur) en aluminium"
+   },
+   "photo": "assets/img/products/aluminum-spacer.jpg",
+   "gallery": [
+    {
+     "image": "assets/img/glass/insulated.jpg",
+     "caption": {
+      "en": "Result: a finished insulating glass unit",
+      "zh": "成品：中空玻璃",
+      "fr": "Résultat : une unité de verre isolant terminée"
+     }
+    }
+   ],
+   "short": {
+    "en": "Hollow aluminum spacer bar that holds the gap in insulating glass units.",
+    "zh": "空心铝间隔条，用于保持中空玻璃的间隔距离。",
+    "fr": "Barre intercalaire creuse en aluminium qui maintient l'espace entre les vitres des unités de verre isolant."
+   },
+   "description": {
+    "en": "The aluminum spacer sets and holds the cavity between panes in an insulating glass unit. Its hollow, perforated profile is filled with molecular sieve, which draws moisture out of the sealed air space through the breather holes. Bendable and cut-and-corner-key versions are available.",
+    "zh": "铝间隔条用于确定并保持中空玻璃各片玻璃之间的空腔。其空心带孔的型材内填充分子筛，通过透气孔吸收密封空腔内的水汽。可提供折弯型以及切断后用角码连接的型号。",
+    "fr": "L'intercalaire en aluminium établit et maintient la lame d'air entre les vitres d'une unité de verre isolant. Son profilé creux et perforé est rempli de tamis moléculaire, qui retire l'humidité de l'espace d'air scellé par les trous de respiration. Des versions cintrables et des versions coupées avec équerres d'angle sont offertes."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Material",
+      "zh": "材质",
+      "fr": "Matériau"
+     },
+     "value": {
+      "en": "Aluminum, mill or anodized",
+      "zh": "铝材，原色或阳极氧化",
+      "fr": "Aluminium, fini brut ou anodisé"
+     }
+    },
+    {
+     "label": {
+      "en": "Width",
+      "zh": "宽度",
+      "fr": "Largeur"
+     },
+     "value": {
+      "en": "6–24 mm cavity",
+      "zh": "6–24 mm 空腔",
+      "fr": "Lame d'air de 6–24 mm"
+     }
+    },
+    {
+     "label": {
+      "en": "Profile",
+      "zh": "型材",
+      "fr": "Profilé"
+     },
+     "value": {
+      "en": "Hollow, with breather perforations",
+      "zh": "空心，带透气孔",
+      "fr": "Creux, avec perforations de respiration"
+     }
+    },
+    {
+     "label": {
+      "en": "Corners",
+      "zh": "转角",
+      "fr": "Coins"
+     },
+     "value": {
+      "en": "Bendable, or cut with corner keys",
+      "zh": "可折弯，或切断后用角码连接",
+      "fr": "Cintrable, ou coupé avec équerres d'angle"
+     }
+    },
+    {
+     "label": {
+      "en": "Filled with",
+      "zh": "填充物",
+      "fr": "Rempli de"
+     },
+     "value": {
+      "en": "Molecular sieve desiccant",
+      "zh": "分子筛干燥剂",
+      "fr": "Déshydratant à tamis moléculaire"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Double and triple glazed IG units",
+     "zh": "双玻和三玻中空玻璃",
+     "fr": "Unités scellées à double et triple vitrage"
+    },
+    {
+     "en": "Windows, curtain wall and storefronts",
+     "zh": "窗户、幕墙和店面",
+     "fr": "Fenêtres, murs-rideaux et devantures"
+    },
+    {
+     "en": "Refrigerated display doors",
+     "zh": "冷柜展示门",
+     "fr": "Portes de présentoirs réfrigérés"
+    }
+   ],
+   "options": [
+    {
+     "en": "Width (cavity size)",
+     "zh": "宽度（空腔尺寸）",
+     "fr": "Largeur (épaisseur de la lame d'air)"
+    },
+    {
+     "en": "Bendable or cut with corner keys",
+     "zh": "可折弯或切断后用角码连接",
+     "fr": "Cintrable ou coupé avec équerres d'angle"
+    },
+    {
+     "en": "Mill or anodized finish",
+     "zh": "原色或阳极氧化表面",
+     "fr": "Fini brut ou anodisé"
+    },
+    {
+     "en": "Bar length",
+     "zh": "条长",
+     "fr": "Longueur des barres"
+    }
+   ],
+   "tags": [
+    {
+     "en": "IG units",
+     "zh": "中空玻璃",
+     "fr": "Unités scellées"
+    },
+    {
+     "en": "Bendable",
+     "zh": "可折弯",
+     "fr": "Cintrable"
+    }
+   ],
+   "related": [
+    "molecular-sieve",
+    "silicone-adhesive",
+    "green-adhesive"
+   ]
+  },
+  {
+   "id": "green-adhesive",
+   "category": "ig",
+   "name": {
+    "en": "High Temperature Green Adhesive",
+    "zh": "耐高温绿色胶带",
+    "fr": "Adhésif vert haute température"
+   },
+   "photo": "assets/img/products/green-adhesive.jpg",
+   "gallery": [],
+   "short": {
+    "en": "Heat-resistant green tape that masks cleanly and peels off without residue.",
+    "zh": "耐高温绿色胶带，遮蔽干净利落，揭除无残胶。",
+    "fr": "Ruban vert résistant à la chaleur qui masque proprement et se retire sans laisser de résidu."
+   },
+   "description": {
+    "en": "A heat-resistant green polyester tape with a silicone adhesive. It holds up to oven and curing temperatures, masks crisp edges during coating, and peels off cleanly without leaving residue on glass or metal.",
+    "zh": "一种采用有机硅胶粘剂的耐高温绿色聚酯胶带。可耐受烘烤和固化温度，在涂装过程中遮蔽出清晰的边缘，揭除干净，不会在玻璃或金属上留下残胶。",
+    "fr": "Ruban de polyester vert résistant à la chaleur, avec adhésif à base de silicone. Il résiste aux températures des fours et de polymérisation, assure un masquage aux contours nets pendant l'application des revêtements et se retire proprement sans laisser de résidu sur le verre ou le métal."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Backing",
+      "zh": "基材",
+      "fr": "Support"
+     },
+     "value": {
+      "en": "Green polyester (PET) film",
+      "zh": "绿色聚酯（PET）薄膜",
+      "fr": "Pellicule de polyester (PET) verte"
+     }
+    },
+    {
+     "label": {
+      "en": "Adhesive",
+      "zh": "胶粘剂",
+      "fr": "Adhésif"
+     },
+     "value": {
+      "en": "Silicone",
+      "zh": "有机硅",
+      "fr": "Silicone"
+     }
+    },
+    {
+     "label": {
+      "en": "Heat resistance",
+      "zh": "耐温",
+      "fr": "Résistance à la chaleur"
+     },
+     "value": {
+      "en": "Up to about 200 °C",
+      "zh": "最高约 200 °C",
+      "fr": "Jusqu'à environ 200 °C"
+     }
+    },
+    {
+     "label": {
+      "en": "Removal",
+      "zh": "揭除",
+      "fr": "Retrait"
+     },
+     "value": {
+      "en": "Clean, residue-free",
+      "zh": "干净无残胶",
+      "fr": "Propre, sans résidu"
+     }
+    },
+    {
+     "label": {
+      "en": "Formats",
+      "zh": "供货形式",
+      "fr": "Formats"
+     },
+     "value": {
+      "en": "Rolls, die-cut dots and shapes",
+      "zh": "成卷、模切圆点和异形件",
+      "fr": "Rouleaux, pastilles et formes prédécoupées"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Masking during coating and curing",
+     "zh": "涂装和固化时遮蔽",
+     "fr": "Masquage pendant le revêtement et la polymérisation"
+    },
+    {
+     "en": "Holding parts during heat processes",
+     "zh": "热处理过程中固定部件",
+     "fr": "Maintien des pièces pendant les traitements thermiques"
+    },
+    {
+     "en": "Protecting edges and finished surfaces",
+     "zh": "保护边缘和成品表面",
+     "fr": "Protection des bords et des surfaces finies"
+    }
+   ],
+   "options": [
+    {
+     "en": "Width and roll length",
+     "zh": "宽度和卷长",
+     "fr": "Largeur et longueur du rouleau"
+    },
+    {
+     "en": "Thickness",
+     "zh": "厚度",
+     "fr": "Épaisseur"
+    },
+    {
+     "en": "Die-cut shapes and dots",
+     "zh": "模切异形件和圆点",
+     "fr": "Formes et pastilles prédécoupées"
+    }
+   ],
+   "tags": [
+    {
+     "en": "Heat resistant",
+     "zh": "耐高温",
+     "fr": "Résistant à la chaleur"
+    },
+    {
+     "en": "Clean removal",
+     "zh": "揭除无残胶",
+     "fr": "Retrait propre"
+    }
+   ],
+   "related": [
+    "aluminum-spacer",
+    "silicone-adhesive",
+    "eva-film"
+   ]
+  },
+  {
+   "id": "silicone-adhesive",
+   "category": "ig",
+   "name": {
+    "en": "Silicone Adhesive",
+    "zh": "硅酮胶",
+    "fr": "Adhésif de silicone"
+   },
+   "photo": "assets/img/products/silicone-adhesive.jpg",
+   "gallery": [
+    {
+     "image": "assets/img/online/sealant-bead.jpg",
+     "caption": {
+      "en": "Sealant extruded from a cartridge",
+      "zh": "从胶筒中挤出的密封胶",
+      "fr": "Scellant extrudé d'une cartouche"
+     }
+    },
+    {
+     "image": "assets/img/glass/insulated.jpg",
+     "caption": {
+      "en": "Secondary seal around an IG unit",
+      "zh": "中空玻璃周边的二道密封",
+      "fr": "Scellement secondaire autour d'une unité scellée"
+     }
+    }
+   ],
+   "short": {
+    "en": "Weather-resistant silicone for IG secondary sealing and glazing.",
+    "zh": "耐候硅酮胶，用于中空玻璃二道密封和玻璃安装。",
+    "fr": "Silicone résistant aux intempéries pour le scellement secondaire des unités scellées et le vitrage."
+   },
+   "description": {
+    "en": "Silicone adhesive gives a durable, flexible bond that resists UV, moisture and temperature swings. It is used as the secondary seal in insulating glass units and for structural and weather-seal glazing, where long-term adhesion to glass and aluminum is essential.",
+    "zh": "硅酮胶可形成持久、柔韧的粘结，耐紫外线、耐潮湿、耐温度变化。它用作中空玻璃的二道密封，也用于结构及耐候密封玻璃安装，这些场合都要求与玻璃和铝材长期可靠粘结。",
+    "fr": "L'adhésif de silicone procure un collage durable et flexible qui résiste aux UV, à l'humidité et aux variations de température. Il sert de scellement secondaire dans les unités de verre isolant ainsi que pour le vitrage structural et les joints d'étanchéité aux intempéries, où une adhérence durable au verre et à l'aluminium est essentielle."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Chemistry",
+      "zh": "化学类型",
+      "fr": "Composition chimique"
+     },
+     "value": {
+      "en": "Neutral-cure silicone",
+      "zh": "中性固化硅酮",
+      "fr": "Silicone à réticulation neutre"
+     }
+    },
+    {
+     "label": {
+      "en": "Types",
+      "zh": "类型",
+      "fr": "Types"
+     },
+     "value": {
+      "en": "One- or two-component",
+      "zh": "单组分或双组分",
+      "fr": "Monocomposant ou bicomposant"
+     }
+    },
+    {
+     "label": {
+      "en": "Packaging",
+      "zh": "包装",
+      "fr": "Emballage"
+     },
+     "value": {
+      "en": "Cartridges, sausages or drums",
+      "zh": "硬支、软支或桶装",
+      "fr": "Cartouches, poches souples ou barils"
+     }
+    },
+    {
+     "label": {
+      "en": "Colours",
+      "zh": "颜色",
+      "fr": "Couleurs"
+     },
+     "value": {
+      "en": "Black, grey, white or clear",
+      "zh": "黑色、灰色、白色或透明",
+      "fr": "Noir, gris, blanc ou transparent"
+     }
+    },
+    {
+     "label": {
+      "en": "Resists",
+      "zh": "耐受",
+      "fr": "Résistance"
+     },
+     "value": {
+      "en": "UV, moisture and temperature cycling",
+      "zh": "紫外线、潮湿和冷热循环",
+      "fr": "UV, humidité et cycles de température"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "IG secondary sealing",
+     "zh": "中空玻璃二道密封",
+     "fr": "Scellement secondaire des unités scellées"
+    },
+    {
+     "en": "Structural and weather-seal glazing",
+     "zh": "结构及耐候密封玻璃安装",
+     "fr": "Vitrage structural et joints d'étanchéité aux intempéries"
+    },
+    {
+     "en": "Shower, mirror and interior glass bonding",
+     "zh": "淋浴房、镜子和室内玻璃粘接",
+     "fr": "Collage de douches, de miroirs et de verre intérieur"
+    }
+   ],
+   "options": [
+    {
+     "en": "One- or two-component",
+     "zh": "单组分或双组分",
+     "fr": "Monocomposant ou bicomposant"
+    },
+    {
+     "en": "Cartridge, sausage or drum",
+     "zh": "硬支、软支或桶装",
+     "fr": "Cartouche, poche souple ou baril"
+    },
+    {
+     "en": "Black, grey, white or clear",
+     "zh": "黑色、灰色、白色或透明",
+     "fr": "Noir, gris, blanc ou transparent"
+    },
+    {
+     "en": "Neutral cure",
+     "zh": "中性固化",
+     "fr": "Réticulation neutre"
+    }
+   ],
+   "tags": [
+    {
+     "en": "UV stable",
+     "zh": "抗紫外线",
+     "fr": "Stable aux UV"
+    },
+    {
+     "en": "IG & glazing",
+     "zh": "中空与安装",
+     "fr": "Unités scellées et vitrage"
+    }
+   ],
+   "related": [
+    "aluminum-spacer",
+    "molecular-sieve",
+    "green-adhesive"
+   ]
+  },
+  {
+   "id": "molecular-sieve",
+   "category": "ig",
+   "name": {
+    "en": "Molecular Sieve",
+    "zh": "分子筛",
+    "fr": "Tamis moléculaire"
+   },
+   "photo": "assets/img/products/molecular-sieve.jpg",
+   "gallery": [
+    {
+     "image": "assets/img/glass/insulated.jpg",
+     "caption": {
+      "en": "Keeps IG units dry and clear inside",
+      "zh": "保持中空玻璃内部干燥通透",
+      "fr": "Garde l'intérieur des unités scellées sec et clair"
+     }
+    }
+   ],
+   "short": {
+    "en": "3A desiccant beads that keep insulating glass dry and fog-free.",
+    "zh": "3A 干燥剂颗粒，保持中空玻璃干燥、不起雾。",
+    "fr": "Billes déshydratantes 3A qui gardent le verre isolant sec et sans buée."
+   },
+   "description": {
+    "en": "Molecular sieve is a crystalline desiccant that fills the hollow spacer bar. Its uniform pores capture water vapour from the sealed air space while leaving larger gas molecules alone, keeping the unit dry for its service life and preventing internal fogging.",
+    "zh": "分子筛是一种填充在空心间隔条内的晶体干燥剂。其均匀的孔径可吸附密封空腔中的水蒸气，而不吸附较大的气体分子，使中空玻璃在整个使用寿命内保持干燥，防止内部起雾。",
+    "fr": "Le tamis moléculaire est un déshydratant cristallin qui remplit la barre intercalaire creuse. Ses pores uniformes captent la vapeur d'eau de l'espace d'air scellé sans retenir les molécules de gaz plus grosses, ce qui garde l'unité sèche pendant toute sa durée de vie et empêche la formation de buée à l'intérieur."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Type",
+      "zh": "类型",
+      "fr": "Type"
+     },
+     "value": {
+      "en": "Zeolite 3A molecular sieve",
+      "zh": "3A 沸石分子筛",
+      "fr": "Tamis moléculaire zéolite 3A"
+     }
+    },
+    {
+     "label": {
+      "en": "Bead size",
+      "zh": "粒径",
+      "fr": "Taille des billes"
+     },
+     "value": {
+      "en": "0.5–0.9 mm or 1.0–1.5 mm",
+      "zh": "0.5–0.9 mm 或 1.0–1.5 mm",
+      "fr": "0,5–0,9 mm ou 1,0–1,5 mm"
+     }
+    },
+    {
+     "label": {
+      "en": "Function",
+      "zh": "功能",
+      "fr": "Fonction"
+     },
+     "value": {
+      "en": "Absorbs moisture inside the sealed unit",
+      "zh": "吸收密封腔体内的水分",
+      "fr": "Absorbe l'humidité à l'intérieur de l'unité scellée"
+     }
+    },
+    {
+     "label": {
+      "en": "Suits",
+      "zh": "适用",
+      "fr": "Compatible avec"
+     },
+     "value": {
+      "en": "Air- and argon-filled IG units",
+      "zh": "充空气和充氩气中空玻璃",
+      "fr": "Unités scellées remplies d'air ou d'argon"
+     }
+    },
+    {
+     "label": {
+      "en": "Packaging",
+      "zh": "包装",
+      "fr": "Emballage"
+     },
+     "value": {
+      "en": "Drums or bags",
+      "zh": "桶装或袋装",
+      "fr": "Barils ou sacs"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Filling aluminum and warm-edge spacers",
+     "zh": "填充铝间隔条和暖边间隔条",
+     "fr": "Remplissage des intercalaires en aluminium et à bord chaud"
+    },
+    {
+     "en": "Gas-filled (argon) IG units",
+     "zh": "充气（氩气）中空玻璃",
+     "fr": "Unités scellées remplies de gaz (argon)"
+    },
+    {
+     "en": "Moisture control in sealed assemblies",
+     "zh": "密封组件的防潮控制",
+     "fr": "Contrôle de l'humidité dans les assemblages scellés"
+    }
+   ],
+   "options": [
+    {
+     "en": "Bead size",
+     "zh": "粒径",
+     "fr": "Taille des billes"
+    },
+    {
+     "en": "Drums or bags",
+     "zh": "桶装或袋装",
+     "fr": "Barils ou sacs"
+    },
+    {
+     "en": "Blends for gas-filled units",
+     "zh": "适用于充气中空玻璃的配方",
+     "fr": "Mélanges pour unités remplies de gaz"
+    }
+   ],
+   "tags": [
+    {
+     "en": "3A type",
+     "zh": "3A 型",
+     "fr": "Type 3A"
+    },
+    {
+     "en": "Anti-fog",
+     "zh": "防起雾",
+     "fr": "Antibuée"
+    }
+   ],
+   "related": [
+    "aluminum-spacer",
+    "silicone-adhesive",
+    "cork-pads"
+   ]
+  },
+  {
+   "id": "water-jet",
+   "category": "cutting",
+   "name": {
+    "en": "Water Jet",
+    "zh": "水刀",
+    "fr": "Jet d'eau"
+   },
+   "photo": "assets/img/products/water-jet.jpg",
+   "gallery": [
+    {
+     "image": "assets/img/online/waterjet-head.jpg",
+     "caption": {
+      "en": "A waterjet head cutting a part",
+      "zh": "水刀切割头正在切割工件",
+      "fr": "Une tête de jet d'eau en train de découper une pièce"
+     }
+    }
+   ],
+   "short": {
+    "en": "Abrasive waterjet systems for cold-cutting complex shapes in glass.",
+    "zh": "加砂水刀系统，用于冷切割各种复杂形状的玻璃。",
+    "fr": "Systèmes de découpe au jet d'eau abrasif pour la découpe à froid de formes complexes dans le verre."
+   },
+   "description": {
+    "en": "A waterjet cuts glass with an ultra-high-pressure stream of water and abrasive. Because it is a cold process there is no heat-affected zone, so it can cut intricate curves, holes and notches in glass (and in stone, metal and tile) with minimal chipping.",
+    "zh": "水刀利用超高压水流和磨料切割玻璃。由于是冷加工，没有热影响区，可在玻璃（以及石材、金属和瓷砖）上切割复杂的曲线、孔洞和缺口，崩边极少。",
+    "fr": "Un système de jet d'eau découpe le verre à l'aide d'un flux d'eau et d'abrasif à ultra-haute pression. Comme il s'agit d'un procédé à froid, il n'y a aucune zone affectée thermiquement : il peut donc découper des courbes complexes, des trous et des encoches dans le verre (ainsi que dans la pierre, le métal et la céramique) avec un minimum d'écaillage."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Process",
+      "zh": "工艺",
+      "fr": "Procédé"
+     },
+     "value": {
+      "en": "Abrasive waterjet, cold cutting",
+      "zh": "加砂水刀，冷切割",
+      "fr": "Jet d'eau abrasif, découpe à froid"
+     }
+    },
+    {
+     "label": {
+      "en": "Pressure",
+      "zh": "压力",
+      "fr": "Pression"
+     },
+     "value": {
+      "en": "Ultra-high, typically 380–420 MPa",
+      "zh": "超高压，通常为 380–420 MPa",
+      "fr": "Ultra-haute, généralement 380–420 MPa"
+     }
+    },
+    {
+     "label": {
+      "en": "Cutting head",
+      "zh": "切割头",
+      "fr": "Tête de coupe"
+     },
+     "value": {
+      "en": "3-axis or 5-axis",
+      "zh": "3 轴或 5 轴",
+      "fr": "3 axes ou 5 axes"
+     }
+    },
+    {
+     "label": {
+      "en": "Table size",
+      "zh": "工作台尺寸",
+      "fr": "Dimensions de la table"
+     },
+     "value": {
+      "en": "To your requirement",
+      "zh": "按您的要求",
+      "fr": "Selon vos besoins"
+     }
+    },
+    {
+     "label": {
+      "en": "Materials",
+      "zh": "适用材料",
+      "fr": "Matériaux"
+     },
+     "value": {
+      "en": "Glass, stone, tile and metal",
+      "zh": "玻璃、石材、瓷砖和金属",
+      "fr": "Verre, pierre, céramique et métal"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Shaped glass, holes and notches",
+     "zh": "异形玻璃、开孔和开槽",
+     "fr": "Verre de forme, trous et encoches"
+    },
+    {
+     "en": "Shower door and hardware cut-outs",
+     "zh": "淋浴门及五金件开口",
+     "fr": "Découpes pour portes de douche et quincaillerie"
+    },
+    {
+     "en": "Stone, tile and metal parts",
+     "zh": "石材、瓷砖和金属零件",
+     "fr": "Pièces en pierre, en céramique et en métal"
+    }
+   ],
+   "options": [
+    {
+     "en": "Table size",
+     "zh": "工作台尺寸",
+     "fr": "Dimensions de la table"
+    },
+    {
+     "en": "Pump pressure and power",
+     "zh": "泵压力和功率",
+     "fr": "Pression et puissance de la pompe"
+    },
+    {
+     "en": "3-axis or 5-axis head",
+     "zh": "3 轴或 5 轴切割头",
+     "fr": "Tête 3 axes ou 5 axes"
+    },
+    {
+     "en": "Control software",
+     "zh": "控制软件",
+     "fr": "Logiciel de commande"
+    }
+   ],
+   "tags": [
+    {
+     "en": "Cold cutting",
+     "zh": "冷切割",
+     "fr": "Découpe à froid"
+    },
+    {
+     "en": "Complex shapes",
+     "zh": "复杂形状",
+     "fr": "Formes complexes"
+    }
+   ],
+   "related": [
+    "waterjet-abrasive",
+    "grinding-wheels",
+    "cerium-dioxide"
+   ]
+  },
+  {
+   "id": "waterjet-abrasive",
+   "category": "cutting",
+   "name": {
+    "en": "Water Jet Cutting Abrasive",
+    "zh": "水刀切割磨料",
+    "fr": "Abrasif pour découpe au jet d'eau"
+   },
+   "photo": "assets/img/products/waterjet-abrasive.jpg",
+   "gallery": [
+    {
+     "image": "assets/img/online/waterjet-head.jpg",
+     "caption": {
+      "en": "Abrasive is mixed into the jet at the cutting head",
+      "zh": "磨料在切割头处混入水射流",
+      "fr": "L'abrasif est mélangé au jet dans la tête de coupe"
+     }
+    }
+   ],
+   "short": {
+    "en": "Hard, sharp garnet abrasive for fast, clean waterjet cuts.",
+    "zh": "坚硬锋利的石榴砂磨料，水刀切割快速、整洁。",
+    "fr": "Abrasif de grenat dur et tranchant pour des découpes au jet d'eau rapides et nettes."
+   },
+   "description": {
+    "en": "Garnet is the standard abrasive for waterjet cutting. Its hardness and sharp grain edges speed up cutting while keeping nozzle wear low, and consistent grading gives a smooth, even edge on glass and other materials.",
+    "zh": "石榴砂是水刀切割的标准磨料。其硬度高、颗粒棱角锋利，可提高切割速度，同时降低喷嘴磨损；粒度均匀稳定，可在玻璃及其他材料上切出平滑整齐的边缘。",
+    "fr": "Le grenat est l'abrasif de référence pour la découpe au jet d'eau. Sa dureté et ses grains aux arêtes vives accélèrent la coupe tout en limitant l'usure de la buse, et sa granulométrie constante donne un bord lisse et uniforme sur le verre et les autres matériaux."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Material",
+      "zh": "材质",
+      "fr": "Matériau"
+     },
+     "value": {
+      "en": "Garnet",
+      "zh": "石榴砂",
+      "fr": "Grenat"
+     }
+    },
+    {
+     "label": {
+      "en": "Mesh",
+      "zh": "目数",
+      "fr": "Granulométrie"
+     },
+     "value": {
+      "en": "80 mesh standard; others on request",
+      "zh": "标准 80 目；其他目数可按需提供",
+      "fr": "80 mesh en standard; autres sur demande"
+     }
+    },
+    {
+     "label": {
+      "en": "Hardness",
+      "zh": "硬度",
+      "fr": "Dureté"
+     },
+     "value": {
+      "en": "About 7–8 on the Mohs scale",
+      "zh": "莫氏硬度约 7–8",
+      "fr": "Environ 7–8 sur l'échelle de Mohs"
+     }
+    },
+    {
+     "label": {
+      "en": "Packaging",
+      "zh": "包装",
+      "fr": "Emballage"
+     },
+     "value": {
+      "en": "Bags or bulk bags",
+      "zh": "袋装或吨袋",
+      "fr": "Sacs ou grands sacs en vrac"
+     }
+    },
+    {
+     "label": {
+      "en": "Use with",
+      "zh": "配套设备",
+      "fr": "À utiliser avec"
+     },
+     "value": {
+      "en": "Abrasive waterjet systems",
+      "zh": "加砂水刀系统",
+      "fr": "Systèmes de jet d'eau abrasif"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Waterjet cutting of glass",
+     "zh": "玻璃水刀切割",
+     "fr": "Découpe du verre au jet d'eau"
+    },
+    {
+     "en": "Stone, ceramic and metal cutting",
+     "zh": "石材、陶瓷和金属切割",
+     "fr": "Découpe de pierre, de céramique et de métal"
+    },
+    {
+     "en": "Surface blasting",
+     "zh": "表面喷砂",
+     "fr": "Sablage de surfaces"
+    }
+   ],
+   "options": [
+    {
+     "en": "Mesh size",
+     "zh": "目数",
+     "fr": "Granulométrie (mesh)"
+    },
+    {
+     "en": "Bag or bulk-bag packaging",
+     "zh": "袋装或吨袋包装",
+     "fr": "Emballage en sacs ou en grands sacs en vrac"
+    },
+    {
+     "en": "Grade",
+     "zh": "等级",
+     "fr": "Qualité"
+    }
+   ],
+   "tags": [
+    {
+     "en": "Garnet",
+     "zh": "石榴砂",
+     "fr": "Grenat"
+    },
+    {
+     "en": "80 mesh",
+     "zh": "80 目",
+     "fr": "80 mesh"
+    }
+   ],
+   "related": [
+    "water-jet",
+    "grinding-wheels",
+    "cerium-dioxide"
+   ]
+  },
+  {
+   "id": "grinding-wheels",
+   "category": "cutting",
+   "name": {
+    "en": "Grinding Wheels",
+    "zh": "磨轮",
+    "fr": "Meules"
+   },
+   "photo": "assets/img/products/grinding-wheels.jpg",
+   "gallery": [
+    {
+     "image": "assets/img/glass/low-iron.jpg",
+     "caption": {
+      "en": "Result: clean, polished edges",
+      "zh": "成品：整洁光亮的抛光边",
+      "fr": "Résultat : des bords propres et polis"
+     }
+    }
+   ],
+   "short": {
+    "en": "Diamond, resin and polishing wheels for edging and bevelling.",
+    "zh": "用于磨边和磨斜边的金刚石轮、树脂轮和抛光轮。",
+    "fr": "Meules diamantées, en résine et de polissage pour le façonnage des bords et le biseautage."
+   },
+   "description": {
+    "en": "Diamond and resin-bond grinding wheels for straight-line and shape edgers, bevellers and CNC centres. Coarse diamond wheels remove material fast, and resin and polishing wheels bring the edge to a smooth, bright finish.",
+    "zh": "金刚石及树脂结合剂磨轮，适用于直线磨边机、异形磨边机、斜边机和 CNC 加工中心。粗磨金刚石轮可快速去除材料，树脂轮和抛光轮则使边缘平滑光亮。",
+    "fr": "Meules diamantées et à liant résine pour bordeuses rectilignes et de forme, biseauteuses et centres CNC. Les meules diamantées à grain grossier enlèvent rapidement la matière, puis les meules en résine et de polissage donnent au bord un fini lisse et brillant."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Types",
+      "zh": "类型",
+      "fr": "Types"
+     },
+     "value": {
+      "en": "Diamond cup, peripheral, resin polishing",
+      "zh": "金刚石杯轮、周边轮、树脂抛光轮",
+      "fr": "Boisseau diamanté, périphérique, polissage à la résine"
+     }
+    },
+    {
+     "label": {
+      "en": "Diameter",
+      "zh": "直径",
+      "fr": "Diamètre"
+     },
+     "value": {
+      "en": "About 100–200 mm",
+      "zh": "约 100–200 mm",
+      "fr": "Environ 100–200 mm"
+     }
+    },
+    {
+     "label": {
+      "en": "Grits",
+      "zh": "粒度",
+      "fr": "Grains"
+     },
+     "value": {
+      "en": "Coarse diamond to fine polishing",
+      "zh": "从粗磨金刚石到精细抛光",
+      "fr": "Du diamant grossier au polissage fin"
+     }
+    },
+    {
+     "label": {
+      "en": "Profiles",
+      "zh": "边型",
+      "fr": "Profils"
+     },
+     "value": {
+      "en": "Flat, pencil, bevel and more",
+      "zh": "平边、圆边、斜边等",
+      "fr": "Plat, crayon, biseau et plus"
+     }
+    },
+    {
+     "label": {
+      "en": "Machines",
+      "zh": "适用设备",
+      "fr": "Machines"
+     },
+     "value": {
+      "en": "Edgers, bevellers and CNC centres",
+      "zh": "磨边机、斜边机和 CNC 加工中心",
+      "fr": "Bordeuses, biseauteuses et centres CNC"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Flat and pencil edging",
+     "zh": "平边和圆边磨边",
+     "fr": "Façonnage de bords plats et crayon"
+    },
+    {
+     "en": "Bevelling and mitring",
+     "zh": "磨斜边和拼角",
+     "fr": "Biseautage et coupe d'onglets"
+    },
+    {
+     "en": "CNC edge processing",
+     "zh": "CNC 边部加工",
+     "fr": "Façonnage des bords sur CNC"
+    }
+   ],
+   "options": [
+    {
+     "en": "Cup, peripheral or CNC wheels",
+     "zh": "杯轮、周边轮或 CNC 磨轮",
+     "fr": "Meules boisseau, périphériques ou CNC"
+    },
+    {
+     "en": "Diameter and bore",
+     "zh": "直径和内孔",
+     "fr": "Diamètre et alésage"
+    },
+    {
+     "en": "Grit and bond",
+     "zh": "粒度和结合剂",
+     "fr": "Grain et liant"
+    },
+    {
+     "en": "Edge profile",
+     "zh": "边型",
+     "fr": "Profil de bord"
+    }
+   ],
+   "tags": [
+    {
+     "en": "Diamond",
+     "zh": "金刚石",
+     "fr": "Diamant"
+    },
+    {
+     "en": "Polishing",
+     "zh": "抛光",
+     "fr": "Polissage"
+    }
+   ],
+   "related": [
+    "cerium-dioxide",
+    "water-jet",
+    "waterjet-abrasive"
+   ]
+  },
+  {
+   "id": "cerium-dioxide",
+   "category": "cutting",
+   "name": {
+    "en": "Cerium Dioxide",
+    "zh": "二氧化铈",
+    "fr": "Dioxyde de cérium"
+   },
+   "photo": "assets/img/products/cerium-dioxide.jpg",
+   "gallery": [
+    {
+     "image": "assets/img/glass/low-iron.jpg",
+     "caption": {
+      "en": "Result: crystal-clear polished edges",
+      "zh": "成品：晶莹剔透的抛光边",
+      "fr": "Résultat : des bords polis d'une clarté cristalline"
+     }
+    }
+   ],
+   "short": {
+    "en": "Cerium oxide polishing powder for crystal-clear glass edges and surfaces.",
+    "zh": "氧化铈抛光粉，使玻璃边缘和表面晶莹透亮。",
+    "fr": "Poudre de polissage à l'oxyde de cérium pour des bords et des surfaces de verre d'une clarté cristalline."
+   },
+   "description": {
+    "en": "Cerium dioxide (cerium oxide) is the go-to polishing compound for glass. Mixed into a slurry and used with a felt or polishing wheel, it removes fine scratches and haze and gives edges and surfaces a high-clarity finish.",
+    "zh": "二氧化铈（氧化铈）是玻璃抛光的首选材料。将其调成浆料，配合毛毡轮或抛光轮使用，可去除细微划痕和雾化，使边缘和表面达到高透亮效果。",
+    "fr": "Le dioxyde de cérium (oxyde de cérium) est le composé de polissage de prédilection pour le verre. Mélangé en suspension et utilisé avec une meule de feutre ou de polissage, il élimine les fines rayures et le voile, et donne aux bords et aux surfaces un fini d'une grande clarté."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Chemical",
+      "zh": "化学成分",
+      "fr": "Composé chimique"
+     },
+     "value": {
+      "en": "Cerium oxide (CeO₂)",
+      "zh": "氧化铈（CeO₂）",
+      "fr": "Oxyde de cérium (CeO₂)"
+     }
+    },
+    {
+     "label": {
+      "en": "Particle size",
+      "zh": "粒径",
+      "fr": "Granulométrie"
+     },
+     "value": {
+      "en": "About 1–3 µm",
+      "zh": "约 1–3 µm",
+      "fr": "Environ 1–3 µm"
+     }
+    },
+    {
+     "label": {
+      "en": "Form",
+      "zh": "形态",
+      "fr": "Forme"
+     },
+     "value": {
+      "en": "Fine powder, mixed into a slurry",
+      "zh": "细粉，调成浆料使用",
+      "fr": "Poudre fine, à mélanger en suspension"
+     }
+    },
+    {
+     "label": {
+      "en": "Use with",
+      "zh": "配套设备",
+      "fr": "À utiliser avec"
+     },
+     "value": {
+      "en": "Felt and polishing wheels",
+      "zh": "毛毡轮和抛光轮",
+      "fr": "Meules de feutre et de polissage"
+     }
+    },
+    {
+     "label": {
+      "en": "Packaging",
+      "zh": "包装",
+      "fr": "Emballage"
+     },
+     "value": {
+      "en": "Bags or drums",
+      "zh": "袋装或桶装",
+      "fr": "Sacs ou barils"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Final polishing on edging lines",
+     "zh": "磨边线上的最终抛光",
+     "fr": "Polissage final sur les lignes de façonnage"
+    },
+    {
+     "en": "Scratch and haze removal",
+     "zh": "去除划痕和雾化",
+     "fr": "Élimination des rayures et du voile"
+    },
+    {
+     "en": "Optical and mirror glass finishing",
+     "zh": "光学玻璃和镜面玻璃精加工",
+     "fr": "Finition du verre optique et des miroirs"
+    }
+   ],
+   "options": [
+    {
+     "en": "Particle size",
+     "zh": "粒径",
+     "fr": "Granulométrie"
+    },
+    {
+     "en": "Purity grade",
+     "zh": "纯度等级",
+     "fr": "Degré de pureté"
+    },
+    {
+     "en": "Packaging",
+     "zh": "包装",
+     "fr": "Emballage"
+    }
+   ],
+   "tags": [
+    {
+     "en": "CeO₂",
+     "zh": "CeO₂",
+     "fr": "CeO₂"
+    },
+    {
+     "en": "High clarity",
+     "zh": "高透亮",
+     "fr": "Grande clarté"
+    }
+   ],
+   "related": [
+    "grinding-wheels",
+    "water-jet",
+    "vinyl-cat1"
+   ]
+  },
+  {
+   "id": "vinyl-cat1",
+   "category": "films",
+   "name": {
+    "en": "Vinyl Backed Film CAT I",
+    "zh": "乙烯基背膜 CAT I",
+    "fr": "Pellicule à endos vinyle CAT I"
+   },
+   "photo": "assets/img/products/vinyl-cat1.jpg",
+   "gallery": [
+    {
+     "image": "assets/img/glass/mirror.jpg",
+     "caption": {
+      "en": "Applied to the back of wall mirrors",
+      "zh": "贴于墙面镜背面",
+      "fr": "Appliquée au dos des miroirs muraux"
+     }
+    }
+   ],
+   "short": {
+    "en": "Safety backing film for mirrors that call for a Category I impact rating.",
+    "zh": "安全背膜，适用于要求 I 类抗冲击等级的镜子。",
+    "fr": "Pellicule de sécurité pour endos de miroirs exigeant une cote de résistance aux chocs de catégorie I."
+   },
+   "description": {
+    "en": "Vinyl-backed safety film is applied to the back of mirrors so that, if the glass breaks, the fragments stay bonded to the film instead of falling. Category I film is used where a Category I impact rating is specified, typically smaller mirrors and panels.",
+    "zh": "乙烯基安全背膜贴于镜子背面，一旦玻璃破碎，碎片会粘附在膜上而不会掉落。I 类背膜用于规定 I 类抗冲击等级的场合，通常为较小的镜子和面板。",
+    "fr": "La pellicule de sécurité à endos vinyle s'applique au dos des miroirs afin que, si le verre se brise, les fragments restent collés à la pellicule au lieu de tomber. La pellicule de catégorie I est utilisée lorsqu'une cote de résistance aux chocs de catégorie I est prescrite, généralement pour les miroirs et panneaux de plus petite taille."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Rating",
+      "zh": "等级",
+      "fr": "Cote"
+     },
+     "value": {
+      "en": "Category I impact",
+      "zh": "I 类抗冲击",
+      "fr": "Résistance aux chocs de catégorie I"
+     }
+    },
+    {
+     "label": {
+      "en": "Construction",
+      "zh": "结构",
+      "fr": "Composition"
+     },
+     "value": {
+      "en": "Vinyl film with pressure-sensitive adhesive",
+      "zh": "乙烯基膜，带压敏胶",
+      "fr": "Pellicule de vinyle avec adhésif sensible à la pression"
+     }
+    },
+    {
+     "label": {
+      "en": "Applied to",
+      "zh": "粘贴部位",
+      "fr": "S'applique sur"
+     },
+     "value": {
+      "en": "Back of silvered mirrors",
+      "zh": "银镜背面",
+      "fr": "Dos des miroirs argentés"
+     }
+    },
+    {
+     "label": {
+      "en": "Colour",
+      "zh": "颜色",
+      "fr": "Couleur"
+     },
+     "value": {
+      "en": "White or grey",
+      "zh": "白色或灰色",
+      "fr": "Blanc ou gris"
+     }
+    },
+    {
+     "label": {
+      "en": "Supply",
+      "zh": "供货",
+      "fr": "Format de livraison"
+     },
+     "value": {
+      "en": "Rolls in common widths",
+      "zh": "常用宽度，成卷供货",
+      "fr": "Rouleaux de largeurs courantes"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Wall and vanity mirrors",
+     "zh": "墙面镜和梳妆镜",
+     "fr": "Miroirs muraux et de salle de bains"
+    },
+    {
+     "en": "Furniture and cabinet mirrors",
+     "zh": "家具镜和柜镜",
+     "fr": "Miroirs de meubles et d'armoires"
+    },
+    {
+     "en": "Smaller decorative panels",
+     "zh": "较小的装饰面板",
+     "fr": "Panneaux décoratifs de petite taille"
+    }
+   ],
+   "options": [
+    {
+     "en": "Roll width and length",
+     "zh": "卷宽和卷长",
+     "fr": "Largeur et longueur du rouleau"
+    },
+    {
+     "en": "Adhesive type",
+     "zh": "胶粘剂类型",
+     "fr": "Type d'adhésif"
+    },
+    {
+     "en": "White or grey vinyl",
+     "zh": "白色或灰色乙烯基",
+     "fr": "Vinyle blanc ou gris"
+    }
+   ],
+   "tags": [
+    {
+     "en": "Category I",
+     "zh": "I 类",
+     "fr": "Catégorie I"
+    },
+    {
+     "en": "Mirror safety",
+     "zh": "镜子安全",
+     "fr": "Sécurité des miroirs"
+    }
+   ],
+   "related": [
+    "vinyl-cat2",
+    "grinding-wheels",
+    "cerium-dioxide"
+   ]
+  },
+  {
+   "id": "vinyl-cat2",
+   "category": "films",
+   "name": {
+    "en": "Vinyl Backed Film CAT II",
+    "zh": "乙烯基背膜 CAT II",
+    "fr": "Pellicule à endos vinyle CAT II"
+   },
+   "photo": "assets/img/products/vinyl-cat2.jpg",
+   "gallery": [
+    {
+     "image": "assets/img/site/bg3-min.jpg",
+     "caption": {
+      "en": "Large mirror installations",
+      "zh": "大型镜子安装",
+      "fr": "Installations de grands miroirs"
+     }
+    }
+   ],
+   "short": {
+    "en": "Heavier-duty mirror backing film for Category II impact applications.",
+    "zh": "加强型镜子背膜，适用于 II 类抗冲击应用。",
+    "fr": "Pellicule d'endos de miroir plus robuste pour les applications exigeant une résistance aux chocs de catégorie II."
+   },
+   "description": {
+    "en": "Category II vinyl-backed film is made for larger mirrors and higher-risk locations such as closet and sliding doors, gyms and studios, where a Category II impact rating is required. It holds broken glass together and reduces the risk of injury.",
+    "zh": "II 类乙烯基背膜专为较大的镜子和较高风险的场所设计，例如衣柜门和推拉门、健身房和工作室等要求 II 类抗冲击等级的场合。它能将破碎的玻璃粘连在一起，降低受伤风险。",
+    "fr": "La pellicule à endos vinyle de catégorie II est conçue pour les grands miroirs et les endroits à risque plus élevé, comme les portes de placard et les portes coulissantes, les salles d'entraînement et les studios, où une cote de résistance aux chocs de catégorie II est exigée. Elle retient le verre brisé et réduit les risques de blessure."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Rating",
+      "zh": "等级",
+      "fr": "Cote"
+     },
+     "value": {
+      "en": "Category II impact",
+      "zh": "II 类抗冲击",
+      "fr": "Résistance aux chocs de catégorie II"
+     }
+    },
+    {
+     "label": {
+      "en": "Construction",
+      "zh": "结构",
+      "fr": "Composition"
+     },
+     "value": {
+      "en": "Reinforced vinyl film with adhesive",
+      "zh": "加强型乙烯基膜，带胶",
+      "fr": "Pellicule de vinyle renforcée avec adhésif"
+     }
+    },
+    {
+     "label": {
+      "en": "Applied to",
+      "zh": "粘贴部位",
+      "fr": "S'applique sur"
+     },
+     "value": {
+      "en": "Back of large and door mirrors",
+      "zh": "大型镜和门镜背面",
+      "fr": "Dos des grands miroirs et des miroirs de porte"
+     }
+    },
+    {
+     "label": {
+      "en": "Colour",
+      "zh": "颜色",
+      "fr": "Couleur"
+     },
+     "value": {
+      "en": "White or grey",
+      "zh": "白色或灰色",
+      "fr": "Blanc ou gris"
+     }
+    },
+    {
+     "label": {
+      "en": "Supply",
+      "zh": "供货",
+      "fr": "Format de livraison"
+     },
+     "value": {
+      "en": "Rolls in common widths",
+      "zh": "常用宽度，成卷供货",
+      "fr": "Rouleaux de largeurs courantes"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Mirrored closet and sliding doors",
+     "zh": "镜面衣柜门和推拉门",
+     "fr": "Portes de placard et portes coulissantes à miroir"
+    },
+    {
+     "en": "Gym, dance and studio mirrors",
+     "zh": "健身房、舞蹈室和工作室镜子",
+     "fr": "Miroirs de salles d'entraînement, de danse et de studios"
+    },
+    {
+     "en": "Large wall mirrors",
+     "zh": "大型墙面镜",
+     "fr": "Grands miroirs muraux"
+    }
+   ],
+   "options": [
+    {
+     "en": "Roll width and length",
+     "zh": "卷宽和卷长",
+     "fr": "Largeur et longueur du rouleau"
+    },
+    {
+     "en": "Adhesive type",
+     "zh": "胶粘剂类型",
+     "fr": "Type d'adhésif"
+    },
+    {
+     "en": "White or grey vinyl",
+     "zh": "白色或灰色乙烯基",
+     "fr": "Vinyle blanc ou gris"
+    }
+   ],
+   "tags": [
+    {
+     "en": "Category II",
+     "zh": "II 类",
+     "fr": "Catégorie II"
+    },
+    {
+     "en": "Gym mirrors",
+     "zh": "健身镜",
+     "fr": "Miroirs de salle d'entraînement"
+    }
+   ],
+   "related": [
+    "vinyl-cat1",
+    "grinding-wheels",
+    "cork-pads"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,352 @@
+{
+ "nav_home": {
+  "en": "Home",
+  "zh": "首页",
+  "fr": "Accueil"
+ },
+ "nav_products": {
+  "en": "Products",
+  "zh": "产品",
+  "fr": "Produits"
+ },
+ "nav_glass": {
+  "en": "Glass",
+  "zh": "玻璃",
+  "fr": "Verre"
+ },
+ "nav_mirrors": {
+  "en": "Mirrors",
+  "zh": "镜子",
+  "fr": "Miroirs"
+ },
+ "nav_accessories": {
+  "en": "Accessories",
+  "zh": "配件",
+  "fr": "Accessoires"
+ },
+ "nav_about": {
+  "en": "About Us",
+  "zh": "关于我们",
+  "fr": "À propos"
+ },
+ "nav_contact": {
+  "en": "Contact",
+  "zh": "联系方式",
+  "fr": "Contact"
+ },
+ "cta_quote": {
+  "en": "Request a Quote",
+  "zh": "获取报价",
+  "fr": "Demander une soumission"
+ },
+ "cta_about": {
+  "en": "About Us",
+  "zh": "关于我们",
+  "fr": "À propos"
+ },
+ "cta_view_products": {
+  "en": "View Products",
+  "zh": "查看产品",
+  "fr": "Voir les produits"
+ },
+ "cta_contact": {
+  "en": "Contact Us",
+  "zh": "联系我们",
+  "fr": "Nous joindre"
+ },
+ "cta_learn_more": {
+  "en": "Learn More",
+  "zh": "了解更多",
+  "fr": "En savoir plus"
+ },
+ "cta_explore": {
+  "en": "Explore",
+  "zh": "浏览",
+  "fr": "Explorer"
+ },
+ "menu_open": {
+  "en": "Open menu",
+  "zh": "打开菜单",
+  "fr": "Ouvrir le menu"
+ },
+ "menu_close": {
+  "en": "Close menu",
+  "zh": "关闭菜单",
+  "fr": "Fermer le menu"
+ },
+ "language": {
+  "en": "Language",
+  "zh": "语言",
+  "fr": "Langue"
+ },
+ "tab_description": {
+  "en": "Description",
+  "zh": "产品描述",
+  "fr": "Description"
+ },
+ "tab_specs": {
+  "en": "Specifications",
+  "zh": "规格参数",
+  "fr": "Fiche technique"
+ },
+ "typical_uses": {
+  "en": "Typical uses",
+  "zh": "典型用途",
+  "fr": "Utilisations courantes"
+ },
+ "can_be_specified": {
+  "en": "Can be specified",
+  "zh": "可定制项",
+  "fr": "Options à préciser"
+ },
+ "goes_well_with": {
+  "en": "Goes well with",
+  "zh": "搭配产品",
+  "fr": "Produits complémentaires"
+ },
+ "specs_note": {
+  "en": "Typical values for reference. Final specifications are confirmed in your quote.",
+  "zh": "典型值仅供参考，最终规格以报价为准。",
+  "fr": "Valeurs typiques à titre indicatif. Les spécifications finales sont confirmées dans votre soumission."
+ },
+ "photo_label": {
+  "en": "Photo",
+  "zh": "照片",
+  "fr": "Photo"
+ },
+ "diagram_label": {
+  "en": "Diagram",
+  "zh": "示意图",
+  "fr": "Schéma"
+ },
+ "in_use_label": {
+  "en": "In use",
+  "zh": "使用实景",
+  "fr": "En situation"
+ },
+ "photo_coming": {
+  "en": "Illustration — product photo coming soon",
+  "zh": "示意图——产品照片即将上线",
+  "fr": "Illustration — photo du produit à venir"
+ },
+ "add_to_quote": {
+  "en": "Add to quote list",
+  "zh": "加入询价清单",
+  "fr": "Ajouter à la soumission"
+ },
+ "in_quote": {
+  "en": "In your quote list",
+  "zh": "已在询价清单中",
+  "fr": "Dans votre soumission"
+ },
+ "added_toast": {
+  "en": "added to your quote list",
+  "zh": "已加入询价清单",
+  "fr": "liste de soumission mise à jour"
+ },
+ "ask_about": {
+  "en": "Ask about this product",
+  "zh": "咨询此产品",
+  "fr": "Poser une question sur ce produit"
+ },
+ "all_items": {
+  "en": "All",
+  "zh": "全部",
+  "fr": "Tous"
+ },
+ "quote_list": {
+  "en": "Quote list",
+  "zh": "询价清单",
+  "fr": "Liste de soumission"
+ },
+ "your_quote_list": {
+  "en": "Your quote list",
+  "zh": "您的询价清单",
+  "fr": "Votre liste de soumission"
+ },
+ "selected": {
+  "en": "selected",
+  "zh": "项已选",
+  "fr": "sélectionné(s)"
+ },
+ "list_empty": {
+  "en": "Your list is empty",
+  "zh": "您的清单为空",
+  "fr": "Votre liste est vide"
+ },
+ "list_empty_hint": {
+  "en": "Add glass, mirrors or accessories as you browse, then request one combined quote.",
+  "zh": "浏览时添加玻璃、镜子或配件，然后一次性获取综合报价。",
+  "fr": "Ajoutez du verre, des miroirs ou des accessoires au fil de votre navigation, puis demandez une seule soumission combinée."
+ },
+ "request_free_quote": {
+  "en": "Request a free quote",
+  "zh": "获取免费报价",
+  "fr": "Demander une soumission gratuite"
+ },
+ "keep_browsing": {
+  "en": "Keep browsing",
+  "zh": "继续浏览",
+  "fr": "Continuer la navigation"
+ },
+ "view_list": {
+  "en": "View list",
+  "zh": "查看清单",
+  "fr": "Voir la liste"
+ },
+ "remove": {
+  "en": "Remove",
+  "zh": "移除",
+  "fr": "Retirer"
+ },
+ "one_quote": {
+  "en": "One request, one combined quote. It is free.",
+  "zh": "一次询价，一份综合报价，完全免费。",
+  "fr": "Une seule demande, une seule soumission combinée. C'est gratuit."
+ },
+ "form_type_quote": {
+  "en": "Free quote",
+  "zh": "免费报价",
+  "fr": "Soumission gratuite"
+ },
+ "form_type_consult": {
+  "en": "Consultation",
+  "zh": "咨询",
+  "fr": "Consultation"
+ },
+ "form_type_question": {
+  "en": "Question",
+  "zh": "提问",
+  "fr": "Question"
+ },
+ "form_name": {
+  "en": "Full name",
+  "zh": "姓名",
+  "fr": "Nom complet"
+ },
+ "form_company": {
+  "en": "Company",
+  "zh": "公司",
+  "fr": "Entreprise"
+ },
+ "form_email": {
+  "en": "Email",
+  "zh": "电子邮箱",
+  "fr": "Courriel"
+ },
+ "form_phone": {
+  "en": "Phone",
+  "zh": "电话",
+  "fr": "Téléphone"
+ },
+ "form_items": {
+  "en": "Items in your quote list",
+  "zh": "询价清单中的产品",
+  "fr": "Articles de votre liste de soumission"
+ },
+ "form_items_none": {
+  "en": "Nothing selected yet. You can add products from the Glass, Mirrors and Accessories pages, or describe what you need below.",
+  "zh": "尚未选择任何产品。您可以从玻璃、镜子和配件页面添加产品，或在下方描述您的需求。",
+  "fr": "Aucune sélection pour l'instant. Vous pouvez ajouter des produits à partir des pages Verre, Miroirs et Accessoires, ou décrire vos besoins ci-dessous."
+ },
+ "form_message": {
+  "en": "Sizes, quantities and specifications",
+  "zh": "尺寸、数量和规格",
+  "fr": "Dimensions, quantités et spécifications"
+ },
+ "form_message_ph": {
+  "en": "e.g. 10 tempered panels, 10 mm, 900 × 2000 mm",
+  "zh": "例如：10 片钢化玻璃，10 mm，900 × 2000 mm",
+  "fr": "p. ex. 10 panneaux trempés, 10 mm, 900 × 2000 mm"
+ },
+ "form_send": {
+  "en": "Send request",
+  "zh": "提交询价",
+  "fr": "Envoyer la demande"
+ },
+ "form_sending": {
+  "en": "Sending…",
+  "zh": "发送中…",
+  "fr": "Envoi en cours…"
+ },
+ "form_success": {
+  "en": "Thank you. Your request has been sent and we will get back to you shortly.",
+  "zh": "谢谢。您的询价已发送，我们会尽快回复您。",
+  "fr": "Merci. Votre demande a bien été envoyée et nous vous répondrons sous peu."
+ },
+ "form_error": {
+  "en": "Sorry, the request could not be sent. Please email or call us instead.",
+  "zh": "抱歉，询价发送失败。请改用电子邮件或电话联系我们。",
+  "fr": "Désolé, la demande n'a pas pu être envoyée. Veuillez plutôt nous écrire par courriel ou nous téléphoner."
+ },
+ "form_required": {
+  "en": "Please fill in your name and a valid email.",
+  "zh": "请填写您的姓名和有效的电子邮箱。",
+  "fr": "Veuillez indiquer votre nom et une adresse courriel valide."
+ },
+ "footer_tagline": {
+  "en": "Custom glass, glass cutting and replacement, plus the mirrors and accessories the glass industry runs on.",
+  "zh": "定制玻璃、玻璃切割与更换，以及玻璃行业所需的镜子和配件。",
+  "fr": "Verre sur mesure, coupe et remplacement de verre, ainsi que les miroirs et accessoires essentiels à l'industrie du verre."
+ },
+ "footer_explore": {
+  "en": "Explore",
+  "zh": "浏览",
+  "fr": "Explorer"
+ },
+ "footer_products": {
+  "en": "Products",
+  "zh": "产品",
+  "fr": "Produits"
+ },
+ "footer_contact": {
+  "en": "Get in touch",
+  "zh": "联系我们",
+  "fr": "Communiquez avec nous"
+ },
+ "photo_credits": {
+  "en": "Photo credits",
+  "zh": "图片来源",
+  "fr": "Crédits photo"
+ },
+ "credits_intro": {
+  "en": "Product and project photos: Sailing International Trade. Additional photos from Wikimedia Commons:",
+  "zh": "产品及项目照片：Sailing International Trade。其他照片来自 Wikimedia Commons：",
+  "fr": "Photos de produits et de projets : Sailing International Trade. Photos supplémentaires provenant de Wikimedia Commons :"
+ },
+ "rights": {
+  "en": "All rights reserved.",
+  "zh": "版权所有。",
+  "fr": "Tous droits réservés."
+ },
+ "back_to_top": {
+  "en": "Back to top",
+  "zh": "返回顶部",
+  "fr": "Retour en haut"
+ },
+ "call_us": {
+  "en": "Call us",
+  "zh": "致电我们",
+  "fr": "Appelez-nous"
+ },
+ "email_us": {
+  "en": "Email us",
+  "zh": "发送邮件",
+  "fr": "Écrivez-nous"
+ },
+ "visit_us": {
+  "en": "Visit us",
+  "zh": "欢迎来访",
+  "fr": "Rendez-nous visite"
+ },
+ "directions": {
+  "en": "Get directions",
+  "zh": "查看路线",
+  "fr": "Obtenir l'itinéraire"
+ },
+ "since_label": {
+  "en": "Since",
+  "zh": "始于",
+  "fr": "Depuis"
+ }
+}
