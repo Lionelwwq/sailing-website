@@ -344,6 +344,19 @@
       ['glass', 'mirrors', 'curved', 'solar', 'accessories', 'racks', 'quote'].forEach((z) => assert(cfg.hotspots[z], `no marker for ${z}`));
       return `${files.length} pictures, ${spots.length} product spots`;
     });
+    await test('Warehouse tour: every marker can be clicked (nothing lies on top, e.g. "Get a quote")', async () => {
+      for (const [wd, ht] of [[1280, 720], [1440, 900]]) {
+        const { d } = await open('index.html?lang=en', wd, ht);
+        assert(await enterWarehouse(d), `did not walk inside at ${wd}x${ht}`);
+        await wait(600);
+        const blocked = [...d.querySelectorAll('.wh-dot')].filter((el) => {
+          const r = el.getBoundingClientRect();
+          const top = d.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2);
+          return !(top === el || el.contains(top));
+        }).map((el) => el.dataset.zone);
+        assert(!blocked.length, `at ${wd}x${ht} these markers are covered: ${blocked.join(', ')}`);
+      }
+    });
     await test('Warehouse tour on a phone goes straight inside and fits the screen', async () => {
       const { d, w } = await open('index.html?lang=zh', 375, 800);
       assert(await until(() => $(d, '#wh').classList.contains('arrived')), 'not inside');

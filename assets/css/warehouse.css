@@ -105,8 +105,14 @@
   color: var(--white); font: 600 12.5px/1 var(--font-head); transition: background .2s, border-color .2s; }
 .wh-tour:hover { background: rgba(255, 255, 255, .16); border-color: rgba(255, 255, 255, .7); }
 .wh-tour-ic { font-size: 9px; }
-.wh.zoomed .wh-bar, .wh.at-door .wh-bar { opacity: 0; transform: translateY(12px); pointer-events: none; }
-.wh.touring .wh-bar { opacity: 1; transform: none; pointer-events: auto; background: none; }
+/* the bar's see-through gradient lies over the bottom of the picture: let clicks pass through it to the markers
+   underneath (e.g. "Get a quote"); only the bar's own button takes clicks, and only while the bar is showing */
+.wh-bar { pointer-events: none; }
+.wh-bar button, .wh-bar a { pointer-events: auto; }
+.wh.zoomed .wh-bar, .wh.at-door .wh-bar { opacity: 0; transform: translateY(12px); }
+.wh.zoomed .wh-bar button, .wh.zoomed .wh-bar a, .wh.at-door .wh-bar button, .wh.at-door .wh-bar a { pointer-events: none; }
+.wh.touring .wh-bar { opacity: 1; transform: none; background: none; }
+.wh.touring .wh-bar button, .wh.touring .wh-bar a { pointer-events: auto; }
 .wh.touring .wh-bar .wh-title, .wh.touring .wh-bar .wh-hint, .wh.touring .wh-bar .wh-eyebrow { visibility: hidden; }
 
 /* info card */
@@ -160,7 +166,8 @@
   .wh-bar .container { display: grid; gap: 14px; }
   .wh-title { font-size: 24px; }
   .wh-hint { font-size: 14px; }
-  .wh.zoomed .wh-bar { opacity: 1; transform: none; pointer-events: auto; }
+  .wh.zoomed .wh-bar { opacity: 1; transform: none; }
+  .wh.zoomed .wh-bar button, .wh.zoomed .wh-bar a { pointer-events: auto; }
   .wh.touring .wh-bar .wh-title, .wh.touring .wh-bar .wh-hint, .wh.touring .wh-bar .wh-eyebrow { visibility: visible; }
   .wh-panel { position: static; width: auto; max-height: none; margin: 0 16px 24px; }
   .wh-panel.in { animation: none; }
