@@ -71,6 +71,8 @@
 python _src/build.py
 ```
 
+  构建时会给 `assets/css`、`assets/js` 的链接加上版本号（如 `site.js?v=096fbad3`，按文件内容计算）。改了 CSS 或 JS 之后也要重新构建，访客的浏览器才会加载新文件，而不是用缓存里的旧版本。
+
 - 编辑器配置 `.pages.yml` 是根据内容文件自动生成的。给 JSON 加了新字段后运行：
 
 ```bash

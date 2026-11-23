@@ -89,21 +89,21 @@
  "services": [
   {
    "title": {
-    "en": "All types of glass",
-    "zh": "各类玻璃",
-    "fr": "Tous les types de verre"
+    "en": "Product",
+    "zh": "产品",
+    "fr": "Produits"
    },
    "text": {
-    "en": "Architectural, solar, decorative, pool fencing, automotive and appliance glass.",
-    "zh": "建筑玻璃、光伏玻璃、装饰玻璃、泳池围栏玻璃、汽车玻璃和家电玻璃。",
-    "fr": "Verre architectural, solaire, décoratif, pour clôtures de piscine, automobile et pour électroménagers."
+    "en": "All types of glass and mirrors, and the accessories to work with them, from trusted manufacturers.",
+    "zh": "各类玻璃和镜子及配套配件，均来自可靠的制造商。",
+    "fr": "Tous les types de verre et de miroirs, et les accessoires pour les travailler, de fabricants reconnus."
    }
   },
   {
    "title": {
-    "en": "Cutting & processing",
-    "zh": "切割与加工",
-    "fr": "Coupe et transformation"
+    "en": "Manufacturing",
+    "zh": "生产加工",
+    "fr": "Fabrication"
    },
    "text": {
     "en": "Glass and mirrors cut, edged, drilled and processed to your specifications.",
@@ -113,50 +113,50 @@
   },
   {
    "title": {
-    "en": "Installation",
-    "zh": "安装",
-    "fr": "Installation"
+    "en": "Custom solutions",
+    "zh": "定制方案",
+    "fr": "Solutions sur mesure"
    },
    "text": {
-    "en": "Windshields, storefronts, windows and doors, installed by our team.",
-    "zh": "挡风玻璃、店面、门窗，均由我们的团队安装。",
-    "fr": "Pare-brise, devantures, fenêtres et portes, installés par notre équipe."
+    "en": "Shower enclosures, storefronts, windows and doors made to measure and installed by our team.",
+    "zh": "淋浴房、店面、门窗按尺寸定制，并由我们的团队安装。",
+    "fr": "Cabines de douche, devantures, fenêtres et portes sur mesure, installées par notre équipe."
    }
   },
   {
    "title": {
-    "en": "Bath & shower projects",
-    "zh": "浴室与淋浴房项目",
-    "fr": "Projets de salle de bains et de douche"
+    "en": "Quality control",
+    "zh": "质量控制",
+    "fr": "Contrôle de la qualité"
    },
    "text": {
-    "en": "Custom shower enclosures, bathroom glass and mirrors.",
-    "zh": "定制淋浴房、浴室玻璃和镜子。",
-    "fr": "Cabines de douche sur mesure, verre et miroirs de salle de bains."
+    "en": "Every order is checked before it leaves our warehouse, and our products and installations are backed by a warranty.",
+    "zh": "每张订单出仓前都经过检查，产品和安装均提供质保。",
+    "fr": "Chaque commande est vérifiée avant de quitter notre entrepôt, et nos produits et installations sont couverts par une garantie."
    }
   },
   {
    "title": {
-    "en": "One-stop procurement",
-    "zh": "一站式采购",
-    "fr": "Approvisionnement à guichet unique"
+    "en": "International supply",
+    "zh": "国际供应",
+    "fr": "Approvisionnement international"
    },
    "text": {
-    "en": "Racks, films, spacers, sealants, wheels and more from one supplier.",
-    "zh": "玻璃架、胶片、间隔条、密封胶、磨轮等，一家供应商全部提供。",
-    "fr": "Chevalets, pellicules, intercalaires, scellants, meules et plus encore, auprès d'un seul fournisseur."
+    "en": "Glass, mirrors and accessories from manufacturers abroad, so you can source everything from one supplier.",
+    "zh": "从海外制造商引进玻璃、镜子及配件，一家供应商即可采购齐全。",
+    "fr": "Verre, miroirs et accessoires de fabricants étrangers, pour tout trouver auprès d'un seul fournisseur."
    }
   },
   {
    "title": {
-    "en": "Warranty",
-    "zh": "质保",
-    "fr": "Garantie"
+    "en": "Customer support",
+    "zh": "客户服务",
+    "fr": "Service à la clientèle"
    },
    "text": {
-    "en": "Our products and installations are backed by a warranty.",
-    "zh": "我们的产品和安装均提供质保。",
-    "fr": "Nos produits et nos installations sont couverts par une garantie."
+    "en": "Help choosing the right product, quick quotes, and support from order to installation.",
+    "zh": "协助您选择合适的产品，快速报价，从下单到安装全程支持。",
+    "fr": "Conseils pour choisir le bon produit, soumissions rapides et accompagnement de la commande à l'installation."
    }
   }
  ],

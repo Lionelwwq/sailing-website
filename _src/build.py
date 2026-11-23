@@ -17,6 +17,7 @@ Each page starts with a small settings block:
     nav: which menu item to highlight (home, products, accessories, applications, about, contact)
     -->
 """
+import hashlib
 import pathlib
 import re
 
@@ -30,6 +31,14 @@ OUT = SRC.parent
 LAYOUT = (SRC / 'layout.html').read_text(encoding='utf-8')
 SETTINGS = re.compile(r'\A\s*<!--(.*?)-->\s*', re.S)
 INCLUDE = re.compile(r'<!--\s*include:\s*([\w-]+)\s*-->')
+ASSET = re.compile(r'((?:href|src)="(assets/(?:css|js)/[\w.-]+\.(?:css|js)))"')
+
+
+def stamp(m: re.Match) -> str:
+    """Add a short content hash (?v=...) so browsers fetch a changed script or stylesheet
+    instead of a cached copy that no longer matches the page."""
+    digest = hashlib.sha1((OUT / m.group(2)).read_bytes()).hexdigest()[:8]
+    return f'{m.group(1)}?v={digest}"'
 
 
 def build(page: pathlib.Path) -> str:
@@ -55,7 +64,7 @@ def build(page: pathlib.Path) -> str:
     html = html.replace('{{page}}', meta.get('page', page.stem))
     html = html.replace(f'data-nav="{nav}"', f'data-nav="{nav}" aria-current="page"')
     html = html.replace('{{content}}', body.replace('{{image}}', meta.get('image', DEFAULT_IMAGE)))
-    return html
+    return ASSET.sub(stamp, html)
 
 
 def main() -> None:

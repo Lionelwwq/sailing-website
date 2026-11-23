@@ -348,7 +348,7 @@
       const { d, w } = await open('index.html?lang=zh', 375, 800);
       assert(await until(() => $(d, '#wh').classList.contains('arrived')), 'not inside');
       assert(!$(d, '.wh-door'), 'door shown on a phone');
-      $(d, '.wh-index [data-zone="accessories"]').click();
+      $(d, '.wh-dot[data-zone="accessories"]').click();
       await wait(200);
       assert(!$(d, '.wh-panel').hidden, 'info card hidden');
       assert(d.documentElement.scrollWidth <= 376, `page is ${d.documentElement.scrollWidth}px wide`);

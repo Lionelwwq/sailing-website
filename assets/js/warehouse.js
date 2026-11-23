@@ -56,7 +56,6 @@
     prev: { en: 'Previous area', zh: '上一区域', fr: 'Zone précédente' },
     next: { en: 'Next area', zh: '下一区域', fr: 'Zone suivante' },
     close: { en: 'Back to warehouse', zh: '返回仓库', fr: "Retour à l'entrepôt" },
-    areas: { en: 'Warehouse areas', zh: '仓库区域', fr: "Zones de l'entrepôt" },
     tour: { en: 'Auto tour', zh: '自动导览', fr: 'Visite auto' },
     stop: { en: 'Stop tour', zh: '停止导览', fr: 'Arrêter' },
     spotsHint: { en: 'Click a product in the picture to open it', zh: '点击画面中的产品，进入产品页', fr: 'Cliquez sur un produit dans l’image pour l’ouvrir' },
@@ -104,9 +103,6 @@
     $('.wh-eyebrow').textContent = tr(T.eyebrow);
     $('.wh-title').textContent = tr(T.title);
     $('.wh-hint').textContent = tr(T.hint);
-    const idx = $('.wh-index');
-    idx.setAttribute('aria-label', tr(T.areas));
-    idx.innerHTML = ZONES.map((z, i) => `<button type="button" data-zone="${z.id}" aria-pressed="${active === z}"><span>${num(i)}</span>${esc(tr(z.name))}</button>`).join('');
     const tb = $('.wh-tour');
     tb.innerHTML = `<span class="wh-tour-ic" aria-hidden="true">${touring ? '❚❚' : '▶'}</span>${esc(tr(touring ? T.stop : T.tour))}`;
     tb.setAttribute('aria-pressed', String(touring));
