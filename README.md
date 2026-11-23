@@ -6,8 +6,8 @@
 
 | 文件 | 页面 |
 | --- | --- |
-| `index.html` | 首页 |
-| `glass.html` | 产品：玻璃（9 种） |
+| `index.html` | 首页（最上方是仓库导览，见下文） |
+| `glass.html` | 产品：玻璃（11 种） |
 | `mirrors.html` | 产品：镜子（5 种） |
 | `accessories.html` | 产品：配件（16 种，分 4 类） |
 | `about.html` | 关于我们 |
@@ -31,7 +31,21 @@
 - 点保存后，网站约 1–2 分钟自动更新。
 - 产品的"Id"是网址里用的短代码（例如 `tempered`），新加产品时用小写英文加连字符，不要和已有的重复。
 
-**目前用示意图代替的照片**（请尽快在编辑器里换成实拍照片）：镜子页的"Tinted Mirror"、"Antique Mirror"、"Back-Painted Glass"。另外，"Solar (PV) Glass"暂时借用了超白玻璃的照片。
+**还缺专门照片的产品**："Solar (PV) Glass"暂时借用超白玻璃的照片；"Tempered Glass"和"Safety-Backed Mirror"用的是旧照片。
+
+**注意：** 首页最上方现在是仓库导览，编辑器里"首页 → Hero image"这张图暂时不会显示（首页的标题、介绍文字照常显示在仓库外观画面上）。
+
+## 首页仓库导览
+
+首页一打开是仓库外观和首页文字。点"进入仓库"（或向下滚动），卷帘门升起，镜头走进仓库；点圆点进入各区域的特写照片；点特写里的产品，画面会朝它推近，然后打开这个产品的页面（已选中该产品）。在产品页按浏览器的"返回"，会回到刚才的区域特写，不会重新开门。手机上直接显示室内画面。
+
+原版首页（大图版，仓库导览之前的样子）保留在 `home-classic.html`，没有放进菜单和网站地图，用于对比。
+
+- 图片都在 `assets/img/warehouse/`：外观（`entrance.webp`、关门版 `entrance-closed.webp`）、室内全景（`warehouse-photo.webp`）和 7 张区域特写（`zone-*.webp`）。
+- 用哪张图、7 个圆点的位置、特写里的产品点，都写在 `assets/img/warehouse/scene.json`。坐标按 1672 × 941 的画面计算。换图时只改这个文件，不用改代码。
+- 文字、按钮和行为在 `assets/js/warehouse.js`，样式在 `assets/css/warehouse.css`。
+- 外观墙上的公司招牌（舵轮标志 + SAILING / INTERNATIONAL TRADE LTD）是用 `_src/warehouse_sign.py` 合成上去的，没有招牌的原图在 `_src/warehouse/`。换 logo、颜色或公司名后，改脚本开头的几行再运行 `python _src/warehouse_sign.py`，开门和关门两张图会一起更新，位置保持一致。
+- 生成 AI 图片的提示词在本机的 `_design/warehouse-AI-prompt.txt`（不上传）。
 
 ## 多语言
 
@@ -72,9 +86,11 @@ python -m http.server 5173
 然后打开 http://localhost:5173
 
 - 配件的示意图在 `assets/js/diagrams.js`；页面的行为都在 `assets/js/site.js`；样式在 `assets/css/style.css`。
+- 测试：`python tests/check_content.py` 检查内容文件；在本地服务器打开 http://localhost:5173/tests/smoke.html 点 Run，会在三种语言、三种屏幕宽度下检查所有页面和仓库导览。
 
 ## 图片
 
 - `assets/img/products`、`glass`、`site`：Sailing 自己的产品照片、玻璃照片和项目照片
-- `assets/img/mirrors`：镜子的临时示意图（SVG）
-- `assets/img/online`：来自 Wikimedia Commons 的照片，必须保留署名。页脚的"Photo credits"会自动列出，署名内容在 `content/credits.json`。
+- `assets/img/library`：公司照片库（同事整理的产品照片和海报）
+- `assets/img/warehouse`：首页仓库导览的图片（AI 生成）
+- `assets/img/online`：来自 Wikimedia Commons 的照片，必须保留署名。页脚的"Photo credits"会自动列出，署名内容在 `content/credits.json`。弧形玻璃的两张 Unsplash 照片也列在这里。

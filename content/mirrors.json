@@ -16,6 +16,14 @@
       "zh": "商业洗手间中的镜子",
       "fr": "Miroirs dans une salle de toilettes commerciale"
      }
+    },
+    {
+     "image": "assets/img/library/mirror-colours.jpg",
+     "caption": {
+      "en": "Popular mirror colours: silver, grey, Euro grey, Euro bronze and bronze",
+      "zh": "常用镜子颜色：银镜、灰镜、欧灰、欧铜和茶镜",
+      "fr": "Teintes populaires : argent, gris, gris euro, bronze euro et bronze"
+     }
     }
    ],
    "short": {
@@ -108,8 +116,17 @@
     "zh": "彩色镜",
     "fr": "Miroir teinté"
    },
-   "photo": "assets/img/mirrors/tinted.svg",
-   "gallery": [],
+   "photo": "assets/img/library/tinted-mirror-collection.jpg",
+   "gallery": [
+    {
+     "image": "assets/img/library/mirror-colours.jpg",
+     "caption": {
+      "en": "Popular mirror colours: silver, grey, Euro grey, Euro bronze and bronze",
+      "zh": "常用镜子颜色：银镜、灰镜、欧灰、欧铜和茶镜",
+      "fr": "Teintes populaires : argent, gris, gris euro, bronze euro et bronze"
+     }
+    }
+   ],
    "short": {
     "en": "Grey, bronze and other tinted mirrors for a softer, warmer reflection.",
     "zh": "灰镜、茶镜及其他彩色镜，反射效果更柔和、温暖。",
@@ -200,7 +217,7 @@
     "zh": "仿古镜",
     "fr": "Miroir antique"
    },
-   "photo": "assets/img/mirrors/antique.svg",
+   "photo": "assets/img/library/antique-mirror-collection.jpg",
    "gallery": [],
    "short": {
     "en": "Aged, patinated mirror finishes for feature walls and decorative work.",
@@ -292,7 +309,7 @@
     "zh": "烤漆玻璃",
     "fr": "Verre laqué (peint au dos)"
    },
-   "photo": "assets/img/mirrors/back-painted.svg",
+   "photo": "assets/img/library/back-painted-collection.jpg",
    "gallery": [],
    "short": {
     "en": "Glass painted on the back in any colour, for splashbacks, cladding and signage.",

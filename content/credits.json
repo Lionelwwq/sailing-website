@@ -39,6 +39,22 @@
    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
    "source": "https://commons.wikimedia.org/wiki/File:Caulking.jpg",
    "title": "Caulking"
+  },
+  {
+   "file": "assets/img/library/curved-detail.jpg",
+   "author": "Declan Sun",
+   "license": "Unsplash License",
+   "licenseUrl": "https://unsplash.com/license",
+   "source": "https://unsplash.com/photos/49XhqDbKWOc",
+   "title": "Curved glass"
+  },
+  {
+   "file": "assets/img/library/curved-facade.jpg",
+   "author": "Gary Ellis",
+   "license": "Unsplash License",
+   "licenseUrl": "https://unsplash.com/license",
+   "source": "https://unsplash.com/photos/VDkIcAMEzI4",
+   "title": "Curved glass building"
   }
  ]
 }

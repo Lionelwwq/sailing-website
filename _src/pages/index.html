@@ -4,17 +4,37 @@ description: Custom glass, mirrors and glass industry accessories in Toronto sin
 nav: home
 image: assets/img/online/facade-up.jpg
 -->
-  <section class="hero" aria-labelledby="hero-title">
-    <img class="hero-bg" src="{{image}}" data-c-src="hero_image" alt="" fetchpriority="high">
-    <div class="container hero-inner">
+<link rel="stylesheet" href="assets/css/warehouse.css">
+  <!-- Warehouse tour: outside view with the home page words → the door rolls up → clickable areas.
+       Pictures and marker positions: assets/img/warehouse/scene.json. Script: assets/js/warehouse.js -->
+  <section class="wh" id="wh" aria-labelledby="hero-title">
+    <div class="wh-viewport">
+      <div class="wh-pan"><div class="wh-scene"></div></div>
+      <div class="wh-detail"><div class="wh-detail-stage"><img alt=""><div class="wh-spots"></div></div></div>
+    </div>
+    <div class="wh-hero">
       <span class="hero-kicker"><span data-ui="since_label">Since</span> <span data-set="since"></span></span>
       <h1 id="hero-title" data-c="hero_title"></h1>
       <p data-c="hero_text"></p>
       <div class="hero-actions">
+        <button class="btn btn-brand wh-enter" type="button" data-wh-enter>Enter the warehouse</button>
         <a class="btn btn-white" href="glass.html" data-ui="cta_view_products">View Products</a>
         <a class="btn btn-ghost" href="contact.html#quote" data-ui="cta_quote">Request a Quote</a>
       </div>
+      <span class="wh-door-hint"></span>
     </div>
+    <div class="wh-bar">
+      <div class="container">
+        <div class="wh-intro">
+          <span class="wh-eyebrow"></span>
+          <h2 class="wh-title"></h2>
+          <p class="wh-hint"></p>
+          <button class="wh-tour" type="button"></button>
+        </div>
+        <nav class="wh-index"></nav>
+      </div>
+    </div>
+    <aside class="wh-panel" aria-live="polite" hidden></aside>
   </section>
 
   <section class="sec sec-gray" aria-labelledby="intro-title">
@@ -47,3 +67,5 @@ image: assets/img/online/facade-up.jpg
   </section>
 
 <!-- include: cta -->
+
+<script src="assets/js/warehouse.js" defer></script>

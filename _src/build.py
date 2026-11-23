@@ -51,7 +51,8 @@ def build(page: pathlib.Path) -> str:
     for key in ('title', 'description'):
         html = html.replace('{{' + key + '}}', meta.get(key, '').replace('"', '&quot;'))
     html = html.replace('{{ogimage}}', SITE_URL + meta.get('image', DEFAULT_IMAGE))
-    html = html.replace('{{page}}', page.stem)
+    # "page:" lets a copy of a page run the same page script (e.g. the original home page uses "page: index")
+    html = html.replace('{{page}}', meta.get('page', page.stem))
     html = html.replace(f'data-nav="{nav}"', f'data-nav="{nav}" aria-current="page"')
     html = html.replace('{{content}}', body.replace('{{image}}', meta.get('image', DEFAULT_IMAGE)))
     return html
@@ -63,7 +64,9 @@ def main() -> None:
         (OUT / page.name).write_text(build(page), encoding='utf-8', newline='\n')
         print('built', page.name)
     # search-engine files
-    urls = [SITE_URL + ('' if p.stem == 'index' else p.name) for p in pages if p.stem != '404']
+    # pages with "sitemap: no" in their settings (demos, 404) are left out
+    urls = [SITE_URL + ('' if p.stem == 'index' else p.name) for p in pages
+            if p.stem != '404' and not re.search(r'^\s*sitemap:\s*no\s*$', SETTINGS.match(p.read_text(encoding='utf-8')).group(1), re.M)]
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     sitemap += [f'  <url><loc>{u}</loc></url>' for u in urls] + ['</urlset>', '']
     (OUT / 'sitemap.xml').write_text('\n'.join(sitemap), encoding='utf-8', newline='\n')

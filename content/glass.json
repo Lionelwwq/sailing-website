@@ -7,8 +7,25 @@
     "zh": "透明浮法玻璃",
     "fr": "Verre flotté clair"
    },
-   "photo": "assets/img/glass/clear-float.jpg",
-   "gallery": [],
+   "photo": "assets/img/library/clear-float-studio.jpg",
+   "gallery": [
+    {
+     "image": "assets/img/library/clear-float-edge.jpg",
+     "caption": {
+      "en": "Edge detail: the natural green tint of clear float glass",
+      "zh": "边部细节：普通浮法玻璃的边缘略带绿色",
+      "fr": "Détail du chant : la teinte verte naturelle du verre clair"
+     }
+    },
+    {
+     "image": "assets/img/library/clear-vs-low-iron.jpg",
+     "caption": {
+      "en": "Clear float glass (left) next to low-iron glass (right)",
+      "zh": "透明浮法玻璃（左）与超白玻璃（右）对比",
+      "fr": "Verre clair (à gauche) et verre extra-clair (à droite)"
+     }
+    }
+   ],
    "short": {
     "en": "Standard flat glass, and the starting point for cutting, tempering, laminating and IG units.",
     "zh": "标准平板玻璃，是切割、钢化、夹胶和中空玻璃加工的基础原片。",
@@ -99,8 +116,25 @@
     "zh": "超白玻璃",
     "fr": "Verre extra-clair (à faible teneur en fer)"
    },
-   "photo": "assets/img/glass/low-iron.jpg",
-   "gallery": [],
+   "photo": "assets/img/library/low-iron-studio.jpg",
+   "gallery": [
+    {
+     "image": "assets/img/library/low-iron-edge.jpg",
+     "caption": {
+      "en": "Edge detail: low-iron glass stays clear right to the edge",
+      "zh": "边部细节：超白玻璃的边缘依然通透",
+      "fr": "Détail du chant : le verre extra-clair reste limpide jusqu’au bord"
+     }
+    },
+    {
+     "image": "assets/img/library/clear-vs-low-iron.jpg",
+     "caption": {
+      "en": "Clear float glass (left) next to low-iron glass (right)",
+      "zh": "透明浮法玻璃（左）与超白玻璃（右）对比",
+      "fr": "Verre clair (à gauche) et verre extra-clair (à droite)"
+     }
+    }
+   ],
    "short": {
     "en": "Ultra-clear glass with high light transmittance and no green edge tint.",
     "zh": "超白玻璃，透光率高，边缘不发绿。",
@@ -191,8 +225,17 @@
     "zh": "着色浮法玻璃",
     "fr": "Verre flotté teinté"
    },
-   "photo": "assets/img/glass/tinted-float.jpg",
-   "gallery": [],
+   "photo": "assets/img/library/tinted-collection.jpg",
+   "gallery": [
+    {
+     "image": "assets/img/glass/tinted-float.jpg",
+     "caption": {
+      "en": "Tinted glass samples",
+      "zh": "着色玻璃样品",
+      "fr": "Échantillons de verre teinté"
+     }
+    }
+   ],
    "short": {
     "en": "Body-tinted glass in a choice of colours to cut glare and solar heat.",
     "zh": "本体着色玻璃，多种颜色可选，可减少眩光和太阳热量。",
@@ -375,8 +418,33 @@
     "zh": "夹胶玻璃",
     "fr": "Verre feuilleté"
    },
-   "photo": "assets/img/glass/laminated.jpg",
-   "gallery": [],
+   "photo": "assets/img/library/laminated-studio.jpg",
+   "gallery": [
+    {
+     "image": "assets/img/library/laminated-edge.jpg",
+     "caption": {
+      "en": "Edge detail: two layers of glass bonded by an interlayer",
+      "zh": "边部细节：两层玻璃由中间膜粘合",
+      "fr": "Détail du chant : deux verres liés par un intercalaire"
+     }
+    },
+    {
+     "image": "assets/img/library/laminated-samples.jpg",
+     "caption": {
+      "en": "Laminated glass samples, clear and tinted",
+      "zh": "透明与着色夹胶玻璃样品",
+      "fr": "Échantillons de verre feuilleté, clair et teinté"
+     }
+    },
+    {
+     "image": "assets/img/library/laminated-uv-sound.jpg",
+     "caption": {
+      "en": "UV protection and sound control",
+      "zh": "防紫外线与隔音",
+      "fr": "Protection UV et confort acoustique"
+     }
+    }
+   ],
    "short": {
     "en": "Glass layers bonded with an interlayer that holds the pieces together if the glass breaks.",
     "zh": "多层玻璃通过中间膜粘合，玻璃破碎时碎片仍粘连在一起。",
@@ -467,8 +535,41 @@
     "zh": "中空玻璃",
     "fr": "Verre isolant (unité scellée)"
    },
-   "photo": "assets/img/glass/insulated.jpg",
-   "gallery": [],
+   "photo": "assets/img/library/igu-studio.jpg",
+   "gallery": [
+    {
+     "image": "assets/img/library/igu-corner.jpg",
+     "caption": {
+      "en": "Corner detail: spacer and edge seal",
+      "zh": "边角细节：间隔条与密封胶",
+      "fr": "Détail du coin : intercalaire et scellant"
+     }
+    },
+    {
+     "image": "assets/img/library/igu-double-triple.jpg",
+     "caption": {
+      "en": "Double-glazed and triple-glazed units",
+      "zh": "双层与三层中空玻璃对比",
+      "fr": "Unités à double et à triple vitrage"
+     }
+    },
+    {
+     "image": "assets/img/library/igu-heat-transfer.jpg",
+     "caption": {
+      "en": "How an insulated glass unit reduces heat transfer",
+      "zh": "中空玻璃如何减少热量传递",
+      "fr": "Comment une unité scellée réduit le transfert de chaleur"
+     }
+    },
+    {
+     "image": "assets/img/library/igu-window.jpg",
+     "caption": {
+      "en": "Insulated glass in a window",
+      "zh": "中空玻璃窗实景",
+      "fr": "Verre isolant dans une fenêtre"
+     }
+    }
+   ],
    "short": {
     "en": "Two or more lites sealed around an air- or gas-filled space for thermal and sound insulation.",
     "zh": "两片或多片玻璃围绕充空气或充气的空腔密封而成，隔热隔音。",
@@ -559,8 +660,41 @@
     "zh": "镀膜玻璃",
     "fr": "Verre à couche"
    },
-   "photo": "assets/img/glass/coated.jpg",
-   "gallery": [],
+   "photo": "assets/img/library/reflective-pavilion.jpg",
+   "gallery": [
+    {
+     "image": "assets/img/library/reflective-diagram.jpg",
+     "caption": {
+      "en": "Reflective coating: sends solar heat back, lets daylight through",
+      "zh": "反射镀膜：反射太阳热量，保留自然采光",
+      "fr": "Couche réfléchissante : renvoie la chaleur solaire, laisse entrer la lumière"
+     }
+    },
+    {
+     "image": "assets/img/library/low-e-office.jpg",
+     "caption": {
+      "en": "Low-E coated glass on an office building",
+      "zh": "Low-E 镀膜玻璃办公楼",
+      "fr": "Verre à faible émissivité sur un immeuble de bureaux"
+     }
+    },
+    {
+     "image": "assets/img/library/low-e-facade.jpg",
+     "caption": {
+      "en": "Low-E glass facade",
+      "zh": "Low-E 玻璃幕墙",
+      "fr": "Façade en verre à faible émissivité"
+     }
+    },
+    {
+     "image": "assets/img/glass/coated.jpg",
+     "caption": {
+      "en": "Coated glass samples",
+      "zh": "镀膜玻璃样品",
+      "fr": "Échantillons de verre à couche"
+     }
+    }
+   ],
    "short": {
     "en": "Glass with Low-E or reflective coatings that control heat, glare and appearance.",
     "zh": "带 Low-E 或反射镀膜的玻璃，可控制热量、眩光和外观。",
@@ -651,8 +785,65 @@
     "zh": "压花玻璃",
     "fr": "Verre imprimé"
    },
-   "photo": "assets/img/glass/patterned.jpg",
-   "gallery": [],
+   "photo": "assets/img/library/pattern-flutelite-s.jpg",
+   "gallery": [
+    {
+     "image": "assets/img/library/pattern-chinchilla.jpg",
+     "caption": {
+      "en": "Chinchilla pattern",
+      "zh": "Chinchilla 花型",
+      "fr": "Motif Chinchilla"
+     }
+    },
+    {
+     "image": "assets/img/library/pattern-granite.jpg",
+     "caption": {
+      "en": "Granite pattern",
+      "zh": "Granite 花型",
+      "fr": "Motif Granite"
+     }
+    },
+    {
+     "image": "assets/img/library/pattern-mistlite.jpg",
+     "caption": {
+      "en": "Mistlite pattern",
+      "zh": "Mistlite 花型",
+      "fr": "Motif Mistlite"
+     }
+    },
+    {
+     "image": "assets/img/library/pattern-moru.jpg",
+     "caption": {
+      "en": "Moru pattern",
+      "zh": "Moru 花型",
+      "fr": "Motif Moru"
+     }
+    },
+    {
+     "image": "assets/img/library/pattern-nashiji.jpg",
+     "caption": {
+      "en": "Nashiji pattern",
+      "zh": "Nashiji 花型",
+      "fr": "Motif Nashiji"
+     }
+    },
+    {
+     "image": "assets/img/library/pattern-oceanic.jpg",
+     "caption": {
+      "en": "Oceanic pattern",
+      "zh": "Oceanic 花型",
+      "fr": "Motif Oceanic"
+     }
+    },
+    {
+     "image": "assets/img/library/pattern-pinhead.jpg",
+     "caption": {
+      "en": "Pinhead pattern",
+      "zh": "Pinhead 花型",
+      "fr": "Motif Pinhead"
+     }
+    }
+   ],
    "short": {
     "en": "Textured glass that lets light through while adding privacy and decoration.",
     "zh": "带纹理的玻璃，透光的同时兼具私密性和装饰性。",
@@ -734,6 +925,224 @@
     "water-jet",
     "grinding-wheels",
     "cork-pads"
+   ]
+  },
+  {
+   "id": "acid-etched",
+   "name": {
+    "en": "Acid Etched Glass",
+    "zh": "酸蚀玻璃",
+    "fr": "Verre gravé à l'acide"
+   },
+   "photo": "assets/img/library/acid-etched-studio.jpg",
+   "gallery": [
+    {
+     "image": "assets/img/library/acid-etched-detail.jpg",
+     "caption": {
+      "en": "Surface detail: an even, satin finish",
+      "zh": "表面细节：均匀细腻的磨砂质感",
+      "fr": "Détail de la surface : un fini satiné uniforme"
+     }
+    },
+    {
+     "image": "assets/img/library/acid-etched-privacy.jpg",
+     "caption": {
+      "en": "Light passes through, the view behind is softened",
+      "zh": "透光，但后面的物体看不清",
+      "fr": "La lumière passe, la vue derrière est adoucie"
+     }
+    }
+   ],
+   "short": {
+    "en": "Glass with a smooth satin finish that lets light through while blurring the view.",
+    "zh": "表面细腻的磨砂玻璃，透光的同时遮挡视线。",
+    "fr": "Verre au fini satiné et lisse qui laisse passer la lumière tout en brouillant la vue."
+   },
+   "description": {
+    "en": "Acid etched glass has one surface treated with acid to give a smooth, even satin finish. It softens light and hides what is behind it, and it is easier to keep clean than sandblasted glass. It suits shower enclosures, office partitions, doors and furniture.",
+    "zh": "酸蚀玻璃的一面经酸液处理，形成平滑均匀的磨砂效果。它让光线变得柔和、遮挡后面的视线，而且比喷砂玻璃更容易清洁，适用于淋浴房、办公室隔断、门和家具。",
+    "fr": "Le verre gravé à l'acide a une face traitée à l'acide qui lui donne un fini satiné lisse et uniforme. Il adoucit la lumière et masque ce qui se trouve derrière, et il s'entretient plus facilement que le verre sablé. Il convient aux douches, aux cloisons de bureau, aux portes et aux meubles."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Finish",
+      "zh": "表面",
+      "fr": "Fini"
+     },
+     "value": {
+      "en": "Even satin finish on one side",
+      "zh": "单面均匀磨砂",
+      "fr": "Fini satiné uniforme sur une face"
+     }
+    },
+    {
+     "label": {
+      "en": "Privacy",
+      "zh": "私密性",
+      "fr": "Intimité"
+     },
+     "value": {
+      "en": "Lets light through, blurs the view",
+      "zh": "透光不透影",
+      "fr": "Laisse passer la lumière, brouille la vue"
+     }
+    },
+    {
+     "label": {
+      "en": "Processing",
+      "zh": "加工方式",
+      "fr": "Mise en œuvre"
+     },
+     "value": {
+      "en": "Can be tempered, laminated or used in IG units",
+      "zh": "可钢化、夹胶或做成中空玻璃",
+      "fr": "Peut être trempé, feuilleté ou intégré à une unité scellée"
+     }
+    },
+    {
+     "label": {
+      "en": "Sizes",
+      "zh": "尺寸",
+      "fr": "Dimensions"
+     },
+     "value": {
+      "en": "Cut to your dimensions",
+      "zh": "按您的尺寸切割",
+      "fr": "Coupe selon vos dimensions"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Shower enclosures and bathrooms",
+     "zh": "淋浴房和浴室",
+     "fr": "Douches et salles de bains"
+    },
+    {
+     "en": "Office partitions and doors",
+     "zh": "办公室隔断和门",
+     "fr": "Cloisons de bureau et portes"
+    },
+    {
+     "en": "Cabinets and furniture",
+     "zh": "橱柜和家具",
+     "fr": "Armoires et meubles"
+    }
+   ],
+   "related": [
+    "cork-pads",
+    "grinding-wheels",
+    "cerium-dioxide"
+   ]
+  },
+  {
+   "id": "curved",
+   "name": {
+    "en": "Curved Glass",
+    "zh": "弧形玻璃",
+    "fr": "Verre bombé"
+   },
+   "photo": "assets/img/library/curved-partition.jpg",
+   "gallery": [
+    {
+     "image": "assets/img/library/curved-detail.jpg",
+     "caption": {
+      "en": "A curved glass panel up close",
+      "zh": "弧形玻璃近景",
+      "fr": "Panneau de verre bombé en gros plan"
+     }
+    },
+    {
+     "image": "assets/img/library/curved-facade.jpg",
+     "caption": {
+      "en": "Curved glass on a building facade",
+      "zh": "建筑外立面上的弧形玻璃",
+      "fr": "Verre bombé sur une façade d'immeuble"
+     }
+    }
+   ],
+   "short": {
+    "en": "Glass bent to a curve for facades, partitions, railings and display cases.",
+    "zh": "热弯成弧形的玻璃，用于外立面、隔断、栏杆和展示柜。",
+    "fr": "Verre cintré pour les façades, cloisons, garde-corps et vitrines."
+   },
+   "description": {
+    "en": "Curved glass is heated and bent over a mould to the shape on your drawings. It can also be made as curved tempered, laminated or insulated glass, for curved facades and storefronts, office partitions, stair railings, display cases and shower enclosures.",
+    "zh": "弧形玻璃经加热后按模具弯曲，做成您图纸上的形状。也可以做成弧形钢化、夹胶或中空玻璃，用于弧形外立面和店面、办公室隔断、楼梯栏杆、展示柜和淋浴房。",
+    "fr": "Le verre bombé est chauffé puis cintré sur un moule selon la forme de vos plans. Il peut aussi être fabriqué en verre bombé trempé, feuilleté ou isolant, pour les façades et vitrines courbes, les cloisons de bureau, les garde-corps, les présentoirs et les douches."
+   },
+   "specs": [
+    {
+     "label": {
+      "en": "Forming",
+      "zh": "成形方式",
+      "fr": "Formage"
+     },
+     "value": {
+      "en": "Heat-bent over a mould",
+      "zh": "加热后按模具弯曲",
+      "fr": "Cintré à chaud sur un moule"
+     }
+    },
+    {
+     "label": {
+      "en": "Shape",
+      "zh": "弧度",
+      "fr": "Forme"
+     },
+     "value": {
+      "en": "Radius and shape to your drawings",
+      "zh": "弧度和形状按您的图纸",
+      "fr": "Rayon et forme selon vos plans"
+     }
+    },
+    {
+     "label": {
+      "en": "Processing",
+      "zh": "加工方式",
+      "fr": "Mise en œuvre"
+     },
+     "value": {
+      "en": "Curved tempered, laminated or insulated",
+      "zh": "可做弧形钢化、夹胶或中空",
+      "fr": "Bombé trempé, feuilleté ou isolant"
+     }
+    },
+    {
+     "label": {
+      "en": "Sizes",
+      "zh": "尺寸",
+      "fr": "Dimensions"
+     },
+     "value": {
+      "en": "Made to your dimensions",
+      "zh": "按您的尺寸定制",
+      "fr": "Fabriqué selon vos dimensions"
+     }
+    }
+   ],
+   "uses": [
+    {
+     "en": "Curved facades and storefronts",
+     "zh": "弧形外立面和店面",
+     "fr": "Façades et vitrines courbes"
+    },
+    {
+     "en": "Office partitions",
+     "zh": "办公室隔断",
+     "fr": "Cloisons de bureau"
+    },
+    {
+     "en": "Railings, display cases and showers",
+     "zh": "栏杆、展示柜和淋浴房",
+     "fr": "Garde-corps, présentoirs et douches"
+    }
+   ],
+   "related": [
+    "glass-sling",
+    "custom-rack",
+    "silicone-adhesive"
    ]
   },
   {

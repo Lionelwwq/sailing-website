@@ -11,6 +11,8 @@
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
   const PAGE = document.body.dataset.page;
+  // arriving from the warehouse tour: the page fades in from white with a gentle zoom on the product photo
+  try { if (sessionStorage.getItem('sit-arrive')) { sessionStorage.removeItem('sit-arrive'); document.documentElement.classList.add('arrive'); } } catch (e) { /* ignore */ }
   const LANGS = ['en', 'zh', 'fr'];
   const HTML_LANG = { en: 'en', zh: 'zh-Hans', fr: 'fr-CA' };
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -23,7 +25,7 @@
   };
   function initialLang() {
     const q = new URLSearchParams(location.search).get('lang');
-    if (LANGS.includes(q)) return q;
+    if (LANGS.includes(q)) { store.set('sit-lang', q); return q; }   // a shared ?lang= link keeps that language on the next pages too
     const saved = store.get('sit-lang', null);
     if (LANGS.includes(saved)) return saved;
     const nav = (navigator.language || 'en').toLowerCase();
@@ -233,8 +235,13 @@
         <div class="ex-media">
           <div class="ex-stage ${st.cls}">${st.html}</div>
           <p class="ex-caption">${st.cap}</p>
-          ${g.length > 1 ? `<div class="ex-thumbs">${g.map((x, i) => `<button class="ex-thumb" type="button" data-slide="${i}" aria-pressed="${i === slide}" aria-label="${esc(i === 0 ? labels.img : x.type === 'diagram' ? labels.diagram : ui('in_use_label'))}">
-            ${x.type === 'diagram' ? window.SIT_DIAGRAMS[it.id] : `<img src="${esc(x.src)}" alt="" loading="lazy">`}<span class="lbl">${esc(i === 0 ? labels.img : x.type === 'diagram' ? labels.diagram : ui('in_use_label'))}</span></button>`).join('')}</div>` : ''}
+          ${g.length > 1 ? `<div class="ex-thumbs">${g.map((x, i) => {
+            // the main photo and the diagram get a short tag; extra photos are named by their own caption
+            const tag = i === 0 ? labels.img : x.type === 'diagram' ? labels.diagram : '';
+            const name = tag || t(x.caption) || ui('in_use_label');
+            return `<button class="ex-thumb" type="button" data-slide="${i}" aria-pressed="${i === slide}" aria-label="${esc(name)}" title="${esc(name)}">
+            ${x.type === 'diagram' ? window.SIT_DIAGRAMS[it.id] : `<img src="${esc(x.src)}" alt="" loading="lazy">`}${tag ? `<span class="lbl">${esc(tag)}</span>` : ''}</button>`;
+          }).join('')}</div>` : ''}
         </div>
         <div class="ex-info">
           <span class="ex-cat">${esc(group ? t(group.name) : t(C.productPages[kind].title))}</span>

@@ -1,0 +1,165 @@
+{
+ "image": "warehouse-photo.webp",
+ "width": 1672,
+ "height": 941,
+ "zoom": 1.25,
+ "hotspots": {
+  "glass": [
+   250,
+   545
+  ],
+  "mirrors": [
+   545,
+   470
+  ],
+  "curved": [
+   800,
+   560
+  ],
+  "solar": [
+   965,
+   430
+  ],
+  "accessories": [
+   1368,
+   485
+  ],
+  "racks": [
+   1225,
+   560
+  ],
+  "quote": [
+   757,
+   690
+  ]
+ },
+ "entrance": {
+  "image": "entrance.webp",
+  "closed": "entrance-closed.webp",
+  "door": [
+   31.34,
+   55.37,
+   68.78,
+   89.05
+  ],
+  "focus": [
+   50.1,
+   83.4
+  ],
+  "zoom": 3.0
+ },
+ "details": {
+  "glass": "zone-glass.webp",
+  "mirrors": "zone-mirrors.webp",
+  "curved": "zone-curved.webp",
+  "solar": "zone-solar.webp",
+  "accessories": "zone-accessories.webp",
+  "racks": "zone-racks.webp",
+  "quote": "zone-quote.webp"
+ },
+ "zoomNoDetail": 1.5,
+ "spots": {
+  "glass": [
+   {
+    "x": 420,
+    "y": 520,
+    "product": "glass:clear-float"
+   },
+   {
+    "x": 640,
+    "y": 450,
+    "product": "glass:low-iron"
+   },
+   {
+    "x": 870,
+    "y": 450,
+    "product": "glass:tinted"
+   }
+  ],
+  "mirrors": [
+   {
+    "x": 405,
+    "y": 470,
+    "product": "mirrors:silver-mirror"
+   },
+   {
+    "x": 598,
+    "y": 470,
+    "product": "mirrors:tinted-mirror"
+   },
+   {
+    "x": 985,
+    "y": 470,
+    "product": "mirrors:antique-mirror"
+   }
+  ],
+  "curved": [
+   {
+    "x": 330,
+    "y": 610,
+    "product": "glass:curved"
+   },
+   {
+    "x": 1200,
+    "y": 470,
+    "product": "glass:solar"
+   }
+  ],
+  "solar": [
+   {
+    "x": 620,
+    "y": 420,
+    "product": "glass:solar"
+   },
+   {
+    "x": 150,
+    "y": 520,
+    "product": "glass:curved"
+   }
+  ],
+  "accessories": [
+   {
+    "x": 930,
+    "y": 270,
+    "product": "accessories:eva-film"
+   },
+   {
+    "x": 1400,
+    "y": 210,
+    "product": "accessories:silicone-adhesive"
+   },
+   {
+    "x": 1250,
+    "y": 440,
+    "product": "accessories:aluminum-spacer"
+   },
+   {
+    "x": 920,
+    "y": 600,
+    "product": "accessories:grinding-wheels"
+   },
+   {
+    "x": 1480,
+    "y": 625,
+    "product": "accessories:cork-pads"
+   }
+  ],
+  "racks": [
+   {
+    "x": 1060,
+    "y": 420,
+    "product": "accessories:custom-rack"
+   },
+   {
+    "x": 560,
+    "y": 330,
+    "product": "accessories:al-stock-shelf"
+   },
+   {
+    "x": 1475,
+    "y": 565,
+    "product": "accessories:cork-pads"
+   }
+  ]
+ }
+}
