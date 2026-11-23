@@ -20,7 +20,6 @@ image: assets/img/site/bg1-min2.jpg
       <p data-c="story_text2"></p>
       <div class="stat-row">
         <div><strong data-set="since"></strong><span data-ui="since_label"></span></div>
-        <div><strong>3</strong><span data-ui="nav_products"></span></div>
       </div>
     </div>
     <div class="split-media"><img data-c-src="story_image" alt="" loading="lazy"></div>
@@ -29,6 +28,7 @@ image: assets/img/site/bg1-min2.jpg
   <section class="sec sec-gray" aria-labelledby="values-title">
     <div class="container center">
       <h2 class="h-up reveal" id="values-title" data-c="values_title"></h2>
+      <p class="lead-strong values-motto reveal" data-c="values_motto"></p>
       <div class="pillars pillars-4" id="values"></div>
     </div>
   </section>
@@ -40,6 +40,24 @@ image: assets/img/site/bg1-min2.jpg
     </div>
   </section>
 
+  <!-- Market presence: 3D globe drawn by assets/js/globe.js; markets and figures come from content/pages/about.json -->
+  <section class="sec market" id="market" aria-labelledby="market-title">
+    <div class="container market-grid">
+      <div class="market-copy reveal">
+        <span class="market-eyebrow" data-c="market_eyebrow"></span>
+        <h2 class="h-up" id="market-title" data-c="market_title"></h2>
+        <p class="market-text" data-c="market_text"></p>
+        <div class="market-stats" id="market-stats"></div>
+      </div>
+      <div class="market-list reveal" id="market-list"></div>
+      <div class="globe-wrap reveal">
+        <canvas class="globe" aria-hidden="true"></canvas>
+        <div class="globe-labels" id="globe-labels" aria-hidden="true"></div>
+        <p class="globe-hint" data-c="market_hint"></p>
+      </div>
+    </div>
+  </section>
+
   <section class="sec sec-gray" aria-labelledby="serve-title">
     <div class="container">
       <h2 class="h-up center reveal" id="serve-title" data-c="serve_title"></h2>
@@ -48,3 +66,4 @@ image: assets/img/site/bg1-min2.jpg
   </section>
 
 <!-- include: cta -->
+<script src="assets/js/globe.js" defer></script>

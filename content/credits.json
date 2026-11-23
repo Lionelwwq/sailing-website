@@ -55,6 +55,14 @@
    "licenseUrl": "https://unsplash.com/license",
    "source": "https://unsplash.com/photos/VDkIcAMEzI4",
    "title": "Curved glass building"
+  },
+  {
+   "file": "assets/img/site/land-mask.png",
+   "author": "Natural Earth",
+   "license": "Public domain",
+   "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+   "source": "https://www.naturalearthdata.com/downloads/110m-cultural-vectors/",
+   "title": "Admin 0 – Countries, 1:110m (land outline for the globe on the About page)"
   }
  ]
 }

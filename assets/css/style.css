@@ -141,6 +141,9 @@ ul, ol { margin: 0; padding: 0; }
 :lang(zh) .h-up { letter-spacing: .08em; }
 .sub { max-width: 640px; margin: 18px auto 0; color: var(--muted); font-size: 1.05rem; }
 .lead-strong { margin: 22px auto 0; max-width: 720px; font-family: var(--font-head); font-weight: 600; font-size: 1.15rem; color: var(--ink); }
+.values-motto { margin-top: 18px; font-size: clamp(1.15rem, 1.8vw, 1.45rem); font-weight: 500; font-style: italic; color: var(--brand); }
+.values-motto:empty { display: none; }
+html[lang^="zh"] .values-motto { font-style: normal; letter-spacing: .04em; }
 
 /* page content fades in once it has loaded */
 .js:not(.ready) main { opacity: 0; }
@@ -280,6 +283,57 @@ html.arrive .ex-stage > img { animation: arrive-zoom 1.3s cubic-bezier(.2, .7, .
 .service p { color: var(--muted); font-size: 15px; }
 @media (max-width: 900px) { .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 560px) { .service-grid { grid-template-columns: 1fr; } }
+
+/* About: market presence with the 3D globe (assets/js/globe.js) */
+.market { position: relative; overflow: hidden; color: var(--white);
+  background: radial-gradient(70% 90% at 78% 45%, #3A2470 0%, #1D1238 55%, #120A26 100%); }
+.market::before { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .5;
+  background-image: radial-gradient(rgba(255, 255, 255, .07) 1px, transparent 1px); background-size: 22px 22px;
+  -webkit-mask-image: linear-gradient(90deg, #000 0%, transparent 60%); mask-image: linear-gradient(90deg, #000 0%, transparent 60%); }
+.market-grid { position: relative; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); grid-template-areas: "copy globe" "list globe";
+  column-gap: clamp(28px, 4vw, 64px); align-content: center; }
+.market-copy { grid-area: copy; align-self: end; }
+.market-list { grid-area: list; align-self: start; }
+.globe-wrap { grid-area: globe; align-self: center; }
+.market-eyebrow { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 14px; font-family: var(--font-head); font-size: 12.5px; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; color: #C9B8F2; }
+.market-eyebrow::before { content: ""; width: 26px; height: 2px; background: #F5C451; }
+.market .h-up { color: var(--white); }
+.market-text { margin-top: 16px; max-width: 470px; font-size: 16px; line-height: 1.7; color: rgba(255, 255, 255, .76); }
+.market-stats { display: flex; gap: 44px; margin: 30px 0 28px; padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, .14); }
+.market-stats div { display: grid; gap: 6px; }
+.market-stats strong { font-family: var(--font-head); font-size: clamp(2.6rem, 4.4vw, 3.6rem); font-weight: 600; line-height: 1;
+  background: linear-gradient(180deg, #FFFFFF 10%, #BFA8F0 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.market-stats span { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: rgba(255, 255, 255, .66); }
+.market-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; max-width: 480px; }
+.market-list button { display: flex; align-items: center; gap: 11px; padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, .12); background: rgba(255, 255, 255, .04);
+  color: var(--white); font-family: var(--font-head); font-size: 14px; font-weight: 500; text-align: left; transition: background .2s, border-color .2s, transform .2s; }
+.market-list button:hover { background: rgba(255, 255, 255, .1); border-color: rgba(255, 255, 255, .3); transform: translateY(-1px); }
+.market-list button[aria-pressed="true"] { background: rgba(245, 196, 81, .12); border-color: rgba(245, 196, 81, .6); }
+.market-list button i { flex: none; width: 8px; height: 8px; border-radius: 50%; background: #E9E1FF; box-shadow: 0 0 0 4px rgba(233, 225, 255, .14); }
+.market-list button.hub i { background: #F5C451; box-shadow: 0 0 0 4px rgba(245, 196, 81, .2); }
+.market-list button span { display: grid; gap: 2px; }
+.market-list small { font-family: var(--font-body, inherit); font-size: 11.5px; font-weight: 400; color: rgba(255, 255, 255, .6); }
+.market-list .hub { grid-column: 1 / -1; }
+.globe-wrap { position: relative; width: 100%; max-width: 660px; aspect-ratio: 1; justify-self: center; cursor: grab; touch-action: pan-y; user-select: none; -webkit-user-select: none; }
+.globe-wrap.dragging { cursor: grabbing; }
+.globe-wrap canvas { display: block; width: 100%; height: 100%; }
+.globe-labels { position: absolute; inset: 0; pointer-events: none; }
+.globe-labels span { position: absolute; left: 0; top: 0; padding: 4px 10px; border-radius: 999px; white-space: nowrap; opacity: 0;
+  font-family: var(--font-head); font-size: 12px; font-weight: 500; letter-spacing: .02em; color: var(--white);
+  background: rgba(18, 10, 38, .62); border: 1px solid rgba(255, 255, 255, .18); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+.globe-labels span.hub { border-color: rgba(245, 196, 81, .65); }
+.globe-labels span.on { background: rgba(245, 196, 81, .92); border-color: #F5C451; color: #1D1238; }
+.globe-hint { position: absolute; left: 0; right: 0; bottom: 2%; text-align: center; font-size: 12.5px; color: rgba(255, 255, 255, .5); pointer-events: none; }
+@media (max-width: 900px) {
+  .market-grid { grid-template-columns: 1fr; grid-template-areas: "copy" "globe" "list"; }
+  .market-stats { margin-bottom: 4px; }
+  .globe-wrap { max-width: 520px; margin-bottom: 20px; }
+}
+@media (max-width: 560px) {
+  .market-stats { gap: 32px; }
+  .market-list button { font-size: 13px; padding: 9px 10px; }
+  .globe-labels span { font-size: 11px; padding: 3px 8px; }
+}
 .photo-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 56px; }
 .photo-card { position: relative; isolation: isolate; display: flex; flex-direction: column; justify-content: flex-end; min-height: 380px; padding: 28px; color: var(--white); border-radius: var(--radius); overflow: hidden; background: var(--ink); }
 .photo-card img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; transition: transform .8s var(--ease); }

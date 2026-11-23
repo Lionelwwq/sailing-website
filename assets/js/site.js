@@ -362,6 +362,13 @@
       const A = C.page;
       $('#values').innerHTML = A.values.map((v, i) => `<div class="pillar reveal" style="--d:${i * 80}ms"><span class="num">${pad2(i + 1)}</span><h3>${esc(t(v.title))}</h3><p>${esc(t(v.text))}</p></div>`).join('');
       $('#about-services').innerHTML = A.services.map((s, i) => `<div class="service reveal" style="--d:${(i % 3) * 80}ms"><span class="num">${pad2(i + 1)}</span><h3>${esc(t(s.title))}</h3><p>${esc(t(s.text))}</p></div>`).join('');
+      // market presence: figures, market list and globe labels (the globe itself is drawn by globe.js)
+      if ($('#market-stats') && A.markets) {
+        $('#market-stats').innerHTML = (A.market_stats || []).map((s) => `<div><strong>${esc(s.value)}</strong><span>${esc(t(s.label))}</span></div>`).join('');
+        $('#market-list').innerHTML = A.markets.map((m, i) => `<button type="button" data-market="${esc(m.id)}" class="${i ? '' : 'hub'}" aria-pressed="false">
+          <i aria-hidden="true"></i><span>${esc(t(m.name))}${t(m.note) ? `<small>${esc(t(m.note))}</small>` : ''}</span></button>`).join('');
+        $('#globe-labels').innerHTML = A.markets.map((m, i) => `<span data-market="${esc(m.id)}" class="${i ? '' : 'hub'}">${esc(t(m.name))}</span>`).join('');
+      }
       $('#serve').innerHTML = A.serve.map((s, i) => `<div class="photo-card reveal" style="--d:${i * 80}ms"><img src="${esc(s.image)}" alt="" loading="lazy"><h3>${esc(t(s.title))}</h3><p>${esc(t(s.text))}</p></div>`).join('');
     },
     contact() {

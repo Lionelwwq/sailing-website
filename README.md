@@ -44,6 +44,7 @@
 - 图片都在 `assets/img/warehouse/`：外观（`entrance.webp`、关门版 `entrance-closed.webp`）、室内全景（`warehouse-photo.webp`）和 7 张区域特写（`zone-*.webp`）。
 - 用哪张图、7 个圆点的位置、特写里的产品点，都写在 `assets/img/warehouse/scene.json`。坐标按 1672 × 941 的画面计算。换图时只改这个文件，不用改代码。
 - 文字、按钮和行为在 `assets/js/warehouse.js`，样式在 `assets/css/warehouse.css`。
+- 关于我们页的「全球市场布局」是一个可拖动的 3D 地球（`assets/js/globe.js`，不用任何外部库）。市场名称、说明和两个数字在 `content/pages/about.json`（`market_*`、`markets`），编辑器里可以改；每个市场在地球上的位置写在 `globe.js` 开头的 `PLACES`，列表第一个市场（亚洲）是所有航线的起点。陆地轮廓来自 `assets/img/site/land-mask.png`，由 `_src/make_land_mask.py` 从 Natural Earth 公共领域数据生成。
 - 外观墙上的公司招牌（舵轮标志 + SAILING / INTERNATIONAL TRADE LTD）是用 `_src/warehouse_sign.py` 合成上去的，没有招牌的原图在 `_src/warehouse/`。换 logo、颜色或公司名后，改脚本开头的几行再运行 `python _src/warehouse_sign.py`，开门和关门两张图会一起更新，位置保持一致。
 - 生成 AI 图片的提示词在本机的 `_design/warehouse-AI-prompt.txt`（不上传）。
 

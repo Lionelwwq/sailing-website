@@ -31,17 +31,22 @@
   "zh": "我们的价值观",
   "fr": "Nos valeurs"
  },
+ "values_motto": {
+  "en": "“Built on quality. Driven by partnership.”",
+  "zh": "“以品质立身，以合作致远。”",
+  "fr": "« Bâtis sur la qualité. Portés par le partenariat. »"
+ },
  "values": [
   {
    "title": {
-    "en": "Pragmatism",
-    "zh": "务实",
-    "fr": "Pragmatisme"
+    "en": "Reliability",
+    "zh": "可靠",
+    "fr": "Fiabilité"
    },
    "text": {
-    "en": "Practical solutions that fit your process, budget and schedule.",
-    "zh": "切实可行的解决方案，契合您的工艺、预算和工期。",
-    "fr": "Des solutions pratiques adaptées à vos procédés, à votre budget et à votre échéancier."
+    "en": "Delivering dependable products and practical solutions our customers can count on.",
+    "zh": "提供值得信赖的产品和切实可行的解决方案，让客户放心依靠。",
+    "fr": "Des produits fiables et des solutions pratiques sur lesquels nos clients peuvent compter."
    }
   },
   {
@@ -51,33 +56,33 @@
     "fr": "Innovation"
    },
    "text": {
-    "en": "New materials and better ways of working glass, brought to your project.",
-    "zh": "将新材料和更好的玻璃加工方式带入您的项目。",
-    "fr": "De nouveaux matériaux et de meilleures façons de travailler le verre, au service de votre projet."
+    "en": "Exploring new possibilities and improving our solutions to meet changing customer needs.",
+    "zh": "不断探索新的可能，持续改进方案，满足客户不断变化的需求。",
+    "fr": "Explorer de nouvelles possibilités et améliorer nos solutions pour répondre à l'évolution des besoins de nos clients."
    }
   },
   {
    "title": {
-    "en": "Openness",
-    "zh": "开放",
-    "fr": "Ouverture"
+    "en": "Transparency",
+    "zh": "透明",
+    "fr": "Transparence"
    },
    "text": {
-    "en": "Clear communication and straightforward quotes from the first call.",
-    "zh": "从第一通电话起，沟通清晰，报价透明。",
-    "fr": "Une communication claire et des soumissions simples dès le premier appel."
+    "en": "Clear communication and honest information throughout every stage of an order.",
+    "zh": "订单的每个环节，都沟通清晰、信息真实。",
+    "fr": "Une communication claire et une information honnête à chaque étape d'une commande."
    }
   },
   {
    "title": {
-    "en": "Cooperation",
+    "en": "Partnership",
     "zh": "合作",
-    "fr": "Coopération"
+    "fr": "Partenariat"
    },
    "text": {
-    "en": "Long-term partnerships with suppliers and customers alike.",
-    "zh": "与供应商和客户建立长期合作关系。",
-    "fr": "Des partenariats à long terme, tant avec nos fournisseurs qu'avec nos clients."
+    "en": "Building long-term relationships through trust, collaboration, and mutual success.",
+    "zh": "以信任、协作与共赢，建立长期合作关系。",
+    "fr": "Des relations à long terme fondées sur la confiance, la collaboration et la réussite mutuelle."
    }
   }
  ],
@@ -157,6 +162,137 @@
     "en": "Help choosing the right product, quick quotes, and support from order to installation.",
     "zh": "协助您选择合适的产品，快速报价，从下单到安装全程支持。",
     "fr": "Conseils pour choisir le bon produit, soumissions rapides et accompagnement de la commande à l'installation."
+   }
+  }
+ ],
+ "market_eyebrow": {
+  "en": "Global network",
+  "zh": "全球网络",
+  "fr": "Réseau mondial"
+ },
+ "market_title": {
+  "en": "Market presence",
+  "zh": "全球市场布局",
+  "fr": "Présence sur les marchés"
+ },
+ "market_text": {
+  "en": "We work with manufacturing partners in Asia and supply customers in Canada, the United States, Europe, Africa, South America and Australia.",
+  "zh": "我们与亚洲的制造伙伴合作，为加拿大、美国、欧洲、非洲、南美洲和澳大利亚的客户供货。",
+  "fr": "Nous travaillons avec des fabricants partenaires en Asie et approvisionnons des clients au Canada, aux États-Unis, en Europe, en Afrique, en Amérique du Sud et en Australie."
+ },
+ "market_stats": [
+  {
+   "value": "20",
+   "label": {
+    "en": "Manufacturing partners",
+    "zh": "合作制造商",
+    "fr": "Fabricants partenaires"
+   }
+  },
+  {
+   "value": "20",
+   "label": {
+    "en": "Intelligent factories",
+    "zh": "智能工厂",
+    "fr": "Usines intelligentes"
+   }
+  }
+ ],
+ "market_hint": {
+  "en": "Drag to turn the globe. Choose a market to fly there.",
+  "zh": "拖动可旋转地球，点击市场可飞到该地区。",
+  "fr": "Faites glisser pour tourner le globe. Choisissez un marché pour vous y rendre."
+ },
+ "markets": [
+  {
+   "id": "asia",
+   "name": {
+    "en": "Asia",
+    "zh": "亚洲",
+    "fr": "Asie"
+   },
+   "note": {
+    "en": "Manufacturing partners",
+    "zh": "制造伙伴",
+    "fr": "Fabricants partenaires"
+   }
+  },
+  {
+   "id": "canada",
+   "name": {
+    "en": "Canada",
+    "zh": "加拿大",
+    "fr": "Canada"
+   },
+   "note": {
+    "en": "Head office, Toronto",
+    "zh": "多伦多总部",
+    "fr": "Siège social, Toronto"
+   }
+  },
+  {
+   "id": "usa",
+   "name": {
+    "en": "United States",
+    "zh": "美国",
+    "fr": "États-Unis"
+   },
+   "note": {
+    "en": "",
+    "zh": "",
+    "fr": ""
+   }
+  },
+  {
+   "id": "europe",
+   "name": {
+    "en": "Europe",
+    "zh": "欧洲",
+    "fr": "Europe"
+   },
+   "note": {
+    "en": "",
+    "zh": "",
+    "fr": ""
+   }
+  },
+  {
+   "id": "africa",
+   "name": {
+    "en": "Africa",
+    "zh": "非洲",
+    "fr": "Afrique"
+   },
+   "note": {
+    "en": "",
+    "zh": "",
+    "fr": ""
+   }
+  },
+  {
+   "id": "south-america",
+   "name": {
+    "en": "South America",
+    "zh": "南美洲",
+    "fr": "Amérique du Sud"
+   },
+   "note": {
+    "en": "",
+    "zh": "",
+    "fr": ""
+   }
+  },
+  {
+   "id": "australia",
+   "name": {
+    "en": "Australia",
+    "zh": "澳大利亚",
+    "fr": "Australie"
+   },
+   "note": {
+    "en": "",
+    "zh": "",
+    "fr": ""
    }
   }
  ],
