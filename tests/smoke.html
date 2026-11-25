@@ -79,7 +79,7 @@
   async function run() {
     const btn = document.getElementById('run');
     btn.disabled = true; out.innerHTML = ''; passed = failed = 0;
-    const saved = { quote: localStorage.getItem('sit-quote-v2'), lang: localStorage.getItem('sit-lang') };
+    const saved = { quote: localStorage.getItem('sit-quote-v2'), lang: localStorage.getItem('sit-lang'), edition: localStorage.getItem('sit-cat-edition') };
     localStorage.removeItem('sit-quote-v2');
     const englishH1 = {};
 
@@ -369,8 +369,10 @@
     });
 
     await test('Catalogue flipbook: turns pages, jumps to a chapter, PDF and thumbnails work', async () => {
+      localStorage.removeItem('sit-cat-edition');
       const { d, w } = await open('catalogue.html?lang=fr', 1280, 800);
-      const K = await w.fetch('assets/catalogue/pages.json').then((r) => r.json());
+      const M = await w.fetch('assets/catalogue/pages.json').then((r) => r.json());
+      const K = M.editions.fr;   // the French site opens the French catalogue
       const n = K.pages.length;
       const pdf = await w.fetch(K.pdf, { method: 'HEAD' });
       assert(pdf.ok && /pdf/.test(pdf.headers.get('content-type') || ''), `PDF not served (${pdf.status})`);
@@ -394,6 +396,40 @@
       assert(ph.d.documentElement.scrollWidth <= 376, `page is ${ph.d.documentElement.scrollWidth}px wide on a phone`);
       assert(!(ph.w.__siteErrors || []).length, (ph.w.__siteErrors || []).join('; '));
       return `${n} pages, ${K.sizeMB} MB`;
+    });
+    await test('Catalogue editions: English, French and Spanish, switchable, kept on the same page and remembered', async () => {
+      localStorage.removeItem('sit-cat-edition');
+      let { d, w } = await open('catalogue.html?lang=en', 1280, 800);
+      const M = await w.fetch('assets/catalogue/pages.json').then((r) => r.json());
+      const n = M.pages.length;
+      for (const k of ['en', 'fr', 'es']) {
+        const e = M.editions[k];
+        assert(e && e.pages.length === n, `${k} edition missing or ${e && e.pages.length} pages`);
+        assert((await w.fetch(e.pdf, { method: 'HEAD' })).ok, `${k} PDF missing`);
+        assert((await w.fetch(e.pages[n - 1].hd, { method: 'HEAD' })).ok && (await w.fetch(e.cover, { method: 'HEAD' })).ok, `${k} page pictures missing`);
+      }
+      assert(M.pdf === M.editions.en.pdf, 'the English PDF moved (links already shared would break)');
+      assert(await until(() => w.SailingFlipbook && w.SailingFlipbook.edition() === 'en'), 'English site does not open the English catalogue');
+      const btns = () => [...d.querySelectorAll('#fb-editions [data-edition]')];
+      assert(btns().length === 3, `${btns().length} editions offered`);
+      const count = () => $(d, '.fb-count').textContent;
+      $(d, '.fb-next').click();
+      assert(await until(() => count().startsWith('2')), 'next did not turn');
+      $(d, '#fb-editions [data-edition="es"]').click();
+      assert(await until(() => w.SailingFlipbook.edition() === 'es'), 'Spanish edition not shown');
+      assert(await until(() => [...d.querySelectorAll('.fb-face img')].every((i) => i.getAttribute('src').includes('/es/'))), 'the book still shows another edition');
+      assert(count().startsWith('2'), `jumped to "${count()}" instead of staying on the page`);
+      assert(btns().find((b) => b.dataset.edition === 'es').getAttribute('aria-pressed') === 'true', 'Español not marked');
+      assert([...d.querySelectorAll('[data-cat-pdf]')].every((a) => a.getAttribute('href') === M.editions.es.pdf), 'PDF buttons not on the Spanish PDF');
+      assert([...d.querySelectorAll('#fb-thumbs img, #cat-chapters img')].every((i) => i.getAttribute('src').includes('/es/')), 'thumbnails or chapters show another edition');
+      assert(/Español/.test($(d, '#cat-meta').textContent), `PDF line: ${$(d, '#cat-meta').textContent}`);
+      assert(!(w.__siteErrors || []).length, (w.__siteErrors || []).join('; '));
+      ({ d, w } = await open('catalogue.html?lang=fr', 1280, 800));
+      assert(await until(() => w.SailingFlipbook && w.SailingFlipbook.edition() === 'es'), 'the chosen edition was not remembered');
+      ({ d, w } = await open('catalogue.html?lang=zh&edition=fr', 375, 800));
+      assert(await until(() => w.SailingFlipbook && w.SailingFlipbook.edition() === 'fr'), 'an ?edition= link does not open that edition');
+      assert(d.documentElement.scrollWidth <= 376, `page is ${d.documentElement.scrollWidth}px wide on a phone`);
+      localStorage.removeItem('sit-cat-edition');
     });
     await test('About page: market globe draws, lists every market and flies to one', async () => {
       const { d, w } = await open('about.html?lang=zh', 1280, 800);
@@ -536,6 +572,7 @@
     stage.innerHTML = '';
     saved.quote === null ? localStorage.removeItem('sit-quote-v2') : localStorage.setItem('sit-quote-v2', saved.quote);
     saved.lang === null ? localStorage.removeItem('sit-lang') : localStorage.setItem('sit-lang', saved.lang);
+    saved.edition === null ? localStorage.removeItem('sit-cat-edition') : localStorage.setItem('sit-cat-edition', saved.edition);
     document.getElementById('summary').textContent = `Done: ${passed} passed, ${failed} failed`;
     btn.disabled = false;
     window.__testResult = { passed, failed };

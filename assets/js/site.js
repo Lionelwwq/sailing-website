@@ -35,6 +35,16 @@
   // a translatable value is either a plain string or { en, zh, fr }
   const t = (v) => (v == null ? '' : typeof v === 'string' ? v : (v[lang] || v.en || ''));
 
+  // product catalogue edition (English, French or Spanish): a ?edition= link or the visitor's own choice,
+  // otherwise it follows the site language (French site → French catalogue) or a Spanish browser
+  let catEdition = new URLSearchParams(location.search).get('edition') || store.get('sit-cat-edition', '');
+  function editionFor(eds) {
+    if (eds[catEdition]) return catEdition;
+    if (lang === 'fr' && eds.fr) return 'fr';
+    if ((navigator.language || '').toLowerCase().startsWith('es') && eds.es) return 'es';
+    return eds.en ? 'en' : Object.keys(eds)[0];
+  }
+
   /* ---------- content ---------- */
   const PRODUCT_KINDS = ['glass', 'mirrors', 'accessories'];
   const FILES = {
@@ -380,10 +390,14 @@
     },
     catalogue() {
       // texts for the flipbook page; the book itself is assets/js/catalogue.js, pages from assets/catalogue/pages.json
-      const P = C.page, K = C.catalogue;
+      const P = C.page, M = C.catalogue;
+      const eds = M.editions || { en: { label: 'English', pdf: M.pdf, sizeMB: M.sizeMB, pages: M.pages } };
+      const ed = editionFor(eds);
+      const K = eds[ed];
+      $('#fb-editions').innerHTML = Object.entries(eds).map(([k, e]) => `<button type="button" data-edition="${esc(k)}" lang="${esc(k)}" aria-pressed="${k === ed}">${esc(e.label)}</button>`).join('');
       $$('[data-cat-pdf]').forEach((a) => a.setAttribute('href', K.pdf));
       const size = lang === 'fr' ? String(K.sizeMB).replace('.', ',') : String(K.sizeMB);
-      $('#cat-meta').textContent = t(P.meta).replace('{pages}', K.pages.length).replace('{size}', size);
+      $('#cat-meta').textContent = t(P.meta).replace('{edition}', K.label).replace('{pages}', K.pages.length).replace('{size}', size);
       const pageName = (n) => t(P.page_label).replace('{n}', n);
       $('#fb-thumbs').innerHTML = K.pages.map((p) => `<button type="button" data-fb-goto="${p.page}" aria-label="${esc(pageName(p.page))}" aria-current="false">
         <img src="${esc(p.image)}" alt="" loading="lazy" width="510" height="660"><span>${p.page}</span></button>`).join('');
@@ -394,7 +408,9 @@
           <span class="ch-img"><img src="${esc(pg.image)}" alt="" loading="lazy" width="510" height="660"></span>
           <span class="ch-txt"><b>${esc(t(c.title))}</b><small>${esc(pageName(c.page))}</small></span></button>`;
       }).join('');
-      document.dispatchEvent(new CustomEvent('sit:catalogue'));
+      // assets/js/catalogue.js builds the book from these pages (and swaps it when the edition changes)
+      window.__sitCatalogue = { edition: ed, pages: K.pages };
+      document.dispatchEvent(new CustomEvent('sit:catalogue', { detail: window.__sitCatalogue }));
     },
     contact() {
       const P = C.page;
@@ -499,6 +515,14 @@
   document.addEventListener('click', (e) => {
     const lb = e.target.closest('[data-lang]');
     if (lb) { setLang(lb.dataset.lang); return; }
+    const eb = e.target.closest('[data-edition]');
+    if (eb && PAGES.catalogue) {
+      catEdition = eb.dataset.edition;
+      store.set('sit-cat-edition', catEdition);
+      PAGES.catalogue();
+      observeReveals();
+      return;
+    }
     const t2 = e.target.closest('[data-add],[data-remove],[data-open-drawer],[data-close-drawer],[data-goto-quote],.mobile-nav a');
     if (!t2) return;
     if (t2.matches('.mobile-nav a')) { setMenu(false); return; }

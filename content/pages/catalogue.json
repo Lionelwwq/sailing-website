@@ -10,10 +10,10 @@
   "zh": "产品目录",
   "fr": "Catalogue de produits"
  },
- "hero_text": {
-  "en": "Turn the pages of our 2026 catalogue right here, or download the PDF.",
-  "zh": "直接在这里翻阅 2026 年产品目录，或下载 PDF。",
-  "fr": "Feuilletez notre catalogue 2026 ici même, ou téléchargez le PDF."
+ "edition_label": {
+  "en": "Catalogue language",
+  "zh": "目录语言",
+  "fr": "Langue du catalogue"
  },
  "hint": {
   "en": "Click a page or drag its corner to turn it. The arrow keys work too.",
@@ -71,14 +71,14 @@
   "fr": "Verre flotté, verre transformé, verre décoratif et spécial, et notre collection de miroirs : 16 familles de produits avec épaisseurs, formats, couleurs et normes, ainsi que les options de vitrage et les certifications."
  },
  "meta": {
-  "en": "PDF · {pages} pages · {size} MB",
-  "zh": "PDF · {pages} 页 · {size} MB",
-  "fr": "PDF · {pages} pages · {size} Mo"
+  "en": "PDF · {edition} · {pages} pages · {size} MB",
+  "zh": "PDF · {edition} · {pages} 页 · {size} MB",
+  "fr": "PDF · {edition} · {pages} pages · {size} Mo"
  },
  "language_note": {
-  "en": "The catalogue is in English.",
-  "zh": "产品目录为英文版。",
-  "fr": "Le catalogue est en anglais."
+  "en": "The catalogue is available in English, French and Spanish: choose the language above the book.",
+  "zh": "产品目录提供英文、法文和西班牙文三个版本，可在翻页书上方切换。",
+  "fr": "Le catalogue est offert en anglais, en français et en espagnol : choisissez la langue au-dessus du livre."
  },
  "stats": [
   {

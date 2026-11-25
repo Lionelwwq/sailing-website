@@ -103,14 +103,16 @@
 
 <main id="main">
 <noscript><p class="noscript">This website needs JavaScript to show its content. Please enable JavaScript, or call 437-477-8897.</p><style>.js main, main { opacity: 1 !important; }</style></noscript>
-<link rel="stylesheet" href="assets/css/catalogue.css?v=e7dc439b">
+<link rel="stylesheet" href="assets/css/catalogue.css?v=7370d15d">
   <!-- Flipbook: pages from assets/catalogue/ (made by _src/make_catalogue.py), behaviour in assets/js/catalogue.js -->
   <section class="fb-stage" id="flipbook" aria-labelledby="page-title">
+    <!-- one compact row, so the book gets most of the screen -->
     <div class="container fb-head">
-      <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html" data-ui="nav_home">Home</a><span aria-hidden="true">/</span><span data-ui="nav_catalogue">Product Catalogue</span></nav>
-      <span class="fb-kicker" data-c="hero_kicker"></span>
-      <h1 id="page-title" data-c="hero_title"></h1>
-      <p data-c="hero_text"></p>
+      <div class="fb-titles">
+        <div class="fb-title-row"><h1 id="page-title" data-c="hero_title"></h1><span class="fb-kicker" data-c="hero_kicker"></span></div>
+        <p class="fb-hint" data-c="hint"></p>
+      </div>
+      <div class="fb-eds"><span class="fb-eds-label" id="fb-eds-label" data-c="edition_label"></span><div class="fb-eds-btns" id="fb-editions" role="group" aria-labelledby="fb-eds-label"></div></div>
     </div>
     <div class="fb-area">
       <div class="fb" role="region" aria-roledescription="flipbook" aria-labelledby="page-title">
@@ -129,7 +131,6 @@
         <a class="fb-btn fb-dl" href="assets/catalogue/Sailing-Product-Catalogue-2026.pdf" data-cat-pdf download><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only" data-c="download"></span></a>
       </div>
       <div class="fb-thumbs" id="fb-thumbs" hidden></div>
-      <p class="fb-hint" data-c="hint"></p>
       <p class="sr-only fb-live" aria-live="polite"></p>
       <span id="fb-page-label" data-c="page_label" hidden></span>
     </div>
@@ -175,7 +176,7 @@
     </div>
   </section>
 
-<script src="assets/js/catalogue.js?v=6fc72e98" defer></script>
+<script src="assets/js/catalogue.js?v=90bb78f2" defer></script>
 
 </main>
 
@@ -249,6 +250,6 @@
 </div>
 
 <script src="assets/js/diagrams.js?v=f4591053"></script>
-<script src="assets/js/site.js?v=86aebee0"></script>
+<script src="assets/js/site.js?v=3b1d2c88"></script>
 </body>
 </html>

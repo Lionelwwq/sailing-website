@@ -58,6 +58,7 @@ ul.checks li::before { content: ""; position: absolute; left: 0.02in; top: 0.065
 .cover .panel { position: absolute; left: 0; right: 0; bottom: 0; height: 3.95in; padding: 0.55in var(--m) 0; background: linear-gradient(135deg, var(--amethyst) 0%, var(--ink) 85%); }
 .cover .panel::before { content: ""; position: absolute; left: var(--m); top: 0; width: 1.1in; height: 3px; background: var(--fawn); }
 .cover h1 { font-size: 40pt; font-weight: 600; letter-spacing: .01em; text-transform: uppercase; line-height: 1.02; }
+.cover h1.long { font-size: 35pt; }  /* titles that would wrap at 40pt, e.g. "Catálogo de productos" */
 .cover h1 span { display: block; font-size: 52pt; color: var(--fawn); font-weight: 600; letter-spacing: .04em; }
 .cover .sub { margin-top: 0.2in; font-family: var(--head); font-size: 13pt; font-weight: 500; color: #fff; }
 .cover .cats { margin-top: 0.08in; font-size: 9.5pt; letter-spacing: .08em; color: rgba(255, 255, 255, .72); }
@@ -91,7 +92,7 @@ ul.checks li::before { content: ""; position: absolute; left: 0.02in; top: 0.065
 .tl .ev p { margin-top: 0.04in; color: var(--muted); }
 .tl .ev.future .yr { color: var(--fawn); }
 .tl .ev.future::after { border-color: var(--fawn); border-style: dashed; }
-.tl .ev.future h3::after { content: "Future vision"; margin-left: 0.1in; padding: 0.02in 0.08in; border: 1px solid var(--fawn); border-radius: 99px; font-family: var(--body); font-size: 7pt; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: #8A6A33; vertical-align: 2px; }
+.tl .ev.future h3 .fv { display: inline-block; margin-left: 0.1in; padding: 0.02in 0.08in; border: 1px solid var(--fawn); border-radius: 99px; font-family: var(--body); font-size: 7pt; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: #8A6A33; vertical-align: 2px; }
 
 /* ---------- overview / contents ---------- */
 .overview .wrap { position: absolute; left: var(--m); right: var(--m); top: 0.65in; }
@@ -136,7 +137,7 @@ ul.checks li::before { content: ""; position: absolute; left: 0.02in; top: 0.065
 table.spec { width: 100%; border-collapse: collapse; }
 table.spec th, table.spec td { padding: 0.062in 0.08in; vertical-align: top; text-align: left; border-bottom: 1px solid var(--line); }
 table.spec th { width: 34%; font-weight: 600; font-size: 8.6pt; color: var(--purple); background: var(--snow); }
-table.spec td { font-size: 9pt; }
+table.spec td { font-size: 9pt; white-space: pre-line; }
 table.spec tr:first-child th, table.spec tr:first-child td { border-top: 2px solid var(--purple); }
 .pnote { margin-top: 0.1in; font-size: 7.6pt; color: var(--muted); font-style: italic; }
 .extra { margin-top: 0.22in; }

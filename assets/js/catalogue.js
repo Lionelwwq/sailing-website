@@ -4,7 +4,8 @@
  * Wide screens show an open book (two pages); phones show one page at a time.
  * Turn pages by clicking a page, dragging its corner, the arrow buttons or keys, the slider,
  * the page thumbnails or the chapter cards. No libraries: 3D CSS transforms driven by JavaScript.
- * Texts (labels, chapters) are written by site.js in the page language.
+ * Texts (labels, chapters) are written by site.js in the page language; site.js also picks the
+ * catalogue edition (English, French or Spanish) and hands its pages over with the 'sit:catalogue' event.
  */
 (() => {
   const stage = document.querySelector('.fb-stage');
@@ -308,11 +309,29 @@
     }, 120);
   });
 
-  // texts are (re)written by site.js when the page loads or the language changes
-  document.addEventListener('sit:catalogue', () => {
-    book.querySelectorAll('img[data-page]').forEach((img) => { img.alt = label(img.dataset.page); });
-    update();
-  });
+  // site.js writes the texts and picks the edition (English, French or Spanish) when the page loads,
+  // the language changes or another edition is chosen; the book is built from that edition's pages
+  let edition = '';
+  function onCatalogue(d) {
+    if (!d || !d.pages || !d.pages.length) return;
+    if (d.edition === edition) {
+      book.querySelectorAll('img[data-page]').forEach((img) => { img.alt = label(img.dataset.page); });
+      update();
+      return;
+    }
+    const first = !edition;
+    edition = d.edition;
+    pages = d.pages;
+    if (first) { start(); return; }
+    // another edition: fade the book out, swap the pages at the same place, fade back in
+    fb.classList.add('swapping');
+    setTimeout(() => {
+      leaves.forEach((l) => { l.anim = null; });   // stop page turns in progress (each one counts itself out)
+      build();
+      requestAnimationFrame(() => fb.classList.remove('swapping'));
+    }, reduce ? 0 : 220);
+  }
+  document.addEventListener('sit:catalogue', (e) => onCatalogue(e.detail));
 
   /* ---------------- counters ---------------- */
   function countUp(el) {
@@ -339,9 +358,7 @@
   }
 
   /* ---------------- start ---------------- */
-  fetch('assets/catalogue/pages.json', { cache: 'no-cache' }).then((r) => r.json()).then((data) => {
-    pages = data.pages || [];
-    if (!pages.length) return;
+  function start() {
     build();
     stage.classList.add('ready');
     // invite a first turn: lift the cover corner a little, then let it fall back
@@ -351,7 +368,8 @@
         animate(0, 0, -34, 0, 1400).then(() => { if (s === 0 && !drag) animate(0, leaves[0].angle, 0, 0, 1400); });
       }, 1300);
     }
-  }).catch((err) => { if (window.__siteErrors) window.__siteErrors.push(`flipbook: ${err.message}`); });
+  }
+  if (window.__sitCatalogue) onCatalogue(window.__sitCatalogue);   // site.js got there first
 
-  window.SailingFlipbook = { next, prev, goTo, page: () => shown() };
+  window.SailingFlipbook = { next, prev, goTo, page: () => shown(), edition: () => edition };
 })();
