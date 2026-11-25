@@ -56,9 +56,33 @@
       "fr": "Épaisseur"
      },
      "value": {
-      "en": "Range of standard thicknesses",
-      "zh": "多种标准厚度",
-      "fr": "Gamme d'épaisseurs standards"
+      "en": "1.8–25 mm",
+      "zh": "1.8–25 mm",
+      "fr": "1,8–25 mm"
+     }
+    },
+    {
+     "label": {
+      "en": "Regular sizes",
+      "zh": "常规尺寸",
+      "fr": "Formats courants"
+     },
+     "value": {
+      "en": "72″ × 96″, 84″ × 130″/144″, 96″ × 130″/144″",
+      "zh": "72″ × 96″, 84″ × 130″/144″, 96″ × 130″/144″",
+      "fr": "72″ × 96″, 84″ × 130″/144″, 96″ × 130″/144″"
+     }
+    },
+    {
+     "label": {
+      "en": "Max. size",
+      "zh": "最大尺寸",
+      "fr": "Format maximal"
+     },
+     "value": {
+      "en": "192″ × 433″",
+      "zh": "192″ × 433″",
+      "fr": "192″ × 433″"
      }
     },
     {
@@ -71,18 +95,6 @@
       "en": "Cutting, edging, drilling, tempering, laminating",
       "zh": "切割、磨边、钻孔、钢化、夹胶",
       "fr": "Coupe, façonnage des bords, perçage, trempe, feuilletage"
-     }
-    },
-    {
-     "label": {
-      "en": "Sizes",
-      "zh": "尺寸",
-      "fr": "Dimensions"
-     },
-     "value": {
-      "en": "Cut to your dimensions",
-      "zh": "按您的尺寸切割",
-      "fr": "Coupe selon vos dimensions"
      }
     }
    ],
@@ -160,6 +172,18 @@
     },
     {
      "label": {
+      "en": "Thickness",
+      "zh": "厚度",
+      "fr": "Épaisseur"
+     },
+     "value": {
+      "en": "1.8–22 mm",
+      "zh": "1.8–22 mm",
+      "fr": "1,8–22 mm"
+     }
+    },
+    {
+     "label": {
       "en": "Clarity",
       "zh": "通透度",
       "fr": "Clarté"
@@ -172,6 +196,30 @@
     },
     {
      "label": {
+      "en": "Regular sizes",
+      "zh": "常规尺寸",
+      "fr": "Formats courants"
+     },
+     "value": {
+      "en": "72″ × 96″, 84″ × 130″/144″, 96″ × 130″/144″",
+      "zh": "72″ × 96″, 84″ × 130″/144″, 96″ × 130″/144″",
+      "fr": "72″ × 96″, 84″ × 130″/144″, 96″ × 130″/144″"
+     }
+    },
+    {
+     "label": {
+      "en": "Max. size",
+      "zh": "最大尺寸",
+      "fr": "Format maximal"
+     },
+     "value": {
+      "en": "192″ × 433″",
+      "zh": "192″ × 433″",
+      "fr": "192″ × 433″"
+     }
+    },
+    {
+     "label": {
       "en": "Processing",
       "zh": "加工方式",
       "fr": "Mise en œuvre"
@@ -180,18 +228,6 @@
       "en": "Can be tempered, laminated or coated",
       "zh": "可钢化、夹胶或镀膜",
       "fr": "Peut être trempé, feuilleté ou revêtu d'une couche"
-     }
-    },
-    {
-     "label": {
-      "en": "Sizes",
-      "zh": "尺寸",
-      "fr": "Dimensions"
-     },
-     "value": {
-      "en": "Cut to your dimensions",
-      "zh": "按您的尺寸切割",
-      "fr": "Coupe selon vos dimensions"
      }
     }
    ],
@@ -254,9 +290,45 @@
       "fr": "Couleurs"
      },
      "value": {
-      "en": "Grey, bronze, green, blue and more",
-      "zh": "灰色、茶色、绿色、蓝色等",
-      "fr": "Gris, bronze, vert, bleu et plus"
+      "en": "Euro Grey, Euro Bronze, Super Grey and more",
+      "zh": "欧灰、欧茶、超级灰等",
+      "fr": "Gris européen, bronze européen, super gris et plus"
+     }
+    },
+    {
+     "label": {
+      "en": "Thickness",
+      "zh": "厚度",
+      "fr": "Épaisseur"
+     },
+     "value": {
+      "en": "3–12 mm",
+      "zh": "3–12 mm",
+      "fr": "3–12 mm"
+     }
+    },
+    {
+     "label": {
+      "en": "Regular sizes",
+      "zh": "常规尺寸",
+      "fr": "Formats courants"
+     },
+     "value": {
+      "en": "72″ × 96″, 84″ × 130″/144″, 96″ × 130″/144″",
+      "zh": "72″ × 96″, 84″ × 130″/144″, 96″ × 130″/144″",
+      "fr": "72″ × 96″, 84″ × 130″/144″, 96″ × 130″/144″"
+     }
+    },
+    {
+     "label": {
+      "en": "Max. size",
+      "zh": "最大尺寸",
+      "fr": "Format maximal"
+     },
+     "value": {
+      "en": "96″ × 295″",
+      "zh": "96″ × 295″",
+      "fr": "96″ × 295″"
      }
     },
     {
@@ -281,18 +353,6 @@
       "en": "Can be tempered, laminated or used in IG units",
       "zh": "可钢化、夹胶或用于中空玻璃",
       "fr": "Peut être trempé, feuilleté ou intégré à des unités scellées"
-     }
-    },
-    {
-     "label": {
-      "en": "Sizes",
-      "zh": "尺寸",
-      "fr": "Dimensions"
-     },
-     "value": {
-      "en": "Cut to your dimensions",
-      "zh": "按您的尺寸切割",
-      "fr": "Coupe selon vos dimensions"
      }
     }
    ],
@@ -353,26 +413,62 @@
     },
     {
      "label": {
+      "en": "Sizes",
+      "zh": "尺寸",
+      "fr": "Dimensions"
+     },
+     "value": {
+      "en": "Min. 12″ × 12″, max. 144″ × 433″",
+      "zh": "最小 12″ × 12″，最大 144″ × 433″",
+      "fr": "Min. 12″ × 12″, max. 144″ × 433″"
+     }
+    },
+    {
+     "label": {
+      "en": "Glass",
+      "zh": "玻璃",
+      "fr": "Verre"
+     },
+     "value": {
+      "en": "Clear, low iron, acid etched, tinted and more",
+      "zh": "透明、超白、蒙砂、着色等",
+      "fr": "Clair, extra-clair, dépoli à l’acide, teinté et plus"
+     }
+    },
+    {
+     "label": {
       "en": "Strength",
       "zh": "强度",
       "fr": "Résistance"
      },
      "value": {
-      "en": "Several times stronger than annealed glass",
-      "zh": "强度为退火玻璃的数倍",
-      "fr": "Plusieurs fois plus résistant que le verre recuit"
+      "en": "4–5 times stronger than annealed glass",
+      "zh": "强度为退火玻璃的 4–5 倍",
+      "fr": "4 à 5 fois plus résistant que le verre recuit"
      }
     },
     {
      "label": {
-      "en": "Breakage",
-      "zh": "破碎特性",
-      "fr": "Bris"
+      "en": "Standards",
+      "zh": "标准",
+      "fr": "Normes"
      },
      "value": {
-      "en": "Breaks into small, blunt pieces",
-      "zh": "碎成细小的钝角颗粒",
-      "fr": "Se brise en petits morceaux émoussés"
+      "en": "EN 12150, ANSI Z97.1, ASTM C1048, BS EN 14179",
+      "zh": "EN 12150, ANSI Z97.1, ASTM C1048, BS EN 14179",
+      "fr": "EN 12150, ANSI Z97.1, ASTM C1048, BS EN 14179"
+     }
+    },
+    {
+     "label": {
+      "en": "Certification",
+      "zh": "认证",
+      "fr": "Certification"
+     },
+     "value": {
+      "en": "SGCC",
+      "zh": "SGCC",
+      "fr": "SGCC"
      }
     },
     {
@@ -458,14 +554,62 @@
    "specs": [
     {
      "label": {
+      "en": "Thickness",
+      "zh": "厚度",
+      "fr": "Épaisseur"
+     },
+     "value": {
+      "en": "6, 8, 10, 12 mm (e.g. 3 mm + PVB + 3 mm)",
+      "zh": "6、8、10、12 mm（如 3 mm + PVB + 3 mm）",
+      "fr": "6, 8, 10, 12 mm (p. ex. 3 mm + PVB + 3 mm)"
+     }
+    },
+    {
+     "label": {
       "en": "Interlayer",
       "zh": "中间膜",
       "fr": "Intercalaire"
      },
      "value": {
-      "en": "PVB or EVA",
-      "zh": "PVB 或 EVA",
-      "fr": "PVB ou EVA"
+      "en": "PVB, 0.38 mm (0.015″) standard",
+      "zh": "标准 PVB，0.38 mm（0.015″）",
+      "fr": "PVB de 0,38 mm (0,015″) en standard"
+     }
+    },
+    {
+     "label": {
+      "en": "Regular sizes",
+      "zh": "常规尺寸",
+      "fr": "Formats courants"
+     },
+     "value": {
+      "en": "72″ × 96″, 84″ × 130″/144″, 96″ × 130″/144″",
+      "zh": "72″ × 96″, 84″ × 130″/144″, 96″ × 130″/144″",
+      "fr": "72″ × 96″, 84″ × 130″/144″, 96″ × 130″/144″"
+     }
+    },
+    {
+     "label": {
+      "en": "Max. size",
+      "zh": "最大尺寸",
+      "fr": "Format maximal"
+     },
+     "value": {
+      "en": "144″ × 433″",
+      "zh": "144″ × 433″",
+      "fr": "144″ × 433″"
+     }
+    },
+    {
+     "label": {
+      "en": "Glass",
+      "zh": "玻璃",
+      "fr": "Verre"
+     },
+     "value": {
+      "en": "Clear, milk white, green, blue, bronze and more",
+      "zh": "透明、乳白、绿色、蓝色、茶色等",
+      "fr": "Clair, blanc laiteux, vert, bleu, bronze et plus"
      }
     },
     {
@@ -482,26 +626,14 @@
     },
     {
      "label": {
-      "en": "Comfort",
-      "zh": "舒适性",
-      "fr": "Confort"
+      "en": "Standards",
+      "zh": "标准",
+      "fr": "Normes"
      },
      "value": {
-      "en": "Reduces noise and UV light",
-      "zh": "降低噪音，减少紫外线",
-      "fr": "Réduit le bruit et les rayons UV"
-     }
-    },
-    {
-     "label": {
-      "en": "Options",
-      "zh": "可选",
-      "fr": "Options"
-     },
-     "value": {
-      "en": "Clear, low iron, tinted or decorative",
-      "zh": "透明、超白、着色或装饰",
-      "fr": "Clair, extra-clair, teinté ou décoratif"
+      "en": "EN 14449, ANSI Z97.1, ASTM C1048, GB/T 15763.3",
+      "zh": "EN 14449, ANSI Z97.1, ASTM C1048, GB/T 15763.3",
+      "fr": "EN 14449, ANSI Z97.1, ASTM C1048, GB/T 15763.3"
      }
     }
    ],
@@ -595,6 +727,54 @@
     },
     {
      "label": {
+      "en": "Glass thickness",
+      "zh": "玻璃厚度",
+      "fr": "Épaisseur du verre"
+     },
+     "value": {
+      "en": "3–12 mm",
+      "zh": "3–12 mm",
+      "fr": "3–12 mm"
+     }
+    },
+    {
+     "label": {
+      "en": "Spacer",
+      "zh": "间隔条",
+      "fr": "Cadre intercalaire"
+     },
+     "value": {
+      "en": "6, 9, 12, 15, 19 mm",
+      "zh": "6、9、12、15、19 mm",
+      "fr": "6, 9, 12, 15, 19 mm"
+     }
+    },
+    {
+     "label": {
+      "en": "Max. size",
+      "zh": "最大尺寸",
+      "fr": "Format maximal"
+     },
+     "value": {
+      "en": "144″ × 433″",
+      "zh": "144″ × 433″",
+      "fr": "144″ × 433″"
+     }
+    },
+    {
+     "label": {
+      "en": "Glass options",
+      "zh": "玻璃选项",
+      "fr": "Options de verre"
+     },
+     "value": {
+      "en": "Clear, low iron, Low-E, reflective, tinted and more",
+      "zh": "透明、超白、Low-E、反射、着色等",
+      "fr": "Clair, extra-clair, Low-E, réfléchissant, teinté et plus"
+     }
+    },
+    {
+     "label": {
       "en": "Cavity fill",
       "zh": "空腔填充",
       "fr": "Remplissage de la lame"
@@ -607,26 +787,14 @@
     },
     {
      "label": {
-      "en": "Glass options",
-      "zh": "玻璃选项",
-      "fr": "Options de verre"
+      "en": "Standards",
+      "zh": "标准",
+      "fr": "Normes"
      },
      "value": {
-      "en": "Low-E, tempered, laminated or tinted",
-      "zh": "Low-E、钢化、夹胶或着色",
-      "fr": "Low-E, trempé, feuilleté ou teinté"
-     }
-    },
-    {
-     "label": {
-      "en": "Edge seal",
-      "zh": "边部密封",
-      "fr": "Scellement périphérique"
-     },
-     "value": {
-      "en": "Spacer, desiccant and silicone",
-      "zh": "间隔条、干燥剂和硅酮胶",
-      "fr": "Intercalaire, déshydratant et silicone"
+      "en": "EN 1279, IGCC, GB/T 11944",
+      "zh": "EN 1279, IGCC, GB/T 11944",
+      "fr": "EN 1279, IGCC, GB/T 11944"
      }
     }
    ],
@@ -685,14 +853,6 @@
       "zh": "Low-E 玻璃幕墙",
       "fr": "Façade en verre à faible émissivité"
      }
-    },
-    {
-     "image": "assets/img/glass/coated.jpg",
-     "caption": {
-      "en": "Coated glass samples",
-      "zh": "镀膜玻璃样品",
-      "fr": "Échantillons de verre à couche"
-     }
     }
    ],
    "short": {
@@ -720,14 +880,50 @@
     },
     {
      "label": {
-      "en": "Benefits",
-      "zh": "优点",
-      "fr": "Avantages"
+      "en": "Low-E glass",
+      "zh": "Low-E 玻璃",
+      "fr": "Verre Low-E"
      },
      "value": {
-      "en": "Controls heat, glare and appearance",
-      "zh": "控制热量、眩光和外观",
-      "fr": "Contrôle la chaleur, l'éblouissement et l'apparence"
+      "en": "3.2–6 mm, clear or grey",
+      "zh": "3.2–6 mm，透明或灰色",
+      "fr": "3,2–6 mm, clair ou gris"
+     }
+    },
+    {
+     "label": {
+      "en": "Low-E coatings",
+      "zh": "Low-E 膜系",
+      "fr": "Couches Low-E"
+     },
+     "value": {
+      "en": "Performance similar to Planibel G, S48, SA, SS22, EA, SC60, SFC, SL60, Solarban 60 and 70",
+      "zh": "性能相当于 Planibel G、S48、SA、SS22、EA、SC60、SFC、SL60、Solarban 60 和 70",
+      "fr": "Performance comparable à Planibel G, S48, SA, SS22, EA, SC60, SFC, SL60, Solarban 60 et 70"
+     }
+    },
+    {
+     "label": {
+      "en": "Reflective glass",
+      "zh": "反射玻璃",
+      "fr": "Verre réfléchissant"
+     },
+     "value": {
+      "en": "4–10 mm, Euro Grey, Euro Bronze, Super Grey and more",
+      "zh": "4–10 mm，欧灰、欧茶、超级灰等",
+      "fr": "4–10 mm, gris européen, bronze européen, super gris et plus"
+     }
+    },
+    {
+     "label": {
+      "en": "Regular sizes",
+      "zh": "常规尺寸",
+      "fr": "Formats courants"
+     },
+     "value": {
+      "en": "84″ × 130″, 96″ × 130″ (reflective up to 96″ × 295″)",
+      "zh": "84″ × 130″、96″ × 130″（反射玻璃最大 96″ × 295″）",
+      "fr": "84″ × 130″, 96″ × 130″ (réfléchissant jusqu’à 96″ × 295″)"
      }
     },
     {
@@ -740,18 +936,6 @@
       "en": "Usually built into IG units",
       "zh": "通常合片为中空玻璃使用",
       "fr": "Généralement intégré aux unités scellées"
-     }
-    },
-    {
-     "label": {
-      "en": "Sizes",
-      "zh": "尺寸",
-      "fr": "Dimensions"
-     },
-     "value": {
-      "en": "Cut to your dimensions",
-      "zh": "按您的尺寸切割",
-      "fr": "Coupe selon vos dimensions"
      }
     }
    ],
@@ -857,14 +1041,62 @@
    "specs": [
     {
      "label": {
-      "en": "Textures",
-      "zh": "花纹",
-      "fr": "Textures"
+      "en": "Thickness",
+      "zh": "厚度",
+      "fr": "Épaisseur"
      },
      "value": {
-      "en": "Wide range of patterns",
-      "zh": "花型丰富",
-      "fr": "Vaste choix de motifs"
+      "en": "3–12 mm (varies by pattern)",
+      "zh": "3–12 mm（因花型而异）",
+      "fr": "3–12 mm (selon le motif)"
+     }
+    },
+    {
+     "label": {
+      "en": "Patterns",
+      "zh": "花型",
+      "fr": "Motifs"
+     },
+     "value": {
+      "en": "Reeded, fluted, ribbed, rain, linen, Kasumi, Master Carré, diamond, chinchilla, satin and more",
+      "zh": "条纹、凹槽、棱纹、雨花、布纹、霞、大方格、钻石、金丝、磨砂等",
+      "fr": "Cannelé, strié, nervuré, pluie, lin, Kasumi, Master Carré, diamant, chinchilla, satiné et plus"
+     }
+    },
+    {
+     "label": {
+      "en": "Glass",
+      "zh": "玻璃",
+      "fr": "Verre"
+     },
+     "value": {
+      "en": "Clear, low iron or tinted",
+      "zh": "透明、超白或着色",
+      "fr": "Clair, extra-clair ou teinté"
+     }
+    },
+    {
+     "label": {
+      "en": "Regular sizes",
+      "zh": "常规尺寸",
+      "fr": "Formats courants"
+     },
+     "value": {
+      "en": "72″ × 96″, 84″ × 130″/144″, 96″ × 130″/144″",
+      "zh": "72″ × 96″, 84″ × 130″/144″, 96″ × 130″/144″",
+      "fr": "72″ × 96″, 84″ × 130″/144″, 96″ × 130″/144″"
+     }
+    },
+    {
+     "label": {
+      "en": "Max. size",
+      "zh": "最大尺寸",
+      "fr": "Format maximal"
+     },
+     "value": {
+      "en": "96″ × 189″",
+      "zh": "96″ × 189″",
+      "fr": "96″ × 189″"
      }
     },
     {
@@ -889,18 +1121,6 @@
       "en": "Can be tempered",
       "zh": "可钢化",
       "fr": "Peut être trempé"
-     }
-    },
-    {
-     "label": {
-      "en": "Sizes",
-      "zh": "尺寸",
-      "fr": "Dimensions"
-     },
-     "value": {
-      "en": "Cut to your dimensions",
-      "zh": "按您的尺寸切割",
-      "fr": "Coupe selon vos dimensions"
      }
     }
    ],
@@ -971,9 +1191,57 @@
       "fr": "Fini"
      },
      "value": {
-      "en": "Even satin finish on one side",
-      "zh": "单面均匀磨砂",
-      "fr": "Fini satiné uniforme sur une face"
+      "en": "Even satin finish on one side; frosted or velour",
+      "zh": "单面均匀磨砂；蒙砂或丝绒效果",
+      "fr": "Fini satiné uniforme sur une face; givré ou velours"
+     }
+    },
+    {
+     "label": {
+      "en": "Thickness",
+      "zh": "厚度",
+      "fr": "Épaisseur"
+     },
+     "value": {
+      "en": "3–15 mm",
+      "zh": "3–15 mm",
+      "fr": "3–15 mm"
+     }
+    },
+    {
+     "label": {
+      "en": "Glass",
+      "zh": "玻璃",
+      "fr": "Verre"
+     },
+     "value": {
+      "en": "Clear, low iron or tinted",
+      "zh": "透明、超白或着色",
+      "fr": "Clair, extra-clair ou teinté"
+     }
+    },
+    {
+     "label": {
+      "en": "Regular sizes",
+      "zh": "常规尺寸",
+      "fr": "Formats courants"
+     },
+     "value": {
+      "en": "72″ × 96″, 84″ × 130″/144″, 96″ × 130″/144″",
+      "zh": "72″ × 96″, 84″ × 130″/144″, 96″ × 130″/144″",
+      "fr": "72″ × 96″, 84″ × 130″/144″, 96″ × 130″/144″"
+     }
+    },
+    {
+     "label": {
+      "en": "Max. size",
+      "zh": "最大尺寸",
+      "fr": "Format maximal"
+     },
+     "value": {
+      "en": "96″ × 189″",
+      "zh": "96″ × 189″",
+      "fr": "96″ × 189″"
      }
     },
     {
@@ -998,18 +1266,6 @@
       "en": "Can be tempered, laminated or used in IG units",
       "zh": "可钢化、夹胶或做成中空玻璃",
       "fr": "Peut être trempé, feuilleté ou intégré à une unité scellée"
-     }
-    },
-    {
-     "label": {
-      "en": "Sizes",
-      "zh": "尺寸",
-      "fr": "Dimensions"
-     },
-     "value": {
-      "en": "Cut to your dimensions",
-      "zh": "按您的尺寸切割",
-      "fr": "Coupe selon vos dimensions"
      }
     }
    ],
@@ -1075,26 +1331,50 @@
    "specs": [
     {
      "label": {
-      "en": "Forming",
-      "zh": "成形方式",
-      "fr": "Formage"
+      "en": "Thickness",
+      "zh": "厚度",
+      "fr": "Épaisseur"
      },
      "value": {
-      "en": "Heat-bent over a mould",
-      "zh": "加热后按模具弯曲",
-      "fr": "Cintré à chaud sur un moule"
+      "en": "5–22 mm (3/16″–7/8″)",
+      "zh": "5–22 mm（3/16″–7/8″）",
+      "fr": "5–22 mm (3/16″–7/8″)"
      }
     },
     {
      "label": {
-      "en": "Shape",
-      "zh": "弧度",
-      "fr": "Forme"
+      "en": "Max. size",
+      "zh": "最大尺寸",
+      "fr": "Format maximal"
      },
      "value": {
-      "en": "Radius and shape to your drawings",
-      "zh": "弧度和形状按您的图纸",
-      "fr": "Rayon et forme selon vos plans"
+      "en": "144″ × 630″ (min. radius 177″) or 87″ × 96″ (min. radius 35″)",
+      "zh": "144″ × 630″（最小半径 177″）或 87″ × 96″（最小半径 35″）",
+      "fr": "144″ × 630″ (rayon min. 177″) ou 87″ × 96″ (rayon min. 35″)"
+     }
+    },
+    {
+     "label": {
+      "en": "Glass",
+      "zh": "玻璃",
+      "fr": "Verre"
+     },
+     "value": {
+      "en": "Clear, low iron, bronze, grey, blue and more",
+      "zh": "透明、超白、茶色、灰色、蓝色等",
+      "fr": "Clair, extra-clair, bronze, gris, bleu et plus"
+     }
+    },
+    {
+     "label": {
+      "en": "Fabrication",
+      "zh": "深加工",
+      "fr": "Façonnage"
+     },
+     "value": {
+      "en": "Holes, cut-outs, edge polishing, radius corners",
+      "zh": "开孔、开槽、磨边抛光、圆角",
+      "fr": "Trous, découpes, polissage des bords, coins arrondis"
      }
     },
     {
@@ -1107,18 +1387,6 @@
       "en": "Curved tempered, laminated or insulated",
       "zh": "可做弧形钢化、夹胶或中空",
       "fr": "Bombé trempé, feuilleté ou isolant"
-     }
-    },
-    {
-     "label": {
-      "en": "Sizes",
-      "zh": "尺寸",
-      "fr": "Dimensions"
-     },
-     "value": {
-      "en": "Made to your dimensions",
-      "zh": "按您的尺寸定制",
-      "fr": "Fabriqué selon vos dimensions"
      }
     }
    ],
@@ -1167,50 +1435,62 @@
    "specs": [
     {
      "label": {
-      "en": "Type",
-      "zh": "类型",
-      "fr": "Type"
+      "en": "Glass",
+      "zh": "玻璃",
+      "fr": "Verre"
      },
      "value": {
-      "en": "Low iron, usually tempered",
-      "zh": "超白，通常为钢化",
-      "fr": "Faible teneur en fer, généralement trempé"
+      "en": "Clear float, low iron or ultra-clear",
+      "zh": "透明浮法、低铁或超白",
+      "fr": "Flotté clair, à faible teneur en fer ou extra-clair"
      }
     },
     {
      "label": {
-      "en": "Clarity",
-      "zh": "通透度",
-      "fr": "Clarté"
+      "en": "Thickness",
+      "zh": "厚度",
+      "fr": "Épaisseur"
      },
      "value": {
-      "en": "High light transmittance",
-      "zh": "高透光率",
-      "fr": "Haute transmission lumineuse"
+      "en": "2 mm standard; 1.6–4.0 mm available",
+      "zh": "标准 2 mm；可选 1.6–4.0 mm",
+      "fr": "2 mm en standard; 1,6–4,0 mm sur demande"
      }
     },
     {
      "label": {
-      "en": "Coating",
-      "zh": "镀膜",
-      "fr": "Couche"
+      "en": "Max. size",
+      "zh": "最大尺寸",
+      "fr": "Format maximal"
      },
      "value": {
-      "en": "Anti-reflective coating available",
-      "zh": "可提供减反射镀膜",
-      "fr": "Couche antireflet offerte"
+      "en": "2500 × 1300 mm",
+      "zh": "2500 × 1300 mm",
+      "fr": "2 500 × 1 300 mm"
      }
     },
     {
      "label": {
-      "en": "Sizes",
-      "zh": "尺寸",
-      "fr": "Dimensions"
+      "en": "AR coating",
+      "zh": "减反射镀膜",
+      "fr": "Couche antireflet"
      },
      "value": {
-      "en": "To your module design",
-      "zh": "按您的组件设计",
-      "fr": "Selon la conception de votre module"
+      "en": "Single (transmittance ≥ 93.8%) or double (≥ 94.1%)",
+      "zh": "单层（透光率 ≥ 93.8%）或双层（≥ 94.1%）",
+      "fr": "Simple (transmission ≥ 93,8 %) ou double (≥ 94,1 %)"
+     }
+    },
+    {
+     "label": {
+      "en": "Processing",
+      "zh": "加工方式",
+      "fr": "Mise en œuvre"
+     },
+     "value": {
+      "en": "Semi-tempering, screen printing, drilling, edge work, matte or patterned",
+      "zh": "半钢化、丝印、钻孔、磨边、磨砂或压花",
+      "fr": "Semi-trempe, sérigraphie, perçage, façonnage des bords, mat ou à motif"
      }
     }
    ],

@@ -51,6 +51,30 @@
     },
     {
      "label": {
+      "en": "Thickness",
+      "zh": "厚度",
+      "fr": "Épaisseur"
+     },
+     "value": {
+      "en": "2–8 mm",
+      "zh": "2–8 mm",
+      "fr": "2–8 mm"
+     }
+    },
+    {
+     "label": {
+      "en": "Options",
+      "zh": "可选",
+      "fr": "Options"
+     },
+     "value": {
+      "en": "Copper-free, aluminium, low iron, acid etched or temperable",
+      "zh": "无铜、铝镜、超白、蒙砂或可钢化",
+      "fr": "Sans cuivre, aluminium, extra-clair, dépoli à l’acide ou trempable"
+     }
+    },
+    {
+     "label": {
       "en": "Edges",
       "zh": "边缘",
       "fr": "Bords"
@@ -80,9 +104,9 @@
       "fr": "Dimensions"
      },
      "value": {
-      "en": "Cut to your dimensions",
-      "zh": "按您的尺寸切割",
-      "fr": "Coupe selon vos dimensions"
+      "en": "Cut to size; regular sizes 72″ × 96″, 84″ × 130″/144″, 96″ × 130″/144″; max. 96″ × 144″",
+      "zh": "按尺寸切割；常规尺寸 72″ × 96″、84″ × 130″/144″、96″ × 130″/144″；最大 96″ × 144″",
+      "fr": "Coupe sur mesure; formats courants 72″ × 96″, 84″ × 130″/144″, 96″ × 130″/144″; max. 96″ × 144″"
      }
     }
    ],
@@ -152,6 +176,18 @@
     },
     {
      "label": {
+      "en": "Thickness",
+      "zh": "厚度",
+      "fr": "Épaisseur"
+     },
+     "value": {
+      "en": "2–8 mm",
+      "zh": "2–8 mm",
+      "fr": "2–8 mm"
+     }
+    },
+    {
+     "label": {
       "en": "Edges",
       "zh": "边缘",
       "fr": "Bords"
@@ -181,9 +217,9 @@
       "fr": "Dimensions"
      },
      "value": {
-      "en": "Cut to your dimensions",
-      "zh": "按您的尺寸切割",
-      "fr": "Coupe selon vos dimensions"
+      "en": "Cut to size; regular sizes 72″ × 96″, 84″ × 130″/144″, 96″ × 130″/144″; max. 96″ × 144″",
+      "zh": "按尺寸切割；常规尺寸 72″ × 96″、84″ × 130″/144″、96″ × 130″/144″；最大 96″ × 144″",
+      "fr": "Coupe sur mesure; formats courants 72″ × 96″, 84″ × 130″/144″, 96″ × 130″/144″; max. 96″ × 144″"
      }
     }
    ],
@@ -256,6 +292,18 @@
     },
     {
      "label": {
+      "en": "Thickness",
+      "zh": "厚度",
+      "fr": "Épaisseur"
+     },
+     "value": {
+      "en": "2–8 mm",
+      "zh": "2–8 mm",
+      "fr": "2–8 mm"
+     }
+    },
+    {
+     "label": {
       "en": "Approval",
       "zh": "确认方式",
       "fr": "Approbation"
@@ -273,9 +321,9 @@
       "fr": "Dimensions"
      },
      "value": {
-      "en": "Cut to your dimensions",
-      "zh": "按您的尺寸切割",
-      "fr": "Coupe selon vos dimensions"
+      "en": "Cut to size; regular sizes 72″ × 96″, 84″ × 130″/144″, 96″ × 130″/144″; max. 96″ × 144″",
+      "zh": "按尺寸切割；常规尺寸 72″ × 96″、84″ × 130″/144″、96″ × 130″/144″；最大 96″ × 144″",
+      "fr": "Coupe sur mesure; formats courants 72″ × 96″, 84″ × 130″/144″, 96″ × 130″/144″; max. 96″ × 144″"
      }
     }
    ],
@@ -329,21 +377,21 @@
       "fr": "Couleurs"
      },
      "value": {
-      "en": "Standard colours or matched to sample",
-      "zh": "标准色或按样配色",
-      "fr": "Couleurs standards ou agencées selon un échantillon"
+      "en": "Standard colours or custom, matched to colour codes",
+      "zh": "标准色或按色号定制",
+      "fr": "Couleurs standards ou sur mesure, selon les codes de couleur"
      }
     },
     {
      "label": {
-      "en": "Surface",
+      "en": "Finish",
       "zh": "表面",
-      "fr": "Surface"
+      "fr": "Fini"
      },
      "value": {
-      "en": "Smooth, easy-to-clean front",
-      "zh": "正面光滑、易清洁",
-      "fr": "Face avant lisse et facile à nettoyer"
+      "en": "Glossy or matte",
+      "zh": "亮面或哑光",
+      "fr": "Brillant ou mat"
      }
     },
     {
@@ -353,9 +401,21 @@
       "fr": "Verre"
      },
      "value": {
-      "en": "Clear or low iron",
-      "zh": "透明或超白",
-      "fr": "Clair ou extra-clair"
+      "en": "Clear, low iron or other base glass; thickness follows the base glass",
+      "zh": "透明、超白或其他原片；厚度取决于原片",
+      "fr": "Clair, extra-clair ou autre verre de base; épaisseur selon le verre de base"
+     }
+    },
+    {
+     "label": {
+      "en": "Processing",
+      "zh": "加工方式",
+      "fr": "Mise en œuvre"
+     },
+     "value": {
+      "en": "Cutting, edgework, tempering",
+      "zh": "切割、磨边、钢化",
+      "fr": "Coupe, façonnage des bords, trempe"
      }
     },
     {
@@ -365,9 +425,9 @@
       "fr": "Dimensions"
      },
      "value": {
-      "en": "Cut to your dimensions",
-      "zh": "按您的尺寸切割",
-      "fr": "Coupe selon vos dimensions"
+      "en": "Custom sizes",
+      "zh": "尺寸可定制",
+      "fr": "Dimensions sur mesure"
      }
     }
    ],
@@ -449,6 +509,18 @@
     },
     {
      "label": {
+      "en": "Thickness",
+      "zh": "厚度",
+      "fr": "Épaisseur"
+     },
+     "value": {
+      "en": "2–8 mm",
+      "zh": "2–8 mm",
+      "fr": "2–8 mm"
+     }
+    },
+    {
+     "label": {
       "en": "Typical use",
       "zh": "典型用途",
       "fr": "Utilisation courante"
@@ -466,9 +538,9 @@
       "fr": "Dimensions"
      },
      "value": {
-      "en": "Cut to your dimensions",
-      "zh": "按您的尺寸切割",
-      "fr": "Coupe selon vos dimensions"
+      "en": "Cut to size; regular sizes 72″ × 96″, 84″ × 130″/144″, 96″ × 130″/144″; max. 96″ × 144″",
+      "zh": "按尺寸切割；常规尺寸 72″ × 96″、84″ × 130″/144″、96″ × 130″/144″；最大 96″ × 144″",
+      "fr": "Coupe sur mesure; formats courants 72″ × 96″, 84″ × 130″/144″, 96″ × 130″/144″; max. 96″ × 144″"
      }
     }
    ],
