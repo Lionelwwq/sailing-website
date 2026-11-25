@@ -25,7 +25,8 @@
     'south-america': [-13, -57],
     australia: [-25, 134],
   };
-  const COLORS = { dot: [206, 190, 245], arc: 'rgba(196, 176, 250, .38)', hub: '#F5C451', market: '#E9E1FF' };
+  // palette: Lavender Mist EDE7F3 for land and markets, Soft Fawn C9A56A for the hub and the selected route
+  const COLORS = { dot: [222, 212, 238], arc: 'rgba(217, 205, 232, .42)', hub: '#C9A56A', market: '#EDE7F3' };
 
   const vec = (lat, lon) => [Math.cos(lat * RAD) * Math.sin(lon * RAD), Math.sin(lat * RAD), Math.cos(lat * RAD) * Math.cos(lon * RAD)];
 
@@ -114,16 +115,16 @@
 
     // atmosphere glow and the body of the globe
     let g = ctx.createRadialGradient(cx, cy, R * 0.9, cx, cy, Math.min(W, H) * 0.5);
-    g.addColorStop(0, 'rgba(150, 120, 230, .32)');
-    g.addColorStop(1, 'rgba(150, 120, 230, 0)');
+    g.addColorStop(0, 'rgba(140, 116, 176, .34)');
+    g.addColorStop(1, 'rgba(140, 116, 176, 0)');
     ctx.fillStyle = g;
     ctx.fillRect(0, 0, W, H);
     g = ctx.createRadialGradient(cx - R * 0.35, cy - R * 0.4, R * 0.1, cx, cy, R);
-    g.addColorStop(0, 'rgba(98, 70, 170, .55)');
-    g.addColorStop(1, 'rgba(22, 12, 48, .92)');
+    g.addColorStop(0, 'rgba(110, 78, 160, .6)');
+    g.addColorStop(1, 'rgba(37, 30, 52, .94)');
     ctx.fillStyle = g;
     ctx.beginPath(); ctx.arc(cx, cy, R, 0, Math.PI * 2); ctx.fill();
-    ctx.strokeStyle = 'rgba(210, 195, 255, .28)';
+    ctx.strokeStyle = 'rgba(237, 231, 243, .3)';
     ctx.lineWidth = 1.2 * dpr;
     ctx.stroke();
 
@@ -157,7 +158,7 @@
       if (!m.arc) return;
       const pts = m.arc.map((v) => rot(v[0], v[1], v[2]));
       const sel = focusId === m.id;
-      ctx.strokeStyle = sel ? 'rgba(245, 196, 81, .75)' : COLORS.arc;
+      ctx.strokeStyle = sel ? 'rgba(201, 165, 106, .9)' : COLORS.arc;
       ctx.lineWidth = (sel ? 1.8 : 1.15) * dpr;
       ctx.beginPath();
       let pen = false;
@@ -177,7 +178,7 @@
         const a = pts[k], b = pts[k + 1];
         if (!shown(a) || !shown(b)) continue;
         const f = (k - tail + 1) / (head - tail);
-        ctx.strokeStyle = `rgba(255, 236, 190, ${0.85 * f})`;
+        ctx.strokeStyle = `rgba(236, 214, 172, ${0.9 * f})`;
         ctx.lineWidth = (1 + 1.6 * f) * dpr;
         ctx.beginPath(); ctx.moveTo(cx + a[0] * R, cy - a[1] * R); ctx.lineTo(cx + b[0] * R, cy - b[1] * R); ctx.stroke();
       }
@@ -194,12 +195,12 @@
       const size = (m.hub ? 4.6 : 3.4) * dpr * (0.75 + 0.25 * p[2]);
       if (!reduce) {
         const k = ((now / 1900) + m.phase) % 1;
-        ctx.strokeStyle = m.hub ? `rgba(245, 196, 81, ${0.7 * (1 - k)})` : `rgba(233, 225, 255, ${0.6 * (1 - k)})`;
+        ctx.strokeStyle = m.hub ? `rgba(201, 165, 106, ${0.75 * (1 - k)})` : `rgba(237, 231, 243, ${0.6 * (1 - k)})`;
         ctx.lineWidth = 1.2 * dpr;
         ctx.beginPath(); ctx.arc(x, y, size + k * 14 * dpr, 0, Math.PI * 2); ctx.stroke();
       }
       const glow = ctx.createRadialGradient(x, y, 0, x, y, size * 3.2);
-      glow.addColorStop(0, m.hub ? 'rgba(245, 196, 81, .55)' : 'rgba(233, 225, 255, .45)');
+      glow.addColorStop(0, m.hub ? 'rgba(201, 165, 106, .6)' : 'rgba(237, 231, 243, .45)');
       glow.addColorStop(1, 'rgba(0, 0, 0, 0)');
       ctx.fillStyle = glow;
       ctx.beginPath(); ctx.arc(x, y, size * 3.2, 0, Math.PI * 2); ctx.fill();
