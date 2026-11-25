@@ -149,7 +149,7 @@ html[lang^="zh"] .values-motto { font-style: normal; letter-spacing: .04em; }
 .js:not(.ready) main { opacity: 0; }
 /* arriving from the home page warehouse tour (see site.js) */
 html.arrive.ready main { animation: arrive-in .8s cubic-bezier(.2, .7, .2, 1) both; }
-html.arrive .ex-stage > img { animation: arrive-zoom 1.3s cubic-bezier(.2, .7, .2, 1) both; }
+html.arrive .ex-stage > img:not(.ex-fill) { animation: arrive-zoom 1.3s cubic-bezier(.2, .7, .2, 1) both; }
 @keyframes arrive-in { from { opacity: 0; } to { opacity: 1; } }
 @keyframes arrive-zoom { from { transform: scale(1.14); } to { transform: none; } }
 @media (prefers-reduced-motion: reduce) { html.arrive.ready main, html.arrive .ex-stage > img { animation: none; } }
@@ -240,6 +240,11 @@ html.arrive .ex-stage > img { animation: arrive-zoom 1.3s cubic-bezier(.2, .7, .
 .ex-media { display: grid; gap: 12px; align-content: start; }
 .ex-stage { position: relative; aspect-ratio: 1 / 1; background: var(--gray); border-radius: var(--radius); overflow: hidden; display: grid; place-items: center; }
 .ex-stage > img { width: 100%; height: 100%; object-fit: cover; }
+/* photos: the whole picture is always visible (portrait, landscape or square), centred in the same frame;
+   a blurred, slightly enlarged copy of the photo fills the space around it so every frame looks finished */
+.ex-stage.photo { isolation: isolate; }
+.ex-stage.photo > .ex-fill { position: absolute; inset: 0; z-index: -1; transform: scale(1.18); filter: blur(28px) saturate(1.05) brightness(1.04); opacity: .9; }
+.ex-stage.photo > .ex-photo { position: absolute; inset: 0; object-fit: contain; filter: drop-shadow(0 10px 24px rgba(0, 0, 0, .14)); }
 .ex-stage .illo { width: 92%; height: auto; }
 .ex-stage.diagram { background: #F1F5FA; }
 .ex-caption { font-size: 13px; color: var(--muted); min-height: 1.4em; }

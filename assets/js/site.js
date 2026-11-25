@@ -220,7 +220,12 @@
       if (s.type === 'diagram') return { html: window.SIT_DIAGRAMS[it.id], cls: 'diagram', cap: esc(ui('diagram_label')) };
       const isIllustration = /\.svg$/i.test(s.src);
       const cap = esc(t(s.caption)) || (isIllustration ? esc(ui('photo_coming')) : '');
-      return { html: `<img src="${esc(s.src)}" alt="${esc(t(it.name))}">`, cls: '', cap: cap + creditFor(s.src) };
+      if (isIllustration) return { html: `<img src="${esc(s.src)}" alt="${esc(t(it.name))}">`, cls: '', cap: cap + creditFor(s.src) };
+      // photos of any shape are shown whole; a soft blurred copy of the same photo fills the rest of the frame
+      return {
+        html: `<img class="ex-fill" src="${esc(s.src)}" alt="" aria-hidden="true"><img class="ex-photo" src="${esc(s.src)}" alt="${esc(t(it.name))}">`,
+        cls: 'photo', cap: cap + creditFor(s.src),
+      };
     }
     function panelHtml() {
       const it = items.find((i) => i.id === current);

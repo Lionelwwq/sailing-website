@@ -266,6 +266,7 @@
     velocity = 0;
     idleUntil = performance.now() + 6000;
     document.querySelectorAll('#market-list [data-market]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.market === id)));
+    labelsBox.querySelectorAll('[data-market]').forEach((el) => el.classList.toggle('on', el.dataset.market === id)); // highlight now, not on the next frame
     kick();
   }
 

@@ -394,6 +394,20 @@
         assert(re.test(d.title), `${url}: "${d.title}"`);
       }
     });
+    await test('Product photos are shown whole (portrait and landscape) inside the same frame', async () => {
+      for (const [wd, ht] of [[1280, 800], [375, 800]]) {
+        const { d } = await open('glass.html?lang=en#clear-float', wd, ht);
+        const thumbs = [...d.querySelectorAll('.ex-thumb')];
+        for (let i = 0; i < Math.max(1, thumbs.length); i++) {
+          if (i) { thumbs[i].click(); await wait(150); }
+          const stage = $(d, '.ex-stage'), photo = $(d, '.ex-stage .ex-photo');
+          assert(photo, `photo ${i + 1} is not shown as a whole photo`);
+          assert(d.defaultView.getComputedStyle(photo).objectFit === 'contain', `photo ${i + 1} is cropped`);
+          const s = stage.getBoundingClientRect(), p = photo.getBoundingClientRect();
+          assert(p.height <= s.height + 1 && p.width <= s.width + 1, `photo ${i + 1} is larger than its frame at ${wd}px (${Math.round(p.width)}x${Math.round(p.height)} in ${Math.round(s.width)}x${Math.round(s.height)})`);
+        }
+      }
+    });
     await test('"Ask about this product" fills the product name into the form', async () => {
       let { d, w } = await open('glass.html?lang=en#laminated');
       const link = $$(d, '.ex-actions a').find((a) => a.href.includes('type=Question'));
