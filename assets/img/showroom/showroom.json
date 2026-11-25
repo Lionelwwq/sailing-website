@@ -1,0 +1,341 @@
+{
+ "start": "entrance",
+ "source_names": "Pictures come from ChatGPT / Skybox as 360-1-entrance.png ... 360-8-handling.png; _src/make_showroom.py turns them into <id>.jpg and <id>-m.jpg here.",
+ "spots": [
+  {
+   "id": "entrance",
+   "source": "360-1-entrance",
+   "x": 0,
+   "y": -10,
+   "north": 0,
+   "links": [
+    "centre",
+    "handling",
+    "supplies"
+   ],
+   "planned": [],
+   "points": []
+  },
+  {
+   "id": "centre",
+   "source": "360-2-centre",
+   "x": 0,
+   "y": 0,
+   "north": 0,
+   "links": [
+    "entrance",
+    "flat-glass",
+    "processed-glass",
+    "decorative-glass",
+    "mirrors",
+    "supplies",
+    "handling"
+   ],
+   "planned": [],
+   "points": [
+    {
+     "product": "glass:tempered",
+     "yaw": -94,
+     "pitch": 3
+    },
+    {
+     "product": "glass:laminated",
+     "yaw": -63,
+     "pitch": -6
+    },
+    {
+     "product": "glass:patterned",
+     "yaw": -15,
+     "pitch": -32
+    },
+    {
+     "product": "mirrors:silver-mirror",
+     "yaw": 138,
+     "pitch": 9
+    }
+   ]
+  },
+  {
+   "id": "flat-glass",
+   "source": "360-3-flat-glass",
+   "x": -12,
+   "y": 0,
+   "north": 0,
+   "links": [
+    "centre",
+    "processed-glass",
+    "handling"
+   ],
+   "planned": [
+    "glass:clear-float",
+    "glass:low-iron",
+    "glass:tinted",
+    "glass:coated",
+    "glass:solar"
+   ],
+   "points": [
+    {
+     "product": "glass:clear-float",
+     "yaw": -56,
+     "pitch": -30
+    },
+    {
+     "product": "glass:low-iron",
+     "yaw": -28,
+     "pitch": -30
+    },
+    {
+     "product": "glass:tinted",
+     "yaw": 52,
+     "pitch": -30
+    },
+    {
+     "product": "glass:coated",
+     "yaw": -17,
+     "pitch": -6
+    },
+    {
+     "product": "glass:solar",
+     "yaw": -92,
+     "pitch": -6
+    }
+   ]
+  },
+  {
+   "id": "processed-glass",
+   "source": "360-4-processed-glass",
+   "x": -12,
+   "y": 8,
+   "north": 0,
+   "links": [
+    "flat-glass",
+    "centre",
+    "decorative-glass"
+   ],
+   "planned": [
+    "glass:tempered",
+    "glass:laminated",
+    "glass:insulated",
+    "glass:curved"
+   ],
+   "points": [
+    {
+     "product": "glass:tempered",
+     "yaw": -115,
+     "pitch": 5
+    },
+    {
+     "product": "glass:laminated",
+     "yaw": 150,
+     "pitch": -30
+    },
+    {
+     "product": "glass:insulated",
+     "yaw": -8,
+     "pitch": -32
+    },
+    {
+     "product": "glass:curved",
+     "yaw": 45,
+     "pitch": 8
+    }
+   ]
+  },
+  {
+   "id": "decorative-glass",
+   "source": "360-5-decorative-glass",
+   "x": 12,
+   "y": 8,
+   "north": 0,
+   "links": [
+    "processed-glass",
+    "centre",
+    "mirrors"
+   ],
+   "planned": [
+    "glass:patterned",
+    "glass:acid-etched",
+    "mirrors:back-painted"
+   ],
+   "points": [
+    {
+     "product": "glass:patterned",
+     "yaw": -21,
+     "pitch": 14
+    },
+    {
+     "product": "glass:acid-etched",
+     "yaw": 34,
+     "pitch": 5
+    },
+    {
+     "product": "mirrors:back-painted",
+     "yaw": 75,
+     "pitch": 5
+    }
+   ]
+  },
+  {
+   "id": "mirrors",
+   "source": "360-6-mirrors",
+   "x": 12,
+   "y": 0,
+   "north": 0,
+   "links": [
+    "decorative-glass",
+    "centre",
+    "supplies"
+   ],
+   "planned": [
+    "mirrors:silver-mirror",
+    "mirrors:tinted-mirror",
+    "mirrors:antique-mirror",
+    "mirrors:safety-mirror"
+   ],
+   "points": [
+    {
+     "product": "mirrors:silver-mirror",
+     "yaw": 10,
+     "pitch": 8
+    },
+    {
+     "product": "mirrors:tinted-mirror",
+     "yaw": 58,
+     "pitch": 5
+    },
+    {
+     "product": "mirrors:antique-mirror",
+     "yaw": 85,
+     "pitch": 5
+    },
+    {
+     "product": "mirrors:safety-mirror",
+     "yaw": 150,
+     "pitch": -5
+    }
+   ]
+  },
+  {
+   "id": "supplies",
+   "source": "360-7-supplies",
+   "x": 12,
+   "y": -8,
+   "north": 0,
+   "links": [
+    "mirrors",
+    "centre",
+    "entrance"
+   ],
+   "planned": [
+    "accessories:aluminum-spacer",
+    "accessories:molecular-sieve",
+    "accessories:silicone-adhesive",
+    "accessories:green-adhesive",
+    "accessories:eva-film",
+    "accessories:vinyl-cat1",
+    "accessories:water-jet",
+    "accessories:waterjet-abrasive",
+    "accessories:grinding-wheels",
+    "accessories:cerium-dioxide"
+   ],
+   "points": [
+    {
+     "product": "accessories:aluminum-spacer",
+     "yaw": -129,
+     "pitch": -32
+    },
+    {
+     "product": "accessories:molecular-sieve",
+     "yaw": -108,
+     "pitch": -28
+    },
+    {
+     "product": "accessories:silicone-adhesive",
+     "yaw": -126,
+     "pitch": 16
+    },
+    {
+     "product": "accessories:green-adhesive",
+     "yaw": -115,
+     "pitch": -3
+    },
+    {
+     "product": "accessories:eva-film",
+     "yaw": -37,
+     "pitch": -34
+    },
+    {
+     "product": "accessories:vinyl-cat1",
+     "yaw": 22,
+     "pitch": -34
+    },
+    {
+     "product": "accessories:water-jet",
+     "yaw": 75,
+     "pitch": -2
+    },
+    {
+     "product": "accessories:waterjet-abrasive",
+     "yaw": 108,
+     "pitch": -15
+    },
+    {
+     "product": "accessories:grinding-wheels",
+     "yaw": 120,
+     "pitch": 16
+    },
+    {
+     "product": "accessories:cerium-dioxide",
+     "yaw": 128,
+     "pitch": 0
+    }
+   ]
+  },
+  {
+   "id": "handling",
+   "source": "360-8-handling",
+   "x": -12,
+   "y": -8,
+   "north": 0,
+   "links": [
+    "flat-glass",
+    "centre",
+    "entrance"
+   ],
+   "planned": [
+    "accessories:al-stock-shelf",
+    "accessories:custom-rack",
+    "accessories:removable-shelf",
+    "accessories:glass-sling",
+    "accessories:cork-pads"
+   ],
+   "points": [
+    {
+     "product": "accessories:al-stock-shelf",
+     "yaw": -70,
+     "pitch": -7
+    },
+    {
+     "product": "accessories:custom-rack",
+     "yaw": -138,
+     "pitch": -22
+    },
+    {
+     "product": "accessories:removable-shelf",
+     "yaw": -102,
+     "pitch": -15
+    },
+    {
+     "product": "accessories:glass-sling",
+     "yaw": -138,
+     "pitch": 12
+    },
+    {
+     "product": "accessories:cork-pads",
+     "yaw": -105,
+     "pitch": 14
+    }
+   ]
+  }
+ ]
+}

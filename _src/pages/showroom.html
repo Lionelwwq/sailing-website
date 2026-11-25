@@ -1,0 +1,27 @@
+<!--
+title: 360° Showroom | Sailing International Trade
+description: Walk through the Sailing International Trade showroom in 360°: flat, processed and decorative glass, mirrors, and glass fabrication supplies, each linked to its product page.
+nav: showroom
+image: assets/img/site/hero-glass.jpg
+-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pannellum/2.5.6/pannellum.css">
+<link rel="stylesheet" href="assets/css/showroom.css">
+  <!-- 360° showroom: pictures and spot settings in assets/img/showroom/ (showroom.json, made with _src/make_showroom.py),
+       texts in content/pages/showroom.json, viewer in assets/js/showroom.js (Pannellum) -->
+  <section class="sr" aria-labelledby="page-title">
+    <div class="sr-view" id="sr-view"></div>
+    <div class="container sr-top">
+      <span class="sr-kicker" data-c="hero_kicker"></span>
+      <h1 id="page-title" data-c="hero_title"></h1>
+      <p class="sr-hint" id="sr-hint"></p>
+    </div>
+    <p class="sr-msg" id="sr-msg" role="status" hidden></p>
+    <div class="sr-bar">
+      <span class="sr-only" id="sr-areas" data-c="areas"></span>
+      <div class="sr-spots" id="sr-spots" role="group" aria-labelledby="sr-areas"></div>
+    </div>
+  </section>
+
+<!-- include: cta -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pannellum/2.5.6/pannellum.js" defer></script>
+<script src="assets/js/showroom.js" defer></script>

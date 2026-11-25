@@ -33,7 +33,7 @@
 <script>
 (function () {
   'use strict';
-  const PAGES = ['index.html', 'glass.html', 'mirrors.html', 'accessories.html', 'about.html', 'contact.html', 'catalogue.html'];
+  const PAGES = ['index.html', 'glass.html', 'mirrors.html', 'accessories.html', 'about.html', 'contact.html', 'catalogue.html', 'showroom.html'];
   const LANGS = { en: 'en', fr: 'fr-CA', nl: 'nl', de: 'de', es: 'es' };
   const WIDTHS = [1280, 768, 375];
   const out = document.getElementById('out');
@@ -429,6 +429,35 @@
       assert(await until(() => w.SailingFlipbook && w.SailingFlipbook.edition() === 'fr'), 'an ?edition= link does not open that edition');
       assert(d.documentElement.scrollWidth <= 376, `page is ${d.documentElement.scrollWidth}px wide on a phone`);
       localStorage.removeItem('sit-cat-edition');
+    });
+    await test('360° showroom: settings are complete, every picture exists, the viewer walks between areas', async () => {
+      const { d, w } = await open('showroom.html?lang=es', 1280, 760);
+      const S = await w.fetch('assets/img/showroom/showroom.json').then((r) => r.json());
+      const ids = S.spots.map((x) => x.id);
+      assert(ids.includes(S.start), `start spot "${S.start}" is not a spot`);
+      const kinds = {};
+      for (const k of ['glass', 'mirrors', 'accessories']) kinds[k] = (await w.fetch(`content/${k}.json`).then((r) => r.json())).items.map((i) => i.id);
+      for (const x of S.spots) {
+        for (const l of x.links) assert(ids.includes(l), `${x.id}: arrow to unknown spot "${l}"`);
+        for (const pt of x.points) { const [k, id] = pt.product.split(':'); assert(kinds[k] && kinds[k].includes(id), `${x.id}: unknown product ${pt.product}`); }
+        for (const f of [`${x.id}.jpg`, `${x.id}-m.jpg`]) assert((await w.fetch(`assets/img/showroom/${f}`, { method: 'HEAD' })).ok, `missing picture ${f}`);
+      }
+      assert(await until(() => d.querySelectorAll('[data-sr-go]').length === S.spots.length), 'area buttons missing');
+      assert(/Entrada/.test($(d, '[data-sr-go="entrance"]').textContent), `area names not in Spanish: ${$(d, '#sr-spots').textContent}`);
+      // with 3D graphics the viewer opens and W walks on; without them a clear message shows instead
+      const has3d = !!d.createElement('canvas').getContext('webgl');
+      if (has3d) {
+        assert(await until(() => w.SailingShowroom && w.SailingShowroom.viewer.isLoaded(), 20000), 'viewer did not load');
+        assert(w.SailingShowroom.spot() === S.start, `starts at ${w.SailingShowroom.spot()}`);
+        d.dispatchEvent(new w.KeyboardEvent('keydown', { key: 'w', bubbles: true }));
+        assert(await until(() => w.SailingShowroom.spot() !== S.start, 8000), 'W did not walk on');
+        $(d, '[data-sr-go="mirrors"]').click();
+        assert(await until(() => w.SailingShowroom.spot() === 'mirrors', 8000), 'area button did not jump');
+      } else {
+        assert(await until(() => !$(d, '#sr-msg').hidden), 'no message without 3D graphics');
+      }
+      assert(!(w.__siteErrors || []).length, (w.__siteErrors || []).join('; '));
+      return has3d ? 'viewer checked' : 'no WebGL here: message checked';
     });
     await test('About page: market globe draws, lists every market and flies to one', async () => {
       const { d, w } = await open('about.html?lang=es', 1280, 800);

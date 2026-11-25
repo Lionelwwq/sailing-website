@@ -56,7 +56,8 @@
   if (PAGE === 'contact') FILES.page = 'content/pages/contact.json';
   if (PAGE === 'catalogue') { FILES.page = 'content/pages/catalogue.json'; FILES.catalogue = 'assets/catalogue/pages.json'; }
   if (PAGE === 'index') FILES.page = 'content/pages/home.json';
-  if (PRODUCT_KINDS.includes(PAGE) || PAGE === 'index') {
+  if (PAGE === 'showroom') { FILES.page = 'content/pages/showroom.json'; FILES.scene = 'assets/img/showroom/showroom.json'; }
+  if (PRODUCT_KINDS.includes(PAGE) || PAGE === 'index' || PAGE === 'showroom') {
     FILES.productPages = 'content/product-pages.json';
     PRODUCT_KINDS.forEach((k) => { FILES[k] = `content/${k}.json`; });
   }
@@ -411,6 +412,21 @@
       window.__sitCatalogue = { edition: ed, pages: K.pages };
       document.dispatchEvent(new CustomEvent('sit:catalogue', { detail: window.__sitCatalogue }));
     },
+    showroom() {
+      // texts for the 360° showroom; the viewer itself is assets/js/showroom.js, spots in assets/img/showroom/showroom.json
+      const P = C.page, S = C.scene;
+      const touch = window.matchMedia('(hover: none)').matches;
+      $('#sr-hint').textContent = t(touch ? P.hint_touch : P.hint);
+      const names = {};
+      S.spots.forEach((s) => { names[s.id] = t(P[`spot_${s.id}`]) || s.id; });
+      $('#sr-spots').innerHTML = S.spots.map((s, i) => `<button type="button" data-sr-go="${esc(s.id)}" aria-pressed="false"><b>${i + 1}</b>${esc(names[s.id])}</button>`).join('');
+      const products = {};
+      PRODUCT_KINDS.forEach((k) => (C[k].items || []).forEach((it) => { products[`${k}:${it.id}`] = { name: t(it.name), href: `${k}.html#${it.id}` }; }));
+      const texts = {};
+      ['walk_to', 'view_product', 'loading', 'no_webgl'].forEach((k) => { texts[k] = t(P[k]); });
+      window.__sitShowroom = { scene: S, names, products, texts };
+      document.dispatchEvent(new CustomEvent('sit:showroom', { detail: window.__sitShowroom }));
+    },
     contact() {
       const P = C.page;
       const map = $('#map');
@@ -495,7 +511,7 @@
   const navGroup = $('.nav-group');
   const navParent = $('[data-nav-parent]');
   if (navGroup && navParent) {
-    if (PRODUCT_KINDS.includes(PAGE) || PAGE === 'catalogue') navParent.classList.add('current');
+    if (PRODUCT_KINDS.includes(PAGE) || PAGE === 'catalogue' || PAGE === 'showroom') navParent.classList.add('current');
     navParent.addEventListener('click', () => {
       const open = !navGroup.classList.contains('open');
       navGroup.classList.toggle('open', open);

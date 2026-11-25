@@ -1,0 +1,121 @@
+{
+ "hero_kicker": {
+  "en": "Virtual tour",
+  "fr": "Visite virtuelle",
+  "nl": "Virtuele rondleiding",
+  "de": "Virtueller Rundgang",
+  "es": "Recorrido virtual"
+ },
+ "hero_title": {
+  "en": "360° Showroom",
+  "fr": "Salle d’exposition 360°",
+  "nl": "360°-showroom",
+  "de": "360°-Showroom",
+  "es": "Sala de exposición 360°"
+ },
+ "hint": {
+  "en": "Drag to look around · double-click, W / S or the arrows to walk · click a gold point to open a product",
+  "fr": "Faites glisser pour regarder autour · double-clic, W / S ou les flèches pour vous déplacer · cliquez sur un point doré pour ouvrir un produit",
+  "nl": "Sleep om rond te kijken · dubbelklik, W / S of de pijlen om te lopen · klik op een gouden punt om een product te openen",
+  "de": "Ziehen zum Umsehen · Doppelklick, W / S oder die Pfeile zum Gehen · goldenen Punkt anklicken, um ein Produkt zu öffnen",
+  "es": "Arrastre para mirar alrededor · doble clic, W / S o las flechas para caminar · haga clic en un punto dorado para abrir un producto"
+ },
+ "hint_touch": {
+  "en": "Swipe to look around · double-tap or tap an arrow to walk · tap a gold point to open a product",
+  "fr": "Balayez pour regarder autour · touchez deux fois ou touchez une flèche pour vous déplacer · touchez un point doré pour ouvrir un produit",
+  "nl": "Veeg om rond te kijken · dubbeltik of tik op een pijl om te lopen · tik op een gouden punt om een product te openen",
+  "de": "Wischen zum Umsehen · doppelt tippen oder Pfeil antippen zum Gehen · goldenen Punkt antippen, um ein Produkt zu öffnen",
+  "es": "Deslice para mirar alrededor · toque dos veces o toque una flecha para caminar · toque un punto dorado para abrir un producto"
+ },
+ "areas": {
+  "en": "Showroom areas",
+  "fr": "Zones de la salle",
+  "nl": "Zones in de showroom",
+  "de": "Bereiche",
+  "es": "Zonas de la sala"
+ },
+ "walk_to": {
+  "en": "Walk to {name}",
+  "fr": "Aller à : {name}",
+  "nl": "Naar {name}",
+  "de": "Zu: {name}",
+  "es": "Ir a {name}"
+ },
+ "view_product": {
+  "en": "View product",
+  "fr": "Voir le produit",
+  "nl": "Product bekijken",
+  "de": "Produkt ansehen",
+  "es": "Ver producto"
+ },
+ "loading": {
+  "en": "Loading the showroom…",
+  "fr": "Chargement de la salle…",
+  "nl": "Showroom wordt geladen…",
+  "de": "Showroom wird geladen…",
+  "es": "Cargando la sala…"
+ },
+ "no_webgl": {
+  "en": "This browser can’t show 360° views. Use the menu to browse our products.",
+  "fr": "Ce navigateur ne peut pas afficher les vues 360°. Utilisez le menu pour parcourir nos produits.",
+  "nl": "Deze browser kan geen 360°-beelden tonen. Gebruik het menu om onze producten te bekijken.",
+  "de": "Dieser Browser kann keine 360°-Ansichten anzeigen. Nutzen Sie das Menü, um unsere Produkte anzusehen.",
+  "es": "Este navegador no puede mostrar vistas 360°. Use el menú para ver nuestros productos."
+ },
+ "spot_entrance": {
+  "en": "Entrance",
+  "fr": "Entrée",
+  "nl": "Ingang",
+  "de": "Eingang",
+  "es": "Entrada"
+ },
+ "spot_centre": {
+  "en": "Centre",
+  "fr": "Centre",
+  "nl": "Midden",
+  "de": "Mitte",
+  "es": "Centro"
+ },
+ "spot_flat-glass": {
+  "en": "Flat & solar glass",
+  "fr": "Verre plat et solaire",
+  "nl": "Vlakglas en zonneglas",
+  "de": "Flachglas & Solarglas",
+  "es": "Vidrio plano y solar"
+ },
+ "spot_processed-glass": {
+  "en": "Processed glass",
+  "fr": "Verre transformé",
+  "nl": "Bewerkt glas",
+  "de": "Verarbeitetes Glas",
+  "es": "Vidrio procesado"
+ },
+ "spot_decorative-glass": {
+  "en": "Decorative glass",
+  "fr": "Verre décoratif",
+  "nl": "Decoratief glas",
+  "de": "Dekorglas",
+  "es": "Vidrio decorativo"
+ },
+ "spot_mirrors": {
+  "en": "Mirrors",
+  "fr": "Miroirs",
+  "nl": "Spiegels",
+  "de": "Spiegel",
+  "es": "Espejos"
+ },
+ "spot_supplies": {
+  "en": "Supplies & fabrication",
+  "fr": "Fournitures et transformation",
+  "nl": "Benodigdheden en bewerking",
+  "de": "Zubehör & Verarbeitung",
+  "es": "Suministros y fabricación"
+ },
+ "spot_handling": {
+  "en": "Handling & storage",
+  "fr": "Manutention et entreposage",
+  "nl": "Hantering en opslag",
+  "de": "Handhabung & Lagerung",
+  "es": "Manipulación y almacenamiento"
+ }
+}

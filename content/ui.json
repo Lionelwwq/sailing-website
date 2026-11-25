@@ -41,6 +41,13 @@
   "de": "Produktkatalog",
   "es": "Catálogo de productos"
  },
+ "nav_showroom": {
+  "en": "360° Showroom",
+  "fr": "Salle d’exposition 360°",
+  "nl": "360°-showroom",
+  "de": "360°-Showroom",
+  "es": "Sala de exposición 360°"
+ },
  "nav_about": {
   "en": "About Us",
   "fr": "À propos",
