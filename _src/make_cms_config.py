@@ -32,7 +32,8 @@ CATEGORY_IDS = ['handling', 'ig', 'films', 'cutting']
 HELP = {
     'id': 'Short code used in web addresses, lowercase-with-dashes (e.g. tempered). Must be unique.',
     'related': 'Accessory codes shown under "Goes well with" (e.g. eva-film).',
-    'quoteEmail': 'Enquiry form messages are sent to this address.',
+    'quoteEmail': 'The enquiry form is registered to this address (FormSubmit): it gets the one-time activation email and every enquiry.',
+    'quoteCc': 'Every enquiry is also copied to this address (separate several with commas).',
     'mapQuery': 'Address used for the Google map.',
     'category': 'handling = Handling & Storage, ig = Insulating & Sealing, films = Films & Interlayers, cutting = Cutting & Finishing',
 }

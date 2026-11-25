@@ -59,7 +59,6 @@ def sz(a, b):
 
 
 REGULAR = ' · '.join(sz(a, b) for a, b in ((72, 96), (84, 130), (84, 144), (96, 130), (96, 144)))
-REGULAR_LOW_IRON = REGULAR.split(' · ', 1)[1]  # Sailing lists low iron without 72 x 96
 TWO_SIZES = f'{sz(84, 130)} · {sz(96, 130)}'
 
 # words used on many pages
@@ -202,7 +201,7 @@ PRODUCTS = [
                 'El vidrio bajo en hierro tiene un contenido reducido de hierro, lo que le da una claridad excepcional y una alta transmisión '
                 'de luz, sin el tono verdoso del vidrio claro estándar. Su apariencia cristalina es ideal para aplicaciones arquitectónicas, '
                 'expositivas y decorativas donde la claridad visual es esencial.'),
-         specs=[(T['thick'], L('1.8–22 mm', '1,8–22 mm', '1,8–22 mm')), (T['reg'], REGULAR_LOW_IRON), (T['max'], sz(192, 433))]),
+         specs=[(T['thick'], L('1.8–22 mm', '1,8–22 mm', '1,8–22 mm')), (T['reg'], REGULAR), (T['max'], sz(192, 433))]),
     dict(no=3, name=L('Tinted Glass', 'Verre teinté', 'Vidrio tintado'), cat='flat', uses=('glass', 'tinted'),
          hero=[(Lb + 'tinted-collection.jpg', 1, 'center 8%')],
          desc=L('Tinted glass has colour added to the glass itself to reduce solar heat gain and glare while still letting in natural light. '

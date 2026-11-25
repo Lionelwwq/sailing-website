@@ -60,7 +60,7 @@
 
 ## 询价表单
 
-表单通过 FormSubmit（免费服务）直接把邮件发到 **公司资料 → quoteEmail**，目前是 `lionelwwq@gmail.com`。
+表单通过 FormSubmit（免费服务）发邮件：表单登记在 **公司资料 → quoteEmail**（`administration@sailingtrades.com`，第一次收到 FormSubmit 的激活邮件，每封询价也会收到一份），并抄送到 **quoteCc**（`sales@sailingtrades.com`，销售收询价）。换地址后，第一封询价会触发一封激活邮件，要在那个邮箱里点 "Activate" 才会开始转发。
 
 **第一次使用前必须激活：** 在正式网站上提交一次测试询价，FormSubmit 会给这个邮箱发一封激活邮件，点里面的确认链接后，之后的询价才会送达。以后改收件邮箱，也要用新邮箱再激活一次。
 

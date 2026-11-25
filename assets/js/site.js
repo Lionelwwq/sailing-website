@@ -471,6 +471,7 @@
       const payload = {
         _subject: `${d.get('type')} request — ${d.get('company') || d.get('name')}`,
         _template: 'table', _captcha: 'false', _replyto: d.get('email'),
+        ...(C.settings.quoteCc ? { _cc: C.settings.quoteCc } : {}),   // copies of every enquiry (e.g. the sales inbox)
         'Request type': d.get('type'), Name: d.get('name'), Company: d.get('company') || '-', Email: d.get('email'), Phone: d.get('phone') || '-',
         Items: items, Details: d.get('message') || '-', Language: lang,
       };

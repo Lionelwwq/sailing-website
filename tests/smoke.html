@@ -257,6 +257,7 @@
       const settings = await fetch('../content/settings.json').then((r) => r.json());
       assert(calls[0].url.includes(encodeURIComponent(settings.quoteEmail)), 'sent to the wrong address');
       assert(calls[0].body.Name === 'Test Person' && calls[0].body._replyto === 'test@example.com', 'fields missing');
+      assert(!settings.quoteCc || calls[0].body._cc === settings.quoteCc, `copy goes to ${calls[0].body._cc}, not ${settings.quoteCc}`);
       assert($(d, '#form-status').classList.contains('ok'), 'no success message');
       assert(!$(d, '#f-name').value, 'form not cleared');
       return calls[0].url;

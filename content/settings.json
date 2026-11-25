@@ -1,7 +1,7 @@
 {
  "companyName": "Sailing International Trade Ltd.",
- "phone": "437-477-8897",
- "email": "info@sailingintltrade.com",
+ "phone": "437-880-8427",
+ "email": "sales@sailingtrades.com",
  "address": {
   "en": "1110-250 Consumers Road, Toronto, ON M2J 4V6",
   "fr": "1110-250 Consumers Road, Toronto, ON M2J 4V6",
@@ -10,6 +10,7 @@
   "es": "1110-250 Consumers Road, Toronto, ON M2J 4V6"
  },
  "mapQuery": "250 Consumers Road, Toronto, ON M2J 4V6",
- "quoteEmail": "lionelwwq@gmail.com",
+ "quoteEmail": "administration@sailingtrades.com",
+ "quoteCc": "sales@sailingtrades.com",
  "since": "1993"
 }
