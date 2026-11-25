@@ -24,7 +24,7 @@ img { display: block; }
 
 /* logo */
 .logo { display: inline-flex; align-items: center; gap: 0.12in; }
-.logo svg { flex: none; }
+.logo svg, .logo img { flex: none; display: block; width: auto; }
 .logo b { display: block; font-family: var(--head); font-weight: 700; letter-spacing: .05em; line-height: 1; }
 .logo i { display: block; font-style: normal; font-family: var(--head); font-weight: 600; letter-spacing: .14em; line-height: 1; margin-top: .45em; }
 
@@ -51,7 +51,7 @@ ul.checks li::before { content: ""; position: absolute; left: 0.02in; top: 0.065
 /* ---------- cover ---------- */
 .cover { background: var(--ink); color: #fff; }
 .cover .photo { position: absolute; inset: 0 0 3.6in 0; background-size: cover; background-position: center 38%; }
-.cover .photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(37, 35, 42, .55) 0%, rgba(37, 35, 42, 0) 22%, rgba(37, 35, 42, 0) 62%, rgba(37, 35, 42, .95) 100%); }
+.cover .photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(37, 35, 42, .78) 0%, rgba(37, 35, 42, .35) 9%, rgba(37, 35, 42, 0) 20%, rgba(37, 35, 42, 0) 62%, rgba(37, 35, 42, .95) 100%); }
 .cover .top { position: absolute; left: var(--m); right: var(--m); top: 0.5in; display: flex; justify-content: space-between; align-items: center; }
 .cover .top .logo b { font-size: 15pt; } .cover .top .logo i { font-size: 6.4pt; }
 .cover .year-tag { font-family: var(--head); font-size: 8pt; letter-spacing: .3em; color: #E2D8EF; }

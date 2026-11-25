@@ -1,4 +1,4 @@
-"""Put the company sign (logo + name) on the wall above the warehouse door.
+"""Put the company sign (new script-S logo + name) on the wall above the warehouse door.
 
 Reads the sign-free pictures in _src/warehouse/ and writes the home page pictures
 assets/img/warehouse/entrance.webp and entrance-closed.webp, with the same sign in the same place,
@@ -6,13 +6,13 @@ so the door animation still lines up. Run again after changing the logo, colours
 
     python _src/warehouse_sign.py
 """
-import math
 import pathlib
 
 from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC = ROOT / '_src' / 'warehouse'
+MARK = ROOT / '_src' / 'brand' / 'sailing-mark.png'   # the logo mark, in its own colours
 OUT = ROOT / 'assets' / 'img' / 'warehouse'
 
 NAME = 'SAILING'
@@ -25,39 +25,6 @@ CENTER = (1598, 450)                                     # sign centre on the 32
 SCALE = 1.06                                             # sign size
 PHOTO = {'sharpen': 60, 'contrast': 1.06, 'colour': 1.08}   # gentle clean-up of the whole outside picture
 S = 3                                                    # draw bigger, then shrink, for smooth edges
-
-
-def wheel(d):
-    """Ship's wheel like the Sailing logo mark, as a mask of size d x d."""
-    m = Image.new('L', (d, d), 0)
-    g = ImageDraw.Draw(m)
-    c = d / 2
-    u = d / 2
-
-    def ring(r_out, r_in):
-        g.ellipse([c - r_out, c - r_out, c + r_out, c + r_out], fill=255)
-        g.ellipse([c - r_in, c - r_in, c + r_in, c + r_in], fill=0)
-
-    def bar(r0, r1, ang, w):
-        x0, y0 = c + r0 * math.cos(ang), c + r0 * math.sin(ang)
-        x1, y1 = c + r1 * math.cos(ang), c + r1 * math.sin(ang)
-        g.line([x0, y0, x1, y1], fill=255, width=int(w))
-        for x, y in ((x0, y0), (x1, y1)):
-            g.ellipse([x - w / 2, y - w / 2, x + w / 2, y + w / 2], fill=255)
-
-    for k in range(8):
-        a = k * math.pi / 4
-        bar(0.60 * u, 0.80 * u, a, 0.08 * u)           # handle shaft
-        bar(0.79 * u, 0.92 * u, a, 0.14 * u)           # handle grip (rounded)
-    ring(0.65 * u, 0.50 * u)                            # rim
-    for k in range(8):
-        a = k * math.pi / 4
-        bar(0.15 * u, 0.36 * u, a, 0.038 * u)          # inner spokes
-        t = a + math.pi / 2                            # small cross bar near the rim
-        cx, cy = c + 0.37 * u * math.cos(a), c + 0.37 * u * math.sin(a)
-        g.line([cx - 0.05 * u * math.cos(t), cy - 0.05 * u * math.sin(t), cx + 0.05 * u * math.cos(t), cy + 0.05 * u * math.sin(t)], fill=255, width=int(0.04 * u))
-    g.ellipse([c - 0.075 * u, c - 0.11 * u, c + 0.075 * u, c + 0.11 * u], fill=255)  # hub
-    return m
 
 
 def text_mask(text, size, weight, tracking=0.0):
@@ -75,32 +42,41 @@ def text_mask(text, size, weight, tracking=0.0):
     return m.crop(m.getbbox())
 
 
-def sign_mask():
+def sign_parts():
+    """Masks for the lettering and for the logo mark, plus the mark in colour, all the same size."""
     name = text_mask(NAME, int(170 * SCALE) * S, b'Bold', 0.04)
     tag = text_mask(TAGLINE, int(46 * SCALE) * S, b'SemiBold', 0.22)
     tag = tag.resize((name.width, int(tag.height * name.width / tag.width)), Image.LANCZOS) if tag.width > name.width else tag
     gap = 26 * S
     block_h = name.height + gap + tag.height
-    wd = int(block_h * 1.32)
-    mark = wheel(wd)
-    space = 46 * S
-    W = wd + space + max(name.width, tag.width)
-    H = max(wd, block_h)
-    m = Image.new('L', (W, H), 0)
-    m.paste(mark, (0, (H - wd) // 2))
-    tx = wd + space
+    mk = Image.open(MARK).convert('RGBA')
+    mk = mk.crop(mk.getbbox())
+    mh = int(block_h * 1.3)
+    mk = mk.resize((int(mk.width * mh / mk.height), mh), Image.LANCZOS)
+    space = 40 * S
+    W = mk.width + space + max(name.width, tag.width)
+    H = max(mh, block_h)
+    letters = Image.new('L', (W, H), 0)
+    tx = mk.width + space
     ty = (H - block_h) // 2
-    m.paste(name, (tx, ty))
-    m.paste(tag, (tx + (name.width - tag.width) // 2 if tag.width < name.width else tx, ty + name.height + gap))
-    return m
+    letters.paste(name, (tx, ty))
+    letters.paste(tag, (tx + (name.width - tag.width) // 2 if tag.width < name.width else tx, ty + name.height + gap))
+    colour = Image.new('RGBA', (W, H), (0, 0, 0, 0))
+    colour.paste(mk, (0, (H - mh) // 2))
+    return letters, colour.split()[3], colour
 
 
 def build_layers():
-    m = sign_mask()
+    letters, mark_a, mark_rgba = sign_parts()
     pad = 60 * S
-    W, H = m.width + 2 * pad, m.height + 2 * pad
-    mask = Image.new('L', (W, H), 0)
-    mask.paste(m, (pad, pad))
+    W, H = letters.width + 2 * pad, letters.height + 2 * pad
+
+    def padded(img, mode='L'):
+        out = Image.new(mode, (W, H), 0 if mode == 'L' else (0, 0, 0, 0))
+        out.paste(img, (pad, pad))
+        return out
+    text_mask_p = padded(letters)
+    mask = ImageChops.lighter(text_mask_p, padded(mark_a))     # lettering and mark together, for shadow, glow and depth
 
     def shifted(img, dx, dy):
         out = Image.new('L', img.size, 0)
@@ -124,12 +100,14 @@ def build_layers():
         t = y / (H - 1)
         grad.putpixel((0, y), tuple(int(FACE_TOP[i] + (FACE_BOTTOM[i] - FACE_TOP[i]) * t) for i in range(3)))
     face = grad.resize((W, H))
-    layer.paste(face, (0, 0), mask)
-    edge = ImageChops.subtract(mask, shifted(mask, 0, 3 * S)).point(lambda v: int(v * 0.75))
+    layer.paste(face, (0, 0), text_mask_p)
+    edge = ImageChops.subtract(text_mask_p, shifted(text_mask_p, 0, 3 * S)).point(lambda v: int(v * 0.75))
     layer.paste(Image.new('RGBA', (W, H), (196, 178, 246, 255)), (0, 0), edge)
+    # the logo mark keeps its own colours (purple ribbon with gold edges and the sailboat)
+    layer.alpha_composite(padded(mark_rgba, 'RGBA'))
     # soft gloss on the upper part of each letter
-    gloss = ImageChops.subtract(mask, shifted(mask, 0, 14 * S)).filter(ImageFilter.GaussianBlur(4 * S)).point(lambda v: int(v * 0.22))
-    gloss = ImageChops.multiply(gloss, mask)
+    gloss = ImageChops.subtract(text_mask_p, shifted(text_mask_p, 0, 14 * S)).filter(ImageFilter.GaussianBlur(4 * S)).point(lambda v: int(v * 0.22))
+    gloss = ImageChops.multiply(gloss, text_mask_p)
     layer.paste(Image.new('RGBA', (W, H), (210, 196, 255, 255)), (0, 0), gloss)
     return layer.resize((W // S, H // S), Image.LANCZOS)
 

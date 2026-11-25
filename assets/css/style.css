@@ -82,7 +82,7 @@ ul, ol { margin: 0; padding: 0; }
 .site-header { position: fixed; inset: 0 0 auto; z-index: 60; height: var(--header-h); color: var(--white); transition: background-color .35s, color .35s, box-shadow .35s, height .35s; }
 .site-header.solid { background: rgba(37, 35, 42, .94); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); box-shadow: 0 1px 0 rgba(255, 255, 255, .06); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; height: 100%; }
-.brand .logo { height: 40px; width: auto; filter: brightness(0) invert(1); }
+.brand .logo { height: 42px; width: auto; filter: drop-shadow(0 1px 6px rgba(0, 0, 0, .35)); }   /* new logo in its own (lightened) colours, made by _src/make_logo.py */
 .nav { display: flex; align-items: center; gap: 4px; }
 .nav > a, .nav-parent { position: relative; display: inline-flex; align-items: center; gap: 4px; padding: 10px 14px; font-family: var(--font-head); font-size: 15px; font-weight: 400; color: rgba(255, 255, 255, .88); white-space: nowrap; transition: color .2s; }
 .nav > a:hover, .nav-parent:hover, .nav-group:focus-within .nav-parent { color: var(--white); }
@@ -416,7 +416,7 @@ a.info-card:hover { border-color: var(--brand); background: var(--brand-tint); }
 /* ---------- footer ---------- */
 .site-footer { padding: 72px 0 32px; background: var(--dark); color: rgba(255, 255, 255, .7); font-size: 14.5px; }
 .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.3fr; gap: 40px; }
-.footer-brand .logo { height: 42px; width: auto; filter: brightness(0) invert(1); }
+.footer-brand .logo { height: 46px; width: auto; }
 .footer-brand p { margin-top: 18px; max-width: 34ch; }
 .site-footer .f-h { margin: 0 0 16px; font-family: var(--font-body); font-size: 12.5px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--white); }
 .site-footer ul { list-style: none; display: grid; gap: 10px; }

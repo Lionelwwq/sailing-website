@@ -46,6 +46,7 @@
 - 文字、按钮和行为在 `assets/js/warehouse.js`，样式在 `assets/css/warehouse.css`。
 - 关于我们页的「全球市场布局」是一个可拖动的 3D 地球（`assets/js/globe.js`，不用任何外部库）。市场名称、说明和两个数字在 `content/pages/about.json`（`market_*`、`markets`），编辑器里可以改；每个市场在地球上的位置写在 `globe.js` 开头的 `PLACES`，列表第一个市场（亚洲）是所有航线的起点。陆地轮廓来自 `assets/img/site/land-mask.png`，由 `_src/make_land_mask.py` 从 Natural Earth 公共领域数据生成。
 - 产品目录（数字版）：网页 `catalogue.html`（产品菜单和页脚里都有链接），文字在 `content/pages/catalogue.json`。PDF、封面图和每页预览图都在 `assets/catalogue/`，由 `_src/make_catalogue.py` 生成：目录的内容（产品介绍、规格、联系方式 `CONTACT`）写在脚本里，排版在 `_src/catalogue/catalogue.css`，照片和「典型用途」直接用网站上的。换照片或改内容后运行 `python _src/make_catalogue.py`（需要 Chrome、Pillow、PyMuPDF），PDF 和网页预览会一起更新。目录有英文、法文、西班牙文三个版本（文字按 Sailing 提供的译文，写在脚本里的 `L(英, 法, 西)` 中）：英文在 `assets/catalogue/`，法文在 `assets/catalogue/fr/`，西班牙文在 `assets/catalogue/es/`；只更新一个版本可运行 `python _src/make_catalogue.py fr`。网页上的翻页书默认跟随网站语言（法文网站显示法文目录），访客也可以在书上方切换；分享时可用 `catalogue.html?edition=es` 这样的链接直接打开某个版本。
+- Logo（2026 年 11 月起用新 logo：紫色手写体 "S" + 小帆船）：原图在 `_src/brand/sailing-mark.png`。运行 `python _src/make_logo.py` 生成网页用的 `assets/img/site/sailing-logo.png`（页头页脚）、`sailing-mark.png`（浏览器图标）和 `sailing-mark-light.png`（目录深色页用）；运行 `python _src/warehouse_sign.py` 把招牌画到首页大楼照片上（关于我们页面的横幅 `hero-about.jpg` 是同一张照片缩小的）；运行 `python _src/make_catalogue.py` 更新三本目录。换 logo 时只要换掉原图再依次运行这几个脚本。
 - 外观墙上的公司招牌（舵轮标志 + SAILING / INTERNATIONAL TRADE LTD）是用 `_src/warehouse_sign.py` 合成上去的，没有招牌的原图在 `_src/warehouse/`。换 logo、颜色或公司名后，改脚本开头的几行再运行 `python _src/warehouse_sign.py`，开门和关门两张图会一起更新，位置保持一致。
 - 生成 AI 图片的提示词在本机的 `_design/warehouse-AI-prompt.txt`（不上传）。
 

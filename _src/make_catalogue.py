@@ -19,7 +19,6 @@ Writes (English keeps the original paths, so links already shared keep working):
 import base64
 import html
 import json
-import math
 import pathlib
 import sys
 import time
@@ -118,25 +117,9 @@ USES_ES = {
 
 
 # ---------------------------------------------------------------- helpers
-def wheel_svg(color, size):
-    """The ship's wheel from the Sailing logo, as crisp vector art (same geometry as _src/warehouse_sign.py)."""
-    parts = []
-    for k in range(8):
-        a = k * math.pi / 4
-        c, s = math.cos(a), math.sin(a)
-        parts.append(f'<line x1="{.60*c:.4f}" y1="{.60*s:.4f}" x2="{.80*c:.4f}" y2="{.80*s:.4f}" stroke-width=".08"/>')
-        parts.append(f'<line x1="{.79*c:.4f}" y1="{.79*s:.4f}" x2="{.92*c:.4f}" y2="{.92*s:.4f}" stroke-width=".14"/>')
-        parts.append(f'<line x1="{.15*c:.4f}" y1="{.15*s:.4f}" x2="{.36*c:.4f}" y2="{.36*s:.4f}" stroke-width=".038"/>')
-        t = a + math.pi / 2
-        cx, cy = .37 * c, .37 * s
-        parts.append(f'<line x1="{cx-.05*math.cos(t):.4f}" y1="{cy-.05*math.sin(t):.4f}" x2="{cx+.05*math.cos(t):.4f}" y2="{cy+.05*math.sin(t):.4f}" stroke-width=".04" stroke-linecap="butt"/>')
-    return (f'<svg viewBox="-1 -1 2 2" width="{size}" height="{size}" aria-hidden="true">'
-            f'<g stroke="{color}" stroke-linecap="round" fill="none">{"".join(parts)}'
-            f'<circle r=".575" stroke-width=".15"/></g><ellipse rx=".075" ry=".11" fill="{color}"/></svg>')
-
-
-def logo(wheel_color, text_color, size='0.42in'):
-    return (f'<span class="logo">{wheel_svg(wheel_color, size)}'
+def logo(text_color, size='0.42in'):
+    """The Sailing logo: the script-S mark (lightened for the dark pages it sits on) with the company name."""
+    return (f'<span class="logo"><img src="{png("assets/img/site/sailing-mark-light.png")}" style="height:{size}" alt="">'
             f'<span style="color:{text_color}"><b>SAILING</b><i>INTERNATIONAL TRADE LTD</i></span></span>')
 
 
@@ -154,7 +137,7 @@ def img(path, max_px=2400):
     src = ROOT / path
     name = src.stem + '.jpg'
     dst = BUILD / 'img' / name
-    if not dst.exists():
+    if not dst.exists() or dst.stat().st_mtime < src.stat().st_mtime:   # redo when the site picture changed
         im = Image.open(src).convert('RGB')
         if max(im.size) > max_px:
             im.thumbnail((max_px, max_px), Image.LANCZOS)
@@ -162,6 +145,15 @@ def img(path, max_px=2400):
         im.save(dst, quality=84, optimize=True, progressive=True)
     _prepared[path] = f'img/{name}'
     return _prepared[path]
+
+
+def png(path):
+    """Copy a picture with transparency (the logo) into the build folder as it is."""
+    src = ROOT / path
+    dst = BUILD / 'img' / src.name
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    dst.write_bytes(src.read_bytes())
+    return f'img/{src.name}'
 
 
 def site_uses(kind, item_id):
@@ -486,7 +478,7 @@ FIRST_PRODUCT_PAGE = 6  # cover, about, milestones, overview, glazing come first
 def cover():
     return f'''<section class="page cover">
   <div class="photo" style="background-image:url({img(Wh + 'entrance-closed.webp')})"></div>
-  <div class="top">{logo('#FFFFFF', '#FFFFFF', '0.5in')}<span class="year-tag">{E(tx(L('EDITION 2026', 'ÉDITION 2026', 'EDICIÓN 2026')))}</span></div>
+  <div class="top">{logo('#FFFFFF', '0.5in')}<span class="year-tag">{E(tx(L('EDITION 2026', 'ÉDITION 2026', 'EDICIÓN 2026')))}</span></div>
   <div class="panel">
     <span class="kicker light">{E(tx(L('Architectural glass & mirrors', 'Verre architectural & miroirs', 'Vidrio arquitectónico & espejos')))}</span>
     <h1{' class="long"' if LANG == 'es' else ''} style="margin-top:.18in">{E(tx(L('Product catalogue', 'Catalogue de produits', 'Catálogo de productos')))}<span>2026</span></h1>
@@ -706,7 +698,7 @@ def back():
   <div class="wrap"><span class="kicker light">{E(tx(L('Contact', 'Contact', 'Contacto')))}</span>
     <h2 style="margin-top:.2in">{E(tx(L('Let’s build together.', 'Construisons ensemble.', 'Construyamos juntos.')))}<span>{E(tx(L('Your vision. Our glass.', 'Votre vision. Notre verre.', 'Su visión. Nuestro vidrio.')))}</span></h2>
     <p class="motto">{E(tx(L('Built on quality. Driven by partnership.', 'Fondés sur la qualité. Portés par le partenariat.', 'Basados en la calidad. Impulsados por las alianzas.')))}</p></div>
-  <div class="contact"><dl>{rows}</dl>{logo('#C9A56A', '#FFFFFF', '0.62in')}</div>
+  <div class="contact"><dl>{rows}</dl>{logo('#FFFFFF', '0.62in')}</div>
 </section>'''
 
 
