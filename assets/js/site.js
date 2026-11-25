@@ -45,6 +45,7 @@
   };
   if (PAGE === 'about') FILES.page = 'content/pages/about.json';
   if (PAGE === 'contact') FILES.page = 'content/pages/contact.json';
+  if (PAGE === 'catalogue') { FILES.page = 'content/pages/catalogue.json'; FILES.catalogue = 'assets/catalogue/pages.json'; }
   if (PAGE === 'index') FILES.page = 'content/pages/home.json';
   if (PRODUCT_KINDS.includes(PAGE) || PAGE === 'index') {
     FILES.productPages = 'content/product-pages.json';
@@ -376,6 +377,17 @@
       }
       $('#serve').innerHTML = A.serve.map((s, i) => `<div class="photo-card reveal" style="--d:${i * 80}ms"><img src="${esc(s.image)}" alt="" loading="lazy"><h3>${esc(t(s.title))}</h3><p>${esc(t(s.text))}</p></div>`).join('');
     },
+    catalogue() {
+      // the PDF and page previews come from assets/catalogue/pages.json (written by _src/make_catalogue.py)
+      const P = C.page, K = C.catalogue;
+      $$('[data-cat-pdf]').forEach((a) => a.setAttribute('href', K.pdf));
+      $('.cat-cover').setAttribute('aria-label', `${t(P.intro_title)} (PDF)`);
+      const size = lang === 'fr' ? String(K.sizeMB).replace('.', ',') : String(K.sizeMB);
+      $('#cat-meta').textContent = t(P.meta).replace('{pages}', K.pages.length).replace('{size}', size);
+      $('#cat-contents').innerHTML = (P.contents || []).map((c) => `<li>${esc(t(c))}</li>`).join('');
+      $('#cat-pages').innerHTML = K.pages.map((p, i) => `<a class="cat-page reveal" style="--d:${(i % 6) * 50}ms" href="${esc(K.pdf)}#page=${p.page}" target="_blank" rel="noopener" aria-label="${esc(t(P.page_label).replace('{n}', p.page))}">
+        <img src="${esc(p.image)}" alt="" loading="lazy" width="510" height="660"><span>${pad2(p.page)}</span></a>`).join('');
+    },
     contact() {
       const P = C.page;
       const map = $('#map');
@@ -460,7 +472,7 @@
   const navGroup = $('.nav-group');
   const navParent = $('[data-nav-parent]');
   if (navGroup && navParent) {
-    if (PRODUCT_KINDS.includes(PAGE)) navParent.classList.add('current');
+    if (PRODUCT_KINDS.includes(PAGE) || PAGE === 'catalogue') navParent.classList.add('current');
     navParent.addEventListener('click', () => {
       const open = !navGroup.classList.contains('open');
       navGroup.classList.toggle('open', open);

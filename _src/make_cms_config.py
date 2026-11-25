@@ -20,6 +20,7 @@ ENTRIES = [
     ('home', 'Home page', 'pages/home.json'),
     ('about', 'About page', 'pages/about.json'),
     ('contact', 'Contact page', 'pages/contact.json'),
+    ('catalogue', 'Product catalogue page', 'pages/catalogue.json'),
     ('product_pages', 'Product page headers', 'product-pages.json'),
     ('settings', 'Company settings', 'settings.json'),
     ('ui', 'Buttons & menu text', 'ui.json'),

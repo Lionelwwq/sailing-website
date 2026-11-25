@@ -1,0 +1,98 @@
+{
+ "pdf": "assets/catalogue/Sailing-Product-Catalogue-2026.pdf",
+ "sizeMB": 7.2,
+ "pages": [
+  {
+   "page": 1,
+   "image": "assets/catalogue/pages/p01.jpg"
+  },
+  {
+   "page": 2,
+   "image": "assets/catalogue/pages/p02.jpg"
+  },
+  {
+   "page": 3,
+   "image": "assets/catalogue/pages/p03.jpg"
+  },
+  {
+   "page": 4,
+   "image": "assets/catalogue/pages/p04.jpg"
+  },
+  {
+   "page": 5,
+   "image": "assets/catalogue/pages/p05.jpg"
+  },
+  {
+   "page": 6,
+   "image": "assets/catalogue/pages/p06.jpg"
+  },
+  {
+   "page": 7,
+   "image": "assets/catalogue/pages/p07.jpg"
+  },
+  {
+   "page": 8,
+   "image": "assets/catalogue/pages/p08.jpg"
+  },
+  {
+   "page": 9,
+   "image": "assets/catalogue/pages/p09.jpg"
+  },
+  {
+   "page": 10,
+   "image": "assets/catalogue/pages/p10.jpg"
+  },
+  {
+   "page": 11,
+   "image": "assets/catalogue/pages/p11.jpg"
+  },
+  {
+   "page": 12,
+   "image": "assets/catalogue/pages/p12.jpg"
+  },
+  {
+   "page": 13,
+   "image": "assets/catalogue/pages/p13.jpg"
+  },
+  {
+   "page": 14,
+   "image": "assets/catalogue/pages/p14.jpg"
+  },
+  {
+   "page": 15,
+   "image": "assets/catalogue/pages/p15.jpg"
+  },
+  {
+   "page": 16,
+   "image": "assets/catalogue/pages/p16.jpg"
+  },
+  {
+   "page": 17,
+   "image": "assets/catalogue/pages/p17.jpg"
+  },
+  {
+   "page": 18,
+   "image": "assets/catalogue/pages/p18.jpg"
+  },
+  {
+   "page": 19,
+   "image": "assets/catalogue/pages/p19.jpg"
+  },
+  {
+   "page": 20,
+   "image": "assets/catalogue/pages/p20.jpg"
+  },
+  {
+   "page": 21,
+   "image": "assets/catalogue/pages/p21.jpg"
+  },
+  {
+   "page": 22,
+   "image": "assets/catalogue/pages/p22.jpg"
+  },
+  {
+   "page": 23,
+   "image": "assets/catalogue/pages/p23.jpg"
+  }
+ ]
+}

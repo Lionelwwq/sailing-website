@@ -1,0 +1,100 @@
+{
+ "hero_image": "assets/img/library/low-e-facade.jpg",
+ "hero_title": {
+  "en": "Product Catalogue",
+  "zh": "产品目录",
+  "fr": "Catalogue de produits"
+ },
+ "hero_text": {
+  "en": "Our 2026 catalogue: every glass and mirror product, with technical specifications, in one PDF.",
+  "zh": "2026 年产品目录：所有玻璃和镜子产品及技术规格，一个 PDF 全部收录。",
+  "fr": "Notre catalogue 2026 : tous nos produits de verre et de miroir, avec leurs spécifications techniques, dans un seul PDF."
+ },
+ "intro_title": {
+  "en": "Product Catalogue 2026",
+  "zh": "2026 产品目录",
+  "fr": "Catalogue de produits 2026"
+ },
+ "intro_text": {
+  "en": "Float glass, processed glass, decorative and specialty glass, and our mirror collection: 16 product families with thicknesses, sizes, colours and standards, plus glazing options and certifications.",
+  "zh": "浮法玻璃、深加工玻璃、装饰玻璃、特种玻璃和镜子系列：共 16 类产品，包含厚度、尺寸、颜色和标准，以及中空玻璃选项和认证。",
+  "fr": "Verre flotté, verre transformé, verre décoratif et spécial, et notre collection de miroirs : 16 familles de produits avec épaisseurs, formats, couleurs et normes, ainsi que les options de vitrage et les certifications."
+ },
+ "download": {
+  "en": "Download PDF",
+  "zh": "下载 PDF",
+  "fr": "Télécharger le PDF"
+ },
+ "view_online": {
+  "en": "View online",
+  "zh": "在线查看",
+  "fr": "Consulter en ligne"
+ },
+ "meta": {
+  "en": "PDF · {pages} pages · {size} MB",
+  "zh": "PDF · {pages} 页 · {size} MB",
+  "fr": "PDF · {pages} pages · {size} Mo"
+ },
+ "contents_title": {
+  "en": "In this catalogue",
+  "zh": "目录内容",
+  "fr": "Dans ce catalogue"
+ },
+ "contents": [
+  {
+   "en": "About us and milestones",
+   "zh": "公司简介与发展历程",
+   "fr": "À propos et grandes étapes"
+  },
+  {
+   "en": "Flat glass: clear float, low iron, tinted, Low-E, reflective",
+   "zh": "平板玻璃：透明浮法、超白、着色、Low-E、反射",
+   "fr": "Verre plat : flotté clair, extra-clair, teinté, Low-E, réfléchissant"
+  },
+  {
+   "en": "Processed glass: tempered, laminated, insulated glass units",
+   "zh": "深加工玻璃：钢化、夹胶、中空玻璃",
+   "fr": "Verre transformé : trempé, feuilleté, unités scellées"
+  },
+  {
+   "en": "Decorative glass: patterned, back painted, acid etched, silk screen printed",
+   "zh": "装饰玻璃：压花、烤漆、蒙砂、丝印",
+   "fr": "Verre décoratif : à motif, laqué, dépoli à l’acide, sérigraphié"
+  },
+  {
+   "en": "Specialty glass: curved, photovoltaic (PV)",
+   "zh": "特种玻璃：弧形、光伏",
+   "fr": "Verre spécial : bombé, photovoltaïque (PV)"
+  },
+  {
+   "en": "Mirror collection and LED mirrors",
+   "zh": "镜子系列与 LED 镜",
+   "fr": "Collection de miroirs et miroirs à DEL"
+  },
+  {
+   "en": "Glazing options, certifications and testing",
+   "zh": "中空玻璃选项、认证与检测",
+   "fr": "Options de vitrage, certifications et essais"
+  }
+ ],
+ "language_note": {
+  "en": "The catalogue is in English.",
+  "zh": "产品目录为英文版。",
+  "fr": "Le catalogue est en anglais."
+ },
+ "pages_title": {
+  "en": "Inside the catalogue",
+  "zh": "内页预览",
+  "fr": "Aperçu des pages"
+ },
+ "pages_hint": {
+  "en": "Choose a page to open it in the PDF.",
+  "zh": "点击页面，即可在 PDF 中打开该页。",
+  "fr": "Choisissez une page pour l’ouvrir dans le PDF."
+ },
+ "page_label": {
+  "en": "Page {n}",
+  "zh": "第 {n} 页",
+  "fr": "Page {n}"
+ }
+}

@@ -7,3 +7,6 @@
 .DS_Store
 Thumbs.db
 __pycache__/
+
+# Catalogue build folder (made by _src/make_catalogue.py)
+_src/catalogue/build/
