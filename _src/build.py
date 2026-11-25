@@ -24,7 +24,7 @@ import re
 # Public address of the site. Change this when the site moves to its own domain;
 # it is used for sharing previews (og:image), sitemap.xml and robots.txt.
 SITE_URL = 'https://lionelwwq.github.io/sailing-website/'
-DEFAULT_IMAGE = 'assets/img/online/facade-up.jpg'
+DEFAULT_IMAGE = 'assets/img/library/low-e-facade.jpg'
 
 SRC = pathlib.Path(__file__).resolve().parent
 OUT = SRC.parent

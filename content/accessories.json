@@ -347,7 +347,7 @@
    "photo": "assets/img/products/custom-rack.jpg",
    "gallery": [
     {
-     "image": "assets/img/online/window-units.jpg",
+     "image": "assets/img/warehouse/zone-racks.webp",
      "caption": {
       "en": "In use: finished doors and windows stored on racks",
       "zh": "使用实景：成品门窗存放在玻璃架上",
@@ -773,7 +773,7 @@
    "photo": "assets/img/products/eva-film.jpg",
    "gallery": [
     {
-     "image": "assets/img/glass/laminated.jpg",
+     "image": "assets/img/library/laminated-edge.jpg",
      "caption": {
       "en": "Result: laminated safety glass",
       "zh": "成品：夹胶安全玻璃",
@@ -921,7 +921,7 @@
    "photo": "assets/img/products/aluminum-spacer.jpg",
    "gallery": [
     {
-     "image": "assets/img/glass/insulated.jpg",
+     "image": "assets/img/library/igu-corner.jpg",
      "caption": {
       "en": "Result: a finished insulating glass unit",
       "zh": "成品：中空玻璃",
@@ -1211,7 +1211,7 @@
      }
     },
     {
-     "image": "assets/img/glass/insulated.jpg",
+     "image": "assets/img/library/igu-corner.jpg",
      "caption": {
       "en": "Secondary seal around an IG unit",
       "zh": "中空玻璃周边的二道密封",
@@ -1359,7 +1359,7 @@
    "photo": "assets/img/products/molecular-sieve.jpg",
    "gallery": [
     {
-     "image": "assets/img/glass/insulated.jpg",
+     "image": "assets/img/library/igu-corner.jpg",
      "caption": {
       "en": "Keeps IG units dry and clear inside",
       "zh": "保持中空玻璃内部干燥通透",
@@ -1793,7 +1793,7 @@
    "photo": "assets/img/products/grinding-wheels.jpg",
    "gallery": [
     {
-     "image": "assets/img/glass/low-iron.jpg",
+     "image": "assets/img/library/clear-float-edge.jpg",
      "caption": {
       "en": "Result: clean, polished edges",
       "zh": "成品：整洁光亮的抛光边",
@@ -1941,7 +1941,7 @@
    "photo": "assets/img/products/cerium-dioxide.jpg",
    "gallery": [
     {
-     "image": "assets/img/glass/low-iron.jpg",
+     "image": "assets/img/library/clear-float-edge.jpg",
      "caption": {
       "en": "Result: crystal-clear polished edges",
       "zh": "成品：晶莹剔透的抛光边",
@@ -2227,7 +2227,7 @@
    "photo": "assets/img/products/vinyl-cat2.jpg",
    "gallery": [
     {
-     "image": "assets/img/site/bg3-min.jpg",
+     "image": "assets/img/warehouse/zone-mirrors.webp",
      "caption": {
       "en": "Large mirror installations",
       "zh": "大型镜子安装",

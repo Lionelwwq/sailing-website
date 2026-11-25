@@ -262,16 +262,7 @@
     "fr": "Verre flotté teinté"
    },
    "photo": "assets/img/library/tinted-collection.jpg",
-   "gallery": [
-    {
-     "image": "assets/img/glass/tinted-float.jpg",
-     "caption": {
-      "en": "Tinted glass samples",
-      "zh": "着色玻璃样品",
-      "fr": "Échantillons de verre teinté"
-     }
-    }
-   ],
+   "gallery": [],
    "short": {
     "en": "Body-tinted glass in a choice of colours to cut glare and solar heat.",
     "zh": "本体着色玻璃，多种颜色可选，可减少眩光和太阳热量。",
@@ -1420,7 +1411,7 @@
     "zh": "太阳能光伏玻璃",
     "fr": "Verre solaire (photovoltaïque)"
    },
-   "photo": "assets/img/glass/low-iron.jpg",
+   "photo": "assets/img/warehouse/zone-solar.webp",
    "gallery": [],
    "short": {
     "en": "High-transmittance low iron glass for solar modules and building-integrated solar.",

@@ -1,5 +1,5 @@
 {
- "hero_image": "assets/img/site/bg1-min2.jpg",
+ "hero_image": "assets/img/site/hero-about.jpg",
  "hero_title": {
   "en": "About us",
   "zh": "关于我们",
@@ -321,7 +321,7 @@
     "zh": "商业",
     "fr": "Commercial"
    },
-   "image": "assets/img/site/bg3-min3.jpg",
+   "image": "assets/img/library/curved-facade.jpg",
    "text": {
     "en": "Builders, architects, developers and businesses.",
     "zh": "建筑商、建筑师、开发商和企业。",

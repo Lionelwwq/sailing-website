@@ -1,5 +1,5 @@
 {
- "hero_image": "assets/img/online/facade-up.jpg",
+ "hero_image": "assets/img/library/low-e-facade.jpg",
  "hero_title": {
   "en": "Glass, mirrors & accessories",
   "zh": "玻璃、镜子及配件",
@@ -108,7 +108,7 @@
     "zh": "商业",
     "fr": "Commercial"
    },
-   "image": "assets/img/site/bg3-min2.jpg",
+   "image": "assets/img/library/low-e-office.jpg",
    "text": {
     "en": "Storefronts, curtain walls, offices and public spaces. We coordinate product selection, supply and installation so your project has one point of contact.",
     "zh": "店面、幕墙、办公室和公共空间。我们统筹产品选型、供货和安装，让您的项目只需对接一个联系人。",
@@ -121,7 +121,7 @@
     "zh": "仅供货",
     "fr": "Fourniture seulement"
    },
-   "image": "assets/img/online/window-units.jpg",
+   "image": "assets/img/site/hero-accessories.jpg",
    "text": {
     "en": "Glass, mirrors and accessories for fabricators, installers and contractors, cut and processed to your requirements and delivered ready to use.",
     "zh": "为玻璃加工商、安装商和承包商提供玻璃、镜子及配件，按您的要求切割加工，交付即可使用。",

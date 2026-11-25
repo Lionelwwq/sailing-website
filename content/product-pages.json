@@ -1,6 +1,6 @@
 {
  "glass": {
-  "hero_image": "assets/img/glass/clear-float.jpg",
+  "hero_image": "assets/img/site/hero-glass.jpg",
   "title": {
    "en": "Glass",
    "zh": "玻璃",
@@ -13,7 +13,7 @@
   }
  },
  "mirrors": {
-  "hero_image": "assets/img/site/bg3-min.jpg",
+  "hero_image": "assets/img/site/hero-mirrors.jpg",
   "title": {
    "en": "Mirrors",
    "zh": "镜子",
@@ -26,7 +26,7 @@
   }
  },
  "accessories": {
-  "hero_image": "assets/img/online/window-units.jpg",
+  "hero_image": "assets/img/site/hero-accessories.jpg",
   "title": {
    "en": "Accessories",
    "zh": "配件",

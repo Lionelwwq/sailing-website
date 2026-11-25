@@ -335,9 +335,10 @@
       const H = C.page;
       $('#pillars').innerHTML = H.pillars.map((p, i) => `<div class="pillar reveal" style="--d:${i * 90}ms"><span class="num">${pad2(i + 1)}</span><h3>${esc(t(p.title))}</h3><p>${esc(t(p.text))}</p></div>`).join('');
       const cats = [
-        { kind: 'glass', img: 'assets/img/glass/insulated.jpg', text: H.cat_glass_text },
-        { kind: 'mirrors', img: 'assets/img/glass/mirror.jpg', text: H.cat_mirrors_text },
-        { kind: 'accessories', img: 'assets/img/products/removable-shelf.jpg', text: H.cat_accessories_text },
+        // photos from the Sailing photo library or AI pictures only
+        { kind: 'glass', img: 'assets/img/library/clear-vs-low-iron.jpg', text: H.cat_glass_text },
+        { kind: 'mirrors', img: 'assets/img/warehouse/zone-mirrors.webp', text: H.cat_mirrors_text },
+        { kind: 'accessories', img: 'assets/img/warehouse/zone-accessories.webp', text: H.cat_accessories_text },
       ];
       $('#cat-cards').innerHTML = cats.map((c, i) => `<a class="cat-card reveal" style="--d:${i * 90}ms" href="${c.kind}.html">
         <div class="img"><img src="${c.img}" alt="" loading="lazy"></div>
