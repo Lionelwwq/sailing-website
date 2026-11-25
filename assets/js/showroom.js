@@ -116,11 +116,14 @@
     });
     const wanted = window.location.hash.slice(1);
     const first = spot(wanted) ? wanted : data.scene.start;
+    // at the entrance, show its first view as a still while the 360 picture loads (same view as the walk-in ends on)
+    if (first === 'entrance') view.classList.add('sr-still');
     viewer = window.pannellum.viewer(view, {
       default: { firstScene: first, autoLoad: true, sceneFadeDuration: reduce ? 0 : 650, showControls: true, showFullscreenCtrl: true,
         disableKeyboardCtrl: true, compass: false, strings: { loadingLabel: data.texts.loading } },
       scenes,
     });
+    viewer.on('load', () => view.classList.remove('sr-still'));
     viewer.on('scenechange', (id) => arrived(id));
     viewer.on('error', () => say(data.texts.no_webgl));
     arrived(first);

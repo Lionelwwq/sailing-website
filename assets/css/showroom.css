@@ -7,6 +7,10 @@
   background: linear-gradient(180deg, rgba(28, 22, 38, .72) 0%, rgba(28, 22, 38, .38) 60%, rgba(28, 22, 38, 0) 100%); }
 .sr-view .pnlm-container { background: var(--dark); }
 .sr-view .pnlm-load-box { background: rgba(37, 35, 42, .85); border-radius: 12px; }
+/* arriving at the entrance: its first view as a still until the 360 picture is ready */
+.sr-view.sr-still { background: var(--dark) url("../img/showroom/entrance-view.jpg") center / cover no-repeat; }
+.sr-view.sr-still .pnlm-container { background: transparent; }
+.sr-view.sr-still .pnlm-load-box { display: none !important; }
 .sr-view .pnlm-controls-container { top: auto; bottom: 86px; left: 16px; }
 /* the words sit over the picture without blocking dragging */
 .sr-top { position: absolute; left: 0; right: 0; top: calc(var(--header-h) + 12px); z-index: 3; display: grid; justify-items: start; gap: 4px; pointer-events: none;

@@ -1,0 +1,42 @@
+/* Home page cover: Sailing's front door (walk-in behaviour in assets/js/home-door.js) */
+
+.door { position: relative; height: 100vh; height: 100svh; min-height: 560px; overflow: hidden; background: #E8E1D6; }
+.door-photo img, .door-inside { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+/* keep the stone wall on the left in view on desktop screens: that is where the words go */
+.door-photo img { object-position: 0% 62%; transform-origin: var(--ox, 64%) var(--oy, 66%); }
+/* soft shade under the header so its white menu stays readable on the light stone */
+.door::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: calc(var(--header-h) + 90px); z-index: 2; pointer-events: none;
+  background: linear-gradient(180deg, rgba(28, 22, 38, .62), rgba(28, 22, 38, 0)); }
+/* the words sit on the stone wall: it takes the left third of the picture, so keep them inside that */
+.door-copy { position: absolute; left: clamp(24px, 4vw, 72px); top: 50%; z-index: 3; width: min(27vw, 430px); transform: translateY(-42%); }
+.door-kicker { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-head); font-size: 13px; font-weight: 600; letter-spacing: .26em;
+  text-transform: uppercase; color: var(--brand); }
+.door-kicker::before { content: ""; width: 26px; height: 2px; background: var(--accent); }
+.door h1 { margin-top: 14px; font-size: clamp(1.8rem, 2.55vw, 3rem); font-weight: 600; line-height: 1.08; text-transform: uppercase; color: var(--ink); }
+.door-copy p { margin-top: 16px; font-size: 1.05rem; color: #3F3B46; }
+.door-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+.door-hint { position: absolute; left: 50%; bottom: 18px; z-index: 3; transform: translateX(-50%); font-size: 13px; color: rgba(255, 255, 255, .92);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, .5); }
+.door-hint::after { content: " \2193"; }
+
+/* the walk-in: the camera moves through the glass doors, the showroom comes into view, then a soft white fade */
+.door-inside { opacity: 0; transform: scale(1.25); pointer-events: none; }
+.door::after { content: ""; position: absolute; inset: 0; z-index: 5; background: #FFFFFF; opacity: 0; pointer-events: none; }
+.door.entering .door-photo img { transform: scale(3.4); transition: transform 1.45s cubic-bezier(.55, 0, .3, 1); }
+.door.entering .door-inside { opacity: 1; transform: none; transition: opacity .75s ease .55s, transform 1.3s cubic-bezier(.2, .6, .3, 1) .3s; }
+.door.entering .door-copy, .door.entering .door-hint { opacity: 0; transition: opacity .3s; }
+.door.entering::after { opacity: 1; transition: opacity .4s ease 1.25s; }
+
+/* phones and tall screens: the front door on top (sign and doors in view), the words in a dark panel below */
+@media (max-width: 760px), (max-aspect-ratio: 1/1) {
+  .door { height: auto; min-height: 0; display: flex; flex-direction: column; background: var(--ink); }
+  .door-photo { position: relative; display: block; height: 62svh; min-height: 360px; overflow: hidden; }
+  .door-photo img { object-position: 64% 70%; }
+  .door-copy { position: relative; left: auto; top: auto; width: auto; transform: none; padding: 26px 20px 58px; }
+  .door-kicker { color: #D9BE8C; }
+  .door h1 { color: var(--white); font-size: clamp(1.7rem, 7vw, 2.4rem); }
+  .door-copy p { color: rgba(255, 255, 255, .88); font-size: .98rem; }
+  .door-actions .btn-outline { border-color: rgba(255, 255, 255, .8); color: var(--white); }
+  .door-hint { bottom: 16px; }
+}
+@media (prefers-reduced-motion: reduce) { .door.entering * { transition: none !important; } }

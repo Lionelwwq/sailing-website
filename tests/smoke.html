@@ -282,49 +282,23 @@
       assert(!calls.length, 'bot request was sent');
     });
 
-    /* ---------- warehouse tour (home page) ---------- */
+    /* ---------- home page front door ---------- */
     const until = async (fn, ms = 5000) => { for (let t = 0; t < ms; t += 100) { if (fn()) return true; await wait(100); } return false; };
-    const enterWarehouse = async (d) => {
-      await until(() => $(d, '.wh-enter'));
-      $(d, '.wh-enter').click();
-      return until(() => !$(d, '.wh-door') && $(d, '#wh').classList.contains('arrived'), 7000);
-    };
-    await test('Warehouse tour: the door opens and 7 area markers appear', async () => {
-      const { d, w } = await open('index.html?lang=en', 1280, 760);
-      assert(await until(() => $(d, '.wh-enter')), 'no "Enter the warehouse" button');
-      assert(await enterWarehouse(d), 'did not walk inside');
-      assert($$(d, '.wh-dot').length === 7, `${$$(d, '.wh-dot').length} markers`);
+    await test('Home page: the front door, and "Enter the showroom" walks into the 360 showroom', async () => {
+      const { f, d, w } = await open('index.html?lang=de', 1280, 760);
+      const photo = $(d, '.door-photo img');
+      assert(await until(() => photo.complete && photo.naturalWidth > 0), 'front door picture did not load');
+      const btn = $(d, '[data-door-enter]');
+      assert(btn && /showroom\.html#entrance$/.test(btn.getAttribute('href')), 'no Enter button to the showroom');
+      assert(/Showroom betreten/.test(btn.textContent), `button says "${btn.textContent}"`);
+      const r = $(d, '.door-copy').getBoundingClientRect();
+      assert(r.right <= 1280 * 0.36, `words reach ${Math.round(r.right)}px, past the stone wall`);
       assert(!(w.__siteErrors || []).length, (w.__siteErrors || []).join('; '));
-    });
-    await test('Warehouse tour: close-up with product spots, next area, Escape', async () => {
-      const { d, w } = await open('index.html?lang=de', 1280, 760);
-      await enterWarehouse(d);
-      $(d, '.wh-dot[data-zone="glass"]').click();
-      assert(await until(() => $(d, '.wh-detail.on') && $$(d, '.wh-spot').length === 3), 'close-up or product spots missing');
-      assert($(d, '.wh-panel h2').textContent === 'Glas', `card shows "${$(d, '.wh-panel h2').textContent}"`);
-      $(d, '[data-wh-step="1"]').click();
-      assert(await until(() => $(d, '.wh-panel h2').textContent === 'Spiegel'), 'next area did not open');
-      d.body.dispatchEvent(new w.KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
-      assert(await until(() => !$(d, '#wh').classList.contains('zoomed')), 'Escape did not go back to the warehouse');
-      assert(!(w.__siteErrors || []).length, (w.__siteErrors || []).join('; '));
-    });
-    await test('Warehouse tour: clicking a product zooms in and opens its page; Back returns to that area', async () => {
-      const { f, d } = await open('index.html?lang=de', 1280, 760);
-      await enterWarehouse(d);
-      $(d, '.wh-dot[data-zone="glass"]').click();
-      await until(() => $(d, '.wh-detail.on') && $$(d, '.wh-spot').length);
-      $(d, '.wh-spot[data-product="glass:low-iron"]').click();
-      assert(await until(() => /glass\.html#low-iron$/.test(f.contentWindow.location.href), 4000), `went to ${f.contentWindow.location.href}`);
-      assert(await until(() => { const tab = f.contentWindow.document.querySelector('#tab-low-iron'); return tab && tab.getAttribute('aria-selected') === 'true'; }, 5000), 'low-iron glass is not selected');
-      const pd = f.contentWindow.document;
-      assert(pd.documentElement.classList.contains('arrive'), 'product page has no arrival effect');
-      assert(pd.documentElement.lang === 'de', `product page language is ${pd.documentElement.lang}`);
-      f.contentWindow.history.back();
-      assert(await until(() => {
-        const d3 = f.contentWindow.document; const r = d3.getElementById('wh'); const h = d3.querySelector('.wh-panel h2');
-        return r && r.classList.contains('zoomed') && !d3.querySelector('.wh-door') && h && h.textContent === 'Glas';
-      }, 7000), 'Back did not return to the glass area');
-      assert(!(f.contentWindow.__siteErrors || []).length, (f.contentWindow.__siteErrors || []).join('; '));
+      btn.click();
+      assert(await until(() => $(d, '#door').classList.contains('entering'), 1000), 'no walk-in');
+      assert(await until(() => /showroom\.html#entrance$/.test(f.contentWindow.location.href), 5000), `went to ${f.contentWindow.location.href}`);
+      assert(await until(() => f.contentWindow.document.documentElement.classList.contains('arrive'), 5000), 'showroom has no arrival fade');
+      assert(await until(() => f.contentWindow.document.querySelectorAll('[data-sr-go]').length === 8, 5000), 'showroom did not open');
     });
     await test('A ?lang= link keeps its language on the next page', async () => {
       localStorage.removeItem('sit-lang');
@@ -332,38 +306,13 @@
       const { d } = await open('contact.html');
       assert(d.documentElement.lang === 'fr-CA', `next page is ${d.documentElement.lang}`);
     });
-    await test('Warehouse tour: every picture and product in scene.json exists', async () => {
-      const { w } = await open('index.html?lang=fr', 1280, 760);
-      const cfg = await w.fetch('assets/img/warehouse/scene.json').then((r) => r.json());
-      const files = [cfg.image, ...Object.values(cfg.details || {}), cfg.entrance && cfg.entrance.image, cfg.entrance && cfg.entrance.closed].filter(Boolean);
-      for (const f of files) assert((await w.fetch(`assets/img/warehouse/${f}`, { method: 'HEAD' })).ok, `missing picture ${f}`);
-      const ids = {};
-      for (const k of ['glass', 'mirrors', 'accessories']) ids[k] = (await w.fetch(`content/${k}.json`).then((r) => r.json())).items.map((i) => i.id);
-      const spots = Object.values(cfg.spots || {}).flat();
-      spots.forEach((s) => { const [k, id] = s.product.split(':'); assert((ids[k] || []).includes(id), `unknown product ${s.product}`); });
-      ['glass', 'mirrors', 'curved', 'solar', 'accessories', 'racks', 'quote'].forEach((z) => assert(cfg.hotspots[z], `no marker for ${z}`));
-      return `${files.length} pictures, ${spots.length} product spots`;
-    });
-    await test('Warehouse tour: every marker can be clicked (nothing lies on top, e.g. "Get a quote")', async () => {
-      for (const [wd, ht] of [[1280, 720], [1440, 900]]) {
-        const { d } = await open('index.html?lang=en', wd, ht);
-        assert(await enterWarehouse(d), `did not walk inside at ${wd}x${ht}`);
-        await wait(600);
-        const blocked = [...d.querySelectorAll('.wh-dot')].filter((el) => {
-          const r = el.getBoundingClientRect();
-          const top = d.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2);
-          return !(top === el || el.contains(top));
-        }).map((el) => el.dataset.zone);
-        assert(!blocked.length, `at ${wd}x${ht} these markers are covered: ${blocked.join(', ')}`);
-      }
-    });
-    await test('Warehouse tour on a phone goes straight inside and fits the screen', async () => {
+    await test('Home page on a phone: the door on top, the words below, fits the screen', async () => {
       const { d, w } = await open('index.html?lang=nl', 375, 800);
-      assert(await until(() => $(d, '#wh').classList.contains('arrived')), 'not inside');
-      assert(!$(d, '.wh-door'), 'door shown on a phone');
-      $(d, '.wh-dot[data-zone="accessories"]').click();
-      await wait(200);
-      assert(!$(d, '.wh-panel').hidden, 'info card hidden');
+      await until(() => $(d, 'h1').textContent.trim());
+      const photo = $(d, '.door-photo').getBoundingClientRect();
+      const copy = $(d, '.door-copy').getBoundingClientRect();
+      assert(copy.top >= photo.bottom - 1, 'the words cover the door picture');
+      assert(photo.height > 300, `door picture only ${Math.round(photo.height)}px high`);
       assert(d.documentElement.scrollWidth <= 376, `page is ${d.documentElement.scrollWidth}px wide`);
       assert(!(w.__siteErrors || []).length, (w.__siteErrors || []).join('; '));
     });

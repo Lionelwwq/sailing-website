@@ -537,5 +537,19 @@
   "nl": "Glas, spiegels en accessoires, Toronto",
   "de": "Glas, Spiegel & Zubehör, Toronto",
   "es": "Vidrio, espejos y accesorios, Toronto"
+ },
+ "enter_showroom": {
+  "en": "Enter the showroom",
+  "fr": "Entrer dans la salle",
+  "nl": "Showroom betreden",
+  "de": "Showroom betreten",
+  "es": "Entrar a la sala"
+ },
+ "scroll_hint": {
+  "en": "or scroll down",
+  "fr": "ou faites défiler",
+  "nl": "of scroll naar beneden",
+  "de": "oder nach unten scrollen",
+  "es": "o desplácese hacia abajo"
  }
 }
