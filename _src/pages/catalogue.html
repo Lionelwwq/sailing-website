@@ -1,24 +1,43 @@
 <!--
 title: Product Catalogue 2026 | Sailing International Trade
-description: Download the Sailing International Trade Product Catalogue 2026: architectural glass and mirror products with technical specifications.
+description: Flip through or download the Sailing International Trade Product Catalogue 2026: architectural glass and mirror products with technical specifications.
 nav: catalogue
 image: assets/catalogue/cover.jpg
 -->
-  <section class="page-hero" aria-labelledby="page-title">
-    <img class="hero-bg" src="assets/img/library/low-e-facade.jpg" data-c-src="hero_image" alt="" fetchpriority="high">
-    <div class="container">
+<link rel="stylesheet" href="assets/css/catalogue.css">
+  <!-- Flipbook: pages from assets/catalogue/ (made by _src/make_catalogue.py), behaviour in assets/js/catalogue.js -->
+  <section class="fb-stage" id="flipbook" aria-labelledby="page-title">
+    <div class="container fb-head">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html" data-ui="nav_home">Home</a><span aria-hidden="true">/</span><span data-ui="nav_catalogue">Product Catalogue</span></nav>
+      <span class="fb-kicker" data-c="hero_kicker"></span>
       <h1 id="page-title" data-c="hero_title"></h1>
       <p data-c="hero_text"></p>
     </div>
+    <div class="fb-area">
+      <div class="fb" role="region" aria-roledescription="flipbook" aria-labelledby="page-title">
+        <div class="fb-book"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="fb-bar">
+        <button class="fb-btn fb-prev" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only" data-c="prev"></span></button>
+        <span class="fb-count" aria-hidden="true">1 / 1</span>
+        <button class="fb-btn fb-next" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only" data-c="next"></span></button>
+        <label class="sr-only" for="fb-range" data-c="slider"></label><input class="fb-range" id="fb-range" type="range" min="1" max="1" value="1" step="1">
+        <span class="fb-sep" aria-hidden="true"></span>
+        <button class="fb-btn fb-thumbs-btn" type="button" aria-expanded="false" aria-controls="fb-thumbs"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="6.5" height="6.5" rx="1"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1"/></g></svg><span class="sr-only" data-c="thumbs"></span></button>
+        <button class="fb-btn fb-fs" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only" data-c="fullscreen"></span></button>
+        <a class="fb-btn fb-dl" href="assets/catalogue/Sailing-Product-Catalogue-2026.pdf" data-cat-pdf download><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only" data-c="download"></span></a>
+      </div>
+      <div class="fb-thumbs" id="fb-thumbs" hidden></div>
+      <p class="fb-hint" data-c="hint"></p>
+      <p class="sr-only fb-live" aria-live="polite"></p>
+      <span id="fb-page-label" data-c="page_label" hidden></span>
+    </div>
   </section>
 
-  <!-- The PDF, cover and page previews are made by _src/make_catalogue.py (assets/catalogue/) -->
   <section class="sec" aria-labelledby="cat-title">
-    <div class="container cat-intro">
-      <a class="cat-cover reveal" href="assets/catalogue/Sailing-Product-Catalogue-2026.pdf" data-cat-pdf target="_blank" rel="noopener">
-        <img src="assets/catalogue/cover.jpg" width="1275" height="1650" alt="Sailing International Trade Product Catalogue 2026, cover">
-      </a>
+    <div class="container cat-info">
       <div class="cat-text reveal">
         <h2 class="h-up" id="cat-title" data-c="intro_title"></h2>
         <p data-c="intro_text"></p>
@@ -30,19 +49,19 @@ image: assets/catalogue/cover.jpg
           <a class="btn btn-outline" href="assets/catalogue/Sailing-Product-Catalogue-2026.pdf" data-cat-pdf target="_blank" rel="noopener"><span data-c="view_online"></span></a>
         </div>
         <p class="cat-meta" id="cat-meta"></p>
-        <h3 class="cat-h" data-c="contents_title"></h3>
-        <ul class="cat-contents" id="cat-contents"></ul>
         <p class="cat-note" data-c="language_note"></p>
       </div>
+      <div class="cat-stats reveal" id="cat-stats"></div>
     </div>
   </section>
 
-  <section class="sec sec-gray" aria-labelledby="pages-title">
+  <section class="sec sec-gray" aria-labelledby="chapters-title">
     <div class="container">
-      <h2 class="h-up center reveal" id="pages-title" data-c="pages_title"></h2>
-      <p class="center cat-hint reveal" data-c="pages_hint"></p>
-      <div class="cat-pages" id="cat-pages"></div>
+      <h2 class="h-up center reveal" id="chapters-title" data-c="chapters_title"></h2>
+      <p class="center cat-hint reveal" data-c="chapters_hint"></p>
+      <div class="cat-chapters" id="cat-chapters"></div>
     </div>
   </section>
 
 <!-- include: cta -->
+<script src="assets/js/catalogue.js" defer></script>

@@ -378,15 +378,22 @@
       $('#serve').innerHTML = A.serve.map((s, i) => `<div class="photo-card reveal" style="--d:${i * 80}ms"><img src="${esc(s.image)}" alt="" loading="lazy"><h3>${esc(t(s.title))}</h3><p>${esc(t(s.text))}</p></div>`).join('');
     },
     catalogue() {
-      // the PDF and page previews come from assets/catalogue/pages.json (written by _src/make_catalogue.py)
+      // texts for the flipbook page; the book itself is assets/js/catalogue.js, pages from assets/catalogue/pages.json
       const P = C.page, K = C.catalogue;
       $$('[data-cat-pdf]').forEach((a) => a.setAttribute('href', K.pdf));
-      $('.cat-cover').setAttribute('aria-label', `${t(P.intro_title)} (PDF)`);
       const size = lang === 'fr' ? String(K.sizeMB).replace('.', ',') : String(K.sizeMB);
       $('#cat-meta').textContent = t(P.meta).replace('{pages}', K.pages.length).replace('{size}', size);
-      $('#cat-contents').innerHTML = (P.contents || []).map((c) => `<li>${esc(t(c))}</li>`).join('');
-      $('#cat-pages').innerHTML = K.pages.map((p, i) => `<a class="cat-page reveal" style="--d:${(i % 6) * 50}ms" href="${esc(K.pdf)}#page=${p.page}" target="_blank" rel="noopener" aria-label="${esc(t(P.page_label).replace('{n}', p.page))}">
-        <img src="${esc(p.image)}" alt="" loading="lazy" width="510" height="660"><span>${pad2(p.page)}</span></a>`).join('');
+      const pageName = (n) => t(P.page_label).replace('{n}', n);
+      $('#fb-thumbs').innerHTML = K.pages.map((p) => `<button type="button" data-fb-goto="${p.page}" aria-label="${esc(pageName(p.page))}" aria-current="false">
+        <img src="${esc(p.image)}" alt="" loading="lazy" width="510" height="660"><span>${p.page}</span></button>`).join('');
+      $('#cat-stats').innerHTML = (P.stats || []).map((x) => `<div><strong data-count="${esc(String(x.value).replace('{pages}', K.pages.length))}">${esc(String(x.value).replace('{pages}', K.pages.length))}</strong><span>${esc(t(x.label))}</span></div>`).join('');
+      $('#cat-chapters').innerHTML = (P.chapters || []).map((c, i) => {
+        const pg = K.pages.find((x) => x.page === c.page) || K.pages[0];
+        return `<button type="button" class="chapter reveal" style="--d:${(i % 4) * 70}ms" data-fb-goto="${c.page}">
+          <span class="ch-img"><img src="${esc(pg.image)}" alt="" loading="lazy" width="510" height="660"></span>
+          <span class="ch-txt"><b>${esc(t(c.title))}</b><small>${esc(pageName(c.page))}</small></span></button>`;
+      }).join('');
+      document.dispatchEvent(new CustomEvent('sit:catalogue'));
     },
     contact() {
       const P = C.page;

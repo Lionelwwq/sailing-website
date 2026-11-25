@@ -368,20 +368,32 @@
       assert(!(w.__siteErrors || []).length, (w.__siteErrors || []).join('; '));
     });
 
-    await test('Catalogue page: PDF, cover and every page preview are there and linked', async () => {
+    await test('Catalogue flipbook: turns pages, jumps to a chapter, PDF and thumbnails work', async () => {
       const { d, w } = await open('catalogue.html?lang=fr', 1280, 800);
       const K = await w.fetch('assets/catalogue/pages.json').then((r) => r.json());
+      const n = K.pages.length;
       const pdf = await w.fetch(K.pdf, { method: 'HEAD' });
       assert(pdf.ok && /pdf/.test(pdf.headers.get('content-type') || ''), `PDF not served (${pdf.status})`);
-      const previews = [...d.querySelectorAll('#cat-pages a')];
-      assert(previews.length === K.pages.length && previews.length > 10, `${previews.length} previews for ${K.pages.length} pages`);
-      assert(previews.every((a, i) => a.getAttribute('href') === `${K.pdf}#page=${i + 1}`), 'a preview does not open its page');
-      assert([...d.querySelectorAll('[data-cat-pdf]')].every((a) => a.getAttribute('href') === K.pdf), 'download or view button points elsewhere');
+      assert(await until(() => d.querySelectorAll('.fb-leaf').length === Math.ceil(n / 2)), 'open book not built (two pages per leaf)');
+      const count = () => $(d, '.fb-count').textContent;
+      assert(count() === `1 / ${n}`, `starts at "${count()}"`);
+      $(d, '.fb-next').click();
+      assert(await until(() => count().startsWith('2')), `next shows "${count()}"`);
+      $(d, '.fb-prev').click();
+      assert(await until(() => count().startsWith('1')), `previous shows "${count()}"`);
+      $(d, '#cat-chapters [data-fb-goto="4"]').click();
+      assert(await until(() => count().startsWith('4'), 8000), `chapter opened "${count()}"`);
+      assert(d.querySelectorAll('#fb-thumbs [data-fb-goto]').length === n, 'a page thumbnail is missing');
+      assert(d.querySelectorAll('#cat-chapters .chapter').length >= 10, 'chapter cards missing');
+      assert([...d.querySelectorAll('[data-cat-pdf]')].every((a) => a.getAttribute('href') === K.pdf), 'a PDF button points elsewhere');
       assert($(d, '[data-cat-pdf][download]'), 'no download button');
       assert(/Mo/.test($(d, '#cat-meta').textContent), `size not in French: ${$(d, '#cat-meta').textContent}`);
-      assert($(d, '.cat-cover img').naturalWidth > 0, 'cover image missing');
       assert(!(w.__siteErrors || []).length, (w.__siteErrors || []).join('; '));
-      return `${previews.length} pages, ${K.sizeMB} MB`;
+      const ph = await open('catalogue.html?lang=zh', 375, 800);
+      assert(await until(() => ph.d.querySelectorAll('.fb-leaf').length === n), 'phone does not show one page at a time');
+      assert(ph.d.documentElement.scrollWidth <= 376, `page is ${ph.d.documentElement.scrollWidth}px wide on a phone`);
+      assert(!(ph.w.__siteErrors || []).length, (ph.w.__siteErrors || []).join('; '));
+      return `${n} pages, ${K.sizeMB} MB`;
     });
     await test('About page: market globe draws, lists every market and flies to one', async () => {
       const { d, w } = await open('about.html?lang=zh', 1280, 800);

@@ -129,7 +129,7 @@ PRODUCTS = [
          specs=[('Thickness', '4–10 mm'), ('Regular sizes', '84″ × 130″ · 96″ × 130″'), ('Max. size', '96″ × 295″'),
                 ('Glass colour', 'Euro Grey, Euro Bronze, Super Grey and more')]),
     dict(no=6, name='Tempered Glass', cat='Processed glass', uses=('glass', 'tempered'),
-         hero=[('assets/img/glass/tempered.jpg', .5, 'center'), (W + 'zone-racks.webp', .5, 'center')],
+         hero=[(W + 'zone-racks.webp', 1, 'center 55%')],  # AI showroom picture (photos must be from the library or AI)
          desc='Tempered glass is safety glass, heat- or chemically treated to be four to five times stronger than standard annealed glass. '
               'If it breaks, it crumbles into small, blunt pieces instead of sharp shards. Typical uses include shower enclosures, railings, '
               'skylights, windows under high wind loads, table tops and shelves.',
@@ -356,7 +356,7 @@ def certifications(n):
       <tr><th>Product</th><th>Document</th><th>Standard / compliance</th><th>Reference</th></tr>
       <tr><td class="prod" rowspan="2">Laminated safety glass</td><td>Certificate</td><td>EN ISO 12543-2</td><td class="ref">TQT0243A206EC</td></tr>
       <tr><td>Test report</td><td>EN ISO 12543-3<br>EN ISO 12543-4:2021<br>EN 410<br>EN 12600<br>UNECE R43</td><td class="ref">TQT0243A206E</td></tr>
-      <tr><td class="prod" rowspan="2">Tempered safety glass</td><td>Certificate</td><td>EN 14449:2005</td><td class="ref">TQT0243A325EC</td></tr>
+      <tr><td class="prod" rowspan="2">Tempered safety glass</td><td>Certificate</td><td>EN 1449-2005</td><td class="ref">TQT0243A325EC</td></tr>
       <tr><td>Test report</td><td>EN 12150-1:2015</td><td class="ref">TQT0243A325E</td></tr>
     </table>
     <div class="below">
@@ -442,11 +442,15 @@ def main():
         old.unlink()
     previews = []
     for i, pg in enumerate(doc):
+        # small preview (thumbnails, and the first picture the flipbook shows) + sharp page for reading
         pix = pg.get_pixmap(dpi=60)
         im = Image.frombytes('RGB', (pix.width, pix.height), pix.samples)
         name = f'p{i + 1:02d}.jpg'
         im.save(pages_dir / name, quality=82, optimize=True)
-        previews.append({'page': i + 1, 'image': f'assets/catalogue/pages/{name}'})
+        hd = pg.get_pixmap(dpi=150)
+        hd_name = f'p{i + 1:02d}-hd.jpg'
+        Image.frombytes('RGB', (hd.width, hd.height), hd.samples).save(pages_dir / hd_name, quality=80, optimize=True, progressive=True)
+        previews.append({'page': i + 1, 'image': f'assets/catalogue/pages/{name}', 'hd': f'assets/catalogue/pages/{hd_name}'})
     cov = doc[0].get_pixmap(dpi=150)
     Image.frombytes('RGB', (cov.width, cov.height), cov.samples).save(OUT / 'cover.jpg', quality=85, optimize=True)
     size_mb = pdf_path.stat().st_size / 1e6
