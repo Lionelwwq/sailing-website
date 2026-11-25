@@ -35,7 +35,8 @@ CONTACT = {  # as printed in the September 2026 catalogue (confirmed for the new
     'email': 'sales@sailingtrades.com',
     'web': 'sailingintltrade.com',
 }
-REGULAR = '72″ × 96″ · 84″ × 130″/144″ · 96″ × 130″/144″'
+REGULAR = ' · '.join(f'{a}″\u00a0×\u00a0{b}″' for a, b in ((72, 96), (84, 130), (84, 144), (96, 130), (96, 144)))
+REGULAR_LOW_IRON = REGULAR.split(' · ', 1)[1]  # Sailing lists low iron without 72 x 96
 E = html.escape
 
 
@@ -110,7 +111,7 @@ PRODUCTS = [
          hero=[(L + 'low-iron-studio.jpg', .42, 'center 40%'), (L + 'low-iron-edge.jpg', .58, 'center')],
          desc='Low iron glass has a reduced iron content for exceptional clarity and high light transmission, without the green tint of '
               'standard clear glass. Its crystal-clear look suits architectural, display and decorative work where visual clarity matters.',
-         specs=[('Thickness', '1.8–22 mm'), ('Regular sizes', REGULAR), ('Max. size', '192″ × 433″')]),
+         specs=[('Thickness', '1.8–22 mm'), ('Regular sizes', REGULAR_LOW_IRON), ('Max. size', '192″ × 433″')]),
     dict(no=3, name='Tinted Glass', cat='Flat glass', uses=('glass', 'tinted'),
          hero=[(L + 'tinted-collection.jpg', 1, 'center 8%')],
          desc='Tinted glass has colour added to the glass itself to reduce solar heat gain and glare while still letting in natural light. '
