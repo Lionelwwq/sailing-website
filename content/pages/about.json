@@ -25,7 +25,7 @@
   "zh": "我们秉持务实、创新、开放、合作的理念，与合作伙伴、全球客户和终端用户携手，让每个项目都能以有竞争力的价格获得合适的产品。",
   "fr": "Nous collaborons avec nos partenaires, nos clients internationaux et les utilisateurs finaux en misant sur le pragmatisme, l'innovation, l'ouverture et la coopération, afin que chaque projet obtienne le bon produit à un prix concurrentiel."
  },
- "story_image": "assets/img/site/bg2-min-1.jpg",
+ "story_image": "assets/img/ai/bathroom-shower.jpg",
  "values_title": {
   "en": "Our values",
   "zh": "我们的价值观",
@@ -308,7 +308,7 @@
     "zh": "住宅",
     "fr": "Résidentiel"
    },
-   "image": "assets/img/site/bg1-min3.jpg",
+   "image": "assets/img/ai/residential-home.jpg",
    "text": {
     "en": "Homeowners and renovators.",
     "zh": "房主和装修商。",
@@ -334,7 +334,7 @@
     "zh": "同行与汽车",
     "fr": "Professionnels et automobile"
    },
-   "image": "assets/img/online/waterjet-head.jpg",
+   "image": "assets/img/ai/waterjet-cutting.jpg",
    "text": {
     "en": "Fabricators, glaziers, installers and auto glass.",
     "zh": "玻璃加工商、玻璃装配商、安装商和汽车玻璃行业。",

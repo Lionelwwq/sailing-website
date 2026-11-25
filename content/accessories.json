@@ -12,7 +12,7 @@
     "zh": "玻璃架、存储架、垫片和吊带，从卸车到切割台全程保护玻璃。",
     "fr": "Chevalets, étagères, tampons et élingues qui protègent le verre, du camion jusqu'à la table de coupe."
    },
-   "cover": "assets/img/products/removable-shelf.jpg"
+   "cover": "assets/img/ai/removable-shelf.jpg"
   },
   {
    "id": "ig",
@@ -26,7 +26,7 @@
     "zh": "间隔条、干燥剂、胶粘剂和胶带，打造经久耐用的中空玻璃。",
     "fr": "Intercalaires, déshydratant, adhésifs et rubans pour des unités de verre isolant conçues pour durer."
    },
-   "cover": "assets/img/products/aluminum-spacer.jpg"
+   "cover": "assets/img/ai/aluminum-spacer.jpg"
   },
   {
    "id": "films",
@@ -40,7 +40,7 @@
     "zh": "适用于各类应用的夹胶中间膜和镜子安全背膜。",
     "fr": "Intercalaires de feuilletage et pellicules de sécurité pour endos de miroir, pour toutes les applications."
    },
-   "cover": "assets/img/products/eva-film.jpg"
+   "cover": "assets/img/ai/eva-film.jpg"
   },
   {
    "id": "cutting",
@@ -54,7 +54,7 @@
     "zh": "水刀系统、磨料、磨轮和抛光材料。",
     "fr": "Systèmes de découpe au jet d'eau, abrasifs, meules et composés de polissage."
    },
-   "cover": "assets/img/products/water-jet.jpg"
+   "cover": "assets/img/ai/water-jet.jpg"
   }
  ],
  "items": [
@@ -66,7 +66,7 @@
     "zh": "软木垫",
     "fr": "Tampons de liège"
    },
-   "photo": "assets/img/products/cork-pads.jpg",
+   "photo": "assets/img/ai/cork-pads.jpg",
    "gallery": [],
    "short": {
     "en": "Separator pads that keep stacked glass from scratching in storage and transit.",
@@ -205,7 +205,7 @@
     "zh": "可拆卸玻璃存储架",
     "fr": "Étagère de rangement amovible pour verre"
    },
-   "photo": "assets/img/products/removable-shelf.jpg",
+   "photo": "assets/img/ai/removable-shelf.jpg",
    "gallery": [],
    "short": {
     "en": "Mobile, demountable shelving that reconfigures as your inventory changes.",
@@ -344,7 +344,7 @@
     "zh": "定制玻璃架",
     "fr": "Chevalet à verre sur mesure"
    },
-   "photo": "assets/img/products/custom-rack.jpg",
+   "photo": "assets/img/ai/custom-rack.jpg",
    "gallery": [
     {
      "image": "assets/img/warehouse/zone-racks.webp",
@@ -492,7 +492,7 @@
     "zh": "AL 型原片玻璃存储架",
     "fr": "Chevalet de stockage type AL pour verre en feuilles"
    },
-   "photo": "assets/img/products/al-stock-shelf.jpg",
+   "photo": "assets/img/ai/al-stock-shelf.jpg",
    "gallery": [],
    "short": {
     "en": "Heavy-duty A- and L-frame racks for storing jumbo and full-size stock sheets.",
@@ -631,7 +631,7 @@
     "zh": "玻璃吊带",
     "fr": "Élingue à verre"
    },
-   "photo": "assets/img/products/glass-sling.jpg",
+   "photo": "assets/img/ai/glass-sling.jpg",
    "gallery": [],
    "short": {
     "en": "Lifting slings for safely moving glass crates and bundles by crane.",
@@ -770,7 +770,7 @@
     "zh": "EVA 胶片",
     "fr": "Intercalaire EVA"
    },
-   "photo": "assets/img/products/eva-film.jpg",
+   "photo": "assets/img/ai/eva-film.jpg",
    "gallery": [
     {
      "image": "assets/img/library/laminated-edge.jpg",
@@ -918,7 +918,7 @@
     "zh": "铝间隔条",
     "fr": "Intercalaire (espaceur) en aluminium"
    },
-   "photo": "assets/img/products/aluminum-spacer.jpg",
+   "photo": "assets/img/ai/aluminum-spacer.jpg",
    "gallery": [
     {
      "image": "assets/img/library/igu-corner.jpg",
@@ -1066,7 +1066,7 @@
     "zh": "耐高温绿色胶带",
     "fr": "Adhésif vert haute température"
    },
-   "photo": "assets/img/products/green-adhesive.jpg",
+   "photo": "assets/img/ai/green-adhesive.jpg",
    "gallery": [],
    "short": {
     "en": "Heat-resistant green tape that masks cleanly and peels off without residue.",
@@ -1200,7 +1200,7 @@
     "zh": "硅酮胶",
     "fr": "Adhésif de silicone"
    },
-   "photo": "assets/img/products/silicone-adhesive.jpg",
+   "photo": "assets/img/ai/silicone-adhesive.jpg",
    "gallery": [
     {
      "image": "assets/img/online/sealant-bead.jpg",
@@ -1356,7 +1356,7 @@
     "zh": "分子筛",
     "fr": "Tamis moléculaire"
    },
-   "photo": "assets/img/products/molecular-sieve.jpg",
+   "photo": "assets/img/ai/molecular-sieve.jpg",
    "gallery": [
     {
      "image": "assets/img/library/igu-corner.jpg",
@@ -1499,10 +1499,10 @@
     "zh": "水刀",
     "fr": "Jet d'eau"
    },
-   "photo": "assets/img/products/water-jet.jpg",
+   "photo": "assets/img/ai/water-jet.jpg",
    "gallery": [
     {
-     "image": "assets/img/online/waterjet-head.jpg",
+     "image": "assets/img/ai/waterjet-cutting.jpg",
      "caption": {
       "en": "A waterjet head cutting a part",
       "zh": "水刀切割头正在切割工件",
@@ -1647,10 +1647,10 @@
     "zh": "水刀切割磨料",
     "fr": "Abrasif pour découpe au jet d'eau"
    },
-   "photo": "assets/img/products/waterjet-abrasive.jpg",
+   "photo": "assets/img/ai/waterjet-abrasive.jpg",
    "gallery": [
     {
-     "image": "assets/img/online/waterjet-head.jpg",
+     "image": "assets/img/ai/waterjet-cutting.jpg",
      "caption": {
       "en": "Abrasive is mixed into the jet at the cutting head",
       "zh": "磨料在切割头处混入水射流",
@@ -1790,7 +1790,7 @@
     "zh": "磨轮",
     "fr": "Meules"
    },
-   "photo": "assets/img/products/grinding-wheels.jpg",
+   "photo": "assets/img/ai/grinding-wheels.jpg",
    "gallery": [
     {
      "image": "assets/img/library/clear-float-edge.jpg",
@@ -1938,7 +1938,7 @@
     "zh": "二氧化铈",
     "fr": "Dioxyde de cérium"
    },
-   "photo": "assets/img/products/cerium-dioxide.jpg",
+   "photo": "assets/img/ai/cerium-dioxide.jpg",
    "gallery": [
     {
      "image": "assets/img/library/clear-float-edge.jpg",
@@ -2084,7 +2084,7 @@
    "photo": "assets/img/products/vinyl-cat1.jpg",
    "gallery": [
     {
-     "image": "assets/img/glass/mirror.jpg",
+     "image": "assets/img/ai/silver-mirror.jpg",
      "caption": {
       "en": "Applied to the back of wall mirrors",
       "zh": "贴于墙面镜背面",

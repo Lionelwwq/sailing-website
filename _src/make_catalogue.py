@@ -129,7 +129,7 @@ PRODUCTS = [
          specs=[('Thickness', '4–10 mm'), ('Regular sizes', '84″ × 130″ · 96″ × 130″'), ('Max. size', '96″ × 295″'),
                 ('Glass colour', 'Euro Grey, Euro Bronze, Super Grey and more')]),
     dict(no=6, name='Tempered Glass', cat='Processed glass', uses=('glass', 'tempered'),
-         hero=[(W + 'zone-racks.webp', 1, 'center 55%')],  # AI showroom picture (photos must be from the library or AI)
+         hero=[('assets/img/ai/tempered-glass.jpg', .55, 'center'), (W + 'zone-racks.webp', .45, 'center 55%')],  # photos: library or AI only
          desc='Tempered glass is safety glass, heat- or chemically treated to be four to five times stronger than standard annealed glass. '
               'If it breaks, it crumbles into small, blunt pieces instead of sharp shards. Typical uses include shower enclosures, railings, '
               'skylights, windows under high wind loads, table tops and shelves.',
@@ -196,7 +196,7 @@ PRODUCTS = [
                 ('Processing', 'Semi-tempering, screen printing, drilling, edge processing, matte, patterned')],
          note='Specifications vary by product and project. Custom sizes, coatings and processing are available; contact us for detailed technical data.'),
     dict(no=15, name='Mirror Collection', cat='Mirrors', uses=('mirrors', 'silver-mirror'), hero_h=4.4,
-         hero=[(W + 'zone-mirrors.webp', .6, 'center'), (L + 'mirror-colours.jpg', .4, 'center')],
+         hero=[(W + 'zone-mirrors.webp', .6, 'center'), ('assets/img/ai/silver-mirror.jpg', .4, 'center')],
          desc='Our mirrors combine excellent reflective quality with versatile options for architectural, interior, furniture and '
               'decorative use, in a range of substrates, colours, finishes and safety builds, with polished or bevelled edges.',
          specs=[('Thickness', '2–8 mm'), ('Sizes', 'Custom cut to size'), ('Regular sizes', REGULAR), ('Max. size', '96″ × 144″')],
