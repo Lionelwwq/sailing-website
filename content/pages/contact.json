@@ -2,143 +2,191 @@
  "hero_image": "assets/img/library/low-e-office.jpg",
  "hero_title": {
   "en": "Contact us",
-  "zh": "联系我们",
-  "fr": "Nous joindre"
+  "fr": "Nous joindre",
+  "nl": "Contact",
+  "de": "Kontakt",
+  "es": "Contacto"
  },
  "hero_text": {
   "en": "Request a free quote or ask us anything. We will reply with options, pricing and lead times.",
-  "zh": "索取免费报价或咨询任何问题。我们将为您提供可选方案、价格和交货周期。",
-  "fr": "Demandez une soumission gratuite ou posez-nous vos questions. Nous vous répondrons avec des options, des prix et des délais."
+  "fr": "Demandez une soumission gratuite ou posez-nous vos questions. Nous vous répondrons avec des options, des prix et des délais.",
+  "nl": "Vraag een gratis offerte aan of stel ons gerust uw vraag. We antwoorden met opties, prijzen en levertijden.",
+  "de": "Fordern Sie ein kostenloses Angebot an oder stellen Sie uns Ihre Fragen. Wir antworten mit Optionen, Preisen und Lieferzeiten.",
+  "es": "Solicite una cotización gratuita o háganos cualquier consulta. Le responderemos con opciones, precios y plazos de entrega."
  },
  "form_title": {
   "en": "Request a quote",
-  "zh": "获取报价",
-  "fr": "Demander une soumission"
+  "fr": "Demander une soumission",
+  "nl": "Offerte aanvragen",
+  "de": "Angebot anfordern",
+  "es": "Solicitar cotización"
  },
  "form_intro": {
   "en": "Products you added to your quote list appear in the form automatically. Add sizes and quantities and send.",
-  "zh": "您加入询价清单的产品会自动显示在表单中。填写尺寸和数量后即可发送。",
-  "fr": "Les produits ajoutés à votre liste de soumission apparaissent automatiquement dans le formulaire. Précisez les dimensions et les quantités, puis envoyez."
+  "fr": "Les produits ajoutés à votre liste de soumission apparaissent automatiquement dans le formulaire. Précisez les dimensions et les quantités, puis envoyez.",
+  "nl": "Producten die u aan uw offertelijst hebt toegevoegd, verschijnen automatisch in het formulier. Vul afmetingen en aantallen aan en verstuur.",
+  "de": "Produkte, die Sie Ihrer Angebotsliste hinzugefügt haben, erscheinen automatisch im Formular. Ergänzen Sie Maße und Mengen und senden Sie die Anfrage ab.",
+  "es": "Los productos que agregó a su lista de cotización aparecen automáticamente en el formulario. Indique tamaños y cantidades, y envíe."
  },
  "steps_title": {
   "en": "How it works",
-  "zh": "询价流程",
-  "fr": "Comment ça fonctionne"
+  "fr": "Comment ça fonctionne",
+  "nl": "Zo werkt het",
+  "de": "So funktioniert es",
+  "es": "Cómo funciona"
  },
  "steps": [
   {
    "title": {
     "en": "Share your requirements",
-    "zh": "提交需求",
-    "fr": "Faites-nous part de vos besoins"
+    "fr": "Faites-nous part de vos besoins",
+    "nl": "Wensen doorgeven",
+    "de": "Anforderungen mitteilen",
+    "es": "Compartir sus necesidades"
    },
    "text": {
     "en": "Product or application, approximate sizes and quantities, location and timing.",
-    "zh": "产品或用途、大致尺寸和数量、地点及时间。",
-    "fr": "Produit ou application, dimensions et quantités approximatives, emplacement et échéancier."
+    "fr": "Produit ou application, dimensions et quantités approximatives, emplacement et échéancier.",
+    "nl": "Product of toepassing, globale afmetingen en aantallen, locatie en planning.",
+    "de": "Produkt oder Anwendung, ungefähre Maße und Mengen, Standort und Zeitrahmen.",
+    "es": "Producto o aplicación, tamaños y cantidades aproximados, ubicación y plazos."
    }
   },
   {
    "title": {
     "en": "Review options",
-    "zh": "评估方案",
-    "fr": "Examinez les options"
+    "fr": "Examinez les options",
+    "nl": "Opties bekijken",
+    "de": "Optionen prüfen",
+    "es": "Revisar las opciones"
    },
    "text": {
     "en": "We review glass type, finishes, and whether you need supply, installation or both.",
-    "zh": "我们会评估玻璃类型、表面处理，以及您需要供货、安装还是两者兼有。",
-    "fr": "Nous examinons le type de verre, les finis et déterminons si vous avez besoin de la fourniture, de l'installation ou des deux."
+    "fr": "Nous examinons le type de verre, les finis et déterminons si vous avez besoin de la fourniture, de l'installation ou des deux.",
+    "nl": "We bekijken het glastype, de afwerking en of u levering, plaatsing of beide nodig hebt.",
+    "de": "Wir prüfen Glasart und Ausführung und klären, ob Sie Lieferung, Montage oder beides benötigen.",
+    "es": "Revisamos el tipo de vidrio, los acabados y si necesita suministro, instalación o ambos."
    }
   },
   {
    "title": {
     "en": "Receive a quote",
-    "zh": "收到报价",
-    "fr": "Recevez une soumission"
+    "fr": "Recevez une soumission",
+    "nl": "Offerte ontvangen",
+    "de": "Angebot erhalten",
+    "es": "Recibir la cotización"
    },
    "text": {
     "en": "One combined quote with pricing and lead times.",
-    "zh": "一份包含价格和交货周期的综合报价。",
-    "fr": "Une seule soumission combinée, avec prix et délais."
+    "fr": "Une seule soumission combinée, avec prix et délais.",
+    "nl": "Eén gecombineerde offerte met prijzen en levertijden.",
+    "de": "Ein einziges, zusammengefasstes Angebot mit Preisen und Lieferzeiten.",
+    "es": "Una sola cotización combinada con precios y plazos de entrega."
    }
   },
   {
    "title": {
     "en": "Confirm & schedule",
-    "zh": "确认与排期",
-    "fr": "Confirmez et planifiez"
+    "fr": "Confirmez et planifiez",
+    "nl": "Bevestigen en plannen",
+    "de": "Bestätigen & planen",
+    "es": "Confirmar y programar"
    },
    "text": {
     "en": "We agree the details and schedule delivery or installation.",
-    "zh": "双方确认细节，安排交货或安装。",
-    "fr": "Nous convenons des détails et planifions la livraison ou l'installation."
+    "fr": "Nous convenons des détails et planifions la livraison ou l'installation.",
+    "nl": "We stemmen de details af en plannen de levering of plaatsing.",
+    "de": "Wir stimmen die Details ab und planen Lieferung oder Montage.",
+    "es": "Acordamos los detalles y programamos la entrega o la instalación."
    }
   }
  ],
  "faq_title": {
   "en": "Frequently asked questions",
-  "zh": "常见问题",
-  "fr": "Foire aux questions"
+  "fr": "Foire aux questions",
+  "nl": "Veelgestelde vragen",
+  "de": "Häufig gestellte Fragen",
+  "es": "Preguntas frecuentes"
  },
  "faq": [
   {
    "q": {
     "en": "Can you supply products to my exact specifications?",
-    "zh": "能否按我的具体规格供货？",
-    "fr": "Pouvez-vous fournir des produits selon mes spécifications exactes?"
+    "fr": "Pouvez-vous fournir des produits selon mes spécifications exactes?",
+    "nl": "Kunt u producten leveren volgens mijn exacte specificaties?",
+    "de": "Können Sie Produkte genau nach meinen Spezifikationen liefern?",
+    "es": "¿Pueden suministrar productos según mis especificaciones exactas?"
    },
    "a": {
     "en": "Yes. Glass and mirrors are cut and processed to your requirements, and accessories are supplied according to your specifications. Send us sizes, quantities, finishes or a drawing.",
-    "zh": "可以。玻璃和镜子按您的要求切割和加工，配件按您的规格供应。请将尺寸、数量、表面处理要求或图纸发给我们。",
-    "fr": "Oui. Le verre et les miroirs sont coupés et transformés selon vos exigences, et les accessoires sont fournis selon vos spécifications. Envoyez-nous les dimensions, les quantités, les finis ou un dessin."
+    "fr": "Oui. Le verre et les miroirs sont coupés et transformés selon vos exigences, et les accessoires sont fournis selon vos spécifications. Envoyez-nous les dimensions, les quantités, les finis ou un dessin.",
+    "nl": "Ja. Glas en spiegels worden gesneden en bewerkt volgens uw wensen, en accessoires worden geleverd volgens uw specificaties. Stuur ons afmetingen, aantallen, afwerkingen of een tekening.",
+    "de": "Ja. Glas und Spiegel werden nach Ihren Anforderungen zugeschnitten und bearbeitet, Zubehör wird nach Ihren Spezifikationen geliefert. Senden Sie uns Maße, Mengen, Ausführungen oder eine Zeichnung.",
+    "es": "Sí. El vidrio y los espejos se cortan y procesan según sus requisitos, y los accesorios se suministran según sus especificaciones. Envíenos tamaños, cantidades, acabados o un plano."
    }
   },
   {
    "q": {
     "en": "How do I get a price?",
-    "zh": "如何获取价格？",
-    "fr": "Comment obtenir un prix?"
+    "fr": "Comment obtenir un prix?",
+    "nl": "Hoe krijg ik een prijs?",
+    "de": "Wie erhalte ich einen Preis?",
+    "es": "¿Cómo obtengo un precio?"
    },
    "a": {
     "en": "Add products to your quote list as you browse and send the form, or call us. Quotes are free.",
-    "zh": "浏览时将产品加入询价清单并提交表单，或直接致电我们。报价免费。",
-    "fr": "Ajoutez des produits à votre liste de soumission au fil de votre navigation et envoyez le formulaire, ou appelez-nous. Les soumissions sont gratuites."
+    "fr": "Ajoutez des produits à votre liste de soumission au fil de votre navigation et envoyez le formulaire, ou appelez-nous. Les soumissions sont gratuites.",
+    "nl": "Voeg tijdens het browsen producten toe aan uw offertelijst en verstuur het formulier, of bel ons. Offertes zijn gratis.",
+    "de": "Fügen Sie beim Stöbern Produkte zu Ihrer Angebotsliste hinzu und senden Sie das Formular ab, oder rufen Sie uns an. Angebote sind kostenlos.",
+    "es": "Agregue productos a su lista de cotización mientras navega y envíe el formulario, o llámenos. Las cotizaciones son gratuitas."
    }
   },
   {
    "q": {
     "en": "Are the specifications on the website exact?",
-    "zh": "网站上的规格参数是否准确？",
-    "fr": "Les spécifications présentées sur le site Web sont-elles exactes?"
+    "fr": "Les spécifications présentées sur le site Web sont-elles exactes?",
+    "nl": "Zijn de specificaties op de website exact?",
+    "de": "Sind die Spezifikationen auf der Website exakt?",
+    "es": "¿Son exactas las especificaciones del sitio web?"
    },
    "a": {
     "en": "They are typical values to help you compare products. Final specifications, options and lead times are confirmed in your quote.",
-    "zh": "这些是典型值，便于您比较产品。最终规格、选项和交货周期以报价为准。",
-    "fr": "Il s'agit de valeurs typiques pour vous aider à comparer les produits. Les spécifications finales, les options et les délais sont confirmés dans votre soumission."
+    "fr": "Il s'agit de valeurs typiques pour vous aider à comparer les produits. Les spécifications finales, les options et les délais sont confirmés dans votre soumission.",
+    "nl": "Het zijn typische waarden om u te helpen producten te vergelijken. De definitieve specificaties, opties en levertijden worden in uw offerte bevestigd.",
+    "de": "Es handelt sich um typische Werte, die Ihnen den Produktvergleich erleichtern. Endgültige Spezifikationen, Optionen und Lieferzeiten werden in Ihrem Angebot bestätigt.",
+    "es": "Son valores típicos para ayudarle a comparar productos. Las especificaciones finales, las opciones y los plazos de entrega se confirman en su cotización."
    }
   },
   {
    "q": {
     "en": "Do you install as well as supply?",
-    "zh": "你们既供货也安装吗？",
-    "fr": "Faites-vous l'installation en plus de la fourniture?"
+    "fr": "Faites-vous l'installation en plus de la fourniture?",
+    "nl": "Verzorgt u naast de levering ook de plaatsing?",
+    "de": "Übernehmen Sie neben der Lieferung auch die Montage?",
+    "es": "Además de suministrar, ¿también instalan?"
    },
    "a": {
     "en": "Yes. We install windshields, storefronts, windows and doors, and take on custom bath and shower projects, with a warranty on products and installation.",
-    "zh": "是的。我们安装挡风玻璃、店面和门窗，并承接定制浴室和淋浴房项目，产品和安装均提供质保。",
-    "fr": "Oui. Nous installons des pare-brise, des devantures, des fenêtres et des portes, et nous réalisons des projets de salle de bains et de douche sur mesure, avec une garantie sur les produits et l'installation."
+    "fr": "Oui. Nous installons des pare-brise, des devantures, des fenêtres et des portes, et nous réalisons des projets de salle de bains et de douche sur mesure, avec une garantie sur les produits et l'installation.",
+    "nl": "Ja. We plaatsen voorruiten, winkelpuien, ramen en deuren, en nemen badkamer- en doucheprojecten op maat aan, met garantie op producten en plaatsing.",
+    "de": "Ja. Wir montieren Windschutzscheiben, Ladenfronten, Fenster und Türen und übernehmen individuelle Bad- und Duschprojekte, mit Garantie auf Produkte und Montage.",
+    "es": "Sí. Instalamos parabrisas, escaparates, ventanas y puertas, y realizamos proyectos de baño y ducha a medida, con garantía en los productos y la instalación."
    }
   },
   {
    "q": {
     "en": "Who do you work with?",
-    "zh": "你们的客户有哪些？",
-    "fr": "Avec qui travaillez-vous?"
+    "fr": "Avec qui travaillez-vous?",
+    "nl": "Met wie werkt u samen?",
+    "de": "Mit wem arbeiten Sie zusammen?",
+    "es": "¿Con quién trabajan?"
    },
    "a": {
     "en": "Homeowners, builders, architects, fabricators, installers and businesses across residential, commercial and automotive work.",
-    "zh": "涵盖住宅、商业和汽车领域的房主、建筑商、建筑师、玻璃加工商、安装商和企业。",
-    "fr": "Propriétaires, constructeurs, architectes, transformateurs, installateurs et entreprises, dans les secteurs résidentiel, commercial et automobile."
+    "fr": "Propriétaires, constructeurs, architectes, transformateurs, installateurs et entreprises, dans les secteurs résidentiel, commercial et automobile.",
+    "nl": "Huiseigenaren, bouwbedrijven, architecten, glasverwerkers, glaszetters en bedrijven, voor residentiële, commerciële en automotive projecten.",
+    "de": "Hauseigentümer, Bauunternehmen, Architekten, Glasverarbeiter, Montagebetriebe und Unternehmen aus Wohnbau, Gewerbe und Kfz-Bereich.",
+    "es": "Propietarios de viviendas, constructores, arquitectos, procesadores de vidrio, instaladores y empresas, en proyectos residenciales, comerciales y automotrices."
    }
   }
  ]

@@ -1,382 +1,534 @@
 {
  "nav_home": {
   "en": "Home",
-  "zh": "首页",
-  "fr": "Accueil"
+  "fr": "Accueil",
+  "nl": "Home",
+  "de": "Startseite",
+  "es": "Inicio"
  },
  "nav_products": {
   "en": "Products",
-  "zh": "产品",
-  "fr": "Produits"
+  "fr": "Produits",
+  "nl": "Producten",
+  "de": "Produkte",
+  "es": "Productos"
  },
  "nav_glass": {
   "en": "Glass",
-  "zh": "玻璃",
-  "fr": "Verre"
+  "fr": "Verre",
+  "nl": "Glas",
+  "de": "Glas",
+  "es": "Vidrio"
  },
  "nav_mirrors": {
   "en": "Mirrors",
-  "zh": "镜子",
-  "fr": "Miroirs"
+  "fr": "Miroirs",
+  "nl": "Spiegels",
+  "de": "Spiegel",
+  "es": "Espejos"
  },
  "nav_accessories": {
   "en": "Accessories",
-  "zh": "配件",
-  "fr": "Accessoires"
+  "fr": "Accessoires",
+  "nl": "Accessoires",
+  "de": "Zubehör",
+  "es": "Accesorios"
  },
  "nav_catalogue": {
   "en": "Product Catalogue",
-  "zh": "产品目录",
-  "fr": "Catalogue de produits"
+  "fr": "Catalogue de produits",
+  "nl": "Productcatalogus",
+  "de": "Produktkatalog",
+  "es": "Catálogo de productos"
  },
  "nav_about": {
   "en": "About Us",
-  "zh": "关于我们",
-  "fr": "À propos"
+  "fr": "À propos",
+  "nl": "Over ons",
+  "de": "Über uns",
+  "es": "Sobre nosotros"
  },
  "nav_contact": {
   "en": "Contact",
-  "zh": "联系方式",
-  "fr": "Contact"
+  "fr": "Contact",
+  "nl": "Contact",
+  "de": "Kontakt",
+  "es": "Contacto"
  },
  "cta_quote": {
   "en": "Request a Quote",
-  "zh": "获取报价",
-  "fr": "Demander une soumission"
+  "fr": "Demander une soumission",
+  "nl": "Offerte aanvragen",
+  "de": "Angebot anfordern",
+  "es": "Solicitar cotización"
  },
  "cta_about": {
   "en": "About Us",
-  "zh": "关于我们",
-  "fr": "À propos"
+  "fr": "À propos",
+  "nl": "Over ons",
+  "de": "Über uns",
+  "es": "Sobre nosotros"
  },
  "cta_view_products": {
   "en": "View Products",
-  "zh": "查看产品",
-  "fr": "Voir les produits"
+  "fr": "Voir les produits",
+  "nl": "Bekijk producten",
+  "de": "Produkte ansehen",
+  "es": "Ver productos"
  },
  "cta_contact": {
   "en": "Contact Us",
-  "zh": "联系我们",
-  "fr": "Nous joindre"
+  "fr": "Nous joindre",
+  "nl": "Contact",
+  "de": "Kontakt",
+  "es": "Contacto"
  },
  "cta_learn_more": {
   "en": "Learn More",
-  "zh": "了解更多",
-  "fr": "En savoir plus"
+  "fr": "En savoir plus",
+  "nl": "Meer informatie",
+  "de": "Mehr erfahren",
+  "es": "Más información"
  },
  "cta_explore": {
   "en": "Explore",
-  "zh": "浏览",
-  "fr": "Explorer"
+  "fr": "Explorer",
+  "nl": "Ontdekken",
+  "de": "Entdecken",
+  "es": "Explorar"
  },
  "menu_open": {
   "en": "Open menu",
-  "zh": "打开菜单",
-  "fr": "Ouvrir le menu"
+  "fr": "Ouvrir le menu",
+  "nl": "Menu openen",
+  "de": "Menü öffnen",
+  "es": "Abrir menú"
  },
  "menu_close": {
   "en": "Close menu",
-  "zh": "关闭菜单",
-  "fr": "Fermer le menu"
+  "fr": "Fermer le menu",
+  "nl": "Menu sluiten",
+  "de": "Menü schließen",
+  "es": "Cerrar menú"
  },
  "language": {
   "en": "Language",
-  "zh": "语言",
-  "fr": "Langue"
+  "fr": "Langue",
+  "nl": "Taal",
+  "de": "Sprache",
+  "es": "Idioma"
  },
  "tab_description": {
   "en": "Description",
-  "zh": "产品描述",
-  "fr": "Description"
+  "fr": "Description",
+  "nl": "Beschrijving",
+  "de": "Beschreibung",
+  "es": "Descripción"
  },
  "tab_specs": {
   "en": "Specifications",
-  "zh": "规格参数",
-  "fr": "Fiche technique"
+  "fr": "Fiche technique",
+  "nl": "Specificaties",
+  "de": "Technische Daten",
+  "es": "Especificaciones"
  },
  "typical_uses": {
   "en": "Typical uses",
-  "zh": "典型用途",
-  "fr": "Utilisations courantes"
+  "fr": "Utilisations courantes",
+  "nl": "Typische toepassingen",
+  "de": "Typische Anwendungen",
+  "es": "Aplicaciones típicas"
  },
  "can_be_specified": {
   "en": "Can be specified",
-  "zh": "可定制项",
-  "fr": "Options à préciser"
+  "fr": "Options à préciser",
+  "nl": "Naar wens te specificeren",
+  "de": "Individuell wählbar",
+  "es": "Opciones a especificar"
  },
  "goes_well_with": {
   "en": "Goes well with",
-  "zh": "搭配产品",
-  "fr": "Produits complémentaires"
+  "fr": "Produits complémentaires",
+  "nl": "Past goed bij",
+  "de": "Passt gut zu",
+  "es": "Combina bien con"
  },
  "specs_note": {
   "en": "Typical values for reference. Final specifications are confirmed in your quote.",
-  "zh": "典型值仅供参考，最终规格以报价为准。",
-  "fr": "Valeurs typiques à titre indicatif. Les spécifications finales sont confirmées dans votre soumission."
+  "fr": "Valeurs typiques à titre indicatif. Les spécifications finales sont confirmées dans votre soumission.",
+  "nl": "Typische waarden ter referentie. De definitieve specificaties worden in uw offerte bevestigd.",
+  "de": "Typische Richtwerte. Die endgültigen Spezifikationen werden in Ihrem Angebot bestätigt.",
+  "es": "Valores de referencia. Las especificaciones finales se confirman en su cotización."
  },
  "photo_label": {
   "en": "Photo",
-  "zh": "照片",
-  "fr": "Photo"
+  "fr": "Photo",
+  "nl": "Foto",
+  "de": "Foto",
+  "es": "Foto"
  },
  "diagram_label": {
   "en": "Diagram",
-  "zh": "示意图",
-  "fr": "Schéma"
+  "fr": "Schéma",
+  "nl": "Schema",
+  "de": "Schema",
+  "es": "Esquema"
  },
  "in_use_label": {
   "en": "In use",
-  "zh": "使用实景",
-  "fr": "En situation"
+  "fr": "En situation",
+  "nl": "In gebruik",
+  "de": "Im Einsatz",
+  "es": "En uso"
  },
  "photo_coming": {
   "en": "Illustration — product photo coming soon",
-  "zh": "示意图——产品照片即将上线",
-  "fr": "Illustration — photo du produit à venir"
+  "fr": "Illustration — photo du produit à venir",
+  "nl": "Illustratie — productfoto volgt binnenkort",
+  "de": "Illustration — Produktfoto folgt in Kürze",
+  "es": "Ilustración — foto del producto próximamente"
  },
  "add_to_quote": {
   "en": "Add to quote list",
-  "zh": "加入询价清单",
-  "fr": "Ajouter à la soumission"
+  "fr": "Ajouter à la soumission",
+  "nl": "Aan offertelijst toevoegen",
+  "de": "Zur Angebotsliste hinzufügen",
+  "es": "Agregar a la lista de cotización"
  },
  "in_quote": {
   "en": "In your quote list",
-  "zh": "已在询价清单中",
-  "fr": "Dans votre soumission"
+  "fr": "Dans votre soumission",
+  "nl": "In uw offertelijst",
+  "de": "In Ihrer Angebotsliste",
+  "es": "En su lista de cotización"
  },
  "added_toast": {
   "en": "added to your quote list",
-  "zh": "已加入询价清单",
-  "fr": "liste de soumission mise à jour"
+  "fr": "liste de soumission mise à jour",
+  "nl": "toegevoegd aan uw offertelijst",
+  "de": "zu Ihrer Angebotsliste hinzugefügt",
+  "es": "se agregó a su lista de cotización"
  },
  "ask_about": {
   "en": "Ask about this product",
-  "zh": "咨询此产品",
-  "fr": "Poser une question sur ce produit"
+  "fr": "Poser une question sur ce produit",
+  "nl": "Vraag over dit product",
+  "de": "Frage zu diesem Produkt",
+  "es": "Consultar sobre este producto"
  },
  "all_items": {
   "en": "All",
-  "zh": "全部",
-  "fr": "Tous"
+  "fr": "Tous",
+  "nl": "Alle",
+  "de": "Alle",
+  "es": "Todos"
  },
  "quote_list": {
   "en": "Quote list",
-  "zh": "询价清单",
-  "fr": "Liste de soumission"
+  "fr": "Liste de soumission",
+  "nl": "Offertelijst",
+  "de": "Angebotsliste",
+  "es": "Lista de cotización"
  },
  "your_quote_list": {
   "en": "Your quote list",
-  "zh": "您的询价清单",
-  "fr": "Votre liste de soumission"
+  "fr": "Votre liste de soumission",
+  "nl": "Uw offertelijst",
+  "de": "Ihre Angebotsliste",
+  "es": "Su lista de cotización"
  },
  "selected": {
   "en": "selected",
-  "zh": "项已选",
-  "fr": "sélectionné(s)"
+  "fr": "sélectionné(s)",
+  "nl": "geselecteerd",
+  "de": "ausgewählt",
+  "es": "seleccionado(s)"
  },
  "list_empty": {
   "en": "Your list is empty",
-  "zh": "您的清单为空",
-  "fr": "Votre liste est vide"
+  "fr": "Votre liste est vide",
+  "nl": "Uw lijst is leeg",
+  "de": "Ihre Liste ist leer",
+  "es": "Su lista está vacía"
  },
  "list_empty_hint": {
   "en": "Add glass, mirrors or accessories as you browse, then request one combined quote.",
-  "zh": "浏览时添加玻璃、镜子或配件，然后一次性获取综合报价。",
-  "fr": "Ajoutez du verre, des miroirs ou des accessoires au fil de votre navigation, puis demandez une seule soumission combinée."
+  "fr": "Ajoutez du verre, des miroirs ou des accessoires au fil de votre navigation, puis demandez une seule soumission combinée.",
+  "nl": "Voeg tijdens het browsen glas, spiegels of accessoires toe en vraag daarna één gecombineerde offerte aan.",
+  "de": "Fügen Sie beim Stöbern Glas, Spiegel oder Zubehör hinzu und fordern Sie dann ein gemeinsames Angebot an.",
+  "es": "Agregue vidrio, espejos o accesorios mientras navega y luego solicite una sola cotización combinada."
  },
  "request_free_quote": {
   "en": "Request a free quote",
-  "zh": "获取免费报价",
-  "fr": "Demander une soumission gratuite"
+  "fr": "Demander une soumission gratuite",
+  "nl": "Gratis offerte aanvragen",
+  "de": "Kostenloses Angebot anfordern",
+  "es": "Solicitar cotización gratuita"
  },
  "keep_browsing": {
   "en": "Keep browsing",
-  "zh": "继续浏览",
-  "fr": "Continuer la navigation"
+  "fr": "Continuer la navigation",
+  "nl": "Verder kijken",
+  "de": "Weiter stöbern",
+  "es": "Seguir navegando"
  },
  "view_list": {
   "en": "View list",
-  "zh": "查看清单",
-  "fr": "Voir la liste"
+  "fr": "Voir la liste",
+  "nl": "Lijst bekijken",
+  "de": "Liste ansehen",
+  "es": "Ver lista"
  },
  "remove": {
   "en": "Remove",
-  "zh": "移除",
-  "fr": "Retirer"
+  "fr": "Retirer",
+  "nl": "Verwijderen",
+  "de": "Entfernen",
+  "es": "Quitar"
  },
  "one_quote": {
   "en": "One request, one combined quote. It is free.",
-  "zh": "一次询价，一份综合报价，完全免费。",
-  "fr": "Une seule demande, une seule soumission combinée. C'est gratuit."
+  "fr": "Une seule demande, une seule soumission combinée. C'est gratuit.",
+  "nl": "Eén aanvraag, één gecombineerde offerte. Het is gratis.",
+  "de": "Eine Anfrage, ein gemeinsames Angebot. Und das kostenlos.",
+  "es": "Una solicitud, una cotización combinada. Es gratis."
  },
  "form_type_quote": {
   "en": "Free quote",
-  "zh": "免费报价",
-  "fr": "Soumission gratuite"
+  "fr": "Soumission gratuite",
+  "nl": "Gratis offerte",
+  "de": "Kostenloses Angebot",
+  "es": "Cotización gratuita"
  },
  "form_type_consult": {
   "en": "Consultation",
-  "zh": "咨询",
-  "fr": "Consultation"
+  "fr": "Consultation",
+  "nl": "Advies",
+  "de": "Beratung",
+  "es": "Asesoría"
  },
  "form_type_question": {
   "en": "Question",
-  "zh": "提问",
-  "fr": "Question"
+  "fr": "Question",
+  "nl": "Vraag",
+  "de": "Frage",
+  "es": "Pregunta"
  },
  "form_name": {
   "en": "Full name",
-  "zh": "姓名",
-  "fr": "Nom complet"
+  "fr": "Nom complet",
+  "nl": "Volledige naam",
+  "de": "Vollständiger Name",
+  "es": "Nombre completo"
  },
  "form_company": {
   "en": "Company",
-  "zh": "公司",
-  "fr": "Entreprise"
+  "fr": "Entreprise",
+  "nl": "Bedrijf",
+  "de": "Unternehmen",
+  "es": "Empresa"
  },
  "form_email": {
   "en": "Email",
-  "zh": "电子邮箱",
-  "fr": "Courriel"
+  "fr": "Courriel",
+  "nl": "E-mail",
+  "de": "E-Mail",
+  "es": "Correo electrónico"
  },
  "form_phone": {
   "en": "Phone",
-  "zh": "电话",
-  "fr": "Téléphone"
+  "fr": "Téléphone",
+  "nl": "Telefoon",
+  "de": "Telefon",
+  "es": "Teléfono"
  },
  "form_items": {
   "en": "Items in your quote list",
-  "zh": "询价清单中的产品",
-  "fr": "Articles de votre liste de soumission"
+  "fr": "Articles de votre liste de soumission",
+  "nl": "Artikelen in uw offertelijst",
+  "de": "Artikel in Ihrer Angebotsliste",
+  "es": "Artículos en su lista de cotización"
  },
  "form_items_none": {
   "en": "Nothing selected yet. You can add products from the Glass, Mirrors and Accessories pages, or describe what you need below.",
-  "zh": "尚未选择任何产品。您可以从玻璃、镜子和配件页面添加产品，或在下方描述您的需求。",
-  "fr": "Aucune sélection pour l'instant. Vous pouvez ajouter des produits à partir des pages Verre, Miroirs et Accessoires, ou décrire vos besoins ci-dessous."
+  "fr": "Aucune sélection pour l'instant. Vous pouvez ajouter des produits à partir des pages Verre, Miroirs et Accessoires, ou décrire vos besoins ci-dessous.",
+  "nl": "Nog niets geselecteerd. U kunt producten toevoegen via de pagina's Glas, Spiegels en Accessoires, of hieronder beschrijven wat u nodig hebt.",
+  "de": "Noch nichts ausgewählt. Sie können Produkte auf den Seiten Glas, Spiegel und Zubehör hinzufügen oder unten beschreiben, was Sie benötigen.",
+  "es": "Aún no ha seleccionado nada. Puede agregar productos desde las páginas Vidrio, Espejos y Accesorios, o describir lo que necesita a continuación."
  },
  "form_message": {
   "en": "Sizes, quantities and specifications",
-  "zh": "尺寸、数量和规格",
-  "fr": "Dimensions, quantités et spécifications"
+  "fr": "Dimensions, quantités et spécifications",
+  "nl": "Afmetingen, aantallen en specificaties",
+  "de": "Maße, Mengen und Spezifikationen",
+  "es": "Tamaños, cantidades y especificaciones"
  },
  "form_message_ph": {
   "en": "e.g. 10 tempered panels, 10 mm, 900 × 2000 mm",
-  "zh": "例如：10 片钢化玻璃，10 mm，900 × 2000 mm",
-  "fr": "p. ex. 10 panneaux trempés, 10 mm, 900 × 2000 mm"
+  "fr": "p. ex. 10 panneaux trempés, 10 mm, 900 × 2000 mm",
+  "nl": "bijv. 10 geharde panelen, 10 mm, 900 × 2000 mm",
+  "de": "z. B. 10 ESG-Scheiben, 10 mm, 900 × 2000 mm",
+  "es": "p. ej., 10 paneles templados, 10 mm, 900 × 2000 mm"
  },
  "form_send": {
   "en": "Send request",
-  "zh": "提交询价",
-  "fr": "Envoyer la demande"
+  "fr": "Envoyer la demande",
+  "nl": "Aanvraag versturen",
+  "de": "Anfrage senden",
+  "es": "Enviar solicitud"
  },
  "form_sending": {
   "en": "Sending…",
-  "zh": "发送中…",
-  "fr": "Envoi en cours…"
+  "fr": "Envoi en cours…",
+  "nl": "Bezig met versturen…",
+  "de": "Wird gesendet…",
+  "es": "Enviando…"
  },
  "form_success": {
   "en": "Thank you. Your request has been sent and we will get back to you shortly.",
-  "zh": "谢谢。您的询价已发送，我们会尽快回复您。",
-  "fr": "Merci. Votre demande a bien été envoyée et nous vous répondrons sous peu."
+  "fr": "Merci. Votre demande a bien été envoyée et nous vous répondrons sous peu.",
+  "nl": "Bedankt. Uw aanvraag is verstuurd en we nemen spoedig contact met u op.",
+  "de": "Vielen Dank. Ihre Anfrage wurde gesendet, und wir melden uns in Kürze bei Ihnen.",
+  "es": "Gracias. Su solicitud se ha enviado y nos pondremos en contacto con usted en breve."
  },
  "form_error": {
   "en": "Sorry, the request could not be sent. Please email or call us instead.",
-  "zh": "抱歉，询价发送失败。请改用电子邮件或电话联系我们。",
-  "fr": "Désolé, la demande n'a pas pu être envoyée. Veuillez plutôt nous écrire par courriel ou nous téléphoner."
+  "fr": "Désolé, la demande n'a pas pu être envoyée. Veuillez plutôt nous écrire par courriel ou nous téléphoner.",
+  "nl": "Helaas kon de aanvraag niet worden verstuurd. Stuur ons in plaats daarvan een e-mail of bel ons.",
+  "de": "Leider konnte die Anfrage nicht gesendet werden. Bitte schreiben Sie uns stattdessen eine E-Mail oder rufen Sie uns an.",
+  "es": "Lo sentimos, no se pudo enviar la solicitud. Escríbanos por correo electrónico o llámenos."
  },
  "form_required": {
   "en": "Please fill in your name and a valid email.",
-  "zh": "请填写您的姓名和有效的电子邮箱。",
-  "fr": "Veuillez indiquer votre nom et une adresse courriel valide."
+  "fr": "Veuillez indiquer votre nom et une adresse courriel valide.",
+  "nl": "Vul uw naam en een geldig e-mailadres in.",
+  "de": "Bitte geben Sie Ihren Namen und eine gültige E-Mail-Adresse ein.",
+  "es": "Indique su nombre y un correo electrónico válido."
  },
  "footer_tagline": {
   "en": "Custom glass, glass cutting and replacement, plus the mirrors and accessories the glass industry runs on.",
-  "zh": "定制玻璃、玻璃切割与更换，以及玻璃行业所需的镜子和配件。",
-  "fr": "Verre sur mesure, coupe et remplacement de verre, ainsi que les miroirs et accessoires essentiels à l'industrie du verre."
+  "fr": "Verre sur mesure, coupe et remplacement de verre, ainsi que les miroirs et accessoires essentiels à l'industrie du verre.",
+  "nl": "Glas op maat, glas snijden en vervangen, plus de spiegels en accessoires waar de glasindustrie op draait.",
+  "de": "Glas nach Maß, Glaszuschnitt und -austausch sowie die Spiegel und das Zubehör, auf die die Glasbranche setzt.",
+  "es": "Vidrio a medida, corte y reemplazo de vidrio, además de los espejos y accesorios que mueven la industria del vidrio."
  },
  "footer_explore": {
   "en": "Explore",
-  "zh": "浏览",
-  "fr": "Explorer"
+  "fr": "Explorer",
+  "nl": "Ontdekken",
+  "de": "Entdecken",
+  "es": "Explorar"
  },
  "footer_products": {
   "en": "Products",
-  "zh": "产品",
-  "fr": "Produits"
+  "fr": "Produits",
+  "nl": "Producten",
+  "de": "Produkte",
+  "es": "Productos"
  },
  "footer_contact": {
   "en": "Get in touch",
-  "zh": "联系我们",
-  "fr": "Communiquez avec nous"
+  "fr": "Communiquez avec nous",
+  "nl": "Neem contact op",
+  "de": "Kontakt aufnehmen",
+  "es": "Contáctenos"
  },
  "photo_credits": {
   "en": "Photo credits",
-  "zh": "图片来源",
-  "fr": "Crédits photo"
+  "fr": "Crédits photo",
+  "nl": "Fotoverantwoording",
+  "de": "Bildnachweis",
+  "es": "Créditos fotográficos"
  },
  "credits_intro": {
   "en": "Product and project photos: Sailing International Trade. Additional photos from Wikimedia Commons:",
-  "zh": "产品及项目照片：Sailing International Trade。其他照片来自 Wikimedia Commons：",
-  "fr": "Photos de produits et de projets : Sailing International Trade. Photos supplémentaires provenant de Wikimedia Commons :"
+  "fr": "Photos de produits et de projets : Sailing International Trade. Photos supplémentaires provenant de Wikimedia Commons :",
+  "nl": "Product- en projectfoto's: Sailing International Trade. Aanvullende foto's van Wikimedia Commons:",
+  "de": "Produkt- und Projektfotos: Sailing International Trade. Weitere Fotos von Wikimedia Commons:",
+  "es": "Fotos de productos y proyectos: Sailing International Trade. Fotos adicionales de Wikimedia Commons:"
  },
  "rights": {
   "en": "All rights reserved.",
-  "zh": "版权所有。",
-  "fr": "Tous droits réservés."
+  "fr": "Tous droits réservés.",
+  "nl": "Alle rechten voorbehouden.",
+  "de": "Alle Rechte vorbehalten.",
+  "es": "Todos los derechos reservados."
  },
  "back_to_top": {
   "en": "Back to top",
-  "zh": "返回顶部",
-  "fr": "Retour en haut"
+  "fr": "Retour en haut",
+  "nl": "Terug naar boven",
+  "de": "Nach oben",
+  "es": "Volver arriba"
  },
  "call_us": {
   "en": "Call us",
-  "zh": "致电我们",
-  "fr": "Appelez-nous"
+  "fr": "Appelez-nous",
+  "nl": "Bel ons",
+  "de": "Rufen Sie uns an",
+  "es": "Llámenos"
  },
  "email_us": {
   "en": "Email us",
-  "zh": "发送邮件",
-  "fr": "Écrivez-nous"
+  "fr": "Écrivez-nous",
+  "nl": "Mail ons",
+  "de": "Schreiben Sie uns",
+  "es": "Escríbanos"
  },
  "visit_us": {
   "en": "Visit us",
-  "zh": "欢迎来访",
-  "fr": "Rendez-nous visite"
+  "fr": "Rendez-nous visite",
+  "nl": "Bezoek ons",
+  "de": "Besuchen Sie uns",
+  "es": "Visítenos"
  },
  "directions": {
   "en": "Get directions",
-  "zh": "查看路线",
-  "fr": "Obtenir l'itinéraire"
+  "fr": "Obtenir l'itinéraire",
+  "nl": "Routebeschrijving",
+  "de": "Route planen",
+  "es": "Cómo llegar"
  },
  "since_label": {
   "en": "Since",
-  "zh": "始于",
-  "fr": "Depuis"
+  "fr": "Depuis",
+  "nl": "Sinds",
+  "de": "Seit",
+  "es": "Desde"
  },
  "nf_title": {
   "en": "Page not found",
-  "zh": "找不到该页面",
-  "fr": "Page introuvable"
+  "fr": "Page introuvable",
+  "nl": "Pagina niet gevonden",
+  "de": "Seite nicht gefunden",
+  "es": "Página no encontrada"
  },
  "nf_text": {
   "en": "The page you are looking for does not exist or has moved.",
-  "zh": "您要找的页面不存在或已移动。",
-  "fr": "La page que vous cherchez n’existe pas ou a été déplacée."
+  "fr": "La page que vous cherchez n’existe pas ou a été déplacée.",
+  "nl": "De pagina die u zoekt, bestaat niet of is verplaatst.",
+  "de": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+  "es": "La página que busca no existe o se ha movido."
  },
  "nf_home": {
   "en": "Back to home",
-  "zh": "返回首页",
-  "fr": "Retour à l’accueil"
+  "fr": "Retour à l’accueil",
+  "nl": "Terug naar home",
+  "de": "Zur Startseite",
+  "es": "Volver al inicio"
  },
  "about_prefix": {
   "en": "Question about",
-  "zh": "咨询产品",
-  "fr": "Question au sujet de"
+  "fr": "Question au sujet de",
+  "nl": "Vraag over",
+  "de": "Frage zu",
+  "es": "Consulta sobre"
  },
  "page_title_suffix": {
   "en": "Glass, Mirrors & Accessories, Toronto",
-  "zh": "玻璃、镜子与配件 · 多伦多",
-  "fr": "Verre, miroirs et accessoires, Toronto"
+  "fr": "Verre, miroirs et accessoires, Toronto",
+  "nl": "Glas, spiegels en accessoires, Toronto",
+  "de": "Glas, Spiegel & Zubehör, Toronto",
+  "es": "Vidrio, espejos y accesorios, Toronto"
  }
 }

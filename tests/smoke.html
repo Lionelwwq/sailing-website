@@ -34,7 +34,7 @@
 (function () {
   'use strict';
   const PAGES = ['index.html', 'glass.html', 'mirrors.html', 'accessories.html', 'about.html', 'contact.html', 'catalogue.html'];
-  const LANGS = { en: 'en', zh: 'zh-Hans', fr: 'fr-CA' };
+  const LANGS = { en: 'en', fr: 'fr-CA', nl: 'nl', de: 'de', es: 'es' };
   const WIDTHS = [1280, 768, 375];
   const out = document.getElementById('out');
   const stage = document.getElementById('stage');
@@ -94,8 +94,7 @@
             const h1 = $(d, 'h1').textContent.trim();
             assert(h1, 'empty heading');
             if (lang === 'en' && width === 1280) englishH1[page] = h1;
-            if (lang === 'zh') assert(/[一-鿿]/.test(d.body.innerText), 'no Chinese text on the page');
-            if (lang === 'fr' && englishH1[page]) assert(h1 !== englishH1[page], `heading still in English: ${h1}`);
+            if (lang !== 'en' && englishH1[page]) assert(h1 !== englishH1[page], `heading still in English: ${h1}`);
             const over = d.documentElement.scrollWidth - width;
             assert(over <= 1, `page is ${over}px wider than the screen`);
             const empty = $$(d, '[data-ui],[data-c],[data-pp],[data-home]').filter((el) => el.offsetParent && !el.textContent.trim()).map((el) => Object.values(el.dataset)[0]);
@@ -174,9 +173,9 @@
       assert($(d, '#quote-count').textContent === '1', 'count did not go to 1');
       assert($(d, '.ex-panel [data-add]').getAttribute('aria-pressed') === 'true', 'button not marked added');
       assert($(d, '#toast').classList.contains('show'), 'no confirmation message');
-      ({ d } = await open('contact.html?lang=zh'));
+      ({ d } = await open('contact.html?lang=fr'));
       const pick = $(d, '#picked .pick');
-      assert(pick && /仿古镜/.test(pick.textContent), 'item missing (or not translated) on the contact form');
+      assert(pick && /Miroir antique/.test(pick.textContent), 'item missing (or not translated) on the contact form');
       $(d, '#picked [data-remove]').click();
       assert($(d, '#quote-count').textContent === '0' && !$(d, '#picked .pick'), 'remove did not work');
     });
@@ -297,19 +296,19 @@
       assert(!(w.__siteErrors || []).length, (w.__siteErrors || []).join('; '));
     });
     await test('Warehouse tour: close-up with product spots, next area, Escape', async () => {
-      const { d, w } = await open('index.html?lang=zh', 1280, 760);
+      const { d, w } = await open('index.html?lang=de', 1280, 760);
       await enterWarehouse(d);
       $(d, '.wh-dot[data-zone="glass"]').click();
       assert(await until(() => $(d, '.wh-detail.on') && $$(d, '.wh-spot').length === 3), 'close-up or product spots missing');
-      assert($(d, '.wh-panel h2').textContent === '玻璃', `card shows "${$(d, '.wh-panel h2').textContent}"`);
+      assert($(d, '.wh-panel h2').textContent === 'Glas', `card shows "${$(d, '.wh-panel h2').textContent}"`);
       $(d, '[data-wh-step="1"]').click();
-      assert(await until(() => $(d, '.wh-panel h2').textContent === '镜子'), 'next area did not open');
+      assert(await until(() => $(d, '.wh-panel h2').textContent === 'Spiegel'), 'next area did not open');
       d.body.dispatchEvent(new w.KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
       assert(await until(() => !$(d, '#wh').classList.contains('zoomed')), 'Escape did not go back to the warehouse');
       assert(!(w.__siteErrors || []).length, (w.__siteErrors || []).join('; '));
     });
     await test('Warehouse tour: clicking a product zooms in and opens its page; Back returns to that area', async () => {
-      const { f, d } = await open('index.html?lang=zh', 1280, 760);
+      const { f, d } = await open('index.html?lang=de', 1280, 760);
       await enterWarehouse(d);
       $(d, '.wh-dot[data-zone="glass"]').click();
       await until(() => $(d, '.wh-detail.on') && $$(d, '.wh-spot').length);
@@ -318,11 +317,11 @@
       assert(await until(() => { const tab = f.contentWindow.document.querySelector('#tab-low-iron'); return tab && tab.getAttribute('aria-selected') === 'true'; }, 5000), 'low-iron glass is not selected');
       const pd = f.contentWindow.document;
       assert(pd.documentElement.classList.contains('arrive'), 'product page has no arrival effect');
-      assert(pd.documentElement.lang === 'zh-Hans', `product page language is ${pd.documentElement.lang}`);
+      assert(pd.documentElement.lang === 'de', `product page language is ${pd.documentElement.lang}`);
       f.contentWindow.history.back();
       assert(await until(() => {
         const d3 = f.contentWindow.document; const r = d3.getElementById('wh'); const h = d3.querySelector('.wh-panel h2');
-        return r && r.classList.contains('zoomed') && !d3.querySelector('.wh-door') && h && h.textContent === '玻璃';
+        return r && r.classList.contains('zoomed') && !d3.querySelector('.wh-door') && h && h.textContent === 'Glas';
       }, 7000), 'Back did not return to the glass area');
       assert(!(f.contentWindow.__siteErrors || []).length, (f.contentWindow.__siteErrors || []).join('; '));
     });
@@ -358,7 +357,7 @@
       }
     });
     await test('Warehouse tour on a phone goes straight inside and fits the screen', async () => {
-      const { d, w } = await open('index.html?lang=zh', 375, 800);
+      const { d, w } = await open('index.html?lang=nl', 375, 800);
       assert(await until(() => $(d, '#wh').classList.contains('arrived')), 'not inside');
       assert(!$(d, '.wh-door'), 'door shown on a phone');
       $(d, '.wh-dot[data-zone="accessories"]').click();
@@ -391,7 +390,7 @@
       assert($(d, '[data-cat-pdf][download]'), 'no download button');
       assert(/Mo/.test($(d, '#cat-meta').textContent), `size not in French: ${$(d, '#cat-meta').textContent}`);
       assert(!(w.__siteErrors || []).length, (w.__siteErrors || []).join('; '));
-      const ph = await open('catalogue.html?lang=zh', 375, 800);
+      const ph = await open('catalogue.html?lang=de', 375, 800);
       assert(await until(() => ph.d.querySelectorAll('.fb-leaf').length === n), 'phone does not show one page at a time');
       assert(ph.d.documentElement.scrollWidth <= 376, `page is ${ph.d.documentElement.scrollWidth}px wide on a phone`);
       assert(!(ph.w.__siteErrors || []).length, (ph.w.__siteErrors || []).join('; '));
@@ -426,13 +425,13 @@
       assert(!(w.__siteErrors || []).length, (w.__siteErrors || []).join('; '));
       ({ d, w } = await open('catalogue.html?lang=fr', 1280, 800));
       assert(await until(() => w.SailingFlipbook && w.SailingFlipbook.edition() === 'es'), 'the chosen edition was not remembered');
-      ({ d, w } = await open('catalogue.html?lang=zh&edition=fr', 375, 800));
+      ({ d, w } = await open('catalogue.html?lang=nl&edition=fr', 375, 800));
       assert(await until(() => w.SailingFlipbook && w.SailingFlipbook.edition() === 'fr'), 'an ?edition= link does not open that edition');
       assert(d.documentElement.scrollWidth <= 376, `page is ${d.documentElement.scrollWidth}px wide on a phone`);
       localStorage.removeItem('sit-cat-edition');
     });
     await test('About page: market globe draws, lists every market and flies to one', async () => {
-      const { d, w } = await open('about.html?lang=zh', 1280, 800);
+      const { d, w } = await open('about.html?lang=es', 1280, 800);
       const wrap = $(d, '.globe-wrap');
       wrap.scrollIntoView();
       const items = [...d.querySelectorAll('#market-list [data-market]')];
@@ -451,7 +450,7 @@
 
     /* ---------- titles, prefill, 404, focus ---------- */
     await test('Browser-tab titles follow the language', async () => {
-      const checks = [['about.html?lang=zh', /关于/], ['contact.html?lang=fr', /Joindre|Contact|Nous/i], ['glass.html?lang=zh', /玻璃/], ['index.html?lang=fr', /Verre/]];
+      const checks = [['about.html?lang=de', /Über/], ['contact.html?lang=fr', /Joindre|Contact|Nous/i], ['glass.html?lang=nl', /Glas/], ['index.html?lang=es', /Vidrio/], ['index.html?lang=fr', /Verre/]];
       for (const [url, re] of checks) {
         const { d } = await open(url);
         assert(re.test(d.title), `${url}: "${d.title}"`);
@@ -480,8 +479,8 @@
       assert($(d, 'input[name="type"]:checked').value === 'Question', 'not set to Question');
     });
     await test('404 page shows a translated message and a way home', async () => {
-      const { d } = await open('404.html?lang=zh');
-      assert(/找不到/.test($(d, 'h1').textContent), 'not translated');
+      const { d } = await open('404.html?lang=fr');
+      assert(/introuvable/.test($(d, 'h1').textContent), 'not translated');
       assert($(d, '.hero-actions a[href="index.html"]'), 'no home link');
     });
     await test('Page content becomes visible after loading', async () => {

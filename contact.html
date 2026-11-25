@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=37226353">
+  <link rel="stylesheet" href="assets/css/style.css?v=a56da2de">
   <script>document.documentElement.classList.add('js'); window.__siteErrors = []; addEventListener('error', function (e) { __siteErrors.push(e.message); }); addEventListener('unhandledrejection', function (e) { __siteErrors.push(String(e.reason)); }); setTimeout(function () { document.documentElement.classList.add('ready'); }, 4000);</script>
 </head>
 <body data-page="contact">
@@ -76,9 +76,11 @@
 
     <div class="header-tools">
       <div class="lang" role="group" data-ui-label="language" aria-label="Language">
-        <button type="button" data-lang="en" lang="en">EN</button>
-        <button type="button" data-lang="zh" lang="zh-Hans">中文</button>
-        <button type="button" data-lang="fr" lang="fr">FR</button>
+        <button type="button" data-lang="en" lang="en" title="English">EN</button>
+        <button type="button" data-lang="fr" lang="fr" title="Français">FR</button>
+        <button type="button" data-lang="nl" lang="nl" title="Nederlands">NL</button>
+        <button type="button" data-lang="de" lang="de" title="Deutsch">DE</button>
+        <button type="button" data-lang="es" lang="es" title="Español">ES</button>
       </div>
       <button class="quote-btn" type="button" data-open-drawer aria-label="Quote list">
         <svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4h6a1 1 0 0 1 1 1v1H8V5a1 1 0 0 1 1-1Z"/><path d="M8 6H6a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-2"/><path d="M9 12h6M9 16h4"/></g></svg>
@@ -97,6 +99,14 @@
     <a class="sub" href="catalogue.html" data-nav="catalogue" data-ui="nav_catalogue">Product Catalogue</a>
     <a href="about.html" data-nav="about" data-ui="nav_about">About Us</a>
     <a href="contact.html" data-nav="contact" aria-current="page" data-ui="nav_contact">Contact</a>
+    <!-- on phones the language buttons live here (no room in the header) -->
+    <div class="lang lang-menu" role="group" data-ui-label="language" aria-label="Language">
+      <button type="button" data-lang="en" lang="en">English</button>
+      <button type="button" data-lang="fr" lang="fr">Français</button>
+      <button type="button" data-lang="nl" lang="nl">Nederlands</button>
+      <button type="button" data-lang="de" lang="de">Deutsch</button>
+      <button type="button" data-lang="es" lang="es">Español</button>
+    </div>
     <a class="btn btn-brand" href="contact.html#quote" data-ui="cta_quote">Request a Quote</a>
   </nav>
 </header>
@@ -239,6 +249,6 @@
 </div>
 
 <script src="assets/js/diagrams.js?v=f4591053"></script>
-<script src="assets/js/site.js?v=3b1d2c88"></script>
+<script src="assets/js/site.js?v=cb7dbee2"></script>
 </body>
 </html>

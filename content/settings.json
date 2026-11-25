@@ -4,8 +4,10 @@
  "email": "info@sailingintltrade.com",
  "address": {
   "en": "1110-250 Consumers Road, Toronto, ON M2J 4V6",
-  "zh": "1110-250 Consumers Road, Toronto, ON M2J 4V6",
-  "fr": "1110-250 Consumers Road, Toronto, ON M2J 4V6"
+  "fr": "1110-250 Consumers Road, Toronto, ON M2J 4V6",
+  "nl": "1110-250 Consumers Road, Toronto, ON M2J 4V6",
+  "de": "1110-250 Consumers Road, Toronto, ON M2J 4V6",
+  "es": "1110-250 Consumers Road, Toronto, ON M2J 4V6"
  },
  "mapQuery": "250 Consumers Road, Toronto, ON M2J 4V6",
  "quoteEmail": "lionelwwq@gmail.com",

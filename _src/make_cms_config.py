@@ -1,7 +1,7 @@
 """Generate .pages.yml (the Pages CMS editor configuration) from the content files.
 
-Every text that exists in three languages ({"en", "zh", "fr"}) becomes a group of
-English / 中文 / Français fields; image paths become image pickers; lists become
+Every text that exists in the site languages ({"en", "fr", "nl", "de", "es"}) becomes a group of
+English / Français / Nederlands / Deutsch / Español fields; image paths become image pickers; lists become
 repeatable groups. Run this again after adding new fields to the JSON files:
 
     python _src/make_cms_config.py
@@ -41,8 +41,11 @@ def label(key):
     return key.replace('_', ' ').replace('-', ' ').strip().capitalize()
 
 
+LANGS = [('en', 'English'), ('fr', 'Français'), ('nl', 'Nederlands'), ('de', 'Deutsch'), ('es', 'Español')]
+
+
 def is_i18n(v):
-    return isinstance(v, dict) and set(v) == {'en', 'zh', 'fr'}
+    return isinstance(v, dict) and set(v) == {k for k, _ in LANGS}
 
 
 def is_image(key, v):
@@ -53,19 +56,14 @@ def i18n_field(name, samples):
     long = any(len(s.get('en', '')) > LONG_TEXT for s in samples)
     kind = 'text' if long else 'string'
     return {'name': name, 'label': label(name), 'type': 'object', 'fields': [
-        {'name': 'en', 'label': 'English', 'type': kind},
-        {'name': 'zh', 'label': '中文', 'type': kind},
-        {'name': 'fr', 'label': 'Français', 'type': kind},
-    ]}
+        {'name': k, 'label': lbl, 'type': kind} for k, lbl in LANGS]}
 
 
 GALLERY = {'name': 'gallery', 'label': 'Extra photos', 'type': 'object', 'list': True,
            'description': 'Optional extra photos shown as thumbnails under the main photo.',
            'fields': [{'name': 'image', 'label': 'Image', 'type': 'image'},
                       {'name': 'caption', 'label': 'Caption', 'type': 'object', 'fields': [
-                          {'name': 'en', 'label': 'English', 'type': 'string'},
-                          {'name': 'zh', 'label': '中文', 'type': 'string'},
-                          {'name': 'fr', 'label': 'Français', 'type': 'string'}]}]}
+                          {'name': k, 'label': lbl, 'type': 'string'} for k, lbl in LANGS]}]}
 
 
 def field(name, values):

@@ -2,146 +2,196 @@
  "hero_image": "assets/img/library/low-e-facade.jpg",
  "hero_title": {
   "en": "Glass, mirrors & accessories",
-  "zh": "玻璃、镜子及配件",
-  "fr": "Verre, miroirs et accessoires"
+  "fr": "Verre, miroirs et accessoires",
+  "nl": "Glas, spiegels en accessoires",
+  "de": "Glas, Spiegel & Zubehör",
+  "es": "Vidrio, espejos y accesorios"
  },
  "hero_text": {
   "en": "Custom glass, cutting, installation and supplies for residential, commercial and automotive projects in Toronto since 1993.",
-  "zh": "自 1993 年起，在多伦多为住宅、商业和汽车项目提供定制玻璃、切割、安装及材料供应。",
-  "fr": "Verre sur mesure, coupe, installation et fournitures pour projets résidentiels, commerciaux et automobiles à Toronto depuis 1993."
+  "fr": "Verre sur mesure, coupe, installation et fournitures pour projets résidentiels, commerciaux et automobiles à Toronto depuis 1993.",
+  "nl": "Glas op maat, snijwerk, plaatsing en benodigdheden voor residentiële, commerciële en automotive projecten in Toronto, sinds 1993.",
+  "de": "Glas nach Maß, Zuschnitt, Montage und Zubehör für Wohn-, Gewerbe- und Kfz-Projekte in Toronto, seit 1993.",
+  "es": "Vidrio a medida, corte, instalación y suministros para proyectos residenciales, comerciales y automotrices en Toronto desde 1993."
  },
  "intro_title": {
   "en": "Excellence at all levels",
-  "zh": "全方位追求卓越",
-  "fr": "L'excellence à tous les niveaux"
+  "fr": "L'excellence à tous les niveaux",
+  "nl": "Uitmuntend op elk niveau",
+  "de": "Exzellenz auf allen Ebenen",
+  "es": "Excelencia en todos los niveles"
  },
  "intro_text": {
   "en": "Sailing International Trade is committed to three things on every project:",
-  "zh": "Sailing International Trade 在每个项目中都致力于以下三点：",
-  "fr": "Sailing International Trade s'engage envers trois choses dans chaque projet :"
+  "fr": "Sailing International Trade s'engage envers trois choses dans chaque projet :",
+  "nl": "Sailing International Trade zet zich bij elk project in voor drie dingen:",
+  "de": "Sailing International Trade verpflichtet sich bei jedem Projekt zu drei Dingen:",
+  "es": "Sailing International Trade se compromete con tres cosas en cada proyecto:"
  },
  "pillars": [
   {
    "title": {
     "en": "Quality products",
-    "zh": "优质产品",
-    "fr": "Produits de qualité"
+    "fr": "Produits de qualité",
+    "nl": "Kwaliteitsproducten",
+    "de": "Qualitätsprodukte",
+    "es": "Productos de calidad"
    },
    "text": {
     "en": "Architectural, decorative, solar and automotive glass, mirrors and accessories from trusted manufacturers.",
-    "zh": "来自可靠制造商的建筑玻璃、装饰玻璃、光伏玻璃、汽车玻璃、镜子及配件。",
-    "fr": "Verre architectural, décoratif, solaire et automobile, miroirs et accessoires de fabricants reconnus."
+    "fr": "Verre architectural, décoratif, solaire et automobile, miroirs et accessoires de fabricants reconnus.",
+    "nl": "Bouwglas, decoratief glas, zonneglas en autoglas, spiegels en accessoires van betrouwbare fabrikanten.",
+    "de": "Architektur-, Dekor-, Solar- und Autoglas, Spiegel und Zubehör von bewährten Herstellern.",
+    "es": "Vidrio arquitectónico, decorativo, solar y automotriz, espejos y accesorios de fabricantes de confianza."
    }
   },
   {
    "title": {
     "en": "Custom products",
-    "zh": "定制产品",
-    "fr": "Produits sur mesure"
+    "fr": "Produits sur mesure",
+    "nl": "Producten op maat",
+    "de": "Produkte nach Maß",
+    "es": "Productos a medida"
    },
    "text": {
     "en": "Glass and mirrors cut and processed to your sizes, thicknesses and finishes, with accessories supplied to your specifications.",
-    "zh": "玻璃和镜子按您要求的尺寸、厚度和表面处理进行切割加工，配件按您的规格供应。",
-    "fr": "Verre et miroirs coupés et transformés selon vos dimensions, épaisseurs et finis, avec accessoires fournis selon vos spécifications."
+    "fr": "Verre et miroirs coupés et transformés selon vos dimensions, épaisseurs et finis, avec accessoires fournis selon vos spécifications.",
+    "nl": "Glas en spiegels gesneden en bewerkt in uw afmetingen, diktes en afwerkingen, met accessoires volgens uw specificaties.",
+    "de": "Glas und Spiegel, zugeschnitten und bearbeitet nach Ihren Maßen, Dicken und Ausführungen, mit Zubehör nach Ihren Spezifikationen.",
+    "es": "Vidrio y espejos cortados y procesados según sus tamaños, espesores y acabados, con accesorios suministrados según sus especificaciones."
    }
   },
   {
    "title": {
     "en": "Installation",
-    "zh": "安装",
-    "fr": "Installation"
+    "fr": "Installation",
+    "nl": "Installatie",
+    "de": "Montage",
+    "es": "Instalación"
    },
    "text": {
     "en": "Windshields, storefronts, windows, doors and custom showers, installed with a warranty on products and work.",
-    "zh": "挡风玻璃、店面、窗户、门和定制淋浴房的安装，产品和施工均提供质保。",
-    "fr": "Pare-brise, devantures, fenêtres, portes et douches sur mesure, installés avec une garantie sur les produits et la main-d'œuvre."
+    "fr": "Pare-brise, devantures, fenêtres, portes et douches sur mesure, installés avec une garantie sur les produits et la main-d'œuvre.",
+    "nl": "Voorruiten, winkelpuien, ramen, deuren en douches op maat, geplaatst met garantie op producten en werk.",
+    "de": "Windschutzscheiben, Ladenfronten, Fenster, Türen und individuelle Duschen, montiert mit Garantie auf Produkte und Arbeit.",
+    "es": "Parabrisas, escaparates, ventanas, puertas y duchas a medida, instalados con garantía en los productos y la mano de obra."
    }
   }
  ],
  "products_title": {
   "en": "Products",
-  "zh": "产品",
-  "fr": "Produits"
+  "fr": "Produits",
+  "nl": "Producten",
+  "de": "Produkte",
+  "es": "Productos"
  },
  "products_text": {
   "en": "Everything from the glass itself to the materials used to process, protect and install it.",
-  "zh": "从玻璃本身，到加工、保护和安装玻璃所需的各类材料，一应俱全。",
-  "fr": "Tout, du verre lui-même aux matériaux servant à le transformer, à le protéger et à l'installer."
+  "fr": "Tout, du verre lui-même aux matériaux servant à le transformer, à le protéger et à l'installer.",
+  "nl": "Alles, van het glas zelf tot de materialen om het te bewerken, te beschermen en te plaatsen.",
+  "de": "Alles vom Glas selbst bis zu den Materialien, mit denen es bearbeitet, geschützt und montiert wird.",
+  "es": "Todo, desde el propio vidrio hasta los materiales para procesarlo, protegerlo e instalarlo."
  },
  "cat_glass_text": {
   "en": "Float, low iron, tinted, tempered, laminated, insulated, coated, patterned, acid etched, curved and solar glass.",
-  "zh": "浮法玻璃、超白玻璃、着色玻璃、钢化玻璃、夹胶玻璃、中空玻璃、镀膜玻璃、压花玻璃、酸蚀玻璃、弧形玻璃和光伏玻璃。",
-  "fr": "Verre flotté, extra-clair, teinté, trempé, feuilleté, isolant, à couche, imprimé, gravé, bombé et solaire."
+  "fr": "Verre flotté, extra-clair, teinté, trempé, feuilleté, isolant, à couche, imprimé, gravé, bombé et solaire.",
+  "nl": "Floatglas, extra helder, getint, gehard, gelaagd, gecoat, gezuurd en gebogen glas, plus isolatieglas, figuurglas en zonneglas.",
+  "de": "Floatglas, eisenarmes und getöntes Glas, Einscheibensicherheitsglas (ESG), Verbundglas, Isolierglas, beschichtetes Glas, Ornamentglas, säuremattiertes und gebogenes Glas sowie Solarglas.",
+  "es": "Vidrio flotado, bajo en hierro, tintado, templado, laminado, aislante, con recubrimiento, impreso, grabado al ácido, curvado y solar."
  },
  "cat_mirrors_text": {
   "en": "Silver, tinted, antique and back-painted mirror and glass, with safety backing.",
-  "zh": "银镜、彩色镜、仿古镜和烤漆玻璃，并提供安全背膜。",
-  "fr": "Miroirs argentés, teintés et antiques, et verre laqué, avec endos de sécurité."
+  "fr": "Miroirs argentés, teintés et antiques, et verre laqué, avec endos de sécurité.",
+  "nl": "Zilveren, getinte en antieke spiegels en achterzijdig gelakt glas, met veiligheidsfolie.",
+  "de": "Silber-, Farb- und Antikspiegel sowie rückseitig lackiertes Glas, mit Sicherheitsfolie.",
+  "es": "Espejos plateados, tintados y antiguos, y vidrio pintado por la cara posterior, con película de seguridad."
  },
  "cat_accessories_text": {
   "en": "Racks, cork pads, slings, spacers, sealants, films, waterjet supplies, wheels and polishing compounds.",
-  "zh": "玻璃架、软木垫、吊带、间隔条、密封胶、胶片、水刀耗材、磨轮和抛光材料。",
-  "fr": "Chevalets, tampons de liège, élingues, intercalaires, scellants, pellicules, fournitures pour jet d'eau, meules et composés de polissage."
+  "fr": "Chevalets, tampons de liège, élingues, intercalaires, scellants, pellicules, fournitures pour jet d'eau, meules et composés de polissage.",
+  "nl": "Bokken, kurkpads, hijsbanden, afstandhouders, afdichtingskitten, folies, waterstraalbenodigdheden, slijpschijven en polijstmiddelen.",
+  "de": "Gestelle, Korkpads, Hebebänder, Abstandhalter, Dichtstoffe, Folien, Wasserstrahlzubehör, Schleifscheiben und Poliermittel.",
+  "es": "Caballetes, almohadillas de corcho, eslingas, espaciadores, selladores, películas, suministros para corte por chorro de agua, muelas y compuestos de pulido."
  },
  "services_title": {
   "en": "Our services",
-  "zh": "我们的服务",
-  "fr": "Nos services"
+  "fr": "Nos services",
+  "nl": "Onze diensten",
+  "de": "Unsere Leistungen",
+  "es": "Nuestros servicios"
  },
  "services": [
   {
    "title": {
     "en": "Residential",
-    "zh": "住宅",
-    "fr": "Résidentiel"
+    "fr": "Résidentiel",
+    "nl": "Particulier",
+    "de": "Privatkunden",
+    "es": "Residencial"
    },
    "image": "assets/img/ai/bathroom-shower.jpg",
    "text": {
     "en": "Showers, mirrors, railings, windows and doors for homes, measured, cut and installed to fit your space.",
-    "zh": "为住宅提供淋浴房、镜子、栏杆和门窗，上门测量、切割并安装，贴合您的空间。",
-    "fr": "Douches, miroirs, garde-corps, fenêtres et portes pour la maison, mesurés, coupés et installés selon votre espace."
+    "fr": "Douches, miroirs, garde-corps, fenêtres et portes pour la maison, mesurés, coupés et installés selon votre espace.",
+    "nl": "Douches, spiegels, balustrades, ramen en deuren voor woningen, ingemeten, gesneden en geplaatst op maat van uw ruimte.",
+    "de": "Duschen, Spiegel, Geländer, Fenster und Türen für Ihr Zuhause, passgenau aufgemessen, zugeschnitten und montiert.",
+    "es": "Duchas, espejos, barandillas, ventanas y puertas para el hogar, medidos, cortados e instalados a la medida de su espacio."
    }
   },
   {
    "title": {
     "en": "Commercial",
-    "zh": "商业",
-    "fr": "Commercial"
+    "fr": "Commercial",
+    "nl": "Zakelijk",
+    "de": "Gewerbe",
+    "es": "Comercial"
    },
    "image": "assets/img/library/low-e-office.jpg",
    "text": {
     "en": "Storefronts, curtain walls, offices and public spaces. We coordinate product selection, supply and installation so your project has one point of contact.",
-    "zh": "店面、幕墙、办公室和公共空间。我们统筹产品选型、供货和安装，让您的项目只需对接一个联系人。",
-    "fr": "Devantures, murs-rideaux, bureaux et espaces publics. Nous coordonnons le choix des produits, l'approvisionnement et l'installation afin que votre projet ait un seul interlocuteur."
+    "fr": "Devantures, murs-rideaux, bureaux et espaces publics. Nous coordonnons le choix des produits, l'approvisionnement et l'installation afin que votre projet ait un seul interlocuteur.",
+    "nl": "Winkelpuien, vliesgevels, kantoren en openbare ruimten. Wij coördineren productkeuze, levering en plaatsing, zodat u voor uw project één aanspreekpunt hebt.",
+    "de": "Ladenfronten, Vorhangfassaden, Büros und öffentliche Räume. Wir koordinieren Produktauswahl, Lieferung und Montage, damit Sie für Ihr Projekt einen einzigen Ansprechpartner haben.",
+    "es": "Escaparates, muros cortina, oficinas y espacios públicos. Coordinamos la selección de productos, el suministro y la instalación para que su proyecto tenga un único interlocutor."
    }
   },
   {
    "title": {
     "en": "Supply only",
-    "zh": "仅供货",
-    "fr": "Fourniture seulement"
+    "fr": "Fourniture seulement",
+    "nl": "Alleen levering",
+    "de": "Nur Lieferung",
+    "es": "Solo suministro"
    },
    "image": "assets/img/site/hero-accessories.jpg",
    "text": {
     "en": "Glass, mirrors and accessories for fabricators, installers and contractors, cut and processed to your requirements and delivered ready to use.",
-    "zh": "为玻璃加工商、安装商和承包商提供玻璃、镜子及配件，按您的要求切割加工，交付即可使用。",
-    "fr": "Verre, miroirs et accessoires pour transformateurs, installateurs et entrepreneurs, coupés et transformés selon vos exigences et livrés prêts à l'emploi."
+    "fr": "Verre, miroirs et accessoires pour transformateurs, installateurs et entrepreneurs, coupés et transformés selon vos exigences et livrés prêts à l'emploi.",
+    "nl": "Glas, spiegels en accessoires voor glasverwerkers, glaszetters en aannemers, gesneden en bewerkt volgens uw wensen en gebruiksklaar geleverd.",
+    "de": "Glas, Spiegel und Zubehör für Glasverarbeiter, Montagebetriebe und Bauunternehmen, nach Ihren Anforderungen zugeschnitten, bearbeitet und einsatzbereit geliefert.",
+    "es": "Vidrio, espejos y accesorios para procesadores, instaladores y contratistas, cortados y procesados según sus requisitos y entregados listos para usar."
    }
   }
  ],
  "location_title": {
   "en": "Location",
-  "zh": "地址",
-  "fr": "Emplacement"
+  "fr": "Emplacement",
+  "nl": "Locatie",
+  "de": "Standort",
+  "es": "Ubicación"
  },
  "cta_title": {
   "en": "Ready to start your project?",
-  "zh": "准备好开始您的项目了吗？",
-  "fr": "Prêt à démarrer votre projet?"
+  "fr": "Prêt à démarrer votre projet?",
+  "nl": "Klaar om uw project te starten?",
+  "de": "Bereit für Ihr Projekt?",
+  "es": "¿Listo para comenzar su proyecto?"
  },
  "cta_text": {
   "en": "Tell us what you need and we will reply with options, pricing and lead times. Quotes are free.",
-  "zh": "告诉我们您的需求，我们将为您提供可选方案、价格和交货周期。报价免费。",
-  "fr": "Dites-nous ce dont vous avez besoin et nous vous répondrons avec des options, des prix et des délais. Les soumissions sont gratuites."
+  "fr": "Dites-nous ce dont vous avez besoin et nous vous répondrons avec des options, des prix et des délais. Les soumissions sont gratuites.",
+  "nl": "Vertel ons wat u nodig hebt en we antwoorden met opties, prijzen en levertijden. Offertes zijn gratis.",
+  "de": "Sagen Sie uns, was Sie benötigen, und wir antworten mit Optionen, Preisen und Lieferzeiten. Angebote sind kostenlos.",
+  "es": "Díganos qué necesita y le responderemos con opciones, precios y plazos de entrega. Las cotizaciones son gratuitas."
  }
 }

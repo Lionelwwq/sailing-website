@@ -1,6 +1,6 @@
 # Sailing International Trade 网站
 
-多页静态网站，支持英文 / 中文 / 法文三种语言。所有文字、产品和图片都放在 `content/` 文件夹的 JSON 文件里，员工可以通过 **Pages CMS** 在线编辑器修改，不需要碰代码。
+多页静态网站，支持英文 / 法文 / 荷兰文 / 德文 / 西班牙文五种语言（2026 年 11 月起不再提供中文）。所有文字、产品和图片都放在 `content/` 文件夹的 JSON 文件里，员工可以通过 **Pages CMS** 在线编辑器修改，不需要碰代码。
 
 ## 页面
 
@@ -26,7 +26,7 @@
 4. 让员工也能登录：在 Pages CMS 的协作者设置里按邮箱邀请，或把员工的 GitHub 账号加为仓库协作者。
 
 **日常编辑：**
-- 每段文字都有 English / 中文 / Français 三个输入框，三种语言一起改。
+- 每段文字都有 English / Français / Nederlands / Deutsch / Español 五个输入框，五种语言一起改。
 - 图片字段可以直接上传新照片（存到 `assets/img/`）。
 - 点保存后，网站约 1–2 分钟自动更新。
 - 产品的"Id"是网址里用的短代码（例如 `tempered`），新加产品时用小写英文加连字符，不要和已有的重复。
@@ -51,10 +51,10 @@
 
 ## 多语言
 
-- 右上角 EN / 中文 / FR 切换，会记住访客的选择。
-- 第一次访问时按浏览器语言自动选择（中文、法文浏览器显示对应语言，其他显示英文）。
-- 也可以在网址后面加 `?lang=zh` 或 `?lang=fr` 直接打开指定语言。
-- 中文用简体，法文用加拿大法语（询价叫 "soumission"）。
+- 右上角 EN / FR / NL / DE / ES 切换（手机上在菜单里），会记住访客的选择。
+- 第一次访问时按浏览器语言自动选择（法文、荷兰文、德文、西班牙文浏览器显示对应语言，其他显示英文）。
+- 也可以在网址后面加 `?lang=fr`、`?lang=nl`、`?lang=de`、`?lang=es` 直接打开指定语言。
+- 法文用加拿大法语（询价叫 "soumission"）。荷兰文、德文、西班牙文是新翻译的，正式使用前最好请母语人士看一遍。产品目录的西班牙文版本跟随西班牙文网站自动打开。
 
 ## 询价表单
 
@@ -90,7 +90,7 @@ python -m http.server 5173
 然后打开 http://localhost:5173
 
 - 配件的示意图在 `assets/js/diagrams.js`；页面的行为都在 `assets/js/site.js`；样式在 `assets/css/style.css`。
-- 测试：`python tests/check_content.py` 检查内容文件；在本地服务器打开 http://localhost:5173/tests/smoke.html 点 Run，会在三种语言、三种屏幕宽度下检查所有页面和仓库导览。
+- 测试：`python tests/check_content.py` 检查内容文件；在本地服务器打开 http://localhost:5173/tests/smoke.html 点 Run，会在五种语言、三种屏幕宽度下检查所有页面和仓库导览。
 
 ## 图片
 

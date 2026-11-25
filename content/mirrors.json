@@ -4,8 +4,10 @@
    "id": "silver-mirror",
    "name": {
     "en": "Silver Mirror",
-    "zh": "银镜",
-    "fr": "Miroir argenté"
+    "fr": "Miroir argenté",
+    "nl": "Zilverspiegel",
+    "de": "Silberspiegel",
+    "es": "Espejo de plata"
    },
    "photo": "assets/img/ai/silver-mirror.jpg",
    "gallery": [
@@ -13,130 +15,172 @@
      "image": "assets/img/warehouse/zone-mirrors.webp",
      "caption": {
       "en": "Mirrors in a commercial washroom",
-      "zh": "商业洗手间中的镜子",
-      "fr": "Miroirs dans une salle de toilettes commerciale"
+      "fr": "Miroirs dans une salle de toilettes commerciale",
+      "nl": "Spiegels in een openbare toiletruimte",
+      "de": "Spiegel in einem gewerblichen Sanitärraum",
+      "es": "Espejos en los baños de un local comercial"
      }
     },
     {
      "image": "assets/img/library/mirror-colours.jpg",
      "caption": {
       "en": "Popular mirror colours: silver, grey, Euro grey, Euro bronze and bronze",
-      "zh": "常用镜子颜色：银镜、灰镜、欧灰、欧铜和茶镜",
-      "fr": "Teintes populaires : argent, gris, gris euro, bronze euro et bronze"
+      "fr": "Teintes populaires : argent, gris, gris euro, bronze euro et bronze",
+      "nl": "Populaire spiegelkleuren: zilver, grijs, Euro-grijs, Euro-brons en brons",
+      "de": "Beliebte Spiegelfarben: Silber, Grau, Euro-Grau, Euro-Bronze und Bronze",
+      "es": "Colores de espejo populares: plata, gris, gris Euro, bronce Euro y bronce"
      }
     }
    ],
    "short": {
     "en": "Clear silvered mirror for bathrooms, closets, gyms, furniture and décor.",
-    "zh": "透明银镜，适用于浴室、衣柜、健身房、家具和装饰。",
-    "fr": "Miroir argenté clair pour salles de bains, placards, salles d'entraînement, meubles et décoration."
+    "fr": "Miroir argenté clair pour salles de bains, placards, salles d'entraînement, meubles et décoration.",
+    "nl": "Heldere zilverspiegel voor badkamers, kasten, sportscholen, meubels en decoratie.",
+    "de": "Klarer Silberspiegel für Badezimmer, Schränke, Fitnessstudios, Möbel und Dekoration.",
+    "es": "Espejo plateado claro para baños, clósets, gimnasios, muebles y decoración."
    },
    "description": {
     "en": "Our standard silver mirror gives a bright, true reflection. It is cut to size with polished or bevelled edges, drilled for fixings where needed, and can be backed with safety film.",
-    "zh": "我们的标准银镜成像明亮、真实。可按尺寸切割，磨抛光边或斜边，需要时可钻安装孔，并可加贴安全背膜。",
-    "fr": "Notre miroir argenté standard offre un reflet lumineux et fidèle. Il est coupé à dimension avec bords polis ou biseautés, percé pour les fixations au besoin, et peut être doublé d'une pellicule de sécurité."
+    "fr": "Notre miroir argenté standard offre un reflet lumineux et fidèle. Il est coupé à dimension avec bords polis ou biseautés, percé pour les fixations au besoin, et peut être doublé d'une pellicule de sécurité.",
+    "nl": "Onze standaard zilverspiegel geeft een heldere, natuurgetrouwe reflectie. Hij wordt op maat gesneden met gepolijste of gefacetteerde randen, waar nodig geboord voor bevestigingen, en kan worden voorzien van een veiligheidsfolie.",
+    "de": "Unser Standard-Silberspiegel bietet eine helle, naturgetreue Spiegelung. Er wird mit polierten oder facettierten Kanten auf Maß zugeschnitten, bei Bedarf für Befestigungen gebohrt und kann rückseitig mit Sicherheitsfolie versehen werden.",
+    "es": "Nuestro espejo de plata estándar ofrece un reflejo brillante y fiel. Se corta a medida con bordes pulidos o biselados, se perfora para las fijaciones cuando es necesario y puede llevar película de seguridad en el reverso."
    },
    "specs": [
     {
      "label": {
       "en": "Type",
-      "zh": "类型",
-      "fr": "Type"
+      "fr": "Type",
+      "nl": "Type",
+      "de": "Typ",
+      "es": "Tipo"
      },
      "value": {
       "en": "Silvered float glass",
-      "zh": "镀银浮法玻璃",
-      "fr": "Verre flotté argenté"
+      "fr": "Verre flotté argenté",
+      "nl": "Verzilverd floatglas",
+      "de": "Versilbertes Floatglas",
+      "es": "Vidrio flotado plateado"
      }
     },
     {
      "label": {
       "en": "Thickness",
-      "zh": "厚度",
-      "fr": "Épaisseur"
+      "fr": "Épaisseur",
+      "nl": "Dikte",
+      "de": "Dicke",
+      "es": "Espesor"
      },
      "value": {
       "en": "2–8 mm",
-      "zh": "2–8 mm",
-      "fr": "2–8 mm"
+      "fr": "2–8 mm",
+      "nl": "2–8 mm",
+      "de": "2–8 mm",
+      "es": "2–8 mm"
      }
     },
     {
      "label": {
       "en": "Options",
-      "zh": "可选",
-      "fr": "Options"
+      "fr": "Options",
+      "nl": "Opties",
+      "de": "Optionen",
+      "es": "Opciones"
      },
      "value": {
       "en": "Copper-free, aluminium, low iron, acid etched or temperable",
-      "zh": "无铜、铝镜、超白、蒙砂或可钢化",
-      "fr": "Sans cuivre, aluminium, extra-clair, dépoli à l’acide ou trempable"
+      "fr": "Sans cuivre, aluminium, extra-clair, dépoli à l’acide ou trempable",
+      "nl": "Kopervrij, aluminium, ijzerarm, zuurgeëtst of hardbaar",
+      "de": "Kupferfrei, Aluminium, eisenarm, säuregeätzt oder vorspannbar",
+      "es": "Sin cobre, de aluminio, bajo en hierro, grabado al ácido o templable"
      }
     },
     {
      "label": {
       "en": "Edges",
-      "zh": "边缘",
-      "fr": "Bords"
+      "fr": "Bords",
+      "nl": "Randen",
+      "de": "Kanten",
+      "es": "Bordes"
      },
      "value": {
       "en": "Polished or bevelled",
-      "zh": "抛光边或斜边",
-      "fr": "Polis ou biseautés"
+      "fr": "Polis ou biseautés",
+      "nl": "Gepolijst of gefacetteerd",
+      "de": "Poliert oder facettiert",
+      "es": "Pulidos o biselados"
      }
     },
     {
      "label": {
       "en": "Safety backing",
-      "zh": "安全背膜",
-      "fr": "Endos de sécurité"
+      "fr": "Endos de sécurité",
+      "nl": "Veiligheidsfolie",
+      "de": "Sicherheitsfolie",
+      "es": "Película de seguridad"
      },
      "value": {
       "en": "CAT I or CAT II film available",
-      "zh": "可提供 CAT I 或 CAT II 背膜",
-      "fr": "Pellicule CAT I ou CAT II offerte"
+      "fr": "Pellicule CAT I ou CAT II offerte",
+      "nl": "Folie CAT I of CAT II leverbaar",
+      "de": "Folie CAT I oder CAT II erhältlich",
+      "es": "Película CAT I o CAT II disponible"
      }
     },
     {
      "label": {
       "en": "Sizes",
-      "zh": "尺寸",
-      "fr": "Dimensions"
+      "fr": "Dimensions",
+      "nl": "Afmetingen",
+      "de": "Abmessungen",
+      "es": "Dimensiones"
      },
      "value": {
       "en": "Cut to size, up to 96″ × 144″",
-      "zh": "按尺寸切割，最大 96″ × 144″",
-      "fr": "Coupe sur mesure, jusqu’à 96″ × 144″"
+      "fr": "Coupe sur mesure, jusqu’à 96″ × 144″",
+      "nl": "Op maat gesneden, tot 96″ × 144″",
+      "de": "Zuschnitt nach Maß, bis 96″ × 144″",
+      "es": "Corte a medida, hasta 96″ × 144″"
      }
     },
     {
      "label": {
       "en": "Regular sizes",
-      "zh": "常规尺寸",
-      "fr": "Formats courants"
+      "fr": "Formats courants",
+      "nl": "Standaardformaten",
+      "de": "Standardformate",
+      "es": "Tamaños estándar"
      },
      "value": {
       "en": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
-      "zh": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
-      "fr": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″"
+      "fr": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "nl": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "de": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "es": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″"
      }
     }
    ],
    "uses": [
     {
      "en": "Bathrooms and vanities",
-     "zh": "浴室和梳妆台",
-     "fr": "Salles de bains et meubles-lavabos"
+     "fr": "Salles de bains et meubles-lavabos",
+     "nl": "Badkamers en wastafelmeubels",
+     "de": "Badezimmer und Waschtische",
+     "es": "Baños y tocadores"
     },
     {
      "en": "Closet and wardrobe doors",
-     "zh": "壁橱门和衣柜门",
-     "fr": "Portes de placard et de garde-robe"
+     "fr": "Portes de placard et de garde-robe",
+     "nl": "Kast- en garderobedeuren",
+     "de": "Einbau- und Kleiderschranktüren",
+     "es": "Puertas de clóset y armario"
     },
     {
      "en": "Furniture and décor",
-     "zh": "家具和装饰",
-     "fr": "Meubles et décoration"
+     "fr": "Meubles et décoration",
+     "nl": "Meubels en decoratie",
+     "de": "Möbel und Dekoration",
+     "es": "Muebles y decoración"
     }
    ],
    "related": [
@@ -149,8 +193,10 @@
    "id": "tinted-mirror",
    "name": {
     "en": "Tinted Mirror",
-    "zh": "彩色镜",
-    "fr": "Miroir teinté"
+    "fr": "Miroir teinté",
+    "nl": "Getinte spiegel",
+    "de": "Getönter Spiegel",
+    "es": "Espejo tintado"
    },
    "photo": "assets/img/library/tinted-mirror-collection.jpg",
    "gallery": [
@@ -158,110 +204,146 @@
      "image": "assets/img/library/mirror-colours.jpg",
      "caption": {
       "en": "Popular mirror colours: silver, grey, Euro grey, Euro bronze and bronze",
-      "zh": "常用镜子颜色：银镜、灰镜、欧灰、欧铜和茶镜",
-      "fr": "Teintes populaires : argent, gris, gris euro, bronze euro et bronze"
+      "fr": "Teintes populaires : argent, gris, gris euro, bronze euro et bronze",
+      "nl": "Populaire spiegelkleuren: zilver, grijs, Euro-grijs, Euro-brons en brons",
+      "de": "Beliebte Spiegelfarben: Silber, Grau, Euro-Grau, Euro-Bronze und Bronze",
+      "es": "Colores de espejo populares: plata, gris, gris Euro, bronce Euro y bronce"
      }
     }
    ],
    "short": {
     "en": "Grey, bronze and other tinted mirrors for a softer, warmer reflection.",
-    "zh": "灰镜、茶镜及其他彩色镜，反射效果更柔和、温暖。",
-    "fr": "Miroirs teintés gris, bronze et autres pour un reflet plus doux et plus chaleureux."
+    "fr": "Miroirs teintés gris, bronze et autres pour un reflet plus doux et plus chaleureux.",
+    "nl": "Grijze, bronzen en andere getinte spiegels voor een zachtere, warmere reflectie.",
+    "de": "Graue, bronzefarbene und andere getönte Spiegel für eine weichere, wärmere Spiegelung.",
+    "es": "Espejos tintados gris, bronce y de otros colores para un reflejo más suave y cálido."
    },
    "description": {
     "en": "Tinted mirror is made on coloured glass, giving a muted, design-led reflection. It is popular for feature walls, furniture and hospitality interiors.",
-    "zh": "彩色镜以着色玻璃为基片制成，反射效果低调而富有设计感，广泛用于特色墙面、家具以及酒店餐饮空间的室内装饰。",
-    "fr": "Le miroir teinté est fabriqué sur du verre coloré, ce qui lui donne un reflet adouci et résolument design. Il est populaire pour les murs d'accent, le mobilier et les intérieurs d'hôtels et de restaurants."
+    "fr": "Le miroir teinté est fabriqué sur du verre coloré, ce qui lui donne un reflet adouci et résolument design. Il est populaire pour les murs d'accent, le mobilier et les intérieurs d'hôtels et de restaurants.",
+    "nl": "Getinte spiegel wordt gemaakt op gekleurd glas, wat een ingetogen, designgerichte reflectie geeft. Hij is populair voor accentwanden, meubels en interieurs in de horeca.",
+    "de": "Getönter Spiegel wird auf farbigem Glas hergestellt und erzeugt eine gedämpfte, designorientierte Spiegelung. Er ist beliebt für Akzentwände, Möbel und Interieurs in Hotellerie und Gastronomie.",
+    "es": "El espejo tintado se fabrica sobre vidrio de color, lo que le da un reflejo atenuado y de diseño. Es muy utilizado en paredes de acento, muebles e interiores de hoteles y restaurantes."
    },
    "specs": [
     {
      "label": {
       "en": "Colours",
-      "zh": "颜色",
-      "fr": "Couleurs"
+      "fr": "Couleurs",
+      "nl": "Kleuren",
+      "de": "Farben",
+      "es": "Colores"
      },
      "value": {
       "en": "Grey, bronze and more",
-      "zh": "灰色、茶色等",
-      "fr": "Gris, bronze et plus"
+      "fr": "Gris, bronze et plus",
+      "nl": "Grijs, brons en meer",
+      "de": "Grau, Bronze und mehr",
+      "es": "Gris, bronce y más"
      }
     },
     {
      "label": {
       "en": "Thickness",
-      "zh": "厚度",
-      "fr": "Épaisseur"
+      "fr": "Épaisseur",
+      "nl": "Dikte",
+      "de": "Dicke",
+      "es": "Espesor"
      },
      "value": {
       "en": "2–8 mm",
-      "zh": "2–8 mm",
-      "fr": "2–8 mm"
+      "fr": "2–8 mm",
+      "nl": "2–8 mm",
+      "de": "2–8 mm",
+      "es": "2–8 mm"
      }
     },
     {
      "label": {
       "en": "Edges",
-      "zh": "边缘",
-      "fr": "Bords"
+      "fr": "Bords",
+      "nl": "Randen",
+      "de": "Kanten",
+      "es": "Bordes"
      },
      "value": {
       "en": "Polished or bevelled",
-      "zh": "抛光边或斜边",
-      "fr": "Polis ou biseautés"
+      "fr": "Polis ou biseautés",
+      "nl": "Gepolijst of gefacetteerd",
+      "de": "Poliert oder facettiert",
+      "es": "Pulidos o biselados"
      }
     },
     {
      "label": {
       "en": "Safety backing",
-      "zh": "安全背膜",
-      "fr": "Endos de sécurité"
+      "fr": "Endos de sécurité",
+      "nl": "Veiligheidsfolie",
+      "de": "Sicherheitsfolie",
+      "es": "Película de seguridad"
      },
      "value": {
       "en": "Available",
-      "zh": "可提供",
-      "fr": "Offert"
+      "fr": "Offert",
+      "nl": "Leverbaar",
+      "de": "Erhältlich",
+      "es": "Disponible"
      }
     },
     {
      "label": {
       "en": "Sizes",
-      "zh": "尺寸",
-      "fr": "Dimensions"
+      "fr": "Dimensions",
+      "nl": "Afmetingen",
+      "de": "Abmessungen",
+      "es": "Dimensiones"
      },
      "value": {
       "en": "Cut to size, up to 96″ × 144″",
-      "zh": "按尺寸切割，最大 96″ × 144″",
-      "fr": "Coupe sur mesure, jusqu’à 96″ × 144″"
+      "fr": "Coupe sur mesure, jusqu’à 96″ × 144″",
+      "nl": "Op maat gesneden, tot 96″ × 144″",
+      "de": "Zuschnitt nach Maß, bis 96″ × 144″",
+      "es": "Corte a medida, hasta 96″ × 144″"
      }
     },
     {
      "label": {
       "en": "Regular sizes",
-      "zh": "常规尺寸",
-      "fr": "Formats courants"
+      "fr": "Formats courants",
+      "nl": "Standaardformaten",
+      "de": "Standardformate",
+      "es": "Tamaños estándar"
      },
      "value": {
       "en": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
-      "zh": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
-      "fr": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″"
+      "fr": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "nl": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "de": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "es": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″"
      }
     }
    ],
    "uses": [
     {
      "en": "Feature walls",
-     "zh": "特色墙面",
-     "fr": "Murs d'accent"
+     "fr": "Murs d'accent",
+     "nl": "Accentwanden",
+     "de": "Akzentwände",
+     "es": "Paredes de acento"
     },
     {
      "en": "Furniture and cabinetry",
-     "zh": "家具和橱柜",
-     "fr": "Meubles et ébénisterie"
+     "fr": "Meubles et ébénisterie",
+     "nl": "Meubels en kasten",
+     "de": "Möbel- und Schrankbau",
+     "es": "Muebles y ebanistería"
     },
     {
      "en": "Hotels and restaurants",
-     "zh": "酒店和餐厅",
-     "fr": "Hôtels et restaurants"
+     "fr": "Hôtels et restaurants",
+     "nl": "Hotels en restaurants",
+     "de": "Hotels und Restaurants",
+     "es": "Hoteles y restaurantes"
     }
    ],
    "related": [
@@ -274,110 +356,146 @@
    "id": "antique-mirror",
    "name": {
     "en": "Antique Mirror",
-    "zh": "仿古镜",
-    "fr": "Miroir antique"
+    "fr": "Miroir antique",
+    "nl": "Antiekspiegel",
+    "de": "Antikspiegel",
+    "es": "Espejo antiguo"
    },
    "photo": "assets/img/library/antique-mirror-collection.jpg",
    "gallery": [],
    "short": {
     "en": "Aged, patinated mirror finishes for feature walls and decorative work.",
-    "zh": "做旧、斑驳的仿古镜面效果，适用于特色墙面和装饰工程。",
-    "fr": "Finis de miroir vieillis et patinés pour murs d'accent et réalisations décoratives."
+    "fr": "Finis de miroir vieillis et patinés pour murs d'accent et réalisations décoratives.",
+    "nl": "Verouderde, gepatineerde spiegelafwerkingen voor accentwanden en decoratief werk.",
+    "de": "Gealterte, patinierte Spiegeloberflächen für Akzentwände und dekorative Arbeiten.",
+    "es": "Acabados de espejo envejecidos y con pátina para paredes de acento y trabajos decorativos."
    },
    "description": {
     "en": "Antique mirror is treated to create an aged, mottled finish. Colours, patina and patterns can be customised to your project; approve the final finish from physical samples.",
-    "zh": "仿古镜经过特殊处理，呈现做旧、斑驳的效果。颜色、古旧质感和花纹均可根据您的项目定制；最终效果以实物样品确认。",
-    "fr": "Le miroir antique est traité pour obtenir un fini vieilli et moucheté. Les couleurs, la patine et les motifs peuvent être personnalisés selon votre projet; approuvez le fini final à partir d'échantillons physiques."
+    "fr": "Le miroir antique est traité pour obtenir un fini vieilli et moucheté. Les couleurs, la patine et les motifs peuvent être personnalisés selon votre projet; approuvez le fini final à partir d'échantillons physiques.",
+    "nl": "Antiekspiegel wordt behandeld voor een verouderde, gevlekte afwerking. Kleuren, patina en patronen kunnen op uw project worden afgestemd; u keurt de uiteindelijke afwerking goed aan de hand van fysieke monsters.",
+    "de": "Antikspiegel wird so behandelt, dass eine gealterte, gesprenkelte Oberfläche entsteht. Farben, Patina und Dekore lassen sich an Ihr Projekt anpassen; die endgültige Oberfläche geben Sie anhand physischer Muster frei.",
+    "es": "El espejo antiguo se trata para obtener un acabado envejecido y moteado. Los colores, la pátina y los diseños se pueden personalizar según su proyecto; usted aprueba el acabado final a partir de muestras físicas."
    },
    "specs": [
     {
      "label": {
       "en": "Finish",
-      "zh": "效果",
-      "fr": "Fini"
+      "fr": "Fini",
+      "nl": "Afwerking",
+      "de": "Oberfläche",
+      "es": "Acabado"
      },
      "value": {
       "en": "Aged, mottled patina",
-      "zh": "做旧斑驳的古旧质感",
-      "fr": "Patine vieillie et mouchetée"
+      "fr": "Patine vieillie et mouchetée",
+      "nl": "Verouderd, gevlekt patina",
+      "de": "Gealterte, gesprenkelte Patina",
+      "es": "Pátina envejecida y moteada"
      }
     },
     {
      "label": {
       "en": "Customisation",
-      "zh": "定制",
-      "fr": "Personnalisation"
+      "fr": "Personnalisation",
+      "nl": "Maatwerk",
+      "de": "Individuelle Anpassung",
+      "es": "Personalización"
      },
      "value": {
       "en": "Colour, patina and pattern",
-      "zh": "颜色、古旧质感和花纹",
-      "fr": "Couleur, patine et motif"
+      "fr": "Couleur, patine et motif",
+      "nl": "Kleur, patina en patroon",
+      "de": "Farbe, Patina und Dekor",
+      "es": "Color, pátina y diseño"
      }
     },
     {
      "label": {
       "en": "Thickness",
-      "zh": "厚度",
-      "fr": "Épaisseur"
+      "fr": "Épaisseur",
+      "nl": "Dikte",
+      "de": "Dicke",
+      "es": "Espesor"
      },
      "value": {
       "en": "2–8 mm",
-      "zh": "2–8 mm",
-      "fr": "2–8 mm"
+      "fr": "2–8 mm",
+      "nl": "2–8 mm",
+      "de": "2–8 mm",
+      "es": "2–8 mm"
      }
     },
     {
      "label": {
       "en": "Approval",
-      "zh": "确认方式",
-      "fr": "Approbation"
+      "fr": "Approbation",
+      "nl": "Goedkeuring",
+      "de": "Freigabe",
+      "es": "Aprobación"
      },
      "value": {
       "en": "From physical samples",
-      "zh": "以实物样品确认",
-      "fr": "À partir d'échantillons physiques"
+      "fr": "À partir d'échantillons physiques",
+      "nl": "Aan de hand van fysieke monsters",
+      "de": "Anhand physischer Muster",
+      "es": "A partir de muestras físicas"
      }
     },
     {
      "label": {
       "en": "Sizes",
-      "zh": "尺寸",
-      "fr": "Dimensions"
+      "fr": "Dimensions",
+      "nl": "Afmetingen",
+      "de": "Abmessungen",
+      "es": "Dimensiones"
      },
      "value": {
       "en": "Cut to size, up to 96″ × 144″",
-      "zh": "按尺寸切割，最大 96″ × 144″",
-      "fr": "Coupe sur mesure, jusqu’à 96″ × 144″"
+      "fr": "Coupe sur mesure, jusqu’à 96″ × 144″",
+      "nl": "Op maat gesneden, tot 96″ × 144″",
+      "de": "Zuschnitt nach Maß, bis 96″ × 144″",
+      "es": "Corte a medida, hasta 96″ × 144″"
      }
     },
     {
      "label": {
       "en": "Regular sizes",
-      "zh": "常规尺寸",
-      "fr": "Formats courants"
+      "fr": "Formats courants",
+      "nl": "Standaardformaten",
+      "de": "Standardformate",
+      "es": "Tamaños estándar"
      },
      "value": {
       "en": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
-      "zh": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
-      "fr": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″"
+      "fr": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "nl": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "de": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "es": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″"
      }
     }
    ],
    "uses": [
     {
      "en": "Feature walls and ceilings",
-     "zh": "特色墙面和天花",
-     "fr": "Murs d'accent et plafonds"
+     "fr": "Murs d'accent et plafonds",
+     "nl": "Accentwanden en plafonds",
+     "de": "Akzentwände und Decken",
+     "es": "Paredes de acento y techos"
     },
     {
      "en": "Bars and restaurants",
-     "zh": "酒吧和餐厅",
-     "fr": "Bars et restaurants"
+     "fr": "Bars et restaurants",
+     "nl": "Bars en restaurants",
+     "de": "Bars und Restaurants",
+     "es": "Bares y restaurantes"
     },
     {
      "en": "Furniture panels",
-     "zh": "家具面板",
-     "fr": "Panneaux de meubles"
+     "fr": "Panneaux de meubles",
+     "nl": "Meubelpanelen",
+     "de": "Möbelpaneele",
+     "es": "Paneles de muebles"
     }
    ],
    "related": [
@@ -390,98 +508,130 @@
    "id": "back-painted",
    "name": {
     "en": "Back-Painted Glass",
-    "zh": "烤漆玻璃",
-    "fr": "Verre laqué (peint au dos)"
+    "fr": "Verre laqué (peint au dos)",
+    "nl": "Gelakt glas",
+    "de": "Rückseitig lackiertes Glas",
+    "es": "Vidrio pintado por la cara posterior"
    },
    "photo": "assets/img/library/back-painted-collection.jpg",
    "gallery": [],
    "short": {
     "en": "Glass painted on the back in any colour, for splashbacks, cladding and signage.",
-    "zh": "背面可喷涂任意颜色的玻璃，用于防溅背板、墙面饰板和标识。",
-    "fr": "Verre peint au dos dans la couleur de votre choix, pour dosserets, revêtements muraux et affichage."
+    "fr": "Verre peint au dos dans la couleur de votre choix, pour dosserets, revêtements muraux et affichage.",
+    "nl": "Glas dat aan de achterzijde in elke gewenste kleur is gelakt, voor spatwanden, wandbekleding en bewegwijzering.",
+    "de": "Rückseitig in jeder gewünschten Farbe lackiertes Glas für Küchenrückwände, Wandverkleidungen und Beschilderung.",
+    "es": "Vidrio pintado por la cara posterior en cualquier color, para salpicaderos, revestimientos y señalización."
    },
    "description": {
     "en": "Back-painted (lacquered) glass has a durable paint layer applied to the back surface, so the front stays smooth and easy to clean. It is used for kitchen splashbacks, wall cladding, writable glass boards and signage.",
-    "zh": "烤漆玻璃（背漆玻璃）在背面涂覆耐久的漆层，正面保持光滑、易于清洁。用于厨房防溅背板、墙面饰板、可书写玻璃白板和标识。",
-    "fr": "Le verre laqué (peint au dos) comporte une couche de peinture durable appliquée sur sa face arrière, de sorte que la face avant demeure lisse et facile à nettoyer. Il est utilisé pour les dosserets de cuisine, les revêtements muraux, les tableaux en verre inscriptibles et l'affichage."
+    "fr": "Le verre laqué (peint au dos) comporte une couche de peinture durable appliquée sur sa face arrière, de sorte que la face avant demeure lisse et facile à nettoyer. Il est utilisé pour les dosserets de cuisine, les revêtements muraux, les tableaux en verre inscriptibles et l'affichage.",
+    "nl": "Gelakt glas heeft een duurzame laklaag op de achterzijde, zodat de voorzijde glad en gemakkelijk schoon te maken blijft. Het wordt gebruikt voor keukenachterwanden, wandbekleding, beschrijfbare glasborden en bewegwijzering.",
+    "de": "Rückseitig lackiertes Glas trägt eine dauerhafte Farbschicht auf der Rückseite, sodass die Vorderseite glatt und leicht zu reinigen bleibt. Es wird für Küchenrückwände, Wandverkleidungen, beschreibbare Glastafeln und Beschilderung verwendet.",
+    "es": "El vidrio pintado por la cara posterior (lacado) lleva una capa de pintura duradera en su cara posterior, de modo que la cara frontal se mantiene lisa y fácil de limpiar. Se utiliza para salpicaderos de cocina, revestimiento de paredes, pizarras de vidrio para escribir y señalización."
    },
    "specs": [
     {
      "label": {
       "en": "Colours",
-      "zh": "颜色",
-      "fr": "Couleurs"
+      "fr": "Couleurs",
+      "nl": "Kleuren",
+      "de": "Farben",
+      "es": "Colores"
      },
      "value": {
       "en": "Standard colours or custom, matched to colour codes",
-      "zh": "标准色或按色号定制",
-      "fr": "Couleurs standards ou sur mesure, selon les codes de couleur"
+      "fr": "Couleurs standards ou sur mesure, selon les codes de couleur",
+      "nl": "Standaardkleuren of op maat, volgens kleurcodes",
+      "de": "Standardfarben oder Sonderfarben nach Farbcode",
+      "es": "Colores estándar o personalizados, según códigos de color"
      }
     },
     {
      "label": {
       "en": "Finish",
-      "zh": "表面",
-      "fr": "Fini"
+      "fr": "Fini",
+      "nl": "Afwerking",
+      "de": "Oberfläche",
+      "es": "Acabado"
      },
      "value": {
       "en": "Glossy or matte",
-      "zh": "亮面或哑光",
-      "fr": "Brillant ou mat"
+      "fr": "Brillant ou mat",
+      "nl": "Hoogglans of mat",
+      "de": "Glänzend oder matt",
+      "es": "Brillante o mate"
      }
     },
     {
      "label": {
       "en": "Glass",
-      "zh": "玻璃",
-      "fr": "Verre"
+      "fr": "Verre",
+      "nl": "Glas",
+      "de": "Glas",
+      "es": "Vidrio"
      },
      "value": {
       "en": "Clear, low iron or other base glass; thickness follows the base glass",
-      "zh": "透明、超白或其他原片；厚度取决于原片",
-      "fr": "Clair, extra-clair ou autre verre de base; épaisseur selon le verre de base"
+      "fr": "Clair, extra-clair ou autre verre de base; épaisseur selon le verre de base",
+      "nl": "Helder, ijzerarm of ander basisglas; dikte volgens het basisglas",
+      "de": "Klar, eisenarm oder anderes Basisglas; Dicke je nach Basisglas",
+      "es": "Claro, bajo en hierro u otro vidrio base; espesor según el vidrio base"
      }
     },
     {
      "label": {
       "en": "Processing",
-      "zh": "加工方式",
-      "fr": "Mise en œuvre"
+      "fr": "Mise en œuvre",
+      "nl": "Verwerking",
+      "de": "Verarbeitung",
+      "es": "Procesamiento"
      },
      "value": {
       "en": "Cutting, edgework, tempering",
-      "zh": "切割、磨边、钢化",
-      "fr": "Coupe, façonnage des bords, trempe"
+      "fr": "Coupe, façonnage des bords, trempe",
+      "nl": "Snijden, randbewerking, harden",
+      "de": "Zuschnitt, Kantenbearbeitung, Vorspannen",
+      "es": "Corte, acabado de bordes, templado"
      }
     },
     {
      "label": {
       "en": "Sizes",
-      "zh": "尺寸",
-      "fr": "Dimensions"
+      "fr": "Dimensions",
+      "nl": "Afmetingen",
+      "de": "Abmessungen",
+      "es": "Dimensiones"
      },
      "value": {
       "en": "Custom sizes",
-      "zh": "尺寸可定制",
-      "fr": "Dimensions sur mesure"
+      "fr": "Dimensions sur mesure",
+      "nl": "Maatwerk",
+      "de": "Sondergrößen",
+      "es": "Tamaños a medida"
      }
     }
    ],
    "uses": [
     {
      "en": "Kitchen splashbacks",
-     "zh": "厨房防溅背板",
-     "fr": "Dosserets de cuisine"
+     "fr": "Dosserets de cuisine",
+     "nl": "Keukenachterwanden",
+     "de": "Küchenrückwände",
+     "es": "Salpicaderos de cocina"
     },
     {
      "en": "Wall cladding",
-     "zh": "墙面饰板",
-     "fr": "Revêtements muraux"
+     "fr": "Revêtements muraux",
+     "nl": "Wandbekleding",
+     "de": "Wandverkleidung",
+     "es": "Revestimiento de paredes"
     },
     {
      "en": "Glass boards and signage",
-     "zh": "玻璃白板和标识",
-     "fr": "Tableaux en verre et affichage"
+     "fr": "Tableaux en verre et affichage",
+     "nl": "Glasborden en bewegwijzering",
+     "de": "Glastafeln und Beschilderung",
+     "es": "Pizarras de vidrio y señalización"
     }
    ],
    "related": [
@@ -494,8 +644,10 @@
    "id": "safety-mirror",
    "name": {
     "en": "Safety-Backed Mirror",
-    "zh": "安全背膜镜",
-    "fr": "Miroir avec endos de sécurité"
+    "fr": "Miroir avec endos de sécurité",
+    "nl": "Spiegel met veiligheidsfolie",
+    "de": "Spiegel mit Sicherheitsfolie",
+    "es": "Espejo con película de seguridad"
    },
    "photo": "assets/img/products/vinyl-cat2.jpg",
    "gallery": [
@@ -503,110 +655,146 @@
      "image": "assets/img/products/vinyl-cat1.jpg",
      "caption": {
       "en": "Vinyl safety backing film",
-      "zh": "乙烯基安全背膜",
-      "fr": "Pellicule de sécurité à endos vinyle"
+      "fr": "Pellicule de sécurité à endos vinyle",
+      "nl": "Veiligheidsfolie van vinyl voor de achterzijde",
+      "de": "Vinyl-Sicherheitsfolie für die Spiegelrückseite",
+      "es": "Película de seguridad de vinilo para el reverso"
      }
     }
    ],
    "short": {
     "en": "Mirror with vinyl safety backing rated Category I or Category II.",
-    "zh": "背面贴有 I 类或 II 类乙烯基安全背膜的镜子。",
-    "fr": "Miroir avec endos de sécurité en vinyle de catégorie I ou de catégorie II."
+    "fr": "Miroir avec endos de sécurité en vinyle de catégorie I ou de catégorie II.",
+    "nl": "Spiegel met veiligheidsfolie van vinyl, geclassificeerd als categorie I of categorie II.",
+    "de": "Spiegel mit Vinyl-Sicherheitsfolie auf der Rückseite, eingestuft in Kategorie I oder Kategorie II.",
+    "es": "Espejo con película de seguridad de vinilo en el reverso, clasificada como categoría I o categoría II."
    },
    "description": {
     "en": "Safety-backed mirror has a vinyl film applied to the back so that, if the glass breaks, the pieces stay bonded to the film. Category I is used for smaller mirrors; Category II for larger mirrors, doors, gyms and studios.",
-    "zh": "安全背膜镜背面贴有乙烯基膜，一旦玻璃破碎，碎片会粘附在膜上。I 类用于较小的镜子；II 类用于较大的镜子、门、健身房和工作室。",
-    "fr": "Le miroir avec endos de sécurité comporte une pellicule de vinyle appliquée au dos afin que, si le verre se brise, les morceaux restent collés à la pellicule. La catégorie I est utilisée pour les miroirs de plus petite taille; la catégorie II, pour les grands miroirs, les portes, les salles d'entraînement et les studios."
+    "fr": "Le miroir avec endos de sécurité comporte une pellicule de vinyle appliquée au dos afin que, si le verre se brise, les morceaux restent collés à la pellicule. La catégorie I est utilisée pour les miroirs de plus petite taille; la catégorie II, pour les grands miroirs, les portes, les salles d'entraînement et les studios.",
+    "nl": "Bij een spiegel met veiligheidsfolie is op de achterzijde een vinylfolie aangebracht, zodat de scherven bij breuk aan de folie blijven kleven. Categorie I wordt gebruikt voor kleinere spiegels, categorie II voor grotere spiegels, deuren, sportscholen en studio's.",
+    "de": "Bei Spiegeln mit Sicherheitsfolie ist auf der Rückseite eine Vinylfolie aufgebracht, sodass die Bruchstücke bei Glasbruch an der Folie haften bleiben. Kategorie I wird für kleinere Spiegel verwendet, Kategorie II für größere Spiegel, Türen, Fitnessstudios und Studios.",
+    "es": "El espejo con película de seguridad lleva una película de vinilo aplicada en el reverso para que, si el vidrio se rompe, los fragmentos queden adheridos a la película. La categoría I se utiliza para espejos más pequeños; la categoría II, para espejos más grandes, puertas, gimnasios y estudios."
    },
    "specs": [
     {
      "label": {
       "en": "Backing",
-      "zh": "基材",
-      "fr": "Support"
+      "fr": "Support",
+      "nl": "Drager",
+      "de": "Träger",
+      "es": "Soporte"
      },
      "value": {
       "en": "Vinyl safety film",
-      "zh": "乙烯基安全膜",
-      "fr": "Pellicule de sécurité en vinyle"
+      "fr": "Pellicule de sécurité en vinyle",
+      "nl": "Veiligheidsfolie van vinyl",
+      "de": "Vinyl-Sicherheitsfolie",
+      "es": "Película de seguridad de vinilo"
      }
     },
     {
      "label": {
       "en": "Ratings",
-      "zh": "等级",
-      "fr": "Cotes"
+      "fr": "Cotes",
+      "nl": "Classificaties",
+      "de": "Klassifizierung",
+      "es": "Clasificaciones"
      },
      "value": {
       "en": "Category I or Category II",
-      "zh": "I 类或 II 类",
-      "fr": "Catégorie I ou catégorie II"
+      "fr": "Catégorie I ou catégorie II",
+      "nl": "Categorie I of categorie II",
+      "de": "Kategorie I oder Kategorie II",
+      "es": "Categoría I o categoría II"
      }
     },
     {
      "label": {
       "en": "Thickness",
-      "zh": "厚度",
-      "fr": "Épaisseur"
+      "fr": "Épaisseur",
+      "nl": "Dikte",
+      "de": "Dicke",
+      "es": "Espesor"
      },
      "value": {
       "en": "2–8 mm",
-      "zh": "2–8 mm",
-      "fr": "2–8 mm"
+      "fr": "2–8 mm",
+      "nl": "2–8 mm",
+      "de": "2–8 mm",
+      "es": "2–8 mm"
      }
     },
     {
      "label": {
       "en": "Typical use",
-      "zh": "典型用途",
-      "fr": "Utilisation courante"
+      "fr": "Utilisation courante",
+      "nl": "Typische toepassing",
+      "de": "Typische Verwendung",
+      "es": "Uso típico"
      },
      "value": {
       "en": "Doors, gyms, studios, large walls",
-      "zh": "门、健身房、工作室、大面积墙面",
-      "fr": "Portes, salles d'entraînement, studios, grands murs"
+      "fr": "Portes, salles d'entraînement, studios, grands murs",
+      "nl": "Deuren, sportscholen, studio's, grote wanden",
+      "de": "Türen, Fitnessstudios, Studios, große Wände",
+      "es": "Puertas, gimnasios, estudios, paredes grandes"
      }
     },
     {
      "label": {
       "en": "Sizes",
-      "zh": "尺寸",
-      "fr": "Dimensions"
+      "fr": "Dimensions",
+      "nl": "Afmetingen",
+      "de": "Abmessungen",
+      "es": "Dimensiones"
      },
      "value": {
       "en": "Cut to size, up to 96″ × 144″",
-      "zh": "按尺寸切割，最大 96″ × 144″",
-      "fr": "Coupe sur mesure, jusqu’à 96″ × 144″"
+      "fr": "Coupe sur mesure, jusqu’à 96″ × 144″",
+      "nl": "Op maat gesneden, tot 96″ × 144″",
+      "de": "Zuschnitt nach Maß, bis 96″ × 144″",
+      "es": "Corte a medida, hasta 96″ × 144″"
      }
     },
     {
      "label": {
       "en": "Regular sizes",
-      "zh": "常规尺寸",
-      "fr": "Formats courants"
+      "fr": "Formats courants",
+      "nl": "Standaardformaten",
+      "de": "Standardformate",
+      "es": "Tamaños estándar"
      },
      "value": {
       "en": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
-      "zh": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
-      "fr": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″"
+      "fr": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "nl": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "de": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "es": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″"
      }
     }
    ],
    "uses": [
     {
      "en": "Mirrored closet and sliding doors",
-     "zh": "镜面衣柜门和推拉门",
-     "fr": "Portes de placard et portes coulissantes à miroir"
+     "fr": "Portes de placard et portes coulissantes à miroir",
+     "nl": "Kast- en schuifdeuren met spiegel",
+     "de": "Verspiegelte Schrank- und Schiebetüren",
+     "es": "Puertas de clóset y correderas con espejo"
     },
     {
      "en": "Gyms, dance and yoga studios",
-     "zh": "健身房、舞蹈室和瑜伽馆",
-     "fr": "Salles d'entraînement, studios de danse et de yoga"
+     "fr": "Salles d'entraînement, studios de danse et de yoga",
+     "nl": "Sportscholen, dans- en yogastudio's",
+     "de": "Fitnessstudios, Tanz- und Yogastudios",
+     "es": "Gimnasios, estudios de danza y yoga"
     },
     {
      "en": "Large wall mirrors",
-     "zh": "大型墙面镜",
-     "fr": "Grands miroirs muraux"
+     "fr": "Grands miroirs muraux",
+     "nl": "Grote wandspiegels",
+     "de": "Große Wandspiegel",
+     "es": "Espejos de pared grandes"
     }
    ],
    "related": [

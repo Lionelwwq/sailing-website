@@ -2,7 +2,7 @@
    Sailing International Trade — site behaviour
    All text, products and photos come from the JSON files in /content
    (edited with the online editor). This script loads them, renders the page
-   in the chosen language (English / 中文 / Français) and runs the product
+   in the chosen language (English / Français / Nederlands / Deutsch / Español) and runs the product
    tabs, quote list and enquiry form.
    ========================================================================== */
 (function () {
@@ -13,8 +13,8 @@
   const PAGE = document.body.dataset.page;
   // arriving from the warehouse tour: the page fades in from white with a gentle zoom on the product photo
   try { if (sessionStorage.getItem('sit-arrive')) { sessionStorage.removeItem('sit-arrive'); document.documentElement.classList.add('arrive'); } } catch (e) { /* ignore */ }
-  const LANGS = ['en', 'zh', 'fr'];
-  const HTML_LANG = { en: 'en', zh: 'zh-Hans', fr: 'fr-CA' };
+  const LANGS = ['en', 'fr', 'nl', 'de', 'es'];
+  const HTML_LANG = { en: 'en', fr: 'fr-CA', nl: 'nl', de: 'de', es: 'es' };
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
@@ -29,19 +29,18 @@
     const saved = store.get('sit-lang', null);
     if (LANGS.includes(saved)) return saved;
     const nav = (navigator.language || 'en').toLowerCase();
-    return nav.startsWith('zh') ? 'zh' : nav.startsWith('fr') ? 'fr' : 'en';
+    return LANGS.find((l) => nav.startsWith(l)) || 'en';
   }
   let lang = initialLang();
-  // a translatable value is either a plain string or { en, zh, fr }
+  // a translatable value is either a plain string or { en, fr, nl, de, es }
   const t = (v) => (v == null ? '' : typeof v === 'string' ? v : (v[lang] || v.en || ''));
 
   // product catalogue edition (English, French or Spanish): a ?edition= link or the visitor's own choice,
-  // otherwise it follows the site language (French site → French catalogue) or a Spanish browser
+  // otherwise it follows the site language when there is an edition in it (French, Spanish), else English
   let catEdition = new URLSearchParams(location.search).get('edition') || store.get('sit-cat-edition', '');
   function editionFor(eds) {
     if (eds[catEdition]) return catEdition;
-    if (lang === 'fr' && eds.fr) return 'fr';
-    if ((navigator.language || '').toLowerCase().startsWith('es') && eds.es) return 'es';
+    if (eds[lang]) return lang;
     return eds.en ? 'en' : Object.keys(eds)[0];
   }
 
@@ -396,7 +395,7 @@
       const K = eds[ed];
       $('#fb-editions').innerHTML = Object.entries(eds).map(([k, e]) => `<button type="button" data-edition="${esc(k)}" lang="${esc(k)}" aria-pressed="${k === ed}">${esc(e.label)}</button>`).join('');
       $$('[data-cat-pdf]').forEach((a) => a.setAttribute('href', K.pdf));
-      const size = lang === 'fr' ? String(K.sizeMB).replace('.', ',') : String(K.sizeMB);
+      const size = lang === 'en' ? String(K.sizeMB) : String(K.sizeMB).replace('.', ',');   // decimal comma
       $('#cat-meta').textContent = t(P.meta).replace('{edition}', K.label).replace('{pages}', K.pages.length).replace('{size}', size);
       const pageName = (n) => t(P.page_label).replace('{n}', n);
       $('#fb-thumbs').innerHTML = K.pages.map((p) => `<button type="button" data-fb-goto="${p.page}" aria-label="${esc(pageName(p.page))}" aria-current="false">

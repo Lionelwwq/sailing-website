@@ -117,7 +117,7 @@
 .chapter .ch-img img { display: block; width: 100%; height: auto; transition: transform .6s var(--ease); }
 .chapter:hover .ch-img img { transform: scale(1.06); }
 .chapter .ch-txt { display: grid; gap: 4px; padding: 14px 16px 16px; border-top: 3px solid var(--brand); }
-.chapter b { font-family: var(--font-head); font-weight: 600; font-size: 15.5px; color: var(--ink); }
+.chapter b { font-family: var(--font-head); font-weight: 600; font-size: 15.5px; color: var(--ink); overflow-wrap: anywhere; hyphens: auto; }   /* long German and Dutch words */
 .chapter small { font-size: 12.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
 
 /* ---------- phones and small screens ---------- */

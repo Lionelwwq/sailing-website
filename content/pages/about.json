@@ -2,343 +2,453 @@
  "hero_image": "assets/img/site/hero-about.jpg",
  "hero_title": {
   "en": "About us",
-  "zh": "关于我们",
-  "fr": "À propos de nous"
+  "fr": "À propos de nous",
+  "nl": "Over ons",
+  "de": "Über uns",
+  "es": "Sobre nosotros"
  },
  "hero_text": {
   "en": "Supplying the glass trade in Toronto since 1993.",
-  "zh": "自 1993 年起服务多伦多玻璃行业。",
-  "fr": "Au service de l'industrie du verre à Toronto depuis 1993."
+  "fr": "Au service de l'industrie du verre à Toronto depuis 1993.",
+  "nl": "Sinds 1993 leverancier van de glasbranche in Toronto.",
+  "de": "Seit 1993 Lieferant der Glasbranche in Toronto.",
+  "es": "Proveedor del sector del vidrio en Toronto desde 1993."
  },
  "story_title": {
   "en": "Our story",
-  "zh": "我们的故事",
-  "fr": "Notre histoire"
+  "fr": "Notre histoire",
+  "nl": "Ons verhaal",
+  "de": "Unsere Geschichte",
+  "es": "Nuestra historia"
  },
  "story_text": {
   "en": "Sailing International Trade has supplied the glass trade since 1993. Today we supply all types of glass and mirrors for residential, commercial and automotive work, install windshields, storefronts, windows and doors, and source the accessories and equipment that fabricators and installers rely on.",
-  "zh": "Sailing International Trade 自 1993 年起为玻璃行业供货。如今，我们为住宅、商业和汽车领域供应各类玻璃和镜子，承接挡风玻璃、店面和门窗的安装，并为玻璃加工商和安装商采购他们所依赖的配件和设备。",
-  "fr": "Sailing International Trade approvisionne l'industrie du verre depuis 1993. Aujourd'hui, nous fournissons tous les types de verre et de miroirs pour les travaux résidentiels, commerciaux et automobiles, nous installons des pare-brise, des devantures, des fenêtres et des portes, et nous trouvons les accessoires et l'équipement sur lesquels comptent les transformateurs et les installateurs."
+  "fr": "Sailing International Trade approvisionne l'industrie du verre depuis 1993. Aujourd'hui, nous fournissons tous les types de verre et de miroirs pour les travaux résidentiels, commerciaux et automobiles, nous installons des pare-brise, des devantures, des fenêtres et des portes, et nous trouvons les accessoires et l'équipement sur lesquels comptent les transformateurs et les installateurs.",
+  "nl": "Sailing International Trade levert sinds 1993 aan de glasbranche. Tegenwoordig leveren wij alle soorten glas en spiegels voor woningbouw, utiliteitsbouw en de autobranche, plaatsen wij voorruiten, winkelpuien, ramen en deuren, en betrekken wij de accessoires en apparatuur waarop glasverwerkers en monteurs vertrouwen.",
+  "de": "Sailing International Trade beliefert die Glasbranche seit 1993. Heute liefern wir alle Arten von Glas und Spiegeln für Wohnbau, Gewerbe und Automobil, montieren Windschutzscheiben, Schaufensteranlagen, Fenster und Türen und beschaffen das Zubehör und die Ausrüstung, auf die Glasverarbeiter und Monteure angewiesen sind.",
+  "es": "Sailing International Trade abastece al sector del vidrio desde 1993. Hoy suministramos todo tipo de vidrios y espejos para obras residenciales, comerciales y automotrices, instalamos parabrisas, escaparates, ventanas y puertas, y conseguimos los accesorios y equipos en los que confían los transformadores e instaladores."
  },
  "story_text2": {
   "en": "We work with partners, global customers and end users with a focus on pragmatism, innovation, openness and cooperation, so every project gets the right product at a competitive price.",
-  "zh": "我们秉持务实、创新、开放、合作的理念，与合作伙伴、全球客户和终端用户携手，让每个项目都能以有竞争力的价格获得合适的产品。",
-  "fr": "Nous collaborons avec nos partenaires, nos clients internationaux et les utilisateurs finaux en misant sur le pragmatisme, l'innovation, l'ouverture et la coopération, afin que chaque projet obtienne le bon produit à un prix concurrentiel."
+  "fr": "Nous collaborons avec nos partenaires, nos clients internationaux et les utilisateurs finaux en misant sur le pragmatisme, l'innovation, l'ouverture et la coopération, afin que chaque projet obtienne le bon produit à un prix concurrentiel.",
+  "nl": "Wij werken samen met partners, klanten wereldwijd en eindgebruikers, met de nadruk op pragmatisme, innovatie, openheid en samenwerking, zodat elk project het juiste product krijgt tegen een concurrerende prijs.",
+  "de": "Wir arbeiten mit Partnern, Kunden weltweit und Endanwendern zusammen und setzen dabei auf Pragmatismus, Innovation, Offenheit und Kooperation, damit jedes Projekt das richtige Produkt zu einem wettbewerbsfähigen Preis erhält.",
+  "es": "Trabajamos con socios, clientes de todo el mundo y usuarios finales con un enfoque basado en el pragmatismo, la innovación, la apertura y la cooperación, para que cada proyecto obtenga el producto adecuado a un precio competitivo."
  },
  "story_image": "assets/img/ai/bathroom-shower.jpg",
  "values_title": {
   "en": "Our values",
-  "zh": "我们的价值观",
-  "fr": "Nos valeurs"
+  "fr": "Nos valeurs",
+  "nl": "Onze waarden",
+  "de": "Unsere Werte",
+  "es": "Nuestros valores"
  },
  "values_motto": {
   "en": "“Built on quality. Driven by partnership.”",
-  "zh": "“以品质立身，以合作致远。”",
-  "fr": "« Fondés sur la qualité. Portés par le partenariat. »"
+  "fr": "« Fondés sur la qualité. Portés par le partenariat. »",
+  "nl": "“Gebouwd op kwaliteit. Gedreven door partnerschap.”",
+  "de": "„Auf Qualität gebaut. Von Partnerschaft getragen.“",
+  "es": "«Basados en la calidad. Impulsados por las alianzas.»"
  },
  "values": [
   {
    "title": {
     "en": "Reliability",
-    "zh": "可靠",
-    "fr": "Fiabilité"
+    "fr": "Fiabilité",
+    "nl": "Betrouwbaarheid",
+    "de": "Zuverlässigkeit",
+    "es": "Fiabilidad"
    },
    "text": {
     "en": "Delivering dependable products and practical solutions our customers can count on.",
-    "zh": "提供值得信赖的产品和切实可行的解决方案，让客户放心依靠。",
-    "fr": "Des produits fiables et des solutions pratiques sur lesquels nos clients peuvent compter."
+    "fr": "Des produits fiables et des solutions pratiques sur lesquels nos clients peuvent compter.",
+    "nl": "Betrouwbare producten en praktische oplossingen waarop onze klanten kunnen rekenen.",
+    "de": "Zuverlässige Produkte und praktische Lösungen, auf die sich unsere Kunden verlassen können.",
+    "es": "Productos fiables y soluciones prácticas con los que nuestros clientes pueden contar."
    }
   },
   {
    "title": {
     "en": "Innovation",
-    "zh": "创新",
-    "fr": "Innovation"
+    "fr": "Innovation",
+    "nl": "Innovatie",
+    "de": "Innovation",
+    "es": "Innovación"
    },
    "text": {
     "en": "Exploring new possibilities and improving our solutions to meet changing customer needs.",
-    "zh": "不断探索新的可能，持续改进方案，满足客户不断变化的需求。",
-    "fr": "Explorer de nouvelles possibilités et améliorer nos solutions pour répondre à l'évolution des besoins de nos clients."
+    "fr": "Explorer de nouvelles possibilités et améliorer nos solutions pour répondre à l'évolution des besoins de nos clients.",
+    "nl": "Nieuwe mogelijkheden verkennen en onze oplossingen verbeteren om in te spelen op de veranderende behoeften van klanten.",
+    "de": "Neue Möglichkeiten erkunden und unsere Lösungen verbessern, um den sich wandelnden Anforderungen unserer Kunden gerecht zu werden.",
+    "es": "Explorar nuevas posibilidades y mejorar nuestras soluciones para responder a las necesidades cambiantes de nuestros clientes."
    }
   },
   {
    "title": {
     "en": "Transparency",
-    "zh": "透明",
-    "fr": "Transparence"
+    "fr": "Transparence",
+    "nl": "Transparantie",
+    "de": "Transparenz",
+    "es": "Transparencia"
    },
    "text": {
     "en": "Clear communication and honest information throughout every stage of an order.",
-    "zh": "订单的每个环节，都沟通清晰、信息真实。",
-    "fr": "Une communication claire et une information honnête à chaque étape d'une commande."
+    "fr": "Une communication claire et une information honnête à chaque étape d'une commande.",
+    "nl": "Duidelijke communicatie en eerlijke informatie in elke fase van een bestelling.",
+    "de": "Klare Kommunikation und ehrliche Informationen in jeder Phase eines Auftrags.",
+    "es": "Comunicación clara e información honesta en cada etapa de un pedido."
    }
   },
   {
    "title": {
     "en": "Partnership",
-    "zh": "合作",
-    "fr": "Partenariat"
+    "fr": "Partenariat",
+    "nl": "Partnerschap",
+    "de": "Partnerschaft",
+    "es": "Alianza"
    },
    "text": {
     "en": "Building long-term relationships through trust, collaboration, and mutual success.",
-    "zh": "以信任、协作与共赢，建立长期合作关系。",
-    "fr": "Des relations à long terme fondées sur la confiance, la collaboration et la réussite mutuelle."
+    "fr": "Des relations à long terme fondées sur la confiance, la collaboration et la réussite mutuelle.",
+    "nl": "Langdurige relaties opbouwen op basis van vertrouwen, samenwerking en wederzijds succes.",
+    "de": "Langfristige Beziehungen aufbauen – durch Vertrauen, Zusammenarbeit und gemeinsamen Erfolg.",
+    "es": "Construir relaciones a largo plazo basadas en la confianza, la colaboración y el éxito mutuo."
    }
   }
  ],
  "services_title": {
   "en": "What we do",
-  "zh": "业务范围",
-  "fr": "Ce que nous faisons"
+  "fr": "Ce que nous faisons",
+  "nl": "Wat wij doen",
+  "de": "Unsere Leistungen",
+  "es": "Lo que hacemos"
  },
  "services": [
   {
    "title": {
     "en": "Product",
-    "zh": "产品",
-    "fr": "Produits"
+    "fr": "Produits",
+    "nl": "Producten",
+    "de": "Produkte",
+    "es": "Productos"
    },
    "text": {
     "en": "All types of glass and mirrors, and the accessories to work with them, from trusted manufacturers.",
-    "zh": "各类玻璃和镜子及配套配件，均来自可靠的制造商。",
-    "fr": "Tous les types de verre et de miroirs, et les accessoires pour les travailler, de fabricants reconnus."
+    "fr": "Tous les types de verre et de miroirs, et les accessoires pour les travailler, de fabricants reconnus.",
+    "nl": "Alle soorten glas en spiegels, plus de accessoires om ermee te werken, van betrouwbare fabrikanten.",
+    "de": "Alle Arten von Glas und Spiegeln sowie das passende Zubehör für die Verarbeitung, von bewährten Herstellern.",
+    "es": "Todo tipo de vidrios y espejos, y los accesorios para trabajarlos, de fabricantes de confianza."
    }
   },
   {
    "title": {
     "en": "Manufacturing",
-    "zh": "生产加工",
-    "fr": "Fabrication"
+    "fr": "Fabrication",
+    "nl": "Productie",
+    "de": "Fertigung",
+    "es": "Fabricación"
    },
    "text": {
     "en": "Glass and mirrors cut, edged, drilled and processed to your specifications.",
-    "zh": "按您的规格对玻璃和镜子进行切割、磨边、钻孔和加工。",
-    "fr": "Verre et miroirs coupés, façonnés, percés et transformés selon vos spécifications."
+    "fr": "Verre et miroirs coupés, façonnés, percés et transformés selon vos spécifications.",
+    "nl": "Glas en spiegels gesneden, randbewerkt, geboord en verwerkt volgens uw specificaties.",
+    "de": "Glas und Spiegel nach Ihren Vorgaben zugeschnitten, kantenbearbeitet, gebohrt und veredelt.",
+    "es": "Vidrios y espejos cortados, con acabado de bordes, perforados y procesados según sus especificaciones."
    }
   },
   {
    "title": {
     "en": "Custom solutions",
-    "zh": "定制方案",
-    "fr": "Solutions sur mesure"
+    "fr": "Solutions sur mesure",
+    "nl": "Maatwerkoplossingen",
+    "de": "Individuelle Lösungen",
+    "es": "Soluciones a medida"
    },
    "text": {
     "en": "Shower enclosures, storefronts, windows and doors made to measure and installed by our team.",
-    "zh": "淋浴房、店面、门窗按尺寸定制，并由我们的团队安装。",
-    "fr": "Cabines de douche, devantures, fenêtres et portes sur mesure, installées par notre équipe."
+    "fr": "Cabines de douche, devantures, fenêtres et portes sur mesure, installées par notre équipe.",
+    "nl": "Douchecabines, winkelpuien, ramen en deuren, op maat gemaakt en geplaatst door ons team.",
+    "de": "Duschabtrennungen, Schaufensteranlagen, Fenster und Türen – nach Maß gefertigt und von unserem Team montiert.",
+    "es": "Mamparas de ducha, escaparates, ventanas y puertas hechos a medida e instalados por nuestro equipo."
    }
   },
   {
    "title": {
     "en": "Quality control",
-    "zh": "质量控制",
-    "fr": "Contrôle de la qualité"
+    "fr": "Contrôle de la qualité",
+    "nl": "Kwaliteitscontrole",
+    "de": "Qualitätskontrolle",
+    "es": "Control de calidad"
    },
    "text": {
     "en": "Every order is checked before it leaves our warehouse, and our products and installations are backed by a warranty.",
-    "zh": "每张订单出仓前都经过检查，产品和安装均提供质保。",
-    "fr": "Chaque commande est vérifiée avant de quitter notre entrepôt, et nos produits et installations sont couverts par une garantie."
+    "fr": "Chaque commande est vérifiée avant de quitter notre entrepôt, et nos produits et installations sont couverts par une garantie.",
+    "nl": "Elke bestelling wordt gecontroleerd voordat ze ons magazijn verlaat, en op onze producten en installaties zit garantie.",
+    "de": "Jeder Auftrag wird geprüft, bevor er unser Lager verlässt, und auf unsere Produkte und Montagen gewähren wir Garantie.",
+    "es": "Cada pedido se revisa antes de salir de nuestro almacén, y nuestros productos e instalaciones están respaldados por una garantía."
    }
   },
   {
    "title": {
     "en": "International supply",
-    "zh": "国际供应",
-    "fr": "Approvisionnement international"
+    "fr": "Approvisionnement international",
+    "nl": "Internationale inkoop",
+    "de": "Internationale Beschaffung",
+    "es": "Suministro internacional"
    },
    "text": {
     "en": "Glass, mirrors and accessories from manufacturers abroad, so you can source everything from one supplier.",
-    "zh": "从海外制造商引进玻璃、镜子及配件，一家供应商即可采购齐全。",
-    "fr": "Verre, miroirs et accessoires de fabricants étrangers, pour tout trouver auprès d'un seul fournisseur."
+    "fr": "Verre, miroirs et accessoires de fabricants étrangers, pour tout trouver auprès d'un seul fournisseur.",
+    "nl": "Glas, spiegels en accessoires van buitenlandse fabrikanten, zodat u alles bij één leverancier kunt betrekken.",
+    "de": "Glas, Spiegel und Zubehör von Herstellern im Ausland, damit Sie alles aus einer Hand beziehen können.",
+    "es": "Vidrios, espejos y accesorios de fabricantes extranjeros, para que pueda conseguirlo todo con un solo proveedor."
    }
   },
   {
    "title": {
     "en": "Customer support",
-    "zh": "客户服务",
-    "fr": "Service à la clientèle"
+    "fr": "Service à la clientèle",
+    "nl": "Klantenservice",
+    "de": "Kundenservice",
+    "es": "Atención al cliente"
    },
    "text": {
     "en": "Help choosing the right product, quick quotes, and support from order to installation.",
-    "zh": "协助您选择合适的产品，快速报价，从下单到安装全程支持。",
-    "fr": "Conseils pour choisir le bon produit, soumissions rapides et accompagnement de la commande à l'installation."
+    "fr": "Conseils pour choisir le bon produit, soumissions rapides et accompagnement de la commande à l'installation.",
+    "nl": "Hulp bij het kiezen van het juiste product, snelle offertes en ondersteuning van bestelling tot installatie.",
+    "de": "Hilfe bei der Produktauswahl, schnelle Angebote und Unterstützung von der Bestellung bis zur Montage.",
+    "es": "Ayuda para elegir el producto adecuado, cotizaciones rápidas y asistencia desde el pedido hasta la instalación."
    }
   }
  ],
  "market_eyebrow": {
   "en": "Global network",
-  "zh": "全球网络",
-  "fr": "Réseau mondial"
+  "fr": "Réseau mondial",
+  "nl": "Wereldwijd netwerk",
+  "de": "Globales Netzwerk",
+  "es": "Red global"
  },
  "market_title": {
   "en": "Market presence",
-  "zh": "全球市场布局",
-  "fr": "Présence sur les marchés"
+  "fr": "Présence sur les marchés",
+  "nl": "Marktaanwezigheid",
+  "de": "Marktpräsenz",
+  "es": "Presencia en el mercado"
  },
  "market_text": {
   "en": "We work with manufacturing partners in Asia and supply customers in Canada, the United States, Europe, Africa, South America and Australia.",
-  "zh": "我们与亚洲的制造伙伴合作，为加拿大、美国、欧洲、非洲、南美洲和澳大利亚的客户供货。",
-  "fr": "Nous travaillons avec des fabricants partenaires en Asie et approvisionnons des clients au Canada, aux États-Unis, en Europe, en Afrique, en Amérique du Sud et en Australie."
+  "fr": "Nous travaillons avec des fabricants partenaires en Asie et approvisionnons des clients au Canada, aux États-Unis, en Europe, en Afrique, en Amérique du Sud et en Australie.",
+  "nl": "Wij werken samen met productiepartners in Azië en leveren aan klanten in Canada, de Verenigde Staten, Europa, Afrika, Zuid-Amerika en Australië.",
+  "de": "Wir arbeiten mit Fertigungspartnern in Asien zusammen und beliefern Kunden in Kanada, den USA, Europa, Afrika, Südamerika und Australien.",
+  "es": "Trabajamos con socios fabricantes en Asia y abastecemos a clientes en Canadá, Estados Unidos, Europa, África, Sudamérica y Australia."
  },
  "market_stats": [
   {
    "value": "20",
    "label": {
     "en": "Manufacturing partners",
-    "zh": "合作制造商",
-    "fr": "Fabricants partenaires"
+    "fr": "Fabricants partenaires",
+    "nl": "Productiepartners",
+    "de": "Fertigungspartner",
+    "es": "Socios fabricantes"
    }
   },
   {
    "value": "20",
    "label": {
     "en": "Intelligent factories",
-    "zh": "智能工厂",
-    "fr": "Usines intelligentes"
+    "fr": "Usines intelligentes",
+    "nl": "Slimme fabrieken",
+    "de": "Intelligente Fabriken",
+    "es": "Fábricas inteligentes"
    }
   }
  ],
  "market_hint": {
   "en": "Drag to turn the globe. Choose a market to fly there.",
-  "zh": "拖动可旋转地球，点击市场可飞到该地区。",
-  "fr": "Faites glisser pour tourner le globe. Choisissez un marché pour vous y rendre."
+  "fr": "Faites glisser pour tourner le globe. Choisissez un marché pour vous y rendre.",
+  "nl": "Sleep om de wereldbol te draaien. Kies een markt om ernaartoe te vliegen.",
+  "de": "Ziehen Sie, um den Globus zu drehen. Wählen Sie einen Markt, um dorthin zu fliegen.",
+  "es": "Arrastre para girar el globo. Elija un mercado para volar hasta él."
  },
  "markets": [
   {
    "id": "asia",
    "name": {
     "en": "Asia",
-    "zh": "亚洲",
-    "fr": "Asie"
+    "fr": "Asie",
+    "nl": "Azië",
+    "de": "Asien",
+    "es": "Asia"
    },
    "note": {
     "en": "Manufacturing partners",
-    "zh": "制造伙伴",
-    "fr": "Fabricants partenaires"
+    "fr": "Fabricants partenaires",
+    "nl": "Productiepartners",
+    "de": "Fertigungspartner",
+    "es": "Socios fabricantes"
    }
   },
   {
    "id": "canada",
    "name": {
     "en": "Canada",
-    "zh": "加拿大",
-    "fr": "Canada"
+    "fr": "Canada",
+    "nl": "Canada",
+    "de": "Kanada",
+    "es": "Canadá"
    },
    "note": {
     "en": "Head office, Toronto",
-    "zh": "多伦多总部",
-    "fr": "Siège social, Toronto"
+    "fr": "Siège social, Toronto",
+    "nl": "Hoofdkantoor, Toronto",
+    "de": "Hauptsitz, Toronto",
+    "es": "Sede central, Toronto"
    }
   },
   {
    "id": "usa",
    "name": {
     "en": "United States",
-    "zh": "美国",
-    "fr": "États-Unis"
+    "fr": "États-Unis",
+    "nl": "Verenigde Staten",
+    "de": "Vereinigte Staaten",
+    "es": "Estados Unidos"
    },
    "note": {
     "en": "",
-    "zh": "",
-    "fr": ""
+    "fr": "",
+    "nl": "",
+    "de": "",
+    "es": ""
    }
   },
   {
    "id": "europe",
    "name": {
     "en": "Europe",
-    "zh": "欧洲",
-    "fr": "Europe"
+    "fr": "Europe",
+    "nl": "Europa",
+    "de": "Europa",
+    "es": "Europa"
    },
    "note": {
     "en": "",
-    "zh": "",
-    "fr": ""
+    "fr": "",
+    "nl": "",
+    "de": "",
+    "es": ""
    }
   },
   {
    "id": "africa",
    "name": {
     "en": "Africa",
-    "zh": "非洲",
-    "fr": "Afrique"
+    "fr": "Afrique",
+    "nl": "Afrika",
+    "de": "Afrika",
+    "es": "África"
    },
    "note": {
     "en": "",
-    "zh": "",
-    "fr": ""
+    "fr": "",
+    "nl": "",
+    "de": "",
+    "es": ""
    }
   },
   {
    "id": "south-america",
    "name": {
     "en": "South America",
-    "zh": "南美洲",
-    "fr": "Amérique du Sud"
+    "fr": "Amérique du Sud",
+    "nl": "Zuid-Amerika",
+    "de": "Südamerika",
+    "es": "Sudamérica"
    },
    "note": {
     "en": "",
-    "zh": "",
-    "fr": ""
+    "fr": "",
+    "nl": "",
+    "de": "",
+    "es": ""
    }
   },
   {
    "id": "australia",
    "name": {
     "en": "Australia",
-    "zh": "澳大利亚",
-    "fr": "Australie"
+    "fr": "Australie",
+    "nl": "Australië",
+    "de": "Australien",
+    "es": "Australia"
    },
    "note": {
     "en": "",
-    "zh": "",
-    "fr": ""
+    "fr": "",
+    "nl": "",
+    "de": "",
+    "es": ""
    }
   }
  ],
  "serve_title": {
   "en": "Who we serve",
-  "zh": "服务对象",
-  "fr": "Notre clientèle"
+  "fr": "Notre clientèle",
+  "nl": "Voor wie wij werken",
+  "de": "Unsere Kunden",
+  "es": "Nuestros clientes"
  },
  "serve": [
   {
    "title": {
     "en": "Residential",
-    "zh": "住宅",
-    "fr": "Résidentiel"
+    "fr": "Résidentiel",
+    "nl": "Particulier",
+    "de": "Privatkunden",
+    "es": "Residencial"
    },
    "image": "assets/img/ai/residential-home.jpg",
    "text": {
     "en": "Homeowners and renovators.",
-    "zh": "房主和装修商。",
-    "fr": "Propriétaires et rénovateurs."
+    "fr": "Propriétaires et rénovateurs.",
+    "nl": "Huiseigenaren en verbouwers.",
+    "de": "Eigenheimbesitzer und Renovierer.",
+    "es": "Propietarios de viviendas y profesionales de la renovación."
    }
   },
   {
    "title": {
     "en": "Commercial",
-    "zh": "商业",
-    "fr": "Commercial"
+    "fr": "Commercial",
+    "nl": "Zakelijk",
+    "de": "Gewerbe",
+    "es": "Comercial"
    },
    "image": "assets/img/library/curved-facade.jpg",
    "text": {
     "en": "Builders, architects, developers and businesses.",
-    "zh": "建筑商、建筑师、开发商和企业。",
-    "fr": "Constructeurs, architectes, promoteurs et entreprises."
+    "fr": "Constructeurs, architectes, promoteurs et entreprises.",
+    "nl": "Aannemers, architecten, projectontwikkelaars en bedrijven.",
+    "de": "Bauunternehmer, Architekten, Projektentwickler und Gewerbebetriebe.",
+    "es": "Constructores, arquitectos, promotores inmobiliarios y empresas."
    }
   },
   {
    "title": {
     "en": "Trade & automotive",
-    "zh": "同行与汽车",
-    "fr": "Professionnels et automobile"
+    "fr": "Professionnels et automobile",
+    "nl": "Vakbedrijven en automotive",
+    "de": "Fachbetriebe & Automobil",
+    "es": "Profesionales y sector automotriz"
    },
    "image": "assets/img/ai/waterjet-cutting.jpg",
    "text": {
     "en": "Fabricators, glaziers, installers and auto glass.",
-    "zh": "玻璃加工商、玻璃装配商、安装商和汽车玻璃行业。",
-    "fr": "Transformateurs, vitriers, installateurs et vitrage automobile."
+    "fr": "Transformateurs, vitriers, installateurs et vitrage automobile.",
+    "nl": "Glasverwerkers, glaszetters, monteurs en autoglas.",
+    "de": "Glasverarbeiter, Glaser, Monteure und Autoglas.",
+    "es": "Transformadores, vidrieros, instaladores y vidrio automotriz."
    }
   }
  ]

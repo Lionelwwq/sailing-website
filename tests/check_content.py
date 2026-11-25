@@ -2,7 +2,7 @@
 
     python tests/check_content.py
 
-Checks every file in content/ for: valid JSON, complete English / Chinese / French
+Checks every file in content/ for: valid JSON, complete English / French / Dutch / German / Spanish
 text, unique product ids, links between products that point to real products,
 image files that exist, valid accessory categories, and that the Pages CMS
 editor (.pages.yml) has a field for everything in the content files.
@@ -15,7 +15,7 @@ import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 CONTENT = ROOT / 'content'
-LANGS = ('en', 'zh', 'fr')
+LANGS = ('en', 'fr', 'nl', 'de', 'es')
 problems = []
 warnings = []
 
@@ -47,18 +47,21 @@ def walk(node, path, fn):
 files = sorted(p.relative_to(CONTENT).as_posix() for p in CONTENT.rglob('*.json'))
 data = {f: load(f) for f in files}
 
-# 1. every translatable text has all three languages
+# 1. every translatable text has all five languages
 for f, d in data.items():
     if d is None:
         continue
 
     def check_text(n, path, f=f):
+        if all(isinstance(n[lang], str) and not n[lang].strip() for lang in LANGS):
+            return   # an optional text left empty in every language (e.g. a market without a note)
         for lang in LANGS:
             if not isinstance(n[lang], str) or not n[lang].strip():
                 fail(f'{f}{path}: missing {lang} text')
-        # Chinese text should contain Chinese characters unless it is a code/number
-        if n['zh'] == n['en'] and re.search(r'[A-Za-z]{4,}', n['en']) and not re.search(r'\d', n['en']):
-            warnings.append(f'{f}{path}: Chinese is the same as English ("{n["en"][:40]}")')
+        # a translation identical to the English is usually a forgotten one (codes and numbers aside)
+        for lang in ('nl', 'de', 'es'):
+            if n[lang] == n['en'] and re.search(r'[A-Za-z]{4,} [A-Za-z]{4,}', n['en']) and not re.search(r'\d', n['en']):
+                warnings.append(f'{f}{path}: {lang} is the same as English ("{n["en"][:40]}")')
     walk(d, '', check_text)
 
 # 2. products: unique ids, real related ids, real images, valid categories

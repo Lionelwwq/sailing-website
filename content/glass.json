@@ -4,8 +4,10 @@
    "id": "clear-float",
    "name": {
     "en": "Clear Float Glass",
-    "zh": "透明浮法玻璃",
-    "fr": "Verre flotté clair"
+    "fr": "Verre flotté clair",
+    "nl": "Helder floatglas",
+    "de": "Klares Floatglas",
+    "es": "Vidrio flotado claro"
    },
    "photo": "assets/img/library/clear-float-studio.jpg",
    "gallery": [
@@ -13,106 +15,140 @@
      "image": "assets/img/library/clear-float-edge.jpg",
      "caption": {
       "en": "Edge detail: the natural green tint of clear float glass",
-      "zh": "边部细节：普通浮法玻璃的边缘略带绿色",
-      "fr": "Détail du chant : la teinte verte naturelle du verre clair"
+      "fr": "Détail du chant : la teinte verte naturelle du verre clair",
+      "nl": "Detail van de glaskant: de natuurlijke groene tint van helder floatglas",
+      "de": "Kantendetail: der natürliche Grünstich von klarem Floatglas",
+      "es": "Detalle del canto: el tono verde natural del vidrio flotado claro"
      }
     },
     {
      "image": "assets/img/library/clear-vs-low-iron.jpg",
      "caption": {
       "en": "Clear float glass (left) next to low-iron glass (right)",
-      "zh": "透明浮法玻璃（左）与超白玻璃（右）对比",
-      "fr": "Verre clair (à gauche) et verre extra-clair (à droite)"
+      "fr": "Verre clair (à gauche) et verre extra-clair (à droite)",
+      "nl": "Helder floatglas (links) naast ijzerarm glas (rechts)",
+      "de": "Klares Floatglas (links) neben eisenarmem Glas (rechts)",
+      "es": "Vidrio flotado claro (izquierda) junto a vidrio bajo en hierro (derecha)"
      }
     }
    ],
    "short": {
     "en": "Standard flat glass, and the starting point for cutting, tempering, laminating and IG units.",
-    "zh": "标准平板玻璃，是切割、钢化、夹胶和中空玻璃加工的基础原片。",
-    "fr": "Verre plat standard, point de départ pour la coupe, la trempe, le feuilletage et les unités scellées."
+    "fr": "Verre plat standard, point de départ pour la coupe, la trempe, le feuilletage et les unités scellées.",
+    "nl": "Standaard vlakglas en het uitgangsmateriaal voor snijden, harden, lamineren en isolatieglas.",
+    "de": "Standard-Flachglas und Ausgangsmaterial zum Schneiden, Vorspannen, Laminieren und für Isolierglaseinheiten.",
+    "es": "Vidrio plano estándar y punto de partida para el corte, el templado, el laminado y las unidades de vidrio aislante."
    },
    "description": {
     "en": "Clear float glass is the base material for most glazing. It is cut to size and can be further processed into tempered, laminated or insulated glass, or used as-is for windows, picture frames, shelving and furniture.",
-    "zh": "透明浮法玻璃是大多数玻璃应用的基础材料。可按尺寸切割，并进一步加工成钢化、夹胶或中空玻璃，也可直接用于窗户、相框、层板和家具。",
-    "fr": "Le verre flotté clair est le matériau de base de la plupart des vitrages. Il est coupé à dimension et peut être transformé en verre trempé, feuilleté ou isolant, ou utilisé tel quel pour les fenêtres, les cadres, les tablettes et les meubles."
+    "fr": "Le verre flotté clair est le matériau de base de la plupart des vitrages. Il est coupé à dimension et peut être transformé en verre trempé, feuilleté ou isolant, ou utilisé tel quel pour les fenêtres, les cadres, les tablettes et les meubles.",
+    "nl": "Helder floatglas is het basismateriaal voor de meeste beglazing. Het wordt op maat gesneden en kan verder worden verwerkt tot gehard glas, gelaagd glas of isolatieglas, of zonder verdere bewerking worden gebruikt voor ramen, fotolijsten, legplanken en meubels.",
+    "de": "Klares Floatglas ist das Ausgangsmaterial für die meisten Verglasungen. Es wird auf Maß geschnitten und kann zu Einscheibensicherheitsglas, Verbundsicherheitsglas oder Isolierglas weiterverarbeitet oder unbearbeitet für Fenster, Bilderrahmen, Regale und Möbel verwendet werden.",
+    "es": "El vidrio flotado claro es el material base de la mayoría de los acristalamientos. Se corta a medida y puede transformarse en vidrio templado, laminado o aislante, o utilizarse tal cual en ventanas, marcos de cuadros, estanterías y muebles."
    },
    "specs": [
     {
      "label": {
       "en": "Type",
-      "zh": "类型",
-      "fr": "Type"
+      "fr": "Type",
+      "nl": "Type",
+      "de": "Typ",
+      "es": "Tipo"
      },
      "value": {
       "en": "Annealed float glass",
-      "zh": "退火浮法玻璃",
-      "fr": "Verre flotté recuit"
+      "fr": "Verre flotté recuit",
+      "nl": "Niet-gehard floatglas",
+      "de": "Nicht vorgespanntes Floatglas",
+      "es": "Vidrio flotado recocido"
      }
     },
     {
      "label": {
       "en": "Thickness",
-      "zh": "厚度",
-      "fr": "Épaisseur"
+      "fr": "Épaisseur",
+      "nl": "Dikte",
+      "de": "Dicke",
+      "es": "Espesor"
      },
      "value": {
       "en": "1.8–25 mm",
-      "zh": "1.8–25 mm",
-      "fr": "1,8–25 mm"
+      "fr": "1,8–25 mm",
+      "nl": "1,8–25 mm",
+      "de": "1,8–25 mm",
+      "es": "1,8–25 mm"
      }
     },
     {
      "label": {
       "en": "Regular sizes",
-      "zh": "常规尺寸",
-      "fr": "Formats courants"
+      "fr": "Formats courants",
+      "nl": "Standaardformaten",
+      "de": "Standardformate",
+      "es": "Tamaños estándar"
      },
      "value": {
       "en": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
-      "zh": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
-      "fr": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″"
+      "fr": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "nl": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "de": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "es": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″"
      }
     },
     {
      "label": {
       "en": "Max. size",
-      "zh": "最大尺寸",
-      "fr": "Format maximal"
+      "fr": "Format maximal",
+      "nl": "Max. formaat",
+      "de": "Max. Format",
+      "es": "Dimensión máxima"
      },
      "value": {
       "en": "192″ × 433″",
-      "zh": "192″ × 433″",
-      "fr": "192″ × 433″"
+      "fr": "192″ × 433″",
+      "nl": "192″ × 433″",
+      "de": "192″ × 433″",
+      "es": "192″ × 433″"
      }
     },
     {
      "label": {
       "en": "Processing",
-      "zh": "加工方式",
-      "fr": "Mise en œuvre"
+      "fr": "Mise en œuvre",
+      "nl": "Verwerking",
+      "de": "Verarbeitung",
+      "es": "Procesamiento"
      },
      "value": {
       "en": "Cutting, edging, drilling, tempering, laminating",
-      "zh": "切割、磨边、钻孔、钢化、夹胶",
-      "fr": "Coupe, façonnage des bords, perçage, trempe, feuilletage"
+      "fr": "Coupe, façonnage des bords, perçage, trempe, feuilletage",
+      "nl": "Snijden, kantafwerking, boren, harden, lamineren",
+      "de": "Schneiden, Kantenbearbeitung, Bohren, Vorspannen, Laminieren",
+      "es": "Corte, acabado de bordes, perforación, templado, laminado"
      }
     }
    ],
    "uses": [
     {
      "en": "Windows and picture frames",
-     "zh": "窗户和相框",
-     "fr": "Fenêtres et cadres"
+     "fr": "Fenêtres et cadres",
+     "nl": "Ramen en fotolijsten",
+     "de": "Fenster und Bilderrahmen",
+     "es": "Ventanas y marcos de cuadros"
     },
     {
      "en": "Shelving and furniture",
-     "zh": "层板和家具",
-     "fr": "Tablettes et meubles"
+     "fr": "Tablettes et meubles",
+     "nl": "Legplanken en meubels",
+     "de": "Regale und Möbel",
+     "es": "Estanterías y muebles"
     },
     {
      "en": "Base glass for tempering and laminating",
-     "zh": "钢化和夹胶用原片",
-     "fr": "Verre de base pour la trempe et le feuilletage"
+     "fr": "Verre de base pour la trempe et le feuilletage",
+     "nl": "Basisglas voor harden en lamineren",
+     "de": "Basisglas zum Vorspannen und Laminieren",
+     "es": "Vidrio base para templado y laminado"
     }
    ],
    "related": [
@@ -125,8 +161,10 @@
    "id": "low-iron",
    "name": {
     "en": "Low Iron Glass",
-    "zh": "超白玻璃",
-    "fr": "Verre extra-clair (à faible teneur en fer)"
+    "fr": "Verre extra-clair (à faible teneur en fer)",
+    "nl": "IJzerarm glas",
+    "de": "Eisenarmes Glas",
+    "es": "Vidrio bajo en hierro"
    },
    "photo": "assets/img/library/low-iron-studio.jpg",
    "gallery": [
@@ -134,118 +172,156 @@
      "image": "assets/img/library/low-iron-edge.jpg",
      "caption": {
       "en": "Edge detail: low-iron glass stays clear right to the edge",
-      "zh": "边部细节：超白玻璃的边缘依然通透",
-      "fr": "Détail du chant : le verre extra-clair reste limpide jusqu’au bord"
+      "fr": "Détail du chant : le verre extra-clair reste limpide jusqu’au bord",
+      "nl": "Detail van de glaskant: ijzerarm glas blijft tot aan de rand helder",
+      "de": "Kantendetail: Eisenarmes Glas bleibt bis zur Kante klar",
+      "es": "Detalle del canto: el vidrio bajo en hierro se mantiene transparente hasta el borde"
      }
     },
     {
      "image": "assets/img/library/clear-vs-low-iron.jpg",
      "caption": {
       "en": "Clear float glass (left) next to low-iron glass (right)",
-      "zh": "透明浮法玻璃（左）与超白玻璃（右）对比",
-      "fr": "Verre clair (à gauche) et verre extra-clair (à droite)"
+      "fr": "Verre clair (à gauche) et verre extra-clair (à droite)",
+      "nl": "Helder floatglas (links) naast ijzerarm glas (rechts)",
+      "de": "Klares Floatglas (links) neben eisenarmem Glas (rechts)",
+      "es": "Vidrio flotado claro (izquierda) junto a vidrio bajo en hierro (derecha)"
      }
     }
    ],
    "short": {
     "en": "Ultra-clear glass with high light transmittance and no green edge tint.",
-    "zh": "超白玻璃，透光率高，边缘不发绿。",
-    "fr": "Verre extra-clair à haute transmission lumineuse, sans teinte verte sur les bords."
+    "fr": "Verre extra-clair à haute transmission lumineuse, sans teinte verte sur les bords.",
+    "nl": "Extra helder glas met een hoge lichttransmissie en zonder groene tint aan de rand.",
+    "de": "Extraklares Glas mit hoher Lichttransmission und ohne grünen Kantenstich.",
+    "es": "Vidrio ultraclaro con alta transmisión de luz y sin tono verde en los bordes."
    },
    "description": {
     "en": "Low iron glass is made with less iron oxide than standard float glass, so it is noticeably clearer and shows true colours. It is the preferred choice wherever clarity matters, from frameless showers to display cases.",
-    "zh": "超白玻璃的氧化铁含量低于普通浮法玻璃，因此明显更加通透，色彩还原真实。从无框淋浴房到展示柜，凡是注重通透度的场合，超白玻璃都是首选。",
-    "fr": "Le verre extra-clair contient moins d'oxyde de fer que le verre flotté standard; il est donc nettement plus clair et rend fidèlement les couleurs. C'est le choix privilégié partout où la clarté compte, des douches sans cadre aux vitrines d'exposition."
+    "fr": "Le verre extra-clair contient moins d'oxyde de fer que le verre flotté standard; il est donc nettement plus clair et rend fidèlement les couleurs. C'est le choix privilégié partout où la clarté compte, des douches sans cadre aux vitrines d'exposition.",
+    "nl": "IJzerarm glas bevat minder ijzeroxide dan standaard floatglas en is daardoor merkbaar helderder en kleurecht. Het is de voorkeurskeuze overal waar helderheid telt, van frameloze douchewanden tot vitrines.",
+    "de": "Eisenarmes Glas enthält weniger Eisenoxid als Standard-Floatglas und ist daher deutlich klarer und farbtreu. Es ist die erste Wahl überall dort, wo Klarheit zählt, von rahmenlosen Duschen bis zu Vitrinen.",
+    "es": "El vidrio bajo en hierro se fabrica con menos óxido de hierro que el vidrio flotado estándar, por lo que es notablemente más claro y reproduce fielmente los colores. Es la opción preferida dondequiera que la claridad importe, desde duchas sin marco hasta vitrinas."
    },
    "specs": [
     {
      "label": {
       "en": "Type",
-      "zh": "类型",
-      "fr": "Type"
+      "fr": "Type",
+      "nl": "Type",
+      "de": "Typ",
+      "es": "Tipo"
      },
      "value": {
       "en": "Low iron (ultra-clear) float glass",
-      "zh": "低铁（超白）浮法玻璃",
-      "fr": "Verre flotté à faible teneur en fer (extra-clair)"
+      "fr": "Verre flotté à faible teneur en fer (extra-clair)",
+      "nl": "IJzerarm (extra helder) floatglas",
+      "de": "Eisenarmes (extraklares) Floatglas",
+      "es": "Vidrio flotado bajo en hierro (ultraclaro)"
      }
     },
     {
      "label": {
       "en": "Thickness",
-      "zh": "厚度",
-      "fr": "Épaisseur"
+      "fr": "Épaisseur",
+      "nl": "Dikte",
+      "de": "Dicke",
+      "es": "Espesor"
      },
      "value": {
       "en": "1.8–22 mm",
-      "zh": "1.8–22 mm",
-      "fr": "1,8–22 mm"
+      "fr": "1,8–22 mm",
+      "nl": "1,8–22 mm",
+      "de": "1,8–22 mm",
+      "es": "1,8–22 mm"
      }
     },
     {
      "label": {
       "en": "Clarity",
-      "zh": "通透度",
-      "fr": "Clarté"
+      "fr": "Clarté",
+      "nl": "Helderheid",
+      "de": "Klarheit",
+      "es": "Claridad"
      },
      "value": {
       "en": "High light transmittance, no green tint",
-      "zh": "透光率高，不发绿",
-      "fr": "Haute transmission lumineuse, sans teinte verte"
+      "fr": "Haute transmission lumineuse, sans teinte verte",
+      "nl": "Hoge lichttransmissie, geen groene tint",
+      "de": "Hohe Lichttransmission, kein Grünstich",
+      "es": "Alta transmisión de luz, sin tono verde"
      }
     },
     {
      "label": {
       "en": "Regular sizes",
-      "zh": "常规尺寸",
-      "fr": "Formats courants"
+      "fr": "Formats courants",
+      "nl": "Standaardformaten",
+      "de": "Standardformate",
+      "es": "Tamaños estándar"
      },
      "value": {
       "en": "84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
-      "zh": "84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
-      "fr": "84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″"
+      "fr": "84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "nl": "84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "de": "84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "es": "84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″"
      }
     },
     {
      "label": {
       "en": "Max. size",
-      "zh": "最大尺寸",
-      "fr": "Format maximal"
+      "fr": "Format maximal",
+      "nl": "Max. formaat",
+      "de": "Max. Format",
+      "es": "Dimensión máxima"
      },
      "value": {
       "en": "192″ × 433″",
-      "zh": "192″ × 433″",
-      "fr": "192″ × 433″"
+      "fr": "192″ × 433″",
+      "nl": "192″ × 433″",
+      "de": "192″ × 433″",
+      "es": "192″ × 433″"
      }
     },
     {
      "label": {
       "en": "Processing",
-      "zh": "加工方式",
-      "fr": "Mise en œuvre"
+      "fr": "Mise en œuvre",
+      "nl": "Verwerking",
+      "de": "Verarbeitung",
+      "es": "Procesamiento"
      },
      "value": {
       "en": "Can be tempered, laminated or coated",
-      "zh": "可钢化、夹胶或镀膜",
-      "fr": "Peut être trempé, feuilleté ou revêtu d'une couche"
+      "fr": "Peut être trempé, feuilleté ou revêtu d'une couche",
+      "nl": "Kan worden gehard, gelaagd of gecoat",
+      "de": "Kann vorgespannt, laminiert oder beschichtet werden",
+      "es": "Puede templarse, laminarse o recubrirse"
      }
     }
    ],
    "uses": [
     {
      "en": "Frameless showers",
-     "zh": "无框淋浴房",
-     "fr": "Douches sans cadre"
+     "fr": "Douches sans cadre",
+     "nl": "Frameloze douchewanden",
+     "de": "Rahmenlose Duschen",
+     "es": "Duchas sin marco"
     },
     {
      "en": "Display cases and shelving",
-     "zh": "展示柜和层板",
-     "fr": "Vitrines d'exposition et tablettes"
+     "fr": "Vitrines d'exposition et tablettes",
+     "nl": "Vitrines en legplanken",
+     "de": "Vitrinen und Regale",
+     "es": "Vitrinas y estanterías"
     },
     {
      "en": "Feature glass and balustrades",
-     "zh": "特色玻璃和栏板",
-     "fr": "Verre décoratif et balustrades"
+     "fr": "Verre décoratif et balustrades",
+     "nl": "Decoratief glas en balustrades",
+     "de": "Designglas und Brüstungen",
+     "es": "Vidrio decorativo y barandillas"
     }
    ],
    "related": [
@@ -258,110 +334,146 @@
    "id": "tinted",
    "name": {
     "en": "Tinted Float Glass",
-    "zh": "着色浮法玻璃",
-    "fr": "Verre flotté teinté"
+    "fr": "Verre flotté teinté",
+    "nl": "Getint floatglas",
+    "de": "Getöntes Floatglas",
+    "es": "Vidrio flotado tintado"
    },
    "photo": "assets/img/library/tinted-collection.jpg",
    "gallery": [],
    "short": {
     "en": "Body-tinted glass in a choice of colours to cut glare and solar heat.",
-    "zh": "本体着色玻璃，多种颜色可选，可减少眩光和太阳热量。",
-    "fr": "Verre teinté dans la masse, offert en plusieurs couleurs, pour réduire l'éblouissement et la chaleur solaire."
+    "fr": "Verre teinté dans la masse, offert en plusieurs couleurs, pour réduire l'éblouissement et la chaleur solaire.",
+    "nl": "In de massa gekleurd glas in diverse kleuren, dat verblinding en zonnewarmte beperkt.",
+    "de": "In der Masse eingefärbtes Glas in verschiedenen Farben, das Blendung und Sonnenwärme reduziert.",
+    "es": "Vidrio tintado en masa, disponible en varios colores, que reduce el deslumbramiento y el calor solar."
    },
    "description": {
     "en": "Tinted float glass has colour added during manufacture, so the tint runs through the whole thickness. It reduces glare and solar heat gain and gives facades, storefronts and interiors a distinctive look.",
-    "zh": "着色浮法玻璃在生产过程中加入着色剂，颜色贯穿整个厚度。它能减少眩光和太阳得热，为建筑外立面、店面和室内空间带来独特的外观。",
-    "fr": "Le verre flotté teinté est coloré lors de sa fabrication, de sorte que la teinte traverse toute son épaisseur. Il réduit l'éblouissement et le gain de chaleur solaire, et confère un aspect distinctif aux façades, aux devantures et aux intérieurs."
+    "fr": "Le verre flotté teinté est coloré lors de sa fabrication, de sorte que la teinte traverse toute son épaisseur. Il réduit l'éblouissement et le gain de chaleur solaire, et confère un aspect distinctif aux façades, aux devantures et aux intérieurs.",
+    "nl": "Bij getint floatglas wordt de kleur tijdens de productie toegevoegd, zodat de tint door de hele dikte loopt. Het vermindert verblinding en zonnewarmtewinst en geeft gevels, winkelpuien en interieurs een kenmerkende uitstraling.",
+    "de": "Bei getöntem Floatglas wird die Farbe bereits bei der Herstellung zugesetzt, sodass die Tönung die gesamte Glasdicke durchzieht. Es reduziert Blendung und solaren Wärmeeintrag und verleiht Fassaden, Schaufenstern und Innenräumen ein unverwechselbares Erscheinungsbild.",
+    "es": "El vidrio flotado tintado incorpora el color durante su fabricación, de modo que el tinte atraviesa todo el espesor. Reduce el deslumbramiento y la ganancia de calor solar, y aporta a fachadas, escaparates e interiores un aspecto distintivo."
    },
    "specs": [
     {
      "label": {
       "en": "Colours",
-      "zh": "颜色",
-      "fr": "Couleurs"
+      "fr": "Couleurs",
+      "nl": "Kleuren",
+      "de": "Farben",
+      "es": "Colores"
      },
      "value": {
       "en": "Euro Grey, Euro Bronze, Super Grey and more",
-      "zh": "欧灰、欧茶、超级灰等",
-      "fr": "Gris européen, bronze européen, super gris et plus"
+      "fr": "Gris européen, bronze européen, super gris et plus",
+      "nl": "Euro grijs, Euro brons, Super grijs en meer",
+      "de": "Euro-Grau, Euro-Bronze, Super-Grau und mehr",
+      "es": "Gris Euro, Bronce Euro, Gris Súper y más"
      }
     },
     {
      "label": {
       "en": "Thickness",
-      "zh": "厚度",
-      "fr": "Épaisseur"
+      "fr": "Épaisseur",
+      "nl": "Dikte",
+      "de": "Dicke",
+      "es": "Espesor"
      },
      "value": {
       "en": "3–12 mm",
-      "zh": "3–12 mm",
-      "fr": "3–12 mm"
+      "fr": "3–12 mm",
+      "nl": "3–12 mm",
+      "de": "3–12 mm",
+      "es": "3–12 mm"
      }
     },
     {
      "label": {
       "en": "Regular sizes",
-      "zh": "常规尺寸",
-      "fr": "Formats courants"
+      "fr": "Formats courants",
+      "nl": "Standaardformaten",
+      "de": "Standardformate",
+      "es": "Tamaños estándar"
      },
      "value": {
       "en": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
-      "zh": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
-      "fr": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″"
+      "fr": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "nl": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "de": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "es": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″"
      }
     },
     {
      "label": {
       "en": "Max. size",
-      "zh": "最大尺寸",
-      "fr": "Format maximal"
+      "fr": "Format maximal",
+      "nl": "Max. formaat",
+      "de": "Max. Format",
+      "es": "Dimensión máxima"
      },
      "value": {
       "en": "96″ × 295″",
-      "zh": "96″ × 295″",
-      "fr": "96″ × 295″"
+      "fr": "96″ × 295″",
+      "nl": "96″ × 295″",
+      "de": "96″ × 295″",
+      "es": "96″ × 295″"
      }
     },
     {
      "label": {
       "en": "Benefits",
-      "zh": "优点",
-      "fr": "Avantages"
+      "fr": "Avantages",
+      "nl": "Voordelen",
+      "de": "Vorteile",
+      "es": "Ventajas"
      },
      "value": {
       "en": "Reduces glare and solar heat gain",
-      "zh": "减少眩光和太阳得热",
-      "fr": "Réduit l'éblouissement et le gain de chaleur solaire"
+      "fr": "Réduit l'éblouissement et le gain de chaleur solaire",
+      "nl": "Vermindert verblinding en zonnewarmtewinst",
+      "de": "Reduziert Blendung und solaren Wärmeeintrag",
+      "es": "Reduce el deslumbramiento y la ganancia de calor solar"
      }
     },
     {
      "label": {
       "en": "Processing",
-      "zh": "加工方式",
-      "fr": "Mise en œuvre"
+      "fr": "Mise en œuvre",
+      "nl": "Verwerking",
+      "de": "Verarbeitung",
+      "es": "Procesamiento"
      },
      "value": {
       "en": "Can be tempered, laminated or used in IG units",
-      "zh": "可钢化、夹胶或用于中空玻璃",
-      "fr": "Peut être trempé, feuilleté ou intégré à des unités scellées"
+      "fr": "Peut être trempé, feuilleté ou intégré à des unités scellées",
+      "nl": "Kan worden gehard, gelaagd of in isolatieglas verwerkt",
+      "de": "Kann vorgespannt, laminiert oder in Isolierglaseinheiten verwendet werden",
+      "es": "Puede templarse, laminarse o utilizarse en unidades de vidrio aislante"
      }
     }
    ],
    "uses": [
     {
      "en": "Facades and storefronts",
-     "zh": "建筑外立面和店面",
-     "fr": "Façades et devantures"
+     "fr": "Façades et devantures",
+     "nl": "Gevels en winkelpuien",
+     "de": "Fassaden und Schaufenster",
+     "es": "Fachadas y escaparates"
     },
     {
      "en": "Automotive glass",
-     "zh": "汽车玻璃",
-     "fr": "Verre automobile"
+     "fr": "Verre automobile",
+     "nl": "Autoglas",
+     "de": "Autoglas",
+     "es": "Vidrio automotriz"
     },
     {
      "en": "Decorative interior glazing",
-     "zh": "室内装饰玻璃",
-     "fr": "Vitrage intérieur décoratif"
+     "fr": "Vitrage intérieur décoratif",
+     "nl": "Decoratieve binnenbeglazing",
+     "de": "Dekorative Innenverglasung",
+     "es": "Acristalamiento interior decorativo"
     }
    ],
    "related": [
@@ -374,122 +486,162 @@
    "id": "tempered",
    "name": {
     "en": "Tempered Glass",
-    "zh": "钢化玻璃",
-    "fr": "Verre trempé"
+    "fr": "Verre trempé",
+    "nl": "Gehard glas",
+    "de": "Einscheibensicherheitsglas (ESG)",
+    "es": "Vidrio templado"
    },
    "photo": "assets/img/ai/tempered-glass.jpg",
    "gallery": [],
    "short": {
     "en": "Heat-treated safety glass, much stronger than ordinary glass. Available 3–19 mm thick.",
-    "zh": "经热处理的安全玻璃，强度远高于普通玻璃。可选厚度 3–19 mm。",
-    "fr": "Verre de sécurité traité thermiquement, beaucoup plus résistant que le verre ordinaire. Offert en épaisseurs de 3–19 mm."
+    "fr": "Verre de sécurité traité thermiquement, beaucoup plus résistant que le verre ordinaire. Offert en épaisseurs de 3–19 mm.",
+    "nl": "Thermisch behandeld veiligheidsglas, veel sterker dan gewoon glas. Leverbaar in diktes van 3–19 mm.",
+    "de": "Thermisch behandeltes Sicherheitsglas, wesentlich fester als normales Glas. Erhältlich in Dicken von 3–19 mm.",
+    "es": "Vidrio de seguridad tratado térmicamente, mucho más resistente que el vidrio común. Disponible en espesores de 3–19 mm."
    },
    "description": {
     "en": "Tempered glass is heated and rapidly cooled to make it several times stronger than annealed glass. If it breaks, it shatters into small, blunt pieces, which makes it the standard safety glass for doors, showers and railings. All cutting and drilling is done before tempering.",
-    "zh": "钢化玻璃经加热后急速冷却，强度可达退火玻璃的数倍。一旦破碎，会碎成细小的钝角颗粒，因此是门、淋浴房和栏杆的标准安全玻璃。所有切割和钻孔均在钢化前完成。",
-    "fr": "Le verre trempé est chauffé puis refroidi rapidement, ce qui le rend plusieurs fois plus résistant que le verre recuit. S'il se brise, il éclate en petits morceaux émoussés, ce qui en fait le verre de sécurité de référence pour les portes, les douches et les garde-corps. Toute la coupe et tout le perçage sont effectués avant la trempe."
+    "fr": "Le verre trempé est chauffé puis refroidi rapidement, ce qui le rend plusieurs fois plus résistant que le verre recuit. S'il se brise, il éclate en petits morceaux émoussés, ce qui en fait le verre de sécurité de référence pour les portes, les douches et les garde-corps. Toute la coupe et tout le perçage sont effectués avant la trempe.",
+    "nl": "Gehard glas wordt verhit en snel afgekoeld, waardoor het meerdere malen sterker wordt dan niet-gehard glas. Bij breuk valt het uiteen in kleine, stompe stukjes, waardoor het het standaard veiligheidsglas is voor deuren, douches en balustrades. Al het snij- en boorwerk gebeurt vóór het harden.",
+    "de": "Einscheibensicherheitsglas wird erhitzt und schnell abgekühlt und ist dadurch um ein Mehrfaches fester als nicht vorgespanntes Glas. Bei Bruch zerfällt es in kleine, stumpfkantige Krümel und ist deshalb das Standard-Sicherheitsglas für Türen, Duschen und Geländer. Alle Schneid- und Bohrarbeiten erfolgen vor dem Vorspannen.",
+    "es": "El vidrio templado se calienta y se enfría rápidamente para hacerlo varias veces más resistente que el vidrio recocido. Si se rompe, se fragmenta en trozos pequeños y sin filo, lo que lo convierte en el vidrio de seguridad estándar para puertas, duchas y barandillas. Todo el corte y la perforación se realizan antes del templado."
    },
    "specs": [
     {
      "label": {
       "en": "Thickness",
-      "zh": "厚度",
-      "fr": "Épaisseur"
+      "fr": "Épaisseur",
+      "nl": "Dikte",
+      "de": "Dicke",
+      "es": "Espesor"
      },
      "value": {
       "en": "3–19 mm",
-      "zh": "3–19 mm",
-      "fr": "3–19 mm"
+      "fr": "3–19 mm",
+      "nl": "3–19 mm",
+      "de": "3–19 mm",
+      "es": "3–19 mm"
      }
     },
     {
      "label": {
       "en": "Sizes",
-      "zh": "尺寸",
-      "fr": "Dimensions"
+      "fr": "Dimensions",
+      "nl": "Afmetingen",
+      "de": "Abmessungen",
+      "es": "Dimensiones"
      },
      "value": {
       "en": "Min. 12″ × 12″\nMax. 144″ × 433″",
-      "zh": "最小 12″ × 12″\n最大 144″ × 433″",
-      "fr": "Min. 12″ × 12″\nMax. 144″ × 433″"
+      "fr": "Min. 12″ × 12″\nMax. 144″ × 433″",
+      "nl": "Min. 12″ × 12″\nMax. 144″ × 433″",
+      "de": "Min. 12″ × 12″\nMax. 144″ × 433″",
+      "es": "Mín. 12″ × 12″\nMáx. 144″ × 433″"
      }
     },
     {
      "label": {
       "en": "Glass",
-      "zh": "玻璃",
-      "fr": "Verre"
+      "fr": "Verre",
+      "nl": "Glas",
+      "de": "Glas",
+      "es": "Vidrio"
      },
      "value": {
       "en": "Clear, low iron, acid etched, tinted and more",
-      "zh": "透明、超白、蒙砂、着色等",
-      "fr": "Clair, extra-clair, dépoli à l’acide, teinté et plus"
+      "fr": "Clair, extra-clair, dépoli à l’acide, teinté et plus",
+      "nl": "Helder, ijzerarm, zuurgeëtst, getint en meer",
+      "de": "Klar, eisenarm, säuremattiert, getönt und mehr",
+      "es": "Claro, bajo en hierro, grabado al ácido, tintado y más"
      }
     },
     {
      "label": {
       "en": "Strength",
-      "zh": "强度",
-      "fr": "Résistance"
+      "fr": "Résistance",
+      "nl": "Sterkte",
+      "de": "Festigkeit",
+      "es": "Resistencia"
      },
      "value": {
       "en": "4–5 times stronger than annealed glass",
-      "zh": "强度为退火玻璃的 4–5 倍",
-      "fr": "4 à 5 fois plus résistant que le verre recuit"
+      "fr": "4 à 5 fois plus résistant que le verre recuit",
+      "nl": "4 à 5 keer sterker dan niet-gehard glas",
+      "de": "4- bis 5-mal fester als nicht vorgespanntes Glas",
+      "es": "De 4 a 5 veces más resistente que el vidrio recocido"
      }
     },
     {
      "label": {
       "en": "Standards",
-      "zh": "标准",
-      "fr": "Normes"
+      "fr": "Normes",
+      "nl": "Normen",
+      "de": "Normen",
+      "es": "Normas"
      },
      "value": {
       "en": "EN 12150, ANSI Z97.1, ASTM C1048, BS EN 14179",
-      "zh": "EN 12150, ANSI Z97.1, ASTM C1048, BS EN 14179",
-      "fr": "EN 12150, ANSI Z97.1, ASTM C1048, BS EN 14179"
+      "fr": "EN 12150, ANSI Z97.1, ASTM C1048, BS EN 14179",
+      "nl": "EN 12150, ANSI Z97.1, ASTM C1048, BS EN 14179",
+      "de": "EN 12150, ANSI Z97.1, ASTM C1048, BS EN 14179",
+      "es": "EN 12150, ANSI Z97.1, ASTM C1048, BS EN 14179"
      }
     },
     {
      "label": {
       "en": "Certification",
-      "zh": "认证",
-      "fr": "Certification"
+      "fr": "Certification",
+      "nl": "Certificering",
+      "de": "Zertifizierung",
+      "es": "Certificación"
      },
      "value": {
       "en": "SGCC",
-      "zh": "SGCC",
-      "fr": "SGCC"
+      "fr": "SGCC",
+      "nl": "SGCC",
+      "de": "SGCC",
+      "es": "SGCC"
      }
     },
     {
      "label": {
       "en": "Processing",
-      "zh": "加工方式",
-      "fr": "Mise en œuvre"
+      "fr": "Mise en œuvre",
+      "nl": "Verwerking",
+      "de": "Verarbeitung",
+      "es": "Procesamiento"
      },
      "value": {
       "en": "Cut, edged and drilled before tempering",
-      "zh": "钢化前完成切割、磨边和钻孔",
-      "fr": "Coupé, façonné et percé avant la trempe"
+      "fr": "Coupé, façonné et percé avant la trempe",
+      "nl": "Vóór het harden gesneden, kantafgewerkt en geboord",
+      "de": "Vor dem Vorspannen geschnitten, kantenbearbeitet und gebohrt",
+      "es": "Cortado, canteado y perforado antes del templado"
      }
     }
    ],
    "uses": [
     {
      "en": "Shower doors and enclosures",
-     "zh": "淋浴门和淋浴房",
-     "fr": "Portes et cabines de douche"
+     "fr": "Portes et cabines de douche",
+     "nl": "Douchedeuren en douchecabines",
+     "de": "Duschtüren und Duschkabinen",
+     "es": "Puertas y mamparas de ducha"
     },
     {
      "en": "Doors, sidelites and railings",
-     "zh": "门、门侧窗和栏杆",
-     "fr": "Portes, panneaux latéraux et garde-corps"
+     "fr": "Portes, panneaux latéraux et garde-corps",
+     "nl": "Deuren, zijlichten en balustrades",
+     "de": "Türen, Seitenteile und Geländer",
+     "es": "Puertas, paneles laterales y barandillas"
     },
     {
      "en": "Table tops and shelves",
-     "zh": "桌面和层板",
-     "fr": "Dessus de table et tablettes"
+     "fr": "Dessus de table et tablettes",
+     "nl": "Tafelbladen en legplanken",
+     "de": "Tischplatten und Regalböden",
+     "es": "Tableros de mesa y estantes"
     }
    ],
    "related": [
@@ -502,8 +654,10 @@
    "id": "laminated",
    "name": {
     "en": "Laminated Glass",
-    "zh": "夹胶玻璃",
-    "fr": "Verre feuilleté"
+    "fr": "Verre feuilleté",
+    "nl": "Gelaagd glas",
+    "de": "Verbundsicherheitsglas (VSG)",
+    "es": "Vidrio laminado"
    },
    "photo": "assets/img/library/laminated-studio.jpg",
    "gallery": [
@@ -511,138 +665,182 @@
      "image": "assets/img/library/laminated-edge.jpg",
      "caption": {
       "en": "Edge detail: two layers of glass bonded by an interlayer",
-      "zh": "边部细节：两层玻璃由中间膜粘合",
-      "fr": "Détail du chant : deux verres liés par un intercalaire"
+      "fr": "Détail du chant : deux verres liés par un intercalaire",
+      "nl": "Detail van de glaskant: twee glaslagen verbonden door een tussenlaag",
+      "de": "Kantendetail: zwei Glasscheiben, durch eine Zwischenschicht verbunden",
+      "es": "Detalle del canto: dos capas de vidrio unidas por una lámina intermedia"
      }
     },
     {
      "image": "assets/img/library/laminated-samples.jpg",
      "caption": {
       "en": "Laminated glass samples, clear and tinted",
-      "zh": "透明与着色夹胶玻璃样品",
-      "fr": "Échantillons de verre feuilleté, clair et teinté"
+      "fr": "Échantillons de verre feuilleté, clair et teinté",
+      "nl": "Monsters van gelaagd glas, helder en getint",
+      "de": "Verbundglasmuster, klar und getönt",
+      "es": "Muestras de vidrio laminado, claro y tintado"
      }
     },
     {
      "image": "assets/img/library/laminated-uv-sound.jpg",
      "caption": {
       "en": "UV protection and sound control",
-      "zh": "防紫外线与隔音",
-      "fr": "Protection UV et confort acoustique"
+      "fr": "Protection UV et confort acoustique",
+      "nl": "Uv-bescherming en geluidsreductie",
+      "de": "UV-Schutz und Schallschutz",
+      "es": "Protección UV y control acústico"
      }
     }
    ],
    "short": {
     "en": "Glass layers bonded with an interlayer that holds the pieces together if the glass breaks.",
-    "zh": "多层玻璃通过中间膜粘合，玻璃破碎时碎片仍粘连在一起。",
-    "fr": "Couches de verre liées par un intercalaire qui retient les morceaux si le verre se brise."
+    "fr": "Couches de verre liées par un intercalaire qui retient les morceaux si le verre se brise.",
+    "nl": "Glaslagen verbonden met een tussenlaag die de scherven bij breuk bij elkaar houdt.",
+    "de": "Glasscheiben, verbunden durch eine Zwischenschicht, die die Bruchstücke bei Glasbruch zusammenhält.",
+    "es": "Capas de vidrio unidas con una lámina intermedia que mantiene unidos los fragmentos si el vidrio se rompe."
    },
    "description": {
     "en": "Laminated glass bonds two or more lites with a PVB or EVA interlayer. If the glass breaks, the pieces stay attached to the interlayer, keeping the opening closed. It also cuts noise and blocks most UV light.",
-    "zh": "夹胶玻璃以 PVB 或 EVA 中间膜将两片或多片玻璃粘合在一起。玻璃破碎时，碎片仍附着在中间膜上，洞口保持封闭。它还能降低噪音，并阻隔大部分紫外线。",
-    "fr": "Le verre feuilleté assemble deux vitres ou plus au moyen d'un intercalaire PVB ou EVA. Si le verre se brise, les morceaux restent fixés à l'intercalaire, ce qui garde l'ouverture fermée. Il atténue également le bruit et bloque la plupart des rayons UV."
+    "fr": "Le verre feuilleté assemble deux vitres ou plus au moyen d'un intercalaire PVB ou EVA. Si le verre se brise, les morceaux restent fixés à l'intercalaire, ce qui garde l'ouverture fermée. Il atténue également le bruit et bloque la plupart des rayons UV.",
+    "nl": "Gelaagd glas verbindt twee of meer glasplaten met een tussenlaag van PVB of EVA. Bij breuk blijven de scherven aan de tussenlaag vastzitten, zodat de opening gesloten blijft. Bovendien dempt het geluid en blokkeert het het grootste deel van het uv-licht.",
+    "de": "Verbundsicherheitsglas verbindet zwei oder mehr Scheiben mit einer Zwischenschicht aus PVB oder EVA. Bei Glasbruch haften die Bruchstücke an der Zwischenschicht, sodass die Öffnung geschlossen bleibt. Zudem dämpft es Lärm und blockiert den Großteil der UV-Strahlung.",
+    "es": "El vidrio laminado une dos o más hojas de vidrio mediante una lámina intermedia de PVB o EVA. Si el vidrio se rompe, los fragmentos permanecen adheridos a la lámina intermedia y la abertura sigue cerrada. Además, reduce el ruido y bloquea la mayor parte de la radiación UV."
    },
    "specs": [
     {
      "label": {
       "en": "Thickness",
-      "zh": "厚度",
-      "fr": "Épaisseur"
+      "fr": "Épaisseur",
+      "nl": "Dikte",
+      "de": "Dicke",
+      "es": "Espesor"
      },
      "value": {
       "en": "6, 8, 10, 12 mm (e.g. 3 mm + PVB + 3 mm)",
-      "zh": "6、8、10、12 mm（如 3 mm + PVB + 3 mm）",
-      "fr": "6, 8, 10, 12 mm (p. ex. 3 mm + PVB + 3 mm)"
+      "fr": "6, 8, 10, 12 mm (p. ex. 3 mm + PVB + 3 mm)",
+      "nl": "6, 8, 10, 12 mm (bijv. 3 mm + PVB + 3 mm)",
+      "de": "6, 8, 10, 12 mm (z. B. 3 mm + PVB + 3 mm)",
+      "es": "6, 8, 10, 12 mm (p. ej. 3 mm + PVB + 3 mm)"
      }
     },
     {
      "label": {
       "en": "Interlayer",
-      "zh": "中间膜",
-      "fr": "Intercalaire"
+      "fr": "Intercalaire",
+      "nl": "Tussenlaag",
+      "de": "Zwischenschicht",
+      "es": "Lámina intermedia"
      },
      "value": {
       "en": "PVB, 0.38 mm (0.015″) standard",
-      "zh": "标准 PVB，0.38 mm（0.015″）",
-      "fr": "PVB de 0,38 mm (0,015″) en standard"
+      "fr": "PVB de 0,38 mm (0,015″) en standard",
+      "nl": "PVB, standaard 0,38 mm (0,015″)",
+      "de": "PVB, standardmäßig 0,38 mm (0,015″)",
+      "es": "PVB, 0,38 mm (0,015″) estándar"
      }
     },
     {
      "label": {
       "en": "Regular sizes",
-      "zh": "常规尺寸",
-      "fr": "Formats courants"
+      "fr": "Formats courants",
+      "nl": "Standaardformaten",
+      "de": "Standardformate",
+      "es": "Tamaños estándar"
      },
      "value": {
       "en": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
-      "zh": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
-      "fr": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″"
+      "fr": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "nl": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "de": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "es": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″"
      }
     },
     {
      "label": {
       "en": "Max. size",
-      "zh": "最大尺寸",
-      "fr": "Format maximal"
+      "fr": "Format maximal",
+      "nl": "Max. formaat",
+      "de": "Max. Format",
+      "es": "Dimensión máxima"
      },
      "value": {
       "en": "144″ × 433″",
-      "zh": "144″ × 433″",
-      "fr": "144″ × 433″"
+      "fr": "144″ × 433″",
+      "nl": "144″ × 433″",
+      "de": "144″ × 433″",
+      "es": "144″ × 433″"
      }
     },
     {
      "label": {
       "en": "Glass",
-      "zh": "玻璃",
-      "fr": "Verre"
+      "fr": "Verre",
+      "nl": "Glas",
+      "de": "Glas",
+      "es": "Vidrio"
      },
      "value": {
       "en": "Clear, milk white, green, blue, bronze and more",
-      "zh": "透明、乳白、绿色、蓝色、茶色等",
-      "fr": "Clair, blanc laiteux, vert, bleu, bronze et plus"
+      "fr": "Clair, blanc laiteux, vert, bleu, bronze et plus",
+      "nl": "Helder, melkwit, groen, blauw, brons en meer",
+      "de": "Klar, milchweiß, grün, blau, bronzefarben und mehr",
+      "es": "Claro, blanco lechoso, verde, azul, bronce y más"
      }
     },
     {
      "label": {
       "en": "Safety",
-      "zh": "安全性",
-      "fr": "Sécurité"
+      "fr": "Sécurité",
+      "nl": "Veiligheid",
+      "de": "Sicherheit",
+      "es": "Seguridad"
      },
      "value": {
       "en": "Stays in place when broken",
-      "zh": "破碎后不脱落",
-      "fr": "Reste en place en cas de bris"
+      "fr": "Reste en place en cas de bris",
+      "nl": "Blijft bij breuk op zijn plaats",
+      "de": "Bleibt bei Bruch an Ort und Stelle",
+      "es": "Permanece en su sitio en caso de rotura"
      }
     },
     {
      "label": {
       "en": "Standards",
-      "zh": "标准",
-      "fr": "Normes"
+      "fr": "Normes",
+      "nl": "Normen",
+      "de": "Normen",
+      "es": "Normas"
      },
      "value": {
       "en": "EN 14449, ANSI Z97.1, ASTM C1048, GB/T 15763.3",
-      "zh": "EN 14449, ANSI Z97.1, ASTM C1048, GB/T 15763.3",
-      "fr": "EN 14449, ANSI Z97.1, ASTM C1048, GB/T 15763.3"
+      "fr": "EN 14449, ANSI Z97.1, ASTM C1048, GB/T 15763.3",
+      "nl": "EN 14449, ANSI Z97.1, ASTM C1048, GB/T 15763.3",
+      "de": "EN 14449, ANSI Z97.1, ASTM C1048, GB/T 15763.3",
+      "es": "EN 14449, ANSI Z97.1, ASTM C1048, GB/T 15763.3"
      }
     }
    ],
    "uses": [
     {
      "en": "Railings and balustrades",
-     "zh": "栏杆和栏板",
-     "fr": "Garde-corps et balustrades"
+     "fr": "Garde-corps et balustrades",
+     "nl": "Leuningen en balustrades",
+     "de": "Geländer und Brüstungen",
+     "es": "Barandillas y balaustradas"
     },
     {
      "en": "Skylights and canopies",
-     "zh": "天窗和雨棚",
-     "fr": "Puits de lumière et marquises"
+     "fr": "Puits de lumière et marquises",
+     "nl": "Daklichten en luifels",
+     "de": "Oberlichter und Vordächer",
+     "es": "Tragaluces y marquesinas"
     },
     {
      "en": "Storefronts and security glazing",
-     "zh": "店面和安防玻璃",
-     "fr": "Devantures et vitrage de sécurité"
+     "fr": "Devantures et vitrage de sécurité",
+     "nl": "Winkelpuien en veiligheidsbeglazing",
+     "de": "Schaufenster und Sicherheitsverglasung",
+     "es": "Escaparates y acristalamiento de seguridad"
     }
    ],
    "related": [
@@ -655,8 +853,10 @@
    "id": "insulated",
    "name": {
     "en": "Insulated Glass",
-    "zh": "中空玻璃",
-    "fr": "Verre isolant (unité scellée)"
+    "fr": "Verre isolant (unité scellée)",
+    "nl": "Isolatieglas",
+    "de": "Isolierglas",
+    "es": "Vidrio aislante"
    },
    "photo": "assets/img/library/igu-studio.jpg",
    "gallery": [
@@ -664,146 +864,192 @@
      "image": "assets/img/library/igu-corner.jpg",
      "caption": {
       "en": "Corner detail: spacer and edge seal",
-      "zh": "边角细节：间隔条与密封胶",
-      "fr": "Détail du coin : intercalaire et scellant"
+      "fr": "Détail du coin : intercalaire et scellant",
+      "nl": "Hoekdetail: afstandhouder en randafdichting",
+      "de": "Eckdetail: Abstandhalter und Randabdichtung",
+      "es": "Detalle de esquina: espaciador y sellado perimetral"
      }
     },
     {
      "image": "assets/img/library/igu-double-triple.jpg",
      "caption": {
       "en": "Double-glazed and triple-glazed units",
-      "zh": "双层与三层中空玻璃对比",
-      "fr": "Unités à double et à triple vitrage"
+      "fr": "Unités à double et à triple vitrage",
+      "nl": "Dubbel en drievoudig isolatieglas",
+      "de": "Zwei- und Dreifach-Isolierglas",
+      "es": "Unidades de doble y triple acristalamiento"
      }
     },
     {
      "image": "assets/img/library/igu-heat-transfer.jpg",
      "caption": {
       "en": "How an insulated glass unit reduces heat transfer",
-      "zh": "中空玻璃如何减少热量传递",
-      "fr": "Comment une unité scellée réduit le transfert de chaleur"
+      "fr": "Comment une unité scellée réduit le transfert de chaleur",
+      "nl": "Hoe isolatieglas de warmteoverdracht beperkt",
+      "de": "Wie eine Isolierglaseinheit die Wärmeübertragung verringert",
+      "es": "Cómo una unidad de vidrio aislante reduce la transferencia de calor"
      }
     },
     {
      "image": "assets/img/library/igu-window.jpg",
      "caption": {
       "en": "Insulated glass in a window",
-      "zh": "中空玻璃窗实景",
-      "fr": "Verre isolant dans une fenêtre"
+      "fr": "Verre isolant dans une fenêtre",
+      "nl": "Isolatieglas in een raam",
+      "de": "Isolierglas in einem Fenster",
+      "es": "Vidrio aislante en una ventana"
      }
     }
    ],
    "short": {
     "en": "Two or more lites sealed around an air- or gas-filled space for thermal and sound insulation.",
-    "zh": "两片或多片玻璃围绕充空气或充气的空腔密封而成，隔热隔音。",
-    "fr": "Deux vitres ou plus scellées autour d'un espace rempli d'air ou de gaz, pour l'isolation thermique et acoustique."
+    "fr": "Deux vitres ou plus scellées autour d'un espace rempli d'air ou de gaz, pour l'isolation thermique et acoustique.",
+    "nl": "Twee of meer ruiten, afgedicht rond een met lucht of gas gevulde spouw, voor thermische en akoestische isolatie.",
+    "de": "Zwei oder mehr Scheiben, randverbunden um einen luft- oder gasgefüllten Zwischenraum, für Wärme- und Schalldämmung.",
+    "es": "Dos o más vidrios sellados alrededor de una cámara llena de aire o gas, para aislamiento térmico y acústico."
    },
    "description": {
     "en": "An insulated glass unit (IGU) seals two or three lites around a spacer, with a dry air or argon-filled cavity between them. It keeps heat in during winter and out in summer, and reduces outside noise.",
-    "zh": "中空玻璃（IGU）由两片或三片玻璃通过间隔条密封而成，中间为干燥空气或充氩气的空腔。冬季保温，夏季隔热，并能降低室外噪音。",
-    "fr": "Une unité de verre isolant (IGU) réunit deux ou trois vitres scellées autour d'un intercalaire, avec entre elles une lame d'air sec ou d'argon. Elle garde la chaleur à l'intérieur en hiver et à l'extérieur en été, et réduit les bruits extérieurs."
+    "fr": "Une unité de verre isolant (IGU) réunit deux ou trois vitres scellées autour d'un intercalaire, avec entre elles une lame d'air sec ou d'argon. Elle garde la chaleur à l'intérieur en hiver et à l'extérieur en été, et réduit les bruits extérieurs.",
+    "nl": "Een isolatieglaseenheid (IGU) bestaat uit twee of drie ruiten die rond een afstandhouder zijn afgedicht, met daartussen een spouw gevuld met droge lucht of argon. Ze houdt de warmte in de winter binnen en in de zomer buiten, en dempt geluid van buiten.",
+    "de": "Eine Isolierglaseinheit (IGU) besteht aus zwei oder drei Scheiben, die um einen Abstandhalter herum dicht verbunden sind, mit einem Scheibenzwischenraum aus trockener Luft oder Argon. Sie hält die Wärme im Winter drinnen und im Sommer draußen und verringert Außenlärm.",
+    "es": "Una unidad de vidrio aislante (IGU) sella dos o tres vidrios alrededor de un espaciador, con una cámara de aire seco o argón entre ellos. Mantiene el calor dentro en invierno y fuera en verano, y reduce el ruido exterior."
    },
    "specs": [
     {
      "label": {
       "en": "Construction",
-      "zh": "结构",
-      "fr": "Composition"
+      "fr": "Composition",
+      "nl": "Opbouw",
+      "de": "Aufbau",
+      "es": "Composición"
      },
      "value": {
       "en": "Double or triple glazed",
-      "zh": "双玻或三玻",
-      "fr": "Double ou triple vitrage"
+      "fr": "Double ou triple vitrage",
+      "nl": "Dubbele of drievoudige beglazing",
+      "de": "Zweifach- oder Dreifachverglasung",
+      "es": "Doble o triple acristalamiento"
      }
     },
     {
      "label": {
       "en": "Glass thickness",
-      "zh": "玻璃厚度",
-      "fr": "Épaisseur du verre"
+      "fr": "Épaisseur du verre",
+      "nl": "Glasdikte",
+      "de": "Glasdicke",
+      "es": "Espesor del vidrio"
      },
      "value": {
       "en": "3–12 mm",
-      "zh": "3–12 mm",
-      "fr": "3–12 mm"
+      "fr": "3–12 mm",
+      "nl": "3–12 mm",
+      "de": "3–12 mm",
+      "es": "3–12 mm"
      }
     },
     {
      "label": {
       "en": "Spacer",
-      "zh": "间隔条",
-      "fr": "Cadre intercalaire"
+      "fr": "Cadre intercalaire",
+      "nl": "Afstandhouder",
+      "de": "Abstandhalter",
+      "es": "Espaciador"
      },
      "value": {
       "en": "6, 9, 12, 15, 19 mm",
-      "zh": "6、9、12、15、19 mm",
-      "fr": "6, 9, 12, 15, 19 mm"
+      "fr": "6, 9, 12, 15, 19 mm",
+      "nl": "6, 9, 12, 15, 19 mm",
+      "de": "6, 9, 12, 15, 19 mm",
+      "es": "6, 9, 12, 15, 19 mm"
      }
     },
     {
      "label": {
       "en": "Max. size",
-      "zh": "最大尺寸",
-      "fr": "Format maximal"
+      "fr": "Format maximal",
+      "nl": "Max. formaat",
+      "de": "Max. Format",
+      "es": "Dimensión máxima"
      },
      "value": {
       "en": "144″ × 433″",
-      "zh": "144″ × 433″",
-      "fr": "144″ × 433″"
+      "fr": "144″ × 433″",
+      "nl": "144″ × 433″",
+      "de": "144″ × 433″",
+      "es": "144″ × 433″"
      }
     },
     {
      "label": {
       "en": "Glass options",
-      "zh": "玻璃选项",
-      "fr": "Options de verre"
+      "fr": "Options de verre",
+      "nl": "Glasopties",
+      "de": "Glasoptionen",
+      "es": "Opciones de vidrio"
      },
      "value": {
       "en": "Clear, low iron, Low-E, reflective, tinted and more",
-      "zh": "透明、超白、Low-E、反射、着色等",
-      "fr": "Clair, extra-clair, Low-E, réfléchissant, teinté et plus"
+      "fr": "Clair, extra-clair, Low-E, réfléchissant, teinté et plus",
+      "nl": "Helder, ijzerarm, Low-E, reflecterend, getint en meer",
+      "de": "Klar, eisenarm, Low-E, reflektierend, getönt und mehr",
+      "es": "Claro, bajo en hierro, Low-E, reflectante, tintado y más"
      }
     },
     {
      "label": {
       "en": "Cavity fill",
-      "zh": "空腔填充",
-      "fr": "Remplissage de la lame"
+      "fr": "Remplissage de la lame",
+      "nl": "Spouwvulling",
+      "de": "Füllung des Scheibenzwischenraums",
+      "es": "Relleno de la cámara"
      },
      "value": {
       "en": "Air or argon",
-      "zh": "空气或氩气",
-      "fr": "Air ou argon"
+      "fr": "Air ou argon",
+      "nl": "Lucht of argon",
+      "de": "Luft oder Argon",
+      "es": "Aire o argón"
      }
     },
     {
      "label": {
       "en": "Standards",
-      "zh": "标准",
-      "fr": "Normes"
+      "fr": "Normes",
+      "nl": "Normen",
+      "de": "Normen",
+      "es": "Normas"
      },
      "value": {
       "en": "EN 1279, IGCC, GB/T 11944",
-      "zh": "EN 1279, IGCC, GB/T 11944",
-      "fr": "EN 1279, IGCC, GB/T 11944"
+      "fr": "EN 1279, IGCC, GB/T 11944",
+      "nl": "EN 1279, IGCC, GB/T 11944",
+      "de": "EN 1279, IGCC, GB/T 11944",
+      "es": "EN 1279, IGCC, GB/T 11944"
      }
     }
    ],
    "uses": [
     {
      "en": "Windows and doors",
-     "zh": "门窗",
-     "fr": "Fenêtres et portes"
+     "fr": "Fenêtres et portes",
+     "nl": "Ramen en deuren",
+     "de": "Fenster und Türen",
+     "es": "Ventanas y puertas"
     },
     {
      "en": "Curtain walls and storefronts",
-     "zh": "幕墙和店面",
-     "fr": "Murs-rideaux et devantures"
+     "fr": "Murs-rideaux et devantures",
+     "nl": "Vliesgevels en winkelpuien",
+     "de": "Vorhangfassaden und Schaufenster",
+     "es": "Muros cortina y escaparates"
     },
     {
      "en": "Skylights",
-     "zh": "天窗",
-     "fr": "Puits de lumière"
+     "fr": "Puits de lumière",
+     "nl": "Daklichten",
+     "de": "Oberlichter",
+     "es": "Tragaluces"
     }
    ],
    "related": [
@@ -816,8 +1062,10 @@
    "id": "coated",
    "name": {
     "en": "Coated Glass",
-    "zh": "镀膜玻璃",
-    "fr": "Verre à couche"
+    "fr": "Verre à couche",
+    "nl": "Gecoat glas",
+    "de": "Beschichtetes Glas",
+    "es": "Vidrio con recubrimiento"
    },
    "photo": "assets/img/library/reflective-pavilion.jpg",
    "gallery": [
@@ -825,126 +1073,166 @@
      "image": "assets/img/library/reflective-diagram.jpg",
      "caption": {
       "en": "Reflective coating: sends solar heat back, lets daylight through",
-      "zh": "反射镀膜：反射太阳热量，保留自然采光",
-      "fr": "Couche réfléchissante : renvoie la chaleur solaire, laisse entrer la lumière"
+      "fr": "Couche réfléchissante : renvoie la chaleur solaire, laisse entrer la lumière",
+      "nl": "Reflecterende coating: kaatst zonnewarmte terug, laat daglicht door",
+      "de": "Reflektierende Beschichtung: wirft Sonnenwärme zurück, lässt Tageslicht durch",
+      "es": "Recubrimiento reflectante: devuelve el calor solar y deja pasar la luz natural"
      }
     },
     {
      "image": "assets/img/library/low-e-office.jpg",
      "caption": {
       "en": "Low-E coated glass on an office building",
-      "zh": "Low-E 镀膜玻璃办公楼",
-      "fr": "Verre à faible émissivité sur un immeuble de bureaux"
+      "fr": "Verre à faible émissivité sur un immeuble de bureaux",
+      "nl": "Glas met Low-E-coating aan een kantoorgebouw",
+      "de": "Low-E-beschichtetes Glas an einem Bürogebäude",
+      "es": "Vidrio con recubrimiento Low-E en un edificio de oficinas"
      }
     },
     {
      "image": "assets/img/library/low-e-facade.jpg",
      "caption": {
       "en": "Low-E glass facade",
-      "zh": "Low-E 玻璃幕墙",
-      "fr": "Façade en verre à faible émissivité"
+      "fr": "Façade en verre à faible émissivité",
+      "nl": "Gevel van Low-E-glas",
+      "de": "Fassade aus Low-E-Glas",
+      "es": "Fachada de vidrio Low-E"
      }
     }
    ],
    "short": {
     "en": "Glass with Low-E or reflective coatings that control heat, glare and appearance.",
-    "zh": "带 Low-E 或反射镀膜的玻璃，可控制热量、眩光和外观。",
-    "fr": "Verre avec couche à faible émissivité (Low-E) ou réfléchissante qui contrôle la chaleur, l'éblouissement et l'apparence."
+    "fr": "Verre avec couche à faible émissivité (Low-E) ou réfléchissante qui contrôle la chaleur, l'éblouissement et l'apparence.",
+    "nl": "Glas met Low-E- of reflecterende coatings die warmte, schittering en uitstraling regelen.",
+    "de": "Glas mit Low-E- oder reflektierenden Beschichtungen, die Wärme, Blendung und Erscheinungsbild steuern.",
+    "es": "Vidrio con recubrimientos Low-E o reflectantes que controlan el calor, el deslumbramiento y la apariencia."
    },
    "description": {
     "en": "Coated glass carries a thin metal-oxide layer that changes how it handles heat and light. Low-E coatings keep buildings warmer in winter and cooler in summer; reflective coatings reduce glare and add privacy.",
-    "zh": "镀膜玻璃表面覆有一层薄薄的金属氧化物膜，可改变玻璃对热量和光线的作用。Low-E 镀膜使建筑冬暖夏凉；反射镀膜可减少眩光并增强私密性。",
-    "fr": "Le verre à couche comporte une mince couche d'oxyde métallique qui modifie son comportement face à la chaleur et à la lumière. Les couches à faible émissivité (Low-E) gardent les bâtiments plus chauds en hiver et plus frais en été; les couches réfléchissantes réduisent l'éblouissement et ajoutent de l'intimité."
+    "fr": "Le verre à couche comporte une mince couche d'oxyde métallique qui modifie son comportement face à la chaleur et à la lumière. Les couches à faible émissivité (Low-E) gardent les bâtiments plus chauds en hiver et plus frais en été; les couches réfléchissantes réduisent l'éblouissement et ajoutent de l'intimité.",
+    "nl": "Gecoat glas heeft een dunne laag metaaloxide die bepaalt hoe het glas met warmte en licht omgaat. Low-E-coatings houden gebouwen in de winter warmer en in de zomer koeler; reflecterende coatings verminderen schittering en zorgen voor meer privacy.",
+    "de": "Beschichtetes Glas trägt eine dünne Metalloxidschicht, die sein Verhalten gegenüber Wärme und Licht verändert. Low-E-Beschichtungen halten Gebäude im Winter wärmer und im Sommer kühler; reflektierende Beschichtungen verringern Blendung und bieten mehr Sichtschutz.",
+    "es": "El vidrio con recubrimiento lleva una fina capa de óxido metálico que modifica su comportamiento frente al calor y la luz. Los recubrimientos Low-E mantienen los edificios más cálidos en invierno y más frescos en verano; los recubrimientos reflectantes reducen el deslumbramiento y aportan privacidad."
    },
    "specs": [
     {
      "label": {
       "en": "Coatings",
-      "zh": "镀膜",
-      "fr": "Couches"
+      "fr": "Couches",
+      "nl": "Coatings",
+      "de": "Beschichtungen",
+      "es": "Recubrimientos"
      },
      "value": {
       "en": "Low-E and reflective",
-      "zh": "Low-E 和反射",
-      "fr": "Low-E et réfléchissantes"
+      "fr": "Low-E et réfléchissantes",
+      "nl": "Low-E en reflecterend",
+      "de": "Low-E und reflektierend",
+      "es": "Low-E y reflectantes"
      }
     },
     {
      "label": {
       "en": "Low-E glass",
-      "zh": "Low-E 玻璃",
-      "fr": "Verre Low-E"
+      "fr": "Verre Low-E",
+      "nl": "Low-E-glas",
+      "de": "Low-E-Glas",
+      "es": "Vidrio Low-E"
      },
      "value": {
       "en": "3.2–6 mm, clear or grey",
-      "zh": "3.2–6 mm，透明或灰色",
-      "fr": "3,2–6 mm, clair ou gris"
+      "fr": "3,2–6 mm, clair ou gris",
+      "nl": "3,2–6 mm, helder of grijs",
+      "de": "3,2–6 mm, klar oder grau",
+      "es": "3,2–6 mm, claro o gris"
      }
     },
     {
      "label": {
       "en": "Low-E coatings",
-      "zh": "Low-E 膜系",
-      "fr": "Couches Low-E"
+      "fr": "Couches Low-E",
+      "nl": "Low-E-coatings",
+      "de": "Low-E-Beschichtungen",
+      "es": "Recubrimientos Low-E"
      },
      "value": {
       "en": "Performance similar to Planibel G, S48, SA, SS22, EA, SC60, SFC, SL60, Solarban 60 and 70",
-      "zh": "性能相当于 Planibel G、S48、SA、SS22、EA、SC60、SFC、SL60、Solarban 60 和 70",
-      "fr": "Performance comparable à Planibel G, S48, SA, SS22, EA, SC60, SFC, SL60, Solarban 60 et 70"
+      "fr": "Performance comparable à Planibel G, S48, SA, SS22, EA, SC60, SFC, SL60, Solarban 60 et 70",
+      "nl": "Prestaties vergelijkbaar met Planibel G, S48, SA, SS22, EA, SC60, SFC, SL60, Solarban 60 en 70",
+      "de": "Leistung vergleichbar mit Planibel G, S48, SA, SS22, EA, SC60, SFC, SL60, Solarban 60 und 70",
+      "es": "Rendimiento similar a Planibel G, S48, SA, SS22, EA, SC60, SFC, SL60, Solarban 60 y 70"
      }
     },
     {
      "label": {
       "en": "Reflective glass",
-      "zh": "反射玻璃",
-      "fr": "Verre réfléchissant"
+      "fr": "Verre réfléchissant",
+      "nl": "Reflecterend glas",
+      "de": "Reflektierendes Glas",
+      "es": "Vidrio reflectante"
      },
      "value": {
       "en": "4–10 mm, Euro Grey, Euro Bronze, Super Grey and more",
-      "zh": "4–10 mm，欧灰、欧茶、超级灰等",
-      "fr": "4–10 mm, gris européen, bronze européen, super gris et plus"
+      "fr": "4–10 mm, gris européen, bronze européen, super gris et plus",
+      "nl": "4–10 mm, Euro-grijs, Euro-brons, Super-grijs en meer",
+      "de": "4–10 mm, Euro-Grau, Euro-Bronze, Super-Grau und mehr",
+      "es": "4–10 mm, Gris Euro, Bronce Euro, Gris Súper y más"
      }
     },
     {
      "label": {
       "en": "Regular sizes",
-      "zh": "常规尺寸",
-      "fr": "Formats courants"
+      "fr": "Formats courants",
+      "nl": "Standaardformaten",
+      "de": "Standardformate",
+      "es": "Tamaños estándar"
      },
      "value": {
       "en": "84″ × 130″, 96″ × 130″ (reflective up to 96″ × 295″)",
-      "zh": "84″ × 130″、96″ × 130″（反射玻璃最大 96″ × 295″）",
-      "fr": "84″ × 130″, 96″ × 130″ (réfléchissant jusqu’à 96″ × 295″)"
+      "fr": "84″ × 130″, 96″ × 130″ (réfléchissant jusqu’à 96″ × 295″)",
+      "nl": "84″ × 130″, 96″ × 130″ (reflecterend tot 96″ × 295″)",
+      "de": "84″ × 130″, 96″ × 130″ (reflektierend bis 96″ × 295″)",
+      "es": "84″ × 130″, 96″ × 130″ (reflectante hasta 96″ × 295″)"
      }
     },
     {
      "label": {
       "en": "Use",
-      "zh": "用途",
-      "fr": "Utilisation"
+      "fr": "Utilisation",
+      "nl": "Toepassing",
+      "de": "Verwendung",
+      "es": "Uso"
      },
      "value": {
       "en": "Usually built into IG units",
-      "zh": "通常合片为中空玻璃使用",
-      "fr": "Généralement intégré aux unités scellées"
+      "fr": "Généralement intégré aux unités scellées",
+      "nl": "Meestal verwerkt in isolatieglas",
+      "de": "Meist in Isolierglaseinheiten verbaut",
+      "es": "Normalmente integrado en unidades de vidrio aislante"
      }
     }
    ],
    "uses": [
     {
      "en": "Energy-efficient windows",
-     "zh": "节能窗",
-     "fr": "Fenêtres écoénergétiques"
+     "fr": "Fenêtres écoénergétiques",
+     "nl": "Energiezuinige ramen",
+     "de": "Energieeffiziente Fenster",
+     "es": "Ventanas de eficiencia energética"
     },
     {
      "en": "Facades and curtain walls",
-     "zh": "建筑外立面和幕墙",
-     "fr": "Façades et murs-rideaux"
+     "fr": "Façades et murs-rideaux",
+     "nl": "Gevels en vliesgevels",
+     "de": "Fassaden und Vorhangfassaden",
+     "es": "Fachadas y muros cortina"
     },
     {
      "en": "Solar control glazing",
-     "zh": "阳光控制玻璃",
-     "fr": "Vitrage de contrôle solaire"
+     "fr": "Vitrage de contrôle solaire",
+     "nl": "Zonwerende beglazing",
+     "de": "Sonnenschutzverglasung",
+     "es": "Acristalamiento de control solar"
     }
    ],
    "related": [
@@ -957,8 +1245,10 @@
    "id": "patterned",
    "name": {
     "en": "Patterned Glass",
-    "zh": "压花玻璃",
-    "fr": "Verre imprimé"
+    "fr": "Verre imprimé",
+    "nl": "Figuurglas",
+    "de": "Ornamentglas",
+    "es": "Vidrio impreso"
    },
    "photo": "assets/img/library/pattern-flutelite-s.jpg",
    "gallery": [
@@ -966,170 +1256,222 @@
      "image": "assets/img/library/pattern-chinchilla.jpg",
      "caption": {
       "en": "Chinchilla pattern",
-      "zh": "Chinchilla 花型",
-      "fr": "Motif Chinchilla"
+      "fr": "Motif Chinchilla",
+      "nl": "Chinchilla-patroon",
+      "de": "Chinchilla-Muster",
+      "es": "Diseño Chinchilla"
      }
     },
     {
      "image": "assets/img/library/pattern-granite.jpg",
      "caption": {
       "en": "Granite pattern",
-      "zh": "Granite 花型",
-      "fr": "Motif Granite"
+      "fr": "Motif Granite",
+      "nl": "Granite-patroon",
+      "de": "Granite-Muster",
+      "es": "Diseño Granite"
      }
     },
     {
      "image": "assets/img/library/pattern-mistlite.jpg",
      "caption": {
       "en": "Mistlite pattern",
-      "zh": "Mistlite 花型",
-      "fr": "Motif Mistlite"
+      "fr": "Motif Mistlite",
+      "nl": "Mistlite-patroon",
+      "de": "Mistlite-Muster",
+      "es": "Diseño Mistlite"
      }
     },
     {
      "image": "assets/img/library/pattern-moru.jpg",
      "caption": {
       "en": "Moru pattern",
-      "zh": "Moru 花型",
-      "fr": "Motif Moru"
+      "fr": "Motif Moru",
+      "nl": "Moru-patroon",
+      "de": "Moru-Muster",
+      "es": "Diseño Moru"
      }
     },
     {
      "image": "assets/img/library/pattern-nashiji.jpg",
      "caption": {
       "en": "Nashiji pattern",
-      "zh": "Nashiji 花型",
-      "fr": "Motif Nashiji"
+      "fr": "Motif Nashiji",
+      "nl": "Nashiji-patroon",
+      "de": "Nashiji-Muster",
+      "es": "Diseño Nashiji"
      }
     },
     {
      "image": "assets/img/library/pattern-oceanic.jpg",
      "caption": {
       "en": "Oceanic pattern",
-      "zh": "Oceanic 花型",
-      "fr": "Motif Oceanic"
+      "fr": "Motif Oceanic",
+      "nl": "Oceanic-patroon",
+      "de": "Oceanic-Muster",
+      "es": "Diseño Oceanic"
      }
     },
     {
      "image": "assets/img/library/pattern-pinhead.jpg",
      "caption": {
       "en": "Pinhead pattern",
-      "zh": "Pinhead 花型",
-      "fr": "Motif Pinhead"
+      "fr": "Motif Pinhead",
+      "nl": "Pinhead-patroon",
+      "de": "Pinhead-Muster",
+      "es": "Diseño Pinhead"
      }
     }
    ],
    "short": {
     "en": "Textured glass that lets light through while adding privacy and decoration.",
-    "zh": "带纹理的玻璃，透光的同时兼具私密性和装饰性。",
-    "fr": "Verre texturé qui laisse passer la lumière tout en préservant l'intimité et en ajoutant une touche décorative."
+    "fr": "Verre texturé qui laisse passer la lumière tout en préservant l'intimité et en ajoutant une touche décorative.",
+    "nl": "Gestructureerd glas dat licht doorlaat en tegelijk zorgt voor privacy en een decoratief effect.",
+    "de": "Strukturglas, das Licht durchlässt und zugleich Sichtschutz und dekorative Wirkung bietet.",
+    "es": "Vidrio texturizado que deja pasar la luz y aporta privacidad y un toque decorativo."
    },
    "description": {
     "en": "Patterned glass has a texture rolled into one surface during manufacture. It diffuses light and blurs the view through it, making it ideal for bathrooms, doors and partitions where privacy matters.",
-    "zh": "压花玻璃在生产过程中于一面压制出花纹。它能漫射光线、模糊视线，非常适合浴室、门和隔断等注重私密性的场所。",
-    "fr": "Le verre imprimé présente une texture laminée sur l'une de ses faces lors de sa fabrication. Il diffuse la lumière et brouille la vue au travers, ce qui le rend idéal pour les salles de bains, les portes et les cloisons où l'intimité compte."
+    "fr": "Le verre imprimé présente une texture laminée sur l'une de ses faces lors de sa fabrication. Il diffuse la lumière et brouille la vue au travers, ce qui le rend idéal pour les salles de bains, les portes et les cloisons où l'intimité compte.",
+    "nl": "Bij figuurglas wordt tijdens de productie een structuur in één zijde gewalst. Het verstrooit het licht en vervaagt het zicht erdoorheen, waardoor het ideaal is voor badkamers, deuren en scheidingswanden waar privacy belangrijk is.",
+    "de": "Bei Ornamentglas wird bei der Herstellung eine Struktur in eine Oberfläche eingewalzt. Es streut das Licht und lässt die Durchsicht verschwimmen – ideal für Badezimmer, Türen und Trennwände, bei denen Sichtschutz gefragt ist.",
+    "es": "El vidrio impreso tiene una textura laminada en una de sus caras durante la fabricación. Difunde la luz y difumina la visión a través de él, lo que lo hace ideal para baños, puertas y divisiones donde la privacidad es importante."
    },
    "specs": [
     {
      "label": {
       "en": "Thickness",
-      "zh": "厚度",
-      "fr": "Épaisseur"
+      "fr": "Épaisseur",
+      "nl": "Dikte",
+      "de": "Dicke",
+      "es": "Espesor"
      },
      "value": {
       "en": "3–12 mm (varies by pattern)",
-      "zh": "3–12 mm（因花型而异）",
-      "fr": "3–12 mm (selon le motif)"
+      "fr": "3–12 mm (selon le motif)",
+      "nl": "3–12 mm (afhankelijk van het patroon)",
+      "de": "3–12 mm (je nach Muster)",
+      "es": "3–12 mm (según el diseño)"
      }
     },
     {
      "label": {
       "en": "Patterns",
-      "zh": "花型",
-      "fr": "Motifs"
+      "fr": "Motifs",
+      "nl": "Patronen",
+      "de": "Muster",
+      "es": "Diseños"
      },
      "value": {
       "en": "Reeded, fluted, ribbed, rain, linen, Kasumi, Master Carré, diamond, chinchilla, satin and more",
-      "zh": "条纹、凹槽、棱纹、雨花、布纹、霞、大方格、钻石、金丝、磨砂等",
-      "fr": "Cannelé, strié, nervuré, pluie, lin, Kasumi, Master Carré, diamant, chinchilla, satiné et plus"
+      "fr": "Cannelé, strié, nervuré, pluie, lin, Kasumi, Master Carré, diamant, chinchilla, satiné et plus",
+      "nl": "Rietstructuur, gecanneleerd, geribd, regen, linnen, Kasumi, Master Carré, diamant, chinchilla, satijn en meer",
+      "de": "Geriffelt, kanneliert, gerippt, Regen, Leinen, Kasumi, Master Carré, Diamant, Chinchilla, Satin und mehr",
+      "es": "Acanalado, estriado, nervado, lluvia, lino, Kasumi, Master Carré, diamante, chinchilla, satinado y más"
      }
     },
     {
      "label": {
       "en": "Glass",
-      "zh": "玻璃",
-      "fr": "Verre"
+      "fr": "Verre",
+      "nl": "Glas",
+      "de": "Glas",
+      "es": "Vidrio"
      },
      "value": {
       "en": "Clear, low iron or tinted",
-      "zh": "透明、超白或着色",
-      "fr": "Clair, extra-clair ou teinté"
+      "fr": "Clair, extra-clair ou teinté",
+      "nl": "Helder, ijzerarm of getint",
+      "de": "Klar, eisenarm oder getönt",
+      "es": "Claro, bajo en hierro o tintado"
      }
     },
     {
      "label": {
       "en": "Regular sizes",
-      "zh": "常规尺寸",
-      "fr": "Formats courants"
+      "fr": "Formats courants",
+      "nl": "Standaardformaten",
+      "de": "Standardformate",
+      "es": "Tamaños estándar"
      },
      "value": {
       "en": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
-      "zh": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
-      "fr": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″"
+      "fr": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "nl": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "de": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "es": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″"
      }
     },
     {
      "label": {
       "en": "Max. size",
-      "zh": "最大尺寸",
-      "fr": "Format maximal"
+      "fr": "Format maximal",
+      "nl": "Max. formaat",
+      "de": "Max. Format",
+      "es": "Dimensión máxima"
      },
      "value": {
       "en": "96″ × 189″",
-      "zh": "96″ × 189″",
-      "fr": "96″ × 189″"
+      "fr": "96″ × 189″",
+      "nl": "96″ × 189″",
+      "de": "96″ × 189″",
+      "es": "96″ × 189″"
      }
     },
     {
      "label": {
       "en": "Privacy",
-      "zh": "私密性",
-      "fr": "Intimité"
+      "fr": "Intimité",
+      "nl": "Privacy",
+      "de": "Sichtschutz",
+      "es": "Privacidad"
      },
      "value": {
       "en": "Lets light through, blurs the view",
-      "zh": "透光不透影",
-      "fr": "Laisse passer la lumière, brouille la vue"
+      "fr": "Laisse passer la lumière, brouille la vue",
+      "nl": "Laat licht door, vervaagt het zicht",
+      "de": "Lässt Licht durch, die Durchsicht verschwimmt",
+      "es": "Deja pasar la luz, difumina la visión"
      }
     },
     {
      "label": {
       "en": "Processing",
-      "zh": "加工方式",
-      "fr": "Mise en œuvre"
+      "fr": "Mise en œuvre",
+      "nl": "Verwerking",
+      "de": "Verarbeitung",
+      "es": "Procesamiento"
      },
      "value": {
       "en": "Can be tempered",
-      "zh": "可钢化",
-      "fr": "Peut être trempé"
+      "fr": "Peut être trempé",
+      "nl": "Kan worden gehard",
+      "de": "Kann vorgespannt werden",
+      "es": "Se puede templar"
      }
     }
    ],
    "uses": [
     {
      "en": "Bathrooms and showers",
-     "zh": "浴室和淋浴房",
-     "fr": "Salles de bains et douches"
+     "fr": "Salles de bains et douches",
+     "nl": "Badkamers en douches",
+     "de": "Badezimmer und Duschen",
+     "es": "Baños y duchas"
     },
     {
      "en": "Doors and partitions",
-     "zh": "门和隔断",
-     "fr": "Portes et cloisons"
+     "fr": "Portes et cloisons",
+     "nl": "Deuren en scheidingswanden",
+     "de": "Türen und Trennwände",
+     "es": "Puertas y divisiones"
     },
     {
      "en": "Cabinets and furniture",
-     "zh": "橱柜和家具",
-     "fr": "Armoires et meubles"
+     "fr": "Armoires et meubles",
+     "nl": "Kasten en meubels",
+     "de": "Schränke und Möbel",
+     "es": "Gabinetes y muebles"
     }
    ],
    "related": [
@@ -1142,8 +1484,10 @@
    "id": "acid-etched",
    "name": {
     "en": "Acid Etched Glass",
-    "zh": "酸蚀玻璃",
-    "fr": "Verre gravé à l'acide"
+    "fr": "Verre gravé à l'acide",
+    "nl": "Zuurgeëtst glas",
+    "de": "Säuregeätztes Glas",
+    "es": "Vidrio grabado al ácido"
    },
    "photo": "assets/img/library/acid-etched-studio.jpg",
    "gallery": [
@@ -1151,130 +1495,172 @@
      "image": "assets/img/library/acid-etched-detail.jpg",
      "caption": {
       "en": "Surface detail: an even, satin finish",
-      "zh": "表面细节：均匀细腻的磨砂质感",
-      "fr": "Détail de la surface : un fini satiné uniforme"
+      "fr": "Détail de la surface : un fini satiné uniforme",
+      "nl": "Oppervlaktedetail: een egale, satijnen afwerking",
+      "de": "Oberflächendetail: eine gleichmäßige, satinierte Oberfläche",
+      "es": "Detalle de la superficie: un acabado satinado uniforme"
      }
     },
     {
      "image": "assets/img/library/acid-etched-privacy.jpg",
      "caption": {
       "en": "Light passes through, the view behind is softened",
-      "zh": "透光，但后面的物体看不清",
-      "fr": "La lumière passe, la vue derrière est adoucie"
+      "fr": "La lumière passe, la vue derrière est adoucie",
+      "nl": "Licht valt erdoor, het zicht erachter wordt verzacht",
+      "de": "Licht dringt hindurch, die Sicht dahinter wird weicher",
+      "es": "La luz pasa y la vista de lo que hay detrás se suaviza"
      }
     }
    ],
    "short": {
     "en": "Glass with a smooth satin finish that lets light through while blurring the view.",
-    "zh": "表面细腻的磨砂玻璃，透光的同时遮挡视线。",
-    "fr": "Verre au fini satiné et lisse qui laisse passer la lumière tout en brouillant la vue."
+    "fr": "Verre au fini satiné et lisse qui laisse passer la lumière tout en brouillant la vue.",
+    "nl": "Glas met een gladde, satijnen afwerking dat licht doorlaat en het zicht vervaagt.",
+    "de": "Glas mit glatter, satinierter Oberfläche, das Licht durchlässt und die Durchsicht verschwimmen lässt.",
+    "es": "Vidrio con un acabado satinado y liso que deja pasar la luz y difumina la visión."
    },
    "description": {
     "en": "Acid etched glass has one surface treated with acid to give a smooth, even satin finish. It softens light and hides what is behind it, and it is easier to keep clean than sandblasted glass. It suits shower enclosures, office partitions, doors and furniture.",
-    "zh": "酸蚀玻璃的一面经酸液处理，形成平滑均匀的磨砂效果。它让光线变得柔和、遮挡后面的视线，而且比喷砂玻璃更容易清洁，适用于淋浴房、办公室隔断、门和家具。",
-    "fr": "Le verre gravé à l'acide a une face traitée à l'acide qui lui donne un fini satiné lisse et uniforme. Il adoucit la lumière et masque ce qui se trouve derrière, et il s'entretient plus facilement que le verre sablé. Il convient aux douches, aux cloisons de bureau, aux portes et aux meubles."
+    "fr": "Le verre gravé à l'acide a une face traitée à l'acide qui lui donne un fini satiné lisse et uniforme. Il adoucit la lumière et masque ce qui se trouve derrière, et il s'entretient plus facilement que le verre sablé. Il convient aux douches, aux cloisons de bureau, aux portes et aux meubles.",
+    "nl": "Bij zuurgeëtst glas is één zijde met zuur behandeld, wat een gladde, egale satijnen afwerking geeft. Het verzacht het licht en onttrekt wat erachter is aan het zicht, en het is gemakkelijker schoon te houden dan gezandstraald glas. Het is geschikt voor douchecabines, kantoorscheidingswanden, deuren en meubels.",
+    "de": "Bei säuregeätztem Glas wird eine Oberfläche mit Säure behandelt, wodurch eine glatte, gleichmäßige Satinierung entsteht. Es macht das Licht weicher, verbirgt, was dahinter liegt, und lässt sich leichter sauber halten als sandgestrahltes Glas. Es eignet sich für Duschabtrennungen, Bürotrennwände, Türen und Möbel.",
+    "es": "El vidrio grabado al ácido tiene una cara tratada con ácido que le da un acabado satinado liso y uniforme. Suaviza la luz y oculta lo que hay detrás, y es más fácil de mantener limpio que el vidrio arenado. Es adecuado para mamparas de ducha, divisiones de oficina, puertas y muebles."
    },
    "specs": [
     {
      "label": {
       "en": "Finish",
-      "zh": "表面",
-      "fr": "Fini"
+      "fr": "Fini",
+      "nl": "Afwerking",
+      "de": "Oberfläche",
+      "es": "Acabado"
      },
      "value": {
       "en": "Even satin finish on one side; frosted or velour",
-      "zh": "单面均匀磨砂；蒙砂或丝绒效果",
-      "fr": "Fini satiné uniforme sur une face; givré ou velours"
+      "fr": "Fini satiné uniforme sur une face; givré ou velours",
+      "nl": "Egale satijnafwerking aan één zijde; frosted of velours",
+      "de": "Gleichmäßige Satinierung auf einer Seite; Frosted oder Velours",
+      "es": "Acabado satinado uniforme en una cara; esmerilado o velour"
      }
     },
     {
      "label": {
       "en": "Thickness",
-      "zh": "厚度",
-      "fr": "Épaisseur"
+      "fr": "Épaisseur",
+      "nl": "Dikte",
+      "de": "Dicke",
+      "es": "Espesor"
      },
      "value": {
       "en": "3–15 mm",
-      "zh": "3–15 mm",
-      "fr": "3–15 mm"
+      "fr": "3–15 mm",
+      "nl": "3–15 mm",
+      "de": "3–15 mm",
+      "es": "3–15 mm"
      }
     },
     {
      "label": {
       "en": "Glass",
-      "zh": "玻璃",
-      "fr": "Verre"
+      "fr": "Verre",
+      "nl": "Glas",
+      "de": "Glas",
+      "es": "Vidrio"
      },
      "value": {
       "en": "Clear, low iron or tinted",
-      "zh": "透明、超白或着色",
-      "fr": "Clair, extra-clair ou teinté"
+      "fr": "Clair, extra-clair ou teinté",
+      "nl": "Helder, ijzerarm of getint",
+      "de": "Klar, eisenarm oder getönt",
+      "es": "Claro, bajo en hierro o tintado"
      }
     },
     {
      "label": {
       "en": "Regular sizes",
-      "zh": "常规尺寸",
-      "fr": "Formats courants"
+      "fr": "Formats courants",
+      "nl": "Standaardformaten",
+      "de": "Standardformate",
+      "es": "Tamaños estándar"
      },
      "value": {
       "en": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
-      "zh": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
-      "fr": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″"
+      "fr": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "nl": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "de": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″",
+      "es": "72″ × 96″\n84″ × 130″\n84″ × 144″\n96″ × 130″\n96″ × 144″"
      }
     },
     {
      "label": {
       "en": "Max. size",
-      "zh": "最大尺寸",
-      "fr": "Format maximal"
+      "fr": "Format maximal",
+      "nl": "Max. formaat",
+      "de": "Max. Format",
+      "es": "Dimensión máxima"
      },
      "value": {
       "en": "96″ × 189″",
-      "zh": "96″ × 189″",
-      "fr": "96″ × 189″"
+      "fr": "96″ × 189″",
+      "nl": "96″ × 189″",
+      "de": "96″ × 189″",
+      "es": "96″ × 189″"
      }
     },
     {
      "label": {
       "en": "Privacy",
-      "zh": "私密性",
-      "fr": "Intimité"
+      "fr": "Intimité",
+      "nl": "Privacy",
+      "de": "Sichtschutz",
+      "es": "Privacidad"
      },
      "value": {
       "en": "Lets light through, blurs the view",
-      "zh": "透光不透影",
-      "fr": "Laisse passer la lumière, brouille la vue"
+      "fr": "Laisse passer la lumière, brouille la vue",
+      "nl": "Laat licht door, vervaagt het zicht",
+      "de": "Lässt Licht durch, die Durchsicht verschwimmt",
+      "es": "Deja pasar la luz, difumina la visión"
      }
     },
     {
      "label": {
       "en": "Processing",
-      "zh": "加工方式",
-      "fr": "Mise en œuvre"
+      "fr": "Mise en œuvre",
+      "nl": "Verwerking",
+      "de": "Verarbeitung",
+      "es": "Procesamiento"
      },
      "value": {
       "en": "Can be tempered, laminated or used in IG units",
-      "zh": "可钢化、夹胶或做成中空玻璃",
-      "fr": "Peut être trempé, feuilleté ou intégré à une unité scellée"
+      "fr": "Peut être trempé, feuilleté ou intégré à une unité scellée",
+      "nl": "Kan worden gehard, gelaagd of in isolatieglas verwerkt",
+      "de": "Kann vorgespannt, laminiert oder in Isolierglaseinheiten verwendet werden",
+      "es": "Puede templarse, laminarse o utilizarse en unidades de vidrio aislante"
      }
     }
    ],
    "uses": [
     {
      "en": "Shower enclosures and bathrooms",
-     "zh": "淋浴房和浴室",
-     "fr": "Douches et salles de bains"
+     "fr": "Douches et salles de bains",
+     "nl": "Douchecabines en badkamers",
+     "de": "Duschabtrennungen und Badezimmer",
+     "es": "Mamparas de ducha y baños"
     },
     {
      "en": "Office partitions and doors",
-     "zh": "办公室隔断和门",
-     "fr": "Cloisons de bureau et portes"
+     "fr": "Cloisons de bureau et portes",
+     "nl": "Kantoorscheidingswanden en deuren",
+     "de": "Bürotrennwände und Türen",
+     "es": "Divisiones de oficina y puertas"
     },
     {
      "en": "Cabinets and furniture",
-     "zh": "橱柜和家具",
-     "fr": "Armoires et meubles"
+     "fr": "Armoires et meubles",
+     "nl": "Kasten en meubels",
+     "de": "Schränke und Möbel",
+     "es": "Gabinetes y muebles"
     }
    ],
    "related": [
@@ -1287,8 +1673,10 @@
    "id": "curved",
    "name": {
     "en": "Curved Glass",
-    "zh": "弧形玻璃",
-    "fr": "Verre bombé"
+    "fr": "Verre bombé",
+    "nl": "Gebogen glas",
+    "de": "Gebogenes Glas",
+    "es": "Vidrio curvado"
    },
    "photo": "assets/img/library/curved-partition.jpg",
    "gallery": [
@@ -1296,106 +1684,140 @@
      "image": "assets/img/library/curved-detail.jpg",
      "caption": {
       "en": "A curved glass panel up close",
-      "zh": "弧形玻璃近景",
-      "fr": "Panneau de verre bombé en gros plan"
+      "fr": "Panneau de verre bombé en gros plan",
+      "nl": "Een gebogen glaspaneel van dichtbij",
+      "de": "Eine gebogene Glasscheibe aus der Nähe",
+      "es": "Un panel de vidrio curvado de cerca"
      }
     },
     {
      "image": "assets/img/library/curved-facade.jpg",
      "caption": {
       "en": "Curved glass on a building facade",
-      "zh": "建筑外立面上的弧形玻璃",
-      "fr": "Verre bombé sur une façade d'immeuble"
+      "fr": "Verre bombé sur une façade d'immeuble",
+      "nl": "Gebogen glas in een gebouwgevel",
+      "de": "Gebogenes Glas an einer Gebäudefassade",
+      "es": "Vidrio curvado en la fachada de un edificio"
      }
     }
    ],
    "short": {
     "en": "Glass bent to a curve for facades, partitions, railings and display cases.",
-    "zh": "热弯成弧形的玻璃，用于外立面、隔断、栏杆和展示柜。",
-    "fr": "Verre cintré pour les façades, cloisons, garde-corps et vitrines."
+    "fr": "Verre cintré pour les façades, cloisons, garde-corps et vitrines.",
+    "nl": "Gebogen glas voor gevels, scheidingswanden, balustrades en vitrines.",
+    "de": "Gebogenes Glas für Fassaden, Trennwände, Geländer und Vitrinen.",
+    "es": "Vidrio curvado para fachadas, divisiones, barandillas y vitrinas."
    },
    "description": {
     "en": "Curved glass is heated and bent over a mould to the shape on your drawings. It can also be made as curved tempered, laminated or insulated glass, for curved facades and storefronts, office partitions, stair railings, display cases and shower enclosures.",
-    "zh": "弧形玻璃经加热后按模具弯曲，做成您图纸上的形状。也可以做成弧形钢化、夹胶或中空玻璃，用于弧形外立面和店面、办公室隔断、楼梯栏杆、展示柜和淋浴房。",
-    "fr": "Le verre bombé est chauffé puis cintré sur un moule selon la forme de vos plans. Il peut aussi être fabriqué en verre bombé trempé, feuilleté ou isolant, pour les façades et vitrines courbes, les cloisons de bureau, les garde-corps, les présentoirs et les douches."
+    "fr": "Le verre bombé est chauffé puis cintré sur un moule selon la forme de vos plans. Il peut aussi être fabriqué en verre bombé trempé, feuilleté ou isolant, pour les façades et vitrines courbes, les cloisons de bureau, les garde-corps, les présentoirs et les douches.",
+    "nl": "Gebogen glas wordt verhit en over een mal gebogen in de vorm van uw tekeningen. Het is ook leverbaar als gebogen gehard glas, gelaagd glas of isolatieglas, voor gebogen gevels en winkelpuien, kantoorscheidingswanden, trapbalustrades, vitrines en douchecabines.",
+    "de": "Gebogenes Glas wird erhitzt und über eine Form in die Gestalt Ihrer Zeichnungen gebogen. Es ist auch als gebogenes ESG, Verbundglas oder Isolierglas erhältlich, für gebogene Fassaden und Schaufenster, Bürotrennwände, Treppengeländer, Vitrinen und Duschabtrennungen.",
+    "es": "El vidrio curvado se calienta y se curva sobre un molde según la forma de sus planos. También puede fabricarse como vidrio templado, laminado o aislante curvado, para fachadas y escaparates curvos, divisiones de oficina, barandillas de escaleras, vitrinas y mamparas de ducha."
    },
    "specs": [
     {
      "label": {
       "en": "Thickness",
-      "zh": "厚度",
-      "fr": "Épaisseur"
+      "fr": "Épaisseur",
+      "nl": "Dikte",
+      "de": "Dicke",
+      "es": "Espesor"
      },
      "value": {
       "en": "5–22 mm (3/16″–7/8″)",
-      "zh": "5–22 mm（3/16″–7/8″）",
-      "fr": "5–22 mm (3/16″–7/8″)"
+      "fr": "5–22 mm (3/16″–7/8″)",
+      "nl": "5–22 mm (3/16″–7/8″)",
+      "de": "5–22 mm (3/16″–7/8″)",
+      "es": "5–22 mm (3/16″–7/8″)"
      }
     },
     {
      "label": {
       "en": "Max. size",
-      "zh": "最大尺寸",
-      "fr": "Format maximal"
+      "fr": "Format maximal",
+      "nl": "Max. formaat",
+      "de": "Max. Format",
+      "es": "Dimensión máxima"
      },
      "value": {
       "en": "144″ × 630″ (min. radius 177″) or 87″ × 96″ (min. radius 35″)",
-      "zh": "144″ × 630″（最小半径 177″）或 87″ × 96″（最小半径 35″）",
-      "fr": "144″ × 630″ (rayon min. 177″) ou 87″ × 96″ (rayon min. 35″)"
+      "fr": "144″ × 630″ (rayon min. 177″) ou 87″ × 96″ (rayon min. 35″)",
+      "nl": "144″ × 630″ (min. straal 177″) of 87″ × 96″ (min. straal 35″)",
+      "de": "144″ × 630″ (min. Radius 177″) oder 87″ × 96″ (min. Radius 35″)",
+      "es": "144″ × 630″ (radio mín. 177″) o 87″ × 96″ (radio mín. 35″)"
      }
     },
     {
      "label": {
       "en": "Glass",
-      "zh": "玻璃",
-      "fr": "Verre"
+      "fr": "Verre",
+      "nl": "Glas",
+      "de": "Glas",
+      "es": "Vidrio"
      },
      "value": {
       "en": "Clear, low iron, bronze, grey, blue and more",
-      "zh": "透明、超白、茶色、灰色、蓝色等",
-      "fr": "Clair, extra-clair, bronze, gris, bleu et plus"
+      "fr": "Clair, extra-clair, bronze, gris, bleu et plus",
+      "nl": "Helder, ijzerarm, brons, grijs, blauw en meer",
+      "de": "Klar, eisenarm, Bronze, Grau, Blau und mehr",
+      "es": "Claro, bajo en hierro, bronce, gris, azul y más"
      }
     },
     {
      "label": {
       "en": "Fabrication",
-      "zh": "深加工",
-      "fr": "Façonnage"
+      "fr": "Façonnage",
+      "nl": "Bewerking",
+      "de": "Bearbeitung",
+      "es": "Fabricación"
      },
      "value": {
       "en": "Holes, cut-outs, edge polishing, radius corners",
-      "zh": "开孔、开槽、磨边抛光、圆角",
-      "fr": "Trous, découpes, polissage des bords, coins arrondis"
+      "fr": "Trous, découpes, polissage des bords, coins arrondis",
+      "nl": "Boringen, uitsparingen, polijsten van randen, afgeronde hoeken",
+      "de": "Bohrungen, Ausschnitte, Kantenpolitur, abgerundete Ecken",
+      "es": "Orificios, recortes, pulido de bordes, esquinas redondeadas"
      }
     },
     {
      "label": {
       "en": "Processing",
-      "zh": "加工方式",
-      "fr": "Mise en œuvre"
+      "fr": "Mise en œuvre",
+      "nl": "Verwerking",
+      "de": "Verarbeitung",
+      "es": "Procesamiento"
      },
      "value": {
       "en": "Curved tempered, laminated or insulated",
-      "zh": "可做弧形钢化、夹胶或中空",
-      "fr": "Bombé trempé, feuilleté ou isolant"
+      "fr": "Bombé trempé, feuilleté ou isolant",
+      "nl": "Gebogen gehard, gelaagd of isolatieglas",
+      "de": "Gebogen als ESG, Verbund- oder Isolierglas",
+      "es": "Templado, laminado o aislante curvado"
      }
     }
    ],
    "uses": [
     {
      "en": "Curved facades and storefronts",
-     "zh": "弧形外立面和店面",
-     "fr": "Façades et vitrines courbes"
+     "fr": "Façades et vitrines courbes",
+     "nl": "Gebogen gevels en winkelpuien",
+     "de": "Gebogene Fassaden und Schaufenster",
+     "es": "Fachadas y escaparates curvos"
     },
     {
      "en": "Office partitions",
-     "zh": "办公室隔断",
-     "fr": "Cloisons de bureau"
+     "fr": "Cloisons de bureau",
+     "nl": "Kantoorscheidingswanden",
+     "de": "Bürotrennwände",
+     "es": "Divisiones de oficina"
     },
     {
      "en": "Railings, display cases and showers",
-     "zh": "栏杆、展示柜和淋浴房",
-     "fr": "Garde-corps, présentoirs et douches"
+     "fr": "Garde-corps, présentoirs et douches",
+     "nl": "Balustrades, vitrines en douches",
+     "de": "Geländer, Vitrinen und Duschen",
+     "es": "Barandillas, vitrinas y duchas"
     }
    ],
    "related": [
@@ -1408,98 +1830,130 @@
    "id": "solar",
    "name": {
     "en": "Solar (PV) Glass",
-    "zh": "太阳能光伏玻璃",
-    "fr": "Verre solaire (photovoltaïque)"
+    "fr": "Verre solaire (photovoltaïque)",
+    "nl": "Zonneglas (PV)",
+    "de": "Solarglas (PV)",
+    "es": "Vidrio solar (PV)"
    },
    "photo": "assets/img/warehouse/zone-solar.webp",
    "gallery": [],
    "short": {
     "en": "High-transmittance low iron glass for solar modules and building-integrated solar.",
-    "zh": "高透光超白玻璃，用于光伏组件和光伏建筑一体化。",
-    "fr": "Verre extra-clair à haute transmission pour modules solaires et solaire intégré au bâtiment."
+    "fr": "Verre extra-clair à haute transmission pour modules solaires et solaire intégré au bâtiment.",
+    "nl": "IJzerarm glas met hoge transmissie voor zonnepanelen en gebouwgeïntegreerde zonne-energie.",
+    "de": "Eisenarmes Glas mit hoher Transmission für Solarmodule und gebäudeintegrierte Photovoltaik.",
+    "es": "Vidrio bajo en hierro de alta transmisión para módulos solares y energía solar integrada en edificios."
    },
    "description": {
     "en": "Photovoltaic glass is a low iron glass, usually tempered, that sits at the front of a solar module. It lets as much light as possible reach the cells while protecting them outdoors. Anti-reflective coating is available.",
-    "zh": "光伏玻璃是一种超白玻璃，通常经过钢化，位于光伏组件的正面。它让尽可能多的光线到达电池片，同时在户外环境中保护电池片。可提供减反射镀膜。",
-    "fr": "Le verre photovoltaïque est un verre à faible teneur en fer, généralement trempé, placé à l'avant d'un module solaire. Il laisse parvenir un maximum de lumière aux cellules tout en les protégeant à l'extérieur. Une couche antireflet est offerte."
+    "fr": "Le verre photovoltaïque est un verre à faible teneur en fer, généralement trempé, placé à l'avant d'un module solaire. Il laisse parvenir un maximum de lumière aux cellules tout en les protégeant à l'extérieur. Une couche antireflet est offerte.",
+    "nl": "Fotovoltaïsch glas is ijzerarm glas, meestal gehard, dat aan de voorzijde van een zonnepaneel zit. Het laat zoveel mogelijk licht door naar de cellen en beschermt ze tegelijk tegen weer en wind. Een antireflectiecoating is leverbaar.",
+    "de": "Photovoltaikglas ist ein eisenarmes, meist vorgespanntes Glas auf der Vorderseite eines Solarmoduls. Es lässt so viel Licht wie möglich zu den Zellen durch und schützt sie zugleich im Außeneinsatz. Eine Antireflexbeschichtung ist erhältlich.",
+    "es": "El vidrio fotovoltaico es un vidrio bajo en hierro, normalmente templado, que se coloca en la parte frontal de un módulo solar. Deja que llegue la mayor cantidad posible de luz a las células y las protege a la intemperie. Hay disponible un recubrimiento antirreflectante."
    },
    "specs": [
     {
      "label": {
       "en": "Glass",
-      "zh": "玻璃",
-      "fr": "Verre"
+      "fr": "Verre",
+      "nl": "Glas",
+      "de": "Glas",
+      "es": "Vidrio"
      },
      "value": {
       "en": "Clear float, low iron or ultra-clear",
-      "zh": "透明浮法、低铁或超白",
-      "fr": "Flotté clair, à faible teneur en fer ou extra-clair"
+      "fr": "Flotté clair, à faible teneur en fer ou extra-clair",
+      "nl": "Helder floatglas, ijzerarm of extra helder",
+      "de": "Klares Floatglas, eisenarm oder extraklar",
+      "es": "Flotado claro, bajo en hierro o ultraclaro"
      }
     },
     {
      "label": {
       "en": "Thickness",
-      "zh": "厚度",
-      "fr": "Épaisseur"
+      "fr": "Épaisseur",
+      "nl": "Dikte",
+      "de": "Dicke",
+      "es": "Espesor"
      },
      "value": {
       "en": "2 mm standard; 1.6–4.0 mm available",
-      "zh": "标准 2 mm；可选 1.6–4.0 mm",
-      "fr": "2 mm en standard; 1,6–4,0 mm sur demande"
+      "fr": "2 mm en standard; 1,6–4,0 mm sur demande",
+      "nl": "Standaard 2 mm; 1,6–4,0 mm leverbaar",
+      "de": "Standard 2 mm; 1,6–4,0 mm erhältlich",
+      "es": "2 mm estándar; 1,6–4,0 mm disponibles"
      }
     },
     {
      "label": {
       "en": "Max. size",
-      "zh": "最大尺寸",
-      "fr": "Format maximal"
+      "fr": "Format maximal",
+      "nl": "Max. formaat",
+      "de": "Max. Format",
+      "es": "Dimensión máxima"
      },
      "value": {
       "en": "2500 × 1300 mm",
-      "zh": "2500 × 1300 mm",
-      "fr": "2 500 × 1 300 mm"
+      "fr": "2 500 × 1 300 mm",
+      "nl": "2.500 × 1.300 mm",
+      "de": "2.500 × 1.300 mm",
+      "es": "2500 × 1300 mm"
      }
     },
     {
      "label": {
       "en": "AR coating",
-      "zh": "减反射镀膜",
-      "fr": "Couche antireflet"
+      "fr": "Couche antireflet",
+      "nl": "AR-coating",
+      "de": "AR-Beschichtung",
+      "es": "Recubrimiento AR"
      },
      "value": {
       "en": "Single (transmittance ≥ 93.8%) or double (≥ 94.1%)",
-      "zh": "单层（透光率 ≥ 93.8%）或双层（≥ 94.1%）",
-      "fr": "Simple (transmission ≥ 93,8 %) ou double (≥ 94,1 %)"
+      "fr": "Simple (transmission ≥ 93,8 %) ou double (≥ 94,1 %)",
+      "nl": "Enkel (transmissie ≥ 93,8%) of dubbel (≥ 94,1%)",
+      "de": "Einfach (Transmission ≥ 93,8 %) oder doppelt (≥ 94,1 %)",
+      "es": "Simple (transmisión ≥ 93,8 %) o doble (≥ 94,1 %)"
      }
     },
     {
      "label": {
       "en": "Processing",
-      "zh": "加工方式",
-      "fr": "Mise en œuvre"
+      "fr": "Mise en œuvre",
+      "nl": "Verwerking",
+      "de": "Verarbeitung",
+      "es": "Procesamiento"
      },
      "value": {
       "en": "Semi-tempering, screen printing, drilling, edge work, matte or patterned",
-      "zh": "半钢化、丝印、钻孔、磨边、磨砂或压花",
-      "fr": "Semi-trempe, sérigraphie, perçage, façonnage des bords, mat ou à motif"
+      "fr": "Semi-trempe, sérigraphie, perçage, façonnage des bords, mat ou à motif",
+      "nl": "Thermisch versterken, zeefdruk, boren, randbewerking, mat of met patroon",
+      "de": "Teilvorspannen, Siebdruck, Bohren, Kantenbearbeitung, matt oder strukturiert",
+      "es": "Semitemplado, serigrafía, perforación, procesamiento de bordes, mate o estampado"
      }
     }
    ],
    "uses": [
     {
      "en": "Solar modules",
-     "zh": "光伏组件",
-     "fr": "Modules solaires"
+     "fr": "Modules solaires",
+     "nl": "Zonnepanelen",
+     "de": "Solarmodule",
+     "es": "Módulos solares"
     },
     {
      "en": "Building-integrated solar",
-     "zh": "光伏建筑一体化",
-     "fr": "Solaire intégré au bâtiment"
+     "fr": "Solaire intégré au bâtiment",
+     "nl": "Gebouwgeïntegreerde zonne-energie",
+     "de": "Gebäudeintegrierte Photovoltaik",
+     "es": "Energía solar integrada en edificios"
     },
     {
      "en": "Greenhouses",
-     "zh": "温室",
-     "fr": "Serres"
+     "fr": "Serres",
+     "nl": "Kassen",
+     "de": "Gewächshäuser",
+     "es": "Invernaderos"
     }
    ],
    "related": [

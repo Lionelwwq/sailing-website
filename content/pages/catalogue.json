@@ -2,223 +2,291 @@
  "hero_image": "assets/img/library/low-e-facade.jpg",
  "hero_kicker": {
   "en": "Digital edition 2026",
-  "zh": "2026 数字版",
-  "fr": "Édition numérique 2026"
+  "fr": "Édition numérique 2026",
+  "nl": "Digitale editie 2026",
+  "de": "Digitale Ausgabe 2026",
+  "es": "Edición digital 2026"
  },
  "hero_title": {
   "en": "Product Catalogue",
-  "zh": "产品目录",
-  "fr": "Catalogue de produits"
+  "fr": "Catalogue de produits",
+  "nl": "Productcatalogus",
+  "de": "Produktkatalog",
+  "es": "Catálogo de productos"
  },
  "edition_label": {
   "en": "Catalogue language",
-  "zh": "目录语言",
-  "fr": "Langue du catalogue"
+  "fr": "Langue du catalogue",
+  "nl": "Taal van de catalogus",
+  "de": "Katalogsprache",
+  "es": "Idioma del catálogo"
  },
  "hint": {
   "en": "Click a page or drag its corner to turn it. The arrow keys work too.",
-  "zh": "点击页面或拖动页角即可翻页，也可以用键盘方向键。",
-  "fr": "Cliquez sur une page ou faites glisser son coin pour la tourner. Les flèches du clavier fonctionnent aussi."
+  "fr": "Cliquez sur une page ou faites glisser son coin pour la tourner. Les flèches du clavier fonctionnent aussi.",
+  "nl": "Klik op een pagina of sleep aan de hoek om om te slaan. De pijltjestoetsen werken ook.",
+  "de": "Klicken Sie auf eine Seite oder ziehen Sie an ihrer Ecke, um umzublättern. Die Pfeiltasten funktionieren ebenfalls.",
+  "es": "Haga clic en una página o arrastre su esquina para pasarla. También puede usar las teclas de flecha."
  },
  "prev": {
   "en": "Previous page",
-  "zh": "上一页",
-  "fr": "Page précédente"
+  "fr": "Page précédente",
+  "nl": "Vorige pagina",
+  "de": "Vorherige Seite",
+  "es": "Página anterior"
  },
  "next": {
   "en": "Next page",
-  "zh": "下一页",
-  "fr": "Page suivante"
+  "fr": "Page suivante",
+  "nl": "Volgende pagina",
+  "de": "Nächste Seite",
+  "es": "Página siguiente"
  },
  "slider": {
   "en": "Go to page",
-  "zh": "跳到某一页",
-  "fr": "Aller à la page"
+  "fr": "Aller à la page",
+  "nl": "Ga naar pagina",
+  "de": "Zu Seite",
+  "es": "Ir a la página"
  },
  "thumbs": {
   "en": "All pages",
-  "zh": "所有页面",
-  "fr": "Toutes les pages"
+  "fr": "Toutes les pages",
+  "nl": "Alle pagina's",
+  "de": "Alle Seiten",
+  "es": "Todas las páginas"
  },
  "fullscreen": {
   "en": "Full screen",
-  "zh": "全屏",
-  "fr": "Plein écran"
+  "fr": "Plein écran",
+  "nl": "Volledig scherm",
+  "de": "Vollbild",
+  "es": "Pantalla completa"
  },
  "download": {
   "en": "Download PDF",
-  "zh": "下载 PDF",
-  "fr": "Télécharger le PDF"
+  "fr": "Télécharger le PDF",
+  "nl": "PDF downloaden",
+  "de": "PDF herunterladen",
+  "es": "Descargar PDF"
  },
  "view_online": {
   "en": "View online",
-  "zh": "在线查看",
-  "fr": "Consulter en ligne"
+  "fr": "Consulter en ligne",
+  "nl": "Online bekijken",
+  "de": "Online ansehen",
+  "es": "Ver en línea"
  },
  "page_label": {
   "en": "Page {n}",
-  "zh": "第 {n} 页",
-  "fr": "Page {n}"
+  "fr": "Page {n}",
+  "nl": "Pagina {n}",
+  "de": "Seite {n}",
+  "es": "Página {n}"
  },
  "intro_title": {
   "en": "Product Catalogue 2026",
-  "zh": "2026 产品目录",
-  "fr": "Catalogue de produits 2026"
+  "fr": "Catalogue de produits 2026",
+  "nl": "Productcatalogus 2026",
+  "de": "Produktkatalog 2026",
+  "es": "Catálogo de productos 2026"
  },
  "intro_text": {
   "en": "Float glass, processed glass, decorative and specialty glass, and our mirror collection: 16 product families with thicknesses, sizes, colours and standards, plus glazing options and certifications.",
-  "zh": "浮法玻璃、深加工玻璃、装饰玻璃、特种玻璃和镜子系列：共 16 类产品，包含厚度、尺寸、颜色和标准，以及中空玻璃选项和认证。",
-  "fr": "Verre flotté, verre transformé, verre décoratif et spécial, et notre collection de miroirs : 16 familles de produits avec épaisseurs, formats, couleurs et normes, ainsi que les options de vitrage et les certifications."
+  "fr": "Verre flotté, verre transformé, verre décoratif et spécial, et notre collection de miroirs : 16 familles de produits avec épaisseurs, formats, couleurs et normes, ainsi que les options de vitrage et les certifications.",
+  "nl": "Floatglas, bewerkt glas, decoratief en speciaal glas en onze spiegelcollectie: 16 productfamilies met diktes, afmetingen, kleuren en normen, plus beglazingsopties en certificeringen.",
+  "de": "Floatglas, veredeltes Glas, Dekor- und Spezialglas sowie unsere Spiegelkollektion: 16 Produktfamilien mit Dicken, Formaten, Farben und Normen, dazu Verglasungsoptionen und Zertifizierungen.",
+  "es": "Vidrio flotado, vidrio procesado, vidrio decorativo y especial, y nuestra colección de espejos: 16 familias de productos con espesores, tamaños, colores y normas, además de opciones de acristalamiento y certificaciones."
  },
  "meta": {
   "en": "PDF · {edition} · {pages} pages · {size} MB",
-  "zh": "PDF · {edition} · {pages} 页 · {size} MB",
-  "fr": "PDF · {edition} · {pages} pages · {size} Mo"
+  "fr": "PDF · {edition} · {pages} pages · {size} Mo",
+  "nl": "PDF · {edition} · {pages} pagina's · {size} MB",
+  "de": "PDF · {edition} · {pages} Seiten · {size} MB",
+  "es": "PDF · {edition} · {pages} páginas · {size} MB"
  },
  "language_note": {
   "en": "The catalogue is available in English, French and Spanish: choose the language above the book.",
-  "zh": "产品目录提供英文、法文和西班牙文三个版本，可在翻页书上方切换。",
-  "fr": "Le catalogue est offert en anglais, en français et en espagnol : choisissez la langue au-dessus du livre."
+  "fr": "Le catalogue est offert en anglais, en français et en espagnol : choisissez la langue au-dessus du livre.",
+  "nl": "De catalogus is beschikbaar in het Engels, Frans en Spaans: kies de taal boven het boek.",
+  "de": "Der Katalog ist auf Englisch, Französisch und Spanisch erhältlich: Wählen Sie die Sprache über dem Buch.",
+  "es": "El catálogo está disponible en inglés, francés y español: elija el idioma encima del libro."
  },
  "stats": [
   {
    "value": "16",
    "label": {
     "en": "Product families",
-    "zh": "类产品",
-    "fr": "familles de produits"
+    "fr": "familles de produits",
+    "nl": "Productfamilies",
+    "de": "Produktfamilien",
+    "es": "Familias de productos"
    }
   },
   {
    "value": "{pages}",
    "label": {
     "en": "Pages",
-    "zh": "页",
-    "fr": "pages"
+    "fr": "pages",
+    "nl": "Pagina's",
+    "de": "Seiten",
+    "es": "Páginas"
    }
   },
   {
    "value": "30+",
    "label": {
     "en": "Years of experience",
-    "zh": "年行业经验",
-    "fr": "ans d'expérience"
+    "fr": "ans d'expérience",
+    "nl": "Jaar ervaring",
+    "de": "Jahre Erfahrung",
+    "es": "Años de experiencia"
    }
   },
   {
    "value": "20+",
    "label": {
     "en": "Countries served",
-    "zh": "个国家和地区",
-    "fr": "pays desservis"
+    "fr": "pays desservis",
+    "nl": "Landen waar we leveren",
+    "de": "Belieferte Länder",
+    "es": "Países atendidos"
    }
   }
  ],
  "chapters_title": {
   "en": "Jump to a chapter",
-  "zh": "按章节跳转",
-  "fr": "Aller à un chapitre"
+  "fr": "Aller à un chapitre",
+  "nl": "Ga naar een hoofdstuk",
+  "de": "Zu einem Kapitel springen",
+  "es": "Ir a un capítulo"
  },
  "chapters_hint": {
   "en": "Choose a chapter and the book opens at that page.",
-  "zh": "点击章节，目录会翻到对应页面。",
-  "fr": "Choisissez un chapitre : le catalogue s’ouvre à cette page."
+  "fr": "Choisissez un chapitre : le catalogue s’ouvre à cette page.",
+  "nl": "Kies een hoofdstuk en het boek opent op die pagina.",
+  "de": "Wählen Sie ein Kapitel, und das Buch öffnet sich auf dieser Seite.",
+  "es": "Elija un capítulo y el libro se abrirá en esa página."
  },
  "chapters": [
   {
    "page": 1,
    "title": {
     "en": "Cover",
-    "zh": "封面",
-    "fr": "Couverture"
+    "fr": "Couverture",
+    "nl": "Omslag",
+    "de": "Titelseite",
+    "es": "Portada"
    }
   },
   {
    "page": 2,
    "title": {
     "en": "About us",
-    "zh": "公司简介",
-    "fr": "À propos"
+    "fr": "À propos",
+    "nl": "Over ons",
+    "de": "Über uns",
+    "es": "Sobre nosotros"
    }
   },
   {
    "page": 3,
    "title": {
     "en": "Milestones",
-    "zh": "发展历程",
-    "fr": "Grandes étapes"
+    "fr": "Grandes étapes",
+    "nl": "Mijlpalen",
+    "de": "Meilensteine",
+    "es": "Hitos"
    }
   },
   {
    "page": 4,
    "title": {
     "en": "Product overview",
-    "zh": "产品总览",
-    "fr": "Aperçu des produits"
+    "fr": "Aperçu des produits",
+    "nl": "Productoverzicht",
+    "de": "Produktübersicht",
+    "es": "Descripción general de productos"
    }
   },
   {
    "page": 5,
    "title": {
     "en": "Glazing options",
-    "zh": "中空玻璃选项",
-    "fr": "Options de vitrage"
+    "fr": "Options de vitrage",
+    "nl": "Beglazingsopties",
+    "de": "Verglasungsoptionen",
+    "es": "Opciones de acristalamiento"
    }
   },
   {
    "page": 6,
    "title": {
     "en": "Flat glass",
-    "zh": "平板玻璃",
-    "fr": "Verre plat"
+    "fr": "Verre plat",
+    "nl": "Vlakglas",
+    "de": "Flachglas",
+    "es": "Vidrio plano"
    }
   },
   {
    "page": 11,
    "title": {
     "en": "Processed glass",
-    "zh": "深加工玻璃",
-    "fr": "Verre transformé"
+    "fr": "Verre transformé",
+    "nl": "Bewerkt glas",
+    "de": "Veredeltes Glas",
+    "es": "Vidrio procesado"
    }
   },
   {
    "page": 14,
    "title": {
     "en": "Decorative glass",
-    "zh": "装饰玻璃",
-    "fr": "Verre décoratif"
+    "fr": "Verre décoratif",
+    "nl": "Decoratief glas",
+    "de": "Dekorglas",
+    "es": "Vidrio decorativo"
    }
   },
   {
    "page": 18,
    "title": {
     "en": "Specialty glass",
-    "zh": "特种玻璃",
-    "fr": "Verre spécial"
+    "fr": "Verre spécial",
+    "nl": "Speciaal glas",
+    "de": "Spezialglas",
+    "es": "Vidrio especial"
    }
   },
   {
    "page": 20,
    "title": {
     "en": "Mirrors",
-    "zh": "镜子",
-    "fr": "Miroirs"
+    "fr": "Miroirs",
+    "nl": "Spiegels",
+    "de": "Spiegel",
+    "es": "Espejos"
    }
   },
   {
    "page": 22,
    "title": {
     "en": "Certifications",
-    "zh": "认证与检测",
-    "fr": "Certifications"
+    "fr": "Certifications",
+    "nl": "Certificeringen",
+    "de": "Zertifizierungen",
+    "es": "Certificaciones"
    }
   },
   {
    "page": 23,
    "title": {
     "en": "Contact",
-    "zh": "联系方式",
-    "fr": "Contact"
+    "fr": "Contact",
+    "nl": "Contact",
+    "de": "Kontakt",
+    "es": "Contacto"
    }
   }
  ]

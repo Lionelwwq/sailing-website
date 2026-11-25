@@ -4,13 +4,17 @@
    "id": "handling",
    "name": {
     "en": "Handling & Storage",
-    "zh": "搬运与存储",
-    "fr": "Manutention et entreposage"
+    "fr": "Manutention et entreposage",
+    "nl": "Hantering en opslag",
+    "de": "Handhabung & Lagerung",
+    "es": "Manipulación y almacenamiento"
    },
    "blurb": {
     "en": "Racks, shelves, pads and slings that protect glass from the truck to the cutting table.",
-    "zh": "玻璃架、存储架、垫片和吊带，从卸车到切割台全程保护玻璃。",
-    "fr": "Chevalets, étagères, tampons et élingues qui protègent le verre, du camion jusqu'à la table de coupe."
+    "fr": "Chevalets, étagères, tampons et élingues qui protègent le verre, du camion jusqu'à la table de coupe.",
+    "nl": "Bokken, rekken, pads en hijsbanden die glas beschermen, van de vrachtwagen tot de snijtafel.",
+    "de": "Gestelle, Regale, Pads und Hebebänder, die Glas vom Lkw bis zum Schneidtisch schützen.",
+    "es": "Caballetes, estantes, almohadillas y eslingas que protegen el vidrio desde el camión hasta la mesa de corte."
    },
    "cover": "assets/img/ai/removable-shelf.jpg"
   },
@@ -18,13 +22,17 @@
    "id": "ig",
    "name": {
     "en": "Insulating & Sealing",
-    "zh": "中空与密封",
-    "fr": "Isolation et scellement"
+    "fr": "Isolation et scellement",
+    "nl": "Isoleren en afdichten",
+    "de": "Isolieren & Abdichten",
+    "es": "Aislamiento y sellado"
    },
    "blurb": {
     "en": "Spacers, desiccant, adhesives and tapes for insulating glass units built to last.",
-    "zh": "间隔条、干燥剂、胶粘剂和胶带，打造经久耐用的中空玻璃。",
-    "fr": "Intercalaires, déshydratant, adhésifs et rubans pour des unités de verre isolant conçues pour durer."
+    "fr": "Intercalaires, déshydratant, adhésifs et rubans pour des unités de verre isolant conçues pour durer.",
+    "nl": "Afstandhouders, droogmiddel, lijmen en tapes voor duurzaam isolatieglas.",
+    "de": "Abstandhalter, Trockenmittel, Klebstoffe und Bänder für langlebige Isolierglaseinheiten.",
+    "es": "Espaciadores, desecante, adhesivos y cintas para unidades de vidrio aislante duraderas."
    },
    "cover": "assets/img/ai/aluminum-spacer.jpg"
   },
@@ -32,13 +40,17 @@
    "id": "films",
    "name": {
     "en": "Films & Interlayers",
-    "zh": "胶片与中间膜",
-    "fr": "Pellicules et intercalaires"
+    "fr": "Pellicules et intercalaires",
+    "nl": "Folies en tussenlagen",
+    "de": "Folien & Zwischenschichten",
+    "es": "Películas y láminas intermedias"
    },
    "blurb": {
     "en": "Laminating interlayers and mirror safety backing films for every application.",
-    "zh": "适用于各类应用的夹胶中间膜和镜子安全背膜。",
-    "fr": "Intercalaires de feuilletage et pellicules de sécurité pour endos de miroir, pour toutes les applications."
+    "fr": "Intercalaires de feuilletage et pellicules de sécurité pour endos de miroir, pour toutes les applications.",
+    "nl": "Tussenlagen voor gelaagd glas en veiligheidsfolies voor spiegels, voor elke toepassing.",
+    "de": "Zwischenschichten für Verbundglas und Sicherheitsfolien für Spiegelrückseiten, für jede Anwendung.",
+    "es": "Láminas intermedias para laminado y películas de seguridad para espejos, para cada aplicación."
    },
    "cover": "assets/img/ai/eva-film.jpg"
   },
@@ -46,13 +58,17 @@
    "id": "cutting",
    "name": {
     "en": "Cutting & Finishing",
-    "zh": "切割与精加工",
-    "fr": "Coupe et finition"
+    "fr": "Coupe et finition",
+    "nl": "Snijden en afwerken",
+    "de": "Schneiden & Veredeln",
+    "es": "Corte y acabado"
    },
    "blurb": {
     "en": "Waterjet systems, abrasives, grinding wheels and polishing compounds.",
-    "zh": "水刀系统、磨料、磨轮和抛光材料。",
-    "fr": "Systèmes de découpe au jet d'eau, abrasifs, meules et composés de polissage."
+    "fr": "Systèmes de découpe au jet d'eau, abrasifs, meules et composés de polissage.",
+    "nl": "Waterstraalsystemen, schuurmiddelen, slijpschijven en polijstmiddelen.",
+    "de": "Wasserstrahlanlagen, Schleifmittel, Schleifscheiben und Poliermittel.",
+    "es": "Sistemas de corte por chorro de agua, abrasivos, muelas y compuestos de pulido."
    },
    "cover": "assets/img/ai/water-jet.jpg"
   }
@@ -63,132 +79,176 @@
    "category": "handling",
    "name": {
     "en": "Cork Pads",
-    "zh": "软木垫",
-    "fr": "Tampons de liège"
+    "fr": "Tampons de liège",
+    "nl": "Kurkpads",
+    "de": "Korkpads",
+    "es": "Almohadillas de corcho"
    },
    "photo": "assets/img/ai/cork-pads.jpg",
    "gallery": [],
    "short": {
     "en": "Separator pads that keep stacked glass from scratching in storage and transit.",
-    "zh": "隔离垫片，防止叠放的玻璃在存储和运输中划伤。",
-    "fr": "Tampons séparateurs qui empêchent le verre empilé de se rayer pendant l'entreposage et le transport."
+    "fr": "Tampons séparateurs qui empêchent le verre empilé de se rayer pendant l'entreposage et le transport.",
+    "nl": "Tussenpads die voorkomen dat gestapeld glas krast tijdens opslag en transport.",
+    "de": "Trennpads, die gestapeltes Glas bei Lagerung und Transport vor Kratzern schützen.",
+    "es": "Almohadillas separadoras que evitan que el vidrio apilado se raye durante el almacenamiento y el transporte."
    },
    "description": {
     "en": "Cork separator pads go between glass sheets so stacked lites never touch. The cork cushions each sheet, absorbs road vibration and keeps faces free of scratches and chips. Pads come on rolls or sheets of release film for fast, one-handed application.",
-    "zh": "软木隔离垫放置在玻璃片之间，使叠放的玻璃互不接触。软木为每片玻璃提供缓冲，吸收运输途中的震动，保护玻璃表面免受划伤和崩边。垫片附着在成卷或成张的离型膜上，单手即可快速贴放。",
-    "fr": "Les tampons séparateurs en liège se placent entre les feuilles de verre pour que les vitres empilées ne se touchent jamais. Le liège amortit chaque feuille, absorbe les vibrations de la route et protège les faces contre les rayures et les éclats. Les tampons sont offerts en rouleaux ou en feuilles sur pellicule détachable pour une application rapide, d'une seule main."
+    "fr": "Les tampons séparateurs en liège se placent entre les feuilles de verre pour que les vitres empilées ne se touchent jamais. Le liège amortit chaque feuille, absorbe les vibrations de la route et protège les faces contre les rayures et les éclats. Les tampons sont offerts en rouleaux ou en feuilles sur pellicule détachable pour une application rapide, d'une seule main.",
+    "nl": "Kurken tussenpads komen tussen de glasplaten, zodat gestapelde ruiten elkaar nooit raken. De kurk dempt elke plaat, vangt trillingen onderweg op en houdt de oppervlakken vrij van krassen en schilfers. De pads worden geleverd op rollen of vellen met schutfolie, zodat u ze snel met één hand aanbrengt.",
+    "de": "Korktrennpads kommen zwischen die Glasscheiben, damit sich gestapelte Scheiben nie berühren. Der Kork polstert jede Scheibe, dämpft Fahrvibrationen und hält die Oberflächen frei von Kratzern und Ausmuschelungen. Die Pads werden auf Rollen oder Bögen mit Trägerfolie geliefert und lassen sich schnell mit einer Hand anbringen.",
+    "es": "Las almohadillas separadoras de corcho se colocan entre las hojas de vidrio para que las piezas apiladas nunca se toquen. El corcho amortigua cada hoja, absorbe las vibraciones del camino y mantiene las caras libres de rayones y desconchados. Se suministran en rollos u hojas sobre película protectora para una aplicación rápida con una sola mano."
    },
    "specs": [
     {
      "label": {
       "en": "Material",
-      "zh": "材质",
-      "fr": "Matériau"
+      "fr": "Matériau",
+      "nl": "Materiaal",
+      "de": "Material",
+      "es": "Material"
      },
      "value": {
       "en": "Natural cork; cork + foam available",
-      "zh": "天然软木；亦可提供软木 + 泡棉",
-      "fr": "Liège naturel; liège + mousse également offert"
+      "fr": "Liège naturel; liège + mousse également offert",
+      "nl": "Natuurkurk; ook kurk + schuim leverbaar",
+      "de": "Naturkork; auch Kork + Schaum erhältlich",
+      "es": "Corcho natural; también corcho + espuma"
      }
     },
     {
      "label": {
       "en": "Pad size",
-      "zh": "垫片尺寸",
-      "fr": "Taille des tampons"
+      "fr": "Taille des tampons",
+      "nl": "Padformaat",
+      "de": "Padgröße",
+      "es": "Tamaño de la almohadilla"
      },
      "value": {
       "en": "15–25 mm, square or round",
-      "zh": "15–25 mm，方形或圆形",
-      "fr": "15–25 mm, carrés ou ronds"
+      "fr": "15–25 mm, carrés ou ronds",
+      "nl": "15–25 mm, vierkant of rond",
+      "de": "15–25 mm, quadratisch oder rund",
+      "es": "15–25 mm, cuadradas o redondas"
      }
     },
     {
      "label": {
       "en": "Thickness",
-      "zh": "厚度",
-      "fr": "Épaisseur"
+      "fr": "Épaisseur",
+      "nl": "Dikte",
+      "de": "Dicke",
+      "es": "Espesor"
      },
      "value": {
       "en": "3–5 mm",
-      "zh": "3–5 mm",
-      "fr": "3–5 mm"
+      "fr": "3–5 mm",
+      "nl": "3–5 mm",
+      "de": "3–5 mm",
+      "es": "3–5 mm"
      }
     },
     {
      "label": {
       "en": "Format",
-      "zh": "供货形式",
-      "fr": "Format"
+      "fr": "Format",
+      "nl": "Formaat",
+      "de": "Format",
+      "es": "Formato"
      },
      "value": {
       "en": "Rolls or sheets on release film",
-      "zh": "离型膜成卷或成张",
-      "fr": "Rouleaux ou feuilles sur pellicule détachable"
+      "fr": "Rouleaux ou feuilles sur pellicule détachable",
+      "nl": "Rollen of vellen op schutfolie",
+      "de": "Rollen oder Bögen auf Trägerfolie",
+      "es": "Rollos u hojas sobre película protectora"
      }
     },
     {
      "label": {
       "en": "Fixing",
-      "zh": "固定方式",
-      "fr": "Fixation"
+      "fr": "Fixation",
+      "nl": "Bevestiging",
+      "de": "Befestigung",
+      "es": "Fijación"
      },
      "value": {
       "en": "Static-cling foam or adhesive backing",
-      "zh": "静电吸附泡棉或背胶",
-      "fr": "Mousse électrostatique ou endos adhésif"
+      "fr": "Mousse électrostatique ou endos adhésif",
+      "nl": "Statisch hechtend schuim of zelfklevende achterzijde",
+      "de": "Statisch haftender Schaum oder Klebeschicht",
+      "es": "Espuma de adherencia estática o reverso adhesivo"
      }
     }
    ],
    "uses": [
     {
      "en": "Stacking cut sizes and IG units",
-     "zh": "叠放切割成品和中空玻璃",
-     "fr": "Empilage de verre coupé à dimension et d'unités scellées"
+     "fr": "Empilage de verre coupé à dimension et d'unités scellées",
+     "nl": "Stapelen van op maat gesneden glas en isolatieglas",
+     "de": "Stapeln von Zuschnitten und Isolierglaseinheiten",
+     "es": "Apilado de vidrio cortado a medida y unidades de vidrio aislante"
     },
     {
      "en": "Crating and shipping finished glass",
-     "zh": "成品玻璃装箱与运输",
-     "fr": "Mise en caisse et expédition du verre fini"
+     "fr": "Mise en caisse et expédition du verre fini",
+     "nl": "Verpakken in kisten en verzenden van afgewerkt glas",
+     "de": "Verpacken in Kisten und Versand von fertigem Glas",
+     "es": "Embalaje en cajas y envío de vidrio terminado"
     },
     {
      "en": "Protecting coated and mirror surfaces",
-     "zh": "保护镀膜和镜面表面",
-     "fr": "Protection des surfaces à couche et des miroirs"
+     "fr": "Protection des surfaces à couche et des miroirs",
+     "nl": "Bescherming van gecoate oppervlakken en spiegels",
+     "de": "Schutz beschichteter Oberflächen und Spiegel",
+     "es": "Protección de superficies con recubrimiento y espejos"
     }
    ],
    "options": [
     {
      "en": "Pad diameter and thickness",
-     "zh": "垫片直径和厚度",
-     "fr": "Diamètre et épaisseur des tampons"
+     "fr": "Diamètre et épaisseur des tampons",
+     "nl": "Diameter en dikte van de pads",
+     "de": "Durchmesser und Dicke der Pads",
+     "es": "Diámetro y espesor de las almohadillas"
     },
     {
      "en": "Cork only or cork + foam",
-     "zh": "纯软木或软木 + 泡棉",
-     "fr": "Liège seul ou liège + mousse"
+     "fr": "Liège seul ou liège + mousse",
+     "nl": "Alleen kurk of kurk + schuim",
+     "de": "Nur Kork oder Kork + Schaum",
+     "es": "Solo corcho o corcho + espuma"
     },
     {
      "en": "With or without adhesive",
-     "zh": "带胶或不带胶",
-     "fr": "Avec ou sans adhésif"
+     "fr": "Avec ou sans adhésif",
+     "nl": "Met of zonder kleeflaag",
+     "de": "Mit oder ohne Klebeschicht",
+     "es": "Con o sin adhesivo"
     },
     {
      "en": "Roll or sheet format",
-     "zh": "成卷或成张",
-     "fr": "Format rouleau ou feuille"
+     "fr": "Format rouleau ou feuille",
+     "nl": "Op rol of in vellen",
+     "de": "Rolle oder Bogen",
+     "es": "En rollo u hoja"
     }
    ],
    "tags": [
     {
      "en": "Anti-scratch",
-     "zh": "防划伤",
-     "fr": "Anti-rayures"
+     "fr": "Anti-rayures",
+     "nl": "Krasbestendig",
+     "de": "Kratzschutz",
+     "es": "Antirayas"
     },
     {
      "en": "Custom sizes",
-     "zh": "定制尺寸",
-     "fr": "Tailles sur mesure"
+     "fr": "Tailles sur mesure",
+     "nl": "Maatwerk",
+     "de": "Sondergrößen",
+     "es": "Tamaños a medida"
     }
    ],
    "related": [
@@ -202,132 +262,176 @@
    "category": "handling",
    "name": {
     "en": "Removable Storage Glass Shelf",
-    "zh": "可拆卸玻璃存储架",
-    "fr": "Étagère de rangement amovible pour verre"
+    "fr": "Étagère de rangement amovible pour verre",
+    "nl": "Verplaatsbaar opslagrek voor glas",
+    "de": "Mobiles Glaslagerregal",
+    "es": "Estante de almacenamiento de vidrio desmontable"
    },
    "photo": "assets/img/ai/removable-shelf.jpg",
    "gallery": [],
    "short": {
     "en": "Mobile, demountable shelving that reconfigures as your inventory changes.",
-    "zh": "可移动、可拆装的货架，可随库存变化灵活调整。",
-    "fr": "Étagères mobiles et démontables qui se reconfigurent au gré de l'évolution de votre inventaire."
+    "fr": "Étagères mobiles et démontables qui se reconfigurent au gré de l'évolution de votre inventaire.",
+    "nl": "Mobiel, demonteerbaar rek dat zich aanpast aan uw veranderende voorraad.",
+    "de": "Mobiles, zerlegbares Regal, das sich an Ihren wechselnden Bestand anpassen lässt.",
+    "es": "Estantería móvil y desmontable que se adapta a medida que cambia su inventario."
    },
    "description": {
     "en": "A mobile storage shelf for cut sizes, remakes and offcuts. Dividers can be removed or repositioned, so the rack adapts to whatever is on your floor this week, and casters let you roll glass straight to the next station. Padded contact points protect edges and coated surfaces.",
-    "zh": "用于存放切割成品、返工件和边角料的移动存储架。隔板可拆卸或调整位置，货架可随车间当周的实际需求灵活调整；脚轮可将玻璃直接推送至下一工位。接触点配有衬垫，保护玻璃边缘和镀膜表面。",
-    "fr": "Une étagère de rangement mobile pour le verre coupé à dimension, les pièces à refaire et les retailles. Les séparateurs peuvent être retirés ou repositionnés, de sorte que l'étagère s'adapte à ce qui se trouve dans votre atelier cette semaine, et les roulettes permettent d'acheminer le verre directement au poste suivant. Les points de contact rembourrés protègent les bords et les surfaces à couche."
+    "fr": "Une étagère de rangement mobile pour le verre coupé à dimension, les pièces à refaire et les retailles. Les séparateurs peuvent être retirés ou repositionnés, de sorte que l'étagère s'adapte à ce qui se trouve dans votre atelier cette semaine, et les roulettes permettent d'acheminer le verre directement au poste suivant. Les points de contact rembourrés protègent les bords et les surfaces à couche.",
+    "nl": "Een mobiel opslagrek voor op maat gesneden glas, hermaakwerk en restplaten. De scheidingen kunnen worden verwijderd of verplaatst, zodat het rek zich aanpast aan wat er deze week in uw werkplaats staat, en met de zwenkwielen rijdt u het glas direct naar het volgende station. Beklede contactpunten beschermen randen en gecoate oppervlakken.",
+    "de": "Ein mobiles Lagerregal für Zuschnitte, Nachfertigungen und Reststücke. Die Trennelemente lassen sich entfernen oder versetzen, sodass sich das Regal an das anpasst, was diese Woche in Ihrer Werkstatt steht, und dank Rollen fahren Sie das Glas direkt zur nächsten Station. Gepolsterte Kontaktpunkte schützen Kanten und beschichtete Oberflächen.",
+    "es": "Un estante de almacenamiento móvil para piezas cortadas a medida, reposiciones y recortes. Los separadores se pueden quitar o reubicar, de modo que el estante se adapta a lo que tenga en su taller esa semana, y las ruedas permiten llevar el vidrio directamente a la siguiente estación. Los puntos de contacto acolchados protegen los bordes y las superficies con recubrimiento."
    },
    "specs": [
     {
      "label": {
       "en": "Frame",
-      "zh": "框架",
-      "fr": "Structure"
+      "fr": "Structure",
+      "nl": "Frame",
+      "de": "Rahmen",
+      "es": "Estructura"
      },
      "value": {
       "en": "Welded steel, painted or powder-coated",
-      "zh": "焊接钢结构，喷漆或粉末喷涂",
-      "fr": "Acier soudé, peint ou à revêtement en poudre"
+      "fr": "Acier soudé, peint ou à revêtement en poudre",
+      "nl": "Gelast staal, gelakt of gepoedercoat",
+      "de": "Geschweißter Stahl, lackiert oder pulverbeschichtet",
+      "es": "Acero soldado, pintado o con recubrimiento en polvo"
      }
     },
     {
      "label": {
       "en": "Dividers",
-      "zh": "隔板",
-      "fr": "Séparateurs"
+      "fr": "Séparateurs",
+      "nl": "Scheidingen",
+      "de": "Trennelemente",
+      "es": "Separadores"
      },
      "value": {
       "en": "Removable and repositionable",
-      "zh": "可拆卸、可调整位置",
-      "fr": "Amovibles et repositionnables"
+      "fr": "Amovibles et repositionnables",
+      "nl": "Verwijderbaar en verplaatsbaar",
+      "de": "Herausnehmbar und versetzbar",
+      "es": "Extraíbles y reubicables"
      }
     },
     {
      "label": {
       "en": "Mobility",
-      "zh": "移动方式",
-      "fr": "Mobilité"
+      "fr": "Mobilité",
+      "nl": "Mobiliteit",
+      "de": "Mobilität",
+      "es": "Movilidad"
      },
      "value": {
       "en": "Swivel casters (lockable) or fixed feet",
-      "zh": "万向脚轮（可锁定）或固定支脚",
-      "fr": "Roulettes pivotantes (verrouillables) ou pieds fixes"
+      "fr": "Roulettes pivotantes (verrouillables) ou pieds fixes",
+      "nl": "Zwenkwielen (vergrendelbaar) of vaste voeten",
+      "de": "Lenkrollen (feststellbar) oder feste Füße",
+      "es": "Ruedas giratorias (con freno) o patas fijas"
      }
     },
     {
      "label": {
       "en": "Padding",
-      "zh": "衬垫",
-      "fr": "Rembourrage"
+      "fr": "Rembourrage",
+      "nl": "Bekleding",
+      "de": "Polsterung",
+      "es": "Acolchado"
      },
      "value": {
       "en": "Rubber or felt on contact surfaces",
-      "zh": "接触面采用橡胶或毛毡",
-      "fr": "Caoutchouc ou feutre sur les surfaces de contact"
+      "fr": "Caoutchouc ou feutre sur les surfaces de contact",
+      "nl": "Rubber of vilt op de contactvlakken",
+      "de": "Gummi oder Filz an den Kontaktflächen",
+      "es": "Goma o fieltro en las superficies de contacto"
      }
     },
     {
      "label": {
       "en": "Size",
-      "zh": "尺寸",
-      "fr": "Dimensions"
+      "fr": "Dimensions",
+      "nl": "Afmetingen",
+      "de": "Größe",
+      "es": "Tamaño"
      },
      "value": {
       "en": "Built to your floor space and glass sizes",
-      "zh": "根据您的场地空间和玻璃尺寸定制",
-      "fr": "Selon votre espace au sol et vos formats de verre"
+      "fr": "Selon votre espace au sol et vos formats de verre",
+      "nl": "Gebouwd naar uw vloerruimte en glasformaten",
+      "de": "Passend zu Ihrer Stellfläche und Ihren Glasformaten gebaut",
+      "es": "Fabricado según su espacio y sus formatos de vidrio"
      }
     }
    ],
    "uses": [
     {
      "en": "Cut-size and remake storage",
-     "zh": "切割成品和返工件存储",
-     "fr": "Rangement du verre coupé à dimension et des pièces à refaire"
+     "fr": "Rangement du verre coupé à dimension et des pièces à refaire",
+     "nl": "Opslag van maatglas en hermaakwerk",
+     "de": "Lagerung von Zuschnitten und Nachfertigungen",
+     "es": "Almacenamiento de piezas a medida y reposiciones"
     },
     {
      "en": "Moving glass between stations",
-     "zh": "工位之间转运玻璃",
-     "fr": "Déplacement du verre entre les postes"
+     "fr": "Déplacement du verre entre les postes",
+     "nl": "Glas verplaatsen tussen werkstations",
+     "de": "Glastransport zwischen Arbeitsstationen",
+     "es": "Traslado de vidrio entre estaciones"
     },
     {
      "en": "Staging glass between processes",
-     "zh": "工序之间暂存玻璃",
-     "fr": "Mise en attente du verre entre les étapes de transformation"
+     "fr": "Mise en attente du verre entre les étapes de transformation",
+     "nl": "Glas bufferen tussen bewerkingsstappen",
+     "de": "Bereitstellung von Glas zwischen Arbeitsschritten",
+     "es": "Espera del vidrio entre procesos"
     }
    ],
    "options": [
     {
      "en": "Overall dimensions",
-     "zh": "外形尺寸",
-     "fr": "Dimensions hors tout"
+     "fr": "Dimensions hors tout",
+     "nl": "Buitenafmetingen",
+     "de": "Außenmaße",
+     "es": "Dimensiones totales"
     },
     {
      "en": "Number of bays and dividers",
-     "zh": "格位和隔板数量",
-     "fr": "Nombre de compartiments et de séparateurs"
+     "fr": "Nombre de compartiments et de séparateurs",
+     "nl": "Aantal vakken en scheidingen",
+     "de": "Anzahl der Fächer und Trennelemente",
+     "es": "Número de compartimentos y separadores"
     },
     {
      "en": "Mobile (casters) or fixed",
-     "zh": "移动式（脚轮）或固定式",
-     "fr": "Mobile (roulettes) ou fixe"
+     "fr": "Mobile (roulettes) ou fixe",
+     "nl": "Mobiel (wielen) of vast",
+     "de": "Mobil (Rollen) oder fest",
+     "es": "Móvil (ruedas) o fijo"
     },
     {
      "en": "Rubber or felt padding",
-     "zh": "橡胶或毛毡衬垫",
-     "fr": "Rembourrage en caoutchouc ou en feutre"
+     "fr": "Rembourrage en caoutchouc ou en feutre",
+     "nl": "Rubber of vilten bekleding",
+     "de": "Gummi- oder Filzpolsterung",
+     "es": "Acolchado de goma o fieltro"
     }
    ],
    "tags": [
     {
      "en": "On casters",
-     "zh": "带脚轮",
-     "fr": "Sur roulettes"
+     "fr": "Sur roulettes",
+     "nl": "Op wielen",
+     "de": "Auf Rollen",
+     "es": "Con ruedas"
     },
     {
      "en": "Modular",
-     "zh": "模块化",
-     "fr": "Modulaire"
+     "fr": "Modulaire",
+     "nl": "Modulair",
+     "de": "Modular",
+     "es": "Modular"
     }
    ],
    "related": [
@@ -341,8 +445,10 @@
    "category": "handling",
    "name": {
     "en": "Customized Glass Rack",
-    "zh": "定制玻璃架",
-    "fr": "Chevalet à verre sur mesure"
+    "fr": "Chevalet à verre sur mesure",
+    "nl": "Glasbok op maat",
+    "de": "Glasgestell nach Maß",
+    "es": "Caballete para vidrio a medida"
    },
    "photo": "assets/img/ai/custom-rack.jpg",
    "gallery": [
@@ -350,132 +456,176 @@
      "image": "assets/img/warehouse/zone-racks.webp",
      "caption": {
       "en": "In use: finished doors and windows stored on racks",
-      "zh": "使用实景：成品门窗存放在玻璃架上",
-      "fr": "En situation : portes et fenêtres finies entreposées sur chevalets"
+      "fr": "En situation : portes et fenêtres finies entreposées sur chevalets",
+      "nl": "In gebruik: afgewerkte deuren en ramen opgeslagen op bokken",
+      "de": "Im Einsatz: fertige Türen und Fenster auf Gestellen gelagert",
+      "es": "En uso: puertas y ventanas terminadas almacenadas en caballetes"
      }
     }
    ],
    "short": {
     "en": "Steel racks built to your glass sizes, loads and floor plan.",
-    "zh": "根据您的玻璃尺寸、载重和场地布局定制的钢制玻璃架。",
-    "fr": "Chevalets en acier fabriqués selon vos formats de verre, vos charges et l'aménagement de votre atelier."
+    "fr": "Chevalets en acier fabriqués selon vos formats de verre, vos charges et l'aménagement de votre atelier.",
+    "nl": "Stalen bokken, gebouwd naar uw glasformaten, belasting en indeling.",
+    "de": "Stahlgestelle, gebaut nach Ihren Glasformaten, Lasten und Ihrem Grundriss.",
+    "es": "Caballetes de acero fabricados según sus formatos de vidrio, cargas y distribución."
    },
    "description": {
     "en": "When standard racks do not fit, we build to your drawing. Customized glass racks are fabricated in steel to your dimensions and load requirements (A-frame, L-frame, harp or transport styles), with protective padding wherever glass makes contact and tie-down straps to secure the load.",
-    "zh": "标准架子不适用时，我们可按您的图纸制作。定制玻璃架采用钢材，按您的尺寸和载重要求制造（A 字架、L 型架、竖琴架或运输架等款式），所有与玻璃接触的部位均配有保护衬垫，并配备捆绑带固定货物。",
-    "fr": "Lorsque les chevalets standards ne conviennent pas, nous fabriquons selon votre dessin. Les chevalets à verre sur mesure sont fabriqués en acier selon vos dimensions et vos exigences de charge (modèles en A, en L, en harpe ou de transport), avec un rembourrage protecteur à chaque point de contact avec le verre et des sangles d'arrimage pour retenir la charge."
+    "fr": "Lorsque les chevalets standards ne conviennent pas, nous fabriquons selon votre dessin. Les chevalets à verre sur mesure sont fabriqués en acier selon vos dimensions et vos exigences de charge (modèles en A, en L, en harpe ou de transport), avec un rembourrage protecteur à chaque point de contact avec le verre et des sangles d'arrimage pour retenir la charge.",
+    "nl": "Passen standaardbokken niet, dan bouwen we naar uw tekening. Glasbokken op maat worden in staal gemaakt volgens uw afmetingen en belastingseisen (A-bok, L-bok, harp- of transportbok), met beschermende bekleding op elk contactpunt met het glas en spanbanden om de lading vast te zetten.",
+    "de": "Wenn Standardgestelle nicht passen, bauen wir nach Ihrer Zeichnung. Glasgestelle nach Maß werden aus Stahl nach Ihren Maßen und Lastanforderungen gefertigt (A-Gestell, L-Gestell, Harfen- oder Transportgestell), mit Schutzpolsterung an allen Kontaktpunkten mit dem Glas und Spanngurten zur Ladungssicherung.",
+    "es": "Cuando los caballetes estándar no sirven, fabricamos según su plano. Los caballetes a medida se fabrican en acero según sus dimensiones y requisitos de carga (en A, en L, de arpa o de transporte), con acolchado protector en cada punto de contacto con el vidrio y correas de amarre para asegurar la carga."
    },
    "specs": [
     {
      "label": {
       "en": "Styles",
-      "zh": "款式",
-      "fr": "Modèles"
+      "fr": "Modèles",
+      "nl": "Uitvoeringen",
+      "de": "Ausführungen",
+      "es": "Modelos"
      },
      "value": {
       "en": "A-frame, L-frame, harp, transport",
-      "zh": "A 字架、L 型架、竖琴架、运输架",
-      "fr": "En A, en L, en harpe, de transport"
+      "fr": "En A, en L, en harpe, de transport",
+      "nl": "A-bok, L-bok, harp, transport",
+      "de": "A-Gestell, L-Gestell, Harfe, Transport",
+      "es": "En A, en L, de arpa, de transporte"
      }
     },
     {
      "label": {
       "en": "Frame",
-      "zh": "框架",
-      "fr": "Structure"
+      "fr": "Structure",
+      "nl": "Frame",
+      "de": "Rahmen",
+      "es": "Estructura"
      },
      "value": {
       "en": "Welded steel, painted or powder-coated",
-      "zh": "焊接钢结构，喷漆或粉末喷涂",
-      "fr": "Acier soudé, peint ou à revêtement en poudre"
+      "fr": "Acier soudé, peint ou à revêtement en poudre",
+      "nl": "Gelast staal, gelakt of gepoedercoat",
+      "de": "Geschweißter Stahl, lackiert oder pulverbeschichtet",
+      "es": "Acero soldado, pintado o con recubrimiento en polvo"
      }
     },
     {
      "label": {
       "en": "Load capacity",
-      "zh": "承载能力",
-      "fr": "Capacité de charge"
+      "fr": "Capacité de charge",
+      "nl": "Draagvermogen",
+      "de": "Tragfähigkeit",
+      "es": "Capacidad de carga"
      },
      "value": {
       "en": "Engineered to your requirement",
-      "zh": "按您的要求设计",
-      "fr": "Conçue selon vos exigences"
+      "fr": "Conçue selon vos exigences",
+      "nl": "Berekend op uw eisen",
+      "de": "Nach Ihren Anforderungen ausgelegt",
+      "es": "Diseñada según sus requisitos"
      }
     },
     {
      "label": {
       "en": "Handling",
-      "zh": "搬运方式",
-      "fr": "Manutention"
+      "fr": "Manutention",
+      "nl": "Hantering",
+      "de": "Handhabung",
+      "es": "Manipulación"
      },
      "value": {
       "en": "Forklift pockets, lifting lugs or casters",
-      "zh": "叉车孔、吊耳或脚轮",
-      "fr": "Fourreaux pour chariot élévateur, anneaux de levage ou roulettes"
+      "fr": "Fourreaux pour chariot élévateur, anneaux de levage ou roulettes",
+      "nl": "Vorkheftruckopeningen, hijsogen of wielen",
+      "de": "Staplertaschen, Hebeösen oder Rollen",
+      "es": "Huecos para montacargas, cáncamos de elevación o ruedas"
      }
     },
     {
      "label": {
       "en": "Securing",
-      "zh": "货物固定",
-      "fr": "Arrimage"
+      "fr": "Arrimage",
+      "nl": "Vastzetten",
+      "de": "Sicherung",
+      "es": "Sujeción"
      },
      "value": {
       "en": "Rubber padding and tie-down straps",
-      "zh": "橡胶衬垫和捆绑带",
-      "fr": "Rembourrage en caoutchouc et sangles d'arrimage"
+      "fr": "Rembourrage en caoutchouc et sangles d'arrimage",
+      "nl": "Rubberen bekleding en spanbanden",
+      "de": "Gummipolsterung und Spanngurte",
+      "es": "Acolchado de goma y correas de amarre"
      }
     }
    ],
    "uses": [
     {
      "en": "Shop-floor storage",
-     "zh": "车间存储",
-     "fr": "Entreposage en atelier"
+     "fr": "Entreposage en atelier",
+     "nl": "Opslag in de werkplaats",
+     "de": "Lagerung in der Werkstatt",
+     "es": "Almacenamiento en el taller"
     },
     {
      "en": "Truck and trailer transport",
-     "zh": "卡车和挂车运输",
-     "fr": "Transport par camion et remorque"
+     "fr": "Transport par camion et remorque",
+     "nl": "Transport per vrachtwagen en oplegger",
+     "de": "Transport per Lkw und Anhänger",
+     "es": "Transporte en camión y remolque"
     },
     {
      "en": "Jobsite delivery and staging",
-     "zh": "工地交付和暂存",
-     "fr": "Livraison et mise en attente au chantier"
+     "fr": "Livraison et mise en attente au chantier",
+     "nl": "Levering en tussenopslag op de bouwplaats",
+     "de": "Anlieferung und Bereitstellung auf der Baustelle",
+     "es": "Entrega y espera en obra"
     }
    ],
    "options": [
     {
      "en": "A-frame, L-frame, harp or transport style",
-     "zh": "A 字架、L 型架、竖琴架或运输架款式",
-     "fr": "Modèle en A, en L, en harpe ou de transport"
+     "fr": "Modèle en A, en L, en harpe ou de transport",
+     "nl": "A-bok, L-bok, harp- of transportbok",
+     "de": "A-Gestell, L-Gestell, Harfen- oder Transportgestell",
+     "es": "En A, en L, de arpa o de transporte"
     },
     {
      "en": "Dimensions and load capacity",
-     "zh": "尺寸和承载能力",
-     "fr": "Dimensions et capacité de charge"
+     "fr": "Dimensions et capacité de charge",
+     "nl": "Afmetingen en draagvermogen",
+     "de": "Maße und Tragfähigkeit",
+     "es": "Dimensiones y capacidad de carga"
     },
     {
      "en": "Forklift pockets, lifting points or casters",
-     "zh": "叉车孔、吊点或脚轮",
-     "fr": "Fourreaux pour chariot élévateur, points de levage ou roulettes"
+     "fr": "Fourreaux pour chariot élévateur, points de levage ou roulettes",
+     "nl": "Vorkheftruckopeningen, hijspunten of wielen",
+     "de": "Staplertaschen, Hebepunkte oder Rollen",
+     "es": "Huecos para montacargas, puntos de elevación o ruedas"
     },
     {
      "en": "Padding, straps and finish",
-     "zh": "衬垫、绑带和表面处理",
-     "fr": "Rembourrage, sangles et fini"
+     "fr": "Rembourrage, sangles et fini",
+     "nl": "Bekleding, banden en afwerking",
+     "de": "Polsterung, Gurte und Oberfläche",
+     "es": "Acolchado, correas y acabado"
     }
    ],
    "tags": [
     {
      "en": "Built to drawing",
-     "zh": "按图定制",
-     "fr": "Fabriqué selon dessin"
+     "fr": "Fabriqué selon dessin",
+     "nl": "Gebouwd naar tekening",
+     "de": "Nach Zeichnung gebaut",
+     "es": "Fabricado según plano"
     },
     {
      "en": "Transport ready",
-     "zh": "可直接运输",
-     "fr": "Prêt pour le transport"
+     "fr": "Prêt pour le transport",
+     "nl": "Klaar voor transport",
+     "de": "Transportbereit",
+     "es": "Listo para el transporte"
     }
    ],
    "related": [
@@ -489,132 +639,176 @@
    "category": "handling",
    "name": {
     "en": "AL-Type Sheet Glass Stock Shelf",
-    "zh": "AL 型原片玻璃存储架",
-    "fr": "Chevalet de stockage type AL pour verre en feuilles"
+    "fr": "Chevalet de stockage type AL pour verre en feuilles",
+    "nl": "AL-type opslagrek voor plaatglas",
+    "de": "AL-Lagergestell für Flachglas",
+    "es": "Estante tipo AL para vidrio en hojas"
    },
    "photo": "assets/img/ai/al-stock-shelf.jpg",
    "gallery": [],
    "short": {
     "en": "Heavy-duty A- and L-frame racks for storing jumbo and full-size stock sheets.",
-    "zh": "重型 A 字架和 L 型架，用于存放超大板和整板原片玻璃。",
-    "fr": "Chevalets robustes en A et en L pour l'entreposage de feuilles de stock jumbo et pleine grandeur."
+    "fr": "Chevalets robustes en A et en L pour l'entreposage de feuilles de stock jumbo et pleine grandeur.",
+    "nl": "Zware A- en L-bokken voor de opslag van jumbo- en volformaat platen.",
+    "de": "Robuste A- und L-Gestelle zur Lagerung von Jumbo- und Großformatscheiben.",
+    "es": "Caballetes robustos en A y en L para almacenar hojas jumbo y de tamaño completo."
    },
    "description": {
     "en": "AL-type stock shelves hold full-size and jumbo sheet glass at a safe lean angle. The A-type is double-sided for maximum capacity, and the L-type stands against a wall and loads from one side. Both are padded with rubber to protect glass edges and faces.",
-    "zh": "AL 型原片架以安全的倾斜角度存放整板和超大板玻璃。A 型为双面架，存放量最大；L 型靠墙放置，单面装载。两者均配有橡胶衬垫，保护玻璃边缘和表面。",
-    "fr": "Les chevalets de stockage type AL retiennent le verre en feuilles pleine grandeur et jumbo selon un angle d'inclinaison sécuritaire. Le type A est à double face pour une capacité maximale, tandis que le type L s'appuie contre un mur et se charge d'un seul côté. Les deux sont rembourrés de caoutchouc pour protéger les bords et les faces du verre."
+    "fr": "Les chevalets de stockage type AL retiennent le verre en feuilles pleine grandeur et jumbo selon un angle d'inclinaison sécuritaire. Le type A est à double face pour une capacité maximale, tandis que le type L s'appuie contre un mur et se charge d'un seul côté. Les deux sont rembourrés de caoutchouc pour protéger les bords et les faces du verre.",
+    "nl": "AL-type opslagrekken houden volformaat- en jumboplaten onder een veilige hellingshoek. Het A-type is dubbelzijdig voor maximale capaciteit; het L-type staat tegen een wand en wordt van één kant geladen. Beide zijn met rubber bekleed om de randen en oppervlakken van het glas te beschermen.",
+    "de": "AL-Lagergestelle halten Groß- und Jumboformatscheiben in einem sicheren Neigungswinkel. Das A-Gestell ist beidseitig nutzbar für maximale Kapazität, das L-Gestell steht an der Wand und wird von einer Seite beladen. Beide sind mit Gummi gepolstert, um Kanten und Oberflächen des Glases zu schützen.",
+    "es": "Los estantes tipo AL sostienen hojas de vidrio de tamaño completo y jumbo con un ángulo de inclinación seguro. El tipo A es de doble cara para la máxima capacidad, y el tipo L se apoya contra la pared y se carga por un solo lado. Ambos llevan acolchado de goma para proteger los bordes y las caras del vidrio."
    },
    "specs": [
     {
      "label": {
       "en": "Types",
-      "zh": "类型",
-      "fr": "Types"
+      "fr": "Types",
+      "nl": "Types",
+      "de": "Typen",
+      "es": "Tipos"
      },
      "value": {
       "en": "A-type (two-sided) or L-type (one-sided)",
-      "zh": "A 型（双面）或 L 型（单面）",
-      "fr": "Type A (deux faces) ou type L (une face)"
+      "fr": "Type A (deux faces) ou type L (une face)",
+      "nl": "A-type (tweezijdig) of L-type (eenzijdig)",
+      "de": "A-Typ (zweiseitig) oder L-Typ (einseitig)",
+      "es": "Tipo A (dos caras) o tipo L (una cara)"
      }
     },
     {
      "label": {
       "en": "Frame",
-      "zh": "框架",
-      "fr": "Structure"
+      "fr": "Structure",
+      "nl": "Frame",
+      "de": "Rahmen",
+      "es": "Estructura"
      },
      "value": {
       "en": "Welded steel, painted",
-      "zh": "焊接钢结构，喷漆",
-      "fr": "Acier soudé, peint"
+      "fr": "Acier soudé, peint",
+      "nl": "Gelast staal, gelakt",
+      "de": "Geschweißter Stahl, lackiert",
+      "es": "Acero soldado, pintado"
      }
     },
     {
      "label": {
       "en": "Lean",
-      "zh": "倾角",
-      "fr": "Inclinaison"
+      "fr": "Inclinaison",
+      "nl": "Helling",
+      "de": "Neigung",
+      "es": "Inclinación"
      },
      "value": {
       "en": "Slight back-lean for safe storage",
-      "zh": "略微后倾，存放安全",
-      "fr": "Légère inclinaison vers l'arrière pour un entreposage sécuritaire"
+      "fr": "Légère inclinaison vers l'arrière pour un entreposage sécuritaire",
+      "nl": "Lichte helling naar achteren voor veilige opslag",
+      "de": "Leichte Rückneigung für sichere Lagerung",
+      "es": "Ligera inclinación hacia atrás para un almacenamiento seguro"
      }
     },
     {
      "label": {
       "en": "Padding",
-      "zh": "衬垫",
-      "fr": "Rembourrage"
+      "fr": "Rembourrage",
+      "nl": "Bekleding",
+      "de": "Polsterung",
+      "es": "Acolchado"
      },
      "value": {
       "en": "Rubber on base and uprights",
-      "zh": "底座和立柱配有橡胶",
-      "fr": "Caoutchouc sur la base et les montants"
+      "fr": "Caoutchouc sur la base et les montants",
+      "nl": "Rubber op voet en staanders",
+      "de": "Gummi an Basis und Stützen",
+      "es": "Goma en la base y los montantes"
      }
     },
     {
      "label": {
       "en": "Size",
-      "zh": "尺寸",
-      "fr": "Dimensions"
+      "fr": "Dimensions",
+      "nl": "Afmetingen",
+      "de": "Größe",
+      "es": "Tamaño"
      },
      "value": {
       "en": "Built for jumbo or full-size sheets",
-      "zh": "适用于超大板或整板原片",
-      "fr": "Pour feuilles jumbo ou pleine grandeur"
+      "fr": "Pour feuilles jumbo ou pleine grandeur",
+      "nl": "Voor jumbo- of volformaat platen",
+      "de": "Für Jumbo- oder Großformatscheiben",
+      "es": "Para hojas jumbo o de tamaño completo"
      }
     }
    ],
    "uses": [
     {
      "en": "Jumbo and full-size stock storage",
-     "zh": "超大板和整板原片存储",
-     "fr": "Entreposage de feuilles jumbo et pleine grandeur"
+     "fr": "Entreposage de feuilles jumbo et pleine grandeur",
+     "nl": "Opslag van jumbo- en volformaat platen",
+     "de": "Lagerung von Jumbo- und Großformatscheiben",
+     "es": "Almacenamiento de hojas jumbo y de tamaño completo"
     },
     {
      "en": "Feeding cutting tables",
-     "zh": "为切割台供片",
-     "fr": "Alimentation des tables de coupe"
+     "fr": "Alimentation des tables de coupe",
+     "nl": "Aanvoer naar snijtafels",
+     "de": "Beschickung von Schneidtischen",
+     "es": "Alimentación de mesas de corte"
     },
     {
      "en": "Warehouse inventory",
-     "zh": "仓库库存",
-     "fr": "Inventaire d'entrepôt"
+     "fr": "Inventaire d'entrepôt",
+     "nl": "Magazijnvoorraad",
+     "de": "Lagerbestand",
+     "es": "Inventario de almacén"
     }
    ],
    "options": [
     {
      "en": "A-type (double-sided) or L-type (single-sided)",
-     "zh": "A 型（双面）或 L 型（单面）",
-     "fr": "Type A (double face) ou type L (simple face)"
+     "fr": "Type A (double face) ou type L (simple face)",
+     "nl": "A-type (dubbelzijdig) of L-type (enkelzijdig)",
+     "de": "A-Typ (doppelseitig) oder L-Typ (einseitig)",
+     "es": "Tipo A (doble cara) o tipo L (una cara)"
     },
     {
      "en": "Length, height and number of bays",
-     "zh": "长度、高度和格位数量",
-     "fr": "Longueur, hauteur et nombre de compartiments"
+     "fr": "Longueur, hauteur et nombre de compartiments",
+     "nl": "Lengte, hoogte en aantal vakken",
+     "de": "Länge, Höhe und Anzahl der Fächer",
+     "es": "Longitud, altura y número de compartimentos"
     },
     {
      "en": "Load capacity",
-     "zh": "承载能力",
-     "fr": "Capacité de charge"
+     "fr": "Capacité de charge",
+     "nl": "Draagvermogen",
+     "de": "Tragfähigkeit",
+     "es": "Capacidad de carga"
     },
     {
      "en": "Rubber padding",
-     "zh": "橡胶衬垫",
-     "fr": "Rembourrage en caoutchouc"
+     "fr": "Rembourrage en caoutchouc",
+     "nl": "Rubberen bekleding",
+     "de": "Gummipolsterung",
+     "es": "Acolchado de goma"
     }
    ],
    "tags": [
     {
      "en": "A & L types",
-     "zh": "A 型和 L 型",
-     "fr": "Types A et L"
+     "fr": "Types A et L",
+     "nl": "A- en L-type",
+     "de": "A- und L-Typ",
+     "es": "Tipos A y L"
     },
     {
      "en": "Heavy duty",
-     "zh": "重型",
-     "fr": "Robuste"
+     "fr": "Robuste",
+     "nl": "Zwaar uitgevoerd",
+     "de": "Robust",
+     "es": "Resistente"
     }
    ],
    "related": [
@@ -628,132 +822,176 @@
    "category": "handling",
    "name": {
     "en": "Glass Sling",
-    "zh": "玻璃吊带",
-    "fr": "Élingue à verre"
+    "fr": "Élingue à verre",
+    "nl": "Glashijsband",
+    "de": "Glashebeband",
+    "es": "Eslinga para vidrio"
    },
    "photo": "assets/img/ai/glass-sling.jpg",
    "gallery": [],
    "short": {
     "en": "Lifting slings for safely moving glass crates and bundles by crane.",
-    "zh": "吊装带，用于通过起重机安全吊运玻璃箱和玻璃捆。",
-    "fr": "Élingues de levage pour déplacer de façon sécuritaire les caisses et les lots de verre à la grue."
+    "fr": "Élingues de levage pour déplacer de façon sécuritaire les caisses et les lots de verre à la grue.",
+    "nl": "Hijsbanden om glaskisten en -pakketten veilig met de kraan te verplaatsen.",
+    "de": "Hebebänder zum sicheren Bewegen von Glaskisten und -paketen mit dem Kran.",
+    "es": "Eslingas de elevación para mover con seguridad cajas y paquetes de vidrio con grúa."
    },
    "description": {
     "en": "Glass slings let you lift crates, packs and bundles with an overhead crane or forklift attachment. Made from high-strength webbing with reinforced eyes, they cradle the load evenly and reduce point pressure on glass edges. Slings are colour-coded so the working load limit is clear at a glance.",
-    "zh": "玻璃吊带可配合行车或叉车属具吊运玻璃箱、玻璃包和玻璃捆。吊带采用高强度织带，配有加强吊眼，可均匀承托货物，减少玻璃边缘的局部受压。吊带按颜色区分，额定工作载荷一目了然。",
-    "fr": "Les élingues à verre permettent de soulever des caisses, des paquets et des lots à l'aide d'un pont roulant ou d'un accessoire de chariot élévateur. Fabriquées en sangle à haute résistance avec boucles renforcées, elles soutiennent la charge uniformément et réduisent la pression ponctuelle sur les bords du verre. Les élingues sont codées par couleur pour que la charge maximale d'utilisation soit visible d'un coup d'œil."
+    "fr": "Les élingues à verre permettent de soulever des caisses, des paquets et des lots à l'aide d'un pont roulant ou d'un accessoire de chariot élévateur. Fabriquées en sangle à haute résistance avec boucles renforcées, elles soutiennent la charge uniformément et réduisent la pression ponctuelle sur les bords du verre. Les élingues sont codées par couleur pour que la charge maximale d'utilisation soit visible d'un coup d'œil.",
+    "nl": "Met glashijsbanden tilt u kisten, pakketten en bundels met een bovenloopkraan of heftruckopzetstuk. Ze zijn gemaakt van zeer sterke band met versterkte lussen, dragen de last gelijkmatig en verminderen puntbelasting op de glasranden. De banden hebben een kleurcode, zodat de werklastlimiet in één oogopslag duidelijk is.",
+    "de": "Mit Glashebebändern heben Sie Kisten, Pakete und Bündel mit einem Hallenkran oder Staplervorsatz. Sie bestehen aus hochfestem Gurtband mit verstärkten Schlaufen, tragen die Last gleichmäßig und verringern den punktuellen Druck auf die Glaskanten. Die Bänder sind farbcodiert, damit die Tragfähigkeit auf einen Blick erkennbar ist.",
+    "es": "Las eslingas para vidrio permiten levantar cajas, paquetes y lotes con un puente grúa o un accesorio de montacargas. Fabricadas con cinta de alta resistencia y ojales reforzados, sostienen la carga de forma uniforme y reducen la presión puntual sobre los bordes del vidrio. Están codificadas por color para que el límite de carga de trabajo se vea de un vistazo."
    },
    "specs": [
     {
      "label": {
       "en": "Material",
-      "zh": "材质",
-      "fr": "Matériau"
+      "fr": "Matériau",
+      "nl": "Materiaal",
+      "de": "Material",
+      "es": "Material"
      },
      "value": {
       "en": "High-strength polyester webbing",
-      "zh": "高强度涤纶织带",
-      "fr": "Sangle en polyester à haute résistance"
+      "fr": "Sangle en polyester à haute résistance",
+      "nl": "Zeer sterke polyester band",
+      "de": "Hochfestes Polyester-Gurtband",
+      "es": "Cinta de poliéster de alta resistencia"
      }
     },
     {
      "label": {
       "en": "Capacity",
-      "zh": "载重",
-      "fr": "Capacité"
+      "fr": "Capacité",
+      "nl": "Capaciteit",
+      "de": "Tragfähigkeit",
+      "es": "Capacidad"
      },
      "value": {
       "en": "Colour-coded by working load limit",
-      "zh": "按额定工作载荷以颜色区分",
-      "fr": "Code de couleur selon la charge maximale d'utilisation"
+      "fr": "Code de couleur selon la charge maximale d'utilisation",
+      "nl": "Kleurcode per werklastlimiet",
+      "de": "Farbcodiert nach Tragfähigkeit",
+      "es": "Código de colores según el límite de carga de trabajo"
      }
     },
     {
      "label": {
       "en": "Length",
-      "zh": "长度",
-      "fr": "Longueur"
+      "fr": "Longueur",
+      "nl": "Lengte",
+      "de": "Länge",
+      "es": "Longitud"
      },
      "value": {
       "en": "To your requirement",
-      "zh": "按您的要求",
-      "fr": "Selon vos besoins"
+      "fr": "Selon vos besoins",
+      "nl": "Naar uw wens",
+      "de": "Nach Ihren Anforderungen",
+      "es": "Según sus necesidades"
      }
     },
     {
      "label": {
       "en": "Ends",
-      "zh": "端部",
-      "fr": "Extrémités"
+      "fr": "Extrémités",
+      "nl": "Uiteinden",
+      "de": "Enden",
+      "es": "Extremos"
      },
      "value": {
       "en": "Flat or reinforced eyes",
-      "zh": "扁平或加强吊眼",
-      "fr": "Boucles plates ou renforcées"
+      "fr": "Boucles plates ou renforcées",
+      "nl": "Platte of versterkte lussen",
+      "de": "Flache oder verstärkte Schlaufen",
+      "es": "Ojales planos o reforzados"
      }
     },
     {
      "label": {
       "en": "Use with",
-      "zh": "配套设备",
-      "fr": "À utiliser avec"
+      "fr": "À utiliser avec",
+      "nl": "Te gebruiken met",
+      "de": "Verwendung mit",
+      "es": "Para usar con"
      },
      "value": {
       "en": "Overhead cranes and forklift attachments",
-      "zh": "行车和叉车属具",
-      "fr": "Ponts roulants et accessoires de chariot élévateur"
+      "fr": "Ponts roulants et accessoires de chariot élévateur",
+      "nl": "Bovenloopkranen en heftruckopzetstukken",
+      "de": "Hallenkrane und Staplervorsätze",
+      "es": "Puentes grúa y accesorios de montacargas"
      }
     }
    ],
    "uses": [
     {
      "en": "Unloading containers and trucks",
-     "zh": "集装箱和卡车卸货",
-     "fr": "Déchargement de conteneurs et de camions"
+     "fr": "Déchargement de conteneurs et de camions",
+     "nl": "Lossen van containers en vrachtwagens",
+     "de": "Entladen von Containern und Lkw",
+     "es": "Descarga de contenedores y camiones"
     },
     {
      "en": "Moving packs to cutting lines",
-     "zh": "将玻璃包转运至切割线",
-     "fr": "Acheminement des paquets vers les lignes de coupe"
+     "fr": "Acheminement des paquets vers les lignes de coupe",
+     "nl": "Pakketten naar snijlijnen verplaatsen",
+     "de": "Transport von Paketen zu den Schneidlinien",
+     "es": "Traslado de paquetes a las líneas de corte"
     },
     {
      "en": "Jobsite hoisting",
-     "zh": "工地吊装",
-     "fr": "Levage sur chantier"
+     "fr": "Levage sur chantier",
+     "nl": "Hijsen op de bouwplaats",
+     "de": "Heben auf der Baustelle",
+     "es": "Izado en obra"
     }
    ],
    "options": [
     {
      "en": "Working load limit",
-     "zh": "额定工作载荷",
-     "fr": "Charge maximale d'utilisation"
+     "fr": "Charge maximale d'utilisation",
+     "nl": "Werklastlimiet",
+     "de": "Tragfähigkeit (WLL)",
+     "es": "Límite de carga de trabajo"
     },
     {
      "en": "Length and width",
-     "zh": "长度和宽度",
-     "fr": "Longueur et largeur"
+     "fr": "Longueur et largeur",
+     "nl": "Lengte en breedte",
+     "de": "Länge und Breite",
+     "es": "Longitud y anchura"
     },
     {
      "en": "Eye type",
-     "zh": "吊眼类型",
-     "fr": "Type de boucle"
+     "fr": "Type de boucle",
+     "nl": "Type lus",
+     "de": "Schlaufentyp",
+     "es": "Tipo de ojal"
     },
     {
      "en": "Single or paired slings",
-     "zh": "单根或成对吊带",
-     "fr": "Élingues simples ou en paire"
+     "fr": "Élingues simples ou en paire",
+     "nl": "Enkele of paarsgewijze hijsbanden",
+     "de": "Einzelne Bänder oder Paare",
+     "es": "Eslingas individuales o en pareja"
     }
    ],
    "tags": [
     {
      "en": "Crane lifting",
-     "zh": "起重吊装",
-     "fr": "Levage à la grue"
+     "fr": "Levage à la grue",
+     "nl": "Hijsen met kraan",
+     "de": "Kranheben",
+     "es": "Elevación con grúa"
     },
     {
      "en": "Colour-coded",
-     "zh": "颜色标识",
-     "fr": "Code de couleur"
+     "fr": "Code de couleur",
+     "nl": "Kleurcode",
+     "de": "Farbcodiert",
+     "es": "Código de colores"
     }
    ],
    "related": [
@@ -767,8 +1005,10 @@
    "category": "films",
    "name": {
     "en": "EVA Film",
-    "zh": "EVA 胶片",
-    "fr": "Intercalaire EVA"
+    "fr": "Intercalaire EVA",
+    "nl": "EVA-folie",
+    "de": "EVA-Folie",
+    "es": "Película EVA"
    },
    "photo": "assets/img/ai/eva-film.jpg",
    "gallery": [
@@ -776,132 +1016,176 @@
      "image": "assets/img/library/laminated-edge.jpg",
      "caption": {
       "en": "Result: laminated safety glass",
-      "zh": "成品：夹胶安全玻璃",
-      "fr": "Résultat : verre feuilleté de sécurité"
+      "fr": "Résultat : verre feuilleté de sécurité",
+      "nl": "Resultaat: gelaagd veiligheidsglas",
+      "de": "Ergebnis: Verbundsicherheitsglas",
+      "es": "Resultado: vidrio laminado de seguridad"
      }
     }
    ],
    "short": {
     "en": "Ethylene-vinyl acetate interlayer for clear and decorative laminated glass.",
-    "zh": "乙烯-醋酸乙烯酯中间膜，用于透明夹胶玻璃和装饰夹胶玻璃。",
-    "fr": "Intercalaire en éthylène-acétate de vinyle pour verre feuilleté clair et décoratif."
+    "fr": "Intercalaire en éthylène-acétate de vinyle pour verre feuilleté clair et décoratif.",
+    "nl": "Tussenlaag van ethyleenvinylacetaat voor helder en decoratief gelaagd glas.",
+    "de": "Zwischenschicht aus Ethylenvinylacetat für klares und dekoratives Verbundglas.",
+    "es": "Lámina intermedia de etileno-acetato de vinilo para vidrio laminado claro y decorativo."
    },
    "description": {
     "en": "EVA film bonds two or more glass layers into laminated safety glass. It offers strong adhesion, good moisture resistance and high clarity, and it lets you laminate fabrics, meshes and prints between glass for decorative work. EVA is typically processed in a vacuum laminating oven.",
-    "zh": "EVA 胶片可将两层或多层玻璃粘合成夹胶安全玻璃。它粘结力强、防潮性好、透明度高，还可将织物、金属网和印刷图案夹在玻璃之间，用于装饰用途。EVA 通常在真空夹胶炉中加工。",
-    "fr": "L'intercalaire EVA lie deux couches de verre ou plus pour former un verre feuilleté de sécurité. Il offre une forte adhérence, une bonne résistance à l'humidité et une grande clarté, et il permet d'intégrer des tissus, des treillis et des impressions entre les verres pour des réalisations décoratives. L'EVA est généralement mis en œuvre dans un four de feuilletage sous vide."
+    "fr": "L'intercalaire EVA lie deux couches de verre ou plus pour former un verre feuilleté de sécurité. Il offre une forte adhérence, une bonne résistance à l'humidité et une grande clarté, et il permet d'intégrer des tissus, des treillis et des impressions entre les verres pour des réalisations décoratives. L'EVA est généralement mis en œuvre dans un four de feuilletage sous vide.",
+    "nl": "EVA-folie verbindt twee of meer glaslagen tot gelaagd veiligheidsglas. De folie hecht sterk, is goed bestand tegen vocht en zeer helder, en maakt het mogelijk stoffen, gaas en prints tussen het glas te lamineren voor decoratief werk. EVA wordt meestal verwerkt in een vacuümlamineeroven.",
+    "de": "EVA-Folie verbindet zwei oder mehr Glasschichten zu Verbundsicherheitsglas. Sie bietet starke Haftung, gute Feuchtigkeitsbeständigkeit und hohe Klarheit und ermöglicht es, Stoffe, Gewebe und Drucke für dekorative Anwendungen zwischen die Scheiben einzulaminieren. EVA wird in der Regel in einem Vakuum-Laminierofen verarbeitet.",
+    "es": "La película EVA une dos o más capas de vidrio para formar vidrio laminado de seguridad. Ofrece una fuerte adherencia, buena resistencia a la humedad y gran claridad, y permite laminar telas, mallas e impresiones entre los vidrios para trabajos decorativos. El EVA se procesa normalmente en un horno de laminado al vacío."
    },
    "specs": [
     {
      "label": {
       "en": "Material",
-      "zh": "材质",
-      "fr": "Matériau"
+      "fr": "Matériau",
+      "nl": "Materiaal",
+      "de": "Material",
+      "es": "Material"
      },
      "value": {
       "en": "Ethylene-vinyl acetate (EVA)",
-      "zh": "乙烯-醋酸乙烯酯（EVA）",
-      "fr": "Éthylène-acétate de vinyle (EVA)"
+      "fr": "Éthylène-acétate de vinyle (EVA)",
+      "nl": "Ethyleenvinylacetaat (EVA)",
+      "de": "Ethylenvinylacetat (EVA)",
+      "es": "Etileno-acetato de vinilo (EVA)"
      }
     },
     {
      "label": {
       "en": "Thickness",
-      "zh": "厚度",
-      "fr": "Épaisseur"
+      "fr": "Épaisseur",
+      "nl": "Dikte",
+      "de": "Dicke",
+      "es": "Espesor"
      },
      "value": {
       "en": "0.38, 0.50 or 0.76 mm",
-      "zh": "0.38、0.50 或 0.76 mm",
-      "fr": "0,38 mm, 0,50 mm ou 0,76 mm"
+      "fr": "0,38 mm, 0,50 mm ou 0,76 mm",
+      "nl": "0,38, 0,50 of 0,76 mm",
+      "de": "0,38, 0,50 oder 0,76 mm",
+      "es": "0,38, 0,50 o 0,76 mm"
      }
     },
     {
      "label": {
       "en": "Width",
-      "zh": "宽度",
-      "fr": "Largeur"
+      "fr": "Largeur",
+      "nl": "Breedte",
+      "de": "Breite",
+      "es": "Anchura"
      },
      "value": {
       "en": "Up to about 2,500 mm",
-      "zh": "最宽约 2,500 mm",
-      "fr": "Jusqu'à environ 2 500 mm"
+      "fr": "Jusqu'à environ 2 500 mm",
+      "nl": "Tot ca. 2.500 mm",
+      "de": "Bis ca. 2.500 mm",
+      "es": "Hasta unos 2500 mm"
      }
     },
     {
      "label": {
       "en": "Finishes",
-      "zh": "外观效果",
-      "fr": "Finis"
+      "fr": "Finis",
+      "nl": "Afwerkingen",
+      "de": "Ausführungen",
+      "es": "Acabados"
      },
      "value": {
       "en": "Clear, ultra-clear, white, frosted, colored",
-      "zh": "透明、超白、白色、磨砂、彩色",
-      "fr": "Clair, extra-clair, blanc, givré, coloré"
+      "fr": "Clair, extra-clair, blanc, givré, coloré",
+      "nl": "Helder, extra helder, wit, mat, gekleurd",
+      "de": "Klar, extraklar, weiß, satiniert, farbig",
+      "es": "Claro, ultraclaro, blanco, esmerilado, de color"
      }
     },
     {
      "label": {
       "en": "Processing",
-      "zh": "加工方式",
-      "fr": "Mise en œuvre"
+      "fr": "Mise en œuvre",
+      "nl": "Verwerking",
+      "de": "Verarbeitung",
+      "es": "Procesamiento"
      },
      "value": {
       "en": "Vacuum laminating oven",
-      "zh": "真空夹胶炉",
-      "fr": "Four de feuilletage sous vide"
+      "fr": "Four de feuilletage sous vide",
+      "nl": "Vacuümlamineeroven",
+      "de": "Vakuum-Laminierofen",
+      "es": "Horno de laminado al vacío"
      }
     }
    ],
    "uses": [
     {
      "en": "Laminated safety glass",
-     "zh": "夹胶安全玻璃",
-     "fr": "Verre feuilleté de sécurité"
+     "fr": "Verre feuilleté de sécurité",
+     "nl": "Gelaagd veiligheidsglas",
+     "de": "Verbundsicherheitsglas",
+     "es": "Vidrio laminado de seguridad"
     },
     {
      "en": "Decorative glass with fabrics or prints",
-     "zh": "夹织物或印刷图案的装饰玻璃",
-     "fr": "Verre décoratif avec tissus ou impressions"
+     "fr": "Verre décoratif avec tissus ou impressions",
+     "nl": "Decoratief glas met stoffen of prints",
+     "de": "Dekorglas mit Stoffen oder Drucken",
+     "es": "Vidrio decorativo con telas o impresiones"
     },
     {
      "en": "Partitions, railings and canopies",
-     "zh": "隔断、栏杆和雨棚",
-     "fr": "Cloisons, garde-corps et marquises"
+     "fr": "Cloisons, garde-corps et marquises",
+     "nl": "Scheidingswanden, balustrades en luifels",
+     "de": "Trennwände, Geländer und Vordächer",
+     "es": "Divisiones, barandillas y marquesinas"
     }
    ],
    "options": [
     {
      "en": "Thickness",
-     "zh": "厚度",
-     "fr": "Épaisseur"
+     "fr": "Épaisseur",
+     "nl": "Dikte",
+     "de": "Dicke",
+     "es": "Espesor"
     },
     {
      "en": "Roll width and length",
-     "zh": "卷宽和卷长",
-     "fr": "Largeur et longueur du rouleau"
+     "fr": "Largeur et longueur du rouleau",
+     "nl": "Rolbreedte en -lengte",
+     "de": "Rollenbreite und -länge",
+     "es": "Anchura y longitud del rollo"
     },
     {
      "en": "Clear, ultra-clear, white or colored",
-     "zh": "透明、超白、白色或彩色",
-     "fr": "Clair, extra-clair, blanc ou coloré"
+     "fr": "Clair, extra-clair, blanc ou coloré",
+     "nl": "Helder, extra helder, wit of gekleurd",
+     "de": "Klar, extraklar, weiß oder farbig",
+     "es": "Claro, ultraclaro, blanco o de color"
     },
     {
      "en": "Frosted and opaque finishes",
-     "zh": "磨砂和不透明效果",
-     "fr": "Finis givrés et opaques"
+     "fr": "Finis givrés et opaques",
+     "nl": "Matte en opake afwerkingen",
+     "de": "Satinierte und opake Ausführungen",
+     "es": "Acabados esmerilados y opacos"
     }
    ],
    "tags": [
     {
      "en": "Laminating",
-     "zh": "夹胶",
-     "fr": "Feuilletage"
+     "fr": "Feuilletage",
+     "nl": "Lamineren",
+     "de": "Laminieren",
+     "es": "Laminado"
     },
     {
      "en": "Decorative",
-     "zh": "装饰",
-     "fr": "Décoratif"
+     "fr": "Décoratif",
+     "nl": "Decoratief",
+     "de": "Dekorativ",
+     "es": "Decorativo"
     }
    ],
    "related": [
@@ -915,8 +1199,10 @@
    "category": "ig",
    "name": {
     "en": "Aluminum Spacer",
-    "zh": "铝间隔条",
-    "fr": "Intercalaire (espaceur) en aluminium"
+    "fr": "Intercalaire (espaceur) en aluminium",
+    "nl": "Aluminium afstandhouder",
+    "de": "Aluminium-Abstandhalter",
+    "es": "Espaciador de aluminio"
    },
    "photo": "assets/img/ai/aluminum-spacer.jpg",
    "gallery": [
@@ -924,132 +1210,176 @@
      "image": "assets/img/library/igu-corner.jpg",
      "caption": {
       "en": "Result: a finished insulating glass unit",
-      "zh": "成品：中空玻璃",
-      "fr": "Résultat : une unité de verre isolant terminée"
+      "fr": "Résultat : une unité de verre isolant terminée",
+      "nl": "Resultaat: een afgewerkte isolatieglaseenheid",
+      "de": "Ergebnis: eine fertige Isolierglaseinheit",
+      "es": "Resultado: una unidad de vidrio aislante terminada"
      }
     }
    ],
    "short": {
     "en": "Hollow aluminum spacer bar that holds the gap in insulating glass units.",
-    "zh": "空心铝间隔条，用于保持中空玻璃的间隔距离。",
-    "fr": "Barre intercalaire creuse en aluminium qui maintient l'espace entre les vitres des unités de verre isolant."
+    "fr": "Barre intercalaire creuse en aluminium qui maintient l'espace entre les vitres des unités de verre isolant.",
+    "nl": "Holle aluminium afstandhouder die de spouw in isolatieglas vasthoudt.",
+    "de": "Hohler Aluminium-Abstandhalter, der den Scheibenzwischenraum in Isolierglas hält.",
+    "es": "Perfil espaciador hueco de aluminio que mantiene la cámara en las unidades de vidrio aislante."
    },
    "description": {
     "en": "The aluminum spacer sets and holds the cavity between panes in an insulating glass unit. Its hollow, perforated profile is filled with molecular sieve, which draws moisture out of the sealed air space through the breather holes. Bendable and cut-and-corner-key versions are available.",
-    "zh": "铝间隔条用于确定并保持中空玻璃各片玻璃之间的空腔。其空心带孔的型材内填充分子筛，通过透气孔吸收密封空腔内的水汽。可提供折弯型以及切断后用角码连接的型号。",
-    "fr": "L'intercalaire en aluminium établit et maintient la lame d'air entre les vitres d'une unité de verre isolant. Son profilé creux et perforé est rempli de tamis moléculaire, qui retire l'humidité de l'espace d'air scellé par les trous de respiration. Des versions cintrables et des versions coupées avec équerres d'angle sont offertes."
+    "fr": "L'intercalaire en aluminium établit et maintient la lame d'air entre les vitres d'une unité de verre isolant. Son profilé creux et perforé est rempli de tamis moléculaire, qui retire l'humidité de l'espace d'air scellé par les trous de respiration. Des versions cintrables et des versions coupées avec équerres d'angle sont offertes.",
+    "nl": "De aluminium afstandhouder bepaalt en behoudt de spouw tussen de ruiten van een isolatieglaseenheid. Het holle, geperforeerde profiel is gevuld met moleculaire zeef, die via de ademgaatjes vocht uit de afgesloten luchtspouw onttrekt. Er zijn buigbare versies en versies die op maat gezaagd en met hoekverbinders gemonteerd worden.",
+    "de": "Der Aluminium-Abstandhalter legt den Scheibenzwischenraum einer Isolierglaseinheit fest und hält ihn. Sein hohles, perforiertes Profil ist mit Molekularsieb gefüllt, das dem versiegelten Luftraum über die Atemlöcher Feuchtigkeit entzieht. Erhältlich in biegbarer Ausführung oder zum Zuschneiden mit Eckverbindern.",
+    "es": "El espaciador de aluminio define y mantiene la cámara entre los vidrios de una unidad de vidrio aislante. Su perfil hueco y perforado se rellena con tamiz molecular, que extrae la humedad del espacio de aire sellado a través de los orificios de ventilación. Hay versiones curvables y versiones para cortar con escuadras de esquina."
    },
    "specs": [
     {
      "label": {
       "en": "Material",
-      "zh": "材质",
-      "fr": "Matériau"
+      "fr": "Matériau",
+      "nl": "Materiaal",
+      "de": "Material",
+      "es": "Material"
      },
      "value": {
       "en": "Aluminum, mill or anodized",
-      "zh": "铝材，原色或阳极氧化",
-      "fr": "Aluminium, fini brut ou anodisé"
+      "fr": "Aluminium, fini brut ou anodisé",
+      "nl": "Aluminium, blank of geanodiseerd",
+      "de": "Aluminium, walzblank oder eloxiert",
+      "es": "Aluminio, en bruto o anodizado"
      }
     },
     {
      "label": {
       "en": "Width",
-      "zh": "宽度",
-      "fr": "Largeur"
+      "fr": "Largeur",
+      "nl": "Breedte",
+      "de": "Breite",
+      "es": "Anchura"
      },
      "value": {
       "en": "6–24 mm cavity",
-      "zh": "6–24 mm 空腔",
-      "fr": "Lame d'air de 6–24 mm"
+      "fr": "Lame d'air de 6–24 mm",
+      "nl": "Spouw van 6–24 mm",
+      "de": "Scheibenzwischenraum 6–24 mm",
+      "es": "Cámara de 6–24 mm"
      }
     },
     {
      "label": {
       "en": "Profile",
-      "zh": "型材",
-      "fr": "Profilé"
+      "fr": "Profilé",
+      "nl": "Profiel",
+      "de": "Profil",
+      "es": "Perfil"
      },
      "value": {
       "en": "Hollow, with breather perforations",
-      "zh": "空心，带透气孔",
-      "fr": "Creux, avec perforations de respiration"
+      "fr": "Creux, avec perforations de respiration",
+      "nl": "Hol, met ademperforaties",
+      "de": "Hohl, mit Atemlöchern",
+      "es": "Hueco, con perforaciones de ventilación"
      }
     },
     {
      "label": {
       "en": "Corners",
-      "zh": "转角",
-      "fr": "Coins"
+      "fr": "Coins",
+      "nl": "Hoeken",
+      "de": "Ecken",
+      "es": "Esquinas"
      },
      "value": {
       "en": "Bendable, or cut with corner keys",
-      "zh": "可折弯，或切断后用角码连接",
-      "fr": "Cintrable, ou coupé avec équerres d'angle"
+      "fr": "Cintrable, ou coupé avec équerres d'angle",
+      "nl": "Buigbaar, of gezaagd met hoekverbinders",
+      "de": "Biegbar oder geschnitten mit Eckverbindern",
+      "es": "Curvable, o cortado con escuadras de esquina"
      }
     },
     {
      "label": {
       "en": "Filled with",
-      "zh": "填充物",
-      "fr": "Rempli de"
+      "fr": "Rempli de",
+      "nl": "Gevuld met",
+      "de": "Gefüllt mit",
+      "es": "Relleno de"
      },
      "value": {
       "en": "Molecular sieve desiccant",
-      "zh": "分子筛干燥剂",
-      "fr": "Déshydratant à tamis moléculaire"
+      "fr": "Déshydratant à tamis moléculaire",
+      "nl": "Droogmiddel van moleculaire zeef",
+      "de": "Molekularsieb-Trockenmittel",
+      "es": "Desecante de tamiz molecular"
      }
     }
    ],
    "uses": [
     {
      "en": "Double and triple glazed IG units",
-     "zh": "双玻和三玻中空玻璃",
-     "fr": "Unités scellées à double et triple vitrage"
+     "fr": "Unités scellées à double et triple vitrage",
+     "nl": "Dubbel en drievoudig isolatieglas",
+     "de": "Zwei- und Dreifach-Isolierglas",
+     "es": "Unidades de doble y triple acristalamiento"
     },
     {
      "en": "Windows, curtain wall and storefronts",
-     "zh": "窗户、幕墙和店面",
-     "fr": "Fenêtres, murs-rideaux et devantures"
+     "fr": "Fenêtres, murs-rideaux et devantures",
+     "nl": "Ramen, vliesgevels en winkelpuien",
+     "de": "Fenster, Vorhangfassaden und Schaufenster",
+     "es": "Ventanas, muros cortina y escaparates"
     },
     {
      "en": "Refrigerated display doors",
-     "zh": "冷柜展示门",
-     "fr": "Portes de présentoirs réfrigérés"
+     "fr": "Portes de présentoirs réfrigérés",
+     "nl": "Deuren voor koelvitrines",
+     "de": "Türen für Kühlvitrinen",
+     "es": "Puertas de vitrinas refrigeradas"
     }
    ],
    "options": [
     {
      "en": "Width (cavity size)",
-     "zh": "宽度（空腔尺寸）",
-     "fr": "Largeur (épaisseur de la lame d'air)"
+     "fr": "Largeur (épaisseur de la lame d'air)",
+     "nl": "Breedte (spouwmaat)",
+     "de": "Breite (Scheibenzwischenraum)",
+     "es": "Anchura (tamaño de la cámara)"
     },
     {
      "en": "Bendable or cut with corner keys",
-     "zh": "可折弯或切断后用角码连接",
-     "fr": "Cintrable ou coupé avec équerres d'angle"
+     "fr": "Cintrable ou coupé avec équerres d'angle",
+     "nl": "Buigbaar of gezaagd met hoekverbinders",
+     "de": "Biegbar oder geschnitten mit Eckverbindern",
+     "es": "Curvable o cortado con escuadras de esquina"
     },
     {
      "en": "Mill or anodized finish",
-     "zh": "原色或阳极氧化表面",
-     "fr": "Fini brut ou anodisé"
+     "fr": "Fini brut ou anodisé",
+     "nl": "Blank of geanodiseerd",
+     "de": "Walzblank oder eloxiert",
+     "es": "Acabado en bruto o anodizado"
     },
     {
      "en": "Bar length",
-     "zh": "条长",
-     "fr": "Longueur des barres"
+     "fr": "Longueur des barres",
+     "nl": "Staaflengte",
+     "de": "Stablänge",
+     "es": "Longitud de la barra"
     }
    ],
    "tags": [
     {
      "en": "IG units",
-     "zh": "中空玻璃",
-     "fr": "Unités scellées"
+     "fr": "Unités scellées",
+     "nl": "Isolatieglas",
+     "de": "Isolierglas",
+     "es": "Unidades de vidrio aislante"
     },
     {
      "en": "Bendable",
-     "zh": "可折弯",
-     "fr": "Cintrable"
+     "fr": "Cintrable",
+     "nl": "Buigbaar",
+     "de": "Biegbar",
+     "es": "Curvable"
     }
    ],
    "related": [
@@ -1063,127 +1393,169 @@
    "category": "ig",
    "name": {
     "en": "High Temperature Green Adhesive",
-    "zh": "耐高温绿色胶带",
-    "fr": "Adhésif vert haute température"
+    "fr": "Adhésif vert haute température",
+    "nl": "Groene hogetemperatuurtape",
+    "de": "Grünes Hochtemperatur-Klebeband",
+    "es": "Cinta adhesiva verde de alta temperatura"
    },
    "photo": "assets/img/ai/green-adhesive.jpg",
    "gallery": [],
    "short": {
     "en": "Heat-resistant green tape that masks cleanly and peels off without residue.",
-    "zh": "耐高温绿色胶带，遮蔽干净利落，揭除无残胶。",
-    "fr": "Ruban vert résistant à la chaleur qui masque proprement et se retire sans laisser de résidu."
+    "fr": "Ruban vert résistant à la chaleur qui masque proprement et se retire sans laisser de résidu.",
+    "nl": "Hittebestendige groene tape die strak afplakt en zonder resten loslaat.",
+    "de": "Hitzebeständiges grünes Klebeband, das sauber abdeckt und sich rückstandsfrei abziehen lässt.",
+    "es": "Cinta verde resistente al calor que enmascara con precisión y se retira sin dejar residuos."
    },
    "description": {
     "en": "A heat-resistant green polyester tape with a silicone adhesive. It holds up to oven and curing temperatures, masks crisp edges during coating, and peels off cleanly without leaving residue on glass or metal.",
-    "zh": "一种采用有机硅胶粘剂的耐高温绿色聚酯胶带。可耐受烘烤和固化温度，在涂装过程中遮蔽出清晰的边缘，揭除干净，不会在玻璃或金属上留下残胶。",
-    "fr": "Ruban de polyester vert résistant à la chaleur, avec adhésif à base de silicone. Il résiste aux températures des fours et de polymérisation, assure un masquage aux contours nets pendant l'application des revêtements et se retire proprement sans laisser de résidu sur le verre ou le métal."
+    "fr": "Ruban de polyester vert résistant à la chaleur, avec adhésif à base de silicone. Il résiste aux températures des fours et de polymérisation, assure un masquage aux contours nets pendant l'application des revêtements et se retire proprement sans laisser de résidu sur le verre ou le métal.",
+    "nl": "Een hittebestendige groene polyestertape met siliconenlijm. Hij is bestand tegen oven- en uithardingstemperaturen, geeft strakke randen bij het coaten en laat zonder lijmresten los van glas of metaal.",
+    "de": "Ein hitzebeständiges grünes Polyesterband mit Silikonkleber. Es hält Ofen- und Aushärtetemperaturen stand, sorgt beim Beschichten für saubere Kanten und lässt sich rückstandsfrei von Glas und Metall abziehen.",
+    "es": "Cinta de poliéster verde resistente al calor con adhesivo de silicona. Soporta las temperaturas de horno y de curado, deja bordes nítidos durante el recubrimiento y se retira limpiamente sin dejar residuos en el vidrio ni en el metal."
    },
    "specs": [
     {
      "label": {
       "en": "Backing",
-      "zh": "基材",
-      "fr": "Support"
+      "fr": "Support",
+      "nl": "Drager",
+      "de": "Träger",
+      "es": "Soporte"
      },
      "value": {
       "en": "Green polyester (PET) film",
-      "zh": "绿色聚酯（PET）薄膜",
-      "fr": "Pellicule de polyester (PET) verte"
+      "fr": "Pellicule de polyester (PET) verte",
+      "nl": "Groene polyesterfolie (PET)",
+      "de": "Grüne Polyesterfolie (PET)",
+      "es": "Película de poliéster (PET) verde"
      }
     },
     {
      "label": {
       "en": "Adhesive",
-      "zh": "胶粘剂",
-      "fr": "Adhésif"
+      "fr": "Adhésif",
+      "nl": "Lijm",
+      "de": "Klebstoff",
+      "es": "Adhesivo"
      },
      "value": {
       "en": "Silicone",
-      "zh": "有机硅",
-      "fr": "Silicone"
+      "fr": "Silicone",
+      "nl": "Siliconen",
+      "de": "Silikon",
+      "es": "Silicona"
      }
     },
     {
      "label": {
       "en": "Heat resistance",
-      "zh": "耐温",
-      "fr": "Résistance à la chaleur"
+      "fr": "Résistance à la chaleur",
+      "nl": "Hittebestendigheid",
+      "de": "Hitzebeständigkeit",
+      "es": "Resistencia al calor"
      },
      "value": {
       "en": "Up to about 200 °C",
-      "zh": "最高约 200 °C",
-      "fr": "Jusqu'à environ 200 °C"
+      "fr": "Jusqu'à environ 200 °C",
+      "nl": "Tot ca. 200 °C",
+      "de": "Bis ca. 200 °C",
+      "es": "Hasta unos 200 °C"
      }
     },
     {
      "label": {
       "en": "Removal",
-      "zh": "揭除",
-      "fr": "Retrait"
+      "fr": "Retrait",
+      "nl": "Verwijderen",
+      "de": "Entfernen",
+      "es": "Retirada"
      },
      "value": {
       "en": "Clean, residue-free",
-      "zh": "干净无残胶",
-      "fr": "Propre, sans résidu"
+      "fr": "Propre, sans résidu",
+      "nl": "Schoon, zonder resten",
+      "de": "Sauber, rückstandsfrei",
+      "es": "Limpia, sin residuos"
      }
     },
     {
      "label": {
       "en": "Formats",
-      "zh": "供货形式",
-      "fr": "Formats"
+      "fr": "Formats",
+      "nl": "Formaten",
+      "de": "Formate",
+      "es": "Formatos"
      },
      "value": {
       "en": "Rolls, die-cut dots and shapes",
-      "zh": "成卷、模切圆点和异形件",
-      "fr": "Rouleaux, pastilles et formes prédécoupées"
+      "fr": "Rouleaux, pastilles et formes prédécoupées",
+      "nl": "Rollen, gestanste stippen en vormen",
+      "de": "Rollen, gestanzte Punkte und Formen",
+      "es": "Rollos, puntos y formas troquelados"
      }
     }
    ],
    "uses": [
     {
      "en": "Masking during coating and curing",
-     "zh": "涂装和固化时遮蔽",
-     "fr": "Masquage pendant le revêtement et la polymérisation"
+     "fr": "Masquage pendant le revêtement et la polymérisation",
+     "nl": "Afplakken tijdens coaten en uitharden",
+     "de": "Abdecken beim Beschichten und Aushärten",
+     "es": "Enmascarado durante el recubrimiento y el curado"
     },
     {
      "en": "Holding parts during heat processes",
-     "zh": "热处理过程中固定部件",
-     "fr": "Maintien des pièces pendant les traitements thermiques"
+     "fr": "Maintien des pièces pendant les traitements thermiques",
+     "nl": "Onderdelen vasthouden tijdens warmtebehandelingen",
+     "de": "Fixieren von Teilen bei Wärmeprozessen",
+     "es": "Sujeción de piezas durante procesos térmicos"
     },
     {
      "en": "Protecting edges and finished surfaces",
-     "zh": "保护边缘和成品表面",
-     "fr": "Protection des bords et des surfaces finies"
+     "fr": "Protection des bords et des surfaces finies",
+     "nl": "Bescherming van randen en afgewerkte oppervlakken",
+     "de": "Schutz von Kanten und fertigen Oberflächen",
+     "es": "Protección de bordes y superficies terminadas"
     }
    ],
    "options": [
     {
      "en": "Width and roll length",
-     "zh": "宽度和卷长",
-     "fr": "Largeur et longueur du rouleau"
+     "fr": "Largeur et longueur du rouleau",
+     "nl": "Breedte en rollengte",
+     "de": "Breite und Rollenlänge",
+     "es": "Anchura y longitud del rollo"
     },
     {
      "en": "Thickness",
-     "zh": "厚度",
-     "fr": "Épaisseur"
+     "fr": "Épaisseur",
+     "nl": "Dikte",
+     "de": "Dicke",
+     "es": "Espesor"
     },
     {
      "en": "Die-cut shapes and dots",
-     "zh": "模切异形件和圆点",
-     "fr": "Formes et pastilles prédécoupées"
+     "fr": "Formes et pastilles prédécoupées",
+     "nl": "Gestanste vormen en stippen",
+     "de": "Gestanzte Formen und Punkte",
+     "es": "Formas y puntos troquelados"
     }
    ],
    "tags": [
     {
      "en": "Heat resistant",
-     "zh": "耐高温",
-     "fr": "Résistant à la chaleur"
+     "fr": "Résistant à la chaleur",
+     "nl": "Hittebestendig",
+     "de": "Hitzebeständig",
+     "es": "Resistente al calor"
     },
     {
      "en": "Clean removal",
-     "zh": "揭除无残胶",
-     "fr": "Retrait propre"
+     "fr": "Retrait propre",
+     "nl": "Schoon te verwijderen",
+     "de": "Rückstandsfrei",
+     "es": "Retirada limpia"
     }
    ],
    "related": [
@@ -1197,8 +1569,10 @@
    "category": "ig",
    "name": {
     "en": "Silicone Adhesive",
-    "zh": "硅酮胶",
-    "fr": "Adhésif de silicone"
+    "fr": "Adhésif de silicone",
+    "nl": "Siliconenkit",
+    "de": "Silikonkleber",
+    "es": "Adhesivo de silicona"
    },
    "photo": "assets/img/ai/silicone-adhesive.jpg",
    "gallery": [
@@ -1206,140 +1580,186 @@
      "image": "assets/img/online/sealant-bead.jpg",
      "caption": {
       "en": "Sealant extruded from a cartridge",
-      "zh": "从胶筒中挤出的密封胶",
-      "fr": "Scellant extrudé d'une cartouche"
+      "fr": "Scellant extrudé d'une cartouche",
+      "nl": "Kit uit een koker gespoten",
+      "de": "Dichtstoff aus der Kartusche",
+      "es": "Sellador extruido de un cartucho"
      }
     },
     {
      "image": "assets/img/library/igu-corner.jpg",
      "caption": {
       "en": "Secondary seal around an IG unit",
-      "zh": "中空玻璃周边的二道密封",
-      "fr": "Scellement secondaire autour d'une unité scellée"
+      "fr": "Scellement secondaire autour d'une unité scellée",
+      "nl": "Secundaire afdichting rond isolatieglas",
+      "de": "Sekundärdichtung rund um eine Isolierglaseinheit",
+      "es": "Sellado secundario alrededor de una unidad de vidrio aislante"
      }
     }
    ],
    "short": {
     "en": "Weather-resistant silicone for IG secondary sealing and glazing.",
-    "zh": "耐候硅酮胶，用于中空玻璃二道密封和玻璃安装。",
-    "fr": "Silicone résistant aux intempéries pour le scellement secondaire des unités scellées et le vitrage."
+    "fr": "Silicone résistant aux intempéries pour le scellement secondaire des unités scellées et le vitrage.",
+    "nl": "Weerbestendige siliconen voor secundaire afdichting van isolatieglas en beglazing.",
+    "de": "Witterungsbeständiges Silikon für die Sekundärabdichtung von Isolierglas und für Verglasungen.",
+    "es": "Silicona resistente a la intemperie para el sellado secundario de vidrio aislante y el acristalamiento."
    },
    "description": {
     "en": "Silicone adhesive gives a durable, flexible bond that resists UV, moisture and temperature swings. It is used as the secondary seal in insulating glass units and for structural and weather-seal glazing, where long-term adhesion to glass and aluminum is essential.",
-    "zh": "硅酮胶可形成持久、柔韧的粘结，耐紫外线、耐潮湿、耐温度变化。它用作中空玻璃的二道密封，也用于结构及耐候密封玻璃安装，这些场合都要求与玻璃和铝材长期可靠粘结。",
-    "fr": "L'adhésif de silicone procure un collage durable et flexible qui résiste aux UV, à l'humidité et aux variations de température. Il sert de scellement secondaire dans les unités de verre isolant ainsi que pour le vitrage structural et les joints d'étanchéité aux intempéries, où une adhérence durable au verre et à l'aluminium est essentielle."
+    "fr": "L'adhésif de silicone procure un collage durable et flexible qui résiste aux UV, à l'humidité et aux variations de température. Il sert de scellement secondaire dans les unités de verre isolant ainsi que pour le vitrage structural et les joints d'étanchéité aux intempéries, où une adhérence durable au verre et à l'aluminium est essentielle.",
+    "nl": "Siliconenkit geeft een duurzame, flexibele verbinding die bestand is tegen uv, vocht en temperatuurschommelingen. Hij wordt gebruikt als secundaire afdichting in isolatieglas en voor structurele en weerdichte beglazing, waar langdurige hechting aan glas en aluminium essentieel is.",
+    "de": "Silikonkleber bildet eine dauerhafte, flexible Verbindung, die UV-Strahlung, Feuchtigkeit und Temperaturschwankungen standhält. Er dient als Sekundärdichtung in Isolierglaseinheiten sowie für Structural Glazing und wetterfeste Verglasungen, bei denen dauerhafte Haftung auf Glas und Aluminium entscheidend ist.",
+    "es": "El adhesivo de silicona proporciona una unión duradera y flexible que resiste los rayos UV, la humedad y los cambios de temperatura. Se utiliza como sellado secundario en unidades de vidrio aislante y en acristalamientos estructurales y de sellado a la intemperie, donde la adherencia duradera al vidrio y al aluminio es esencial."
    },
    "specs": [
     {
      "label": {
       "en": "Chemistry",
-      "zh": "化学类型",
-      "fr": "Composition chimique"
+      "fr": "Composition chimique",
+      "nl": "Samenstelling",
+      "de": "Chemie",
+      "es": "Composición química"
      },
      "value": {
       "en": "Neutral-cure silicone",
-      "zh": "中性固化硅酮",
-      "fr": "Silicone à réticulation neutre"
+      "fr": "Silicone à réticulation neutre",
+      "nl": "Neutraal uithardende siliconen",
+      "de": "Neutral vernetzendes Silikon",
+      "es": "Silicona de curado neutro"
      }
     },
     {
      "label": {
       "en": "Types",
-      "zh": "类型",
-      "fr": "Types"
+      "fr": "Types",
+      "nl": "Types",
+      "de": "Typen",
+      "es": "Tipos"
      },
      "value": {
       "en": "One- or two-component",
-      "zh": "单组分或双组分",
-      "fr": "Monocomposant ou bicomposant"
+      "fr": "Monocomposant ou bicomposant",
+      "nl": "Eén- of tweecomponenten",
+      "de": "Ein- oder zweikomponentig",
+      "es": "Monocomponente o bicomponente"
      }
     },
     {
      "label": {
       "en": "Packaging",
-      "zh": "包装",
-      "fr": "Emballage"
+      "fr": "Emballage",
+      "nl": "Verpakking",
+      "de": "Verpackung",
+      "es": "Envase"
      },
      "value": {
       "en": "Cartridges, sausages or drums",
-      "zh": "硬支、软支或桶装",
-      "fr": "Cartouches, poches souples ou barils"
+      "fr": "Cartouches, poches souples ou barils",
+      "nl": "Kokers, worsten of vaten",
+      "de": "Kartuschen, Schlauchbeutel oder Fässer",
+      "es": "Cartuchos, salchichas o bidones"
      }
     },
     {
      "label": {
       "en": "Colours",
-      "zh": "颜色",
-      "fr": "Couleurs"
+      "fr": "Couleurs",
+      "nl": "Kleuren",
+      "de": "Farben",
+      "es": "Colores"
      },
      "value": {
       "en": "Black, grey, white or clear",
-      "zh": "黑色、灰色、白色或透明",
-      "fr": "Noir, gris, blanc ou transparent"
+      "fr": "Noir, gris, blanc ou transparent",
+      "nl": "Zwart, grijs, wit of transparant",
+      "de": "Schwarz, grau, weiß oder transparent",
+      "es": "Negro, gris, blanco o transparente"
      }
     },
     {
      "label": {
       "en": "Resists",
-      "zh": "耐受",
-      "fr": "Résistance"
+      "fr": "Résistance",
+      "nl": "Bestand tegen",
+      "de": "Beständig gegen",
+      "es": "Resiste"
      },
      "value": {
       "en": "UV, moisture and temperature cycling",
-      "zh": "紫外线、潮湿和冷热循环",
-      "fr": "UV, humidité et cycles de température"
+      "fr": "UV, humidité et cycles de température",
+      "nl": "Uv, vocht en temperatuurwisselingen",
+      "de": "UV, Feuchtigkeit und Temperaturwechsel",
+      "es": "UV, humedad y ciclos de temperatura"
      }
     }
    ],
    "uses": [
     {
      "en": "IG secondary sealing",
-     "zh": "中空玻璃二道密封",
-     "fr": "Scellement secondaire des unités scellées"
+     "fr": "Scellement secondaire des unités scellées",
+     "nl": "Secundaire afdichting van isolatieglas",
+     "de": "Sekundärabdichtung von Isolierglas",
+     "es": "Sellado secundario de vidrio aislante"
     },
     {
      "en": "Structural and weather-seal glazing",
-     "zh": "结构及耐候密封玻璃安装",
-     "fr": "Vitrage structural et joints d'étanchéité aux intempéries"
+     "fr": "Vitrage structural et joints d'étanchéité aux intempéries",
+     "nl": "Structurele en weerdichte beglazing",
+     "de": "Structural Glazing und wetterfeste Verglasung",
+     "es": "Acristalamiento estructural y sellado a la intemperie"
     },
     {
      "en": "Shower, mirror and interior glass bonding",
-     "zh": "淋浴房、镜子和室内玻璃粘接",
-     "fr": "Collage de douches, de miroirs et de verre intérieur"
+     "fr": "Collage de douches, de miroirs et de verre intérieur",
+     "nl": "Verlijmen van douches, spiegels en binnenglas",
+     "de": "Verkleben von Duschen, Spiegeln und Innenglas",
+     "es": "Pegado de duchas, espejos y vidrio interior"
     }
    ],
    "options": [
     {
      "en": "One- or two-component",
-     "zh": "单组分或双组分",
-     "fr": "Monocomposant ou bicomposant"
+     "fr": "Monocomposant ou bicomposant",
+     "nl": "Eén- of tweecomponenten",
+     "de": "Ein- oder zweikomponentig",
+     "es": "Monocomponente o bicomponente"
     },
     {
      "en": "Cartridge, sausage or drum",
-     "zh": "硬支、软支或桶装",
-     "fr": "Cartouche, poche souple ou baril"
+     "fr": "Cartouche, poche souple ou baril",
+     "nl": "Koker, worst of vat",
+     "de": "Kartusche, Schlauchbeutel oder Fass",
+     "es": "Cartucho, salchicha o bidón"
     },
     {
      "en": "Black, grey, white or clear",
-     "zh": "黑色、灰色、白色或透明",
-     "fr": "Noir, gris, blanc ou transparent"
+     "fr": "Noir, gris, blanc ou transparent",
+     "nl": "Zwart, grijs, wit of transparant",
+     "de": "Schwarz, grau, weiß oder transparent",
+     "es": "Negro, gris, blanco o transparente"
     },
     {
      "en": "Neutral cure",
-     "zh": "中性固化",
-     "fr": "Réticulation neutre"
+     "fr": "Réticulation neutre",
+     "nl": "Neutraal uithardend",
+     "de": "Neutral vernetzend",
+     "es": "Curado neutro"
     }
    ],
    "tags": [
     {
      "en": "UV stable",
-     "zh": "抗紫外线",
-     "fr": "Stable aux UV"
+     "fr": "Stable aux UV",
+     "nl": "Uv-bestendig",
+     "de": "UV-stabil",
+     "es": "Estable a los UV"
     },
     {
      "en": "IG & glazing",
-     "zh": "中空与安装",
-     "fr": "Unités scellées et vitrage"
+     "fr": "Unités scellées et vitrage",
+     "nl": "Isolatieglas en beglazing",
+     "de": "Isolierglas & Verglasung",
+     "es": "Vidrio aislante y acristalamiento"
     }
    ],
    "related": [
@@ -1353,8 +1773,10 @@
    "category": "ig",
    "name": {
     "en": "Molecular Sieve",
-    "zh": "分子筛",
-    "fr": "Tamis moléculaire"
+    "fr": "Tamis moléculaire",
+    "nl": "Moleculaire zeef",
+    "de": "Molekularsieb",
+    "es": "Tamiz molecular"
    },
    "photo": "assets/img/ai/molecular-sieve.jpg",
    "gallery": [
@@ -1362,127 +1784,169 @@
      "image": "assets/img/library/igu-corner.jpg",
      "caption": {
       "en": "Keeps IG units dry and clear inside",
-      "zh": "保持中空玻璃内部干燥通透",
-      "fr": "Garde l'intérieur des unités scellées sec et clair"
+      "fr": "Garde l'intérieur des unités scellées sec et clair",
+      "nl": "Houdt isolatieglas vanbinnen droog en helder",
+      "de": "Hält Isolierglaseinheiten innen trocken und klar",
+      "es": "Mantiene el interior de las unidades de vidrio aislante seco y transparente"
      }
     }
    ],
    "short": {
     "en": "3A desiccant beads that keep insulating glass dry and fog-free.",
-    "zh": "3A 干燥剂颗粒，保持中空玻璃干燥、不起雾。",
-    "fr": "Billes déshydratantes 3A qui gardent le verre isolant sec et sans buée."
+    "fr": "Billes déshydratantes 3A qui gardent le verre isolant sec et sans buée.",
+    "nl": "3A-droogmiddelkorrels die isolatieglas droog en condensvrij houden.",
+    "de": "3A-Trockenmittelperlen, die Isolierglas trocken und beschlagfrei halten.",
+    "es": "Perlas desecantes 3A que mantienen el vidrio aislante seco y sin vaho."
    },
    "description": {
     "en": "Molecular sieve is a crystalline desiccant that fills the hollow spacer bar. Its uniform pores capture water vapour from the sealed air space while leaving larger gas molecules alone, keeping the unit dry for its service life and preventing internal fogging.",
-    "zh": "分子筛是一种填充在空心间隔条内的晶体干燥剂。其均匀的孔径可吸附密封空腔中的水蒸气，而不吸附较大的气体分子，使中空玻璃在整个使用寿命内保持干燥，防止内部起雾。",
-    "fr": "Le tamis moléculaire est un déshydratant cristallin qui remplit la barre intercalaire creuse. Ses pores uniformes captent la vapeur d'eau de l'espace d'air scellé sans retenir les molécules de gaz plus grosses, ce qui garde l'unité sèche pendant toute sa durée de vie et empêche la formation de buée à l'intérieur."
+    "fr": "Le tamis moléculaire est un déshydratant cristallin qui remplit la barre intercalaire creuse. Ses pores uniformes captent la vapeur d'eau de l'espace d'air scellé sans retenir les molécules de gaz plus grosses, ce qui garde l'unité sèche pendant toute sa durée de vie et empêche la formation de buée à l'intérieur.",
+    "nl": "Moleculaire zeef is een kristallijn droogmiddel waarmee de holle afstandhouder wordt gevuld. De gelijkmatige poriën vangen waterdamp uit de afgesloten luchtspouw op en laten grotere gasmoleculen ongemoeid. Zo blijft de eenheid gedurende haar hele levensduur droog en ontstaat er aan de binnenkant geen condens.",
+    "de": "Molekularsieb ist ein kristallines Trockenmittel, mit dem der hohle Abstandhalter gefüllt wird. Seine gleichmäßigen Poren nehmen Wasserdampf aus dem versiegelten Scheibenzwischenraum auf, lassen größere Gasmoleküle jedoch unberührt. So bleibt die Einheit während ihrer gesamten Nutzungsdauer trocken und beschlägt nicht von innen.",
+    "es": "El tamiz molecular es un desecante cristalino que rellena el perfil espaciador hueco. Sus poros uniformes capturan el vapor de agua del espacio de aire sellado sin retener las moléculas de gas más grandes, lo que mantiene la unidad seca durante toda su vida útil y evita que se empañe por dentro."
    },
    "specs": [
     {
      "label": {
       "en": "Type",
-      "zh": "类型",
-      "fr": "Type"
+      "fr": "Type",
+      "nl": "Type",
+      "de": "Typ",
+      "es": "Tipo"
      },
      "value": {
       "en": "Zeolite 3A molecular sieve",
-      "zh": "3A 沸石分子筛",
-      "fr": "Tamis moléculaire zéolite 3A"
+      "fr": "Tamis moléculaire zéolite 3A",
+      "nl": "Moleculaire zeef van zeoliet 3A",
+      "de": "Molekularsieb aus Zeolith 3A",
+      "es": "Tamiz molecular de zeolita 3A"
      }
     },
     {
      "label": {
       "en": "Bead size",
-      "zh": "粒径",
-      "fr": "Taille des billes"
+      "fr": "Taille des billes",
+      "nl": "Korrelgrootte",
+      "de": "Perlengröße",
+      "es": "Tamaño de las perlas"
      },
      "value": {
       "en": "0.5–0.9 mm or 1.0–1.5 mm",
-      "zh": "0.5–0.9 mm 或 1.0–1.5 mm",
-      "fr": "0,5–0,9 mm ou 1,0–1,5 mm"
+      "fr": "0,5–0,9 mm ou 1,0–1,5 mm",
+      "nl": "0,5–0,9 mm of 1,0–1,5 mm",
+      "de": "0,5–0,9 mm oder 1,0–1,5 mm",
+      "es": "0,5–0,9 mm o 1,0–1,5 mm"
      }
     },
     {
      "label": {
       "en": "Function",
-      "zh": "功能",
-      "fr": "Fonction"
+      "fr": "Fonction",
+      "nl": "Functie",
+      "de": "Funktion",
+      "es": "Función"
      },
      "value": {
       "en": "Absorbs moisture inside the sealed unit",
-      "zh": "吸收密封腔体内的水分",
-      "fr": "Absorbe l'humidité à l'intérieur de l'unité scellée"
+      "fr": "Absorbe l'humidité à l'intérieur de l'unité scellée",
+      "nl": "Absorbeert vocht in de afgesloten eenheid",
+      "de": "Nimmt Feuchtigkeit in der versiegelten Einheit auf",
+      "es": "Absorbe la humedad dentro de la unidad sellada"
      }
     },
     {
      "label": {
       "en": "Suits",
-      "zh": "适用",
-      "fr": "Compatible avec"
+      "fr": "Compatible avec",
+      "nl": "Geschikt voor",
+      "de": "Geeignet für",
+      "es": "Adecuado para"
      },
      "value": {
       "en": "Air- and argon-filled IG units",
-      "zh": "充空气和充氩气中空玻璃",
-      "fr": "Unités scellées remplies d'air ou d'argon"
+      "fr": "Unités scellées remplies d'air ou d'argon",
+      "nl": "Isolatieglas met lucht- of argonvulling",
+      "de": "Luft- und argongefüllte Isolierglaseinheiten",
+      "es": "Unidades de vidrio aislante con aire o argón"
      }
     },
     {
      "label": {
       "en": "Packaging",
-      "zh": "包装",
-      "fr": "Emballage"
+      "fr": "Emballage",
+      "nl": "Verpakking",
+      "de": "Verpackung",
+      "es": "Envase"
      },
      "value": {
       "en": "Drums or bags",
-      "zh": "桶装或袋装",
-      "fr": "Barils ou sacs"
+      "fr": "Barils ou sacs",
+      "nl": "Vaten of zakken",
+      "de": "Fässer oder Säcke",
+      "es": "Bidones o sacos"
      }
     }
    ],
    "uses": [
     {
      "en": "Filling aluminum and warm-edge spacers",
-     "zh": "填充铝间隔条和暖边间隔条",
-     "fr": "Remplissage des intercalaires en aluminium et à bord chaud"
+     "fr": "Remplissage des intercalaires en aluminium et à bord chaud",
+     "nl": "Vullen van aluminium en warm-edge-afstandhouders",
+     "de": "Befüllen von Aluminium- und Warm-Edge-Abstandhaltern",
+     "es": "Relleno de espaciadores de aluminio y de borde cálido"
     },
     {
      "en": "Gas-filled (argon) IG units",
-     "zh": "充气（氩气）中空玻璃",
-     "fr": "Unités scellées remplies de gaz (argon)"
+     "fr": "Unités scellées remplies de gaz (argon)",
+     "nl": "Gasgevuld isolatieglas (argon)",
+     "de": "Gasgefüllte Isolierglaseinheiten (Argon)",
+     "es": "Unidades de vidrio aislante rellenas de gas (argón)"
     },
     {
      "en": "Moisture control in sealed assemblies",
-     "zh": "密封组件的防潮控制",
-     "fr": "Contrôle de l'humidité dans les assemblages scellés"
+     "fr": "Contrôle de l'humidité dans les assemblages scellés",
+     "nl": "Vochtbeheersing in afgesloten eenheden",
+     "de": "Feuchtigkeitskontrolle in versiegelten Einheiten",
+     "es": "Control de la humedad en conjuntos sellados"
     }
    ],
    "options": [
     {
      "en": "Bead size",
-     "zh": "粒径",
-     "fr": "Taille des billes"
+     "fr": "Taille des billes",
+     "nl": "Korrelgrootte",
+     "de": "Perlengröße",
+     "es": "Tamaño de las perlas"
     },
     {
      "en": "Drums or bags",
-     "zh": "桶装或袋装",
-     "fr": "Barils ou sacs"
+     "fr": "Barils ou sacs",
+     "nl": "Vaten of zakken",
+     "de": "Fässer oder Säcke",
+     "es": "Bidones o sacos"
     },
     {
      "en": "Blends for gas-filled units",
-     "zh": "适用于充气中空玻璃的配方",
-     "fr": "Mélanges pour unités remplies de gaz"
+     "fr": "Mélanges pour unités remplies de gaz",
+     "nl": "Mengsels voor gasgevuld isolatieglas",
+     "de": "Mischungen für gasgefülltes Isolierglas",
+     "es": "Mezclas para unidades rellenas de gas"
     }
    ],
    "tags": [
     {
      "en": "3A type",
-     "zh": "3A 型",
-     "fr": "Type 3A"
+     "fr": "Type 3A",
+     "nl": "Type 3A",
+     "de": "Typ 3A",
+     "es": "Tipo 3A"
     },
     {
      "en": "Anti-fog",
-     "zh": "防起雾",
-     "fr": "Antibuée"
+     "fr": "Antibuée",
+     "nl": "Anticondens",
+     "de": "Antibeschlag",
+     "es": "Antivaho"
     }
    ],
    "related": [
@@ -1496,8 +1960,10 @@
    "category": "cutting",
    "name": {
     "en": "Water Jet",
-    "zh": "水刀",
-    "fr": "Jet d'eau"
+    "fr": "Jet d'eau",
+    "nl": "Waterstraalsnijmachine",
+    "de": "Wasserstrahlschneidanlage",
+    "es": "Máquina de corte por chorro de agua"
    },
    "photo": "assets/img/ai/water-jet.jpg",
    "gallery": [
@@ -1505,132 +1971,176 @@
      "image": "assets/img/ai/waterjet-cutting.jpg",
      "caption": {
       "en": "A waterjet head cutting a part",
-      "zh": "水刀切割头正在切割工件",
-      "fr": "Une tête de jet d'eau en train de découper une pièce"
+      "fr": "Une tête de jet d'eau en train de découper une pièce",
+      "nl": "Een waterstraalkop die een onderdeel snijdt",
+      "de": "Ein Wasserstrahlkopf schneidet ein Werkstück",
+      "es": "Un cabezal de chorro de agua cortando una pieza"
      }
     }
    ],
    "short": {
     "en": "Abrasive waterjet systems for cold-cutting complex shapes in glass.",
-    "zh": "加砂水刀系统，用于冷切割各种复杂形状的玻璃。",
-    "fr": "Systèmes de découpe au jet d'eau abrasif pour la découpe à froid de formes complexes dans le verre."
+    "fr": "Systèmes de découpe au jet d'eau abrasif pour la découpe à froid de formes complexes dans le verre.",
+    "nl": "Abrasieve waterstraalsystemen voor het koud snijden van complexe vormen in glas.",
+    "de": "Abrasiv-Wasserstrahlanlagen zum Kaltschneiden komplexer Formen in Glas.",
+    "es": "Sistemas de chorro de agua abrasivo para cortar en frío formas complejas en vidrio."
    },
    "description": {
     "en": "A waterjet cuts glass with an ultra-high-pressure stream of water and abrasive. Because it is a cold process there is no heat-affected zone, so it can cut intricate curves, holes and notches in glass (and in stone, metal and tile) with minimal chipping.",
-    "zh": "水刀利用超高压水流和磨料切割玻璃。由于是冷加工，没有热影响区，可在玻璃（以及石材、金属和瓷砖）上切割复杂的曲线、孔洞和缺口，崩边极少。",
-    "fr": "Un système de jet d'eau découpe le verre à l'aide d'un flux d'eau et d'abrasif à ultra-haute pression. Comme il s'agit d'un procédé à froid, il n'y a aucune zone affectée thermiquement : il peut donc découper des courbes complexes, des trous et des encoches dans le verre (ainsi que dans la pierre, le métal et la céramique) avec un minimum d'écaillage."
+    "fr": "Un système de jet d'eau découpe le verre à l'aide d'un flux d'eau et d'abrasif à ultra-haute pression. Comme il s'agit d'un procédé à froid, il n'y a aucune zone affectée thermiquement : il peut donc découper des courbes complexes, des trous et des encoches dans le verre (ainsi que dans la pierre, le métal et la céramique) avec un minimum d'écaillage.",
+    "nl": "Een waterstraalsnijmachine snijdt glas met een straal water en schuurmiddel onder ultrahoge druk. Omdat het een koud proces is, ontstaat er geen warmtebeïnvloede zone. Zo snijdt u ingewikkelde rondingen, gaten en uitsparingen in glas (en in steen, metaal en tegels) met minimale schilfering.",
+    "de": "Eine Wasserstrahlanlage schneidet Glas mit einem Strahl aus Wasser und Abrasivmittel unter Ultrahochdruck. Da es sich um ein Kaltverfahren handelt, entsteht keine Wärmeeinflusszone. So lassen sich komplizierte Kurven, Bohrungen und Ausklinkungen in Glas (sowie in Stein, Metall und Fliesen) mit minimalen Ausmuschelungen schneiden.",
+    "es": "Un sistema de chorro de agua corta el vidrio con un chorro de agua y abrasivo a ultra alta presión. Al tratarse de un proceso en frío, no hay zona afectada por el calor, por lo que permite cortar curvas complejas, orificios y muescas en el vidrio (y en piedra, metal y azulejo) con un desconchado mínimo."
    },
    "specs": [
     {
      "label": {
       "en": "Process",
-      "zh": "工艺",
-      "fr": "Procédé"
+      "fr": "Procédé",
+      "nl": "Proces",
+      "de": "Verfahren",
+      "es": "Proceso"
      },
      "value": {
       "en": "Abrasive waterjet, cold cutting",
-      "zh": "加砂水刀，冷切割",
-      "fr": "Jet d'eau abrasif, découpe à froid"
+      "fr": "Jet d'eau abrasif, découpe à froid",
+      "nl": "Abrasieve waterstraal, koud snijden",
+      "de": "Abrasiv-Wasserstrahl, Kaltschnitt",
+      "es": "Chorro de agua abrasivo, corte en frío"
      }
     },
     {
      "label": {
       "en": "Pressure",
-      "zh": "压力",
-      "fr": "Pression"
+      "fr": "Pression",
+      "nl": "Druk",
+      "de": "Druck",
+      "es": "Presión"
      },
      "value": {
       "en": "Ultra-high, typically 380–420 MPa",
-      "zh": "超高压，通常为 380–420 MPa",
-      "fr": "Ultra-haute, généralement 380–420 MPa"
+      "fr": "Ultra-haute, généralement 380–420 MPa",
+      "nl": "Ultrahoog, doorgaans 380–420 MPa",
+      "de": "Ultrahoch, typischerweise 380–420 MPa",
+      "es": "Ultra alta, normalmente 380–420 MPa"
      }
     },
     {
      "label": {
       "en": "Cutting head",
-      "zh": "切割头",
-      "fr": "Tête de coupe"
+      "fr": "Tête de coupe",
+      "nl": "Snijkop",
+      "de": "Schneidkopf",
+      "es": "Cabezal de corte"
      },
      "value": {
       "en": "3-axis or 5-axis",
-      "zh": "3 轴或 5 轴",
-      "fr": "3 axes ou 5 axes"
+      "fr": "3 axes ou 5 axes",
+      "nl": "3-assig of 5-assig",
+      "de": "3-achsig oder 5-achsig",
+      "es": "3 ejes o 5 ejes"
      }
     },
     {
      "label": {
       "en": "Table size",
-      "zh": "工作台尺寸",
-      "fr": "Dimensions de la table"
+      "fr": "Dimensions de la table",
+      "nl": "Tafelafmetingen",
+      "de": "Tischgröße",
+      "es": "Tamaño de la mesa"
      },
      "value": {
       "en": "To your requirement",
-      "zh": "按您的要求",
-      "fr": "Selon vos besoins"
+      "fr": "Selon vos besoins",
+      "nl": "Naar uw wens",
+      "de": "Nach Ihren Anforderungen",
+      "es": "Según sus necesidades"
      }
     },
     {
      "label": {
       "en": "Materials",
-      "zh": "适用材料",
-      "fr": "Matériaux"
+      "fr": "Matériaux",
+      "nl": "Materialen",
+      "de": "Materialien",
+      "es": "Materiales"
      },
      "value": {
       "en": "Glass, stone, tile and metal",
-      "zh": "玻璃、石材、瓷砖和金属",
-      "fr": "Verre, pierre, céramique et métal"
+      "fr": "Verre, pierre, céramique et métal",
+      "nl": "Glas, steen, tegels en metaal",
+      "de": "Glas, Stein, Fliesen und Metall",
+      "es": "Vidrio, piedra, azulejo y metal"
      }
     }
    ],
    "uses": [
     {
      "en": "Shaped glass, holes and notches",
-     "zh": "异形玻璃、开孔和开槽",
-     "fr": "Verre de forme, trous et encoches"
+     "fr": "Verre de forme, trous et encoches",
+     "nl": "Vormen, gaten en uitsparingen in glas",
+     "de": "Modellscheiben, Bohrungen und Ausklinkungen",
+     "es": "Vidrio con formas, orificios y muescas"
     },
     {
      "en": "Shower door and hardware cut-outs",
-     "zh": "淋浴门及五金件开口",
-     "fr": "Découpes pour portes de douche et quincaillerie"
+     "fr": "Découpes pour portes de douche et quincaillerie",
+     "nl": "Uitsparingen voor douchedeuren en beslag",
+     "de": "Ausschnitte für Duschtüren und Beschläge",
+     "es": "Recortes para puertas de ducha y herrajes"
     },
     {
      "en": "Stone, tile and metal parts",
-     "zh": "石材、瓷砖和金属零件",
-     "fr": "Pièces en pierre, en céramique et en métal"
+     "fr": "Pièces en pierre, en céramique et en métal",
+     "nl": "Onderdelen van steen, tegels en metaal",
+     "de": "Teile aus Stein, Fliesen und Metall",
+     "es": "Piezas de piedra, azulejo y metal"
     }
    ],
    "options": [
     {
      "en": "Table size",
-     "zh": "工作台尺寸",
-     "fr": "Dimensions de la table"
+     "fr": "Dimensions de la table",
+     "nl": "Tafelafmetingen",
+     "de": "Tischgröße",
+     "es": "Tamaño de la mesa"
     },
     {
      "en": "Pump pressure and power",
-     "zh": "泵压力和功率",
-     "fr": "Pression et puissance de la pompe"
+     "fr": "Pression et puissance de la pompe",
+     "nl": "Pompdruk en -vermogen",
+     "de": "Pumpendruck und -leistung",
+     "es": "Presión y potencia de la bomba"
     },
     {
      "en": "3-axis or 5-axis head",
-     "zh": "3 轴或 5 轴切割头",
-     "fr": "Tête 3 axes ou 5 axes"
+     "fr": "Tête 3 axes ou 5 axes",
+     "nl": "3-assige of 5-assige kop",
+     "de": "3-achsiger oder 5-achsiger Kopf",
+     "es": "Cabezal de 3 o 5 ejes"
     },
     {
      "en": "Control software",
-     "zh": "控制软件",
-     "fr": "Logiciel de commande"
+     "fr": "Logiciel de commande",
+     "nl": "Besturingssoftware",
+     "de": "Steuerungssoftware",
+     "es": "Software de control"
     }
    ],
    "tags": [
     {
      "en": "Cold cutting",
-     "zh": "冷切割",
-     "fr": "Découpe à froid"
+     "fr": "Découpe à froid",
+     "nl": "Koud snijden",
+     "de": "Kaltschnitt",
+     "es": "Corte en frío"
     },
     {
      "en": "Complex shapes",
-     "zh": "复杂形状",
-     "fr": "Formes complexes"
+     "fr": "Formes complexes",
+     "nl": "Complexe vormen",
+     "de": "Komplexe Formen",
+     "es": "Formas complejas"
     }
    ],
    "related": [
@@ -1644,8 +2154,10 @@
    "category": "cutting",
    "name": {
     "en": "Water Jet Cutting Abrasive",
-    "zh": "水刀切割磨料",
-    "fr": "Abrasif pour découpe au jet d'eau"
+    "fr": "Abrasif pour découpe au jet d'eau",
+    "nl": "Schuurmiddel voor waterstraalsnijden",
+    "de": "Abrasivmittel für das Wasserstrahlschneiden",
+    "es": "Abrasivo para corte por chorro de agua"
    },
    "photo": "assets/img/ai/waterjet-abrasive.jpg",
    "gallery": [
@@ -1653,127 +2165,169 @@
      "image": "assets/img/ai/waterjet-cutting.jpg",
      "caption": {
       "en": "Abrasive is mixed into the jet at the cutting head",
-      "zh": "磨料在切割头处混入水射流",
-      "fr": "L'abrasif est mélangé au jet dans la tête de coupe"
+      "fr": "L'abrasif est mélangé au jet dans la tête de coupe",
+      "nl": "Het schuurmiddel wordt in de snijkop aan de straal toegevoegd",
+      "de": "Das Abrasivmittel wird dem Strahl im Schneidkopf beigemischt",
+      "es": "El abrasivo se mezcla con el chorro en el cabezal de corte"
      }
     }
    ],
    "short": {
     "en": "Hard, sharp garnet abrasive for fast, clean waterjet cuts.",
-    "zh": "坚硬锋利的石榴砂磨料，水刀切割快速、整洁。",
-    "fr": "Abrasif de grenat dur et tranchant pour des découpes au jet d'eau rapides et nettes."
+    "fr": "Abrasif de grenat dur et tranchant pour des découpes au jet d'eau rapides et nettes.",
+    "nl": "Hard, scherpkantig granaatzand voor snelle, strakke waterstraalsneden.",
+    "de": "Harter, scharfkantiger Granatsand für schnelle, saubere Wasserstrahlschnitte.",
+    "es": "Abrasivo de granate duro y afilado para cortes por chorro de agua rápidos y limpios."
    },
    "description": {
     "en": "Garnet is the standard abrasive for waterjet cutting. Its hardness and sharp grain edges speed up cutting while keeping nozzle wear low, and consistent grading gives a smooth, even edge on glass and other materials.",
-    "zh": "石榴砂是水刀切割的标准磨料。其硬度高、颗粒棱角锋利，可提高切割速度，同时降低喷嘴磨损；粒度均匀稳定，可在玻璃及其他材料上切出平滑整齐的边缘。",
-    "fr": "Le grenat est l'abrasif de référence pour la découpe au jet d'eau. Sa dureté et ses grains aux arêtes vives accélèrent la coupe tout en limitant l'usure de la buse, et sa granulométrie constante donne un bord lisse et uniforme sur le verre et les autres matériaux."
+    "fr": "Le grenat est l'abrasif de référence pour la découpe au jet d'eau. Sa dureté et ses grains aux arêtes vives accélèrent la coupe tout en limitant l'usure de la buse, et sa granulométrie constante donne un bord lisse et uniforme sur le verre et les autres matériaux.",
+    "nl": "Granaat is het standaard schuurmiddel voor waterstraalsnijden. Door de hardheid en de scherpe korrelranden snijdt u sneller, terwijl de slijtage van het mondstuk laag blijft, en een constante korrelverdeling zorgt voor een gladde, gelijkmatige snijkant op glas en andere materialen.",
+    "de": "Granat ist das Standard-Abrasivmittel für das Wasserstrahlschneiden. Seine Härte und die scharfkantigen Körner beschleunigen den Schnitt bei geringem Düsenverschleiß, und die gleichmäßige Körnung sorgt für eine glatte, ebenmäßige Schnittkante auf Glas und anderen Materialien.",
+    "es": "El granate es el abrasivo estándar para el corte por chorro de agua. Su dureza y los bordes afilados de sus granos aceleran el corte y reducen el desgaste de la boquilla, y su granulometría uniforme proporciona un borde liso y homogéneo en el vidrio y otros materiales."
    },
    "specs": [
     {
      "label": {
       "en": "Material",
-      "zh": "材质",
-      "fr": "Matériau"
+      "fr": "Matériau",
+      "nl": "Materiaal",
+      "de": "Material",
+      "es": "Material"
      },
      "value": {
       "en": "Garnet",
-      "zh": "石榴砂",
-      "fr": "Grenat"
+      "fr": "Grenat",
+      "nl": "Granaat",
+      "de": "Granat",
+      "es": "Granate"
      }
     },
     {
      "label": {
       "en": "Mesh",
-      "zh": "目数",
-      "fr": "Granulométrie"
+      "fr": "Granulométrie",
+      "nl": "Korrelgrootte",
+      "de": "Körnung",
+      "es": "Granulometría"
      },
      "value": {
       "en": "80 mesh standard; others on request",
-      "zh": "标准 80 目；其他目数可按需提供",
-      "fr": "80 mesh en standard; autres sur demande"
+      "fr": "80 mesh en standard; autres sur demande",
+      "nl": "Standaard 80 mesh; andere op aanvraag",
+      "de": "Standardmäßig 80 Mesh; andere auf Anfrage",
+      "es": "80 mesh estándar; otros tamaños bajo pedido"
      }
     },
     {
      "label": {
       "en": "Hardness",
-      "zh": "硬度",
-      "fr": "Dureté"
+      "fr": "Dureté",
+      "nl": "Hardheid",
+      "de": "Härte",
+      "es": "Dureza"
      },
      "value": {
       "en": "About 7–8 on the Mohs scale",
-      "zh": "莫氏硬度约 7–8",
-      "fr": "Environ 7–8 sur l'échelle de Mohs"
+      "fr": "Environ 7–8 sur l'échelle de Mohs",
+      "nl": "Ca. 7–8 op de schaal van Mohs",
+      "de": "Ca. 7–8 auf der Mohs-Skala",
+      "es": "Aprox. 7–8 en la escala de Mohs"
      }
     },
     {
      "label": {
       "en": "Packaging",
-      "zh": "包装",
-      "fr": "Emballage"
+      "fr": "Emballage",
+      "nl": "Verpakking",
+      "de": "Verpackung",
+      "es": "Envase"
      },
      "value": {
       "en": "Bags or bulk bags",
-      "zh": "袋装或吨袋",
-      "fr": "Sacs ou grands sacs en vrac"
+      "fr": "Sacs ou grands sacs en vrac",
+      "nl": "Zakken of big bags",
+      "de": "Säcke oder Big Bags",
+      "es": "Sacos o big bags"
      }
     },
     {
      "label": {
       "en": "Use with",
-      "zh": "配套设备",
-      "fr": "À utiliser avec"
+      "fr": "À utiliser avec",
+      "nl": "Te gebruiken met",
+      "de": "Verwendung mit",
+      "es": "Para usar con"
      },
      "value": {
       "en": "Abrasive waterjet systems",
-      "zh": "加砂水刀系统",
-      "fr": "Systèmes de jet d'eau abrasif"
+      "fr": "Systèmes de jet d'eau abrasif",
+      "nl": "Abrasieve waterstraalsystemen",
+      "de": "Abrasiv-Wasserstrahlanlagen",
+      "es": "Sistemas de chorro de agua abrasivo"
      }
     }
    ],
    "uses": [
     {
      "en": "Waterjet cutting of glass",
-     "zh": "玻璃水刀切割",
-     "fr": "Découpe du verre au jet d'eau"
+     "fr": "Découpe du verre au jet d'eau",
+     "nl": "Waterstraalsnijden van glas",
+     "de": "Wasserstrahlschneiden von Glas",
+     "es": "Corte de vidrio por chorro de agua"
     },
     {
      "en": "Stone, ceramic and metal cutting",
-     "zh": "石材、陶瓷和金属切割",
-     "fr": "Découpe de pierre, de céramique et de métal"
+     "fr": "Découpe de pierre, de céramique et de métal",
+     "nl": "Snijden van steen, keramiek en metaal",
+     "de": "Schneiden von Stein, Keramik und Metall",
+     "es": "Corte de piedra, cerámica y metal"
     },
     {
      "en": "Surface blasting",
-     "zh": "表面喷砂",
-     "fr": "Sablage de surfaces"
+     "fr": "Sablage de surfaces",
+     "nl": "Stralen van oppervlakken",
+     "de": "Strahlen von Oberflächen",
+     "es": "Chorreado de superficies"
     }
    ],
    "options": [
     {
      "en": "Mesh size",
-     "zh": "目数",
-     "fr": "Granulométrie (mesh)"
+     "fr": "Granulométrie (mesh)",
+     "nl": "Korrelgrootte (mesh)",
+     "de": "Körnung (Mesh)",
+     "es": "Granulometría (mesh)"
     },
     {
      "en": "Bag or bulk-bag packaging",
-     "zh": "袋装或吨袋包装",
-     "fr": "Emballage en sacs ou en grands sacs en vrac"
+     "fr": "Emballage en sacs ou en grands sacs en vrac",
+     "nl": "Verpakking in zakken of big bags",
+     "de": "Verpackung in Säcken oder Big Bags",
+     "es": "Envase en sacos o big bags"
     },
     {
      "en": "Grade",
-     "zh": "等级",
-     "fr": "Qualité"
+     "fr": "Qualité",
+     "nl": "Kwaliteit",
+     "de": "Qualität",
+     "es": "Calidad"
     }
    ],
    "tags": [
     {
      "en": "Garnet",
-     "zh": "石榴砂",
-     "fr": "Grenat"
+     "fr": "Grenat",
+     "nl": "Granaat",
+     "de": "Granat",
+     "es": "Granate"
     },
     {
      "en": "80 mesh",
-     "zh": "80 目",
-     "fr": "80 mesh"
+     "fr": "80 mesh",
+     "nl": "80 mesh",
+     "de": "80 mesh",
+     "es": "80 mesh"
     }
    ],
    "related": [
@@ -1787,8 +2341,10 @@
    "category": "cutting",
    "name": {
     "en": "Grinding Wheels",
-    "zh": "磨轮",
-    "fr": "Meules"
+    "fr": "Meules",
+    "nl": "Slijpschijven",
+    "de": "Schleifscheiben",
+    "es": "Muelas"
    },
    "photo": "assets/img/ai/grinding-wheels.jpg",
    "gallery": [
@@ -1796,132 +2352,176 @@
      "image": "assets/img/library/clear-float-edge.jpg",
      "caption": {
       "en": "Result: clean, polished edges",
-      "zh": "成品：整洁光亮的抛光边",
-      "fr": "Résultat : des bords propres et polis"
+      "fr": "Résultat : des bords propres et polis",
+      "nl": "Resultaat: strakke, gepolijste randen",
+      "de": "Ergebnis: saubere, polierte Kanten",
+      "es": "Resultado: bordes limpios y pulidos"
      }
     }
    ],
    "short": {
     "en": "Diamond, resin and polishing wheels for edging and bevelling.",
-    "zh": "用于磨边和磨斜边的金刚石轮、树脂轮和抛光轮。",
-    "fr": "Meules diamantées, en résine et de polissage pour le façonnage des bords et le biseautage."
+    "fr": "Meules diamantées, en résine et de polissage pour le façonnage des bords et le biseautage.",
+    "nl": "Diamant-, kunsthars- en polijstschijven voor kantafwerking en facetslijpen.",
+    "de": "Diamant-, Kunstharz- und Polierscheiben zum Kantenschleifen und Facettieren.",
+    "es": "Muelas de diamante, de resina y de pulido para el canteado y el biselado."
    },
    "description": {
     "en": "Diamond and resin-bond grinding wheels for straight-line and shape edgers, bevellers and CNC centres. Coarse diamond wheels remove material fast, and resin and polishing wheels bring the edge to a smooth, bright finish.",
-    "zh": "金刚石及树脂结合剂磨轮，适用于直线磨边机、异形磨边机、斜边机和 CNC 加工中心。粗磨金刚石轮可快速去除材料，树脂轮和抛光轮则使边缘平滑光亮。",
-    "fr": "Meules diamantées et à liant résine pour bordeuses rectilignes et de forme, biseauteuses et centres CNC. Les meules diamantées à grain grossier enlèvent rapidement la matière, puis les meules en résine et de polissage donnent au bord un fini lisse et brillant."
+    "fr": "Meules diamantées et à liant résine pour bordeuses rectilignes et de forme, biseauteuses et centres CNC. Les meules diamantées à grain grossier enlèvent rapidement la matière, puis les meules en résine et de polissage donnent au bord un fini lisse et brillant.",
+    "nl": "Diamant- en kunstharsgebonden slijpschijven voor rechtlijnige en vormkantenslijpmachines, facetslijpmachines en CNC-bewerkingscentra. Grove diamantschijven verwijderen snel materiaal, waarna kunsthars- en polijstschijven de kant glad en glanzend afwerken.",
+    "de": "Diamant- und kunstharzgebundene Schleifscheiben für Geradkanten- und Formkantenschleifmaschinen, Facettiermaschinen und CNC-Bearbeitungszentren. Grobe Diamantscheiben tragen das Material schnell ab, Kunstharz- und Polierscheiben verleihen der Kante anschließend ein glattes, glänzendes Finish.",
+    "es": "Muelas de diamante y de liga de resina para canteadoras rectilíneas y de forma, biseladoras y centros CNC. Las muelas de diamante de grano grueso eliminan material rápidamente, y las muelas de resina y de pulido dejan el borde con un acabado liso y brillante."
    },
    "specs": [
     {
      "label": {
       "en": "Types",
-      "zh": "类型",
-      "fr": "Types"
+      "fr": "Types",
+      "nl": "Types",
+      "de": "Typen",
+      "es": "Tipos"
      },
      "value": {
       "en": "Diamond cup, peripheral, resin polishing",
-      "zh": "金刚石杯轮、周边轮、树脂抛光轮",
-      "fr": "Boisseau diamanté, périphérique, polissage à la résine"
+      "fr": "Boisseau diamanté, périphérique, polissage à la résine",
+      "nl": "Diamantkomschijf, omtrekschijf, kunsthars-polijstschijf",
+      "de": "Diamant-Topfscheibe, Umfangsscheibe, Kunstharz-Polierscheibe",
+      "es": "Muela de copa de diamante, periférica, de pulido de resina"
      }
     },
     {
      "label": {
       "en": "Diameter",
-      "zh": "直径",
-      "fr": "Diamètre"
+      "fr": "Diamètre",
+      "nl": "Diameter",
+      "de": "Durchmesser",
+      "es": "Diámetro"
      },
      "value": {
       "en": "About 100–200 mm",
-      "zh": "约 100–200 mm",
-      "fr": "Environ 100–200 mm"
+      "fr": "Environ 100–200 mm",
+      "nl": "Ca. 100–200 mm",
+      "de": "Ca. 100–200 mm",
+      "es": "Aprox. 100–200 mm"
      }
     },
     {
      "label": {
       "en": "Grits",
-      "zh": "粒度",
-      "fr": "Grains"
+      "fr": "Grains",
+      "nl": "Korrelgroottes",
+      "de": "Körnungen",
+      "es": "Granos"
      },
      "value": {
       "en": "Coarse diamond to fine polishing",
-      "zh": "从粗磨金刚石到精细抛光",
-      "fr": "Du diamant grossier au polissage fin"
+      "fr": "Du diamant grossier au polissage fin",
+      "nl": "Van grove diamantkorrel tot fijne polijstkorrel",
+      "de": "Von grober Diamantkörnung bis zur Feinpolitur",
+      "es": "Desde diamante grueso hasta pulido fino"
      }
     },
     {
      "label": {
       "en": "Profiles",
-      "zh": "边型",
-      "fr": "Profils"
+      "fr": "Profils",
+      "nl": "Profielen",
+      "de": "Profile",
+      "es": "Perfiles"
      },
      "value": {
       "en": "Flat, pencil, bevel and more",
-      "zh": "平边、圆边、斜边等",
-      "fr": "Plat, crayon, biseau et plus"
+      "fr": "Plat, crayon, biseau et plus",
+      "nl": "Vlak, halfrond, facet en meer",
+      "de": "Flach, C-Kante, Facette und mehr",
+      "es": "Plano, canto lápiz, bisel y más"
      }
     },
     {
      "label": {
       "en": "Machines",
-      "zh": "适用设备",
-      "fr": "Machines"
+      "fr": "Machines",
+      "nl": "Machines",
+      "de": "Maschinen",
+      "es": "Máquinas"
      },
      "value": {
       "en": "Edgers, bevellers and CNC centres",
-      "zh": "磨边机、斜边机和 CNC 加工中心",
-      "fr": "Bordeuses, biseauteuses et centres CNC"
+      "fr": "Bordeuses, biseauteuses et centres CNC",
+      "nl": "Kantenslijpmachines, facetslijpmachines en CNC-centra",
+      "de": "Kantenschleifmaschinen, Facettiermaschinen und CNC-Zentren",
+      "es": "Canteadoras, biseladoras y centros CNC"
      }
     }
    ],
    "uses": [
     {
      "en": "Flat and pencil edging",
-     "zh": "平边和圆边磨边",
-     "fr": "Façonnage de bords plats et crayon"
+     "fr": "Façonnage de bords plats et crayon",
+     "nl": "Vlakke en halfronde kantafwerking",
+     "de": "Flach- und C-Kantenschliff",
+     "es": "Canteado plano y en lápiz"
     },
     {
      "en": "Bevelling and mitring",
-     "zh": "磨斜边和拼角",
-     "fr": "Biseautage et coupe d'onglets"
+     "fr": "Biseautage et coupe d'onglets",
+     "nl": "Facetslijpen en verstekslijpen",
+     "de": "Facettieren und Gehrungsschleifen",
+     "es": "Biselado e ingletado"
     },
     {
      "en": "CNC edge processing",
-     "zh": "CNC 边部加工",
-     "fr": "Façonnage des bords sur CNC"
+     "fr": "Façonnage des bords sur CNC",
+     "nl": "CNC-kantbewerking",
+     "de": "CNC-Kantenbearbeitung",
+     "es": "Procesamiento de bordes por CNC"
     }
    ],
    "options": [
     {
      "en": "Cup, peripheral or CNC wheels",
-     "zh": "杯轮、周边轮或 CNC 磨轮",
-     "fr": "Meules boisseau, périphériques ou CNC"
+     "fr": "Meules boisseau, périphériques ou CNC",
+     "nl": "Kom-, omtrek- of CNC-schijven",
+     "de": "Topf-, Umfangs- oder CNC-Scheiben",
+     "es": "Muelas de copa, periféricas o CNC"
     },
     {
      "en": "Diameter and bore",
-     "zh": "直径和内孔",
-     "fr": "Diamètre et alésage"
+     "fr": "Diamètre et alésage",
+     "nl": "Diameter en asgat",
+     "de": "Durchmesser und Bohrung",
+     "es": "Diámetro y orificio central"
     },
     {
      "en": "Grit and bond",
-     "zh": "粒度和结合剂",
-     "fr": "Grain et liant"
+     "fr": "Grain et liant",
+     "nl": "Korrel en binding",
+     "de": "Körnung und Bindung",
+     "es": "Grano y liga"
     },
     {
      "en": "Edge profile",
-     "zh": "边型",
-     "fr": "Profil de bord"
+     "fr": "Profil de bord",
+     "nl": "Kantprofiel",
+     "de": "Kantenprofil",
+     "es": "Perfil de canto"
     }
    ],
    "tags": [
     {
      "en": "Diamond",
-     "zh": "金刚石",
-     "fr": "Diamant"
+     "fr": "Diamant",
+     "nl": "Diamant",
+     "de": "Diamant",
+     "es": "Diamante"
     },
     {
      "en": "Polishing",
-     "zh": "抛光",
-     "fr": "Polissage"
+     "fr": "Polissage",
+     "nl": "Polijsten",
+     "de": "Polieren",
+     "es": "Pulido"
     }
    ],
    "related": [
@@ -1935,8 +2535,10 @@
    "category": "cutting",
    "name": {
     "en": "Cerium Dioxide",
-    "zh": "二氧化铈",
-    "fr": "Dioxyde de cérium"
+    "fr": "Dioxyde de cérium",
+    "nl": "Ceriumdioxide",
+    "de": "Cerdioxid",
+    "es": "Dióxido de cerio"
    },
    "photo": "assets/img/ai/cerium-dioxide.jpg",
    "gallery": [
@@ -1944,127 +2546,169 @@
      "image": "assets/img/library/clear-float-edge.jpg",
      "caption": {
       "en": "Result: crystal-clear polished edges",
-      "zh": "成品：晶莹剔透的抛光边",
-      "fr": "Résultat : des bords polis d'une clarté cristalline"
+      "fr": "Résultat : des bords polis d'une clarté cristalline",
+      "nl": "Resultaat: kristalhelder gepolijste randen",
+      "de": "Ergebnis: kristallklar polierte Kanten",
+      "es": "Resultado: bordes pulidos de claridad cristalina"
      }
     }
    ],
    "short": {
     "en": "Cerium oxide polishing powder for crystal-clear glass edges and surfaces.",
-    "zh": "氧化铈抛光粉，使玻璃边缘和表面晶莹透亮。",
-    "fr": "Poudre de polissage à l'oxyde de cérium pour des bords et des surfaces de verre d'une clarté cristalline."
+    "fr": "Poudre de polissage à l'oxyde de cérium pour des bords et des surfaces de verre d'une clarté cristalline.",
+    "nl": "Polijstpoeder van ceriumoxide voor kristalheldere glasranden en -oppervlakken.",
+    "de": "Ceroxid-Polierpulver für kristallklare Glaskanten und -oberflächen.",
+    "es": "Polvo de pulido de óxido de cerio para bordes y superficies de vidrio de claridad cristalina."
    },
    "description": {
     "en": "Cerium dioxide (cerium oxide) is the go-to polishing compound for glass. Mixed into a slurry and used with a felt or polishing wheel, it removes fine scratches and haze and gives edges and surfaces a high-clarity finish.",
-    "zh": "二氧化铈（氧化铈）是玻璃抛光的首选材料。将其调成浆料，配合毛毡轮或抛光轮使用，可去除细微划痕和雾化，使边缘和表面达到高透亮效果。",
-    "fr": "Le dioxyde de cérium (oxyde de cérium) est le composé de polissage de prédilection pour le verre. Mélangé en suspension et utilisé avec une meule de feutre ou de polissage, il élimine les fines rayures et le voile, et donne aux bords et aux surfaces un fini d'une grande clarté."
+    "fr": "Le dioxyde de cérium (oxyde de cérium) est le composé de polissage de prédilection pour le verre. Mélangé en suspension et utilisé avec une meule de feutre ou de polissage, il élimine les fines rayures et le voile, et donne aux bords et aux surfaces un fini d'une grande clarté.",
+    "nl": "Ceriumdioxide (ceriumoxide) is hét polijstmiddel voor glas. Aangemaakt tot een suspensie en gebruikt met een vilt- of polijstschijf verwijdert het fijne krassen en waas en geeft het randen en oppervlakken een zeer heldere afwerking.",
+    "de": "Cerdioxid (Ceroxid) ist das bevorzugte Poliermittel für Glas. Als Suspension angerührt und mit einer Filz- oder Polierscheibe verwendet, entfernt es feine Kratzer und Trübungen und verleiht Kanten und Oberflächen ein Finish von hoher Klarheit.",
+    "es": "El dióxido de cerio (óxido de cerio) es el compuesto de pulido por excelencia para el vidrio. Mezclado en suspensión y aplicado con una muela de fieltro o de pulido, elimina los rayones finos y la opacidad, y deja los bordes y las superficies con un acabado de gran claridad."
    },
    "specs": [
     {
      "label": {
       "en": "Chemical",
-      "zh": "化学成分",
-      "fr": "Composé chimique"
+      "fr": "Composé chimique",
+      "nl": "Chemische verbinding",
+      "de": "Chemische Verbindung",
+      "es": "Compuesto químico"
      },
      "value": {
       "en": "Cerium oxide (CeO₂)",
-      "zh": "氧化铈（CeO₂）",
-      "fr": "Oxyde de cérium (CeO₂)"
+      "fr": "Oxyde de cérium (CeO₂)",
+      "nl": "Ceriumoxide (CeO₂)",
+      "de": "Ceroxid (CeO₂)",
+      "es": "Óxido de cerio (CeO₂)"
      }
     },
     {
      "label": {
       "en": "Particle size",
-      "zh": "粒径",
-      "fr": "Granulométrie"
+      "fr": "Granulométrie",
+      "nl": "Deeltjesgrootte",
+      "de": "Partikelgröße",
+      "es": "Tamaño de partícula"
      },
      "value": {
       "en": "About 1–3 µm",
-      "zh": "约 1–3 µm",
-      "fr": "Environ 1–3 µm"
+      "fr": "Environ 1–3 µm",
+      "nl": "Ca. 1–3 µm",
+      "de": "Ca. 1–3 µm",
+      "es": "Aprox. 1–3 µm"
      }
     },
     {
      "label": {
       "en": "Form",
-      "zh": "形态",
-      "fr": "Forme"
+      "fr": "Forme",
+      "nl": "Vorm",
+      "de": "Form",
+      "es": "Forma"
      },
      "value": {
       "en": "Fine powder, mixed into a slurry",
-      "zh": "细粉，调成浆料使用",
-      "fr": "Poudre fine, à mélanger en suspension"
+      "fr": "Poudre fine, à mélanger en suspension",
+      "nl": "Fijn poeder, aan te maken tot een suspensie",
+      "de": "Feines Pulver, wird zu einer Suspension angerührt",
+      "es": "Polvo fino, para mezclar en suspensión"
      }
     },
     {
      "label": {
       "en": "Use with",
-      "zh": "配套设备",
-      "fr": "À utiliser avec"
+      "fr": "À utiliser avec",
+      "nl": "Te gebruiken met",
+      "de": "Verwendung mit",
+      "es": "Para usar con"
      },
      "value": {
       "en": "Felt and polishing wheels",
-      "zh": "毛毡轮和抛光轮",
-      "fr": "Meules de feutre et de polissage"
+      "fr": "Meules de feutre et de polissage",
+      "nl": "Vilt- en polijstschijven",
+      "de": "Filz- und Polierscheiben",
+      "es": "Muelas de fieltro y de pulido"
      }
     },
     {
      "label": {
       "en": "Packaging",
-      "zh": "包装",
-      "fr": "Emballage"
+      "fr": "Emballage",
+      "nl": "Verpakking",
+      "de": "Verpackung",
+      "es": "Envase"
      },
      "value": {
       "en": "Bags or drums",
-      "zh": "袋装或桶装",
-      "fr": "Sacs ou barils"
+      "fr": "Sacs ou barils",
+      "nl": "Zakken of vaten",
+      "de": "Säcke oder Fässer",
+      "es": "Sacos o bidones"
      }
     }
    ],
    "uses": [
     {
      "en": "Final polishing on edging lines",
-     "zh": "磨边线上的最终抛光",
-     "fr": "Polissage final sur les lignes de façonnage"
+     "fr": "Polissage final sur les lignes de façonnage",
+     "nl": "Eindpolijsten op kantenslijplijnen",
+     "de": "Endpolitur auf Kantenbearbeitungslinien",
+     "es": "Pulido final en líneas de canteado"
     },
     {
      "en": "Scratch and haze removal",
-     "zh": "去除划痕和雾化",
-     "fr": "Élimination des rayures et du voile"
+     "fr": "Élimination des rayures et du voile",
+     "nl": "Verwijderen van krassen en waas",
+     "de": "Entfernen von Kratzern und Trübungen",
+     "es": "Eliminación de rayones y opacidad"
     },
     {
      "en": "Optical and mirror glass finishing",
-     "zh": "光学玻璃和镜面玻璃精加工",
-     "fr": "Finition du verre optique et des miroirs"
+     "fr": "Finition du verre optique et des miroirs",
+     "nl": "Afwerking van optisch glas en spiegelglas",
+     "de": "Endbearbeitung von optischem Glas und Spiegelglas",
+     "es": "Acabado de vidrio óptico y de espejo"
     }
    ],
    "options": [
     {
      "en": "Particle size",
-     "zh": "粒径",
-     "fr": "Granulométrie"
+     "fr": "Granulométrie",
+     "nl": "Deeltjesgrootte",
+     "de": "Partikelgröße",
+     "es": "Tamaño de partícula"
     },
     {
      "en": "Purity grade",
-     "zh": "纯度等级",
-     "fr": "Degré de pureté"
+     "fr": "Degré de pureté",
+     "nl": "Zuiverheidsgraad",
+     "de": "Reinheitsgrad",
+     "es": "Grado de pureza"
     },
     {
      "en": "Packaging",
-     "zh": "包装",
-     "fr": "Emballage"
+     "fr": "Emballage",
+     "nl": "Verpakking",
+     "de": "Verpackung",
+     "es": "Envase"
     }
    ],
    "tags": [
     {
      "en": "CeO₂",
-     "zh": "CeO₂",
-     "fr": "CeO₂"
+     "fr": "CeO₂",
+     "nl": "CeO₂",
+     "de": "CeO₂",
+     "es": "CeO₂"
     },
     {
      "en": "High clarity",
-     "zh": "高透亮",
-     "fr": "Grande clarté"
+     "fr": "Grande clarté",
+     "nl": "Hoge helderheid",
+     "de": "Hohe Klarheit",
+     "es": "Gran claridad"
     }
    ],
    "related": [
@@ -2078,8 +2722,10 @@
    "category": "films",
    "name": {
     "en": "Vinyl Backed Film CAT I",
-    "zh": "乙烯基背膜 CAT I",
-    "fr": "Pellicule à endos vinyle CAT I"
+    "fr": "Pellicule à endos vinyle CAT I",
+    "nl": "Vinylveiligheidsfolie CAT I",
+    "de": "Vinyl-Sicherheitsfolie CAT I",
+    "es": "Película de vinilo de seguridad CAT I"
    },
    "photo": "assets/img/products/vinyl-cat1.jpg",
    "gallery": [
@@ -2087,127 +2733,169 @@
      "image": "assets/img/ai/silver-mirror.jpg",
      "caption": {
       "en": "Applied to the back of wall mirrors",
-      "zh": "贴于墙面镜背面",
-      "fr": "Appliquée au dos des miroirs muraux"
+      "fr": "Appliquée au dos des miroirs muraux",
+      "nl": "Aangebracht op de achterzijde van wandspiegels",
+      "de": "Auf der Rückseite von Wandspiegeln angebracht",
+      "es": "Aplicada en el reverso de espejos de pared"
      }
     }
    ],
    "short": {
     "en": "Safety backing film for mirrors that call for a Category I impact rating.",
-    "zh": "安全背膜，适用于要求 I 类抗冲击等级的镜子。",
-    "fr": "Pellicule de sécurité pour endos de miroirs exigeant une cote de résistance aux chocs de catégorie I."
+    "fr": "Pellicule de sécurité pour endos de miroirs exigeant une cote de résistance aux chocs de catégorie I.",
+    "nl": "Veiligheidsfolie voor de achterzijde van spiegels waarvoor slagvastheid Categorie I vereist is.",
+    "de": "Sicherheitsfolie für die Rückseite von Spiegeln, für die eine Schlagfestigkeit der Kategorie I gefordert ist.",
+    "es": "Película de seguridad para el reverso de espejos que requieren resistencia al impacto de categoría I."
    },
    "description": {
     "en": "Vinyl-backed safety film is applied to the back of mirrors so that, if the glass breaks, the fragments stay bonded to the film instead of falling. Category I film is used where a Category I impact rating is specified, typically smaller mirrors and panels.",
-    "zh": "乙烯基安全背膜贴于镜子背面，一旦玻璃破碎，碎片会粘附在膜上而不会掉落。I 类背膜用于规定 I 类抗冲击等级的场合，通常为较小的镜子和面板。",
-    "fr": "La pellicule de sécurité à endos vinyle s'applique au dos des miroirs afin que, si le verre se brise, les fragments restent collés à la pellicule au lieu de tomber. La pellicule de catégorie I est utilisée lorsqu'une cote de résistance aux chocs de catégorie I est prescrite, généralement pour les miroirs et panneaux de plus petite taille."
+    "fr": "La pellicule de sécurité à endos vinyle s'applique au dos des miroirs afin que, si le verre se brise, les fragments restent collés à la pellicule au lieu de tomber. La pellicule de catégorie I est utilisée lorsqu'une cote de résistance aux chocs de catégorie I est prescrite, généralement pour les miroirs et panneaux de plus petite taille.",
+    "nl": "Vinylveiligheidsfolie wordt op de achterzijde van spiegels aangebracht, zodat de scherven bij breuk aan de folie blijven kleven in plaats van naar beneden te vallen. Folie van Categorie I wordt gebruikt waar slagvastheid Categorie I is voorgeschreven, meestal bij kleinere spiegels en panelen.",
+    "de": "Vinyl-Sicherheitsfolie wird auf die Rückseite von Spiegeln aufgebracht, damit die Bruchstücke bei Glasbruch an der Folie haften bleiben, statt herabzufallen. Folie der Kategorie I wird eingesetzt, wenn eine Schlagfestigkeit der Kategorie I vorgeschrieben ist, typischerweise bei kleineren Spiegeln und Paneelen.",
+    "es": "La película de seguridad de vinilo se aplica en el reverso de los espejos para que, si el vidrio se rompe, los fragmentos queden adheridos a la película en lugar de caer. La película de categoría I se utiliza cuando se especifica una resistencia al impacto de categoría I, normalmente en espejos y paneles más pequeños."
    },
    "specs": [
     {
      "label": {
       "en": "Rating",
-      "zh": "等级",
-      "fr": "Cote"
+      "fr": "Cote",
+      "nl": "Classificatie",
+      "de": "Einstufung",
+      "es": "Clasificación"
      },
      "value": {
       "en": "Category I impact",
-      "zh": "I 类抗冲击",
-      "fr": "Résistance aux chocs de catégorie I"
+      "fr": "Résistance aux chocs de catégorie I",
+      "nl": "Slagvastheid Categorie I",
+      "de": "Schlagfestigkeit Kategorie I",
+      "es": "Resistencia al impacto de categoría I"
      }
     },
     {
      "label": {
       "en": "Construction",
-      "zh": "结构",
-      "fr": "Composition"
+      "fr": "Composition",
+      "nl": "Opbouw",
+      "de": "Aufbau",
+      "es": "Composición"
      },
      "value": {
       "en": "Vinyl film with pressure-sensitive adhesive",
-      "zh": "乙烯基膜，带压敏胶",
-      "fr": "Pellicule de vinyle avec adhésif sensible à la pression"
+      "fr": "Pellicule de vinyle avec adhésif sensible à la pression",
+      "nl": "Vinylfolie met drukgevoelige lijm",
+      "de": "Vinylfolie mit Haftklebstoff",
+      "es": "Película de vinilo con adhesivo sensible a la presión"
      }
     },
     {
      "label": {
       "en": "Applied to",
-      "zh": "粘贴部位",
-      "fr": "S'applique sur"
+      "fr": "S'applique sur",
+      "nl": "Aangebracht op",
+      "de": "Aufgebracht auf",
+      "es": "Se aplica en"
      },
      "value": {
       "en": "Back of silvered mirrors",
-      "zh": "银镜背面",
-      "fr": "Dos des miroirs argentés"
+      "fr": "Dos des miroirs argentés",
+      "nl": "Achterzijde van verzilverde spiegels",
+      "de": "Rückseite versilberter Spiegel",
+      "es": "Reverso de espejos plateados"
      }
     },
     {
      "label": {
       "en": "Colour",
-      "zh": "颜色",
-      "fr": "Couleur"
+      "fr": "Couleur",
+      "nl": "Kleur",
+      "de": "Farbe",
+      "es": "Color"
      },
      "value": {
       "en": "White or grey",
-      "zh": "白色或灰色",
-      "fr": "Blanc ou gris"
+      "fr": "Blanc ou gris",
+      "nl": "Wit of grijs",
+      "de": "Weiß oder grau",
+      "es": "Blanco o gris"
      }
     },
     {
      "label": {
       "en": "Supply",
-      "zh": "供货",
-      "fr": "Format de livraison"
+      "fr": "Format de livraison",
+      "nl": "Levering",
+      "de": "Lieferform",
+      "es": "Suministro"
      },
      "value": {
       "en": "Rolls in common widths",
-      "zh": "常用宽度，成卷供货",
-      "fr": "Rouleaux de largeurs courantes"
+      "fr": "Rouleaux de largeurs courantes",
+      "nl": "Rollen in gangbare breedtes",
+      "de": "Rollen in gängigen Breiten",
+      "es": "Rollos en anchuras habituales"
      }
     }
    ],
    "uses": [
     {
      "en": "Wall and vanity mirrors",
-     "zh": "墙面镜和梳妆镜",
-     "fr": "Miroirs muraux et de salle de bains"
+     "fr": "Miroirs muraux et de salle de bains",
+     "nl": "Wand- en badkamerspiegels",
+     "de": "Wand- und Badspiegel",
+     "es": "Espejos de pared y de tocador"
     },
     {
      "en": "Furniture and cabinet mirrors",
-     "zh": "家具镜和柜镜",
-     "fr": "Miroirs de meubles et d'armoires"
+     "fr": "Miroirs de meubles et d'armoires",
+     "nl": "Meubel- en kastspiegels",
+     "de": "Möbel- und Schrankspiegel",
+     "es": "Espejos de muebles y gabinetes"
     },
     {
      "en": "Smaller decorative panels",
-     "zh": "较小的装饰面板",
-     "fr": "Panneaux décoratifs de petite taille"
+     "fr": "Panneaux décoratifs de petite taille",
+     "nl": "Kleinere decoratieve panelen",
+     "de": "Kleinere Dekorpaneele",
+     "es": "Paneles decorativos de menor tamaño"
     }
    ],
    "options": [
     {
      "en": "Roll width and length",
-     "zh": "卷宽和卷长",
-     "fr": "Largeur et longueur du rouleau"
+     "fr": "Largeur et longueur du rouleau",
+     "nl": "Rolbreedte en -lengte",
+     "de": "Rollenbreite und -länge",
+     "es": "Anchura y longitud del rollo"
     },
     {
      "en": "Adhesive type",
-     "zh": "胶粘剂类型",
-     "fr": "Type d'adhésif"
+     "fr": "Type d'adhésif",
+     "nl": "Type lijm",
+     "de": "Klebstofftyp",
+     "es": "Tipo de adhesivo"
     },
     {
      "en": "White or grey vinyl",
-     "zh": "白色或灰色乙烯基",
-     "fr": "Vinyle blanc ou gris"
+     "fr": "Vinyle blanc ou gris",
+     "nl": "Wit of grijs vinyl",
+     "de": "Weißes oder graues Vinyl",
+     "es": "Vinilo blanco o gris"
     }
    ],
    "tags": [
     {
      "en": "Category I",
-     "zh": "I 类",
-     "fr": "Catégorie I"
+     "fr": "Catégorie I",
+     "nl": "Categorie I",
+     "de": "Kategorie I",
+     "es": "Categoría I"
     },
     {
      "en": "Mirror safety",
-     "zh": "镜子安全",
-     "fr": "Sécurité des miroirs"
+     "fr": "Sécurité des miroirs",
+     "nl": "Spiegelveiligheid",
+     "de": "Spiegelsicherheit",
+     "es": "Seguridad de espejos"
     }
    ],
    "related": [
@@ -2221,8 +2909,10 @@
    "category": "films",
    "name": {
     "en": "Vinyl Backed Film CAT II",
-    "zh": "乙烯基背膜 CAT II",
-    "fr": "Pellicule à endos vinyle CAT II"
+    "fr": "Pellicule à endos vinyle CAT II",
+    "nl": "Vinylveiligheidsfolie CAT II",
+    "de": "Vinyl-Sicherheitsfolie CAT II",
+    "es": "Película de vinilo de seguridad CAT II"
    },
    "photo": "assets/img/products/vinyl-cat2.jpg",
    "gallery": [
@@ -2230,127 +2920,169 @@
      "image": "assets/img/warehouse/zone-mirrors.webp",
      "caption": {
       "en": "Large mirror installations",
-      "zh": "大型镜子安装",
-      "fr": "Installations de grands miroirs"
+      "fr": "Installations de grands miroirs",
+      "nl": "Installaties met grote spiegels",
+      "de": "Großflächige Spiegelinstallationen",
+      "es": "Instalaciones de espejos de gran tamaño"
      }
     }
    ],
    "short": {
     "en": "Heavier-duty mirror backing film for Category II impact applications.",
-    "zh": "加强型镜子背膜，适用于 II 类抗冲击应用。",
-    "fr": "Pellicule d'endos de miroir plus robuste pour les applications exigeant une résistance aux chocs de catégorie II."
+    "fr": "Pellicule d'endos de miroir plus robuste pour les applications exigeant une résistance aux chocs de catégorie II.",
+    "nl": "Zwaardere veiligheidsfolie voor de achterzijde van spiegels, voor toepassingen met slagvastheid Categorie II.",
+    "de": "Robustere Sicherheitsfolie für Spiegelrückseiten, für Anwendungen mit Schlagfestigkeit der Kategorie II.",
+    "es": "Película más resistente para el reverso de espejos, para aplicaciones que exigen resistencia al impacto de categoría II."
    },
    "description": {
     "en": "Category II vinyl-backed film is made for larger mirrors and higher-risk locations such as closet and sliding doors, gyms and studios, where a Category II impact rating is required. It holds broken glass together and reduces the risk of injury.",
-    "zh": "II 类乙烯基背膜专为较大的镜子和较高风险的场所设计，例如衣柜门和推拉门、健身房和工作室等要求 II 类抗冲击等级的场合。它能将破碎的玻璃粘连在一起，降低受伤风险。",
-    "fr": "La pellicule à endos vinyle de catégorie II est conçue pour les grands miroirs et les endroits à risque plus élevé, comme les portes de placard et les portes coulissantes, les salles d'entraînement et les studios, où une cote de résistance aux chocs de catégorie II est exigée. Elle retient le verre brisé et réduit les risques de blessure."
+    "fr": "La pellicule à endos vinyle de catégorie II est conçue pour les grands miroirs et les endroits à risque plus élevé, comme les portes de placard et les portes coulissantes, les salles d'entraînement et les studios, où une cote de résistance aux chocs de catégorie II est exigée. Elle retient le verre brisé et réduit les risques de blessure.",
+    "nl": "Vinylveiligheidsfolie van Categorie II is bedoeld voor grotere spiegels en plaatsen met een hoger risico, zoals kast- en schuifdeuren, fitnessruimtes en studio's, waar slagvastheid Categorie II vereist is. De folie houdt gebroken glas bij elkaar en vermindert het risico op letsel.",
+    "de": "Vinyl-Sicherheitsfolie der Kategorie II ist für größere Spiegel und Bereiche mit höherem Risiko ausgelegt, etwa Schrank- und Schiebetüren, Fitnessräume und Studios, in denen eine Schlagfestigkeit der Kategorie II gefordert ist. Sie hält zerbrochenes Glas zusammen und verringert die Verletzungsgefahr.",
+    "es": "La película de vinilo de categoría II está diseñada para espejos más grandes y lugares de mayor riesgo, como puertas de clóset y correderas, gimnasios y estudios, donde se exige una resistencia al impacto de categoría II. Mantiene unido el vidrio roto y reduce el riesgo de lesiones."
    },
    "specs": [
     {
      "label": {
       "en": "Rating",
-      "zh": "等级",
-      "fr": "Cote"
+      "fr": "Cote",
+      "nl": "Classificatie",
+      "de": "Einstufung",
+      "es": "Clasificación"
      },
      "value": {
       "en": "Category II impact",
-      "zh": "II 类抗冲击",
-      "fr": "Résistance aux chocs de catégorie II"
+      "fr": "Résistance aux chocs de catégorie II",
+      "nl": "Slagvastheid Categorie II",
+      "de": "Schlagfestigkeit Kategorie II",
+      "es": "Resistencia al impacto de categoría II"
      }
     },
     {
      "label": {
       "en": "Construction",
-      "zh": "结构",
-      "fr": "Composition"
+      "fr": "Composition",
+      "nl": "Opbouw",
+      "de": "Aufbau",
+      "es": "Composición"
      },
      "value": {
       "en": "Reinforced vinyl film with adhesive",
-      "zh": "加强型乙烯基膜，带胶",
-      "fr": "Pellicule de vinyle renforcée avec adhésif"
+      "fr": "Pellicule de vinyle renforcée avec adhésif",
+      "nl": "Versterkte vinylfolie met lijmlaag",
+      "de": "Verstärkte Vinylfolie mit Klebstoff",
+      "es": "Película de vinilo reforzada con adhesivo"
      }
     },
     {
      "label": {
       "en": "Applied to",
-      "zh": "粘贴部位",
-      "fr": "S'applique sur"
+      "fr": "S'applique sur",
+      "nl": "Aangebracht op",
+      "de": "Aufgebracht auf",
+      "es": "Se aplica en"
      },
      "value": {
       "en": "Back of large and door mirrors",
-      "zh": "大型镜和门镜背面",
-      "fr": "Dos des grands miroirs et des miroirs de porte"
+      "fr": "Dos des grands miroirs et des miroirs de porte",
+      "nl": "Achterzijde van grote spiegels en deurspiegels",
+      "de": "Rückseite großer Spiegel und Türspiegel",
+      "es": "Reverso de espejos grandes y de puerta"
      }
     },
     {
      "label": {
       "en": "Colour",
-      "zh": "颜色",
-      "fr": "Couleur"
+      "fr": "Couleur",
+      "nl": "Kleur",
+      "de": "Farbe",
+      "es": "Color"
      },
      "value": {
       "en": "White or grey",
-      "zh": "白色或灰色",
-      "fr": "Blanc ou gris"
+      "fr": "Blanc ou gris",
+      "nl": "Wit of grijs",
+      "de": "Weiß oder grau",
+      "es": "Blanco o gris"
      }
     },
     {
      "label": {
       "en": "Supply",
-      "zh": "供货",
-      "fr": "Format de livraison"
+      "fr": "Format de livraison",
+      "nl": "Levering",
+      "de": "Lieferform",
+      "es": "Suministro"
      },
      "value": {
       "en": "Rolls in common widths",
-      "zh": "常用宽度，成卷供货",
-      "fr": "Rouleaux de largeurs courantes"
+      "fr": "Rouleaux de largeurs courantes",
+      "nl": "Rollen in gangbare breedtes",
+      "de": "Rollen in gängigen Breiten",
+      "es": "Rollos en anchuras habituales"
      }
     }
    ],
    "uses": [
     {
      "en": "Mirrored closet and sliding doors",
-     "zh": "镜面衣柜门和推拉门",
-     "fr": "Portes de placard et portes coulissantes à miroir"
+     "fr": "Portes de placard et portes coulissantes à miroir",
+     "nl": "Kast- en schuifdeuren met spiegel",
+     "de": "Verspiegelte Schrank- und Schiebetüren",
+     "es": "Puertas de clóset y correderas con espejo"
     },
     {
      "en": "Gym, dance and studio mirrors",
-     "zh": "健身房、舞蹈室和工作室镜子",
-     "fr": "Miroirs de salles d'entraînement, de danse et de studios"
+     "fr": "Miroirs de salles d'entraînement, de danse et de studios",
+     "nl": "Spiegels voor fitness-, dans- en studioruimtes",
+     "de": "Spiegel für Fitness-, Tanz- und Studioräume",
+     "es": "Espejos para gimnasios, salas de baile y estudios"
     },
     {
      "en": "Large wall mirrors",
-     "zh": "大型墙面镜",
-     "fr": "Grands miroirs muraux"
+     "fr": "Grands miroirs muraux",
+     "nl": "Grote wandspiegels",
+     "de": "Große Wandspiegel",
+     "es": "Espejos de pared grandes"
     }
    ],
    "options": [
     {
      "en": "Roll width and length",
-     "zh": "卷宽和卷长",
-     "fr": "Largeur et longueur du rouleau"
+     "fr": "Largeur et longueur du rouleau",
+     "nl": "Rolbreedte en -lengte",
+     "de": "Rollenbreite und -länge",
+     "es": "Anchura y longitud del rollo"
     },
     {
      "en": "Adhesive type",
-     "zh": "胶粘剂类型",
-     "fr": "Type d'adhésif"
+     "fr": "Type d'adhésif",
+     "nl": "Type lijm",
+     "de": "Klebstofftyp",
+     "es": "Tipo de adhesivo"
     },
     {
      "en": "White or grey vinyl",
-     "zh": "白色或灰色乙烯基",
-     "fr": "Vinyle blanc ou gris"
+     "fr": "Vinyle blanc ou gris",
+     "nl": "Wit of grijs vinyl",
+     "de": "Weißes oder graues Vinyl",
+     "es": "Vinilo blanco o gris"
     }
    ],
    "tags": [
     {
      "en": "Category II",
-     "zh": "II 类",
-     "fr": "Catégorie II"
+     "fr": "Catégorie II",
+     "nl": "Categorie II",
+     "de": "Kategorie II",
+     "es": "Categoría II"
     },
     {
      "en": "Gym mirrors",
-     "zh": "健身镜",
-     "fr": "Miroirs de salle d'entraînement"
+     "fr": "Miroirs de salle d'entraînement",
+     "nl": "Fitnessspiegels",
+     "de": "Fitnessspiegel",
+     "es": "Espejos para gimnasio"
     }
    ],
    "related": [
