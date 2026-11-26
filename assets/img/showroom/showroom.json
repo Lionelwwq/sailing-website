@@ -201,7 +201,37 @@
    "y": 43.1
   }
  ],
- "closeups": {},
+ "closeups": {
+  "accessories:al-stock-shelf": "closeups/accessories-al-stock-shelf.jpg",
+  "accessories:aluminum-spacer": "closeups/accessories-aluminum-spacer.jpg",
+  "accessories:cerium-dioxide": "closeups/accessories-cerium-dioxide.jpg",
+  "accessories:cork-pads": "closeups/accessories-cork-pads.jpg",
+  "accessories:custom-rack": "closeups/accessories-custom-rack.jpg",
+  "accessories:eva-film": "closeups/accessories-eva-film.jpg",
+  "accessories:glass-sling": "closeups/accessories-glass-sling.jpg",
+  "accessories:grinding-wheels": "closeups/accessories-grinding-wheels.jpg",
+  "accessories:molecular-sieve": "closeups/accessories-molecular-sieve.jpg",
+  "accessories:silicone-adhesive": "closeups/accessories-silicone-adhesive.jpg",
+  "accessories:vinyl-cat1": "closeups/accessories-vinyl-cat1.jpg",
+  "accessories:water-jet": "closeups/accessories-water-jet.jpg",
+  "accessories:waterjet-abrasive": "closeups/accessories-waterjet-abrasive.jpg",
+  "glass:acid-etched": "closeups/glass-acid-etched.jpg",
+  "glass:clear-float": "closeups/glass-clear-float.jpg",
+  "glass:coated": "closeups/glass-coated.jpg",
+  "glass:curved": "closeups/glass-curved.jpg",
+  "glass:insulated": "closeups/glass-insulated.jpg",
+  "glass:laminated": "closeups/glass-laminated.jpg",
+  "glass:low-iron": "closeups/glass-low-iron.jpg",
+  "glass:patterned": "closeups/glass-patterned.jpg",
+  "glass:solar": "closeups/glass-solar.jpg",
+  "glass:tempered": "closeups/glass-tempered.jpg",
+  "glass:tinted": "closeups/glass-tinted.jpg",
+  "mirrors:antique-mirror": "closeups/mirrors-antique-mirror.jpg",
+  "mirrors:back-painted": "closeups/mirrors-back-painted.jpg",
+  "mirrors:safety-mirror": "closeups/mirrors-safety-mirror.jpg",
+  "mirrors:silver-mirror": "closeups/mirrors-silver-mirror.jpg",
+  "mirrors:tinted-mirror": "closeups/mirrors-tinted-mirror.jpg"
+ },
  "views": [
   {
    "id": "flat-glass",

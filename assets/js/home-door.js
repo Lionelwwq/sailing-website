@@ -8,13 +8,13 @@
   const btn = door.querySelector('[data-door-enter]');
   const photo = door.querySelector('.door-photo img');
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const DOORS = [0.64, 0.69];   // centre of the glass doors, as a share of the picture's width and height
+  const DOORS = [0.664, 0.64];   // centre of the glass doors, as a share of the picture's width and height
 
   // where the doors are on screen: the picture is scaled to cover the box and placed by its object-position
   function aimAtDoors() {
     const box = photo.getBoundingClientRect();
     const iw = photo.naturalWidth || 2560;
-    const ih = photo.naturalHeight || 1441;
+    const ih = photo.naturalHeight || 1707;
     const k = Math.max(box.width / iw, box.height / ih);
     const w = iw * k;
     const h = ih * k;

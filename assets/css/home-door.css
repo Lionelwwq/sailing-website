@@ -3,7 +3,7 @@
 .door { position: relative; height: 100vh; height: 100svh; min-height: 560px; overflow: hidden; background: #E8E1D6; }
 .door-photo img, .door-inside { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 /* keep the stone wall on the left in view on desktop screens: that is where the words go */
-.door-photo img { object-position: 0% 62%; transform-origin: var(--ox, 64%) var(--oy, 66%); }
+.door-photo img { object-position: 0% 30%; transform-origin: var(--ox, 66%) var(--oy, 64%); }
 /* soft shade under the header so its white menu stays readable on the light stone */
 .door::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: calc(var(--header-h) + 90px); z-index: 2; pointer-events: none;
   background: linear-gradient(180deg, rgba(28, 22, 38, .62), rgba(28, 22, 38, 0)); }
@@ -31,7 +31,7 @@
 @media (max-width: 760px), (max-aspect-ratio: 1/1) {
   .door { height: auto; min-height: 0; display: flex; flex-direction: column; background: var(--ink); }
   .door-photo { position: relative; display: block; height: 62svh; min-height: 360px; overflow: hidden; }
-  .door-photo img { object-position: 64% 70%; }
+  .door-photo img { object-position: 66% 60%; }
   .door-copy { position: relative; left: auto; top: auto; width: auto; transform: none; padding: 26px 20px 58px; }
   .door-kicker { color: #D9BE8C; }
   .door h1 { color: var(--white); font-size: clamp(1.7rem, 7vw, 2.4rem); }
