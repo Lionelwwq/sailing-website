@@ -1,6 +1,6 @@
-/* Home page cover: "Enter the showroom" walks through Sailing's glass front doors into the 360 showroom.
- * The camera zooms in on the doors (worked out from where the doors are in the picture), the showroom's first
- * view comes into sight, a soft white fade, then showroom.html opens on that same view.
+/* Home page cover: "Enter the showroom" walks through Sailing's glass front doors into the showroom.
+ * The camera zooms in on the doors (worked out from where the doors are in the picture), the showroom photo
+ * comes into sight, a soft white fade, then showroom.html opens on that same photo.
  */
 (() => {
   const door = document.getElementById('door');

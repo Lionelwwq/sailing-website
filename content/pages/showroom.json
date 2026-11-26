@@ -7,25 +7,32 @@
   "es": "Recorrido virtual"
  },
  "hero_title": {
-  "en": "360° Showroom",
-  "fr": "Salle d’exposition 360°",
-  "nl": "360°-showroom",
-  "de": "360°-Showroom",
-  "es": "Sala de exposición 360°"
+  "en": "Our Showroom",
+  "fr": "Notre salle d’exposition",
+  "nl": "Onze showroom",
+  "de": "Unser Showroom",
+  "es": "Nuestra sala de exposición"
  },
  "hint": {
-  "en": "Drag to look around · double-click, W / S or the arrows to walk · click a gold point to open a product",
-  "fr": "Faites glisser pour regarder autour · double-clic, W / S ou les flèches pour vous déplacer · cliquez sur un point doré pour ouvrir un produit",
-  "nl": "Sleep om rond te kijken · dubbelklik, W / S of de pijlen om te lopen · klik op een gouden punt om een product te openen",
-  "de": "Ziehen zum Umsehen · Doppelklick, W / S oder die Pfeile zum Gehen · goldenen Punkt anklicken, um ein Produkt zu öffnen",
-  "es": "Arrastre para mirar alrededor · doble clic, W / S o las flechas para caminar · haga clic en un punto dorado para abrir un producto"
+  "en": "Drag to look around · double-click an area or use the buttons below to walk closer · click a gold point to see a product up close",
+  "fr": "Faites glisser pour regarder · double-cliquez sur une zone ou utilisez les boutons pour vous approcher · cliquez sur un point doré pour voir un produit de près",
+  "nl": "Sleep om rond te kijken · dubbelklik op een zone of gebruik de knoppen om dichterbij te lopen · klik op een gouden punt om een product van dichtbij te zien",
+  "de": "Ziehen zum Umsehen · Bereich doppelt anklicken oder die Tasten unten nutzen, um näher zu gehen · goldenen Punkt anklicken, um ein Produkt aus der Nähe zu sehen",
+  "es": "Arrastre para mirar · haga doble clic en una zona o use los botones para acercarse · haga clic en un punto dorado para ver un producto de cerca"
  },
  "hint_touch": {
-  "en": "Swipe to look around · double-tap or tap an arrow to walk · tap a gold point to open a product",
-  "fr": "Balayez pour regarder autour · touchez deux fois ou touchez une flèche pour vous déplacer · touchez un point doré pour ouvrir un produit",
-  "nl": "Veeg om rond te kijken · dubbeltik of tik op een pijl om te lopen · tik op een gouden punt om een product te openen",
-  "de": "Wischen zum Umsehen · doppelt tippen oder Pfeil antippen zum Gehen · goldenen Punkt antippen, um ein Produkt zu öffnen",
-  "es": "Deslice para mirar alrededor · toque dos veces o toque una flecha para caminar · toque un punto dorado para abrir un producto"
+  "en": "Swipe to look around · double-tap an area or use the buttons below to walk closer · tap a gold point to see a product up close",
+  "fr": "Balayez pour regarder · touchez deux fois une zone ou utilisez les boutons pour vous approcher · touchez un point doré pour voir un produit de près",
+  "nl": "Veeg om rond te kijken · dubbeltik op een zone of gebruik de knoppen om dichterbij te lopen · tik op een gouden punt om een product van dichtbij te zien",
+  "de": "Wischen zum Umsehen · Bereich doppelt antippen oder die Tasten unten nutzen, um näher zu gehen · goldenen Punkt antippen, um ein Produkt aus der Nähe zu sehen",
+  "es": "Deslice para mirar · toque dos veces una zona o use los botones para acercarse · toque un punto dorado para ver un producto de cerca"
+ },
+ "photo_alt": {
+  "en": "The Sailing International Trade showroom: flat glass, processed glass, decorative glass, mirrors and glazing supplies",
+  "fr": "La salle d’exposition de Sailing International Trade : verre plat, verre transformé, verre décoratif, miroirs et fournitures de vitrage",
+  "nl": "De showroom van Sailing International Trade: vlakglas, bewerkt glas, decoratief glas, spiegels en beglazingsbenodigdheden",
+  "de": "Der Showroom von Sailing International Trade: Flachglas, verarbeitetes Glas, Dekorglas, Spiegel und Verglasungszubehör",
+  "es": "La sala de exposición de Sailing International Trade: vidrio plano, vidrio procesado, vidrio decorativo, espejos y suministros de acristalamiento"
  },
  "areas": {
   "en": "Showroom areas",
@@ -34,12 +41,12 @@
   "de": "Bereiche",
   "es": "Zonas de la sala"
  },
- "walk_to": {
-  "en": "Walk to {name}",
-  "fr": "Aller à : {name}",
-  "nl": "Naar {name}",
-  "de": "Zu: {name}",
-  "es": "Ir a {name}"
+ "area_overview": {
+  "en": "Whole showroom",
+  "fr": "Toute la salle",
+  "nl": "Hele showroom",
+  "de": "Ganzer Showroom",
+  "es": "Toda la sala"
  },
  "view_product": {
   "en": "View product",
@@ -48,6 +55,20 @@
   "de": "Produkt ansehen",
   "es": "Ver producto"
  },
+ "zoom_in": {
+  "en": "Zoom in",
+  "fr": "Zoomer",
+  "nl": "Inzoomen",
+  "de": "Vergrößern",
+  "es": "Ampliar"
+ },
+ "zoom_out": {
+  "en": "Zoom out",
+  "fr": "Dézoomer",
+  "nl": "Uitzoomen",
+  "de": "Verkleinern",
+  "es": "Reducir"
+ },
  "loading": {
   "en": "Loading the showroom…",
   "fr": "Chargement de la salle…",
@@ -55,26 +76,12 @@
   "de": "Showroom wird geladen…",
   "es": "Cargando la sala…"
  },
- "no_webgl": {
-  "en": "This browser can’t show 360° views. Use the menu to browse our products.",
-  "fr": "Ce navigateur ne peut pas afficher les vues 360°. Utilisez le menu pour parcourir nos produits.",
-  "nl": "Deze browser kan geen 360°-beelden tonen. Gebruik het menu om onze producten te bekijken.",
-  "de": "Dieser Browser kann keine 360°-Ansichten anzeigen. Nutzen Sie das Menü, um unsere Produkte anzusehen.",
-  "es": "Este navegador no puede mostrar vistas 360°. Use el menú para ver nuestros productos."
- },
- "spot_entrance": {
-  "en": "Entrance",
-  "fr": "Entrée",
-  "nl": "Ingang",
-  "de": "Eingang",
-  "es": "Entrada"
- },
- "spot_centre": {
-  "en": "Centre",
-  "fr": "Centre",
-  "nl": "Midden",
-  "de": "Mitte",
-  "es": "Centro"
+ "no_image": {
+  "en": "The showroom picture could not be loaded. Use the menu to browse our products.",
+  "fr": "L’image de la salle n’a pas pu être chargée. Utilisez le menu pour parcourir nos produits.",
+  "nl": "De afbeelding van de showroom kon niet worden geladen. Gebruik het menu om onze producten te bekijken.",
+  "de": "Das Showroom-Bild konnte nicht geladen werden. Nutzen Sie das Menü, um unsere Produkte anzusehen.",
+  "es": "No se pudo cargar la imagen de la sala. Use el menú para ver nuestros productos."
  },
  "spot_flat-glass": {
   "en": "Flat & solar glass",
@@ -117,5 +124,26 @@
   "nl": "Hantering en opslag",
   "de": "Handhabung & Lagerung",
   "es": "Manipulación y almacenamiento"
+ },
+ "card_close": {
+  "en": "Close",
+  "fr": "Fermer",
+  "nl": "Sluiten",
+  "de": "Schließen",
+  "es": "Cerrar"
+ },
+ "card_prev": {
+  "en": "Previous product",
+  "fr": "Produit précédent",
+  "nl": "Vorig product",
+  "de": "Vorheriges Produkt",
+  "es": "Producto anterior"
+ },
+ "card_next": {
+  "en": "Next product",
+  "fr": "Produit suivant",
+  "nl": "Volgend product",
+  "de": "Nächstes Produkt",
+  "es": "Producto siguiente"
  }
 }

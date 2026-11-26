@@ -1,17 +1,25 @@
-/* 360° showroom page (behaviour in assets/js/showroom.js, viewer: Pannellum) */
+/* Showroom page: one photo of the showroom with gold product points (behaviour in assets/js/showroom.js) */
 
 .sr { position: relative; height: 100vh; height: 100svh; min-height: 520px; overflow: hidden; background: var(--dark); color: var(--white); }
-.sr-view { position: absolute; inset: 0; }
+.sr-view { position: absolute; inset: 0; overflow: hidden; cursor: grab; touch-action: none; user-select: none; -webkit-user-select: none; }
+.sr-view.dragging { cursor: grabbing; }
 /* soft shade behind the header and title so the words stay readable on bright pictures */
 .sr::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: calc(var(--header-h) + 170px); z-index: 2; pointer-events: none;
   background: linear-gradient(180deg, rgba(28, 22, 38, .72) 0%, rgba(28, 22, 38, .38) 60%, rgba(28, 22, 38, 0) 100%); }
-.sr-view .pnlm-container { background: var(--dark); }
-.sr-view .pnlm-load-box { background: rgba(37, 35, 42, .85); border-radius: 12px; }
-/* arriving at the entrance: its first view as a still until the 360 picture is ready */
-.sr-view.sr-still { background: var(--dark) url("../img/showroom/entrance-view.jpg") center / cover no-repeat; }
-.sr-view.sr-still .pnlm-container { background: transparent; }
-.sr-view.sr-still .pnlm-load-box { display: none !important; }
-.sr-view .pnlm-controls-container { top: auto; bottom: 86px; left: 16px; }
+
+/* one layer per photo (the main photo and each area's closer photo); walking fades and scales the layers */
+.sr-scene { position: absolute; inset: 0; overflow: hidden; transform-origin: 50% 50%; }
+/* the photo: covers the viewer at zoom 1; showroom.js moves and zooms it */
+.sr-stage { position: absolute; left: 0; top: 0; transform-origin: 0 0; will-change: transform; }
+.sr-img { display: block; width: 100%; height: 100%; opacity: 0; transition: opacity .5s; pointer-events: none; -webkit-user-drag: none; }
+.sr-scene.ready .sr-img { opacity: 1; }
+.sr-points { position: absolute; inset: 0; }
+/* waiting for an area's photo: a thin moving line at the top */
+.sr-view.loading::after { content: ""; position: absolute; left: 0; right: 0; top: 0; z-index: 6; height: 3px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent); background-size: 40% 100%; background-repeat: no-repeat;
+  animation: sr-load 1s linear infinite; }
+@keyframes sr-load { from { background-position: -40% 0; } to { background-position: 140% 0; } }
+
 /* the words sit over the picture without blocking dragging */
 .sr-top { position: absolute; left: 0; right: 0; top: calc(var(--header-h) + 12px); z-index: 3; display: grid; justify-items: start; gap: 4px; pointer-events: none;
   text-shadow: 0 1px 12px rgba(0, 0, 0, .55); }
@@ -21,6 +29,12 @@
 .sr-hint { max-width: 520px; font-size: 13.5px; color: rgba(255, 255, 255, .85); }
 .sr-msg { position: absolute; left: 50%; top: 50%; z-index: 4; transform: translate(-50%, -50%); max-width: min(460px, calc(100% - 40px)); padding: 18px 22px;
   border-radius: 12px; background: rgba(37, 35, 42, .9); text-align: center; }
+
+/* zoom buttons */
+.sr-zoom { position: absolute; left: 16px; bottom: 86px; z-index: 3; display: grid; gap: 4px; }
+.sr-zoom button { width: 36px; height: 36px; border-radius: 9px; background: rgba(37, 35, 42, .74); color: var(--white); font-size: 20px; line-height: 1;
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); transition: background .2s; }
+.sr-zoom button:hover { background: var(--accent); color: var(--ink); }
 
 /* area buttons */
 .sr-bar { position: absolute; left: 50%; bottom: 18px; z-index: 3; transform: translateX(-50%); width: max-content; max-width: calc(100% - 24px); }
@@ -33,34 +47,61 @@
 .sr-spots button[aria-pressed="true"] { background: var(--accent); color: var(--ink); }
 .sr-spots button[aria-pressed="true"] b { opacity: .7; }
 
-/* walk arrows on the floor, pointing to the next area */
-.pnlm-hotspot-base.sr-walk { width: 0; height: 0; cursor: pointer; }
-.sr-walk .sr-arrow { position: absolute; left: -28px; top: -28px; display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%;
-  background: rgba(255, 255, 255, .22); border: 2px solid rgba(255, 255, 255, .85); box-shadow: 0 6px 18px rgba(0, 0, 0, .35);
-  -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); transition: transform .2s, background .2s; }
-.sr-walk .sr-arrow svg { width: 26px; height: 26px; }
-.sr-walk:hover .sr-arrow { transform: scale(1.1); background: rgba(201, 165, 106, .6); }
-.sr-walk .sr-name { position: absolute; left: 50%; top: 34px; transform: translateX(-50%); padding: 3px 10px; border-radius: 99px; background: rgba(37, 35, 42, .78);
-  color: var(--white); font-family: var(--font-head); font-size: 12.5px; white-space: nowrap; }
-
-/* product points: a gold dot; its name shows on hover (and always on touch screens) */
-.pnlm-hotspot-base.sr-point { width: 0; height: 0; cursor: pointer; }
+/* product points: a gold dot that keeps its size at any zoom; its name shows on hover (and always on touch screens) */
+.sr-point { position: absolute; width: 0; height: 0; transform: scale(calc(1 / var(--z, 1))); cursor: pointer; z-index: 1; }
+.sr-point:hover, .sr-point:focus-visible { z-index: 2; }
 .sr-point .sr-dot { position: absolute; left: -11px; top: -11px; width: 22px; height: 22px; border-radius: 50%; background: var(--accent); border: 3px solid var(--white);
   box-shadow: 0 0 0 0 rgba(201, 165, 106, .7); animation: sr-pulse 2.2s infinite; }
 .sr-point .sr-name { position: absolute; left: 18px; top: -15px; padding: 5px 12px; border-radius: 8px; background: var(--white); color: var(--ink);
   font-family: var(--font-head); font-size: 13px; font-weight: 500; white-space: nowrap; box-shadow: 0 8px 20px rgba(0, 0, 0, .3);
   opacity: 0; transform: translateX(-4px); transition: opacity .2s, transform .2s; pointer-events: none; }
 .sr-point .sr-name small { display: block; font-size: 11px; font-weight: 400; color: var(--brand); }
-.sr-point:hover .sr-name { opacity: 1; transform: none; }
-@media (hover: none) { .sr-point .sr-name { opacity: 1; transform: none; } }
+.sr-point:hover .sr-name, .sr-point:focus-visible .sr-name { opacity: 1; transform: none; }
+.sr-point:focus-visible .sr-dot { outline: 3px solid var(--white); outline-offset: 3px; }
+/* touch screens have no hover: the names show once you zoom in (showroom.js sets .near) */
+@media (hover: none) { .sr-view.near .sr-point .sr-name { opacity: 1; transform: none; } }
 @keyframes sr-pulse { 70% { box-shadow: 0 0 0 14px rgba(201, 165, 106, 0); } 100% { box-shadow: 0 0 0 0 rgba(201, 165, 106, 0); } }
+
+/* the point whose card is open */
+.sr-point.active .sr-dot { background: var(--white); border-color: var(--accent); animation: none; box-shadow: 0 0 0 6px rgba(201, 165, 106, .45); }
+.sr-point.active .sr-name { opacity: 0; }
+
+/* product card: a big photo, a few words, add to quote, the product page, previous / next */
+.sr-card { position: absolute; z-index: 5; right: 20px; top: calc(var(--header-h) + 14px); bottom: 84px; width: 340px; display: flex; flex-direction: column;
+  border-radius: 16px; background: var(--white); color: var(--ink); box-shadow: 0 24px 60px rgba(0, 0, 0, .38); overflow: hidden;
+  opacity: 0; transform: translateX(18px); transition: opacity .25s, transform .25s; }
+.sr-card.open { opacity: 1; transform: none; }
+.sr-card-x { position: absolute; right: 10px; top: 10px; z-index: 1; width: 36px; height: 36px; border-radius: 50%; background: rgba(255, 255, 255, .92);
+  color: var(--ink); font-size: 22px; line-height: 1; box-shadow: 0 2px 10px rgba(0, 0, 0, .2); }
+.sr-card-x:hover { background: var(--accent); }
+.sr-card-img { position: relative; flex: 0 1 auto; min-height: 120px; max-height: 44%; aspect-ratio: 4 / 3; background: var(--soft, #f1eff4); overflow: hidden; }
+.sr-card-img img { display: block; width: 100%; height: 100%; object-fit: cover; }
+/* previous / next product, over the photo */
+.sr-card-step { position: absolute; top: 50%; width: 38px; height: 38px; margin-top: -19px; border-radius: 50%; background: rgba(255, 255, 255, .9); color: var(--ink);
+  font-size: 24px; line-height: 1; box-shadow: 0 2px 10px rgba(0, 0, 0, .2); }
+.sr-card-step.prev { left: 10px; }
+.sr-card-step.next { right: 10px; }
+.sr-card-step:hover { background: var(--accent); }
+.sr-card-count { position: absolute; left: 50%; bottom: 10px; transform: translateX(-50%); padding: 2px 10px; border-radius: 99px; background: rgba(37, 35, 42, .7);
+  color: var(--white); font-size: 12px; }
+.sr-card-body { display: flex; flex-direction: column; gap: 10px; padding: 16px 18px; overflow-y: auto; }
+.sr-card-name { font-size: 1.2rem; font-weight: 600; line-height: 1.25; }
+.sr-card-short { font-size: 14px; line-height: 1.5; color: var(--muted); }
+.sr-card-actions { display: grid; gap: 8px; }
+/* while a card is open the other names stay hidden (the card says what it is) */
+.sr.card-open .sr-point .sr-name { opacity: 0 !important; }
 
 @media (max-width: 759px) {
   .sr { height: calc(100svh - 70px); min-height: 460px; }   /* leaves room to scroll on past the viewer */
+  .sr-card { left: 10px; right: 10px; top: auto; bottom: 68px; width: auto; max-height: 62%; transform: translateY(18px); }
+  .sr-card-img { aspect-ratio: 16 / 9; }
+  .sr-card-body { padding: 12px 14px 10px; gap: 8px; }
+  .sr-card-actions { grid-template-columns: 1fr 1fr; }
+  .sr-card-actions .btn { padding-left: 8px; padding-right: 8px; font-size: 13.5px; }
   .sr-hint { font-size: 12.5px; }
   .sr-bar { left: 12px; right: 12px; transform: none; width: auto; }
   .sr-spots { flex-wrap: nowrap; justify-content: flex-start; overflow-x: auto; scrollbar-width: none; }
   .sr-spots::-webkit-scrollbar { display: none; }
-  .sr-view .pnlm-controls-container { bottom: 76px; }
+  .sr-zoom { bottom: 76px; }
 }
-@media (prefers-reduced-motion: reduce) { .sr-point .sr-dot { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .sr-point .sr-dot { animation: none; } .sr-img { transition: none; } }

@@ -1,339 +1,414 @@
 {
- "start": "entrance",
- "source_names": "Pictures come from ChatGPT / Skybox as 360-1-entrance.png ... 360-8-handling.png; _src/make_showroom.py turns them into <id>.jpg and <id>-m.jpg here.",
- "spots": [
-  {
-   "id": "entrance",
-   "source": "360-1-entrance",
-   "x": 0,
-   "y": -10,
-   "north": 0,
-   "links": [
-    "centre",
-    "handling",
-    "supplies"
-   ],
-   "planned": [],
-   "points": []
-  },
-  {
-   "id": "centre",
-   "source": "360-2-centre",
-   "x": 0,
-   "y": 0,
-   "north": 0,
-   "links": [
-    "entrance",
-    "flat-glass",
-    "processed-glass",
-    "decorative-glass",
-    "mirrors",
-    "supplies",
-    "handling"
-   ],
-   "planned": [],
-   "points": [
-    {
-     "product": "glass:tempered",
-     "yaw": -94,
-     "pitch": 3
-    },
-    {
-     "product": "glass:laminated",
-     "yaw": -63,
-     "pitch": -6
-    },
-    {
-     "product": "glass:patterned",
-     "yaw": -15,
-     "pitch": -32
-    },
-    {
-     "product": "mirrors:silver-mirror",
-     "yaw": 138,
-     "pitch": 9
-    }
-   ]
-  },
+ "about": "Made with _src/make_showroom.py from showroom-inside.png and points.json (x / y in % of the picture).",
+ "image": {
+  "desktop": "showroom.jpg",
+  "phone": "showroom-m.jpg",
+  "width": 5120,
+  "height": 2880
+ },
+ "areas": [
   {
    "id": "flat-glass",
-   "source": "360-3-flat-glass",
-   "x": -12,
-   "y": 0,
-   "north": 0,
-   "links": [
-    "centre",
-    "processed-glass",
-    "handling"
-   ],
-   "planned": [
-    "glass:clear-float",
-    "glass:low-iron",
-    "glass:tinted",
-    "glass:coated",
-    "glass:solar"
-   ],
+   "x": 13.6,
+   "y": 44.2,
+   "zoom": 2.1
+  },
+  {
+   "id": "processed-glass",
+   "x": 32.5,
+   "y": 62.4,
+   "zoom": 2.1
+  },
+  {
+   "id": "decorative-glass",
+   "x": 66.4,
+   "y": 46.8,
+   "zoom": 2.1
+  },
+  {
+   "id": "mirrors",
+   "x": 74.7,
+   "y": 64.0,
+   "zoom": 2.1
+  },
+  {
+   "id": "supplies",
+   "x": 87.0,
+   "y": 43.8,
+   "zoom": 1.56
+  },
+  {
+   "id": "handling",
+   "x": 32.0,
+   "y": 40.0,
+   "zoom": 2.1
+  }
+ ],
+ "points": [
+  {
+   "product": "glass:clear-float",
+   "x": 4.3,
+   "y": 43.8
+  },
+  {
+   "product": "glass:low-iron",
+   "x": 9.9,
+   "y": 43.8
+  },
+  {
+   "product": "glass:tinted",
+   "x": 17.1,
+   "y": 40.3
+  },
+  {
+   "product": "glass:coated",
+   "x": 19.6,
+   "y": 38.0
+  },
+  {
+   "product": "glass:solar",
+   "x": 22.9,
+   "y": 50.4
+  },
+  {
+   "product": "glass:tempered",
+   "x": 26.7,
+   "y": 66.3
+  },
+  {
+   "product": "glass:laminated",
+   "x": 30.5,
+   "y": 67.4
+  },
+  {
+   "product": "glass:insulated",
+   "x": 34.3,
+   "y": 64.6
+  },
+  {
+   "product": "glass:curved",
+   "x": 38.3,
+   "y": 57.4
+  },
+  {
+   "product": "glass:patterned",
+   "x": 63.8,
+   "y": 55.3
+  },
+  {
+   "product": "glass:acid-etched",
+   "x": 67.2,
+   "y": 38.4
+  },
+  {
+   "product": "mirrors:back-painted",
+   "x": 69.1,
+   "y": 40.0
+  },
+  {
+   "product": "mirrors:silver-mirror",
+   "x": 67.3,
+   "y": 57.7
+  },
+  {
+   "product": "mirrors:tinted-mirror",
+   "x": 73.6,
+   "y": 65.6
+  },
+  {
+   "product": "mirrors:antique-mirror",
+   "x": 78.0,
+   "y": 68.8
+  },
+  {
+   "product": "mirrors:safety-mirror",
+   "x": 82.1,
+   "y": 70.3
+  },
+  {
+   "product": "accessories:aluminum-spacer",
+   "x": 93.6,
+   "y": 22.7
+  },
+  {
+   "product": "accessories:molecular-sieve",
+   "x": 95.3,
+   "y": 32.8
+  },
+  {
+   "product": "accessories:silicone-adhesive",
+   "x": 90.7,
+   "y": 42.6
+  },
+  {
+   "product": "accessories:green-adhesive",
+   "x": 97.5,
+   "y": 42.9
+  },
+  {
+   "product": "accessories:eva-film",
+   "x": 92.5,
+   "y": 53.4
+  },
+  {
+   "product": "accessories:vinyl-cat1",
+   "x": 93.6,
+   "y": 64.8
+  },
+  {
+   "product": "accessories:water-jet",
+   "x": 76.6,
+   "y": 38.5
+  },
+  {
+   "product": "accessories:waterjet-abrasive",
+   "x": 81.8,
+   "y": 43.6
+  },
+  {
+   "product": "accessories:grinding-wheels",
+   "x": 83.2,
+   "y": 31.7
+  },
+  {
+   "product": "accessories:cerium-dioxide",
+   "x": 84.6,
+   "y": 45.5
+  },
+  {
+   "product": "accessories:al-stock-shelf",
+   "x": 30.1,
+   "y": 42.5
+  },
+  {
+   "product": "accessories:custom-rack",
+   "x": 34.1,
+   "y": 37.8
+  },
+  {
+   "product": "accessories:removable-shelf",
+   "x": 24.5,
+   "y": 42.7
+  },
+  {
+   "product": "accessories:glass-sling",
+   "x": 38.4,
+   "y": 37.0
+  },
+  {
+   "product": "accessories:cork-pads",
+   "x": 39.5,
+   "y": 43.1
+  }
+ ],
+ "closeups": {},
+ "views": [
+  {
+   "id": "flat-glass",
+   "desktop": "showroom-flat-glass.jpg",
+   "phone": "showroom-flat-glass-m.jpg",
+   "width": 5120,
+   "height": 2880,
    "points": [
     {
      "product": "glass:clear-float",
-     "yaw": -56,
-     "pitch": -30
+     "x": 19.0,
+     "y": 45.0
     },
     {
      "product": "glass:low-iron",
-     "yaw": -28,
-     "pitch": -30
+     "x": 35.0,
+     "y": 46.0
     },
     {
      "product": "glass:tinted",
-     "yaw": 52,
-     "pitch": -30
+     "x": 56.0,
+     "y": 49.0
     },
     {
      "product": "glass:coated",
-     "yaw": -17,
-     "pitch": -6
+     "x": 64.0,
+     "y": 49.0
     },
     {
      "product": "glass:solar",
-     "yaw": -92,
-     "pitch": -6
+     "x": 73.0,
+     "y": 59.0
     }
    ]
   },
   {
    "id": "processed-glass",
-   "source": "360-4-processed-glass",
-   "x": -12,
-   "y": 8,
-   "north": 0,
-   "links": [
-    "flat-glass",
-    "centre",
-    "decorative-glass"
-   ],
-   "planned": [
-    "glass:tempered",
-    "glass:laminated",
-    "glass:insulated",
-    "glass:curved"
-   ],
+   "desktop": "showroom-processed-glass.jpg",
+   "phone": "showroom-processed-glass-m.jpg",
+   "width": 5120,
+   "height": 2880,
    "points": [
     {
      "product": "glass:tempered",
-     "yaw": -115,
-     "pitch": 5
+     "x": 26.0,
+     "y": 55.0
     },
     {
      "product": "glass:laminated",
-     "yaw": 150,
-     "pitch": -30
+     "x": 40.0,
+     "y": 57.0
     },
     {
      "product": "glass:insulated",
-     "yaw": -8,
-     "pitch": -32
+     "x": 61.0,
+     "y": 45.0
     },
     {
      "product": "glass:curved",
-     "yaw": 45,
-     "pitch": 8
+     "x": 72.8,
+     "y": 36.0
     }
    ]
   },
   {
    "id": "decorative-glass",
-   "source": "360-5-decorative-glass",
-   "x": 12,
-   "y": 8,
-   "north": 0,
-   "links": [
-    "processed-glass",
-    "centre",
-    "mirrors"
-   ],
-   "planned": [
-    "glass:patterned",
-    "glass:acid-etched",
-    "mirrors:back-painted"
-   ],
+   "desktop": "showroom-decorative-glass.jpg",
+   "phone": "showroom-decorative-glass-m.jpg",
+   "width": 5120,
+   "height": 2880,
    "points": [
     {
      "product": "glass:patterned",
-     "yaw": -21,
-     "pitch": 14
+     "x": 33.0,
+     "y": 51.0
     },
     {
      "product": "glass:acid-etched",
-     "yaw": 34,
-     "pitch": 5
+     "x": 50.0,
+     "y": 51.0
     },
     {
      "product": "mirrors:back-painted",
-     "yaw": 75,
-     "pitch": 5
+     "x": 66.0,
+     "y": 51.0
     }
    ]
   },
   {
    "id": "mirrors",
-   "source": "360-6-mirrors",
-   "x": 12,
-   "y": 0,
-   "north": 0,
-   "links": [
-    "decorative-glass",
-    "centre",
-    "supplies"
-   ],
-   "planned": [
-    "mirrors:silver-mirror",
-    "mirrors:tinted-mirror",
-    "mirrors:antique-mirror",
-    "mirrors:safety-mirror"
-   ],
+   "desktop": "showroom-mirrors.jpg",
+   "phone": "showroom-mirrors-m.jpg",
+   "width": 5120,
+   "height": 2880,
    "points": [
     {
      "product": "mirrors:silver-mirror",
-     "yaw": 10,
-     "pitch": 8
+     "x": 16.0,
+     "y": 48.0
     },
     {
      "product": "mirrors:tinted-mirror",
-     "yaw": 58,
-     "pitch": 5
+     "x": 38.0,
+     "y": 50.0
     },
     {
      "product": "mirrors:antique-mirror",
-     "yaw": 85,
-     "pitch": 5
+     "x": 61.0,
+     "y": 54.0
     },
     {
      "product": "mirrors:safety-mirror",
-     "yaw": 150,
-     "pitch": -5
+     "x": 82.0,
+     "y": 55.0
     }
    ]
   },
   {
    "id": "supplies",
-   "source": "360-7-supplies",
-   "x": 12,
-   "y": -8,
-   "north": 0,
-   "links": [
-    "mirrors",
-    "centre",
-    "entrance"
-   ],
-   "planned": [
-    "accessories:aluminum-spacer",
-    "accessories:molecular-sieve",
-    "accessories:silicone-adhesive",
-    "accessories:green-adhesive",
-    "accessories:eva-film",
-    "accessories:vinyl-cat1",
-    "accessories:water-jet",
-    "accessories:waterjet-abrasive",
-    "accessories:grinding-wheels",
-    "accessories:cerium-dioxide"
-   ],
+   "desktop": "showroom-supplies.jpg",
+   "phone": "showroom-supplies-m.jpg",
+   "width": 5120,
+   "height": 2880,
    "points": [
     {
      "product": "accessories:aluminum-spacer",
-     "yaw": -129,
-     "pitch": -32
+     "x": 75.0,
+     "y": 13.0
     },
     {
      "product": "accessories:molecular-sieve",
-     "yaw": -108,
-     "pitch": -28
+     "x": 78.0,
+     "y": 31.0
     },
     {
      "product": "accessories:silicone-adhesive",
-     "yaw": -126,
-     "pitch": 16
+     "x": 64.0,
+     "y": 50.0
     },
     {
      "product": "accessories:green-adhesive",
-     "yaw": -115,
-     "pitch": -3
+     "x": 86.0,
+     "y": 50.0
     },
     {
      "product": "accessories:eva-film",
-     "yaw": -37,
-     "pitch": -34
+     "x": 75.0,
+     "y": 70.0
     },
     {
      "product": "accessories:vinyl-cat1",
-     "yaw": 22,
-     "pitch": -34
+     "x": 75.0,
+     "y": 90.0
     },
     {
      "product": "accessories:water-jet",
-     "yaw": 75,
-     "pitch": -2
+     "x": 29.0,
+     "y": 46.0
     },
     {
      "product": "accessories:waterjet-abrasive",
-     "yaw": 108,
-     "pitch": -15
+     "x": 44.0,
+     "y": 52.0
     },
     {
      "product": "accessories:grinding-wheels",
-     "yaw": 120,
-     "pitch": 16
+     "x": 44.5,
+     "y": 27.0
     },
     {
      "product": "accessories:cerium-dioxide",
-     "yaw": 128,
-     "pitch": 0
+     "x": 49.0,
+     "y": 55.0
     }
    ]
   },
   {
    "id": "handling",
-   "source": "360-8-handling",
-   "x": -12,
-   "y": -8,
-   "north": 0,
-   "links": [
-    "flat-glass",
-    "centre",
-    "entrance"
-   ],
-   "planned": [
-    "accessories:al-stock-shelf",
-    "accessories:custom-rack",
-    "accessories:removable-shelf",
-    "accessories:glass-sling",
-    "accessories:cork-pads"
-   ],
+   "desktop": "showroom-handling.jpg",
+   "phone": "showroom-handling-m.jpg",
+   "width": 5120,
+   "height": 2880,
    "points": [
     {
      "product": "accessories:al-stock-shelf",
-     "yaw": -70,
-     "pitch": -7
+     "x": 42.0,
+     "y": 52.0
     },
     {
      "product": "accessories:custom-rack",
-     "yaw": -138,
-     "pitch": -22
+     "x": 50.0,
+     "y": 56.7
     },
     {
      "product": "accessories:removable-shelf",
-     "yaw": -102,
-     "pitch": -15
+     "x": 16.0,
+     "y": 48.0
     },
     {
      "product": "accessories:glass-sling",
-     "yaw": -138,
-     "pitch": 12
+     "x": 57.6,
+     "y": 40.0
     },
     {
      "product": "accessories:cork-pads",
-     "yaw": -105,
-     "pitch": 14
+     "x": 58.0,
+     "y": 54.0
     }
    ]
   }

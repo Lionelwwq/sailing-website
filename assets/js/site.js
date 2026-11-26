@@ -413,18 +413,25 @@
       document.dispatchEvent(new CustomEvent('sit:catalogue', { detail: window.__sitCatalogue }));
     },
     showroom() {
-      // texts for the 360° showroom; the viewer itself is assets/js/showroom.js, spots in assets/img/showroom/showroom.json
+      // texts for the showroom photo; the viewer itself is assets/js/showroom.js, points and areas in assets/img/showroom/showroom.json
       const P = C.page, S = C.scene;
       const touch = window.matchMedia('(hover: none)').matches;
       $('#sr-hint').textContent = t(touch ? P.hint_touch : P.hint);
-      const names = {};
-      S.spots.forEach((s) => { names[s.id] = t(P[`spot_${s.id}`]) || s.id; });
-      $('#sr-spots').innerHTML = S.spots.map((s, i) => `<button type="button" data-sr-go="${esc(s.id)}" aria-pressed="false"><b>${i + 1}</b>${esc(names[s.id])}</button>`).join('');
+      const names = { overview: t(P.area_overview) };
+      (S.areas || []).forEach((a) => { names[a.id] = t(P[`spot_${a.id}`]) || a.id; });
+      const ids = ['overview', ...(S.areas || []).map((a) => a.id)];
+      const pressed = ($('#sr-spots [aria-pressed="true"]') || {}).dataset?.srGo || 'overview';
+      $('#sr-spots').innerHTML = ids.map((id, i) => `<button type="button" data-sr-go="${esc(id)}" aria-pressed="${id === pressed}"><b>${i + 1}</b>${esc(names[id])}</button>`).join('');
       const products = {};
-      PRODUCT_KINDS.forEach((k) => (C[k].items || []).forEach((it) => { products[`${k}:${it.id}`] = { name: t(it.name), href: `${k}.html#${it.id}` }; }));
+      PRODUCT_KINDS.forEach((k) => (C[k].items || []).forEach((it) => {
+        const key = `${k}:${it.id}`;
+        products[key] = { name: t(it.name), short: t(it.short), photo: it.photo, href: `${k}.html#${it.id}` };
+        registry[key] = { key, kind: k, id: it.id, name: it.name, photo: it.photo };   // so "Add to quote list" works in the product card
+      }));
       const texts = {};
-      ['walk_to', 'view_product', 'loading', 'no_webgl'].forEach((k) => { texts[k] = t(P[k]); });
-      window.__sitShowroom = { scene: S, names, products, texts };
+      ['view_product', 'loading', 'no_image', 'zoom_in', 'zoom_out', 'photo_alt', 'card_close', 'card_prev', 'card_next'].forEach((k) => { texts[k] = t(P[k]); });
+      ['add_to_quote', 'in_quote'].forEach((k) => { texts[k] = ui(k); });
+      window.__sitShowroom = { scene: S, names, products, texts, inQuote };
       document.dispatchEvent(new CustomEvent('sit:showroom', { detail: window.__sitShowroom }));
     },
     contact() {

@@ -5,20 +5,20 @@ nav: home
 image: assets/img/site/front-entrance.jpg
 -->
 <link rel="stylesheet" href="assets/css/home-door.css">
-  <!-- Home cover: Sailing's front door. "Enter the showroom" walks through the glass doors into the 360 showroom
-       (showroom.html). Pictures made with _src/make_home_entrance.py; walk-in in assets/js/home-door.js -->
+  <!-- Home cover: Sailing's front door. "Enter the showroom" walks through the glass doors into the showroom photo
+       (showroom.html). Door pictures made with _src/make_home_entrance.py; walk-in in assets/js/home-door.js -->
   <section class="door" id="door" aria-labelledby="hero-title">
     <picture class="door-photo">
       <source media="(max-width: 760px)" srcset="assets/img/site/front-entrance-m.jpg">
       <img src="assets/img/site/front-entrance.jpg" alt="" width="2560" height="1441" fetchpriority="high">
     </picture>
-    <img class="door-inside" src="assets/img/showroom/entrance-view.jpg" alt="" fetchpriority="low">
+    <img class="door-inside" src="assets/img/showroom/showroom-m.jpg" alt="" fetchpriority="low">
     <div class="door-copy">
       <span class="door-kicker"><span data-ui="since_label">Since</span> <span data-set="since"></span></span>
       <h1 id="hero-title" data-c="hero_title"></h1>
       <p data-c="hero_text"></p>
       <div class="door-actions">
-        <a class="btn btn-brand" href="showroom.html#entrance" data-door-enter data-ui="enter_showroom">Enter the showroom</a>
+        <a class="btn btn-brand" href="showroom.html" data-door-enter data-ui="enter_showroom">Enter the showroom</a>
         <a class="btn btn-outline" href="contact.html#quote" data-ui="cta_quote">Request a Quote</a>
       </div>
     </div>

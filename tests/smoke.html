@@ -284,21 +284,21 @@
 
     /* ---------- home page front door ---------- */
     const until = async (fn, ms = 5000) => { for (let t = 0; t < ms; t += 100) { if (fn()) return true; await wait(100); } return false; };
-    await test('Home page: the front door, and "Enter the showroom" walks into the 360 showroom', async () => {
+    await test('Home page: the front door, and "Enter the showroom" walks into the showroom', async () => {
       const { f, d, w } = await open('index.html?lang=de', 1280, 760);
       const photo = $(d, '.door-photo img');
       assert(await until(() => photo.complete && photo.naturalWidth > 0), 'front door picture did not load');
       const btn = $(d, '[data-door-enter]');
-      assert(btn && /showroom\.html#entrance$/.test(btn.getAttribute('href')), 'no Enter button to the showroom');
+      assert(btn && /showroom\.html$/.test(btn.getAttribute('href')), 'no Enter button to the showroom');
       assert(/Showroom betreten/.test(btn.textContent), `button says "${btn.textContent}"`);
       const r = $(d, '.door-copy').getBoundingClientRect();
       assert(r.right <= 1280 * 0.36, `words reach ${Math.round(r.right)}px, past the stone wall`);
       assert(!(w.__siteErrors || []).length, (w.__siteErrors || []).join('; '));
       btn.click();
       assert(await until(() => $(d, '#door').classList.contains('entering'), 1000), 'no walk-in');
-      assert(await until(() => /showroom\.html#entrance$/.test(f.contentWindow.location.href), 5000), `went to ${f.contentWindow.location.href}`);
+      assert(await until(() => /showroom\.html$/.test(f.contentWindow.location.href), 5000), `went to ${f.contentWindow.location.href}`);
       assert(await until(() => f.contentWindow.document.documentElement.classList.contains('arrive'), 5000), 'showroom has no arrival fade');
-      assert(await until(() => f.contentWindow.document.querySelectorAll('[data-sr-go]').length === 8, 5000), 'showroom did not open');
+      assert(await until(() => f.contentWindow.document.querySelectorAll('[data-sr-go]').length > 1, 5000), 'showroom did not open');
     });
     await test('A ?lang= link keeps its language on the next page', async () => {
       localStorage.removeItem('sit-lang');
@@ -380,34 +380,50 @@
       assert(d.documentElement.scrollWidth <= 376, `page is ${d.documentElement.scrollWidth}px wide on a phone`);
       localStorage.removeItem('sit-cat-edition');
     });
-    await test('360° showroom: settings are complete, every picture exists, the viewer walks between areas', async () => {
+    await test('Showroom: the photo and every product point load, area buttons glide and zoom, points open product pages', async () => {
       const { d, w } = await open('showroom.html?lang=es', 1280, 760);
       const S = await w.fetch('assets/img/showroom/showroom.json').then((r) => r.json());
-      const ids = S.spots.map((x) => x.id);
-      assert(ids.includes(S.start), `start spot "${S.start}" is not a spot`);
       const kinds = {};
       for (const k of ['glass', 'mirrors', 'accessories']) kinds[k] = (await w.fetch(`content/${k}.json`).then((r) => r.json())).items.map((i) => i.id);
-      for (const x of S.spots) {
-        for (const l of x.links) assert(ids.includes(l), `${x.id}: arrow to unknown spot "${l}"`);
-        for (const pt of x.points) { const [k, id] = pt.product.split(':'); assert(kinds[k] && kinds[k].includes(id), `${x.id}: unknown product ${pt.product}`); }
-        for (const f of [`${x.id}.jpg`, `${x.id}-m.jpg`]) assert((await w.fetch(`assets/img/showroom/${f}`, { method: 'HEAD' })).ok, `missing picture ${f}`);
+      for (const pt of S.points) {
+        const [k, id] = pt.product.split(':');
+        assert(kinds[k] && kinds[k].includes(id), `unknown product ${pt.product}`);
+        assert(pt.x >= 0 && pt.x <= 100 && pt.y >= 0 && pt.y <= 100, `${pt.product} is outside the picture`);
       }
-      assert(await until(() => d.querySelectorAll('[data-sr-go]').length === S.spots.length), 'area buttons missing');
-      assert(/Entrada/.test($(d, '[data-sr-go="entrance"]').textContent), `area names not in Spanish: ${$(d, '#sr-spots').textContent}`);
-      // with 3D graphics the viewer opens and W walks on; without them a clear message shows instead
-      const has3d = !!d.createElement('canvas').getContext('webgl');
-      if (has3d) {
-        assert(await until(() => w.SailingShowroom && w.SailingShowroom.viewer.isLoaded(), 20000), 'viewer did not load');
-        assert(w.SailingShowroom.spot() === S.start, `starts at ${w.SailingShowroom.spot()}`);
-        d.dispatchEvent(new w.KeyboardEvent('keydown', { key: 'w', bubbles: true }));
-        assert(await until(() => w.SailingShowroom.spot() !== S.start, 8000), 'W did not walk on');
-        $(d, '[data-sr-go="mirrors"]').click();
-        assert(await until(() => w.SailingShowroom.spot() === 'mirrors', 8000), 'area button did not jump');
-      } else {
-        assert(await until(() => !$(d, '#sr-msg').hidden), 'no message without 3D graphics');
+      for (const f of [S.image.desktop, S.image.phone]) assert((await w.fetch(`assets/img/showroom/${f}`, { method: 'HEAD' })).ok, `missing picture ${f}`);
+      assert(await until(() => d.querySelectorAll('[data-sr-go]').length === S.areas.length + 1), 'area buttons missing');
+      assert(/Toda la sala/.test($(d, '[data-sr-go="overview"]').textContent), `area names not in Spanish: ${$(d, '#sr-spots').textContent}`);
+      assert(await until(() => $(d, '.sr-scene.ready'), 15000), 'the photo did not load');
+      assert(w.SailingShowroom.points() === S.points.length, `${w.SailingShowroom.points()} of ${S.points.length} points shown`);
+      const [k, id] = S.points[0].product.split(':');
+      assert($(d, `[data-sr-product="${S.points[0].product}"]`).getAttribute('href') === `${k}.html#${id}`, 'a point does not link to its product');
+      // every closer photo exists and its points are real products; an area button walks in, "Whole showroom" walks back
+      for (const v of S.views || []) {
+        for (const f of [v.desktop, v.phone]) assert((await w.fetch(`assets/img/showroom/${f}`, { method: 'HEAD' })).ok, `missing picture ${f}`);
+        for (const pt of v.points) { const [vk, vid] = pt.product.split(':'); assert(kinds[vk] && kinds[vk].includes(vid), `${v.id}: unknown product ${pt.product}`); }
       }
+      const v = (S.views || []).find((x) => x.id === 'mirrors') || (S.views || [])[0];
+      if (v) {
+        $(d, `[data-sr-go="${v.id}"]`).click();
+        assert(await until(() => w.SailingShowroom.scene() === v.id && !w.SailingShowroom.walking(), 20000), `did not walk to ${v.id} (at ${w.SailingShowroom.scene()})`);
+        assert(w.SailingShowroom.points() === v.points.length, `${v.id}: ${w.SailingShowroom.points()} of ${v.points.length} points shown`);
+        assert($(d, `[data-sr-go="${v.id}"]`).getAttribute('aria-pressed') === 'true', 'the area button is not marked');
+        $(d, '[data-sr-go="overview"]').click();
+        assert(await until(() => w.SailingShowroom.scene() === 'overview' && !w.SailingShowroom.walking() && w.SailingShowroom.view().z === 1, 5000), 'did not walk back');
+      }
+      // a gold point zooms in on its product and opens its card; the card adds to the quote list and steps on
+      w.localStorage.removeItem('sit-quote-v2');
+      $(d, `[data-sr-product="${S.points[0].product}"]`).click();
+      assert(await until(() => w.SailingShowroom.card() === S.points[0].product && w.SailingShowroom.view().z > 2, 3000), 'the point did not zoom in and open its card');
+      assert($(d, '.sr-card-more').getAttribute('href') === `${k}.html#${id}`, 'the card does not link to the product page');
+      $(d, '.sr-card [data-add]').click();
+      assert(JSON.parse(w.localStorage.getItem('sit-quote-v2') || '[]').some((q) => q.key === S.points[0].product), 'the card did not add to the quote list');
+      $(d, '.sr-card [data-sr-card="next"]').click();
+      assert(await until(() => w.SailingShowroom.card() === S.points[1].product, 2000), 'next did not step on');
+      d.dispatchEvent(new w.KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
+      assert(await until(() => w.SailingShowroom.card() === null, 1000), 'Esc did not close the card');
+      w.localStorage.removeItem('sit-quote-v2');
       assert(!(w.__siteErrors || []).length, (w.__siteErrors || []).join('; '));
-      return has3d ? 'viewer checked' : 'no WebGL here: message checked';
     });
     await test('About page: market globe draws, lists every market and flies to one', async () => {
       const { d, w } = await open('about.html?lang=es', 1280, 800);
