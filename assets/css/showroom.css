@@ -1,7 +1,8 @@
 /* Showroom page: one photo of the showroom with gold product points (behaviour in assets/js/showroom.js) */
 
 .sr { position: relative; height: 100vh; height: 100svh; min-height: 520px; overflow: hidden; background: var(--dark); color: var(--white); }
-.sr-view { position: absolute; inset: 0; overflow: hidden; cursor: grab; touch-action: none; user-select: none; -webkit-user-select: none; }
+.sr-view { position: absolute; inset: 0; overflow: hidden; cursor: grab; touch-action: none; user-select: none; -webkit-user-select: none;
+  background: var(--dark) url("../img/showroom/showroom-m.jpg") center / cover no-repeat; }   /* shown at once; showroom.js lays the photo over it */
 .sr-view.dragging { cursor: grabbing; }
 /* soft shade behind the header and title so the words stay readable on bright pictures */
 .sr::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: calc(var(--header-h) + 170px); z-index: 2; pointer-events: none;
@@ -13,7 +14,8 @@
 .sr-stage { position: absolute; left: 0; top: 0; transform-origin: 0 0; will-change: transform; }
 .sr-img { display: block; width: 100%; height: 100%; opacity: 0; transition: opacity .5s; pointer-events: none; -webkit-user-drag: none; }
 .sr-scene.ready .sr-img { opacity: 1; }
-.sr-points { position: absolute; inset: 0; }
+.sr-points { position: absolute; inset: 0; transition: opacity .4s; }
+.sr-scene:not(.ready) .sr-points { opacity: 0; }   /* the gold points come with their photo */
 /* waiting for an area's photo: a thin moving line at the top */
 .sr-view.loading::after { content: ""; position: absolute; left: 0; right: 0; top: 0; z-index: 6; height: 3px;
   background: linear-gradient(90deg, transparent, var(--accent), transparent); background-size: 40% 100%; background-repeat: no-repeat;
@@ -71,6 +73,8 @@
   border-radius: 16px; background: var(--white); color: var(--ink); box-shadow: 0 24px 60px rgba(0, 0, 0, .38); overflow: hidden;
   opacity: 0; transform: translateX(18px); transition: opacity .25s, transform .25s; }
 .sr-card.open { opacity: 1; transform: none; }
+.sr-card[hidden] { display: none; }               /* a closed card must not cover the photo (it is invisible, but would catch clicks) */
+.sr-card:not(.open) { pointer-events: none; }
 .sr-card-x { position: absolute; right: 10px; top: 10px; z-index: 1; width: 36px; height: 36px; border-radius: 50%; background: rgba(255, 255, 255, .92);
   color: var(--ink); font-size: 22px; line-height: 1; box-shadow: 0 2px 10px rgba(0, 0, 0, .2); }
 .sr-card-x:hover { background: var(--accent); }
@@ -105,3 +109,16 @@
   .sr-zoom { bottom: 76px; }
 }
 @media (prefers-reduced-motion: reduce) { .sr-point .sr-dot { animation: none; } .sr-img { transition: none; } }
+
+/* on a computer: over an area of the main photo the pointer becomes a hand and a label says where a click walks to */
+.sr-view.over-area { cursor: pointer; }
+.sr-walk-tip { position: absolute; z-index: 4; padding: 6px 12px; border-radius: 99px; background: rgba(37, 35, 42, .85); color: var(--white);
+  font-family: var(--font-head); font-size: 13px; white-space: nowrap; pointer-events: none; -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+
+/* inside an area: a clear way back to the whole showroom, just above the area buttons */
+.sr-back { position: absolute; left: 50%; bottom: 78px; z-index: 3; transform: translateX(-50%); display: inline-flex; align-items: center; gap: 6px;
+  min-height: 42px; padding: 0 20px; border-radius: 99px; background: var(--white); color: var(--ink); font-family: var(--font-head); font-size: 14.5px; font-weight: 500;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .32); transition: background .2s, color .2s; }
+.sr-back:hover { background: var(--accent); }
+.sr-back[hidden], .sr-walk-tip[hidden] { display: none; }
+@media (max-width: 759px) { .sr-back { bottom: 74px; } }

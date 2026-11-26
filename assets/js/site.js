@@ -429,7 +429,7 @@
         registry[key] = { key, kind: k, id: it.id, name: it.name, photo: it.photo };   // so "Add to quote list" works in the product card
       }));
       const texts = {};
-      ['view_product', 'loading', 'no_image', 'zoom_in', 'zoom_out', 'photo_alt', 'card_close', 'card_prev', 'card_next'].forEach((k) => { texts[k] = t(P[k]); });
+      ['view_product', 'loading', 'no_image', 'zoom_in', 'zoom_out', 'photo_alt', 'card_close', 'card_prev', 'card_next', 'walk_to', 'back'].forEach((k) => { texts[k] = t(P[k]); });
       ['add_to_quote', 'in_quote'].forEach((k) => { texts[k] = ui(k); });
       window.__sitShowroom = { scene: S, names, products, texts, inQuote };
       document.dispatchEvent(new CustomEvent('sit:showroom', { detail: window.__sitShowroom }));

@@ -422,6 +422,9 @@
       assert(await until(() => w.SailingShowroom.card() === S.points[1].product, 2000), 'next did not step on');
       d.dispatchEvent(new w.KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
       assert(await until(() => w.SailingShowroom.card() === null, 1000), 'Esc did not close the card');
+      // a closed card and the Back button (on the main photo) must not cover the photo: they would catch clicks
+      assert(await until(() => w.getComputedStyle($(d, '.sr-card')).display === 'none', 1500), 'the closed card still covers part of the photo');
+      assert(w.getComputedStyle($(d, '[data-sr-back]')).display === 'none', 'the Back button shows on the main photo');
       w.localStorage.removeItem('sit-quote-v2');
       assert(!(w.__siteErrors || []).length, (w.__siteErrors || []).join('; '));
     });

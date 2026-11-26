@@ -19,13 +19,11 @@
   text-shadow: 0 1px 8px rgba(0, 0, 0, .5); }
 .door-hint::after { content: " \2193"; }
 
-/* the walk-in: the camera moves through the glass doors, the showroom comes into view, then a soft white fade */
+/* the walk-in: the camera moves through the glass doors and the showroom photo comes into view; the showroom page opens on that photo */
 .door-inside { opacity: 0; transform: scale(1.25); pointer-events: none; }
-.door::after { content: ""; position: absolute; inset: 0; z-index: 5; background: #FFFFFF; opacity: 0; pointer-events: none; }
 .door.entering .door-photo img { transform: scale(3.4); transition: transform 1.45s cubic-bezier(.55, 0, .3, 1); }
 .door.entering .door-inside { opacity: 1; transform: none; transition: opacity .75s ease .55s, transform 1.3s cubic-bezier(.2, .6, .3, 1) .3s; }
 .door.entering .door-copy, .door.entering .door-hint { opacity: 0; transition: opacity .3s; }
-.door.entering::after { opacity: 1; transition: opacity .4s ease 1.25s; }
 
 /* phones and tall screens: the front door on top (sign and doors in view), the words in a dark panel below */
 @media (max-width: 760px), (max-aspect-ratio: 1/1) {

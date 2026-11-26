@@ -14,18 +14,18 @@
   "es": "Nuestra sala de exposición"
  },
  "hint": {
-  "en": "Drag to look around · double-click an area or use the buttons below to walk closer · click a gold point to see a product up close",
-  "fr": "Faites glisser pour regarder · double-cliquez sur une zone ou utilisez les boutons pour vous approcher · cliquez sur un point doré pour voir un produit de près",
-  "nl": "Sleep om rond te kijken · dubbelklik op een zone of gebruik de knoppen om dichterbij te lopen · klik op een gouden punt om een product van dichtbij te zien",
-  "de": "Ziehen zum Umsehen · Bereich doppelt anklicken oder die Tasten unten nutzen, um näher zu gehen · goldenen Punkt anklicken, um ein Produkt aus der Nähe zu sehen",
-  "es": "Arrastre para mirar · haga doble clic en una zona o use los botones para acercarse · haga clic en un punto dorado para ver un producto de cerca"
+  "en": "Drag to look around · click an area or use the buttons below to walk closer · click a gold point to see a product up close",
+  "fr": "Faites glisser pour regarder · cliquez sur une zone ou utilisez les boutons pour vous approcher · cliquez sur un point doré pour voir un produit de près",
+  "nl": "Sleep om rond te kijken · klik op een zone of gebruik de knoppen om dichterbij te lopen · klik op een gouden punt om een product van dichtbij te zien",
+  "de": "Ziehen zum Umsehen · Bereich anklicken oder die Tasten unten nutzen, um näher zu gehen · goldenen Punkt anklicken, um ein Produkt aus der Nähe zu sehen",
+  "es": "Arrastre para mirar · haga clic en una zona o use los botones para acercarse · haga clic en un punto dorado para ver un producto de cerca"
  },
  "hint_touch": {
-  "en": "Swipe to look around · double-tap an area or use the buttons below to walk closer · tap a gold point to see a product up close",
-  "fr": "Balayez pour regarder · touchez deux fois une zone ou utilisez les boutons pour vous approcher · touchez un point doré pour voir un produit de près",
-  "nl": "Veeg om rond te kijken · dubbeltik op een zone of gebruik de knoppen om dichterbij te lopen · tik op een gouden punt om een product van dichtbij te zien",
-  "de": "Wischen zum Umsehen · Bereich doppelt antippen oder die Tasten unten nutzen, um näher zu gehen · goldenen Punkt antippen, um ein Produkt aus der Nähe zu sehen",
-  "es": "Deslice para mirar · toque dos veces una zona o use los botones para acercarse · toque un punto dorado para ver un producto de cerca"
+  "en": "Swipe to look around · tap an area or use the buttons below to walk closer · tap a gold point to see a product up close",
+  "fr": "Balayez pour regarder · touchez une zone ou utilisez les boutons pour vous approcher · touchez un point doré pour voir un produit de près",
+  "nl": "Veeg om rond te kijken · tik op een zone of gebruik de knoppen om dichterbij te lopen · tik op een gouden punt om een product van dichtbij te zien",
+  "de": "Wischen zum Umsehen · Bereich antippen oder die Tasten unten nutzen, um näher zu gehen · goldenen Punkt antippen, um ein Produkt aus der Nähe zu sehen",
+  "es": "Deslice para mirar · toque una zona o use los botones para acercarse · toque un punto dorado para ver un producto de cerca"
  },
  "photo_alt": {
   "en": "The Sailing International Trade showroom: flat glass, processed glass, decorative glass, mirrors and glazing supplies",
@@ -145,5 +145,19 @@
   "nl": "Volgend product",
   "de": "Nächstes Produkt",
   "es": "Producto siguiente"
+ },
+ "walk_to": {
+  "en": "Walk to {name}",
+  "fr": "Aller à : {name}",
+  "nl": "Naar {name}",
+  "de": "Zu: {name}",
+  "es": "Ir a {name}"
+ },
+ "back": {
+  "en": "Back",
+  "fr": "Retour",
+  "nl": "Terug",
+  "de": "Zurück",
+  "es": "Volver"
  }
 }

@@ -30,9 +30,9 @@
   // ---- the photos (scenes)
   function def(id) {
     const S = data.scene;
-    if (id === 'overview') return { w: S.image.width, h: S.image.height, src: big() ? S.image.desktop : S.image.phone, points: S.points || [] };
+    if (id === 'overview') return { w: S.image.width, h: S.image.height, src: big() ? S.image.desktop : S.image.phone, phone: S.image.phone, points: S.points || [] };
     const v = (S.views || []).find((x) => x.id === id);
-    return v && { w: v.width, h: v.height, src: big() ? v.desktop : v.phone, points: v.points || [] };
+    return v && { w: v.width, h: v.height, src: big() ? v.desktop : v.phone, phone: v.phone, points: v.points || [] };
   }
   const hasScene = (id) => !!def(id);
   function pointHtml(pt) {
@@ -56,7 +56,15 @@
       sc.img.addEventListener('load', () => { el.classList.add('ready'); resolve(true); }, { once: true });
       sc.img.addEventListener('error', () => resolve(false), { once: true });
     });
-    sc.img.src = BASE + d.src;
+    sc.img.src = BASE + d.phone;
+    if (d.src !== d.phone) {
+      sc.loaded.then((ok) => {
+        if (!ok) return;
+        const hi = new Image();
+        hi.src = BASE + d.src;
+        (hi.decode ? hi.decode() : Promise.resolve()).then(() => { sc.img.src = hi.src; }).catch(() => { /* keep the small one */ });
+      });
+    }
     scenes[id] = sc;
     return sc;
   }
@@ -127,7 +135,8 @@
   const areaOf = (id) => (data.scene.areas || []).find((a) => a.id === id);
   function mark() {
     document.querySelectorAll('[data-sr-go]').forEach((b) => b.setAttribute('aria-pressed', String(!!cur && b.dataset.srGo === cur.id)));
-    if (zoomBox) zoomBox.querySelector('[data-sr-back]').hidden = !cur || cur.id === 'overview';
+    const back = view.querySelector('[data-sr-back]');
+    if (back) back.hidden = !cur || cur.id === 'overview';
   }
   function show(sc) {
     cur = sc;
@@ -272,14 +281,15 @@
 
   function build() {
     const t = data.texts;
-    view.innerHTML = `<div class="sr-zoom"><button type="button" data-sr-back hidden aria-label="${esc(data.names.overview)}" title="${esc(data.names.overview)}">←</button>`
-      + `<button type="button" data-sr-zoom="1" aria-label="${esc(t.zoom_in)}" title="${esc(t.zoom_in)}">+</button>`
-      + `<button type="button" data-sr-zoom="-1" aria-label="${esc(t.zoom_out)}" title="${esc(t.zoom_out)}">−</button></div>`;
+    view.innerHTML = `<div class="sr-zoom"><button type="button" data-sr-zoom="1" aria-label="${esc(t.zoom_in)}" title="${esc(t.zoom_in)}">+</button>`
+      + `<button type="button" data-sr-zoom="-1" aria-label="${esc(t.zoom_out)}" title="${esc(t.zoom_out)}">−</button></div>`
+      + `<button type="button" class="sr-back" data-sr-back hidden title="${esc(data.names.overview)}">← ${esc(t.back)}</button>`;
     zoomBox = view.querySelector('.sr-zoom');
     makeCard();
     const wanted = window.location.hash.slice(1);
     const first = scene(wanted && wanted !== 'overview' && hasScene(wanted) ? wanted : 'overview');
-    first.loaded.then((ok) => { if (!ok) say(t.no_image); });
+    if (first.id !== 'overview') view.style.backgroundImage = 'none';
+    first.loaded.then((ok) => { if (!ok) say(t.no_image); else view.style.backgroundImage = 'none'; });
     centre(first);
     draw(first);
     show(first);
@@ -294,7 +304,7 @@
   let moved = 0;
   let pinch = null;
   view.addEventListener('pointerdown', (e) => {
-    if (!cur || walking || e.target.closest('.sr-zoom')) return;
+    if (!cur || walking || e.target.closest('.sr-zoom, .sr-back')) return;
     stop();
     ptrs.set(e.pointerId, { x: e.clientX, y: e.clientY });
     if (ptrs.size === 1) moved = 0;
@@ -337,31 +347,55 @@
     if (!cur) return;
     const z = e.target.closest('[data-sr-zoom]');
     if (z) zoomAt(cur.s.z * (z.dataset.srZoom === '1' ? 1.5 : 1 / 1.5), view.clientWidth / 2, view.clientHeight / 2);
-    if (e.target.closest('[data-sr-back]')) walkTo('overview');
+    if (e.target.closest('[data-sr-back]')) { walkTo('overview'); return; }
     const pt = e.target.closest('.sr-point');
     // a point opens its card (Ctrl / Cmd / Shift click still opens the product page in a new tab or window)
     if (pt && !e.defaultPrevented && !e.metaKey && !e.ctrlKey && !e.shiftKey) {
       e.preventDefault();
       if (!walking) openCard(pt.dataset.srProduct, e.detail === 0);
-    } else if (!pt && !z && moved <= 6 && !e.target.closest('.sr-zoom')) closeCard();   // a tap on the photo puts the card away
-  });
-  // double-click: on the main photo, walk to the area there; otherwise zoom in on the spot (or back out)
-  view.addEventListener('dblclick', (e) => {
-    if (!cur || walking || e.target.closest('.sr-point, .sr-zoom')) return;
-    const r = view.getBoundingClientRect();
-    const xp = ((e.clientX - r.left - cur.s.x) / (cur.bw * cur.s.z)) * 100;
-    const yp = ((e.clientY - r.top - cur.s.y) / (cur.bh * cur.s.z)) * 100;
-    if (cur.id === 'overview') {
-      let best = null;
-      (data.scene.areas || []).forEach((a) => {
-        const d = Math.hypot(a.x - xp, (a.y - yp) * 0.6);
-        if (hasScene(a.id) && d < 16 && (!best || d < best.d)) best = { id: a.id, d };
-      });
-      if (best) { walkTo(best.id); return; }
+    } else if (!pt && !z && moved <= 6 && !e.target.closest('.sr-zoom')) {
+      if (cardKey) { closeCard(); return; }                // a tap on the photo puts the card away
+      const id = !walking && areaAt(e);
+      if (id) { if (tip) tip.hidden = true; walkTo(id); }
     }
+  });
+  // where on the photo (in %) a pointer is, and which area of the main photo is there (to walk to it)
+  function spotAt(e) {
+    const r = view.getBoundingClientRect();
+    return [((e.clientX - r.left - cur.s.x) / (cur.bw * cur.s.z)) * 100, ((e.clientY - r.top - cur.s.y) / (cur.bh * cur.s.z)) * 100];
+  }
+  function areaAt(e) {
+    if (!cur || cur.id !== 'overview') return null;
+    const [xp, yp] = spotAt(e);
+    let best = null;
+    (data.scene.areas || []).forEach((a) => {
+      const d = Math.hypot(a.x - xp, (a.y - yp) * 0.6);
+      if (hasScene(a.id) && d < 16 && (!best || d < best.d)) best = { id: a.id, d };
+    });
+    return best && best.id;
+  }
+  // double-click: zoom in on the spot (or back out); on the main photo a single click already walks to an area
+  view.addEventListener('dblclick', (e) => {
+    if (!cur || walking || e.target.closest('.sr-point, .sr-zoom') || areaAt(e)) return;
+    const [xp, yp] = spotAt(e);
     if (cur.s.z > 1.9) glide(cur, 50, 50, 1);
     else glide(cur, xp, yp, 2.2);
   });
+  // on a computer, a label follows the pointer over an area of the main photo: "Walk to Mirrors"
+  let tip = null;
+  view.addEventListener('pointermove', (e) => {
+    if (e.pointerType !== 'mouse' || !data) return;
+    const id = !ptrs.size && !walking && !e.target.closest('.sr-point, .sr-zoom') ? areaAt(e) : null;
+    view.classList.toggle('over-area', !!id);
+    if (!id) { if (tip) tip.hidden = true; return; }
+    if (!tip) { tip = document.createElement('div'); tip.className = 'sr-walk-tip'; tip.setAttribute('aria-hidden', 'true'); view.appendChild(tip); }
+    const r = view.getBoundingClientRect();
+    tip.textContent = `${(data.texts.walk_to || '{name}').replace('{name}', data.names[id] || id)} →`;
+    tip.style.left = `${e.clientX - r.left + 16}px`;
+    tip.style.top = `${e.clientY - r.top + 18}px`;
+    tip.hidden = false;
+  });
+  view.addEventListener('pointerleave', () => { if (tip) tip.hidden = true; view.classList.remove('over-area'); });
   // the wheel zooms; zoomed all the way out, scrolling down scrolls the page on as usual
   view.addEventListener('wheel', (e) => {
     if (!cur || walking || (e.deltaY > 0 && cur.s.z <= 1.001)) return;
@@ -399,7 +433,7 @@
       b.title = t;
     });
     const back = view.querySelector('[data-sr-back]');
-    if (back) { back.setAttribute('aria-label', data.names.overview); back.title = data.names.overview; }
+    if (back) { back.textContent = `← ${data.texts.back}`; back.title = data.names.overview; }
     if (!msg.hidden) say(data.texts.no_image);
     if (cardKey) fillCard();
     mark();

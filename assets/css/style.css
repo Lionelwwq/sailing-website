@@ -153,6 +153,11 @@ html[lang^="zh"] .values-motto { font-style: normal; letter-spacing: .04em; }
 
 /* page content fades in once it has loaded */
 .js:not(.ready) main { opacity: 0; }
+/* the showroom opens straight on its photo (dark behind it, never white): its words appear once loaded */
+body[data-page="showroom"] { background: var(--dark); }
+.js:not(.ready) body[data-page="showroom"] main { opacity: 1; }
+.js:not(.ready) body[data-page="showroom"] .sr-top, .js:not(.ready) body[data-page="showroom"] .sr-bar { opacity: 0; }
+html.arrive.ready body[data-page="showroom"] main { animation: none; }
 /* arriving from the home page warehouse tour (see site.js) */
 html.arrive.ready main { animation: arrive-in .8s cubic-bezier(.2, .7, .2, 1) both; }
 html.arrive .ex-stage > img:not(.ex-fill) { animation: arrive-zoom 1.3s cubic-bezier(.2, .7, .2, 1) both; }
