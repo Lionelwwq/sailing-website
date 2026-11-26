@@ -8,10 +8,21 @@ image: assets/img/site/front-entrance.jpg
   <!-- Home cover: Sailing's front door. "Enter the showroom" walks through the glass doors into the showroom photo
        (showroom.html). Door pictures made with _src/make_home_entrance.py; walk-in in assets/js/home-door.js -->
   <section class="door" id="door" aria-labelledby="hero-title">
-    <picture class="door-photo">
-      <source media="(max-width: 760px)" srcset="assets/img/site/front-entrance-m.jpg">
-      <img src="assets/img/site/front-entrance.jpg" alt="" width="2560" height="1707" fetchpriority="high">
-    </picture>
+    <!-- the same shot by day, at dusk and early at night (lined up): the dusk and night layers slowly fade in and out -->
+    <div class="door-photo">
+      <picture>
+        <source media="(max-width: 760px)" srcset="assets/img/site/front-entrance-m.jpg">
+        <img class="dp-day" src="assets/img/site/front-entrance.jpg" alt="" width="3200" height="1800" fetchpriority="high">
+      </picture>
+      <picture>
+        <source media="(max-width: 760px)" srcset="assets/img/site/front-entrance-dusk-m.jpg">
+        <img class="dp-dusk" src="assets/img/site/front-entrance-dusk.jpg" alt="" width="3200" height="1800" fetchpriority="low" decoding="async">
+      </picture>
+      <picture>
+        <source media="(max-width: 760px)" srcset="assets/img/site/front-entrance-night-m.jpg">
+        <img class="dp-night" src="assets/img/site/front-entrance-night.jpg" alt="" width="3200" height="1800" fetchpriority="low" decoding="async">
+      </picture>
+    </div>
     <img class="door-inside" src="assets/img/showroom/showroom-m.jpg" alt="" fetchpriority="low">
     <div class="door-copy">
       <span class="door-kicker"><span data-ui="since_label">Since</span> <span data-set="since"></span></span>

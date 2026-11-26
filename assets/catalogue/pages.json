@@ -1,6 +1,6 @@
 {
  "pdf": "assets/catalogue/Sailing-Product-Catalogue-2026.pdf",
- "sizeMB": 7.7,
+ "sizeMB": 7.6,
  "pages": [
   {
    "page": 1,
@@ -122,7 +122,7 @@
   "en": {
    "label": "English",
    "pdf": "assets/catalogue/Sailing-Product-Catalogue-2026.pdf",
-   "sizeMB": 7.7,
+   "sizeMB": 7.6,
    "cover": "assets/catalogue/cover.jpg",
    "pages": [
     {
@@ -245,7 +245,7 @@
   "fr": {
    "label": "Français",
    "pdf": "assets/catalogue/fr/Sailing-Catalogue-de-produits-2026.pdf",
-   "sizeMB": 7.7,
+   "sizeMB": 7.6,
    "cover": "assets/catalogue/fr/cover.jpg",
    "pages": [
     {
@@ -368,7 +368,7 @@
   "es": {
    "label": "Español",
    "pdf": "assets/catalogue/es/Sailing-Catalogo-de-productos-2026.pdf",
-   "sizeMB": 7.7,
+   "sizeMB": 7.6,
    "cover": "assets/catalogue/es/cover.jpg",
    "pages": [
     {

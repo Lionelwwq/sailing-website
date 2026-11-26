@@ -6,23 +6,24 @@
   const door = document.getElementById('door');
   if (!door) return;
   const btn = door.querySelector('[data-door-enter]');
-  const photo = door.querySelector('.door-photo img');
+  const photo = door.querySelector('.door-photo img');   // the day picture (the dusk and night ones lie exactly on it)
+  const photos = door.querySelector('.door-photo');
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const DOORS = [0.664, 0.64];   // centre of the glass doors, as a share of the picture's width and height
+  const DOORS = [0.6606, 0.622];   // centre of the glass doors, as a share of the picture's width and height
 
   // where the doors are on screen: the picture is scaled to cover the box and placed by its object-position
   function aimAtDoors() {
     const box = photo.getBoundingClientRect();
-    const iw = photo.naturalWidth || 2560;
-    const ih = photo.naturalHeight || 1707;
+    const iw = photo.naturalWidth || 3200;
+    const ih = photo.naturalHeight || 1800;
     const k = Math.max(box.width / iw, box.height / ih);
     const w = iw * k;
     const h = ih * k;
     const pos = getComputedStyle(photo).objectPosition.split(' ').map((v) => parseFloat(v) / 100);
     const x = (box.width - w) * (pos[0] || 0) + DOORS[0] * w;
     const y = (box.height - h) * (pos[1] || 0) + DOORS[1] * h;
-    photo.style.setProperty('--ox', `${x}px`);
-    photo.style.setProperty('--oy', `${y}px`);
+    photos.style.setProperty('--ox', `${x}px`);   // all three pictures zoom about the doors
+    photos.style.setProperty('--oy', `${y}px`);
   }
 
   btn.addEventListener('click', (e) => {
