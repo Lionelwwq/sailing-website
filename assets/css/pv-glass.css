@@ -1,0 +1,91 @@
+/* How PV glass works (pv-glass.html): the working diagram, the six steps and the five generations.
+   Site colours and type from style.css; the diagram keeps the real colours of a solar module (blue cells, pale glass). */
+.pv-chain, .pv-gens-sec {
+  --cell: #1D4ED8; --cell-2: #163A9E; --glass: #CFEAF3; --eva: #F4FBFF; --sheet: #F3F5F8; --metal: #A7B0BD;
+  --sun: #F2B42F; --sky: #EEF3F9;
+}
+.pv-lede { max-width: 72ch; margin: 18px 0 0; color: var(--muted); font-size: 1.05rem; }
+.pv-note { margin: 22px 0 0; color: var(--muted); }
+.pv-small { font-size: 14px; }
+.pv-link { color: var(--brand); font-weight: 600; white-space: nowrap; }
+.pv-link:hover { color: var(--brand-dark); text-decoration: underline; }
+
+/* the diagram: wide on purpose; on narrow screens it scrolls sideways inside its box */
+.pv-diagram { margin-top: 32px; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); overflow-x: auto; }
+.pv-diagram:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+.pv-diagram svg { display: block; width: 100%; min-width: 700px; height: auto; }
+.pv-scroll-hint { display: none; margin: 8px 0 0; font-size: 13px; color: var(--soft); }
+@media (max-width: 760px) { .pv-scroll-hint { display: block; } }
+.pv-diagram text { font-family: var(--font-body); fill: var(--ink); }
+.pv-diagram .t-s { font-size: 14px; font-weight: 600; }
+.pv-diagram .t-z { font-size: 12px; fill: var(--muted); }
+.pv-diagram .ray { stroke: var(--sun); stroke-width: 3; stroke-dasharray: 7 11; animation: pv-flow 1.2s linear infinite; }
+.pv-diagram .wire { stroke: var(--line); stroke-width: 6; fill: none; stroke-linecap: round; }
+.pv-diagram .pulse { stroke: var(--sun); stroke-width: 4; fill: none; stroke-dasharray: 5 22; stroke-linecap: round; animation: pv-flow .9s linear infinite reverse; }
+@keyframes pv-flow { to { stroke-dashoffset: -36; } }
+.pv-diagram .charge { animation: pv-fill 4s ease-in-out infinite; transform-origin: bottom; transform-box: fill-box; }
+@keyframes pv-fill { 0% { transform: scaleY(.15); } 60%, 100% { transform: scaleY(1); } }
+.pv-diagram .win { animation: pv-glow 4s ease-in-out infinite; }
+@keyframes pv-glow { 0%, 40% { fill: var(--sheet); } 70%, 100% { fill: var(--sun); } }
+.pv-diagram .f-glass { fill: var(--glass); opacity: .85; }
+.pv-diagram .f-eva { fill: var(--eva); }
+.pv-diagram .f-cell { fill: var(--cell); }
+.pv-diagram .f-sheet { fill: var(--sheet); }
+.pv-diagram .f-metal { fill: var(--metal); }
+.pv-diagram .f-edge { fill: var(--cell-2); }
+.pv-diagram .s-ink { stroke: var(--ink); }
+.pv-diagram .lead { stroke: var(--soft); stroke-width: 1; }
+.pv-diagram .box { fill: var(--white); stroke: var(--ink); stroke-width: 2; }
+.pv-diagram .num circle { fill: var(--brand); }
+.pv-diagram .num text { fill: var(--white); font-size: 13px; font-weight: 700; text-anchor: middle; }
+.pv-diagram .house { fill: var(--white); stroke: var(--ink); stroke-width: 1.5; }
+.pv-diagram .roof { fill: #C9D3E2; }
+.sun-c { fill: var(--sun); }
+.pv-diagram [data-s] { transition: opacity .25s; }
+.pv-diagram svg.focus [data-s] { opacity: .22; }
+.pv-diagram svg.focus [data-s].on { opacity: 1; }
+
+/* the six steps */
+.pv-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin: 20px 0 0; padding: 0; list-style: none; }
+.pv-steps button { all: unset; box-sizing: border-box; display: flex; flex-direction: column; width: 100%; height: 100%; min-height: 44px; padding: 16px 18px;
+  background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); cursor: pointer; transition: border-color .2s, box-shadow .2s; }
+.pv-steps button:hover { border-color: var(--brand-2); }
+.pv-steps button:focus-visible, .pv-steps button[aria-pressed="true"] { outline: 2px solid var(--brand); outline-offset: 1px; border-color: var(--brand); }
+.pv-steps b { display: flex; gap: 10px; align-items: center; font-family: var(--font-head); font-weight: 600; font-size: 17px; color: var(--ink); }
+.pv-steps b i { display: inline-grid; place-items: center; flex: none; width: 24px; height: 24px; border-radius: 50%; background: var(--brand); color: var(--white); font-style: normal; font-size: 12px; }
+.pv-steps p { margin: 8px 0 0; font-size: 14px; line-height: 1.55; color: var(--muted); }
+.pv-part { display: block; margin-top: auto; padding-top: 10px; font-size: 13px; font-weight: 600; color: var(--ink); }
+
+/* the five generations */
+.pv-gens { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; margin-top: 30px; }
+.pv-gen { display: flex; flex-direction: column; overflow: hidden; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); }
+.pv-gen-now { outline: 2px solid var(--accent); outline-offset: -1px; }
+.pv-gen svg { display: block; width: 100%; height: auto; background: var(--sky); }
+.pv-gen-in { display: flex; flex: 1; flex-direction: column; gap: 8px; padding: 16px; }
+.pv-era { font-size: 13px; font-weight: 600; letter-spacing: .02em; color: var(--brand); }
+.pv-gen h3 { font-size: 18px; }
+.pv-gen p { margin: 0; font-size: 14.5px; line-height: 1.55; color: var(--muted); }
+.pv-gen dl { display: grid; grid-template-columns: auto 1fr; gap: 5px 10px; margin: auto 0 0; padding-top: 12px; border-top: 1px solid var(--line); font-size: 13px; }
+.pv-gen dt { color: var(--soft); }
+.pv-gen dd { margin: 0; font-weight: 600; color: var(--ink); }
+.pv-bar { display: block; height: 6px; margin-top: 4px; border-radius: 3px; background: var(--line); }
+.pv-bar span { display: block; height: 100%; border-radius: 3px; background: var(--cell); }
+.pv-gen .ground { fill: #DFE9D6; }
+.pv-gen .house { fill: var(--white); stroke: var(--ink); stroke-width: 1.5; }
+.pv-gen .roof { fill: #C9D3E2; }
+.pv-gen .panel { fill: var(--cell); stroke: var(--cell-2); stroke-width: 1; }
+.pv-gen .leg { stroke: #8892A0; stroke-width: 2.5; }
+.pv-gen .crop { fill: #7CB35B; }
+.pv-gen .water { fill: #BFE0F0; }
+.pv-gen .tower { fill: #E9EEF6; stroke: var(--ink); stroke-width: 1.5; }
+.pv-gen .cellpane { fill: var(--cell); }
+.pv-gen .glasspane { fill: var(--glass); stroke: var(--ink); stroke-width: 1.5; }
+.pv-gen .up { stroke: var(--sun); stroke-width: 2; stroke-dasharray: 3 4; }
+@media (max-width: 1100px) {
+  .pv-gens { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pv-gen-now { grid-column: 1 / -1; }
+}
+@media (max-width: 600px) { .pv-gens { grid-template-columns: minmax(0, 1fr); } }
+@media (prefers-reduced-motion: reduce) {
+  .pv-diagram .ray, .pv-diagram .pulse, .pv-diagram .charge, .pv-diagram .win { animation: none; }
+}

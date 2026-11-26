@@ -22,6 +22,7 @@ ENTRIES = [
     ('contact', 'Contact page', 'pages/contact.json'),
     ('catalogue', 'Product catalogue page', 'pages/catalogue.json'),
     ('showroom', 'Showroom page', 'pages/showroom.json'),
+    ('pv_glass', 'How PV glass works page', 'pages/pv-glass.json'),
     ('product_pages', 'Product page headers', 'product-pages.json'),
     ('settings', 'Company settings', 'settings.json'),
     ('ui', 'Buttons & menu text', 'ui.json'),
@@ -35,6 +36,7 @@ HELP = {
     'quoteEmail': 'The enquiry form is registered to this address (FormSubmit): it gets the one-time activation email and every enquiry.',
     'quoteCc': 'Every enquiry is also copied to this address (separate several with commas).',
     'mapQuery': 'Address used for the Google map.',
+    'guide': 'Optional: a page that explains this product, shown as a "Learn how it works" link (e.g. pv-glass.html).',
     'category': 'handling = Handling & Storage, ig = Insulating & Sealing, films = Films & Interlayers, cutting = Cutting & Finishing',
 }
 

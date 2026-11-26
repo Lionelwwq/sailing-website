@@ -1,0 +1,593 @@
+{
+ "hero_title": {
+  "en": "How PV Glass Works",
+  "fr": "Le verre photovoltaïque expliqué",
+  "nl": "Zo werkt PV-glas",
+  "de": "So funktioniert PV-Glas",
+  "es": "Cómo funciona el vidrio fotovoltaico"
+ },
+ "hero_text": {
+  "en": "Step by step, from the sun to the socket, and how solar glass changed over five generations.",
+  "fr": "Étape par étape, du soleil à la prise, et comment le verre solaire a évolué en cinq générations.",
+  "nl": "Stap voor stap van zon tot stopcontact, en hoe zonneglas in vijf generaties veranderde.",
+  "de": "Schritt für Schritt von der Sonne bis zur Steckdose, und wie sich Solarglas über fünf Generationen verändert hat.",
+  "es": "Paso a paso, del sol al enchufe, y cómo ha cambiado el vidrio solar en cinco generaciones."
+ },
+ "chain_title": {
+  "en": "From sunlight to power",
+  "fr": "De la lumière à l’électricité",
+  "nl": "Van zonlicht tot stroom",
+  "de": "Vom Sonnenlicht zum Strom",
+  "es": "De la luz del sol a la electricidad"
+ },
+ "chain_text": {
+  "en": "Every solar panel works in the same chain, from the first generation to the fifth: the glass lets light in, the silicon cells turn it into electricity, the frame holds it all together, and the inverter and battery make that power usable day and night. Choose a step to see where it happens.",
+  "fr": "Tous les panneaux solaires fonctionnent selon la même chaîne, de la première à la cinquième génération : le verre laisse entrer la lumière, les cellules de silicium la transforment en électricité, le cadre maintient l’ensemble, et l’onduleur et la batterie rendent cette électricité utilisable jour et nuit. Choisissez une étape pour voir où elle se produit.",
+  "nl": "Elk zonnepaneel werkt volgens dezelfde keten, van de eerste tot de vijfde generatie: het glas laat licht door, de siliciumcellen zetten het om in elektriciteit, het frame houdt alles bij elkaar, en de omvormer en de batterij maken die stroom dag en nacht bruikbaar. Kies een stap om te zien waar die plaatsvindt.",
+  "de": "Jedes Solarmodul funktioniert nach derselben Kette, von der ersten bis zur fünften Generation: Das Glas lässt Licht herein, die Siliziumzellen wandeln es in Strom um, der Rahmen hält alles zusammen, und Wechselrichter und Batterie machen den Strom Tag und Nacht nutzbar. Wählen Sie einen Schritt, um zu sehen, wo er stattfindet.",
+  "es": "Todos los paneles solares funcionan con la misma cadena, de la primera a la quinta generación: el vidrio deja pasar la luz, las células de silicio la convierten en electricidad, el marco lo sostiene todo, y el inversor y la batería hacen que esa energía se pueda usar de día y de noche. Elija un paso para ver dónde ocurre."
+ },
+ "diagram_alt": {
+  "en": "Diagram: sunlight passes through the glass into the silicon cells; the current flows to an inverter, a battery and a home",
+  "fr": "Schéma : la lumière du soleil traverse le verre jusqu’aux cellules de silicium; le courant va vers un onduleur, une batterie et une maison",
+  "nl": "Schema: zonlicht gaat door het glas naar de siliciumcellen; de stroom gaat naar een omvormer, een batterij en een woning",
+  "de": "Schema: Sonnenlicht geht durch das Glas zu den Siliziumzellen; der Strom fließt zu einem Wechselrichter, einer Batterie und einem Haus",
+  "es": "Esquema: la luz del sol atraviesa el vidrio hasta las células de silicio; la corriente va a un inversor, una batería y una vivienda"
+ },
+ "d_sun": {
+  "en": "Sunlight",
+  "fr": "Lumière solaire",
+  "nl": "Zonlicht",
+  "de": "Sonnenlicht",
+  "es": "Luz solar"
+ },
+ "d_glass": {
+  "en": "Glass cover",
+  "fr": "Verre avant",
+  "nl": "Glazen voorplaat",
+  "de": "Frontglas",
+  "es": "Vidrio frontal"
+ },
+ "d_glass_note": {
+  "en": "lets light in, protects",
+  "fr": "laisse entrer la lumière, protège",
+  "nl": "laat licht door, beschermt",
+  "de": "lässt Licht herein, schützt",
+  "es": "deja pasar la luz, protege"
+ },
+ "d_cells": {
+  "en": "Silicon cells",
+  "fr": "Cellules de silicium",
+  "nl": "Siliciumcellen",
+  "de": "Siliziumzellen",
+  "es": "Células de silicio"
+ },
+ "d_cells_note": {
+  "en": "turn light into current",
+  "fr": "transforment la lumière en courant",
+  "nl": "zetten licht om in stroom",
+  "de": "wandeln Licht in Strom um",
+  "es": "convierten la luz en corriente"
+ },
+ "d_eva": {
+  "en": "Encapsulant (EVA)",
+  "fr": "Encapsulant (EVA)",
+  "nl": "Inkapseling (EVA)",
+  "de": "Einbettung (EVA)",
+  "es": "Encapsulante (EVA)"
+ },
+ "d_eva_note": {
+  "en": "seals the cells",
+  "fr": "scelle les cellules",
+  "nl": "sluit de cellen af",
+  "de": "versiegelt die Zellen",
+  "es": "sella las células"
+ },
+ "d_back": {
+  "en": "Backsheet or back glass",
+  "fr": "Film arrière ou verre arrière",
+  "nl": "Achterfolie of achterglas",
+  "de": "Rückseitenfolie oder Rückglas",
+  "es": "Lámina o vidrio trasero"
+ },
+ "d_back_note": {
+  "en": "closes the back",
+  "fr": "ferme l’arrière",
+  "nl": "sluit de achterkant af",
+  "de": "schließt die Rückseite",
+  "es": "cierra la parte trasera"
+ },
+ "d_frame": {
+  "en": "Aluminum frame",
+  "fr": "Cadre en aluminium",
+  "nl": "Aluminium frame",
+  "de": "Aluminiumrahmen",
+  "es": "Marco de aluminio"
+ },
+ "d_frame_note": {
+  "en": "keeps it rigid",
+  "fr": "assure la rigidité",
+  "nl": "houdt het stevig",
+  "de": "hält das Modul steif",
+  "es": "le da rigidez"
+ },
+ "d_inverter": {
+  "en": "Inverter",
+  "fr": "Onduleur",
+  "nl": "Omvormer",
+  "de": "Wechselrichter",
+  "es": "Inversor"
+ },
+ "d_battery": {
+  "en": "Battery",
+  "fr": "Batterie",
+  "nl": "Batterij",
+  "de": "Batterie",
+  "es": "Batería"
+ },
+ "d_home": {
+  "en": "Home · grid",
+  "fr": "Maison · réseau",
+  "nl": "Woning · net",
+  "de": "Haus · Netz",
+  "es": "Vivienda · red"
+ },
+ "d_scroll_hint": {
+  "en": "Swipe the diagram sideways to see all of it",
+  "fr": "Faites glisser le schéma sur le côté pour tout voir",
+  "nl": "Veeg het schema opzij om alles te zien",
+  "de": "Schema zur Seite wischen, um alles zu sehen",
+  "es": "Deslice el esquema hacia un lado para verlo entero"
+ },
+ "steps_label": {
+  "en": "Six steps from sunlight to power",
+  "fr": "Six étapes de la lumière à l’électricité",
+  "nl": "Zes stappen van zonlicht tot stroom",
+  "de": "Sechs Schritte vom Sonnenlicht zum Strom",
+  "es": "Seis pasos de la luz del sol a la electricidad"
+ },
+ "steps": [
+  {
+   "title": {
+    "en": "Receive",
+    "fr": "Recevoir",
+    "nl": "Ontvangen",
+    "de": "Empfangen",
+    "es": "Recibir"
+   },
+   "text": {
+    "en": "Sunlight passes through the glass. Low iron glass lets more light through; a patterned surface or an anti-reflective coating catches light that would otherwise bounce away.",
+    "fr": "La lumière du soleil traverse le verre. Le verre extra-clair laisse passer plus de lumière; une surface texturée ou une couche antireflet retient la lumière qui, autrement, serait réfléchie.",
+    "nl": "Zonlicht gaat door het glas. IJzerarm glas laat meer licht door; een gestructureerd oppervlak of een antireflectiecoating vangt licht op dat anders zou weerkaatsen.",
+    "de": "Sonnenlicht geht durch das Glas. Eisenarmes Glas lässt mehr Licht durch; eine strukturierte Oberfläche oder eine Antireflexbeschichtung hält Licht fest, das sonst zurückgeworfen würde.",
+    "es": "La luz del sol atraviesa el vidrio. El vidrio bajo en hierro deja pasar más luz; una superficie impresa o un recubrimiento antirreflectante retiene la luz que, de otro modo, se reflejaría."
+   },
+   "part": {
+    "en": "Part: PV glass cover",
+    "fr": "Élément : verre photovoltaïque avant",
+    "nl": "Onderdeel: PV-glas aan de voorzijde",
+    "de": "Bauteil: PV-Frontglas",
+    "es": "Pieza: vidrio fotovoltaico frontal"
+   }
+  },
+  {
+   "title": {
+    "en": "Collect",
+    "fr": "Capter",
+    "nl": "Opvangen",
+    "de": "Sammeln",
+    "es": "Captar"
+   },
+   "text": {
+    "en": "Light hits the silicon cells and knocks electrons loose: the photovoltaic effect. This makes direct current (DC). The encapsulant film seals the cells against moisture.",
+    "fr": "La lumière frappe les cellules de silicium et libère des électrons : c’est l’effet photovoltaïque. Il produit du courant continu (CC). Le film encapsulant protège les cellules de l’humidité.",
+    "nl": "Licht raakt de siliciumcellen en maakt elektronen los: het fotovoltaïsch effect. Zo ontstaat gelijkstroom (DC). De inkapselingsfolie beschermt de cellen tegen vocht.",
+    "de": "Licht trifft auf die Siliziumzellen und löst Elektronen heraus: der photovoltaische Effekt. So entsteht Gleichstrom (DC). Die Einbettungsfolie schützt die Zellen vor Feuchtigkeit.",
+    "es": "La luz llega a las células de silicio y libera electrones: es el efecto fotovoltaico. Así se genera corriente continua (CC). La lámina encapsulante protege las células de la humedad."
+   },
+   "part": {
+    "en": "Parts: silicon cells + EVA",
+    "fr": "Éléments : cellules de silicium + EVA",
+    "nl": "Onderdelen: siliciumcellen + EVA",
+    "de": "Bauteile: Siliziumzellen + EVA",
+    "es": "Piezas: células de silicio + EVA"
+   }
+  },
+  {
+   "title": {
+    "en": "Hold",
+    "fr": "Maintenir",
+    "nl": "Dragen",
+    "de": "Tragen",
+    "es": "Sostener"
+   },
+   "text": {
+    "en": "A backsheet or a second sheet of glass closes the back, and the aluminum frame keeps the panel rigid against wind and snow for 25+ years.",
+    "fr": "Un film arrière ou une seconde feuille de verre ferme l’arrière, et le cadre en aluminium garde le panneau rigide face au vent et à la neige pendant plus de 25 ans.",
+    "nl": "Een achterfolie of een tweede glasplaat sluit de achterkant af, en het aluminium frame houdt het paneel meer dan 25 jaar stevig tegen wind en sneeuw.",
+    "de": "Eine Rückseitenfolie oder eine zweite Glasscheibe schließt die Rückseite, und der Aluminiumrahmen hält das Modul über 25 Jahre steif gegen Wind und Schnee.",
+    "es": "Una lámina trasera o una segunda hoja de vidrio cierra la parte de atrás, y el marco de aluminio mantiene el panel rígido frente al viento y la nieve durante más de 25 años."
+   },
+   "part": {
+    "en": "Parts: backsheet or back glass, frame",
+    "fr": "Éléments : film ou verre arrière, cadre",
+    "nl": "Onderdelen: achterfolie of achterglas, frame",
+    "de": "Bauteile: Rückseitenfolie oder Rückglas, Rahmen",
+    "es": "Piezas: lámina o vidrio trasero, marco"
+   }
+  },
+  {
+   "title": {
+    "en": "Convert",
+    "fr": "Convertir",
+    "nl": "Omzetten",
+    "de": "Umwandeln",
+    "es": "Convertir"
+   },
+   "text": {
+    "en": "Panels make DC, but homes and the grid run on alternating current (AC). The inverter converts it and manages how much power each panel delivers.",
+    "fr": "Les panneaux produisent du courant continu, mais les maisons et le réseau fonctionnent en courant alternatif (CA). L’onduleur le convertit et gère la puissance fournie par chaque panneau.",
+    "nl": "Panelen leveren gelijkstroom, maar woningen en het net werken op wisselstroom (AC). De omvormer zet de stroom om en regelt hoeveel vermogen elk paneel levert.",
+    "de": "Module erzeugen Gleichstrom, Häuser und das Netz arbeiten aber mit Wechselstrom (AC). Der Wechselrichter wandelt ihn um und regelt, wie viel Leistung jedes Modul liefert.",
+    "es": "Los paneles producen corriente continua, pero las viviendas y la red funcionan con corriente alterna (CA). El inversor la convierte y gestiona cuánta potencia entrega cada panel."
+   },
+   "part": {
+    "en": "Part: inverter",
+    "fr": "Élément : onduleur",
+    "nl": "Onderdeel: omvormer",
+    "de": "Bauteil: Wechselrichter",
+    "es": "Pieza: inversor"
+   }
+  },
+  {
+   "title": {
+    "en": "Store",
+    "fr": "Stocker",
+    "nl": "Opslaan",
+    "de": "Speichern",
+    "es": "Almacenar"
+   },
+   "text": {
+    "en": "Power that isn’t used right away charges a battery. The panel itself stores nothing; storage always happens in the battery.",
+    "fr": "L’électricité qui n’est pas utilisée tout de suite charge une batterie. Le panneau lui-même ne stocke rien; le stockage se fait toujours dans la batterie.",
+    "nl": "Stroom die niet meteen wordt gebruikt, laadt een batterij op. Het paneel zelf slaat niets op; opslag gebeurt altijd in de batterij.",
+    "de": "Strom, der nicht sofort gebraucht wird, lädt eine Batterie. Das Modul selbst speichert nichts; gespeichert wird immer in der Batterie.",
+    "es": "La energía que no se usa de inmediato carga una batería. El panel no almacena nada; el almacenamiento siempre ocurre en la batería."
+   },
+   "part": {
+    "en": "Part: battery (energy storage)",
+    "fr": "Élément : batterie (stockage d’énergie)",
+    "nl": "Onderdeel: batterij (energieopslag)",
+    "de": "Bauteil: Batterie (Energiespeicher)",
+    "es": "Pieza: batería (almacenamiento de energía)"
+   }
+  },
+  {
+   "title": {
+    "en": "Release",
+    "fr": "Restituer",
+    "nl": "Afgeven",
+    "de": "Abgeben",
+    "es": "Liberar"
+   },
+   "text": {
+    "en": "The battery releases power in the evening or on cloudy days; any extra goes to the building or back to the grid.",
+    "fr": "La batterie restitue l’électricité le soir ou par temps nuageux; le surplus va au bâtiment ou retourne au réseau.",
+    "nl": "De batterij geeft ’s avonds of bij bewolking stroom af; wat over is, gaat naar het gebouw of terug naar het net.",
+    "de": "Die Batterie gibt abends oder bei Bewölkung Strom ab; Überschuss geht ins Gebäude oder zurück ins Netz.",
+    "es": "La batería libera energía por la noche o en días nublados; el excedente va al edificio o vuelve a la red."
+   },
+   "part": {
+    "en": "Parts: home and grid",
+    "fr": "Éléments : maison et réseau",
+    "nl": "Onderdelen: woning en net",
+    "de": "Bauteile: Haus und Netz",
+    "es": "Piezas: vivienda y red"
+   }
+  }
+ ],
+ "note_ours": {
+  "en": "Our product is step 1: the glass. Each generation below is mostly a story of what changed in the glass and where the panels went.",
+  "fr": "Notre produit, c’est l’étape 1 : le verre. Chaque génération ci-dessous raconte surtout ce qui a changé dans le verre et où les panneaux ont été installés.",
+  "nl": "Ons product is stap 1: het glas. Elke generatie hieronder gaat vooral over wat er aan het glas veranderde en waar de panelen terechtkwamen.",
+  "de": "Unser Produkt ist Schritt 1: das Glas. Jede Generation unten erzählt vor allem, was sich am Glas geändert hat und wohin die Module gewandert sind.",
+  "es": "Nuestro producto es el paso 1: el vidrio. Cada generación de abajo cuenta sobre todo qué cambió en el vidrio y dónde se instalaron los paneles."
+ },
+ "see_product": {
+  "en": "See our solar (PV) glass",
+  "fr": "Voir notre verre solaire (photovoltaïque)",
+  "nl": "Bekijk ons zonneglas (PV)",
+  "de": "Unser Solarglas (PV) ansehen",
+  "es": "Ver nuestro vidrio solar (PV)"
+ },
+ "gens_title": {
+  "en": "Five generations of PV glass",
+  "fr": "Cinq générations de verre photovoltaïque",
+  "nl": "Vijf generaties PV-glas",
+  "de": "Fünf Generationen PV-Glas",
+  "es": "Cinco generaciones de vidrio fotovoltaico"
+ },
+ "gens_text": {
+  "en": "The way the power is made stays the same. What changed is the glass, and with it where solar is built and who buys it: from small off-grid panels to huge farms, rooftops, double-sided panels, and finally glass that is the building itself.",
+  "fr": "La façon de produire l’électricité reste la même. Ce qui a changé, c’est le verre, et avec lui l’endroit où le solaire est installé et qui l’achète : des petits panneaux autonomes aux grandes centrales, aux toits, aux panneaux biface, et enfin au verre qui forme le bâtiment lui-même.",
+  "nl": "De manier waarop de stroom wordt opgewekt, blijft gelijk. Wat veranderde, is het glas, en daarmee waar zonne-energie wordt gebouwd en wie het koopt: van kleine losstaande panelen tot enorme zonneparken, daken, dubbelzijdige panelen en ten slotte glas dat zelf het gebouw is.",
+  "de": "Die Art, wie der Strom entsteht, bleibt gleich. Geändert hat sich das Glas, und mit ihm, wo Solaranlagen gebaut werden und wer sie kauft: von kleinen Inselanlagen über riesige Solarparks, Dächer und doppelseitige Module bis hin zu Glas, das selbst das Gebäude ist.",
+  "es": "La forma de generar la energía sigue siendo la misma. Lo que cambió es el vidrio, y con él dónde se instala la energía solar y quién la compra: de pequeños paneles aislados a enormes plantas, techos, paneles bifaciales y, por último, vidrio que es el propio edificio."
+ },
+ "gen_label": {
+  "en": "Generation {n}",
+  "fr": "Génération {n}",
+  "nl": "Generatie {n}",
+  "de": "Generation {n}",
+  "es": "Generación {n}"
+ },
+ "lbl_glass": {
+  "en": "Glass",
+  "fr": "Verre",
+  "nl": "Glas",
+  "de": "Glas",
+  "es": "Vidrio"
+ },
+ "lbl_light": {
+  "en": "Light in",
+  "fr": "Lumière transmise",
+  "nl": "Lichtdoorlating",
+  "de": "Lichtdurchlass",
+  "es": "Luz que pasa"
+ },
+ "lbl_used": {
+  "en": "Used on",
+  "fr": "Utilisé sur",
+  "nl": "Toegepast op",
+  "de": "Eingesetzt auf",
+  "es": "Se usa en"
+ },
+ "lbl_buyers": {
+  "en": "Buyers",
+  "fr": "Acheteurs",
+  "nl": "Kopers",
+  "de": "Käufer",
+  "es": "Compradores"
+ },
+ "light_by_design": {
+  "en": "Set by design (10–80%)",
+  "fr": "Selon la conception (10–80 %)",
+  "nl": "Volgens ontwerp (10–80%)",
+  "de": "Je nach Entwurf (10–80 %)",
+  "es": "Según el diseño (10–80 %)"
+ },
+ "gens": [
+  {
+   "light": 89,
+   "era": {
+    "en": "1970s – 2000s",
+    "fr": "Années 1970 – 2000",
+    "nl": "Jaren 1970 – 2000",
+    "de": "1970er – 2000er",
+    "es": "Años 1970 – 2000"
+   },
+   "title": {
+    "en": "Off-grid beginnings",
+    "fr": "Débuts hors réseau",
+    "nl": "Begin buiten het net",
+    "de": "Anfänge ohne Netz",
+    "es": "Inicios fuera de la red"
+   },
+   "text": {
+    "en": "Small panels for satellites, cabins and remote equipment. The cover was ordinary float glass: strong enough, but its iron content gives it a green tint and blocks some light.",
+    "fr": "Petits panneaux pour satellites, chalets et équipements isolés. Le verre avant était un verre flotté ordinaire : assez solide, mais sa teneur en fer lui donne une teinte verte et bloque une partie de la lumière.",
+    "nl": "Kleine panelen voor satellieten, hutten en afgelegen apparatuur. Het voorglas was gewoon floatglas: sterk genoeg, maar door het ijzergehalte heeft het een groene tint en houdt het wat licht tegen.",
+    "de": "Kleine Module für Satelliten, Hütten und abgelegene Geräte. Das Frontglas war gewöhnliches Floatglas: stabil genug, aber sein Eisengehalt gibt ihm einen Grünstich und hält etwas Licht ab.",
+    "es": "Paneles pequeños para satélites, cabañas y equipos remotos. El vidrio frontal era vidrio flotado común: bastante resistente, pero su contenido de hierro le da un tono verde y bloquea parte de la luz."
+   },
+   "glass": {
+    "en": "Ordinary float glass",
+    "fr": "Verre flotté ordinaire",
+    "nl": "Gewoon floatglas",
+    "de": "Gewöhnliches Floatglas",
+    "es": "Vidrio flotado común"
+   },
+   "where": {
+    "en": "Single roofs, remote sites",
+    "fr": "Toits isolés, sites éloignés",
+    "nl": "Losse daken, afgelegen locaties",
+    "de": "Einzelne Dächer, abgelegene Standorte",
+    "es": "Techos aislados, lugares remotos"
+   },
+   "who": {
+    "en": "Space, telecom, remote users",
+    "fr": "Espace, télécoms, utilisateurs isolés",
+    "nl": "Ruimtevaart, telecom, afgelegen gebruikers",
+    "de": "Raumfahrt, Telekom, abgelegene Nutzer",
+    "es": "Sector espacial, telecomunicaciones, usuarios remotos"
+   }
+  },
+  {
+   "light": 91.5,
+   "era": {
+    "en": "2000s – 2010s",
+    "fr": "Années 2000 – 2010",
+    "nl": "Jaren 2000 – 2010",
+    "de": "2000er – 2010er",
+    "es": "Años 2000 – 2010"
+   },
+   "title": {
+    "en": "Solar farms in rows",
+    "fr": "Centrales en rangées",
+    "nl": "Zonneparken in rijen",
+    "de": "Solarparks in Reihen",
+    "es": "Plantas en hileras"
+   },
+   "text": {
+    "en": "Thousands of panels in rows on open land, where land is plentiful and few people live. Ultra-clear, low iron patterned glass becomes the standard: more light per panel means more power per hectare.",
+    "fr": "Des milliers de panneaux alignés sur des terrains dégagés, là où l’espace abonde et où peu de gens vivent. Le verre texturé extra-clair, à faible teneur en fer, devient la norme : plus de lumière par panneau, c’est plus d’électricité par hectare.",
+    "nl": "Duizenden panelen in rijen op open terrein, waar ruimte genoeg is en weinig mensen wonen. Extra helder, ijzerarm gestructureerd glas wordt de standaard: meer licht per paneel betekent meer stroom per hectare.",
+    "de": "Tausende Module in Reihen auf freiem Land, wo Fläche reichlich vorhanden ist und wenige Menschen leben. Extraweißes, eisenarmes strukturiertes Glas wird zum Standard: mehr Licht pro Modul bedeutet mehr Strom pro Hektar.",
+    "es": "Miles de paneles en hileras sobre terreno abierto, donde sobra espacio y vive poca gente. El vidrio impreso extraclaro, bajo en hierro, se convierte en el estándar: más luz por panel significa más energía por hectárea."
+   },
+   "glass": {
+    "en": "Low iron patterned (rolled)",
+    "fr": "Extra-clair texturé (laminé)",
+    "nl": "IJzerarm gestructureerd (gewalst)",
+    "de": "Eisenarm, strukturiert (gewalzt)",
+    "es": "Bajo en hierro, impreso (laminado)"
+   },
+   "where": {
+    "en": "Large ground-mounted farms",
+    "fr": "Grandes centrales au sol",
+    "nl": "Grote zonneparken op de grond",
+    "de": "Große Freiflächenanlagen",
+    "es": "Grandes plantas sobre suelo"
+   },
+   "who": {
+    "en": "Energy companies, governments",
+    "fr": "Entreprises d’énergie, gouvernements",
+    "nl": "Energiebedrijven, overheden",
+    "de": "Energieversorger, Regierungen",
+    "es": "Empresas de energía, gobiernos"
+   }
+  },
+  {
+   "light": 93.5,
+   "era": {
+    "en": "2010s",
+    "fr": "Années 2010",
+    "nl": "Jaren 2010",
+    "de": "2010er",
+    "es": "Años 2010"
+   },
+   "title": {
+    "en": "Rooftops and coatings",
+    "fr": "Toits et couches antireflet",
+    "nl": "Daken en coatings",
+    "de": "Dächer und Beschichtungen",
+    "es": "Techos y recubrimientos"
+   },
+   "text": {
+    "en": "Solar moves onto homes and factory roofs. An anti-reflective coating on the glass adds about 2% more light, and thin-film panels use coated float glass as their base.",
+    "fr": "Le solaire s’installe sur les toits des maisons et des usines. Une couche antireflet sur le verre ajoute environ 2 % de lumière, et les panneaux à couche mince utilisent du verre flotté à couche comme support.",
+    "nl": "Zonne-energie verhuist naar daken van woningen en fabrieken. Een antireflectiecoating op het glas voegt ongeveer 2% licht toe, en dunnefilmpanelen gebruiken gecoat floatglas als basis.",
+    "de": "Solar zieht auf die Dächer von Häusern und Fabriken. Eine Antireflexbeschichtung auf dem Glas bringt rund 2 % mehr Licht, und Dünnschichtmodule nutzen beschichtetes Floatglas als Träger.",
+    "es": "La energía solar llega a los techos de viviendas y fábricas. Un recubrimiento antirreflectante en el vidrio añade alrededor de un 2 % más de luz, y los paneles de capa fina usan vidrio flotado con capa como base."
+   },
+   "glass": {
+    "en": "Low iron + AR coating",
+    "fr": "Extra-clair + couche antireflet",
+    "nl": "IJzerarm + antireflectiecoating",
+    "de": "Eisenarm + Antireflexschicht",
+    "es": "Bajo en hierro + antirreflectante"
+   },
+   "where": {
+    "en": "Home and factory roofs",
+    "fr": "Toits de maisons et d’usines",
+    "nl": "Daken van woningen en fabrieken",
+    "de": "Dächer von Häusern und Fabriken",
+    "es": "Techos de viviendas y fábricas"
+   },
+   "who": {
+    "en": "Homeowners, businesses",
+    "fr": "Propriétaires, entreprises",
+    "nl": "Huiseigenaren, bedrijven",
+    "de": "Hausbesitzer, Unternehmen",
+    "es": "Propietarios, empresas"
+   }
+  },
+  {
+   "light": 93,
+   "era": {
+    "en": "Late 2010s – today",
+    "fr": "Fin des années 2010 – aujourd’hui",
+    "nl": "Eind jaren 2010 – nu",
+    "de": "Ende 2010er – heute",
+    "es": "Finales de los 2010 – hoy"
+   },
+   "title": {
+    "en": "Double glass, both sides",
+    "fr": "Double verre, deux faces actives",
+    "nl": "Dubbel glas, twee actieve zijden",
+    "de": "Doppelglas, beidseitig aktiv",
+    "es": "Doble vidrio, dos caras activas"
+   },
+   "text": {
+    "en": "Glass on both front and back, each sheet thinner (2 mm) and heat-tempered. Bifacial cells catch light reflected up from the ground, so panels go over farms, water and parking lots.",
+    "fr": "Du verre à l’avant et à l’arrière, chaque feuille plus mince (2 mm) et trempée thermiquement. Les cellules biface captent la lumière réfléchie par le sol, si bien que les panneaux s’installent au-dessus des fermes, de l’eau et des stationnements.",
+    "nl": "Glas aan voor- én achterkant, elke plaat dunner (2 mm) en thermisch gehard. Bifaciale cellen vangen licht op dat de grond terugkaatst, zodat panelen boven landbouwgrond, water en parkeerplaatsen komen.",
+    "de": "Glas auf Vorder- und Rückseite, jede Scheibe dünner (2 mm) und thermisch vorgespannt. Bifaziale Zellen nutzen das vom Boden zurückgeworfene Licht, sodass Module über Äckern, Wasser und Parkplätzen stehen.",
+    "es": "Vidrio delante y detrás, cada hoja más delgada (2 mm) y templada térmicamente. Las células bifaciales aprovechan la luz que refleja el suelo, así que los paneles se instalan sobre cultivos, agua y estacionamientos."
+   },
+   "glass": {
+    "en": "2 mm tempered, front + back",
+    "fr": "2 mm trempé, avant + arrière",
+    "nl": "2 mm gehard, voor + achter",
+    "de": "2 mm vorgespannt, vorne + hinten",
+    "es": "2 mm templado, delante + detrás"
+   },
+   "where": {
+    "en": "Farms, water, carports",
+    "fr": "Fermes, plans d’eau, abris d’auto",
+    "nl": "Landbouw, water, carports",
+    "de": "Landwirtschaft, Wasser, Carports",
+    "es": "Cultivos, agua, cocheras"
+   },
+   "who": {
+    "en": "Developers, agri-solar",
+    "fr": "Promoteurs, agrivoltaïsme",
+    "nl": "Projectontwikkelaars, agri-PV",
+    "de": "Projektentwickler, Agri-PV",
+    "es": "Promotores, agrivoltaica"
+   }
+  },
+  {
+   "light": null,
+   "era": {
+    "en": "Today – next",
+    "fr": "Aujourd’hui – demain",
+    "nl": "Nu – straks",
+    "de": "Heute – morgen",
+    "es": "Hoy – mañana"
+   },
+   "title": {
+    "en": "Glass that is the building",
+    "fr": "Le verre qui fait le bâtiment",
+    "nl": "Glas dat het gebouw is",
+    "de": "Glas, das das Gebäude ist",
+    "es": "Vidrio que es el edificio"
+   },
+   "text": {
+    "en": "Building-integrated PV (BIPV): the solar glass is the facade, skylight or curtain wall, designed in from the start. It can be coloured, semi-transparent and insulated. Premium, for design-led architecture and clients who can invest more.",
+    "fr": "Le photovoltaïque intégré au bâtiment (BIPV) : le verre solaire est la façade, le puits de lumière ou le mur-rideau, prévu dès la conception. Il peut être coloré, semi-transparent et isolant. Haut de gamme, pour une architecture axée sur le design et des clients prêts à investir davantage.",
+    "nl": "Gebouwgeïntegreerde PV (BIPV): het zonneglas is de gevel, het daklicht of de vliesgevel, vanaf het begin in het ontwerp opgenomen. Het kan gekleurd, semi-transparant en isolerend zijn. Premium, voor architectuur waarin design voorop staat en klanten die meer kunnen investeren.",
+    "de": "Gebäudeintegrierte Photovoltaik (BIPV): Das Solarglas ist die Fassade, das Oberlicht oder die Vorhangfassade, von Anfang an mitgeplant. Es kann farbig, halbtransparent und wärmedämmend sein. Premium, für designorientierte Architektur und Kunden, die mehr investieren können.",
+    "es": "Fotovoltaica integrada en edificios (BIPV): el vidrio solar es la fachada, el tragaluz o el muro cortina, previsto desde el diseño. Puede ser de color, semitransparente y aislante. De gama alta, para arquitectura de diseño y clientes que pueden invertir más."
+   },
+   "glass": {
+    "en": "Laminated / insulated, custom colour",
+    "fr": "Feuilleté / isolant, couleur sur mesure",
+    "nl": "Gelaagd / isolerend, eigen kleur",
+    "de": "Verbund- / Isolierglas, Wunschfarbe",
+    "es": "Laminado / aislante, color a medida"
+   },
+   "where": {
+    "en": "Facades, skylights, curtain walls",
+    "fr": "Façades, puits de lumière, murs-rideaux",
+    "nl": "Gevels, daklichten, vliesgevels",
+    "de": "Fassaden, Oberlichter, Vorhangfassaden",
+    "es": "Fachadas, tragaluces, muros cortina"
+   },
+   "who": {
+    "en": "Architects, high-end developers",
+    "fr": "Architectes, promoteurs haut de gamme",
+    "nl": "Architecten, ontwikkelaars in het hogere segment",
+    "de": "Architekten, gehobene Projektentwickler",
+    "es": "Arquitectos, promotores de alto nivel"
+   }
+  }
+ ],
+ "gens_note": {
+  "en": "Eras and light-transmission figures are typical industry values for 3.2 mm glass unless noted, given to show the trend.",
+  "fr": "Les périodes et les taux de transmission lumineuse sont des valeurs typiques de l’industrie pour du verre de 3,2 mm, sauf indication contraire, donnés pour montrer la tendance.",
+  "nl": "Periodes en lichtdoorlatingswaarden zijn typische waarden uit de industrie voor glas van 3,2 mm, tenzij anders vermeld, en tonen de trend.",
+  "de": "Zeiträume und Lichtdurchlasswerte sind typische Branchenwerte für 3,2-mm-Glas, sofern nicht anders angegeben, und zeigen den Trend.",
+  "es": "Los periodos y los valores de transmisión de luz son valores típicos del sector para vidrio de 3,2 mm, salvo que se indique lo contrario, y muestran la tendencia."
+ }
+}

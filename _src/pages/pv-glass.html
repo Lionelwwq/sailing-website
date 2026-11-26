@@ -1,0 +1,81 @@
+<!--
+title: How PV Glass Works | Sailing International Trade
+description: How photovoltaic (PV) glass turns sunlight into power, step by step, and how solar glass changed over five generations, from off-grid panels to glass that is the building itself.
+nav: pv-glass
+image: assets/img/warehouse/zone-solar.webp
+-->
+<link rel="stylesheet" href="assets/css/pv-glass.css">
+  <!-- How PV glass works: texts in content/pages/pv-glass.json (all five languages), diagram labels use data-c,
+       the six steps, the five generations and the diagram highlighting are in assets/js/pv-glass.js -->
+  <section class="page-hero" aria-labelledby="page-title">
+    <img class="hero-bg" src="assets/img/warehouse/zone-solar.webp" alt="" fetchpriority="high">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="index.html" data-ui="nav_home">Home</a><span aria-hidden="true">/</span><a href="glass.html" data-ui="nav_glass">Glass</a><span aria-hidden="true">/</span><span data-ui="nav_pv">How PV Glass Works</span>
+      </nav>
+      <h1 id="page-title" data-c="hero_title"></h1>
+      <p data-c="hero_text"></p>
+    </div>
+  </section>
+
+  <section class="sec pv-chain" aria-labelledby="pv-chain-title">
+    <div class="container">
+      <h2 class="h-up" id="pv-chain-title" data-c="chain_title"></h2>
+      <p class="pv-lede" data-c="chain_text"></p>
+
+      <div class="pv-diagram" tabindex="0" aria-labelledby="pv-dia-title">
+        <svg id="pv-dia" viewBox="0 0 1000 500" role="img" aria-labelledby="pv-dia-title">
+          <title id="pv-dia-title" data-c="diagram_alt"></title>
+          <defs><pattern id="pv-grid" width="23" height="14" patternUnits="userSpaceOnUse" patternTransform="skewX(60)"><rect width="23" height="14" class="f-cell"/><path d="M0 0H23M0 0V14" stroke="#ffffff" stroke-opacity=".45" stroke-width="1"/></pattern></defs>
+          <g data-s="1"><circle cx="95" cy="90" r="42" class="sun-c"/>
+            <line class="ray" x1="125" y1="115" x2="215" y2="140"/><line class="ray" x1="132" y1="104" x2="290" y2="140"/>
+            <line class="ray" x1="128" y1="122" x2="250" y2="150"/><line class="ray" x1="135" y1="96" x2="350" y2="138"/></g>
+          <text x="86" y="162" text-anchor="middle" class="t-s" data-c="d_sun"></text>
+
+          <!-- the module taken apart: each layer is a top face and a front edge -->
+          <g data-s="3"><path d="M180 330H410L460 358H230Z" class="f-metal"/><rect x="230" y="358" width="230" height="12" class="f-metal"/><path d="M196 336H404L440 356H232Z" class="f-sheet"/></g>
+          <g data-s="3"><path d="M180 278H410L460 306H230Z" class="f-sheet"/><rect x="230" y="306" width="230" height="6" class="f-metal"/></g>
+          <g data-s="2"><path d="M180 232H410L460 260H230Z" class="f-eva"/><path d="M180 186H410L460 214H230Z" fill="url(#pv-grid)"/><rect x="230" y="214" width="230" height="6" class="f-edge"/></g>
+          <g data-s="1"><path d="M180 140H410L460 168H230Z" class="f-glass"/><rect x="230" y="168" width="230" height="8" class="f-glass"/></g>
+          <g>
+            <line class="lead" x1="436" y1="154" x2="486" y2="154"/><text x="492" y="152" class="t-s" data-c="d_glass"></text><text x="492" y="169" class="t-z" data-c="d_glass_note"></text>
+            <line class="lead" x1="436" y1="200" x2="486" y2="200"/><text x="492" y="198" class="t-s" data-c="d_cells"></text><text x="492" y="215" class="t-z" data-c="d_cells_note"></text>
+            <line class="lead" x1="436" y1="246" x2="486" y2="246"/><text x="492" y="244" class="t-s" data-c="d_eva"></text><text x="492" y="261" class="t-z" data-c="d_eva_note"></text>
+            <line class="lead" x1="436" y1="292" x2="486" y2="292"/><text x="492" y="290" class="t-s" data-c="d_back"></text><text x="492" y="307" class="t-z" data-c="d_back_note"></text>
+            <line class="lead" x1="452" y1="350" x2="486" y2="350"/><text x="492" y="348" class="t-s" data-c="d_frame"></text><text x="492" y="365" class="t-z" data-c="d_frame_note"></text>
+          </g>
+
+          <path class="wire" d="M330 372V440H860"/><path class="pulse" d="M330 372V440H860"/>
+          <g data-s="4"><rect x="600" y="395" width="86" height="78" rx="8" class="box"/><path d="M618 418q8-10 16 0t16 0" fill="none" class="s-ink" stroke-width="2"/><path d="M618 448H668" class="s-ink" stroke-width="2"/>
+            <text x="643" y="492" text-anchor="middle" class="t-s" data-c="d_inverter"></text></g>
+          <g data-s="5"><rect x="735" y="398" width="60" height="76" rx="7" class="box"/><rect x="755" y="390" width="20" height="8" rx="2" class="f-metal"/><rect class="charge f-cell" x="742" y="406" width="46" height="61" rx="3"/>
+            <text x="765" y="492" text-anchor="middle" class="t-s" data-c="d_battery"></text></g>
+          <g data-s="6"><path d="M850 370L915 318L980 370V474H850Z" class="house"/><rect class="win" x="872" y="390" width="26" height="26" rx="2"/><rect class="win" x="930" y="390" width="26" height="26" rx="2"/><rect x="903" y="430" width="24" height="44" class="roof"/>
+            <text x="915" y="492" text-anchor="middle" class="t-s" data-c="d_home"></text></g>
+
+          <g class="num" data-s="1"><circle cx="160" cy="154" r="13"/><text x="160" y="158">1</text></g>
+          <g class="num" data-s="2"><circle cx="160" cy="200" r="13"/><text x="160" y="204">2</text></g>
+          <g class="num" data-s="3"><circle cx="160" cy="300" r="13"/><text x="160" y="304">3</text></g>
+          <g class="num" data-s="4"><circle cx="600" cy="380" r="13"/><text x="600" y="384">4</text></g>
+          <g class="num" data-s="5"><circle cx="735" cy="380" r="13"/><text x="735" y="384">5</text></g>
+          <g class="num" data-s="6"><circle cx="850" cy="340" r="13"/><text x="850" y="344">6</text></g>
+        </svg>
+      </div>
+      <p class="pv-scroll-hint" data-c="d_scroll_hint"></p>
+
+      <ul class="pv-steps" id="pv-steps"></ul>
+      <p class="pv-note"><span data-c="note_ours"></span> <a class="pv-link" href="glass.html#solar"><span data-c="see_product"></span><span aria-hidden="true"> →</span></a></p>
+    </div>
+  </section>
+
+  <section class="sec sec-gray pv-gens-sec" aria-labelledby="pv-gens-title">
+    <div class="container">
+      <h2 class="h-up" id="pv-gens-title" data-c="gens_title"></h2>
+      <p class="pv-lede" data-c="gens_text"></p>
+      <div class="pv-gens" id="pv-gens"></div>
+      <p class="pv-note pv-small" data-c="gens_note"></p>
+    </div>
+  </section>
+
+<!-- include: cta -->
+<script src="assets/js/pv-glass.js" defer></script>

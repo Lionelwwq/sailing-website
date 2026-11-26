@@ -57,6 +57,7 @@
   if (PAGE === 'catalogue') { FILES.page = 'content/pages/catalogue.json'; FILES.catalogue = 'assets/catalogue/pages.json'; }
   if (PAGE === 'index') FILES.page = 'content/pages/home.json';
   if (PAGE === 'showroom') { FILES.page = 'content/pages/showroom.json'; FILES.scene = 'assets/img/showroom/showroom.json'; }
+  if (PAGE === 'pv-glass') FILES.page = 'content/pages/pv-glass.json';
   if (PRODUCT_KINDS.includes(PAGE) || PAGE === 'index' || PAGE === 'showroom') {
     FILES.productPages = 'content/product-pages.json';
     PRODUCT_KINDS.forEach((k) => { FILES[k] = `content/${k}.json`; });
@@ -264,6 +265,7 @@
           <h2>${esc(t(it.name))}</h2>
           <p class="ex-short">${esc(t(it.short))}</p>
           <p class="ex-desc">${esc(t(it.description))}</p>
+          ${it.guide ? `<p class="ex-guide"><a href="${esc(it.guide)}">${esc(ui('guide_link'))}<span aria-hidden="true"> →</span></a></p>` : ''}
           ${(it.specs || []).length ? `<h3>${esc(ui('tab_specs'))}</h3>
           <table class="spec-table"><tbody>${it.specs.map((s) => `<tr><th scope="row">${esc(t(s.label))}</th><td>${esc(t(s.value))}</td></tr>`).join('')}</tbody></table>
           <p class="spec-note">${esc(ui('specs_note'))}</p>` : ''}
@@ -433,6 +435,16 @@
       ['add_to_quote', 'in_quote'].forEach((k) => { texts[k] = ui(k); });
       window.__sitShowroom = { scene: S, names, products, texts, inQuote };
       document.dispatchEvent(new CustomEvent('sit:showroom', { detail: window.__sitShowroom }));
+    },
+    'pv-glass'() {
+      // How PV glass works: the fixed texts and diagram labels use data-c; the six steps and five generations
+      // are drawn by assets/js/pv-glass.js from these texts (in the current language)
+      const P = C.page;
+      const tr = (o) => Object.fromEntries(Object.entries(o).map(([k, v]) => [k, v && typeof v === 'object' ? t(v) : v]));
+      const labels = {};
+      ['steps_label', 'gen_label', 'lbl_glass', 'lbl_light', 'lbl_used', 'lbl_buyers', 'light_by_design'].forEach((k) => { labels[k] = t(P[k]); });
+      window.__sitPv = { lang: HTML_LANG[lang], labels, steps: (P.steps || []).map(tr), gens: (P.gens || []).map(tr) };
+      document.dispatchEvent(new CustomEvent('sit:pvglass', { detail: window.__sitPv }));
     },
     contact() {
       const P = C.page;

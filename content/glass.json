@@ -1851,6 +1851,7 @@
     "de": "Photovoltaikglas ist ein eisenarmes, meist vorgespanntes Glas auf der Vorderseite eines Solarmoduls. Es lässt so viel Licht wie möglich zu den Zellen durch und schützt sie zugleich im Außeneinsatz. Eine Antireflexbeschichtung ist erhältlich.",
     "es": "El vidrio fotovoltaico es un vidrio bajo en hierro, normalmente templado, que se coloca en la parte frontal de un módulo solar. Deja que llegue la mayor cantidad posible de luz a las células y las protege a la intemperie. Hay disponible un recubrimiento antirreflectante."
    },
+   "guide": "pv-glass.html",
    "specs": [
     {
      "label": {

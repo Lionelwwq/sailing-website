@@ -41,6 +41,20 @@
   "de": "Produktkatalog",
   "es": "Catálogo de productos"
  },
+ "guide_link": {
+  "en": "Learn how it works",
+  "fr": "Comprendre son fonctionnement",
+  "nl": "Lees hoe het werkt",
+  "de": "So funktioniert es",
+  "es": "Descubra cómo funciona"
+ },
+ "nav_pv": {
+  "en": "How PV Glass Works",
+  "fr": "Le verre photovoltaïque expliqué",
+  "nl": "Zo werkt PV-glas",
+  "de": "So funktioniert PV-Glas",
+  "es": "Cómo funciona el vidrio fotovoltaico"
+ },
  "nav_showroom": {
   "en": "Showroom",
   "fr": "Salle d’exposition",

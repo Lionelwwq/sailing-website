@@ -271,6 +271,9 @@ html.arrive .ex-stage > img:not(.ex-fill) { animation: arrive-zoom 1.3s cubic-be
 .ex-info h2 { font-size: clamp(1.7rem, 2.6vw, 2.3rem); font-weight: 600; text-transform: uppercase; letter-spacing: .01em; }
 .ex-short { font-family: var(--font-head); font-size: 1.05rem; color: var(--ink); }
 .ex-desc { color: #3F3B46; }
+.ex-guide { margin: 12px 0 0; }
+.ex-guide a { color: var(--brand); font-weight: 600; }
+.ex-guide a:hover { color: var(--brand-dark); text-decoration: underline; }
 .ex-info h3 { margin-top: 6px; font-family: var(--font-body); font-size: 12.5px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--soft); }
 .spec-table { width: 100%; border-collapse: collapse; font-size: 14.5px; }
 .spec-table th, .spec-table td { padding: 11px 0; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
