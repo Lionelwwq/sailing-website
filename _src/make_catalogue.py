@@ -476,7 +476,7 @@ FIRST_PRODUCT_PAGE = 6  # cover, about, milestones, overview, glazing come first
 # ---------------------------------------------------------------- pages
 def cover():
     return f'''<section class="page cover">
-  <div class="photo" style="background-image:url({img(Wh + 'entrance-closed.webp')})"></div>
+  <div class="photo" style="background-image:url({img('assets/img/site/front-entrance.jpg')}); background-position: 72% center"></div>
   <div class="top">{logo('#FFFFFF', '0.5in')}<span class="year-tag">{E(tx(L('EDITION 2026', 'ÉDITION 2026', 'EDICIÓN 2026')))}</span></div>
   <div class="panel">
     <span class="kicker light">{E(tx(L('Architectural glass & mirrors', 'Verre architectural & miroirs', 'Vidrio arquitectónico & espejos')))}</span>

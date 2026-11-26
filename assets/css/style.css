@@ -108,7 +108,7 @@ ul, ol { margin: 0; padding: 0; }
 .menu-btn span { display: block; width: 22px; height: 2px; background: currentColor; transition: transform .3s var(--ease); }
 .menu-btn[aria-expanded="true"] span:first-child { transform: translateY(4px) rotate(45deg); }
 .menu-btn[aria-expanded="true"] span:last-child { transform: translateY(-4px) rotate(-45deg); }
-.mobile-nav { position: absolute; top: 100%; left: 0; right: 0; display: grid; gap: 2px; padding: 12px 20px 24px; background: var(--ink); color: var(--white); opacity: 0; visibility: hidden; translate: 0 -8px; transition: opacity .25s, translate .25s, visibility 0s .25s; max-height: calc(100vh - var(--header-h)); overflow-y: auto; }
+.mobile-nav { position: absolute; top: 100%; left: 0; right: 0; display: grid; align-content: start; gap: 2px; padding: 12px 20px 24px; background: var(--ink); color: var(--white); opacity: 0; visibility: hidden; translate: 0 -8px; transition: opacity .25s, translate .25s, visibility 0s .25s; height: calc(100vh - var(--header-h)); height: calc(100dvh - var(--header-h)); overflow-y: auto; overscroll-behavior: contain; }
 .mobile-nav.open { opacity: 1; visibility: visible; translate: 0 0; transition: opacity .25s, translate .25s; }
 .mobile-nav a:not(.btn) { padding: 12px 4px; font-family: var(--font-head); font-size: 17px; border-bottom: 1px solid rgba(255, 255, 255, .08); }
 .mobile-nav a.sub { max-width: none; margin: 0; padding-left: 20px; font-size: 16px; color: rgba(255, 255, 255, .8); }   /* not the centred .sub subtitle style */
@@ -189,11 +189,12 @@ html.arrive .ex-stage > img:not(.ex-fill) { animation: arrive-zoom 1.3s cubic-be
 @media (max-width: 900px) { .cat-cards { grid-template-columns: 1fr; } }
 
 /* saand-style product word list */
-.word-list { margin: 64px auto 0; max-width: 1080px; text-align: center; font-family: var(--font-head); font-size: clamp(1.15rem, 2.2vw, 1.8rem); line-height: 2.1; }
-.word-list a { white-space: nowrap; border-bottom: 1px solid #F3C9B8; border-bottom-color: color-mix(in srgb, var(--brand) 30%, transparent); transition: color .2s, border-color .2s; }
-.word-list a:hover { color: var(--brand); border-color: var(--brand); }
-.word-list .bar { margin: 0 .45em; color: var(--brand); font-weight: 300; }
-@media (max-width: 600px) { .word-list { line-height: 1.9; } .word-list a { white-space: normal; } }
+/* every product as a pill link: names never break in the middle, easy to tap */
+.word-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 56px auto 0; max-width: 1080px; font-family: var(--font-head); }
+.word-list a { padding: 9px 18px; border: 1px solid var(--line); border-radius: 99px; background: var(--white); color: var(--ink); font-size: 15px; white-space: nowrap;
+  transition: color .2s, border-color .2s, background .2s; }
+.word-list a:hover { color: var(--brand); border-color: var(--brand); background: var(--brand-tint, #F4EFF9); }
+@media (max-width: 600px) { .word-list { gap: 8px; margin-top: 40px; } .word-list a { padding: 8px 14px; font-size: 14px; } }
 
 /* split rows (photo half / text half), as on bgglass.ca */
 .split-row { display: grid; grid-template-columns: 1fr 1fr; min-height: 520px; }
@@ -394,7 +395,13 @@ a.info-card:hover { border-color: var(--brand); background: var(--brand-tint); }
 .form-status.ok { background: #E6F4EA; color: #137333; }
 .form-status.err { background: #FCE8E6; color: #A50E0E; }
 .form-status a { text-decoration: underline; }
-@media (max-width: 960px) { .contact-grid { grid-template-columns: 1fr; } }
+@media (max-width: 960px) {
+  /* one column: phone, email and address first, then the quote form, then the map */
+  .contact-grid { grid-template-columns: 1fr; gap: 12px; }
+  .contact-side { display: contents; }
+  .contact-grid > .quote-form { order: 1; margin: 20px 0; }
+  .contact-side .map-frame { order: 2; margin-top: 0; }
+}
 
 .steps { list-style: none; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; margin-top: 56px; counter-reset: s; }
 .steps li { position: relative; padding-top: 22px; border-top: 2px solid var(--ink); }

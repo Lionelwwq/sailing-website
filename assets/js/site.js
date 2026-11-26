@@ -358,7 +358,7 @@
         ...C.mirrors.items.map((m) => ({ href: `mirrors.html#${m.id}`, name: m.name })),
         ...C.accessories.categories.map((c) => ({ href: `accessories.html#${(C.accessories.items.find((i) => i.category === c.id) || {}).id || ''}`, name: c.name })),
       ];
-      $('#word-list').innerHTML = words.map((w, i) => `<a href="${w.href}">${esc(t(w.name))}</a>${i < words.length - 1 ? '<span class="bar">|</span>' : ''}`).join(' ');
+      $('#word-list').innerHTML = words.map((w) => `<a href="${w.href}">${esc(t(w.name))}</a>`).join('');
       const links = [['contact.html#quote', 'cta_quote'], ['about.html', 'cta_learn_more'], ['accessories.html', 'cta_view_products']];
       $('#services').innerHTML = H.services.map((s, i) => `<div class="split-row ${i % 2 ? 'flip' : 'dark'}">
         <div class="split-media"><img src="${esc(s.image)}" alt="" loading="lazy"></div>
