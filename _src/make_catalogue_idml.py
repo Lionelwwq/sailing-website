@@ -312,7 +312,7 @@ class Doc:
                  '</idPkg:Preferences>\n')
         master = (HEAD + f'<idPkg:MasterSpread {NS}>\n<MasterSpread Self="um1" ItemTransform="1 0 0 1 0 0" Name="A-Master" NamePrefix="A" BaseName="Master" '
                   'ShowMasterItems="true" PageCount="1" OverriddenPageItemProps="" PrimaryTextFrame="n">'
-                  f'<Page Self="ump1" Name="A" AppliedTrapPreset="TrapPreset/$ID/kDefaultTrapStyleName" OverrideList="" AppliedMaster="n" '
+                  f'<Page Self="ump1" Name="A" OverrideList="" AppliedMaster="n" '
                   f'GeometricBounds="0 0 {PAGE_H} {PAGE_W}" ItemTransform="1 0 0 1 {-PAGE_W / 2} {-PAGE_H / 2}" MasterPageTransform="1 0 0 1 0 0">'
                   f'<MarginPreference ColumnCount="1" ColumnGutter="12" Top="0" Bottom="0" Left="0" Right="0" ColumnDirection="Horizontal" ColumnsPositions="0 {PAGE_W}"/></Page>'
                   '</MasterSpread>\n</idPkg:MasterSpread>\n')
@@ -345,6 +345,13 @@ class Doc:
         import xml.dom.minidom
         for name, text in parts.items():   # every part must be well-formed XML
             xml.dom.minidom.parseString(text.encode('utf-8'))
+        # every reference must point to something the file defines: InDesign silently drops a page that refers to
+        # something missing (an undefined trap preset once left every page blank)
+        defined = {'n'} | {i for t in parts.values() for i in re.findall(r' Self="([^"]+)"', t)}
+        attrs = r' (Applied(?!Font)\w+|ItemLayer|ParentStory|FillColor|StrokeColor|ActiveLayer|PageStart|NextStyle)="([^"]*)"'
+        missing = sorted({f'{a}="{v}"' for t in parts.values() for a, v in re.findall(attrs, t) if v and v not in defined})
+        if missing:
+            raise SystemExit(f'{out_path.name}: refers to things the file does not define: {", ".join(missing[:5])}')
         with zipfile.ZipFile(out_path, 'w') as z:
             z.writestr(zipfile.ZipInfo('mimetype'), 'application/vnd.adobe.indesign-idml-package', compress_type=zipfile.ZIP_STORED)
             for name, text in parts.items():
@@ -532,7 +539,7 @@ def edition(c, lang, out_dir, links):
         sid, pid = doc.id(), doc.id()
         xml = (HEAD + f'<idPkg:Spread {NS}>\n<Spread Self="{sid}" PageCount="1" BindingLocation="0" AllowPageShuffle="true" ItemTransform="1 0 0 1 0 0" '
                'ShowMasterItems="true" PageTransitionType="None" PageTransitionDirection="NotApplicable" PageTransitionDuration="Medium" FlattenerOverride="Default">'
-               f'<Page Self="{pid}" Name="{pi}" AppliedTrapPreset="TrapPreset/$ID/kDefaultTrapStyleName" OverrideList="" AppliedMaster="n" '
+               f'<Page Self="{pid}" Name="{pi}" OverrideList="" AppliedMaster="n" '
                f'GeometricBounds="0 0 {PAGE_H} {PAGE_W}" ItemTransform="1 0 0 1 {-PAGE_W / 2} {-PAGE_H / 2}" MasterPageTransform="1 0 0 1 0 0">'
                f'<MarginPreference ColumnCount="1" ColumnGutter="12" Top="0" Bottom="0" Left="0" Right="0" ColumnDirection="Horizontal" ColumnsPositions="0 {PAGE_W}"/></Page>\n'
                + '\n'.join(items) + '\n</Spread>\n</idPkg:Spread>\n')
