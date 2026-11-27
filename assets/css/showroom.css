@@ -1,11 +1,12 @@
 /* Showroom page: one photo of the showroom with gold product points (behaviour in assets/js/showroom.js) */
 
-.sr { position: relative; height: 100vh; height: 100svh; min-height: 520px; overflow: hidden; background: var(--dark); color: var(--white); }
+/* starts under the white header bar, the same box as the home page front door, so the walk-in lands on the same view */
+.sr { position: relative; margin-top: var(--header-h); height: calc(100vh - var(--header-h)); height: calc(100svh - var(--header-h)); min-height: 480px; overflow: hidden; background: var(--dark); color: var(--white); }
 .sr-view { position: absolute; inset: 0; overflow: hidden; cursor: grab; touch-action: none; user-select: none; -webkit-user-select: none;
   background: var(--dark) url("../img/showroom/showroom-m.jpg") center / cover no-repeat; }   /* shown at once; showroom.js lays the photo over it */
 .sr-view.dragging { cursor: grabbing; }
-/* soft shade behind the header and title so the words stay readable on bright pictures */
-.sr::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: calc(var(--header-h) + 170px); z-index: 2; pointer-events: none;
+/* soft shade behind the title so the words stay readable on bright pictures */
+.sr::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 170px; z-index: 2; pointer-events: none;
   background: linear-gradient(180deg, rgba(28, 22, 38, .72) 0%, rgba(28, 22, 38, .38) 60%, rgba(28, 22, 38, 0) 100%); }
 
 /* one layer per photo (the main photo and each area's closer photo); walking fades and scales the layers */
@@ -23,7 +24,7 @@
 @keyframes sr-load { from { background-position: -40% 0; } to { background-position: 140% 0; } }
 
 /* the words sit over the picture without blocking dragging */
-.sr-top { position: absolute; left: 0; right: 0; top: calc(var(--header-h) + 12px); z-index: 3; display: grid; justify-items: start; gap: 4px; pointer-events: none;
+.sr-top { position: absolute; left: 0; right: 0; top: 14px; z-index: 3; display: grid; justify-items: start; gap: 4px; pointer-events: none;
   text-shadow: 0 1px 12px rgba(0, 0, 0, .55); }
 .sr-kicker { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-head); font-size: 12px; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; color: #E2D8EF; }
 .sr-kicker::before { content: ""; width: 22px; height: 2px; background: var(--accent); }
@@ -69,7 +70,7 @@
 .sr-point.active .sr-name { opacity: 0; }
 
 /* product card: a big photo, a few words, add to quote, the product page, previous / next */
-.sr-card { position: absolute; z-index: 5; right: 20px; top: calc(var(--header-h) + 14px); bottom: 84px; width: 340px; display: flex; flex-direction: column;
+.sr-card { position: absolute; z-index: 5; right: 20px; top: 14px; bottom: 84px; width: 340px; display: flex; flex-direction: column;
   border-radius: 16px; background: var(--white); color: var(--ink); box-shadow: 0 24px 60px rgba(0, 0, 0, .38); overflow: hidden;
   opacity: 0; transform: translateX(18px); transition: opacity .25s, transform .25s; }
 .sr-card.open { opacity: 1; transform: none; }
@@ -96,7 +97,7 @@
 .sr.card-open .sr-point .sr-name { opacity: 0 !important; }
 
 @media (max-width: 759px) {
-  .sr { height: calc(100svh - 70px); min-height: 460px; }   /* leaves room to scroll on past the viewer */
+  .sr { height: calc(100vh - var(--header-h) - 60px); height: calc(100svh - var(--header-h) - 60px); min-height: 420px; }   /* leaves room to scroll on past the viewer */
   .sr-card { left: 10px; right: 10px; top: auto; bottom: 68px; width: auto; max-height: 62%; transform: translateY(18px); }
   .sr-card-img { aspect-ratio: 16 / 9; }
   .sr-card-body { padding: 12px 14px 10px; gap: 8px; }

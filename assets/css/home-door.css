@@ -2,7 +2,11 @@
 
 /* the cover starts under the white header bar, so the whole storefront shows */
 .door { position: relative; margin-top: var(--header-h); height: calc(100vh - var(--header-h)); height: calc(100svh - var(--header-h)); min-height: 520px; overflow: hidden; background: #E8E1D6; }
-.door-photo img, .door-inside { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.door-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+/* the showroom photo seen at the end of the walk-in: exactly the box the showroom page shows it in (under the header,
+   assets/css/showroom.css .sr), so the page change does not jump */
+.door-inside { position: fixed; left: 0; top: var(--header-h); z-index: 4; width: 100%; height: calc(100vh - var(--header-h)); height: calc(100svh - var(--header-h)); object-fit: cover; }
+@media (max-width: 759px) { .door-inside { height: calc(100vh - var(--header-h) - 60px); height: calc(100svh - var(--header-h) - 60px); } }
 /* keep the stone wall on the left in view on desktop screens: that is where the words go */
 .door-photo img { object-position: 0% 30%; transform-origin: var(--ox, 66%) var(--oy, 62%); }
 
@@ -33,9 +37,9 @@
 .door-hint::after { content: " \2193"; }
 
 /* the walk-in: the camera moves through the glass doors and the showroom photo comes into view; the showroom page opens on that photo */
-.door-inside { opacity: 0; transform: scale(1.25); pointer-events: none; }
+.door-inside { opacity: 0; visibility: hidden; transform: scale(1.25); pointer-events: none; }
 .door.entering .door-photo img { transform: scale(3.4); transition: transform 1.45s cubic-bezier(.55, 0, .3, 1); }
-.door.entering .door-inside { opacity: 1; transform: none; transition: opacity .75s ease .55s, transform 1.3s cubic-bezier(.2, .6, .3, 1) .3s; }
+.door.entering .door-inside { opacity: 1; visibility: visible; transform: none; transition: opacity .75s ease .55s, transform 1.3s cubic-bezier(.2, .6, .3, 1) .3s; }
 .door.entering .door-copy, .door.entering .door-hint { opacity: 0; transition: opacity .3s; }
 
 /* phones and tall screens: the front door on top (sign and doors in view), the words in a dark panel below */
