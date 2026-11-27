@@ -439,11 +439,10 @@
     'pv-glass'() {
       // How PV glass works: the fixed texts and diagram labels use data-c; the six steps and five generations
       // are drawn by assets/js/pv-glass.js from these texts (in the current language)
-      const P = C.page;
-      const tr = (o) => Object.fromEntries(Object.entries(o).map(([k, v]) => [k, v && typeof v === 'object' ? t(v) : v]));
-      const labels = {};
-      ['steps_label', 'gen_label', 'lbl_glass', 'lbl_light', 'lbl_used', 'lbl_buyers', 'light_by_design'].forEach((k) => { labels[k] = t(P[k]); });
-      window.__sitPv = { lang: HTML_LANG[lang], labels, steps: (P.steps || []).map(tr), gens: (P.gens || []).map(tr) };
+      // every { en, fr, ... } in the page content becomes the text in the current language, lists and numbers stay as they are
+      const tr = (v) => (Array.isArray(v) ? v.map(tr)
+        : v && typeof v === 'object' ? ('en' in v ? t(v) : Object.fromEntries(Object.entries(v).map(([k, x]) => [k, tr(x)]))) : v);
+      window.__sitPv = { lang: HTML_LANG[lang], text: tr(C.page) };
       document.dispatchEvent(new CustomEvent('sit:pvglass', { detail: window.__sitPv }));
     },
     contact() {

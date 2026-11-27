@@ -6,6 +6,13 @@
   "de": "So funktioniert PV-Glas",
   "es": "Cómo funciona el vidrio fotovoltaico"
  },
+ "hero_kicker": {
+  "en": "Solar glass explained",
+  "fr": "Le verre solaire expliqué",
+  "nl": "Zonneglas uitgelegd",
+  "de": "Solarglas erklärt",
+  "es": "El vidrio solar, explicado"
+ },
  "hero_text": {
   "en": "Step by step, from the sun to the socket, and how solar glass changed over five generations.",
   "fr": "Étape par étape, du soleil à la prise, et comment le verre solaire a évolué en cinq générations.",
@@ -13,6 +20,41 @@
   "de": "Schritt für Schritt von der Sonne bis zur Steckdose, und wie sich Solarglas über fünf Generationen verändert hat.",
   "es": "Paso a paso, del sol al enchufe, y cómo ha cambiado el vidrio solar en cinco generaciones."
  },
+ "stats": [
+  {
+   "value": 93.5,
+   "unit": "percent",
+   "label": {
+    "en": "of the light gets through low iron glass with an AR coating",
+    "fr": "de la lumière traverse un verre extra-clair avec couche antireflet",
+    "nl": "van het licht gaat door ijzerarm glas met antireflectiecoating",
+    "de": "des Lichts gehen durch eisenarmes Glas mit Antireflexschicht",
+    "es": "de la luz atraviesa el vidrio bajo en hierro con antirreflectante"
+   }
+  },
+  {
+   "value": 25,
+   "unit": "plus",
+   "label": {
+    "en": "years outdoors, in wind, snow and sun",
+    "fr": "ans à l’extérieur, au vent, à la neige et au soleil",
+    "nl": "jaar buiten, in wind, sneeuw en zon",
+    "de": "Jahre im Freien, bei Wind, Schnee und Sonne",
+    "es": "años a la intemperie, con viento, nieve y sol"
+   }
+  },
+  {
+   "value": 5,
+   "unit": "",
+   "label": {
+    "en": "generations of PV glass",
+    "fr": "générations de verre photovoltaïque",
+    "nl": "generaties PV-glas",
+    "de": "Generationen PV-Glas",
+    "es": "generaciones de vidrio fotovoltaico"
+   }
+  }
+ ],
  "chain_title": {
   "en": "From sunlight to power",
   "fr": "De la lumière à l’électricité",
@@ -21,11 +63,11 @@
   "es": "De la luz del sol a la electricidad"
  },
  "chain_text": {
-  "en": "Every solar panel works in the same chain, from the first generation to the fifth: the glass lets light in, the silicon cells turn it into electricity, the frame holds it all together, and the inverter and battery make that power usable day and night. Choose a step to see where it happens.",
-  "fr": "Tous les panneaux solaires fonctionnent selon la même chaîne, de la première à la cinquième génération : le verre laisse entrer la lumière, les cellules de silicium la transforment en électricité, le cadre maintient l’ensemble, et l’onduleur et la batterie rendent cette électricité utilisable jour et nuit. Choisissez une étape pour voir où elle se produit.",
-  "nl": "Elk zonnepaneel werkt volgens dezelfde keten, van de eerste tot de vijfde generatie: het glas laat licht door, de siliciumcellen zetten het om in elektriciteit, het frame houdt alles bij elkaar, en de omvormer en de batterij maken die stroom dag en nacht bruikbaar. Kies een stap om te zien waar die plaatsvindt.",
-  "de": "Jedes Solarmodul funktioniert nach derselben Kette, von der ersten bis zur fünften Generation: Das Glas lässt Licht herein, die Siliziumzellen wandeln es in Strom um, der Rahmen hält alles zusammen, und Wechselrichter und Batterie machen den Strom Tag und Nacht nutzbar. Wählen Sie einen Schritt, um zu sehen, wo er stattfindet.",
-  "es": "Todos los paneles solares funcionan con la misma cadena, de la primera a la quinta generación: el vidrio deja pasar la luz, las células de silicio la convierten en electricidad, el marco lo sostiene todo, y el inversor y la batería hacen que esa energía se pueda usar de día y de noche. Elija un paso para ver dónde ocurre."
+  "en": "Every solar panel works in the same chain, from the first generation to the fifth: the glass lets light in, the silicon cells turn it into electricity, the frame holds it all together, and the inverter and battery make that power usable day and night. The steps play on their own; choose a step, or a part of the diagram, to stop on it.",
+  "fr": "Tous les panneaux solaires fonctionnent selon la même chaîne, de la première à la cinquième génération : le verre laisse entrer la lumière, les cellules de silicium la transforment en électricité, le cadre maintient l’ensemble, et l’onduleur et la batterie rendent cette électricité utilisable jour et nuit. Les étapes défilent d’elles-mêmes; choisissez une étape, ou une partie du schéma, pour vous y arrêter.",
+  "nl": "Elk zonnepaneel werkt volgens dezelfde keten, van de eerste tot de vijfde generatie: het glas laat licht door, de siliciumcellen zetten het om in elektriciteit, het frame houdt alles bij elkaar, en de omvormer en de batterij maken die stroom dag en nacht bruikbaar. De stappen spelen vanzelf af; kies een stap of een deel van het schema om erbij stil te staan.",
+  "de": "Jedes Solarmodul funktioniert nach derselben Kette, von der ersten bis zur fünften Generation: Das Glas lässt Licht herein, die Siliziumzellen wandeln es in Strom um, der Rahmen hält alles zusammen, und Wechselrichter und Batterie machen den Strom Tag und Nacht nutzbar. Die Schritte laufen von selbst ab; wählen Sie einen Schritt oder einen Teil des Schemas, um dort anzuhalten.",
+  "es": "Todos los paneles solares funcionan con la misma cadena, de la primera a la quinta generación: el vidrio deja pasar la luz, las células de silicio la convierten en electricidad, el marco lo sostiene todo, y el inversor y la batería hacen que esa energía se pueda usar de día y de noche. Los pasos avanzan solos; elija un paso, o una parte del esquema, para detenerse en él."
  },
  "diagram_alt": {
   "en": "Diagram: sunlight passes through the glass into the silicon cells; the current flows to an inverter, a battery and a home",
@@ -132,19 +174,47 @@
   "de": "Haus · Netz",
   "es": "Vivienda · red"
  },
- "d_scroll_hint": {
-  "en": "Swipe the diagram sideways to see all of it",
-  "fr": "Faites glisser le schéma sur le côté pour tout voir",
-  "nl": "Veeg het schema opzij om alles te zien",
-  "de": "Schema zur Seite wischen, um alles zu sehen",
-  "es": "Deslice el esquema hacia un lado para verlo entero"
- },
  "steps_label": {
   "en": "Six steps from sunlight to power",
   "fr": "Six étapes de la lumière à l’électricité",
   "nl": "Zes stappen van zonlicht tot stroom",
   "de": "Sechs Schritte vom Sonnenlicht zum Strom",
   "es": "Seis pasos de la luz del sol a la electricidad"
+ },
+ "tour_play": {
+  "en": "Play the steps",
+  "fr": "Lire les étapes",
+  "nl": "Stappen afspelen",
+  "de": "Schritte abspielen",
+  "es": "Reproducir los pasos"
+ },
+ "tour_pause": {
+  "en": "Pause",
+  "fr": "Pause",
+  "nl": "Pauze",
+  "de": "Pause",
+  "es": "Pausa"
+ },
+ "tour_prev": {
+  "en": "Previous step",
+  "fr": "Étape précédente",
+  "nl": "Vorige stap",
+  "de": "Vorheriger Schritt",
+  "es": "Paso anterior"
+ },
+ "tour_next": {
+  "en": "Next step",
+  "fr": "Étape suivante",
+  "nl": "Volgende stap",
+  "de": "Nächster Schritt",
+  "es": "Paso siguiente"
+ },
+ "step_of": {
+  "en": "Step {n} of {total}",
+  "fr": "Étape {n} sur {total}",
+  "nl": "Stap {n} van {total}",
+  "de": "Schritt {n} von {total}",
+  "es": "Paso {n} de {total}"
  },
  "steps": [
   {
@@ -313,6 +383,27 @@
   "nl": "De manier waarop de stroom wordt opgewekt, blijft gelijk. Wat veranderde, is het glas, en daarmee waar zonne-energie wordt gebouwd en wie het koopt: van kleine losstaande panelen tot enorme zonneparken, daken, dubbelzijdige panelen en ten slotte glas dat zelf het gebouw is.",
   "de": "Die Art, wie der Strom entsteht, bleibt gleich. Geändert hat sich das Glas, und mit ihm, wo Solaranlagen gebaut werden und wer sie kauft: von kleinen Inselanlagen über riesige Solarparks, Dächer und doppelseitige Module bis hin zu Glas, das selbst das Gebäude ist.",
   "es": "La forma de generar la energía sigue siendo la misma. Lo que cambió es el vidrio, y con él dónde se instala la energía solar y quién la compra: de pequeños paneles aislados a enormes plantas, techos, paneles bifaciales y, por último, vidrio que es el propio edificio."
+ },
+ "gen_prev": {
+  "en": "Previous generation",
+  "fr": "Génération précédente",
+  "nl": "Vorige generatie",
+  "de": "Vorherige Generation",
+  "es": "Generación anterior"
+ },
+ "gen_next": {
+  "en": "Next generation",
+  "fr": "Génération suivante",
+  "nl": "Volgende generatie",
+  "de": "Nächste Generation",
+  "es": "Generación siguiente"
+ },
+ "chart_title": {
+  "en": "Light through the glass, by generation",
+  "fr": "Lumière transmise par le verre, par génération",
+  "nl": "Lichtdoorlating van het glas per generatie",
+  "de": "Lichtdurchlass des Glases je Generation",
+  "es": "Luz que atraviesa el vidrio, por generación"
  },
  "gen_label": {
   "en": "Generation {n}",
