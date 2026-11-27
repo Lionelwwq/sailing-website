@@ -123,9 +123,10 @@ ul.checks li::before { content: ""; position: absolute; left: 0.02in; top: 0.065
 .glazing .pics div { background-size: cover; background-position: center; }
 
 /* ---------- product pages ---------- */
-.hero { position: absolute; left: 0; right: 0; top: 0; display: flex; gap: 0.04in; background: var(--ink); }
+.hero { position: absolute; left: 0; right: 0; top: 0; display: flex; gap: 0; background: var(--ink); }   /* photos side by side touch: no dark line between them */
 .hero > div { position: relative; height: 100%; background-size: cover; background-position: center; }
 .hero .ribbon { position: absolute; left: var(--m); bottom: 0.3in; z-index: 2; padding: 0.06in 0.14in; background: var(--purple); color: #fff; font-family: var(--head); font-size: 7.6pt; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; }
+.hero.top .ribbon { display: none; }   /* collection photos: their own title and captions say it; the category is under the photo */
 .pbody { position: absolute; left: var(--m); right: var(--m); } /* top is set per page, just under the photo */
 .phead { display: flex; align-items: flex-end; gap: 0.22in; padding-bottom: 0.16in; border-bottom: 1px solid var(--line); }
 .phead .num { font-family: var(--head); font-size: 50pt; font-weight: 700; line-height: .82; color: var(--mist); -webkit-text-stroke: 1.2px var(--purple); }
@@ -152,7 +153,21 @@ table.spec tr:first-child th, table.spec tr:first-child td { border-top: 2px sol
 .lit h4 { font-family: var(--head); font-size: 10pt; font-weight: 600; color: var(--purple); }
 .lit p { margin-top: 0.04in; font-size: 8.4pt; color: var(--muted); }
 
+/* patterned glass: each pattern option with a sample beside its list */
+.swatches { display: grid; grid-template-columns: 1fr 1fr; gap: 0.2in 0.3in; }
+.sw { display: grid; grid-template-columns: 1.15in 1fr; gap: 0.16in; align-items: start; padding-top: 0.12in; border-top: 2px solid var(--purple); }
+.sw > span { display: block; height: 1.3in; background-size: cover; background-position: center; }
+.sw h4 { font-family: var(--head); font-size: 8.8pt; font-weight: 600; margin-bottom: 0.06in; }
+.sw ul { columns: 2; column-gap: 0.12in; font-size: 8.2pt; color: var(--muted); line-height: 1.55; list-style: none; }
+.sw li::before { content: "· "; color: var(--fawn); }
+
 /* drawn heroes for products without photos */
+.g-pv { background: radial-gradient(circle at 16% 26%, rgba(201, 165, 106, .55) 0, rgba(201, 165, 106, .16) 1in, rgba(201, 165, 106, 0) 2.3in), linear-gradient(150deg, #251B3D 0%, #37296B 55%, #5A3A8A 100%); }
+.g-pv .sun { position: absolute; left: 1.05in; top: 0.82in; width: 0.62in; height: 0.62in; border-radius: 50%; background: #E3C893; box-shadow: 0 0 0.3in rgba(227, 200, 147, .8); }
+.g-pv .mod { position: absolute; right: 1.15in; top: 0.62in; width: 3.5in; height: 2.95in; border: 0.06in solid #C9C4D3; border-radius: 0.03in;
+  background: repeating-linear-gradient(90deg, transparent 0 0.42in, rgba(255, 255, 255, .5) 0.42in 0.435in), repeating-linear-gradient(0deg, transparent 0 0.42in, rgba(255, 255, 255, .5) 0.42in 0.435in), linear-gradient(135deg, #46358A, #2A2160);
+  transform: perspective(12in) rotateY(-24deg) rotateX(8deg); box-shadow: 0 0.35in 0.6in rgba(0, 0, 0, .35); }
+.g-pv .mod::after { content: ""; position: absolute; inset: 0; background: linear-gradient(120deg, rgba(255, 255, 255, .3) 0%, rgba(255, 255, 255, 0) 38%); }
 .g-frit { background: linear-gradient(90deg, rgba(63, 42, 99, 0) 10%, rgba(63, 42, 99, .92) 78%), radial-gradient(circle, rgba(237, 231, 243, .92) 1.7px, transparent 2.2px) 0 0 / 11px 11px, linear-gradient(135deg, #6E4E9E, #3F2A63); }
 .g-frit .pane-ill { position: absolute; right: 1.1in; top: 0.8in; width: 2.8in; height: 3.1in; border: 1px solid rgba(255, 255, 255, .5); background: linear-gradient(135deg, rgba(255, 255, 255, .18), rgba(255, 255, 255, .04)); }
 .g-frit .pane-ill::before { content: ""; position: absolute; inset: 0.18in; background: radial-gradient(circle, rgba(201, 165, 106, .95) 2.2px, transparent 2.7px) 0 0 / 12px 12px; -webkit-mask-image: linear-gradient(180deg, #000 30%, transparent 100%); mask-image: linear-gradient(180deg, #000 30%, transparent 100%); }

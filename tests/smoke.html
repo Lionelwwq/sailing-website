@@ -284,13 +284,13 @@
 
     /* ---------- home page front door ---------- */
     const until = async (fn, ms = 5000) => { for (let t = 0; t < ms; t += 100) { if (fn()) return true; await wait(100); } return false; };
-    await test('Home page: the front door, and "Enter the showroom" walks into the showroom', async () => {
+    await test('Home page: the front door, and "Explore Products" walks into the showroom', async () => {
       const { f, d, w } = await open('index.html?lang=de', 1280, 760);
       const photo = $(d, '.door-photo img');
       assert(await until(() => photo.complete && photo.naturalWidth > 0), 'front door picture did not load');
       const btn = $(d, '[data-door-enter]');
-      assert(btn && /showroom\.html$/.test(btn.getAttribute('href')), 'no Enter button to the showroom');
-      assert(/Showroom betreten/.test(btn.textContent), `button says "${btn.textContent}"`);
+      assert(btn && /showroom\.html$/.test(btn.getAttribute('href')), 'no Explore Products button to the showroom');
+      assert(/Produkte entdecken/.test(btn.textContent), `button says "${btn.textContent}"`);
       const r = $(d, '.door-copy').getBoundingClientRect();
       assert(r.right <= 1280 * 0.36, `words reach ${Math.round(r.right)}px, past the stone wall`);
       assert(!(w.__siteErrors || []).length, (w.__siteErrors || []).join('; '));
@@ -317,7 +317,7 @@
       assert(!(w.__siteErrors || []).length, (w.__siteErrors || []).join('; '));
     });
 
-    await test('Catalogue flipbook: turns pages, jumps to a chapter, PDF and thumbnails work', async () => {
+    await test('Catalogue flipbook: turns pages, jumps to a page, PDF and thumbnails work', async () => {
       localStorage.removeItem('sit-cat-edition');
       const { d, w } = await open('catalogue.html?lang=fr', 1280, 800);
       const M = await w.fetch('assets/catalogue/pages.json').then((r) => r.json());
@@ -332,10 +332,10 @@
       assert(await until(() => count().startsWith('2')), `next shows "${count()}"`);
       $(d, '.fb-prev').click();
       assert(await until(() => count().startsWith('1')), `previous shows "${count()}"`);
-      $(d, '#cat-chapters [data-fb-goto="4"]').click();
-      assert(await until(() => count().startsWith('4'), 8000), `chapter opened "${count()}"`);
+      $(d, '#fb-thumbs [data-fb-goto="4"]').click();
+      assert(await until(() => count().startsWith('4'), 8000), `page thumbnail opened "${count()}"`);
       assert(d.querySelectorAll('#fb-thumbs [data-fb-goto]').length === n, 'a page thumbnail is missing');
-      assert(d.querySelectorAll('#cat-chapters .chapter').length >= 10, 'chapter cards missing');
+      assert(!$(d, '#cat-chapters'), 'the "jump to a chapter" cards are back');
       assert([...d.querySelectorAll('[data-cat-pdf]')].every((a) => a.getAttribute('href') === K.pdf), 'a PDF button points elsewhere');
       assert($(d, '[data-cat-pdf][download]'), 'no download button');
       assert(/Mo/.test($(d, '#cat-meta').textContent), `size not in French: ${$(d, '#cat-meta').textContent}`);

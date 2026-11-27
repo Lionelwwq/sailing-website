@@ -34,6 +34,9 @@
   let lang = initialLang();
   // a translatable value is either a plain string or { en, fr, nl, de, es }
   const t = (v) => (v == null ? '' : typeof v === 'string' ? v : (v[lang] || v.en || ''));
+  // a whole content block in the current language: every { en, fr, ... } becomes its text, lists and numbers stay as they are
+  const inLang = (v) => (Array.isArray(v) ? v.map(inLang)
+    : v && typeof v === 'object' ? ('en' in v ? t(v) : Object.fromEntries(Object.entries(v).map(([k, x]) => [k, inLang(x)]))) : v);
 
   // product catalogue edition (English, French or Spanish): a ?edition= link or the visitor's own choice,
   // otherwise it follows the site language when there is an edition in it (French, Spanish), else English
@@ -192,6 +195,18 @@
     renderQuote();
   }
   window.addEventListener('storage', (e) => { if (e.key === QKEY) { quote = store.get(QKEY, []); renderQuote(); } });
+  // a configured item (e.g. an insulated glass unit built on the glass page): added, or updated if it is already there
+  window.SIT_QUOTE = {
+    put(item) {
+      const i = quote.findIndex((q) => q.key === item.key);
+      if (i >= 0) quote[i] = item; else quote.push(item);
+      toast(`<b>${esc(t(item.name))}</b> — ${esc(ui('added_toast'))}`);
+      const btn = $('.quote-btn');
+      btn.classList.remove('bump'); void btn.offsetWidth; btn.classList.add('bump');
+      saveQuote();
+      renderQuote();
+    },
+  };
 
   /* ======================================================================
      Product explorer: tabs that switch photo, description and specs
@@ -221,6 +236,7 @@
       const g = [{ type: 'img', src: it.photo, caption: '' }];
       if (kind === 'accessories' && window.SIT_DIAGRAMS && window.SIT_DIAGRAMS[it.id]) g.push({ type: 'diagram' });
       (it.gallery || []).forEach((x) => g.push({ type: 'img', src: x.image, caption: x.caption }));
+      if (it.builder && window.SIT_IGU) g.push({ type: 'igu3d' });   // the 3D view + "Build your unit" (assets/js/igu3d.js)
       return g;
     }
     function creditFor(src) {
@@ -230,6 +246,7 @@
     function stageHtml(it, g) {
       const s = g[slide] || g[0];
       if (s.type === 'diagram') return { html: window.SIT_DIAGRAMS[it.id], cls: 'diagram', cap: esc(ui('diagram_label')) };
+      if (s.type === 'igu3d') return { html: '', cls: 'igu', cap: esc(t(it.builder.caption)) };
       const isIllustration = /\.svg$/i.test(s.src);
       const cap = esc(t(s.caption)) || (isIllustration ? esc(ui('photo_coming')) : '');
       if (isIllustration) return { html: `<img src="${esc(s.src)}" alt="${esc(t(it.name))}">`, cls: '', cap: cap + creditFor(s.src) };
@@ -254,10 +271,11 @@
           <p class="ex-caption">${st.cap}</p>
           ${g.length > 1 ? `<div class="ex-thumbs">${g.map((x, i) => {
             // the main photo and the diagram get a short tag; extra photos are named by their own caption
-            const tag = i === 0 ? labels.img : x.type === 'diagram' ? labels.diagram : '';
-            const name = tag || t(x.caption) || ui('in_use_label');
-            return `<button class="ex-thumb" type="button" data-slide="${i}" aria-pressed="${i === slide}" aria-label="${esc(name)}" title="${esc(name)}">
-            ${x.type === 'diagram' ? window.SIT_DIAGRAMS[it.id] : `<img src="${esc(x.src)}" alt="" loading="lazy">`}${tag ? `<span class="lbl">${esc(tag)}</span>` : ''}</button>`;
+            const tag = i === 0 ? labels.img : x.type === 'diagram' ? labels.diagram : x.type === 'igu3d' ? '3D' : '';
+            const name = x.type === 'igu3d' ? `3D · ${t(it.builder.title)}` : tag || t(x.caption) || ui('in_use_label');
+            const inner = x.type === 'diagram' ? window.SIT_DIAGRAMS[it.id] : x.type === 'igu3d' ? window.SIT_IGU.thumb : `<img src="${esc(x.src)}" alt="" loading="lazy">`;
+            return `<button class="ex-thumb${x.type === 'igu3d' ? ' ex-3d' : ''}" type="button" data-slide="${i}" aria-pressed="${i === slide}" aria-label="${esc(name)}" title="${esc(name)}">
+            ${inner}${tag ? `<span class="lbl">${esc(tag)}</span>` : ''}</button>`;
           }).join('')}</div>` : ''}
         </div>
         <div class="ex-info">
@@ -278,11 +296,22 @@
           </div>
         </div>`;
     }
+    // the insulated glass 3D view: its texts in this language, plus the quote-list name in every language
+    function igu() {
+      if (!window.SIT_IGU) return;
+      const it = items.find((i) => i.id === current);
+      const s = it && gallery(it)[slide];
+      if (!s || s.type !== 'igu3d') { window.SIT_IGU.unmount(); return; }
+      const B = it.builder;
+      const all = Object.fromEntries(LANGS.map((l) => [l, { quote_name: B.quote_name[l] || B.quote_name.en, air: B.air[l] || B.air.en, argon: B.argon[l] || B.argon.en }]));
+      window.SIT_IGU.mount($('.ex-stage', el), $('.ex-info', el), { ...inLang(B), all }, HTML_LANG[lang], it);
+    }
     function render() {
       el.innerHTML = `<div class="ex-tabs" role="tablist" aria-orientation="${narrow.matches ? 'horizontal' : 'vertical'}" aria-label="${esc(t(C.productPages[kind].title))}">${tabsHtml()}</div>
         <article class="ex-panel" id="ex-panel" role="tabpanel" aria-labelledby="tab-${esc(current)}">${panelHtml()}</article>`;
       renderQuote();
       revealTab();
+      igu();
     }
     // keep the selected tab visible inside the tab list (vertical on desktop, a swipeable row on phones)
     function revealTab() {
@@ -301,6 +330,7 @@
       $$('.ex-tab', el).forEach((b) => { const on = b.dataset.ex === id; b.setAttribute('aria-selected', String(on)); b.tabIndex = on ? 0 : -1; if (on && focusTab) b.focus(); });
       const panel = $('#ex-panel', el);
       panel.setAttribute('aria-labelledby', `tab-${id}`);
+      if (window.SIT_IGU) window.SIT_IGU.unmount();
       panel.innerHTML = panelHtml();
       panel.style.animation = 'none'; void panel.offsetWidth; panel.style.animation = '';
       renderQuote();
@@ -321,6 +351,7 @@
         stage.className = `ex-stage ${st.cls}`; stage.innerHTML = st.html;
         $('.ex-caption', el).innerHTML = st.cap;
         $$('.ex-thumb', el).forEach((b, i) => b.setAttribute('aria-pressed', String(i === slide)));
+        igu();
       }
     });
     el.addEventListener('keydown', (e) => {
@@ -388,6 +419,11 @@
           <i aria-hidden="true"></i><span>${esc(t(m.name))}${t(m.note) ? `<small>${esc(t(m.note))}</small>` : ''}</span></button>`).join('');
         $('#globe-labels').innerHTML = A.markets.map((m, i) => `<span data-market="${esc(m.id)}" class="${i ? '' : 'hub'}">${esc(t(m.name))}</span>`).join('');
       }
+      // our milestones (the boat and the timeline are drawn by assets/js/journey.js)
+      if (A.milestones) {
+        window.__sitAbout = { lang: HTML_LANG[lang], text: inLang({ milestones: A.milestones, vision: A.vision, journey_planned: A.journey_planned, journey_prev: A.journey_prev, journey_next: A.journey_next }) };
+        document.dispatchEvent(new CustomEvent('sit:about', { detail: window.__sitAbout }));
+      }
       $('#serve').innerHTML = A.serve.map((s, i) => `<div class="photo-card reveal" style="--d:${i * 80}ms"><img src="${esc(s.image)}" alt="" loading="lazy"><h3>${esc(t(s.title))}</h3><p>${esc(t(s.text))}</p></div>`).join('');
     },
     catalogue() {
@@ -404,12 +440,6 @@
       $('#fb-thumbs').innerHTML = K.pages.map((p) => `<button type="button" data-fb-goto="${p.page}" aria-label="${esc(pageName(p.page))}" aria-current="false">
         <img src="${esc(p.image)}" alt="" loading="lazy" width="510" height="660"><span>${p.page}</span></button>`).join('');
       $('#cat-stats').innerHTML = (P.stats || []).map((x) => `<div><strong data-count="${esc(String(x.value).replace('{pages}', K.pages.length))}">${esc(String(x.value).replace('{pages}', K.pages.length))}</strong><span>${esc(t(x.label))}</span></div>`).join('');
-      $('#cat-chapters').innerHTML = (P.chapters || []).map((c, i) => {
-        const pg = K.pages.find((x) => x.page === c.page) || K.pages[0];
-        return `<button type="button" class="chapter reveal" style="--d:${(i % 4) * 70}ms" data-fb-goto="${c.page}">
-          <span class="ch-img"><img src="${esc(pg.image)}" alt="" loading="lazy" width="510" height="660"></span>
-          <span class="ch-txt"><b>${esc(t(c.title))}</b><small>${esc(pageName(c.page))}</small></span></button>`;
-      }).join('');
       // assets/js/catalogue.js builds the book from these pages (and swaps it when the edition changes)
       window.__sitCatalogue = { edition: ed, pages: K.pages };
       document.dispatchEvent(new CustomEvent('sit:catalogue', { detail: window.__sitCatalogue }));
@@ -439,10 +469,7 @@
     'pv-glass'() {
       // How PV glass works: the fixed texts and diagram labels use data-c; the six steps and five generations
       // are drawn by assets/js/pv-glass.js from these texts (in the current language)
-      // every { en, fr, ... } in the page content becomes the text in the current language, lists and numbers stay as they are
-      const tr = (v) => (Array.isArray(v) ? v.map(tr)
-        : v && typeof v === 'object' ? ('en' in v ? t(v) : Object.fromEntries(Object.entries(v).map(([k, x]) => [k, tr(x)]))) : v);
-      window.__sitPv = { lang: HTML_LANG[lang], text: tr(C.page) };
+      window.__sitPv = { lang: HTML_LANG[lang], text: inLang(C.page) };
       document.dispatchEvent(new CustomEvent('sit:pvglass', { detail: window.__sitPv }));
     },
     contact() {

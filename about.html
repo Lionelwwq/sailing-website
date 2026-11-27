@@ -4,19 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About Us | Sailing International Trade</title>
-  <meta name="description" content="Sailing International Trade has supplied custom glass, mirrors, installation and glass industry accessories in Toronto since 1993.">
+  <meta name="description" content="Sailing International Trade supplies architectural glass, mirrors and related products, with glass manufacturing roots in Qingdao, China since 1993 and a sales office in Toronto.">
   <meta name="theme-color" content="#25232A">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Sailing International Trade">
   <meta property="og:title" content="About Us | Sailing International Trade">
-  <meta property="og:description" content="Sailing International Trade has supplied custom glass, mirrors, installation and glass industry accessories in Toronto since 1993.">
+  <meta property="og:description" content="Sailing International Trade supplies architectural glass, mirrors and related products, with glass manufacturing roots in Qingdao, China since 1993 and a sales office in Toronto.">
   <meta property="og:image" content="https://lionelwwq.github.io/sailing-website/assets/img/site/hero-about-door.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" href="assets/img/site/sailing-mark.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=9b7ff7ce">
+  <link rel="stylesheet" href="assets/css/style.css?v=5ec58365">
   <script>document.documentElement.classList.add('js'); window.__siteErrors = []; addEventListener('error', function (e) { __siteErrors.push(e.message); }); addEventListener('unhandledrejection', function (e) { __siteErrors.push(String(e.reason)); }); setTimeout(function () { document.documentElement.classList.add('ready'); }, 4000);</script>
 </head>
 <body data-page="about">
@@ -53,7 +53,7 @@
 <header class="site-header" id="site-header">
   <div class="container header-inner">
     <a class="brand" href="index.html" aria-label="Sailing International Trade">
-      <img class="logo" src="assets/img/site/sailing-logo.png" width="560" height="150" alt="Sailing International Trade Ltd">
+      <img class="logo" src="assets/img/site/sailing-logo.png" width="733" height="150" alt="Sailing International Trade Ltd">
     </a>
 
     <nav class="nav" aria-label="Primary">
@@ -117,7 +117,8 @@
 
 <main id="main">
 <noscript><p class="noscript">This website needs JavaScript to show its content. Please enable JavaScript, or call 437-880-8427.</p><style>.js main, main { opacity: 1 !important; }</style></noscript>
-<section class="page-hero" aria-labelledby="page-title">
+<link rel="stylesheet" href="assets/css/journey.css?v=14a16f45">
+  <section class="page-hero" aria-labelledby="page-title">
     <img class="hero-bg" src="assets/img/site/hero-about-door.jpg" data-c-src="hero_image" alt="" fetchpriority="high">
     <div class="container">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html" data-ui="nav_home">Home</a><span aria-hidden="true">/</span><span data-ui="nav_about">About Us</span></nav>
@@ -141,7 +142,6 @@
   <section class="sec sec-gray" aria-labelledby="values-title">
     <div class="container center">
       <h2 class="h-up reveal" id="values-title" data-c="values_title"></h2>
-      <p class="lead-strong values-motto reveal" data-c="values_motto"></p>
       <div class="pillars pillars-4" id="values"></div>
     </div>
   </section>
@@ -171,6 +171,47 @@
     </div>
   </section>
 
+  <!-- Our milestones: a boat sails along a gold route from stop to stop while the visitor scrolls (or picks a year);
+       the 2027 plan sits apart by a lighthouse, marked "Planned". Phones: a vertical timeline.
+       Behaviour in assets/js/journey.js, look in assets/css/journey.css, texts in content/pages/about.json (milestones, vision). -->
+  <section class="jr" id="journey" aria-labelledby="journey-title">
+    <div class="jr-track" id="jr-track">
+      <div class="jr-stage">
+        <div class="container">
+          <div class="jr-head">
+            <div>
+              <span class="jr-eyebrow" data-c="journey_eyebrow"></span>
+              <h2 class="h-up" id="journey-title" data-c="journey_title"></h2>
+            </div>
+            <p class="jr-lede" data-c="journey_text"></p>
+            <div class="jr-ctrl">
+              <button type="button" id="jr-prev"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+              <button type="button" id="jr-next"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+            </div>
+          </div>
+          <div class="jr-scene" id="jr-scene">
+            <div class="jr-years" id="jr-years" role="tablist" aria-labelledby="journey-title"></div>
+            <svg class="jr-map" viewBox="0 0 1200 400" aria-hidden="true">
+              <path class="jr-route-dim" id="jr-route-dim"/><path class="jr-route-plan" id="jr-route-plan"/><path class="jr-route-on" id="jr-route-on"/>
+            </svg>
+            <div class="jr-light" aria-hidden="true"><svg viewBox="0 0 110 160">
+              <path class="beam" d="M44 50L-34 22L-30 88Z" fill="#FFF0BD"/><path class="beam" d="M77 50L150 26L148 86Z" fill="#FFF0BD"/>
+              <path d="M49 65L38 151H84L73 65Z" fill="#EDE0CD"/><path d="M45 90H78M42 115H82" stroke="#AA8A70" stroke-width="2"/>
+              <path d="M41 65H80L74 53H47Z" fill="#8C74B0"/><path class="lamp" d="M47 42H75V55H47Z" fill="#F2D594"/>
+              <path d="M41 42L61 23L82 42Z" fill="#D9CDE8"/><path d="M61 23V11" stroke="#D9CDE8" stroke-width="2"/>
+              <path d="M49 151H35L30 160H92L87 151Z" fill="#4A3A63"/></svg></div>
+            <div class="jr-stops" id="jr-stops"></div>
+            <div class="jr-boat" id="jr-boat" aria-hidden="true"><svg viewBox="0 0 100 90">
+              <path class="b-mast" d="M49 12V66"/><path class="b-sail" d="M46 14Q12 38 19 61L46 63Z"/><path class="b-sail2" d="M54 22Q82 45 70 60L54 63Z"/>
+              <path class="b-hull" d="M11 67Q45 83 89 68Q76 90 27 82Z"/><path class="b-wake" d="M6 84Q48 93 94 81"/></svg></div>
+          </div>
+          <div class="jr-card" id="jr-card" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container"><ol class="jr-list" id="jr-list"></ol></div>
+  </section>
+
   <section class="sec sec-gray" aria-labelledby="serve-title">
     <div class="container">
       <h2 class="h-up center reveal" id="serve-title" data-c="serve_title"></h2>
@@ -192,6 +233,7 @@
   </section>
 
 <script src="assets/js/globe.js?v=9a10dada" defer></script>
+<script src="assets/js/journey.js?v=591a9aa2" defer></script>
 
 </main>
 
@@ -199,7 +241,7 @@
 <footer class="site-footer">
   <div class="container footer-grid">
     <div class="footer-brand">
-      <img class="logo" src="assets/img/site/sailing-logo.png" width="560" height="150" alt="Sailing International Trade Ltd">
+      <img class="logo" src="assets/img/site/sailing-logo-light.png" width="733" height="150" alt="Sailing International Trade Ltd">
       <p data-ui="footer_tagline"></p>
     </div>
     <div>
@@ -267,6 +309,6 @@
 </div>
 
 <script src="assets/js/diagrams.js?v=f4591053"></script>
-<script src="assets/js/site.js?v=63787565"></script>
+<script src="assets/js/site.js?v=ef295cb5"></script>
 </body>
 </html>

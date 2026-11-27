@@ -1056,7 +1056,219 @@
     "aluminum-spacer",
     "molecular-sieve",
     "silicone-adhesive"
-   ]
+   ],
+   "builder": {
+    "caption": {
+     "en": "Drag to turn the unit; choose a build-up to see it change.",
+     "fr": "Faites glisser pour tourner l'unité ; choisissez une composition pour la voir changer.",
+     "nl": "Sleep om de eenheid te draaien; kies een opbouw om hem te zien veranderen.",
+     "de": "Ziehen, um die Einheit zu drehen; wählen Sie einen Aufbau, um die Änderung zu sehen.",
+     "es": "Arrastre para girar la unidad; elija una composición para verla cambiar."
+    },
+    "title": {
+     "en": "Build your unit",
+     "fr": "Composez votre unité",
+     "nl": "Stel uw eenheid samen",
+     "de": "Stellen Sie Ihre Einheit zusammen",
+     "es": "Configure su unidad"
+    },
+    "common": {
+     "en": "Common build-ups · overall {overall}",
+     "fr": "Compositions courantes · épaisseur totale {overall}",
+     "nl": "Gangbare opbouwen · totale dikte {overall}",
+     "de": "Übliche Aufbauten · Gesamtdicke {overall}",
+     "es": "Composiciones habituales · espesor total {overall}"
+    },
+    "residential": {
+     "en": "Residential",
+     "fr": "Résidentiel",
+     "nl": "Woningbouw",
+     "de": "Wohnbau",
+     "es": "Residencial"
+    },
+    "commercial": {
+     "en": "Commercial",
+     "fr": "Commercial",
+     "nl": "Utiliteitsbouw",
+     "de": "Gewerbe",
+     "es": "Comercial"
+    },
+    "own": {
+     "en": "Or pair your own",
+     "fr": "Ou associez vos propres verres",
+     "nl": "Of kies zelf de combinatie",
+     "de": "Oder kombinieren Sie selbst",
+     "es": "O combine los suyos"
+    },
+    "outer": {
+     "en": "Outer",
+     "fr": "Extérieur",
+     "nl": "Buiten",
+     "de": "Außen",
+     "es": "Exterior"
+    },
+    "inner": {
+     "en": "Inner",
+     "fr": "Intérieur",
+     "nl": "Binnen",
+     "de": "Innen",
+     "es": "Interior"
+    },
+    "fill": {
+     "en": "Cavity fill",
+     "fr": "Remplissage",
+     "nl": "Spouwvulling",
+     "de": "Füllung",
+     "es": "Relleno de la cámara"
+    },
+    "air": {
+     "en": "Air",
+     "fr": "Air",
+     "nl": "Lucht",
+     "de": "Luft",
+     "es": "Aire"
+    },
+    "argon": {
+     "en": "Argon",
+     "fr": "Argon",
+     "nl": "Argon",
+     "de": "Argon",
+     "es": "Argón"
+    },
+    "lowe": {
+     "en": "Low-E coating",
+     "fr": "Couche Low-E",
+     "nl": "Low-E-coating",
+     "de": "Low-E-Beschichtung",
+     "es": "Capa Low-E"
+    },
+    "yes": {
+     "en": "Yes",
+     "fr": "Oui",
+     "nl": "Ja",
+     "de": "Ja",
+     "es": "Sí"
+    },
+    "no": {
+     "en": "No",
+     "fr": "Non",
+     "nl": "Nee",
+     "de": "Nein",
+     "es": "No"
+    },
+    "surface2": {
+     "en": "surface 2",
+     "fr": "face 2",
+     "nl": "positie 2",
+     "de": "Position 2",
+     "es": "cara 2"
+    },
+    "yours": {
+     "en": "Your build-up",
+     "fr": "Votre composition",
+     "nl": "Uw opbouw",
+     "de": "Ihr Aufbau",
+     "es": "Su composición"
+    },
+    "spacer": {
+     "en": "spacer",
+     "fr": "intercalaire",
+     "nl": "afstandhouder",
+     "de": "Abstandhalter",
+     "es": "espaciador"
+    },
+    "qty": {
+     "en": "Quantity",
+     "fr": "Quantité",
+     "nl": "Aantal",
+     "de": "Menge",
+     "es": "Cantidad"
+    },
+    "add": {
+     "en": "Add {qty} × {build} IGU to quote list",
+     "fr": "Ajouter {qty} × IGU {build} à la soumission",
+     "nl": "{qty} × IGU {build} aan offertelijst toevoegen",
+     "de": "{qty} × IGU {build} zur Angebotsliste hinzufügen",
+     "es": "Agregar {qty} × IGU {build} a la lista de cotización"
+    },
+    "sel": {
+     "en": "Your selection",
+     "fr": "Votre choix",
+     "nl": "Uw keuze",
+     "de": "Ihre Auswahl",
+     "es": "Su selección"
+    },
+    "overall_label": {
+     "en": "Overall thickness",
+     "fr": "Épaisseur totale",
+     "nl": "Totale dikte",
+     "de": "Gesamtdicke",
+     "es": "Espesor total"
+    },
+    "separate": {
+     "en": "Separate layers",
+     "fr": "Séparer les couches",
+     "nl": "Lagen scheiden",
+     "de": "Schichten trennen",
+     "es": "Separar capas"
+    },
+    "labels": {
+     "en": "Labels",
+     "fr": "Étiquettes",
+     "nl": "Labels",
+     "de": "Beschriftung",
+     "es": "Etiquetas"
+    },
+    "rotate": {
+     "en": "Rotate",
+     "fr": "Rotation",
+     "nl": "Draaien",
+     "de": "Drehen",
+     "es": "Girar"
+    },
+    "reset": {
+     "en": "Reset",
+     "fr": "Réinitialiser",
+     "nl": "Herstellen",
+     "de": "Zurücksetzen",
+     "es": "Restablecer"
+    },
+    "outer_pane": {
+     "en": "Outer glass",
+     "fr": "Verre extérieur",
+     "nl": "Buitenruit",
+     "de": "Außenscheibe",
+     "es": "Vidrio exterior"
+    },
+    "inner_pane": {
+     "en": "Inner glass",
+     "fr": "Verre intérieur",
+     "nl": "Binnenruit",
+     "de": "Innenscheibe",
+     "es": "Vidrio interior"
+    },
+    "spacer_part": {
+     "en": "Spacer",
+     "fr": "Intercalaire",
+     "nl": "Afstandhouder",
+     "de": "Abstandhalter",
+     "es": "Espaciador"
+    },
+    "cavity": {
+     "en": "cavity",
+     "fr": "dans la lame",
+     "nl": "in de spouw",
+     "de": "im Zwischenraum",
+     "es": "en la cámara"
+    },
+    "quote_name": {
+     "en": "Insulated glass unit {build} mm, {fill}{lowe}",
+     "fr": "Unité de verre isolant {build} mm, {fill}{lowe}",
+     "nl": "Isolatieglaseenheid {build} mm, {fill}{lowe}",
+     "de": "Isolierglaseinheit {build} mm, {fill}{lowe}",
+     "es": "Unidad de vidrio aislante {build} mm, {fill}{lowe}"
+    }
+   }
   },
   {
    "id": "coated",

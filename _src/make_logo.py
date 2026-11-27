@@ -1,21 +1,26 @@
-"""Make the website's logo files from the new Sailing mark (_src/brand/sailing-mark.png).
+"""Make the website's logo files from Sailing's logo artwork (2026: the mark with gold details, used everywhere).
+
+    _src/brand/sailing-mark.png     the mark alone (from Logo_Signature_Boat.pdf)
+    _src/brand/sailing-lockup.png   the mark with SAILING (from Logo_Sailing.pdf)
+To change the logo: export new PNGs with a transparent background over these two files and run this script.
 
     python _src/make_logo.py
 
 Writes:
-    assets/img/site/sailing-logo.png             header and footer logo: mark + SAILING / INTERNATIONAL TRADE LTD, for dark backgrounds
+    assets/img/site/sailing-logo.png        header logo: the logo as designed, for the white header bar
+    assets/img/site/sailing-logo-light.png  footer logo: the lightened mark + SAILING in white, for dark backgrounds
     assets/img/site/sailing-mark.png        the mark alone in its own colours (browser tab icon)
     assets/img/site/sailing-mark-light.png  the mark alone, lightened for dark backgrounds (catalogue)
 """
 import colorsys
 import pathlib
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 MARK = ROOT / '_src' / 'brand' / 'sailing-mark.png'
+LOCKUP = ROOT / '_src' / 'brand' / 'sailing-lockup.png'
 OUT = ROOT / 'assets' / 'img' / 'site'
-FONT = 'C:/Windows/Fonts/bahnschrift.ttf'      # same signage font as the building sign (_src/warehouse_sign.py)
 
 
 def mark():
@@ -40,39 +45,6 @@ def lighten(im, lift=0.42):
     return out
 
 
-def text(t, size, weight, tracking, fill):
-    f = ImageFont.truetype(FONT, size)
-    f.set_variation_by_name(weight)
-    widths = [f.getlength(ch) for ch in t]
-    w = int(sum(widths) + tracking * size * (len(t) - 1)) + size
-    asc, desc = f.getmetrics()
-    im = Image.new('RGBA', (w, asc + desc), (0, 0, 0, 0))
-    g = ImageDraw.Draw(im)
-    x = 0
-    for ch, cw in zip(t, widths):
-        g.text((x, 0), ch, font=f, fill=fill)
-        x += cw + tracking * size
-    return im.crop(im.getbbox())
-
-
-def lockup(mk, fill=(255, 255, 255, 255), H=150):
-    mk = mk.resize((round(mk.width * H / mk.height), H), Image.LANCZOS)
-    name = text('SAILING', 62, b'Bold', 0.05, fill)
-    tag = text('INTERNATIONAL TRADE LTD', 22, b'SemiBold', 0.16, fill)
-    if tag.width > name.width:
-        name = name.resize((tag.width, round(name.height * tag.width / name.width)), Image.LANCZOS)
-    else:
-        tag = tag.resize((name.width, round(tag.height * name.width / tag.width)), Image.LANCZOS)
-    gap, space = 14, 22
-    block = name.height + gap + tag.height
-    im = Image.new('RGBA', (mk.width + space + name.width, H), (0, 0, 0, 0))
-    im.alpha_composite(mk, (0, 0))
-    y = (H - block) // 2
-    im.alpha_composite(name, (mk.width + space, y))
-    im.alpha_composite(tag, (mk.width + space, y + name.height + gap))
-    return im
-
-
 def square(im, size, pad=0.06):
     s = round(size * (1 - 2 * pad))
     k = s / max(im.size)
@@ -82,15 +54,41 @@ def square(im, size, pad=0.06):
     return out
 
 
+def split_lockup():
+    """The designed logo, cut into the mark and the word at the empty gap between them."""
+    lk = Image.open(LOCKUP).convert('RGBA')
+    lk = lk.crop(lk.getbbox())
+    a = lk.getchannel('A').load()
+    filled = [any(a[x, y] > 40 for y in range(0, lk.height, 2)) for x in range(lk.width)]
+    end = next(x for x in range(lk.width // 8, lk.width) if not filled[x])      # first empty column after the mark
+    start = next(x for x in range(end, lk.width) if filled[x])                    # where SAILING starts
+    return lk, end, start
+
+
+def whiten(im):
+    """Every visible pixel white, keeping its transparency (the word on dark backgrounds)."""
+    out = Image.new('RGBA', im.size, (255, 255, 255, 0))
+    out.putalpha(im.getchannel('A'))
+    return out
+
+
 def main():
     m = mark()
     light = lighten(m)
-    lock = lockup(light)
-    lock.save(OUT / 'sailing-logo.png', optimize=True)
+    lk, end, start = split_lockup()
+    H = 150
+    head = lk.resize((round(lk.width * H / lk.height), H), Image.LANCZOS)
+    head.save(OUT / 'sailing-logo.png', optimize=True)
+    # footer: the same logo, the mark lightened and the word in white
+    foot = Image.new('RGBA', lk.size, (0, 0, 0, 0))
+    foot.alpha_composite(lighten(lk.crop((0, 0, end, lk.height))), (0, 0))
+    foot.alpha_composite(whiten(lk.crop((start, 0, lk.width, lk.height))), (start, 0))
+    foot = foot.resize(head.size, Image.LANCZOS)
+    foot.save(OUT / 'sailing-logo-light.png', optimize=True)
     square(m, 192).save(OUT / 'sailing-mark.png', optimize=True)
     lm = light.resize((600, round(light.height * 600 / light.width)), Image.LANCZOS)
     lm.save(OUT / 'sailing-mark-light.png', optimize=True)
-    print('sailing-logo.png', lock.size, '| sailing-mark.png 192 x 192 | sailing-mark-light.png', lm.size)
+    print('sailing-logo.png', head.size, '| sailing-logo-light.png', foot.size, '| sailing-mark.png 192 x 192 | sailing-mark-light.png', lm.size)
 
 
 if __name__ == '__main__':

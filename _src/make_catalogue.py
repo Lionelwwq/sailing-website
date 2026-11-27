@@ -117,9 +117,10 @@ USES_ES = {
 
 # ---------------------------------------------------------------- helpers
 def logo(text_color, size='0.42in'):
-    """The Sailing logo: the script-S mark (lightened for the dark pages it sits on) with the company name."""
+    """The Sailing logo: the script-S mark (lightened for the dark pages it sits on) with SAILING (no "International Trade
+    Ltd" line, as on the website and the storefront sign)."""
     return (f'<span class="logo"><img src="{png("assets/img/site/sailing-mark-light.png")}" style="height:{size}" alt="">'
-            f'<span style="color:{text_color}"><b>SAILING</b><i>INTERNATIONAL TRADE LTD</i></span></span>')
+            f'<span style="color:{text_color}"><b>SAILING</b></span></span>')
 
 
 def folio(n, light=False):
@@ -143,6 +144,28 @@ def img(path, max_px=2400):
         dst.parent.mkdir(parents=True, exist_ok=True)
         im.save(dst, quality=84, optimize=True, progressive=True)
     _prepared[path] = f'img/{name}'
+    return _prepared[path]
+
+
+def banner(path):
+    """A wide "collection" photo that sits on a plain band at the top and bottom of a square picture: crop to the picture
+    itself, so the page shows it whole with no added background. Returns (build path, width / height)."""
+    if path in _prepared:
+        return _prepared[path]
+    src = ROOT / path
+    im = Image.open(src).convert('RGB')
+    w, h = im.size
+    px = im.load()
+    corner = px[2, 2]
+    def plain(y):   # a row of nothing but the background colour
+        return all(sum(abs(a - b) for a, b in zip(px[x, y], corner)) < 18 for x in range(0, w, max(1, w // 64)))
+    top = next(y for y in range(h) if not plain(y))
+    bottom = next(y for y in range(h - 1, -1, -1) if not plain(y))
+    im = im.crop((0, top, w, bottom + 1))
+    dst = BUILD / 'img' / f'{src.stem}-banner.jpg'
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    im.save(dst, quality=86, optimize=True, progressive=True)
+    _prepared[path] = (f'img/{dst.name}', im.width / im.height)
     return _prepared[path]
 
 
@@ -172,15 +195,22 @@ def checks(items):
 Lb = 'assets/img/library/'
 Wh = 'assets/img/warehouse/'
 AI = 'assets/img/ai/'
+SC = 'assets/img/showroom/closeups/'   # the showroom product close-ups (4:3)
 
 
 def groups(title, items):
     return f'<div><h4>{E(tx(title))}</h4><p>{", ".join(items)}</p></div>'
 
 
+def swatch(photo, title, items):
+    """A pattern sample beside its list (the layout of the old catalogue's patterned glass page)."""
+    return (f'<div class="sw"><span style="background-image:url({img(photo)})"></span>'
+            f'<div><h4>{E(tx(title))}</h4><ul>{"".join(f"<li>{E(i)}</li>" for i in items)}</ul></div></div>')
+
+
 PRODUCTS = [
     dict(no=1, name=L('Clear Float Glass', 'Verre flotté clair', 'Vidrio flotado claro'), cat='flat', uses=('glass', 'clear-float'),
-         hero=[(Lb + 'clear-float-studio.jpg', .42, 'center 40%'), (Lb + 'clear-float-edge.jpg', .58, 'right bottom', 'auto 175%')],
+         hero_h=3.134, hero=[(Lb + 'clear-vs-low-iron.jpg', 1.5, 'center', '100% 100%'), (Lb + 'clear-float-edge.jpg', 1.2125, 'center', '100% 100%')],
          desc=L('Float glass is made by floating molten glass over a bath of molten tin, which gives it an even thickness and a smooth, '
                 'distortion-free surface. Its optical clarity and flatness make it the standard choice for architectural and interior glazing, '
                 'and the base for tempering, laminating and insulated units.',
@@ -192,7 +222,7 @@ PRODUCTS = [
                 'aplicaciones arquitectónicas y de interiores, y en la base del vidrio templado, laminado y aislante.'),
          specs=[(T['thick'], L('1.8–25 mm', '1,8–25 mm', '1,8–25 mm')), (T['reg'], REGULAR), (T['max'], sz(192, 433))]),
     dict(no=2, name=L('Low Iron Glass', 'Verre à faible teneur en fer', 'Vidrio bajo en hierro'), cat='flat', uses=('glass', 'low-iron'),
-         hero=[(Lb + 'low-iron-studio.jpg', .42, 'center 40%'), (Lb + 'low-iron-edge.jpg', .58, 'right bottom', 'auto 175%')],
+         hero_h=3.134, hero=[(Lb + 'clear-vs-low-iron.jpg', 1.5, 'center', '100% 100%'), (Lb + 'clear-float-edge.jpg', 1.2125, 'center', '100% 100%')],
          desc=L('Low iron glass has a reduced iron content for exceptional clarity and high light transmission, without the green tint of '
                 'standard clear glass. Its crystal-clear look suits architectural, display and decorative work where visual clarity matters.',
                 'Le verre à faible teneur en fer offre une clarté exceptionnelle et une transmission lumineuse élevée, sans la teinte verdâtre '
@@ -203,7 +233,7 @@ PRODUCTS = [
                 'expositivas y decorativas donde la claridad visual es esencial.'),
          specs=[(T['thick'], L('1.8–22 mm', '1,8–22 mm', '1,8–22 mm')), (T['reg'], REGULAR), (T['max'], sz(192, 433))]),
     dict(no=3, name=L('Tinted Glass', 'Verre teinté', 'Vidrio tintado'), cat='flat', uses=('glass', 'tinted'),
-         hero=[(Lb + 'tinted-collection.jpg', 1, 'center 8%')],
+         banner=Lb + 'tinted-collection.jpg',
          desc=L('Tinted glass has colour added to the glass itself to reduce solar heat gain and glare while still letting in natural light. '
                 'Available in a range of colours, it gives both solar control and design freedom for facades, windows and interiors.',
                 'Le verre teinté intègre la couleur directement dans le verre afin de réduire la chaleur solaire et l’éblouissement, tout en '
@@ -216,7 +246,7 @@ PRODUCTS = [
                                  'Gris Euro, Bronce Euro, Gris Súper y más')),
                 (T['thick'], '3–12 mm'), (T['reg'], REGULAR), (T['max'], sz(96, 295))]),
     dict(no=4, name=L('Low-E Glass', 'Verre Low-E', 'Vidrio Low-E'), cat='flat', uses=('glass', 'coated'),
-         hero=[(Lb + 'low-e-facade.jpg', .62, 'center'), (Lb + 'low-e-office.jpg', .38, 'center')],
+         hero=[(Lb + 'low-e-facade.jpg', 1, 'center')],
          desc=L('Low-E glass carries a low-emissivity coating that cuts heat transfer while keeping natural light. It improves thermal '
                 'insulation and energy efficiency, making it the right choice for facades, windows and energy-efficient buildings.',
                 'Le verre Low-E est doté d’un revêtement à faible émissivité qui réduit le transfert de chaleur tout en conservant la lumière '
@@ -232,7 +262,7 @@ PRODUCTS = [
                    'Performances similaires ou équivalentes à Planibel G, S48, SA, SS22, EA, SC60, SFC, SL60, Solarban 60 et Solarban 70',
                    'Rendimiento similar o equivalente a Planibel G, S48, SA, SS22, EA, SC60, SFC, SL60, Solarban 60 y Solarban 70'))]),
     dict(no=5, name=L('Reflective Glass', 'Verre réfléchissant', 'Vidrio reflectante'), cat='flat', uses=('glass', 'coated'),
-         hero=[(Lb + 'reflective-pavilion.jpg', .5, 'center 60%'), (Lb + 'reflective-diagram.jpg', .5, 'center')],
+         hero=[(SC + 'glass-coated.jpg', 1, 'center 42%')],
          desc=L('Reflective glass has a metallic coating that reduces solar heat gain and glare and gives a distinctive mirrored look. '
                 'It improves solar control and visual comfort on facades, curtain walls and windows.',
                 'Le verre réfléchissant est doté d’un revêtement métallique qui réduit la chaleur solaire et l’éblouissement tout en offrant '
@@ -243,7 +273,7 @@ PRODUCTS = [
                 (T['colour'], L('Euro Grey, Euro Bronze, Super Grey and more', 'Gris Euro, Bronze Euro, Gris Super et plus',
                                 'Gris Euro, Bronce Euro, Gris Súper y más'))]),
     dict(no=6, name=L('Tempered Glass', 'Verre trempé', 'Vidrio templado'), cat='processed', uses=('glass', 'tempered'),
-         hero=[(AI + 'tempered-glass.jpg', .55, 'center'), (Wh + 'zone-racks.webp', .45, 'center 55%')],
+         hero=[(SC + 'glass-tempered.jpg', 1, 'center 62%')],
          desc=L('Tempered glass is safety glass, heat- or chemically treated to be four to five times stronger than standard annealed glass. '
                 'If it breaks, it crumbles into small, blunt pieces instead of sharp shards. Typical uses include shower enclosures, railings, '
                 'skylights, windows under high wind loads, table tops and shelves.',
@@ -278,7 +308,7 @@ PRODUCTS = [
                                 'Claro, blanco lechoso, verde, azul, bronce y más')),
                 (T['std'], 'EN 14449, ANSI Z97.1, ASTM C1048, GB/T 15763.3')]),
     dict(no=8, name=L('Insulated Glass Units (IGUs)', 'Vitrage isolant (IGU)', 'Unidad de vidrio aislante (IGU)'), cat='processed',
-         uses=('glass', 'insulated'), hero=[(Lb + 'igu-window.jpg', .6, 'center'), (Lb + 'igu-corner.jpg', .4, 'center 40%')],
+         uses=('glass', 'insulated'), hero=[(Lb + 'igu-window.jpg', 1, 'center')],
          desc=L('Insulated glass units have two or more panes separated by spacer bars filled with a high-performance desiccant and sealed '
                 'together, often with air or argon in the cavity. In windows and curtain walls, the layered build keeps heat in during winter '
                 'and out during summer, easing the load on heating and cooling.',
@@ -295,9 +325,8 @@ PRODUCTS = [
                                 'Claro, bajo en hierro, Low-E, reflectante, tintado y más')),
                 (L('Gas filling', 'Remplissage de gaz', 'Llenado de gas'), L('Air or argon', 'Air ou argon', 'Aire o argón')),
                 (T['std'], 'EN 1279, IGCC, GB/T 11944')]),
-    dict(no=9, name=L('Patterned Glass', 'Verre imprimé', 'Vidrio impreso'), cat='decorative', uses=None, hero_h=4.0,
-         hero=[(Lb + 'pattern-flutelite-s.jpg', .25, 'center'), (Lb + 'pattern-moru.jpg', .25, 'center'),
-               (Lb + 'pattern-oceanic.jpg', .25, 'center'), (Lb + 'pattern-chinchilla.jpg', .25, 'center')],
+    dict(no=9, name=L('Patterned Glass', 'Verre imprimé', 'Vidrio impreso'), cat='decorative', uses=None, hero_h=2.55,
+         hero=[(Lb + 'pattern-moru.jpg', 1, 'center'), (Lb + 'pattern-nashiji.jpg', 1, 'center'), (Lb + 'pattern-mistlite.jpg', 1, 'center')],
          desc=L('Patterned glass combines a decorative surface texture with soft, natural light diffusion, balancing privacy and style. '
                 'It comes in a wide range of patterns, thicknesses and sizes for architectural and interior projects.',
                 'Le verre imprimé combine des textures de surface décoratives avec une diffusion douce de la lumière naturelle, offrant un '
@@ -307,18 +336,18 @@ PRODUCTS = [
          specs=[(T['thick'], L('3–12 mm (varies by pattern)', '3–12 mm (selon le motif)', '3–12 mm (según el diseño)')), (T['reg'], REGULAR),
                 (T['max'], sz(96, 189)), (T['colour'], L('Clear, low iron, tinted and more', 'Clair, faible teneur en fer, teinté et plus',
                                                        'Claro, bajo en hierro, tintado y más'))],
-         extra=lambda: (f'<h3 class="label">{E(tx(L("Pattern options", "Options de motifs", "Opciones de diseño")))}</h3><div class="groups">'
-                        + groups(L('Modern interior trends', 'Tendances des intérieurs modernes', 'Tendencias de interiores modernos'),
+         extra=lambda: (f'<h3 class="label">{E(tx(L("Pattern options", "Options de motifs", "Opciones de diseño")))}</h3><div class="swatches">'
+                        + swatch(Lb + 'pattern-flutelite-s.jpg', L('Modern interior trends', 'Tendances des intérieurs modernes', 'Tendencias de interiores modernos'),
                                  ['Reeded', 'Fluted', 'Ribbed', 'Moru', 'Rain', 'Linen'])
-                        + groups(L('Decorative patterns', 'Motifs décoratifs', 'Patrones decorativos'),
-                                 ['Bamboo', 'Oceanic', 'Water Ripple', 'Antique', 'Karatachi', 'Kasumi', 'Morgon', 'Puzzle'])
-                        + groups(L('Geometric patterns', 'Motifs géométriques', 'Patrones geométricos'),
+                        + swatch(Lb + 'pattern-pinhead.jpg', L('Geometric patterns', 'Motifs géométriques', 'Patrones geométricos'),
                                  ['Delta', 'Master Carré', 'Master Ligne', 'Master Point', 'Cross Reed', 'Linear'])
-                        + groups(L('Classic patterns', 'Motifs classiques', 'Patrones clásicos'),
+                        + swatch(Lb + 'pattern-oceanic.jpg', L('Decorative patterns', 'Motifs décoratifs', 'Patrones decorativos'),
+                                 ['Bamboo', 'Oceanic', 'Water Ripple', 'Antique', 'Karatachi', 'Kasumi', 'Morgon', 'Puzzle'])
+                        + swatch(Lb + 'pattern-chinchilla.jpg', L('Classic patterns', 'Motifs classiques', 'Patrones clásicos'),
                                  ['Rain', 'Mistlite', 'Flora', 'Nashiji', 'Diamond', 'Moru', 'Reeded (Fluted)', 'Satin (Matelux)', 'Chinchilla', 'Aquatex'])
                         + '</div>')),
     dict(no=10, name=L('Back Painted Glass', 'Verre laqué au dos', 'Vidrio pintado por la cara posterior'), cat='decorative',
-         uses=('mirrors', 'back-painted'), hero_h=4.5, hero=[(Lb + 'back-painted-collection.jpg', 1, 'center 12%')],
+         uses=('mirrors', 'back-painted'), banner=Lb + 'back-painted-collection.jpg',
          desc=L('Back-painted glass pairs a smooth glass face with a durable coloured coating on the back, for a clean, contemporary look. '
                 'It comes in a wide range of colours for interior, decorative and architectural work.',
                 'Le verre laqué au dos combine une surface lisse avec un revêtement coloré durable appliqué à l’arrière, pour un aspect épuré '
@@ -340,7 +369,7 @@ PRODUCTS = [
                 'Les dimensions et spécifications finales dépendent du verre de base et des exigences du projet.',
                 'Las dimensiones y especificaciones finales dependen del vidrio base y de los requisitos del proyecto.')),
     dict(no=11, name=L('Acid Etched Glass', 'Verre dépoli à l’acide', 'Vidrio grabado al ácido'), cat='decorative', uses=('glass', 'acid-etched'),
-         hero=[(Lb + 'acid-etched-studio.jpg', .4, 'center 45%'), (Lb + 'acid-etched-privacy.jpg', .6, 'center')],
+         hero=[(Lb + 'acid-etched-privacy.jpg', 1, 'center 62%')],
          desc=L('Acid-etched glass has a smooth, translucent satin finish that lets in natural light while adding privacy. It suits a wide '
                 'range of architectural, interior and decorative applications.',
                 'Le verre dépoli à l’acide offre une finition lisse et translucide qui équilibre lumière naturelle et intimité. Il convient à '
@@ -370,7 +399,7 @@ PRODUCTS = [
                                                             'Colores estándar, colores personalizados, patrones personalizados')),
                 (L('Coverage', 'Couverture', 'Cobertura'), L('Full or partial', 'Totale ou partielle', 'Total o parcial'))]),
     dict(no=13, name=L('Curved Glass', 'Verre courbé', 'Vidrio curvado'), cat='specialty', uses=('glass', 'curved'),
-         hero=[(Lb + 'curved-facade.jpg', .6, 'center'), (Lb + 'curved-partition.jpg', .4, 'center')],
+         hero=[(Lb + 'curved-facade.jpg', 1, 'center')],
          desc=L('Curved glass brings architectural freedom together with structural performance, making distinctive shapes and seamless '
                 'curved surfaces possible. It comes in a range of glass types and sizes for custom architectural and commercial projects.',
                 'Le verre courbé combine flexibilité architecturale et performance structurelle, permettant de créer des formes distinctives '
@@ -387,7 +416,7 @@ PRODUCTS = [
                  L('Holes, cut-outs, edge polishing, radius corners', 'Perçages, découpes, polissage des bords, coins arrondis',
                    'Orificios, recortes, pulido de bordes, esquinas redondeadas'))]),
     dict(no=14, name=L('Photovoltaic (PV) Glass', 'Verre photovoltaïque (PV)', 'Vidrio fotovoltaico (PV)'), cat='specialty', uses=('glass', 'solar'),
-         hero=[(Wh + 'zone-solar.webp', 1, 'center 45%')],
+         graphic='pv', hero_h=4.2,
          desc=L('Photovoltaic glass is designed for solar modules, with high light transmission, durability and configurations tailored '
                 'to each project.',
                 'Le verre photovoltaïque est conçu pour les modules solaires : transmission lumineuse élevée, grande durabilité et '
@@ -408,8 +437,8 @@ PRODUCTS = [
                 'contactez-nous pour les données techniques détaillées.',
                 'Las especificaciones varían según el producto y el proyecto. Se ofrecen tamaños, recubrimientos y procesamientos '
                 'personalizados; contáctenos para obtener datos técnicos detallados.')),
-    dict(no=15, name=L('Mirror Collection', 'Collection de miroirs', 'Colección de espejos'), cat='mirrors', uses=('mirrors', 'silver-mirror'), hero_h=4.4,
-         hero=[(Wh + 'zone-mirrors.webp', .6, 'center'), (AI + 'silver-mirror.jpg', .4, 'center')],
+    dict(no=15, name=L('Mirror Collection', 'Collection de miroirs', 'Colección de espejos'), cat='mirrors', uses=('mirrors', 'silver-mirror'),
+         banner=Lb + 'mirror-colours.jpg', hero_h=4.95,
          desc=L('Our mirrors combine excellent reflective quality with versatile options for architectural, interior, furniture and '
                 'decorative use, in a range of substrates, colours, finishes and safety builds, with polished or bevelled edges.',
                 'Notre gamme de miroirs combine une réflexion de haute qualité avec des options polyvalentes pour l’architecture, l’intérieur, '
@@ -637,12 +666,23 @@ def glazing(n):
 
 def product(p, n):
     h = p.get('hero_h', 4.9)
-    if p.get('graphic') == 'frit':
+    if p.get('banner'):
+        src, ratio = banner(p['banner'])
+        whole = round(8.5 / ratio, 3)                   # the whole picture across the page, nothing cut off
+        if p.get('hero_h') and p['hero_h'] < whole:     # a page with a lot of text: a little of the plain wall above and below goes
+            h, size = p['hero_h'], 'cover;background-position:center 46%'
+        else:
+            h, size = whole, '100% 100%'
+        hero = f'<div style="flex:1;background-image:url({src});background-size:{size}"></div>'
+    elif p.get('graphic') == 'pv':
+        hero = '<div class="g-pv" style="flex:1"><div class="sun"></div><div class="mod"></div></div>'
+    elif p.get('graphic') == 'frit':
         hero = '<div class="g-frit" style="flex:1"><div class="pane-ill"></div></div>'
     elif p.get('graphic') == 'led':
         hero = '<div class="g-led" style="flex:1"><div class="m1"></div><div class="m2"></div></div>'
     else:
-        # (photo, width share, position[, zoom]): a zoom such as 'auto 175%' crops in, e.g. past a logo in the corner
+        # (photo, width share, position[, size]): a size such as 'auto 175%' crops in, e.g. past a logo in the corner;
+        # '100% 100%' with width shares in proportion to the photos' shapes shows each photo whole
         hero = ''.join(f'<div style="flex:{w};background-image:url({img(src)});background-position:{pos}'
                        f'{";background-size:" + rest[0] if rest else ""}"></div>' for src, w, pos, *rest in p['hero'])
     rows = ''.join(f'<tr><th>{E(tx(k))}</th><td>{E(tx(v))}</td></tr>' for k, v in p['specs'])
@@ -652,7 +692,7 @@ def product(p, n):
     extra = f'<div class="extra">{p["extra"]()}</div>' if p.get('extra') else ''
     cat = tx(CAT[p['cat']])
     return f'''<section class="page product">
-  <div class="hero" style="height:{h}in"><span class="ribbon">{E(cat)}</span>{hero}</div>
+  <div class="hero{' top' if p.get('banner') else ''}" style="height:{h}in"><span class="ribbon">{E(cat)}</span>{hero}</div>
   <div class="pbody" style="top:{h + 0.36}in">
     <div class="phead"><span class="num">{p['no']:02d}<em>.</em></span><div><span class="kicker">{E(cat)}</span><h2>{E(tx(p['name']))}</h2></div></div>
     <div class="pcols">

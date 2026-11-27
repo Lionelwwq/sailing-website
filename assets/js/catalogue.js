@@ -1,10 +1,10 @@
-/* Sailing International Trade - Product Catalogue page: flipbook, chapter links and counters.
+/* Sailing International Trade - Product Catalogue page: flipbook and counters.
  *
  * The flipbook shows the catalogue pages made by _src/make_catalogue.py (assets/catalogue/pages.json).
  * Wide screens show an open book (two pages); phones show one page at a time.
- * Turn pages by clicking a page, dragging its corner, the arrow buttons or keys, the slider,
- * the page thumbnails or the chapter cards. No libraries: 3D CSS transforms driven by JavaScript.
- * Texts (labels, chapters) are written by site.js in the page language; site.js also picks the
+ * Turn pages by clicking a page, dragging its corner, the arrow buttons or keys, the slider or
+ * the page thumbnails. No libraries: 3D CSS transforms driven by JavaScript.
+ * Texts (labels) are written by site.js in the page language; site.js also picks the
  * catalogue edition (English, French or Spanish) and hands its pages over with the 'sit:catalogue' event.
  */
 (() => {

@@ -1,27 +1,28 @@
 /* How PV glass works (pv-glass.html)
-   Colours from the "Story of PV Glass" design: white ground, cobalt solar cells, pale sky, sun yellow, deep navy.
+   Colours: the Sailing purples from the redesign notes (#5A3A8A, #37296B, #251B3D), with the gold (#C9A56A) for light
+   and a pale lavender ground; only a few of them, so the page stays clean.
    Change them here (the --pv-* values); the site header, footer and contact band keep the Sailing colours. */
 .pv-page {
-  --pv-ink: #0F1A2B;      /* deep navy: text, the step panel, the generations band */
-  --pv-navy: #0B1220;
-  --pv-mute: #55627A;
-  --pv-cell: #1D4ED8;     /* cobalt: solar cells, numbers, links, chosen items */
-  --pv-cell-2: #163A9E;
-  --pv-sky: #EAF1FF;      /* pale sky: the diagram band, drawings */
-  --pv-sun: #FFC21A;      /* sun yellow: light, highlights (never small text on white) */
-  --pv-glass: #CFEAF3;
-  --pv-eva: #F4FBFF;
-  --pv-sheet: #F3F5F8;
-  --pv-metal: #A7B0BD;
-  --pv-line: #D9E2F0;
+  --pv-ink: #251B3D;      /* deep plum: text, the step panel */
+  --pv-navy: #1F1734;     /* the generations band */
+  --pv-mute: #5F5872;
+  --pv-cell: #5A3A8A;     /* Sailing purple: solar cells, numbers, links, chosen items */
+  --pv-cell-2: #37296B;
+  --pv-sky: #F4F0F9;      /* pale lavender: the diagram band, drawings */
+  --pv-sun: #C9A56A;      /* gold: sunlight, highlights (never small text on white) */
+  --pv-glass: #E3DCEE;
+  --pv-eva: #FAF8FC;
+  --pv-sheet: #F2F0F5;
+  --pv-metal: #A9A3B5;
+  --pv-line: #E4DDED;
   --pv-r: 18px;
   --pv-r-sm: 12px;
 }
 
 /* ---------- banner ---------- */
-.pv-hero::before { background: linear-gradient(160deg, rgba(11, 18, 32, .93) 0%, rgba(15, 26, 43, .82) 38%, rgba(22, 58, 158, .66) 100%); }
+.pv-hero::before { background: linear-gradient(160deg, rgba(31, 23, 52, .93) 0%, rgba(37, 27, 61, .82) 38%, rgba(90, 58, 138, .62) 100%); }
 .pv-hero::after { content: ""; position: absolute; z-index: -1; right: -8vw; top: -12vw; width: 46vw; height: 46vw; border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 194, 26, .38) 0%, rgba(255, 194, 26, .1) 40%, rgba(255, 194, 26, 0) 68%); animation: pv-breathe 7s ease-in-out infinite; pointer-events: none; }
+  background: radial-gradient(circle, rgba(201, 165, 106, .36) 0%, rgba(201, 165, 106, .1) 40%, rgba(201, 165, 106, 0) 68%); animation: pv-breathe 7s ease-in-out infinite; pointer-events: none; }
 .pv-kicker { font-family: var(--font-head); font-size: 13px; letter-spacing: .28em; text-transform: uppercase; color: var(--pv-sun); }
 .pv-hero h1 { max-width: 18ch; text-wrap: balance; }
 .pv-stats { display: flex; flex-wrap: wrap; justify-content: center; gap: clamp(18px, 4vw, 48px); margin-top: 10px; }
@@ -30,7 +31,7 @@
 .pv-stat span { font-size: 13.5px; line-height: 1.45; color: rgba(255, 255, 255, .74); }
 .pv-jump { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 14px; }
 .pv-btn-sun { background: var(--pv-sun); color: var(--pv-ink); }
-.pv-btn-sun:hover { background: #FFD45C; }
+.pv-btn-sun:hover { background: #D8BC8B; }
 
 /* ---------- section heads ---------- */
 .pv-head h2 { color: var(--pv-ink); }
@@ -43,7 +44,7 @@
 /* ---------- from sunlight to power: diagram + step panel ---------- */
 .pv-chain { padding: clamp(64px, 8vw, 110px) 0; background: var(--pv-sky); }
 .pv-stage { display: grid; grid-template-columns: minmax(0, 1.9fr) minmax(290px, 1fr); gap: 18px; margin-top: 32px; }
-.pv-diagram { overflow: hidden; background: var(--white); border-radius: var(--pv-r); box-shadow: 0 30px 60px -40px rgba(15, 26, 43, .5); }
+.pv-diagram { overflow: hidden; background: var(--white); border-radius: var(--pv-r); box-shadow: 0 30px 60px -40px rgba(37, 27, 61, .5); }
 .pv-diagram svg { display: block; width: 100%; height: auto; }
 .pv-diagram text { font-family: var(--font-body); fill: var(--pv-ink); }
 .pv-diagram .t-s { font-size: 17px; font-weight: 600; }
@@ -80,7 +81,7 @@
 .pv-panel { position: relative; display: flex; flex-direction: column; gap: 16px; padding: clamp(22px, 2.4vw, 30px); overflow: hidden;
   background: var(--pv-ink); color: var(--white); border-radius: var(--pv-r); }
 .pv-panel::after { content: ""; position: absolute; right: -80px; bottom: -80px; width: 220px; height: 220px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 194, 26, .22), rgba(255, 194, 26, 0) 70%); pointer-events: none; }
+  background: radial-gradient(circle, rgba(201, 165, 106, .24), rgba(201, 165, 106, 0) 70%); pointer-events: none; }
 .pv-panel-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .pv-count { font-size: 12.5px; letter-spacing: .14em; text-transform: uppercase; color: rgba(255, 255, 255, .6); }
 .pv-ctrl { display: flex; gap: 8px; }
@@ -92,7 +93,7 @@
 .pv-icon svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
 .pv-play svg { fill: currentColor; stroke: none; }
 .pv-play { background: var(--pv-sun); color: var(--pv-ink); border-color: var(--pv-sun); }
-.pv-play:hover { background: #FFD45C; border-color: #FFD45C; }
+.pv-play:hover { background: #D8BC8B; border-color: #D8BC8B; }
 .pv-play .i-pause, .pv-play[aria-pressed="true"] .i-play { display: none; }
 .pv-play[aria-pressed="true"] .i-pause { display: block; }
 .pv-panel-body h3 { display: flex; align-items: center; gap: 12px; font-size: clamp(22px, 2.2vw, 28px); color: var(--white); }
@@ -106,9 +107,9 @@
 .pv-step { all: unset; box-sizing: border-box; position: relative; display: flex; align-items: center; gap: 10px; width: 100%; min-height: 50px; padding: 12px 14px;
   overflow: hidden; cursor: pointer; background: var(--white); border: 1px solid var(--pv-line); border-radius: var(--pv-r-sm);
   font-family: var(--font-head); font-size: 15px; font-weight: 600; color: var(--pv-ink); transition: border-color .2s, box-shadow .2s, transform .2s; }
-.pv-step:hover { border-color: #9DB5F0; transform: translateY(-1px); }
+.pv-step:hover { border-color: #B49ACB; transform: translateY(-1px); }
 .pv-step:focus-visible { outline: 2px solid var(--pv-cell); outline-offset: 2px; }
-.pv-step.on { border-color: var(--pv-cell); box-shadow: 0 0 0 1px var(--pv-cell), 0 14px 30px -22px rgba(29, 78, 216, .9); }
+.pv-step.on { border-color: var(--pv-cell); box-shadow: 0 0 0 1px var(--pv-cell), 0 14px 30px -22px rgba(90, 58, 138, .9); }
 .pv-step-n { display: inline-grid; flex: none; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--pv-sky);
   color: var(--pv-cell); font-size: 13px; font-weight: 700; transition: background .25s, color .25s; }
 .pv-step.on .pv-step-n { background: var(--pv-cell); color: var(--white); }
@@ -119,7 +120,7 @@
 
 /* ---------- five generations: timeline + one generation at a time ---------- */
 .pv-gens-sec { padding: clamp(64px, 8vw, 110px) 0; color: var(--white);
-  background: radial-gradient(circle at 88% -10%, rgba(29, 78, 216, .55), rgba(29, 78, 216, 0) 55%), var(--pv-navy); }
+  background: radial-gradient(circle at 88% -10%, rgba(101, 69, 139, .55), rgba(101, 69, 139, 0) 55%), var(--pv-navy); }
 .pv-gens-sec .pv-head h2 { color: var(--white); }
 .pv-gens-sec .pv-lede { color: rgba(255, 255, 255, .72); }
 .pv-gens-sec .pv-note { color: rgba(255, 255, 255, .55); }
@@ -147,9 +148,9 @@
 .pv-gv-badge { position: absolute; left: 16px; top: 16px; padding: 6px 12px; border-radius: 999px; background: var(--pv-ink); color: var(--white);
   font-size: 12px; font-weight: 600; letter-spacing: .06em; }
 .pv-gv-nav { position: absolute; right: 16px; bottom: 16px; display: flex; gap: 8px; }
-.pv-gv-nav .pv-icon { background: rgba(15, 26, 43, .78); border-color: transparent; }
+.pv-gv-nav .pv-icon { background: rgba(37, 27, 61, .78); border-color: transparent; }
 .pv-gv-nav .pv-icon:hover { background: var(--pv-ink); }
-.pv-gv-nav .pv-icon[disabled] { background: rgba(15, 26, 43, .5); }
+.pv-gv-nav .pv-icon[disabled] { background: rgba(37, 27, 61, .5); }
 .pv-gv-info { display: flex; flex-direction: column; gap: 10px; padding: clamp(22px, 3vw, 36px); }
 .pv-era { font-size: 13px; font-weight: 600; letter-spacing: .04em; color: var(--pv-sun); }
 .pv-gv-info h3 { font-size: clamp(22px, 2.4vw, 30px); color: var(--white); }
@@ -170,7 +171,7 @@
 .pv-bar.on .pv-bar-b { background: var(--pv-sun); }
 .pv-bar.on .pv-bar-v { color: var(--white); font-weight: 700; }
 .pv-bar.design .pv-bar-b { background: repeating-linear-gradient(135deg, rgba(255, 255, 255, .26) 0 6px, rgba(255, 255, 255, .07) 6px 12px); }
-.pv-bar.design.on .pv-bar-b { background: repeating-linear-gradient(135deg, var(--pv-sun) 0 6px, rgba(255, 194, 26, .35) 6px 12px); }
+.pv-bar.design.on .pv-bar-b { background: repeating-linear-gradient(135deg, var(--pv-sun) 0 6px, rgba(201, 165, 106, .35) 6px 12px); }
 .pv-bar-n { font-size: 12px; color: rgba(255, 255, 255, .5); }
 .pv-gen-view.still .pv-bar-b { animation: none; }
 

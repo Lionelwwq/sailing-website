@@ -1,6 +1,7 @@
 /* Home page cover: Sailing's front door (walk-in behaviour in assets/js/home-door.js) */
 
-.door { position: relative; height: 100vh; height: 100svh; min-height: 560px; overflow: hidden; background: #E8E1D6; }
+/* the cover starts under the white header bar, so the whole storefront shows */
+.door { position: relative; margin-top: var(--header-h); height: calc(100vh - var(--header-h)); height: calc(100svh - var(--header-h)); min-height: 520px; overflow: hidden; background: #E8E1D6; }
 .door-photo img, .door-inside { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 /* keep the stone wall on the left in view on desktop screens: that is where the words go */
 .door-photo img { object-position: 0% 30%; transform-origin: var(--ox, 66%) var(--oy, 62%); }
@@ -16,15 +17,9 @@
 .door h1 { animation: door-ink 40s linear infinite; }
 .door-copy p { animation: door-text 40s linear infinite; }
 .door-kicker { animation: door-kick 40s linear infinite; }
-.door-actions .btn-outline { animation: door-btn 40s linear infinite; }
-.door-actions .btn-outline:hover, .door-actions .btn-outline:focus-visible { animation: none; }   /* its normal hover colours */
 @keyframes door-ink { 0%, 52% { color: var(--ink); text-shadow: none; } 63%, 89% { color: #FFFFFF; text-shadow: 0 2px 14px rgba(10, 14, 40, .55); } 100% { color: var(--ink); text-shadow: none; } }
 @keyframes door-text { 0%, 52% { color: #3F3B46; text-shadow: none; } 63%, 89% { color: rgba(255, 255, 255, .92); text-shadow: 0 1px 10px rgba(10, 14, 40, .6); } 100% { color: #3F3B46; text-shadow: none; } }
 @keyframes door-kick { 0%, 52% { color: var(--brand); } 63%, 89% { color: #E2D3F2; } 100% { color: var(--brand); } }
-@keyframes door-btn { 0%, 52% { color: var(--ink); border-color: var(--ink); } 63%, 89% { color: #FFFFFF; border-color: rgba(255, 255, 255, .85); } 100% { color: var(--ink); border-color: var(--ink); } }
-/* soft shade under the header so its white menu stays readable on the light stone */
-.door::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: calc(var(--header-h) + 90px); z-index: 2; pointer-events: none;
-  background: linear-gradient(180deg, rgba(28, 22, 38, .62), rgba(28, 22, 38, 0)); }
 /* the words sit on the stone wall: it takes the left third of the picture, so keep them inside that */
 .door-copy { position: absolute; left: clamp(24px, 4vw, 72px); top: 50%; z-index: 3; width: min(27vw, 430px); transform: translateY(-42%); }
 .door-kicker { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-head); font-size: 13px; font-weight: 600; letter-spacing: .26em;
@@ -52,11 +47,10 @@
   .door-kicker { color: #D9BE8C; }
   .door h1 { color: var(--white); font-size: clamp(1.7rem, 7vw, 2.4rem); }
   .door-copy p { color: rgba(255, 255, 255, .88); font-size: .98rem; }
-  .door-actions .btn-outline { border-color: rgba(255, 255, 255, .8); color: var(--white); }
-  .door h1, .door-copy p, .door-kicker, .door-actions .btn-outline { animation: none; }
+  .door h1, .door-copy p, .door-kicker { animation: none; }
   .door-hint { bottom: 16px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .door.entering * { transition: none !important; }
-  .door-photo .dp-dusk, .door-photo .dp-night, .door h1, .door-copy p, .door-kicker, .door-actions .btn-outline { animation: none; }
+  .door-photo .dp-dusk, .door-photo .dp-night, .door h1, .door-copy p, .door-kicker { animation: none; }
 }

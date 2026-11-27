@@ -1,9 +1,10 @@
 <!--
 title: About Us | Sailing International Trade
-description: Sailing International Trade has supplied custom glass, mirrors, installation and glass industry accessories in Toronto since 1993.
+description: Sailing International Trade supplies architectural glass, mirrors and related products, with glass manufacturing roots in Qingdao, China since 1993 and a sales office in Toronto.
 nav: about
 image: assets/img/site/hero-about-door.jpg
 -->
+<link rel="stylesheet" href="assets/css/journey.css">
   <section class="page-hero" aria-labelledby="page-title">
     <img class="hero-bg" src="{{image}}" data-c-src="hero_image" alt="" fetchpriority="high">
     <div class="container">
@@ -28,7 +29,6 @@ image: assets/img/site/hero-about-door.jpg
   <section class="sec sec-gray" aria-labelledby="values-title">
     <div class="container center">
       <h2 class="h-up reveal" id="values-title" data-c="values_title"></h2>
-      <p class="lead-strong values-motto reveal" data-c="values_motto"></p>
       <div class="pillars pillars-4" id="values"></div>
     </div>
   </section>
@@ -58,6 +58,47 @@ image: assets/img/site/hero-about-door.jpg
     </div>
   </section>
 
+  <!-- Our milestones: a boat sails along a gold route from stop to stop while the visitor scrolls (or picks a year);
+       the 2027 plan sits apart by a lighthouse, marked "Planned". Phones: a vertical timeline.
+       Behaviour in assets/js/journey.js, look in assets/css/journey.css, texts in content/pages/about.json (milestones, vision). -->
+  <section class="jr" id="journey" aria-labelledby="journey-title">
+    <div class="jr-track" id="jr-track">
+      <div class="jr-stage">
+        <div class="container">
+          <div class="jr-head">
+            <div>
+              <span class="jr-eyebrow" data-c="journey_eyebrow"></span>
+              <h2 class="h-up" id="journey-title" data-c="journey_title"></h2>
+            </div>
+            <p class="jr-lede" data-c="journey_text"></p>
+            <div class="jr-ctrl">
+              <button type="button" id="jr-prev"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+              <button type="button" id="jr-next"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+            </div>
+          </div>
+          <div class="jr-scene" id="jr-scene">
+            <div class="jr-years" id="jr-years" role="tablist" aria-labelledby="journey-title"></div>
+            <svg class="jr-map" viewBox="0 0 1200 400" aria-hidden="true">
+              <path class="jr-route-dim" id="jr-route-dim"/><path class="jr-route-plan" id="jr-route-plan"/><path class="jr-route-on" id="jr-route-on"/>
+            </svg>
+            <div class="jr-light" aria-hidden="true"><svg viewBox="0 0 110 160">
+              <path class="beam" d="M44 50L-34 22L-30 88Z" fill="#FFF0BD"/><path class="beam" d="M77 50L150 26L148 86Z" fill="#FFF0BD"/>
+              <path d="M49 65L38 151H84L73 65Z" fill="#EDE0CD"/><path d="M45 90H78M42 115H82" stroke="#AA8A70" stroke-width="2"/>
+              <path d="M41 65H80L74 53H47Z" fill="#8C74B0"/><path class="lamp" d="M47 42H75V55H47Z" fill="#F2D594"/>
+              <path d="M41 42L61 23L82 42Z" fill="#D9CDE8"/><path d="M61 23V11" stroke="#D9CDE8" stroke-width="2"/>
+              <path d="M49 151H35L30 160H92L87 151Z" fill="#4A3A63"/></svg></div>
+            <div class="jr-stops" id="jr-stops"></div>
+            <div class="jr-boat" id="jr-boat" aria-hidden="true"><svg viewBox="0 0 100 90">
+              <path class="b-mast" d="M49 12V66"/><path class="b-sail" d="M46 14Q12 38 19 61L46 63Z"/><path class="b-sail2" d="M54 22Q82 45 70 60L54 63Z"/>
+              <path class="b-hull" d="M11 67Q45 83 89 68Q76 90 27 82Z"/><path class="b-wake" d="M6 84Q48 93 94 81"/></svg></div>
+          </div>
+          <div class="jr-card" id="jr-card" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container"><ol class="jr-list" id="jr-list"></ol></div>
+  </section>
+
   <section class="sec sec-gray" aria-labelledby="serve-title">
     <div class="container">
       <h2 class="h-up center reveal" id="serve-title" data-c="serve_title"></h2>
@@ -67,3 +108,4 @@ image: assets/img/site/hero-about-door.jpg
 
 <!-- include: cta -->
 <script src="assets/js/globe.js" defer></script>
+<script src="assets/js/journey.js" defer></script>

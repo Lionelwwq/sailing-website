@@ -553,11 +553,11 @@
   "es": "Vidrio, espejos y accesorios, Toronto"
  },
  "enter_showroom": {
-  "en": "Enter the showroom",
-  "fr": "Entrer dans la salle",
-  "nl": "Showroom betreden",
-  "de": "Showroom betreten",
-  "es": "Entrar a la sala"
+  "en": "Explore Products",
+  "fr": "Découvrir nos produits",
+  "nl": "Ontdek onze producten",
+  "de": "Produkte entdecken",
+  "es": "Explorar productos"
  },
  "scroll_hint": {
   "en": "or scroll down",

@@ -9,10 +9,10 @@
  },
  "hero_text": {
   "en": "Request a free quote or ask us anything. We will reply with options, pricing and lead times.",
-  "fr": "Demandez une soumission gratuite ou posez-nous vos questions. Nous vous répondrons avec des options, des prix et des délais.",
+  "fr": "Demandez une soumission gratuite ou posez-nous vos questions : nous répondrons avec options, prix et délais.",
   "nl": "Vraag een gratis offerte aan of stel ons gerust uw vraag. We antwoorden met opties, prijzen en levertijden.",
-  "de": "Fordern Sie ein kostenloses Angebot an oder stellen Sie uns Ihre Fragen. Wir antworten mit Optionen, Preisen und Lieferzeiten.",
-  "es": "Solicite una cotización gratuita o háganos cualquier consulta. Le responderemos con opciones, precios y plazos de entrega."
+  "de": "Kostenloses Angebot anfordern oder Fragen stellen: Wir antworten mit Optionen, Preisen und Lieferzeiten.",
+  "es": "Solicite una cotización gratuita o haga su consulta: le responderemos con opciones, precios y plazos de entrega."
  },
  "form_title": {
   "en": "Request a quote",

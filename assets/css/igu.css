@@ -1,0 +1,86 @@
+/* Insulated glass: the 3D view and "Build your unit" (assets/js/igu3d.js) */
+
+/* the 3D tile under the photos */
+.ex-thumb.ex-3d { display: grid; place-items: center; background: linear-gradient(140deg, #6B4A9B, var(--brand-dark)); }
+.igu-ico { width: 30px; height: 30px; margin-top: -10px; fill: none; stroke: var(--white); stroke-width: 1.5; stroke-linejoin: round; }
+.ex-3d .lbl { background: rgba(0, 0, 0, .28); }
+
+/* the stage */
+.ex-stage.igu { aspect-ratio: 1 / 1; place-items: stretch; background: radial-gradient(70% 60% at 50% 42%, #FFFFFF 0%, #F1EEF5 60%, #E6E1EC 100%); cursor: grab; touch-action: pan-y; user-select: none; -webkit-user-select: none; }
+.ex-stage.igu.dragging { cursor: grabbing; }
+.ex-stage.igu::after { content: ""; position: absolute; left: 22%; right: 22%; bottom: 13%; height: 7%; border-radius: 50%; background: radial-gradient(closest-side, rgba(37, 27, 61, .18), rgba(37, 27, 61, 0)); pointer-events: none; }
+.igu-view { position: absolute; inset: 0 0 8% 0; perspective: 1100px; perspective-origin: 50% 50%; }
+.igu-model { position: absolute; left: 50%; top: 50%; width: 0; height: 0; transform-style: preserve-3d; }
+.igu-model .b3 { position: absolute; left: 0; top: 0; transform-style: preserve-3d; }
+.igu-model .f { position: absolute; left: 0; top: 0; backface-visibility: visible; }
+.b3.glass .fr, .b3.glass .bk { background: linear-gradient(135deg, rgba(238, 247, 249, .62) 0%, rgba(196, 222, 228, .3) 52%, rgba(228, 242, 245, .5) 100%);
+  border: 1px solid rgba(255, 255, 255, .9); box-shadow: inset 0 0 0 1px rgba(110, 165, 170, .28); }
+.b3.glass .sd, .b3.glass .tp { background: rgba(116, 176, 165, .82); }
+.b3.spacer .f { background: #7B808A; }
+.b3.spacer .fr, .b3.spacer .bk { background: #5F646E; }
+.b3.spacer .tp { background: #969BA4; }
+.igu-model .f.lowe { background: linear-gradient(135deg, rgba(201, 165, 106, .34), rgba(180, 154, 203, .22)); border: 1px solid rgba(201, 165, 106, .5); }
+.igu-model .f.gas { background: rgba(140, 116, 176, .16); }
+
+.igu-pill { position: absolute; left: 14px; top: 14px; z-index: 3; padding: 6px 12px; border-radius: 999px; background: var(--white); box-shadow: 0 4px 14px rgba(37, 35, 42, .1);
+  font-size: 13px; color: var(--ink); white-space: nowrap; }
+.igu-pill b { color: var(--brand); }
+.igu-labels { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
+.igu-lbl { position: absolute; padding: 3px 8px; border-radius: 6px; background: rgba(255, 255, 255, .94); box-shadow: 0 3px 10px rgba(37, 35, 42, .12);
+  font-size: 12px; color: var(--muted); white-space: nowrap; transform: translate(16px, -50%); }
+.igu-lbl.l { transform: translate(calc(-100% - 16px), -50%); }
+.igu-lbl b { font-weight: 600; color: var(--ink); }
+.igu-lbl i { position: absolute; top: 50%; width: 16px; height: 1px; background: var(--brand-2); }
+.igu-lbl.r i { left: -16px; }
+.igu-lbl.l i { right: -16px; }
+.igu-lbl i::before { content: ""; position: absolute; top: -2.5px; width: 6px; height: 6px; border-radius: 50%; background: var(--brand); }
+.igu-lbl.r i::before { left: -3px; }
+.igu-lbl.l i::before { right: -3px; }
+
+.igu-tools { position: absolute; left: 10px; right: 10px; bottom: 10px; z-index: 3; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 6px; padding: 6px;
+  background: var(--white); border-radius: 10px; box-shadow: 0 6px 18px rgba(37, 35, 42, .12); white-space: nowrap; cursor: default; }
+.igu-tools button { display: inline-flex; align-items: center; gap: 6px; height: 30px; padding: 0 10px; border-radius: 6px; border: 1px solid var(--line); font-size: 12.5px; font-weight: 600; color: var(--ink); transition: background-color .2s, border-color .2s, color .2s; }
+.igu-tools button:hover { border-color: var(--brand-2); color: var(--brand); }
+.igu-tools svg, .igu-sep svg { flex: none; width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.igu-tools button[aria-pressed="true"] { background: var(--brand-tint); border-color: var(--brand-2); color: var(--brand); }
+.igu-sep { display: flex; align-items: center; gap: 6px; padding: 0 4px; color: var(--brand); }
+.igu-sep input { width: 80px; accent-color: var(--brand); }
+@media (max-width: 1240px) and (min-width: 1101px) { .igu-tools button { padding: 0 8px; font-size: 12px; } }   /* a narrow stage */
+@media (max-width: 560px) {   /* phones: icons only, so the tools stay on one line under the model */
+  .igu-tools button span { display: none; }
+  .igu-tools button { width: 34px; justify-content: center; padding: 0; }
+  .igu-pill { font-size: 12px; }
+}
+
+/* "Build your unit" (only while the 3D view is on) */
+.igu-build { display: grid; gap: 10px; padding: 18px; border: 1px solid var(--line); border-radius: 12px; background: #FBFAFD; animation: igu-in .35s ease both; }
+@keyframes igu-in { from { opacity: 0; transform: translateY(6px); } }
+.igu-h { font-size: 12.5px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--brand); }
+.igu-sub { display: block; font-size: 12.5px; color: var(--muted); }
+.igu-presets { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.igu-presets button { display: grid; gap: 2px; padding: 10px 12px; text-align: left; border-radius: 8px; border: 1px solid var(--line); background: var(--white); transition: border-color .2s, background-color .2s, color .2s; }
+.igu-presets button:hover { border-color: var(--brand-2); }
+.igu-presets b { font-size: 14px; font-weight: 600; }
+.igu-presets small { font-size: 12px; color: var(--muted); }
+.igu-presets button[aria-pressed="true"] { background: var(--brand); border-color: var(--brand); color: var(--white); }
+.igu-presets button[aria-pressed="true"] small { color: rgba(255, 255, 255, .82); }
+.igu-pair { display: flex; align-items: flex-end; gap: 10px; }
+.igu-pair label { flex: 1; display: grid; gap: 4px; font-size: 12px; color: var(--muted); }
+.igu-pair select { height: 40px; padding: 0 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--white); font-size: 14px; color: var(--ink); }
+.igu-pair > span { padding-bottom: 10px; color: var(--muted); }
+.igu-two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.igu-seg { display: grid; grid-template-columns: 1fr 1fr; margin-top: 4px; padding: 3px; border-radius: 8px; background: var(--brand-tint); }
+.igu-seg button { height: 32px; border-radius: 6px; font-size: 13.5px; font-weight: 600; color: var(--muted); transition: background-color .2s, color .2s; }
+.igu-seg button[aria-pressed="true"] { background: var(--white); color: var(--brand); box-shadow: 0 1px 4px rgba(37, 35, 42, .12); }
+.igu-yours { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 10px; padding-top: 10px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
+.igu-yours b { font-family: var(--font-head); font-size: 1.05rem; font-weight: 600; color: var(--ink); }
+.igu-add { display: flex; gap: 10px; }
+.igu-qty { display: flex; align-items: center; flex: none; border: 1px solid var(--line); border-radius: 999px; background: var(--white); }
+.igu-qty button { width: 36px; height: 46px; font-size: 18px; color: var(--ink); }
+.igu-qty input { width: 46px; border: 0; background: none; text-align: center; font-size: 15px; color: var(--ink); -moz-appearance: textfield; appearance: textfield; }
+.igu-qty input::-webkit-inner-spin-button, .igu-qty input::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+.igu-add .btn { flex: 1; min-width: 0; height: auto; min-height: 46px; padding-top: 8px; padding-bottom: 8px; white-space: normal; line-height: 1.25; }
+.spec-table tr.sel td { color: var(--brand); font-weight: 500; }
+.igu-tag { margin-left: 6px; font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #9A7A44; white-space: nowrap; }
+@media (max-width: 420px) { .igu-presets { grid-template-columns: 1fr; } .igu-add { flex-wrap: wrap; } .igu-add .btn { flex-basis: 100%; } }
+@media (prefers-reduced-motion: reduce) { .igu-build { animation: none; } }

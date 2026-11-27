@@ -115,10 +115,11 @@
     return end;
   }
   // glide a photo to a place (x, y in % of the photo) at zoom z
-  function glide(sc, xp, yp, z, sx, sy, ms = 650) {
+  function glide(sc, xp, yp, z, sx, sy, ms = 650) { glideTo(sc, target(sc, xp, yp, z, sx, sy), ms); }
+  // glide a photo to a view { x, y, z }
+  function glideTo(sc, end, ms = 650) {
     stop();
-    const end = target(sc, xp, yp, z, sx, sy);
-    if (reduce) { sc.s = end; draw(sc); return; }
+    if (reduce) { sc.s = { ...end }; draw(sc); return; }
     const from = { ...sc.s };
     const t0 = performance.now();
     const step = (now) => {
@@ -199,6 +200,7 @@
   // ---- product card: a gold point glides in close on its product and shows its card
   let card = null;
   let cardKey = null;
+  let before = null;        // the view before the card opened: closing the card glides back to it
   function cardPhoto(key) {
     const c = (data.scene.closeups || {})[key];        // a close-up from the showroom, once made
     return c ? BASE + c : data.products[key].photo;
@@ -231,6 +233,7 @@
   function openCard(key, focus) {
     const pt = cur.points.find((x) => x.product === key);
     if (!pt) return;
+    if (!cardKey) before = { id: cur.id, s: { ...cur.s } };
     cardKey = key;
     fillCard();
     card.hidden = false;
@@ -242,9 +245,13 @@
     glide(cur, pt.x, pt.y, Math.max(cur.s.z, cur.id === 'overview' ? 2.4 : 1.6), wide ? (vw - card.offsetWidth - 20) / 2 : vw / 2, wide ? vh / 2 : vh * 0.3);
     if (focus) card.querySelector('[data-sr-card="close"]').focus({ preventScroll: true });
   }
-  function closeCard() {
+  // back = true when the visitor closes the card (the ×, Esc, a tap on the photo): zoom back out to where they were,
+  // so they can pick the next product without zooming out by hand
+  function closeCard(back) {
     if (!card || !cardKey) return;
     cardKey = null;
+    if (back && before && cur && before.id === cur.id) glideTo(cur, before.s, 550);
+    before = null;
     card.classList.remove('open');
     view.parentElement.classList.remove('card-open');
     view.querySelectorAll('.sr-point.active').forEach((el) => el.classList.remove('active'));
@@ -270,7 +277,7 @@
     card.addEventListener('click', (e) => {
       const b = e.target.closest('[data-sr-card]');
       if (b) {
-        if (b.dataset.srCard === 'close') closeCard();
+        if (b.dataset.srCard === 'close') closeCard(true);
         else stepCard(b.dataset.srCard === 'next' ? 1 : -1);
         return;
       }
@@ -354,7 +361,7 @@
       e.preventDefault();
       if (!walking) openCard(pt.dataset.srProduct, e.detail === 0);
     } else if (!pt && !z && moved <= 6 && !e.target.closest('.sr-zoom')) {
-      if (cardKey) { closeCard(); return; }                // a tap on the photo puts the card away
+      if (cardKey) { closeCard(true); return; }            // a tap on the photo puts the card away
       const id = !walking && areaAt(e);
       if (id) { if (tip) tip.hidden = true; walkTo(id); }
     }
@@ -455,7 +462,7 @@
     const r = view.getBoundingClientRect();
     if (r.bottom < 100 || r.top > window.innerHeight - 100) return;   // only while the showroom is on screen
     const k = e.key;
-    if (k === 'Escape') { if (cardKey) closeCard(); else if (cur.id !== 'overview') walkTo('overview'); return; }
+    if (k === 'Escape') { if (cardKey) closeCard(true); else if (cur.id !== 'overview') walkTo('overview'); return; }
     if (k === 'Backspace' && cur.id !== 'overview') { e.preventDefault(); walkTo('overview'); return; }
     if (walking) return;
     const cx = view.clientWidth / 2;
