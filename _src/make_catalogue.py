@@ -180,7 +180,7 @@ def groups(title, items):
 
 PRODUCTS = [
     dict(no=1, name=L('Clear Float Glass', 'Verre flotté clair', 'Vidrio flotado claro'), cat='flat', uses=('glass', 'clear-float'),
-         hero=[(Lb + 'clear-float-studio.jpg', .42, 'center 40%'), (Lb + 'clear-vs-low-iron.jpg', .58, 'center')],
+         hero=[(Lb + 'clear-float-studio.jpg', .42, 'center 40%'), (Lb + 'clear-float-edge.jpg', .58, 'right bottom', 'auto 175%')],
          desc=L('Float glass is made by floating molten glass over a bath of molten tin, which gives it an even thickness and a smooth, '
                 'distortion-free surface. Its optical clarity and flatness make it the standard choice for architectural and interior glazing, '
                 'and the base for tempering, laminating and insulated units.',
@@ -192,7 +192,7 @@ PRODUCTS = [
                 'aplicaciones arquitectónicas y de interiores, y en la base del vidrio templado, laminado y aislante.'),
          specs=[(T['thick'], L('1.8–25 mm', '1,8–25 mm', '1,8–25 mm')), (T['reg'], REGULAR), (T['max'], sz(192, 433))]),
     dict(no=2, name=L('Low Iron Glass', 'Verre à faible teneur en fer', 'Vidrio bajo en hierro'), cat='flat', uses=('glass', 'low-iron'),
-         hero=[(Lb + 'low-iron-studio.jpg', .42, 'center 40%'), (Lb + 'low-iron-edge.jpg', .58, 'center')],
+         hero=[(Lb + 'low-iron-studio.jpg', .42, 'center 40%'), (Lb + 'low-iron-edge.jpg', .58, 'right bottom', 'auto 175%')],
          desc=L('Low iron glass has a reduced iron content for exceptional clarity and high light transmission, without the green tint of '
                 'standard clear glass. Its crystal-clear look suits architectural, display and decorative work where visual clarity matters.',
                 'Le verre à faible teneur en fer offre une clarté exceptionnelle et une transmission lumineuse élevée, sans la teinte verdâtre '
@@ -642,7 +642,9 @@ def product(p, n):
     elif p.get('graphic') == 'led':
         hero = '<div class="g-led" style="flex:1"><div class="m1"></div><div class="m2"></div></div>'
     else:
-        hero = ''.join(f'<div style="flex:{w};background-image:url({img(src)});background-position:{pos}"></div>' for src, w, pos in p['hero'])
+        # (photo, width share, position[, zoom]): a zoom such as 'auto 175%' crops in, e.g. past a logo in the corner
+        hero = ''.join(f'<div style="flex:{w};background-image:url({img(src)});background-position:{pos}'
+                       f'{";background-size:" + rest[0] if rest else ""}"></div>' for src, w, pos, *rest in p['hero'])
     rows = ''.join(f'<tr><th>{E(tx(k))}</th><td>{E(tx(v))}</td></tr>' for k, v in p['specs'])
     uses = site_uses(*p['uses']) if p.get('uses') else []
     apps = f'<div class="apps"><h3 class="label">{E(tx(W_["apps"]))}</h3>{checks(uses)}</div>' if uses else ''
