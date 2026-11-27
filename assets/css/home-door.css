@@ -1,7 +1,7 @@
 /* Home page: just the cover, Sailing's front door (walk-in behaviour in assets/js/home-door.js) */
 
 /* the cover starts under the white header bar, so the whole storefront shows */
-.door { position: relative; margin-top: var(--header-h); height: calc(100vh - var(--header-h)); height: calc(100svh - var(--header-h)); min-height: 520px; overflow: hidden; background: #E8E1D6; }
+.door { position: relative; margin-top: var(--header-h); height: calc(100vh - var(--header-h)); height: calc(100svh - var(--header-h)); min-height: 520px; overflow: hidden; background: #4E4A5C; }   /* dusk tone while the photo loads */
 .door-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 /* the showroom photo seen at the end of the walk-in: exactly the box the showroom page shows it in (under the header,
    assets/css/showroom.css .sr), so the page change does not jump */
@@ -11,20 +11,28 @@
 .door-photo img { object-position: 0% 30%; transform-origin: var(--ox, 66%) var(--oy, 62%); }
 
 /* time passes: day, then dusk, then early night with the lights on, then back to day (one slow 40 s loop).
-   The three pictures are the same shot; the dusk and night ones lie on the day one and fade in and out. */
+   The three pictures are the same shot; the dusk and night ones lie on the day one and fade in and out.
+   The page opens at dusk (the cover as designed): every part of the loop starts 14 s (35 %) in. */
+.door { --door-start: -14s; }
 .door-photo .dp-dusk, .door-photo .dp-night { opacity: 0; }
-.door-photo .dp-dusk { animation: door-dusk 40s linear infinite; }
-.door-photo .dp-night { animation: door-night 40s linear infinite; }
+.door-photo .dp-dusk { animation: door-dusk 40s linear var(--door-start) infinite; }
+.door-photo .dp-night { animation: door-night 40s linear var(--door-start) infinite; }
 @keyframes door-dusk { 0%, 20% { opacity: 0; } 35%, 88% { opacity: 1; } 100% { opacity: 0; } }
 @keyframes door-night { 0%, 50% { opacity: 0; } 65%, 88% { opacity: 1; } 100% { opacity: 0; } }
-/* the words on the stone wall turn light when it gets dark, so they stay easy to read */
-.door h1 { animation: door-ink 40s linear infinite; }
-.door-copy p { animation: door-text 40s linear infinite; }
-@keyframes door-ink { 0%, 52% { color: var(--ink); text-shadow: none; } 63%, 89% { color: #FFFFFF; text-shadow: 0 2px 14px rgba(10, 14, 40, .55); } 100% { color: var(--ink); text-shadow: none; } }
-@keyframes door-text { 0%, 52% { color: #3F3B46; text-shadow: none; } 63%, 89% { color: rgba(255, 255, 255, .92); text-shadow: 0 1px 10px rgba(10, 14, 40, .6); } 100% { color: #3F3B46; text-shadow: none; } }
-/* the words sit on the stone wall: it takes the left third of the picture, so keep them inside that.
+/* the words on the wall are white at dusk and at night, dark only by day, so they stay easy to read; at dusk and night
+   a soft shade on the left side of the picture sits behind them */
+.door-photo::after { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(90deg, rgba(28, 22, 40, .46) 0%, rgba(28, 22, 40, .26) 24%, rgba(28, 22, 40, 0) 40%);
+  animation: door-shade 40s linear var(--door-start) infinite; }
+@keyframes door-shade { 0%, 20% { opacity: 0; } 30%, 90% { opacity: 1; } 99%, 100% { opacity: 0; } }
+.door.entering .door-photo::after { animation: none; opacity: 0; transition: opacity .3s; }
+.door h1 { animation: door-ink 40s linear var(--door-start) infinite; }
+.door-copy p { animation: door-text 40s linear var(--door-start) infinite; }
+@keyframes door-ink { 0%, 20% { color: var(--ink); text-shadow: none; } 30%, 90% { color: #FFFFFF; text-shadow: 0 2px 14px rgba(10, 14, 40, .5); } 99%, 100% { color: var(--ink); text-shadow: none; } }
+@keyframes door-text { 0%, 20% { color: #3F3B46; text-shadow: none; } 30%, 90% { color: rgba(255, 255, 255, .94); text-shadow: 0 1px 10px rgba(10, 14, 40, .55); } 99%, 100% { color: #3F3B46; text-shadow: none; } }
+/* the words sit on the plain wall left of the first window (about the left 28 % of the picture): keep them inside that.
    Clean and simple: the title, a short gold line, one line of text, one button. */
-.door-copy { position: absolute; left: clamp(24px, 4vw, 72px); top: 50%; z-index: 3; width: min(27vw, 430px); transform: translateY(-45%); }
+.door-copy { position: absolute; left: clamp(24px, 4vw, 72px); top: 50%; z-index: 3; width: min(23vw, 400px); transform: translateY(-45%); }
 .door h1 { font-size: clamp(1.9rem, 2.7vw, 3.1rem); font-weight: 600; line-height: 1.1; color: var(--ink); }
 .door-rule { display: block; width: 56px; height: 3px; margin-top: 20px; border-radius: 2px; background: var(--accent); }
 .door-copy p { margin-top: 18px; font-size: 1.02rem; line-height: 1.65; color: #3F3B46; }
@@ -40,7 +48,8 @@
 @media (max-width: 760px), (max-aspect-ratio: 1/1) {
   .door { height: auto; min-height: calc(100svh - var(--header-h)); display: flex; flex-direction: column; background: var(--ink); }
   .door-photo { position: relative; display: block; height: 58svh; min-height: 340px; overflow: hidden; }
-  .door-photo img { object-position: 66% 60%; }
+  .door-photo img { object-position: 70% 60%; }   /* the sign and the doors (60 % across) in the middle */
+  .door-photo::after { display: none; }   /* the words are in the panel below */
   .door-copy { position: relative; left: auto; top: auto; width: auto; transform: none; padding: 28px 20px 40px; }
   .door h1 { color: var(--white); font-size: clamp(1.7rem, 7vw, 2.4rem); }
   .door-copy p { color: rgba(255, 255, 255, .88); font-size: .98rem; }
@@ -48,5 +57,8 @@
 }
 @media (prefers-reduced-motion: reduce) {
   .door.entering * { transition: none !important; }
-  .door-photo .dp-dusk, .door-photo .dp-night, .door h1, .door-copy p { animation: none; }
+  .door-photo .dp-night, .door h1, .door-copy p { animation: none; }
+  .door-photo .dp-dusk, .door-photo::after { animation: none; opacity: 1; }   /* still at dusk, the cover as designed */
+  .door h1 { color: #FFFFFF; text-shadow: 0 2px 14px rgba(10, 14, 40, .5); }
+  .door-copy p { color: rgba(255, 255, 255, .94); text-shadow: 0 1px 10px rgba(10, 14, 40, .55); }
 }

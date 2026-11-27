@@ -9,7 +9,7 @@
   const photo = door.querySelector('.door-photo img');   // the day picture (the dusk and night ones lie exactly on it)
   const photos = door.querySelector('.door-photo');
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const DOORS = [0.6606, 0.622];   // centre of the glass doors, as a share of the picture's width and height
+  const DOORS = [0.60, 0.63];      // centre of the glass doors, as a share of the picture's width and height (doors.json)
 
   // where the doors are on screen: the picture is scaled to cover the box and placed by its object-position
   function aimAtDoors() {
