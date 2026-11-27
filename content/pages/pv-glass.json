@@ -491,7 +491,8 @@
     "nl": "Ruimtevaart, telecom, afgelegen gebruikers",
     "de": "Raumfahrt, Telekom, abgelegene Nutzer",
     "es": "Sector espacial, telecomunicaciones, usuarios remotos"
-   }
+   },
+   "photo": "assets/img/pv/gen-1.jpg"
   },
   {
    "light": 91.5,
@@ -536,7 +537,8 @@
     "nl": "Energiebedrijven, overheden",
     "de": "Energieversorger, Regierungen",
     "es": "Empresas de energía, gobiernos"
-   }
+   },
+   "photo": "assets/img/pv/gen-2.jpg"
   },
   {
    "light": 93.5,
@@ -581,7 +583,8 @@
     "nl": "Huiseigenaren, bedrijven",
     "de": "Hausbesitzer, Unternehmen",
     "es": "Propietarios, empresas"
-   }
+   },
+   "photo": "assets/img/pv/gen-3.jpg"
   },
   {
    "light": 93,
@@ -626,7 +629,8 @@
     "nl": "Projectontwikkelaars, agri-PV",
     "de": "Projektentwickler, Agri-PV",
     "es": "Promotores, agrivoltaica"
-   }
+   },
+   "photo": "assets/img/pv/gen-4.jpg"
   },
   {
    "light": null,
@@ -671,7 +675,8 @@
     "nl": "Architecten, ontwikkelaars in het hogere segment",
     "de": "Architekten, gehobene Projektentwickler",
     "es": "Arquitectos, promotores de alto nivel"
-   }
+   },
+   "photo": "assets/img/pv/gen-5.jpg"
   }
  ],
  "gens_note": {
@@ -680,5 +685,6 @@
   "nl": "Periodes en lichtdoorlatingswaarden zijn typische waarden uit de industrie voor glas van 3,2 mm, tenzij anders vermeld, en tonen de trend.",
   "de": "Zeiträume und Lichtdurchlasswerte sind typische Branchenwerte für 3,2-mm-Glas, sofern nicht anders angegeben, und zeigen den Trend.",
   "es": "Los periodos y los valores de transmisión de luz son valores típicos del sector para vidrio de 3,2 mm, salvo que se indique lo contrario, y muestran la tendencia."
- }
+ },
+ "hero_photo": "assets/img/pv/pv-hero.jpg"
 }

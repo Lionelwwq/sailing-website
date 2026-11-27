@@ -39,7 +39,7 @@
 
 每一页最上面是白色的页头（logo 和菜单更清楚）。首页一打开是公司大门（SAILING 招牌、玻璃双门，透过玻璃能看到展厅），首页文字在左边的石墙上。点"Explore Products"，镜头穿过玻璃门走进去，然后打开展厅（`showroom.html`），画面正好接上。展厅先显示从门口看进去的高清全景照片，再加 6 张走近各区域的照片：点下面的区域按钮、双击照片上的区域或按数字键，就会"走"进那个区域（画面推近再淡入近景照片）；点"整个展厅"、左边的 ← 、Esc 或退格键走回来。可以拖动/滑动看四周，滚轮、双指或 +/− 放大。点金色圆点会推近到那个产品并打开产品卡片（照片、简介、加入询价单、查看产品，‹ › 切换同一区域的其他产品）；点 ×、Esc 或照片空白处关闭卡片时，画面会退回打开卡片之前的位置。网址带 `#mirrors` 这样的结尾可以直接打开某个区域。手机上大门照片在上面，文字在下面。
 
-- 大门照片用 `python _src/make_home_entrance.py 白天.png 黄昏.png 夜晚.png` 生成（`assets/img/site/front-entrance*.jpg`）；现在用的是去掉了树枝、招牌下方 "INTERNATIONAL TRADE LTD" 和室内前台 logo 的版本，原图在本机 `Downloads/Sailing-showroom-inside/home/v2/`；大门在照片里的位置写在 `assets/js/home-door.js` 开头的 `DOORS`。走进门后看到的是展厅照片的手机版（`assets/img/showroom/showroom-m.jpg`）。样式在 `assets/css/home-door.css`。
+- 大门照片用 `python _src/make_home_entrance.py 白天.png 黄昏.png 夜晚.png` 生成（`assets/img/site/front-entrance*.jpg`）；现在用的是去掉了树枝和室内前台 logo、招牌换成新 logo（带金边，只有 SAILING）的版本，原图在本机 `Downloads/Sailing-showroom-inside/home/v3/`（新招牌由 Codex 按 `Downloads/Logo-update/PROMPT-for-Codex.md` 做，只取招牌那一块放进白天、黄昏、夜晚三张图，保证淡入淡出对齐）；大门在照片里的位置写在 `assets/js/home-door.js` 开头的 `DOORS`。走进门后看到的是展厅照片的手机版（`assets/img/showroom/showroom-m.jpg`）。样式在 `assets/css/home-door.css`。
 - 以前的仓库导览（卷帘门）已经不在首页上了，它的文件（`assets/js/warehouse.js`、`assets/css/warehouse.css`、`assets/img/warehouse/scene.json`）还留着；区域照片 `zone-*.webp` 和大楼照片还在别的地方用（首页产品卡片、产品目录封面、关于我们横幅）。
 
 原版首页（大图版，仓库导览之前的样子）保留在 `home-classic.html`，没有放进菜单和网站地图，用于对比。
