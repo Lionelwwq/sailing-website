@@ -1492,16 +1492,6 @@
    "photo": "assets/img/library/acid-etched-studio.jpg",
    "gallery": [
     {
-     "image": "assets/img/library/acid-etched-detail.jpg",
-     "caption": {
-      "en": "Surface detail: an even, satin finish",
-      "fr": "Détail de la surface : un fini satiné uniforme",
-      "nl": "Oppervlaktedetail: een egale, satijnen afwerking",
-      "de": "Oberflächendetail: eine gleichmäßige, satinierte Oberfläche",
-      "es": "Detalle de la superficie: un acabado satinado uniforme"
-     }
-    },
-    {
      "image": "assets/img/library/acid-etched-privacy.jpg",
      "caption": {
       "en": "Light passes through, the view behind is softened",
