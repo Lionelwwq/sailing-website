@@ -301,8 +301,10 @@ class Doc:
                   '<ObjectStyle Self="ObjectStyle/$ID/[Normal Graphics Frame]" Name="$ID/[Normal Graphics Frame]"/>'
                   '<ObjectStyle Self="ObjectStyle/$ID/[Normal Text Frame]" Name="$ID/[Normal Text Frame]"/></RootObjectStyleGroup>\n'
                   '</idPkg:Styles>\n')
+        # PagesPerDocument="1": InDesign first makes that many empty pages and then adds the spreads after them, so the
+        # real page count here gave 23 empty pages in front of the catalogue
         prefs = (HEAD + f'<idPkg:Preferences {NS}>\n'
-                 f'<DocumentPreference PageHeight="{PAGE_H}" PageWidth="{PAGE_W}" PagesPerDocument="{page_count}" FacingPages="false" '
+                 f'<DocumentPreference PageHeight="{PAGE_H}" PageWidth="{PAGE_W}" PagesPerDocument="1" FacingPages="false" '
                  'DocumentBleedTopOffset="0" DocumentBleedBottomOffset="0" DocumentBleedInsideOrLeftOffset="0" DocumentBleedOutsideOrRightOffset="0" '
                  'DocumentBleedUniformSize="true" SlugTopOffset="0" SlugBottomOffset="0" SlugInsideOrLeftOffset="0" SlugRightOrOutsideOffset="0" '
                  'DocumentSlugUniformSize="false" PreserveLayoutWhenShuffling="true" AllowPageShuffle="true" OverprintBlack="true" '

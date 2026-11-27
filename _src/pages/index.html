@@ -5,8 +5,9 @@ nav: home
 image: assets/img/site/front-entrance.jpg
 -->
 <link rel="stylesheet" href="assets/css/home-door.css">
-  <!-- Home cover: Sailing's front door. "Explore Products" walks through the glass doors into the showroom photo
-       (showroom.html). Door pictures made with _src/make_home_entrance.py; walk-in in assets/js/home-door.js -->
+  <!-- Home: just the cover, clean: Sailing's front door, the title, one line of text and "Explore Products", which walks
+       through the glass doors into the showroom photo (showroom.html), where the products are.
+       Door pictures made with _src/make_home_entrance.py; walk-in in assets/js/home-door.js -->
   <section class="door" id="door" aria-labelledby="hero-title">
     <!-- the same shot by day, at dusk and early at night (lined up): the dusk and night layers slowly fade in and out -->
     <div class="door-photo">
@@ -25,45 +26,13 @@ image: assets/img/site/front-entrance.jpg
     </div>
     <img class="door-inside" src="assets/img/showroom/showroom-m.jpg" alt="" fetchpriority="low">
     <div class="door-copy">
-      <span class="door-kicker"><span data-ui="since_label">Since</span> <span data-set="since"></span></span>
       <h1 id="hero-title" data-c="hero_title"></h1>
+      <span class="door-rule" aria-hidden="true"></span>
       <p data-c="hero_text"></p>
       <div class="door-actions">
         <a class="btn btn-brand" href="showroom.html" data-door-enter data-ui="enter_showroom">Explore Products</a>
       </div>
     </div>
-    <span class="door-hint" data-ui="scroll_hint"></span>
   </section>
-
-  <section class="sec sec-gray" aria-labelledby="intro-title">
-    <div class="container center">
-      <h2 class="h-up reveal" id="intro-title" data-c="intro_title"></h2>
-      <p class="lead-strong reveal" data-c="intro_text"></p>
-      <div class="pillars" id="pillars"></div>
-    </div>
-  </section>
-
-  <section class="sec" aria-labelledby="products-title">
-    <div class="container">
-      <h2 class="h-up center reveal" id="products-title" data-c="products_title"></h2>
-      <p class="sub center reveal" data-c="products_text"></p>
-      <div class="cat-cards" id="cat-cards"></div>
-      <div class="word-list reveal" id="word-list"></div>
-    </div>
-  </section>
-
-  <section class="splits" aria-labelledby="services-title">
-    <h2 class="sr-only" id="services-title" data-c="services_title"></h2>
-    <div id="services"></div>
-  </section>
-
-  <section class="sec sec-gray" aria-labelledby="location-title">
-    <div class="container">
-      <h2 class="h-up center reveal" id="location-title" data-c="location_title"></h2>
-      <div class="location reveal" id="location"></div>
-    </div>
-  </section>
-
-<!-- include: cta -->
 
 <script src="assets/js/home-door.js" defer></script>

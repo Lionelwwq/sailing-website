@@ -375,6 +375,7 @@
   let explorerInstance = null;
   const PAGES = {
     index() {
+      if (!$('#pillars')) return;   // the home page is just the cover now; home-classic.html still shows these sections
       const H = C.page;
       $('#pillars').innerHTML = H.pillars.map((p, i) => `<div class="pillar reveal" style="--d:${i * 90}ms"><span class="num">${pad2(i + 1)}</span><h3>${esc(t(p.title))}</h3><p>${esc(t(p.text))}</p></div>`).join('');
       const cats = [
